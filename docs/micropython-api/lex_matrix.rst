@@ -11,13 +11,13 @@ Function
 
 led_matrix.show(PORT, Image.IMAGE)
      Hiển thị lên màn hình LED Matrix những hình ảnh có sẵn, trong đó:
-        PORT: Khai báo PORT đã được kết nối với LED Matrix.
-        IMAGE: HEART|SMILE|SAD|CONFUSED|ARROW_N|ARROW_E|ARROW_S|ARROW_W|TRIANGLE|QUARE
+         PORT: Khai báo PORT đã được kết nối với LED Matrix.
+         IMAGE: HEART|SMILE|SAD|CONFUSED|ARROW_N|ARROW_E|ARROW_S|ARROW_W|TRIANGLE|QUARE
       
 led_matrix.show(PORT, TEXT)
      Hiển thị lên màn hình LED Matrix những văn bản bất kì, trong đó:
-        PORT: Khai báo PORT đã được kết nối với LED Matrix.
-        TEXT: Văn bản bạn muốn hiển thị.
+         PORT: Khai báo PORT đã được kết nối với LED Matrix.
+         TEXT: Văn bản bạn muốn hiển thị.
 
 Sample Code：
 ----------------------

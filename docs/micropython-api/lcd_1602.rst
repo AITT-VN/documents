@@ -10,24 +10,24 @@ Function
 ----------------------
 
 lcd1602 = LCD1602(PORT)
-    Khai báo PORT đã được kết nối với LCD 1602.
+     Khai báo PORT đã được kết nối với LCD 1602.
 
 lcd1602.backlight_on()
-    Bặt đèn nền của màn hình.
+     Bặt đèn nền của màn hình.
 
 lcd1602.backlight_off()
-    Tắt đèn nền của màn hình.
+     Tắt đèn nền của màn hình.
 
 lcd1602.move_to(X, Y)
-    Di chuyển con trỏ đến vị trí muốn xuất hiện kí tự, trong đó:
-      X: Tọa độ theo chiều ngang.
-      Y: Tọa độ theo chiều dọc.
+     Di chuyển con trỏ đến vị trí muốn xuất hiện kí tự, trong đó:
+         X: Tọa độ theo chiều ngang.
+         Y: Tọa độ theo chiều dọc.
 
 lcd1602.putstr('Hello')
     In dòng kí tự "Hello" lên màn hình.
 
 lcd1602.clear()
-    Xóa kí tự trên màn hình.
+     Xóa kí tự trên màn hình.
 
 Sample Code：
 ----------------------

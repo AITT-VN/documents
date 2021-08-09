@@ -13,12 +13,7 @@ color_sensor.read(port, 'r|g|b')
    Đọc giá trị R, G, B của cảm biến màu sắc
 
 color_sensor.detect(port, 'w|b|r|g|b')
-   Kiểm tra xem cảm biến có phát hiện được 1 trong các màu:
-    w: White
-    b: black
-    r: Red
-    g: Green
-    b: Blue
+   Kiểm tra xem cảm biến có phát hiện được 1 trong các màu: w: White, b: black, r: Red, g: Green, b: Blue.
    Kết quả trả về là ``True``: Khi cảm biến đọc được màu trùng với màu cho trước, hoặc là ``False``: Khi cảm biến đọc được màu không trùng khớp với màu cho trước..
 
 

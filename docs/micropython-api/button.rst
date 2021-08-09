@@ -20,5 +20,5 @@ Sample Code：
 
   
   while True:
-    if codey.button_a.is_pressed():
+    if btn_onboard.is_pressed():
         print("Button Onboard is pressed")

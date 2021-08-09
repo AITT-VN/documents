@@ -1,10 +1,10 @@
-:mod:`lex_matrix` --- LED Matrix
+:mod:`led_matrix` --- LED Matrix
 =============================================
 
-.. module:: lex_matrix
+.. module:: led_matrix
     :synopsis: LED Matrix
 
-Chức năng chính và chức năng của ``lex_matrix``
+Chức năng chính và chức năng của ``led_matrix``
 
 Function
 ----------------------

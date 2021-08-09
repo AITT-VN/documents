@@ -1,8 +1,8 @@
-:mod:`lcd_1602` --- LCD 1602
+:mod:`lcd_1602` --- LCD 1602 Module
 =============================================
 
 .. module:: lcd_1602
-    :synopsis: LCD 1602
+    :synopsis: LCD 1602 Module
 
 Chức năng chính và chức năng của ``lcd_1602``
 
@@ -11,6 +11,7 @@ Function
 
 lcd1602 = LCD1602(PORT)
      Khai báo PORT đã được kết nối với LCD 1602.
+     PORT: Có giá trị từ 0 đến 6 tương ứng từ PORT 1 đến PORT 6 của xController.
 
 lcd1602.backlight_on()
      Bặt đèn nền của màn hình.

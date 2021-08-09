@@ -1,8 +1,8 @@
-:mod:`color_sensor` --- Color Sensor
+:mod:`color_sensor` --- Color Sensor Module
 =============================================
 
 .. module:: color_sensor
-    :synopsis: Color Sensor
+    :synopsis: Color Sensor Module
 
 Chức năng chính và chức năng của ``color_sensor``
 

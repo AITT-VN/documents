@@ -1,0 +1,49 @@
+:mod:`lcd_1602` --- LCD 1602
+=============================================
+
+.. module:: lcd_1602
+    :synopsis: LCD 1602
+
+Chức năng chính và chức năng của ``lcd_1602``
+
+Function
+----------------------
+
+lcd1602 = LCD1602(PORT)
+    Khai báo PORT đã được kết nối với LCD 1602.
+
+lcd1602.backlight_on()
+    Bặt đèn nền của màn hình.
+
+lcd1602.backlight_off()
+    Tắt đèn nền của màn hình.
+
+lcd1602.move_to(X, Y)
+    Di chuyển con trỏ đến vị trí muốn xuất hiện kí tự, trong đó:
+      X: Tọa độ theo chiều ngang.
+      Y: Tọa độ theo chiều dọc.
+
+lcd1602.putstr('Hello')
+    In dòng kí tự "Hello" lên màn hình.
+
+lcd1602.clear()
+    Xóa kí tự trên màn hình.
+
+Sample Code：
+----------------------
+Hiển thị kí tự trên màn hình LCD 1602
+
+.. code-block:: python
+
+   from lcd_1602 import LCD1602
+
+   lcd1602 = LCD1602(0)
+   lcd1602.backlight_off()
+   while True:
+      lcd1602.move_to(0, 0)
+      lcd1602.putstr('Ohstem')
+      lcd1602.move_to(0, 1)
+      lcd1602.putstr('Xin chao ban')
+      time.sleep(2)
+      lcd1602.clear()
+      time.sleep(1)

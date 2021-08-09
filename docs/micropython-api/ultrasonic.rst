@@ -20,5 +20,5 @@ Hiển thị khoảng cách đo được từ cảm biến siêu âm
 .. code-block:: python
 
       while True:
-      print(ultrasonic.distance_cm(1)) # Gắn vào PORT 2
+            print(ultrasonic.distance_cm(1)) # Gắn vào PORT 2
 

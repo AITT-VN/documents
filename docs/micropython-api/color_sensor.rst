@@ -20,6 +20,7 @@ color_sensor.detect(port, 'w|b|r|g|b')
 Sample Code：
 ----------------------
 Xác định giá trị màu đỏ của vật thể:
+
 .. code-block:: python
 
   from color_sensor import color_sensor
@@ -29,6 +30,7 @@ Xác định giá trị màu đỏ của vật thể:
     print(red)
 
 Tìm vật thể có màu trắng:
+
 .. code-block:: python
 
   from color_sensor import color_sensor

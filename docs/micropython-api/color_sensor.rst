@@ -35,8 +35,9 @@ Tìm vật thể có màu trắng:
 
   from color_sensor import color_sensor
 
-  color_val = color_sensor.detect(0, 'w')
-  if color_val == 'w':
-    print('Đúng')
-  else:
-    print('Sai')
+  while True:
+    color_val = color_sensor.detect(0, 'w')
+    if color_val == 'w':
+      print('Đúng')
+    else:
+      print('Sai')

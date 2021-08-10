@@ -9,12 +9,15 @@ Chức năng chính và chức năng của ``color_sensor``
 Function
 ----------------------
 
-color_sensor.read(port, 'r|g|b')
-   Đọc giá trị R, G, B của cảm biến màu sắc
+.. function:: color_sensor.read(PORT, 'R|G|B')
+  Đọc giá trị R, G, B của cảm biến màu sắc, trong đó:
+    - *PORT* có giá trị từ ``0 ~ 5`` đại diện PORT 1 đến PORT 6 của xController.
+    - Kết quả trả về giá trị ``0 ~ 255`` tương ứng với mức độ màu của màu cần đọc (R hoặc G hoặc B).
 
-color_sensor.detect(port, 'w|b|r|g|b')
-   Kiểm tra xem cảm biến có phát hiện được 1 trong các màu: w: White, b: black, r: Red, g: Green, b: Blue.
-   Kết quả trả về là ``True``: Khi cảm biến đọc được màu trùng với màu cho trước, hoặc là ``False``: Khi cảm biến đọc được màu không trùng khớp với màu cho trước..
+.. function:: color_sensor.detect(PORT, 'w|b|r|g|b')
+  Kiểm tra xem cảm biến có phát hiện được 1 trong các màu: w: White, b: black, r: Red, g: Green, b: Blue. Trong đó:
+    - *PORT* có giá trị từ ``0 ~ 5`` đại diện PORT 1 đến PORT 6 của xController.
+    - Kết quả trả về là ``True`` khi cảm biến đọc được màu trùng với màu cho trước, hoặc là ``False`` khi cảm biến đọc được màu không trùng khớp với màu cho trước.
 
 
 Sample Code：

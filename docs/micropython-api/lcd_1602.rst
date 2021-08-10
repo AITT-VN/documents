@@ -9,23 +9,23 @@ Chức năng chính và chức năng của ``lcd_1602``
 Function
 ----------------------
 
-lcd1602 = LCD1602(PORT)
-     Khai báo PORT đã được kết nối với LCD 1602.
-     PORT: Có giá trị từ 0 đến 6 tương ứng từ PORT 1 đến PORT 6 của xController.
+.. function:: lcd1602 = LCD1602(PORT)
+     Khai báo *PORT* đã được kết nối với LCD 1602.
+     *PORT* Có giá trị từ ``1 ~ 6`` tương ứng từ PORT 1 đến PORT 6 của xController.
 
-lcd1602.backlight_on()
+.. function:: lcd1602.backlight_on()
      Bặt đèn nền của màn hình.
 
-lcd1602.backlight_off()
+.. function:: lcd1602.backlight_off()
      Tắt đèn nền của màn hình.
 
-lcd1602.move_to(X, Y)
+.. function:: lcd1602.move_to(X, Y)
      Di chuyển con trỏ đến vị trí muốn xuất hiện kí tự, trong đó:
-         X: Tọa độ theo chiều ngang.
-         Y: Tọa độ theo chiều dọc.
+          - *X* là tọa độ theo chiều ngang.
+          - *Y* là tọa độ theo chiều dọc.
 
-lcd1602.putstr('Hello')
-    In dòng kí tự "Hello" lên màn hình.
+lcd1602.putstr(TEXT)
+    In dòng kí tự ``TEXT`` lên màn hình. ``TEXT`` ghi không có dấu.
 
 lcd1602.clear()
      Xóa kí tự trên màn hình.

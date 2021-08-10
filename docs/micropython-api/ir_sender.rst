@@ -9,11 +9,11 @@ Chức năng chính và chức năng của ``ir_sender``
 Function
 ----------------------
 
-ir_tx.send(data)
-   Gửi giá trị IR từ xController đến một hoặc nhiều thiết bi có hỗ trợ mắt đọc hồng ngoại.
+.. function:: ir_tx.send(data)
+   Gửi giá trị *data* dạng ``(int)`` IR từ xController đến một hoặc nhiều thiết bi có hỗ trợ mắt đọc hồng ngoại. 
 
-ir_tx.send(data, address)
-   Gửi giá trị IR từ xController đến một thiết bi có địa chỉ cụ thể có hỗ trợ mắt đọc hồng ngoại.
+.. function:: ir_tx.send(data, address)
+   Gửi giá trị *data* dạng ``(int)`` IR từ xController đến một thiết bi có địa chỉ ``address`` cụ thể có hỗ trợ mắt đọc hồng ngoại.
 
 Sample Code：
 ----------------------

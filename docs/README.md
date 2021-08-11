@@ -1,40 +1,47 @@
-MicroPython Documentation
+HƯỚNG DẪN SỬ DỤNG READTHEDOCS
 =========================
+HƯỚNG DẪN CÀI ĐẶT LẦN ĐẦU
 
-The MicroPython documentation can be found at:
-http://docs.micropython.org/en/latest/
+Bước 1: Cài đặt môi trường python.
 
-The documentation you see there is generated from the files in the docs tree:
-https://github.com/micropython/micropython/tree/master/docs
+Bước 2: Cài đặt Sphinx: pip install sphinx
 
-Building the documentation locally
+Bước 3: Tạo đường dẫn đễn tập tin docs:
+
+cd /path/to/project
+mkdir docs
+
+Nếu đã có sẵn thư mục docs thì vào bỏ qua bước này.
+
+Bước 4: Chạy lệnh sphinx-quickstart tại đây:
+
+cd docs
+sphinx-quickstart
+
+Phần bắt đầu nhanh này sẽ hướng dẫn bạn cách tạo cấu hình cơ bản; trong hầu hết các trường hợp, bạn chỉ có thể chấp nhận các giá trị mặc định. Khi hoàn tất, bạn sẽ có index.rst, conf.py và một số tệp khác. Chúng ta sẽ làm việc với các file này.
+
+Bây giờ, hãy chỉnh sửa index.rst của bạn và thêm một số thông tin về dự án của bạn. Bao gồm nhiều chi tiết tùy thích
+Tham khảo cú pháp reStructuredText: https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#id1 hoặc https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html.
+
+Bước 5: Render file html: make html
+
 ----------------------------------
+HƯỚNG DẪN THAY ĐỔI THEME READTHEDOCS
 
-If you're making changes to the documentation, you may want to build the
-documentation locally so that you can preview your changes.
+Nếu bạn đang thực hiện các thay đổi đối với tài liệu, bạn có thể muốn xây dựng
+tài liệu cục bộ để bạn có thể xem trước các thay đổi của mình.
 
-Install Sphinx, and optionally (for the RTD-styling), sphinx_rtd_theme,
-preferably in a virtualenv:
+Bước 1: Trỏ CMD vào trong thư mục dóc như trên
 
-     pip install sphinx
-     pip install sphinx_rtd_theme
+Bước 2: Tải sphinx_rtd_theme: pip install sphinx_rtd_theme
 
-In `micropython/docs`, build the docs:
+Bước 3: Render file html: make html
 
-    make MICROPY_PORT=<port_name> html
+----------------------------------
+HƯỚNG DẪN CẬP NHẬT HTML READTHEDOCS SAU KHI THAY ĐỔI NỘI DUNG CÁC FILE RST:
 
-Where `<port_name>` can be `unix`, `pyboard`, `wipy` or `esp8266`.
+Yêu cầu: Kiểm tra xem đã cài đặt sphinx chưa, nếu chưa thì chạy lệnh cài đặt pip install sphinx
 
-You'll find the index page at `micropython/docs/build/<port_name>/html/index.html`.
+Bước 1: Trỏ CMD vào trong thư mục dóc như trên
 
-PDF manual generation
----------------------
-
-This can be achieved with:
-
-    make MICROPY_PORT=<port_name> latexpdf
-
-but require rather complete install of LaTeX with various extensions. On
-Debian/Ubuntu, try (500MB+ download):
-
-    apt-get install texlive-latex-recommended texlive-latex-extra
+Bước 2: Render file html: make html

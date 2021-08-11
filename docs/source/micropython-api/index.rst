@@ -1,6 +1,6 @@
 .. _xbot_micropython_lib:
 
-MicroPython API
+xController MicroPython API
 ====================
 
 .. toctree::

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'xBot Firmware'
+project = 'OhStem Product Documents'
 copyright = '2021, OHSTEM'
 author = 'OHSTEM'
 

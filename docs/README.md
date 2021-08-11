@@ -9,6 +9,7 @@ Bước 2: Cài đặt Sphinx: pip install sphinx
 Bước 3: Tạo đường dẫn đễn tập tin docs:
 
 cd /path/to/project
+
 mkdir docs
 
 Nếu đã có sẵn thư mục docs thì vào bỏ qua bước này.
@@ -16,6 +17,7 @@ Nếu đã có sẵn thư mục docs thì vào bỏ qua bước này.
 Bước 4: Chạy lệnh sphinx-quickstart tại đây:
 
 cd docs
+
 sphinx-quickstart
 
 Phần bắt đầu nhanh này sẽ hướng dẫn bạn cách tạo cấu hình cơ bản; trong hầu hết các trường hợp, bạn chỉ có thể chấp nhận các giá trị mặc định. Khi hoàn tất, bạn sẽ có index.rst, conf.py và một số tệp khác. Chúng ta sẽ làm việc với các file này.
@@ -31,9 +33,15 @@ HƯỚNG DẪN THAY ĐỔI THEME READTHEDOCS
 Nếu bạn đang thực hiện các thay đổi đối với tài liệu, bạn có thể muốn xây dựng
 tài liệu cục bộ để bạn có thể xem trước các thay đổi của mình.
 
-Bước 1: Trỏ CMD vào trong thư mục dóc như trên
+Bước 1: Trỏ CMD vào trong thư mục docs như trên
 
 Bước 2: Tải sphinx_rtd_theme: pip install sphinx_rtd_theme
+
+Bước 3: Vào file /source/conf.py
+
+Vô hiệu hóa dòng này (Đây là theme mặc định của readthedocs): html_theme = 'alabaster'
+
+Thêm dòng này: html_theme = 'sphinx_rtd_theme' 
 
 Bước 3: Render file html: make html
 

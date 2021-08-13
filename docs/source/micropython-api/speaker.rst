@@ -17,25 +17,16 @@ Function
 
     Phát 1 bài nhạc hoặc 1 nốt nhạc. Trong đó:
     
-        - *tune* : Có thể là 1 trong các bài hát hoặc một tone nhjac nào đó:
+        - *tune* : Có thể là 1 trong các bài hát hoặc một tone nhạc nào đó:
+        
             + *Bài hát* : ``BIRTHDAY, TWINKLE, JINGLE_BELLS, WHEEL_ON_BUS, FUR_ELISE,CHASE,JUMP_UP,jUMP_DOWN,POWER_UP,POWER_DOWN``
-            + *Tone* : 
-                ['C4', '4'], ['C4', '2'], ['C4', '1'], ['C4', '0.5'], ['C4', '0.25'], 
-                ['B3', '4'], ['B3', '2'], ['B3', '1'], ['B3', '0.5'], ['B3', '0.25'],
-                ['BB3', '4'], ['BB3', '2'], ['BB3', '1'], ['BB3', '0.5'], ['BB3', '0.25'],
-                ['A3', '4'], ['A3', '2'], ['A3', '1'], ['A3', '0.5'], ['A3', '0.25'],
-                ['AB3', '4'], ['AB3', '2'], ['AB3', '1'], ['AB3', '0.5'], ['AB3', '0.25'],
-                ['G3', '4'], ['G3', '2'], ['G3', '1'], ['G3', '0.5'], ['G3', '0.25'],
-                ['GB3', '4'], ['GB3', '2'], ['GB3', '1'], ['GB3', '0.5'], ['GB3', '0.25'],
-                ['F3', '4'], ['F3', '2'], ['F3', '1'], ['F3', '0.5'], ['F3', '0.25'],
-                ['E3', '4'], ['E3', '2'], ['E3', '1'], ['E3', '0.5'], ['E3', '0.25'],
-                ['EB3', '4'], ['EB3', '2'], ['EB3', '1'], ['EB3', '0.5'], ['EB3', '0.25'],
-                ['D3', '4'], ['D3', '2'], ['D3', '1'], ['D3', '0.5'], ['D3', '0.25'],
-                ['DB3', '4'], ['DB3', '2'], ['DB3', '1'], ['DB3', '0.5'], ['DB3', '0.25'],
-                ['C3', '4'], ['C3', '2'], ['C3', '1'],  ['C3', '0.5'], ['C3', '0.25'], 
+            + *Tone* : Đây là các nốt trong nhạc lý:
+
+            .. image:: images/speaker.png
+
         - *wait* : Nếu bằng ``True`` thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là ``False``.
         - *loop* :
-        - *duration* :
+        - *duration* : Thời gian kéo dài.
 
 .. function:: speaker.pitch(frequency, time)
 

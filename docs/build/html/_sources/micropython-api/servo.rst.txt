@@ -21,7 +21,7 @@ Function
     Điều khiển động cơ servo 180 độ quay tới một góc tới hạn ``degree`` với thời gian nghỉ ``sleep`` sau mỗi bước di chuyển ``change``. Trong đó:
         
         - *index* là tham số có giá trị ``0 ~ 7`` tương ứng với 8 cổng gắn servo trên board xController.
-        - *change* là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số cosgias trị từ ``0`` đến ``(degree/change)``. ``change`` có giá trị càng nhỏ thì servo chuyển bước cằng mượt.
+        - *change* là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ ``0`` đến ``(degree/change)``. ``change`` có giá trị càng nhỏ thì servo chuyển bước cằng mượt.
         - *sleep* là thời gian nghỉ giữa mỗi bước ``change`` có đơn vị là ``mili giây``.
         - *degree* là tham số góc quay tới hạn của servo có giá trị ``0 ~ 180`` độ.
 
@@ -34,7 +34,7 @@ Function
 
 .. function:: servo.position(index)
 
-    Trả về giá trị góc hiện tại của sero. Trong đó ``index`` là tham số có giá trị ``0 ~ 7`` tương ứng với 8 cổng gắn servo trên board xController.
+    Trả về giá trị góc hiện tại của servo. Trong đó ``index`` là tham số có giá trị ``0 ~ 7`` tương ứng với 8 cổng gắn servo trên board xController.
 
 Sample Code
 ----------------------

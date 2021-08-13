@@ -12,7 +12,7 @@ Function
 .. function::  btn_onboard.is_pressed()
 
   Lấy giá trị hiện tại của nút nhấn trên board.
-  Kết quả trả về là ``True``: Khi nút được nhấn, hoặc là ``False``: Khi nút không được nhấn.
+  Kết quả trả về là ``True`` khi nút được nhấn, hoặc là ``False`` khi nút không được nhấn.
 
 Sample Code
 ----------------------

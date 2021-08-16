@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>3. RGB LED &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Music" href="buzz.html" />
+    <link rel="prev" title="2. Display" href="oled.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oled.html">2. Display</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. RGB LED</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#on-board-rgb-led">3.1. On-Board RGB LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#external-striplight">3.2. External Striplight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oled.html">2. Display</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. RGB LED</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#on-board-rgb-led">3.1. On-Board RGB LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#external-striplight">3.2. External Striplight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Basic Tutorials</a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>RGB LED</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/basics/neopixel.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rgb-led">
+<h1><span class="section-number">3. </span>RGB LED<a class="headerlink" href="#rgb-led" title="Permalink to this headline">¶</a></h1>
+<p>mPython Board built-in with three WS2812 LED, WS2812 is a low-power RGB tri-color LED integrated WS2811 driver, an integrated current control chip, it can achieve 256-level brightness display and complete true color display of 16777216 colors. A special single-line communication method is used to control the color of RGB lights, which is easy to use.</p>
+<div class="section" id="on-board-rgb-led">
+<h2><span class="section-number">3.1. </span>On-Board RGB LED<a class="headerlink" href="#on-board-rgb-led" title="Permalink to this headline">¶</a></h2>
+<p>Example：Light up RGB LED</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># set to RED for full brightness</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># set to GREEN for half brightness</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>   <span class="c1"># set to BLUE foe a quarter of brightness</span>
+<span class="n">rgb</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>First of all, import the mPython module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Imported the mPython module, a NeoPixel object been created to control the WS2812 LEDs by just operate the RGB object.</p>
+</div>
+<p>Set the color:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># set to RED at full brightness</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># set to GREEN at half brightness</span>
+<span class="n">rgb</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>   <span class="c1"># set to BLUE at a quarter brightness</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>rgb[n] = (r, g, b) to set the color of each pixel，<code class="docutils literal notranslate"><span class="pre">n</span></code> is the number of onboard RGB LED，The first been 0.  <code class="docutils literal notranslate"><span class="pre">r</span></code>、<code class="docutils literal notranslate"><span class="pre">g</span></code>、<code class="docutils literal notranslate"><span class="pre">b</span></code> are color brightness values, range is 0 ~ 255.</p></li>
+<li><p>rgb.fill(rgb_buf) to fill the color of all pixels, such as：rgb.fill((255,0,0))，set all RGB LED to RED at full brightness.</p></li>
+</ul>
+</div>
+<p>Output colors to RGB LEDs:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rgb</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="external-striplight">
+<span id="neopixel-strip"></span><h2><span class="section-number">3.2. </span>External Striplight<a class="headerlink" href="#external-striplight" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../images/tutorials/glamour.jpg"><img alt="../images/tutorials/glamour.jpg" class="align-center" src="../images/tutorials/glamour.jpg" style="width: 600px;" /></a>
+<p>Example：Light Up external striplight</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">neopixel</span>
+<span class="n">np</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">Pin</span><span class="o">.</span><span class="n">P15</span><span class="p">),</span> <span class="n">n</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="n">bpp</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">timing</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">wheel</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+    <span class="c1"># Generate a rainbow color spectrum by setting each color range parameter between 0 and 255</span>
+    <span class="c1"># Input a value 0 to 255 to get a color value.</span>
+    <span class="c1"># The colours are a transition r - g - b - back to r.</span>
+    <span class="k">if</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">pos</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">g</span> <span class="o">=</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="mi">85</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pos</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">pos</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="mi">170</span><span class="p">:</span>
+        <span class="n">pos</span> <span class="o">-=</span> <span class="mi">85</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">pos</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pos</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pos</span> <span class="o">-=</span> <span class="mi">170</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pos</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">pos</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+    <span class="c1"># Loop effect, with one pixel running at all light strip positions, while other pixels are off.</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">np</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">np</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">wait</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">bounce</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+    <span class="c1"># Bounce effect, the waiting time determines the speed of the bounce effect</span>
+    <span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">n</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">np</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">//</span> <span class="n">n</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">np</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">np</span><span class="p">[</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">n</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+        <span class="n">sleep_ms</span><span class="p">(</span><span class="n">wait</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">rainbow_cycle</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="n">wait_us</span><span class="p">):</span>
+    <span class="c1"># rainbow effect</span>
+    <span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">n</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">255</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">pixel_index</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">256</span> <span class="o">//</span> <span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="n">j</span>
+            <span class="n">np</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">wheel</span><span class="p">(</span><span class="n">pixel_index</span> <span class="o">&amp;</span> <span class="mi">255</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+        <span class="n">sleep_us</span><span class="p">(</span><span class="n">wait_us</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">cycle</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">bounce</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">rainbow_cycle</span><span class="p">(</span><span class="n">np</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-center" id="id1">
+<img alt="../images/tutorials/neopixel_control_leds_cycle.png" src="../images/tutorials/neopixel_control_leds_cycle.png" />
+<p class="caption"><span class="caption-text">cycle effect</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id2">
+<img alt="../images/tutorials/neopixel_control_leds_bounce.png" src="../images/tutorials/neopixel_control_leds_bounce.png" />
+<p class="caption"><span class="caption-text">bounce effect</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id3">
+<img alt="../images/tutorials/neopixel_control_leds_rainbow.png" src="../images/tutorials/neopixel_control_leds_rainbow.png" />
+<p class="caption"><span class="caption-text">rainbow effect</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>If you need to use an external ribbon, you must first create a neopixel object and define the <code class="docutils literal notranslate"><span class="pre">pin</span></code> 、<code class="docutils literal notranslate"><span class="pre">bpp</span></code> 、 <code class="docutils literal notranslate"><span class="pre">timeing</span></code> parameters before you can control the LEDs on the ribbon through this object.
+For details, refer to <span class="xref std std-ref">neopixel</span> module.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<div class="line-block">
+<div class="line">mPyhton provide <code class="docutils literal notranslate"><span class="pre">neopixel</span></code> enhanced version <code class="docutils literal notranslate"><span class="pre">led</span> <span class="pre">strip</span></code> module, packaged with enhanced NEOPIXEL display effect, and the operation is simple. For detailed instructions, please go to the following link.</div>
+<div class="line">mPython-ledstrip：<a class="reference external" href="https://github.com/labplus-cn/awesome-mpython/tree/master/library">https://github.com/labplus-cn/awesome-mpython/tree/master/library</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="buzz.html" class="btn btn-neutral float-right" title="4. Music" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="oled.html" class="btn btn-neutral float-left" title="2. Display" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

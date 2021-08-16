@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>6. Thread &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7. BME280" href="bme280.html" />
+    <link rel="prev" title="5. I2C" href="i2c.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../basics/index.html">Basic Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Advance Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="random.html">1. Random Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filesystem.html">2. Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timer.html">3. Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">4. Radio Broadcast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i2c.html">5. I2C</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Thread</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-thread">6.1. Create Thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thread-lock">6.2. Thread Lock</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bme280.html">7. BME280</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iot/index.html">8. Internet of Things</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../basics/index.html">Basic Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Advance Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="random.html">1. Random Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filesystem.html">2. Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timer.html">3. Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">4. Radio Broadcast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i2c.html">5. I2C</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Thread</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-thread">6.1. Create Thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thread-lock">6.2. Thread Lock</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bme280.html">7. BME280</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iot/index.html">8. Internet of Things</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Advance Tutorials</a> &raquo;</li>
+        
+      <li><span class="section-number">6. </span>Thread</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/advance/thread.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="thread">
+<h1><span class="section-number">6. </span>Thread<a class="headerlink" href="#thread" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-what-is-thread admonition">
+<p class="admonition-title">What is Thread?</p>
+<p>A thread is a single sequential control flow in a program. A relatively independent and schedulable execution unit in the process, which is the basic unit of system independent scheduling and dispatching CPU refers to the scheduling unit of the running program.
+Run multiple threads simultaneously in a single program to complete different tasks, called multi-threading.</p>
+</div>
+<div class="section" id="create-thread">
+<h2><span class="section-number">6.1. </span>Create Thread<a class="headerlink" href="#create-thread" title="Permalink to this headline">¶</a></h2>
+<p>First to import the <code class="docutils literal notranslate"><span class="pre">_thread</span></code> module, which will provide the functions needed. Please note that the module name is  <code class="docutils literal notranslate"><span class="pre">_thread</span></code> (the underscore here is not wrong).
+We will also import the  <code class="docutils literal notranslate"><span class="pre">time</span></code> module, so we can use the <code class="docutils literal notranslate"><span class="pre">sleep</span></code> function to introduce some delay in our program.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">_thread</span>
+<span class="kn">import</span> <span class="nn">time</span>
+</pre></div>
+</div>
+<p>Next, we will define the function executed in the thread. Simply loop iteratively 5 times the current running time of printing, each loop will have a certain delay.
+We will use the <code class="docutils literal notranslate"><span class="pre">sleep</span></code> aspect of the <code class="docutils literal notranslate"><span class="pre">time</span></code> module mentioned above to introduce the delay, and the <code class="docutils literal notranslate"><span class="pre">time</span></code> module receives the delay in seconds as input. The pararmeter of <code class="docutils literal notranslate"><span class="pre">delay</span></code> is the delay in seconds for a single iteration loop.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_time</span><span class="p">(</span> <span class="n">threadName</span><span class="p">,</span> <span class="n">delay</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2"> sec&quot;</span> <span class="o">%</span> <span class="p">(</span> <span class="n">threadName</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()[</span><span class="mi">5</span><span class="p">]</span> <span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">:End&quot;</span> <span class="o">%</span><span class="n">threadName</span><span class="p">)</span>
+    <span class="c1"># exit thread</span>
+    <span class="n">_thread</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To start our thread, we simply call the start_new_thread function of the _thread module, specify the first parameter as the _thread module, specify the first parameter as the <code class="docutils literal notranslate"><span class="pre">print_time</span></code> function we defined earlier, and specify it as a 2-tuple corresponding to the thread function parameters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span> <span class="n">print_time</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Thread-1&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">)</span> <span class="p">)</span>
+<span class="n">_thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span> <span class="n">print_time</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Thread-2&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, use the <code class="docutils literal notranslate"><span class="pre">while</span></code> conditional judgment to make the program in an infinite loop without executing any instructions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>The program execution will produce the following results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">4</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">6</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="mi">6</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">8</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">10</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="mi">10</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">12</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">End</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="mi">14</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="mi">18</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="mi">22</span> <span class="n">sec</span>
+<span class="n">Thread</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="n">End</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Multi-threading seems to run in parallel at the same time. In fact, at a certain moment, a CPU core can only perform the tasks of one process.</p></li>
+<li><p>The current multi-process / multi-tasking of computers is actually achieved by accelerating the execution speed of the CPU. Because a CPU can execute hundreds of millions of calculations per second and can switch processes many times, so it can be perceived by humans. In time, it seems that it is actually executing at the same time.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="thread-lock">
+<h2><span class="section-number">6.2. </span>Thread Lock<a class="headerlink" href="#thread-lock" title="Permalink to this headline">¶</a></h2>
+<p>In multithreading, all variables are shared by all threads, so any variable can be modified by any thread. Therefore, the biggest danger of sharing data between threads is that multiple threads change a variable at the same time, and the content is messed up.
+Lets learn the control to access shared resources. Control is necessary to prevent data corruption. In other words, in order to prevent simultaneous access to the object, we need to use the Lock object.</p>
+<p>Thread lock has two states: <cite>Lock</cite> and <cite>Unlock</cite> . It was created in the state of <cite>Unlock</cite> . It has two basic methods，<code class="docutils literal notranslate"><span class="pre">acquire()</span></code> and <code class="docutils literal notranslate"><span class="pre">release()</span></code> .</p>
+<p>When the state of the thread is  <cite>Unlock</cite> , <code class="docutils literal notranslate"><span class="pre">acquire()</span></code> changes the state to <cite>Lock</cite> and returns immediately.
+When the state is <cite>Lock</cite> , <code class="docutils literal notranslate"><span class="pre">acquire()</span></code> blocks until the call to <code class="docutils literal notranslate"><span class="pre">release()</span></code> in another thread changes it to <cite>Unlock</cite> ，and then the <code class="docutils literal notranslate"><span class="pre">acquire()</span></code> call changes it Reset to <cite>Lock</cite> and return.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">release()</span></code> method should only be called in the <cite>Lock</cite> state; It changes the state to <cite>Unlocked</cite> and returns immediately. If you try to release an unlocked lock, it will raise  <cite>RuntimeError</cite> .</p>
+</div>
+<p>Operation result:</p>
+<blockquote>
+<div><p>Thread-1: 2 sec
+Thread-1: 4 sec
+Thread-1: 6 sec
+Thread-1: 8 sec
+Thread-1: 10 sec
+Thread-1:End
+Thread-2: 14 sec
+Thread-2: 18 sec
+Thread-2: 22 sec
+Thread-2: 26 sec
+Thread-2: 30 sec
+Thread-2:End</p>
+</div></blockquote>
+<p>The advantage of locks is to ensure that a certain piece of critical code can only be executed completely by one thread from beginning to end. Of course, there are many disadvantages. First, it prevents multiple threads from executing concurrently. A piece of code that contains a lock can only be used in single-threaded mode Implementation, efficiency is greatly reduced.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="bme280.html" class="btn btn-neutral float-right" title="7. BME280" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="i2c.html" class="btn btn-neutral float-left" title="5. I2C" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>12.1. Digital I/O &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="12.2. Analogue I/O" href="analog_io.html" />
+    <link rel="prev" title="12. Pins" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">12. Pins</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">12.1. Digital I/O</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#digital-input">12.1.1. Digital Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digital-output">12.1.2. Digital output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#external-interruption">12.1.3. External Interruption</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="analog_io.html">12.2. Analogue I/O</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">12. Pins</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">12.1. Digital I/O</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#digital-input">12.1.1. Digital Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digital-output">12.1.2. Digital output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#external-interruption">12.1.3. External Interruption</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="analog_io.html">12.2. Analogue I/O</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Basic Tutorials</a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">12. </span>Pins</a> &raquo;</li>
+        
+      <li><span class="section-number">12.1. </span>Digital I/O</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/basics/io/digital_io.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="digital-i-o">
+<span id="digital-io"></span><h1><span class="section-number">12.1. </span>Digital I/O<a class="headerlink" href="#digital-i-o" title="Permalink to this headline">¶</a></h1>
+<p>This chapter introduces the use of mPython Board I/O pins for digital input and output. These I/O Pins are to be connected to external devices in order to communicate. The mPython Board can expand through the mPython Expansion Board I/O pins to control or read external components or modules.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Except P2, P3, P4, P10 (only digital input), other pins can use digital input and output mode. For details, refers to <a class="reference internal" href="../../../board/hardware.html#mpythonpindesc"><span class="std std-ref">mPython Board Pins Description</span></a> .</p>
+</div>
+<div class="section" id="digital-input">
+<h2><span class="section-number">12.1.1. </span>Digital Input<a class="headerlink" href="#digital-input" title="Permalink to this headline">¶</a></h2>
+<p>First, start with how to read the digital input of the pin. Pressed the built-in Button A of the mPython Board as input:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+
+<span class="n">p5</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>     <span class="c1"># Instantiate MPythonPin and set the Button A pin (P5) to &quot;PinMode.IN&quot; mode</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">p5</span><span class="o">.</span><span class="n">read_digital</span><span class="p">()</span>      <span class="c1"># Read digital input of P5 pin</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;Button_a:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">value</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>   <span class="c1"># Display the read value on the OLED</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                                  <span class="c1"># Refresh</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>                                 <span class="c1"># Clear screen</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At this time, you can press button a to see the readings of “pressed” and “not pressed”. Because the button a circuit is pulled up, the output is high when “not pressed”, and low when “pressed”.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">p5</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Import the mPython module prior to use.</p>
+<p>Instantiate the pin object and set the mode. Here, to use <code class="docutils literal notranslate"><span class="pre">MPythonPin(pin,</span> <span class="pre">mode=PinMode.IN,pull=None)</span></code> class.
+<code class="docutils literal notranslate"><span class="pre">pin</span></code> is needed in order to access. If mode is not specified, then default is <code class="docutils literal notranslate"><span class="pre">PinMode.IN</span></code> . If pull is not specified, then the  default is <code class="docutils literal notranslate"><span class="pre">None</span></code> .</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p5</span><span class="o">.</span><span class="n">read_digital</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use read_digital(), returns the level value of the pin. high level (1), low level (0).</p>
+</div>
+</div>
+<div class="section" id="digital-output">
+<h2><span class="section-number">12.1.2. </span>Digital output<a class="headerlink" href="#digital-output" title="Permalink to this headline">¶</a></h2>
+<p>The following is a simple drive to flash external LED lights:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>     <span class="c1"># Instantiate MPythonPin and set P0 to &quot;PinMode.OUT&quot; mode</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">p0</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>          <span class="c1"># P0 write high level</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>                     <span class="c1">#  delay</span>
+    <span class="n">p0</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>          <span class="c1"># P0 write high level</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>                     <span class="c1">#  delay</span>
+</pre></div>
+</div>
+<div class="admonition-materials-connection-mode admonition">
+<p class="admonition-title">materials, connection mode</p>
+<p>Above you need to use a breadboard, 1 LED light, mPython expansion board, DuPont cable. The positive pole of the LED light is connected to the P0 pin of the control board, and the negative pole of the LED light is connected to the GND of the mPython Board.</p>
+</div>
+<img alt="../images/tutorials/blink.gif" src="../images/tutorials/blink.gif" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">MPythonPin</span></code> Instantiation. <code class="docutils literal notranslate"><span class="pre">mode</span></code> set as <code class="docutils literal notranslate"><span class="pre">PinMode.OUT</span></code> digital output mode.</p>
+</div>
+<p>Write high and low level to P0 pin:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p0</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">p0</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">write_digital(value)</span></code> method to write high and low level to the pin. Where <code class="docutils literal notranslate"><span class="pre">value</span></code> is level value, “1” as high level, “0” as low level.</p>
+</div>
+</div>
+<div class="section" id="external-interruption">
+<h2><span class="section-number">12.1.3. </span>External Interruption<a class="headerlink" href="#external-interruption" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-what-is-interruption admonition">
+<p class="admonition-title">What is interruption?</p>
+<p>In the process of running the program, the system has a situation that must be dealt with by the CPU immediately. At this time, the CPU temporarily suspends the execution of the program and turns to deal with this new situation.
+When there is a need, the CPU must suspend its operation and process other matters, and then go back to execute the suspended thing after processing.</p>
+</div>
+<p>When the input pin changes in level, a hardware interrupt is triggered, and the trigger executes the interrupt processing function. You can define a callback function to do some interrupt response work. The use of pin interrupts is essentially the same as the a and b key interrupts of the control board.</p>
+<p>The following uses the built-in Button A ((P5 pin) of the control panel as an input interrupt. When the Button A is pressed to activate the buzzer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+<span class="kn">import</span> <span class="nn">music</span>                    <span class="c1"># import music module</span>
+<span class="n">p5</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>     <span class="c1"># Instantiate MPythonPin, set P5 as &quot;PinMode.IN&quot; mode</span>
+
+<span class="k">def</span> <span class="nf">BuzzOn</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>                    <span class="c1"># Define interrupt callback function</span>
+    <span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">music</span><span class="o">.</span><span class="n">BA_DING</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">p5</span><span class="o">.</span><span class="n">irq</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="n">Pin</span><span class="o">.</span><span class="n">IRQ_FALLING</span><span class="p">,</span><span class="n">handler</span><span class="o">=</span><span class="n">BuzzOn</span><span class="p">)</span>            <span class="c1"># Set P5 pin for callback interruption function.</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Effect and Time <code class="docutils literal notranslate"><span class="pre">button_a.irq()</span></code> is the same when the button is interrupted, The interruption of button_a is also the method of using <code class="docutils literal notranslate"><span class="pre">Pin.irq</span></code> .</p>
+</div>
+<p>We first instantiate MPythonPin and configure the P5 pin as <code class="docutils literal notranslate"><span class="pre">PinMode.IN</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p5</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Define callback function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">BuzzOn</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+    <span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">music</span><span class="o">.</span><span class="n">BA_DING</span><span class="p">,</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Callback function, <strong>to contain a parameter</strong>, Otherwise it cannot be used, the above  <code class="docutils literal notranslate"><span class="pre">BuzzOn()</span></code> defines the callback function, the parameter is <code class="docutils literal notranslate"><span class="pre">_</span></code>, you can define this parameter arbitrarily.</p>
+</div>
+<p>Finally we need to tell when the pin is triggered and the function to call when an event is detected:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p5</span><span class="o">.</span><span class="n">irq</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="n">Pin</span><span class="o">.</span><span class="n">IRQ_FALLING</span><span class="p">,</span><span class="n">handler</span><span class="o">=</span><span class="n">BuzzOn</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We set P5 to only trigger  <code class="docutils literal notranslate"><span class="pre">Pin.IRQ_FALLING</span></code> on the falling edge (when it changes from high level to low level). Set callabck function
+handler=”define the callback function for interruption handling”. For details, refers to <span class="xref std std-ref">MPythonPin.irq</span> 。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="analog_io.html" class="btn btn-neutral float-right" title="12.2. Analogue I/O" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="12. Pins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>8. Internet of Things &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="8.2.1. MQTT" href="mqtt.html" />
+    <link rel="prev" title="7. BME280" href="../bme280.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../basics/index.html">Basic Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Advance Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../random.html">1. Random Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filesystem.html">2. Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timer.html">3. Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../radio.html">4. Radio Broadcast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../i2c.html">5. I2C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thread.html">6. Thread</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bme280.html">7. BME280</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Internet of Things</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#iot-basics">8.1. IoT basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-birth-of-the-iot">8.1.1. The birth of the IoT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-the-internet-of-things">8.1.2. What is the Internet of Things?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#iot-architecture">8.1.3. IoT architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#iot-tutorial">8.2. IoT tutorial</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mqtt.html">8.2.1. MQTT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="yeelight.html">8.2.2. Yeelight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bigiot.html">8.2.3. BIGIOT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../basics/index.html">Basic Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Advance Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../random.html">1. Random Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filesystem.html">2. Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timer.html">3. Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../radio.html">4. Radio Broadcast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../i2c.html">5. I2C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thread.html">6. Thread</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bme280.html">7. BME280</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Internet of Things</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#iot-basics">8.1. IoT basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-birth-of-the-iot">8.1.1. The birth of the IoT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-the-internet-of-things">8.1.2. What is the Internet of Things?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#iot-architecture">8.1.3. IoT architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#iot-tutorial">8.2. IoT tutorial</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mqtt.html">8.2.1. MQTT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="yeelight.html">8.2.2. Yeelight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bigiot.html">8.2.3. BIGIOT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Advance Tutorials</a> &raquo;</li>
+        
+      <li><span class="section-number">8. </span>Internet of Things</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/advance/iot/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="internet-of-things">
+<h1><span class="section-number">8. </span>Internet of Things<a class="headerlink" href="#internet-of-things" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="iot-basics">
+<h2><span class="section-number">8.1. </span>IoT basics<a class="headerlink" href="#iot-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-birth-of-the-iot">
+<h3><span class="section-number">8.1.1. </span>The birth of the IoT<a class="headerlink" href="#the-birth-of-the-iot" title="Permalink to this headline">¶</a></h3>
+<p>Lets start IoT tutorial by introducing the person who coiled the term “Internet of Things”. The term “Internet of Things”（(IoT) was coined by Kevin Ashton in a speech by Proctor &amp; Gamble in 1999. He is the co-founder of the MIT Auto-ID Lab. He pioneered the use of RFID (for barcode detectors) in the field of supply chain management. He also founded Zensi, a company that produces energy sensing and monitoring technology.
+So, let me first introduce you to a sentence by Kevin Ashton, who wrote this article for the RFID journal in 2009. This will help you understand the Internet of Things from the core.</p>
+<p>If we have a computer that can understand everything - using the data they collected without any help from us - we will be able to track and calculate everything and greatly reduce waste, losses and costs. We know when they need to be replaced, repaired or recalled, and whether they are fresh or past.
+We need to empower computers with their own way of collecting information so they can see, hear and smell the world at will.</p>
+<p>The above Kevin Kevin application will let you understand the ideology behind the development of the Internet of Things. Now let us try to further simplify the term and fundamentally understand the Internet of Things. After this, we will continue to move forward and seek the benefits of the Internet of Things.</p>
+</div>
+<div class="section" id="what-is-the-internet-of-things">
+<h3><span class="section-number">8.1.2. </span>What is the Internet of Things?<a class="headerlink" href="#what-is-the-internet-of-things" title="Permalink to this headline">¶</a></h3>
+<p>When you hear the Internet of Things, what kind of impression will appear in your mind? The English of the Internet of Things is Internet of Things, abbreviated as IoT. The “thing” here refers to all the things around us that can be connected to the network. For example, the clothes you wear, those that you wear.
+Watches, household appliances and cars at home, or the house itself, or even the book you are reading, as long as you can connect to the Internet, they are all “things” of the Internet of Things.</p>
+<p>Just like we use the Internet to transfer information between each other, the Internet of Things is to share information and generate useful information between “things” to share information and generate useful information by connecting to the Internet, and it can operate without human management.
+They can perceive and communicate with each other. Now imagine whether inanimate objects can perceive and interact without any human intervention. Sounds amazing, doesn’t it?</p>
+<div class="figure align-center" id="id1">
+<img alt="../images/tutorials/IoT/IoT.png" src="../images/tutorials/IoT/IoT.png" />
+<p class="caption"><span class="caption-text">what is IoT?</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="iot-architecture">
+<h3><span class="section-number">8.1.3. </span>IoT architecture<a class="headerlink" href="#iot-architecture" title="Permalink to this headline">¶</a></h3>
+<p>The current IoT architecture is usually divided into three layers: the perception layer, the network layer, and the application layer. There are also four-layer architecture, five-layer architecture, and seven-layer architecture. However, we will use the commonly used three-layer architecture for illustration. The icon is as follows:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../images/tutorials/IoT/three-layer-iot-architecture.png"><img alt="../images/tutorials/IoT/three-layer-iot-architecture.png" src="../images/tutorials/IoT/three-layer-iot-architecture.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Three-tier IoT architecture</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="perception-layer">
+<h4><span class="section-number">8.1.3.1. </span>Perception layer<a class="headerlink" href="#perception-layer" title="Permalink to this headline">¶</a></h4>
+<p>Sensors, actuators and edge devices that interact with the environment</p>
+<p>The perception layer is the five senses features of the Internet of Things. It is used to identify objects, perceive objects, collect information, and automatically control. For example, the temperature sensor installed on the air conditioner recognizes that the indoor temperature is higher than 30 degrees. After collecting this information, it turns on automatically. Air conditioning for cooling；This level involves various identification technologies, information collection technologies, and control technologies. Moreover, these technologies are used cross-wise. Some perceptions are single and some are comprehensive. For example, robots integrate various perception systems.
+The most common ones in this layer are various sensors used to replace or extend human senses to complete the perception of the physical world, and also include RFID and two-dimensional code technologies used in the process of enterprise informatization.</p>
+</div>
+<div class="section" id="network-layer">
+<h4><span class="section-number">8.1.3.2. </span>Network layer<a class="headerlink" href="#network-layer" title="Permalink to this headline">¶</a></h4>
+<p>Discover, connect and convert devices through the network and coordinate with the application layer</p>
+<p>The network layer mainly realizes the transmission of information, routing (deciding the way of information transmission) and control (how to control the transmission of information), which is divided into two parts,
+one part is the communication technology of the Internet of Things, and the other is the communication protocol of the Internet of Things. The communication technology is responsible for physically linking things and things and can communicate. The communication protocol is responsible for establishing communication rules and unified formats.</p>
+<p>IoT communication protocols are as many as communication technologies, such as MQTT、DDS、AMQP、XMPP、JMS、REST、CoAP、OPC UA. The network layer is equivalent to the human brain and nerve center, and is mainly responsible for transmitting and processing the information obtained by the perception layer.</p>
+</div>
+<div class="section" id="application-layer">
+<h4><span class="section-number">8.1.3.3. </span>Application layer<a class="headerlink" href="#application-layer" title="Permalink to this headline">¶</a></h4>
+<p>Provide users with professional services and functional data processing and storage</p>
+<p>I understand that the application layer is supported by various communication protocols of the Internet of Things, analyzes the data formed by the Internet of Things at a macro level and feeds back to the perception layer to perform specific control functions, including controlling the coordination between objects and the environment Self-adaptive, collaboration between people and things.
+The personal understanding of the application layer can be divided into two parts, one part is the general Internet of Things platform, built on the cloud platform, can be a kind of IAAS / PASS / SAAS or a hybrid.
+At present, many enterprises have launched IoT platforms, such as Root Internet, Baidu Cloud Tiangong, Tencent QQ IoT Intelligent Hardware Open Platform, Ali Link IoT Platform, SAP Leonardo, Amazon AWS, Microsoft Azure, Google Cloud IoT Core.
+The other part is to generate specific applications on this general Internet of Things platform. These applications are similar to mobile phone apps. Specific applications are how to specifically control how these things collect information and how to control things. These specific application scenarios include：</p>
+<ul class="simple">
+<li><p>Personal applications: wearable devices, sports and fitness, health, entertainment applications, sports, toys, parent-child, caring for the elderly；</p></li>
+<li><p>Smart home: home automation, smart routing, security monitoring, smart kitchen, home robot, sensor detection, smart pet, smart garden, tracking device；</p></li>
+<li><p>Intelligent transportation: Internet of vehicles, smart bicycles / motorcycles (helmet equipment), unmanned driving, drones, space exploration；</p></li>
+<li><p>Enterprise applications: healthcare, retail, payment / credit card, smart office, modern agriculture, building construction；</p></li>
+<li><p>Industrial Internet: smart manufacturing, energy industry, supply chain, industrial robots, industrial wearable devices (smart helmets, etc.)；</p></li>
+<li><p>From the application level, it can be seen that the Internet of Things can really be used everywhere and everywhere. The ultimate goal of the Internet of Things is to achieve the link of any object at any time and any place, to help humans have “a comprehensive perception ability, thorough cognitive ability and intelligent processing ability” in the physical world.</p></li>
+</ul>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../images/tutorials/IoT/IoT_smarthome.png"><img alt="../images/tutorials/IoT/IoT_smarthome.png" src="../images/tutorials/IoT/IoT_smarthome.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text">Automatically control the environment according to the human condition-take smart home as an example</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="iot-tutorial">
+<h2><span class="section-number">8.2. </span>IoT tutorial<a class="headerlink" href="#iot-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>At present, there are multiple protocols such as MQTT、REST/HTTP、CoAP etc. There are also many integrated IoT platforms that can be accessed. This chapter focuses on how to access an IoT platform, IoT applications, and how to display the communication between objects.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mqtt.html">8.2.1. MQTT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yeelight.html">8.2.2. Yeelight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bigiot.html">8.2.3. BIGIOT</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="mqtt.html" class="btn btn-neutral float-right" title="8.2.1. MQTT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../bme280.html" class="btn btn-neutral float-left" title="7. BME280" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

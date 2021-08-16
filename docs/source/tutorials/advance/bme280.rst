@@ -1,0 +1,41 @@
+BME280
+===============
+
+BME280 is an environmental sensor with temperature, humidity, and air pressure integrated. High precision, multi-functional, small size and other characteristics. This sensor is ideal for all kinds of weather / environmental sensing.
+Accuracy for HUmidity is ± 3%, absolute air pressure is ± 1 hPa, temperature is ± 1.0 ° C. Since the pressure changes with altitude, the pressure measurement result is very good, you can also use it as an altimeter with ± 1 meter or higher accuracy！
+
+.. Important:: 
+
+    The BME280 chip is built-in in the mPython Board but the default configuration is without this BME280 environmental sensor. Then, you can the BME280 module to connect to it via the mPython Expansion Board.
+    The I2C pin is merged into the bus, that is P19(SCL)、P20(SDA).
+    
+Get temperature, humidity, pressure
+----------------------------
+
+An example of obtaining BME280 temperature, humidity, air pressure and displaying it on the OLED screen::
+
+    from mpython import *              # import the mpython module
+
+    while True:   
+        oled.fill(0)                   # clear screen
+        oled.DispChar("BME280",10,0)  
+        oled.DispChar("温度：%0.1f C" % bme280.temperature(),10,20)   # obtain BME280 temperature in Celsius
+        oled.DispChar("湿度：%0.1f %%" % bme280.humidity(),10,34)     # obtain BME280 humidity in % 
+        oled.DispChar("压强：%0.1f KPa" % (bme280.pressure()/1000),10,48)  # Get BME280 pressure in Pa, here we show that except 1000 go to KPa
+        oled.show()   # refresh screen
+        sleep(2)      # delay 2 seconds
+
+The ``BME280`` class has been instantiated by the mPython Board, just use the  ``BME280`` object. To obtain the temperature value, use the ``temperature()`` function in Celsius
+To obtain the humidity value, use``humidity()`` , in %. To obtain the atmospheric pressure, use ``pressure()`` , in Pa(Pa).
+
+
+
+.. image:: /../images/classic/bme280.png
+    :align: center
+    :scale: 80 %
+
+
+mPython Expansion Board applications
+---------------------
+
+Here you have learned how to get the weather data of BME280. Further thinking, how to use meteorological data and how to send it? You can use the http Server you learned earlier for remote access or use the mqtt protocol to push data to the server.

@@ -1,9 +1,8 @@
-.. _xbot_micropython_lib:
-
-xController MicroPython API
+MicroPython Library
 ====================
 
 .. toctree::
+   :maxdepth: 1
 
    btn_onboard.rst
    color_sensor.rst

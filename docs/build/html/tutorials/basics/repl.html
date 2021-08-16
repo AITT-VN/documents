@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. REPL &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. Display" href="oled.html" />
+    <link rel="prev" title="Basic Tutorials" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. REPL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#serial-connection">1.1. Serial connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-repl">1.2. Use REPL</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#line-editor">1.2.1. Line Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enter-history">1.2.2. Enter History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tab-key">1.2.3. Tab Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#line-continue-and-auto-indent">1.2.4. Line continue and auto indent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paste-mode">1.2.5. Paste mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-control-commands">1.2.6. Other control commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. REPL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#serial-connection">1.1. Serial connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-repl">1.2. Use REPL</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#line-editor">1.2.1. Line Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enter-history">1.2.2. Enter History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tab-key">1.2.3. Tab Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#line-continue-and-auto-indent">1.2.4. Line continue and auto indent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paste-mode">1.2.5. Paste mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-control-commands">1.2.6. Other control commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Basic Tutorials</a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>REPL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/basics/repl.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="repl">
+<h1><span class="section-number">1. </span>REPL<a class="headerlink" href="#repl" title="Permalink to this headline">¶</a></h1>
+<p>One of the main advantages of using MicroPython is the interactive REPL. REPL (read-eval-print loop) stands for read-evaluation-output loop.
+REPL is very helpful for learning a new programming language, because it can immediately respond to programs written by beginners, which means that you execute the code and can view the results immediately, avoiding the cumbersome steps to compile and upload.
+Install the cp2104 serial driver in order for REPL to operate on windows on this this mPython Board.</p>
+<div class="section" id="serial-connection">
+<h2><span class="section-number">1.1. </span>Serial connection<a class="headerlink" href="#serial-connection" title="Permalink to this headline">¶</a></h2>
+<p>To access via USB-serial, you need to use serial terminal software. On Windows such as kitty, xshell are good choices. Set the serial port baud rate to 115200, you can start playing MicroPython. To access via USB-serial, you need to use serial terminal software.</p>
+<p>After establishing the connection through the serial port, you can test whether it is working by pressing the Enter key a few times to test whether it is working properly. If it works, you can see the Python REPL prompt, which is expressed as <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> 。</p>
+</div>
+<div class="section" id="use-repl">
+<h2><span class="section-number">1.2. </span>Use REPL<a class="headerlink" href="#use-repl" title="Permalink to this headline">¶</a></h2>
+<p>Once prompted, you can start trying! After pressing Enter, you can type anything at the prompt.
+MicroPython will run the code you entered and print the results (if any)；If the text entered is wrong, an error message will be printed.</p>
+<p>Try typing the following at the prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello mPython&#39;</span><span class="p">)</span>
+<span class="go">hello mPython</span>
+</pre></div>
+</div>
+<p>Please note that you do not need to type <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> arrows, they indicate that you should type text after this prompt, and the next line is the content of the response.</p>
+<p>If you already know some python, you can try some basic commands now. E.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+<span class="go">0.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">12</span><span class="o">*</span><span class="mi">34</span>
+<span class="go">408</span>
+</pre></div>
+</div>
+<p>You can try to download mPython to display characters on the OLED display:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s1">&#39;hello,world!&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">oled.DispChar(str,x,y)</span></code>   <code class="docutils literal notranslate"><span class="pre">str</span></code> is the character string to be displayed， <code class="docutils literal notranslate"><span class="pre">x</span></code> 、<code class="docutils literal notranslate"><span class="pre">y</span></code> are the x and y coordinates of the display starting point。
+Then use <code class="docutils literal notranslate"><span class="pre">oled.show()</span></code> to refresh the screen, the string can be displayed on the OLED display. You can try to display arbitrary strings in other locations.</p>
+</div>
+<div class="section" id="line-editor">
+<h3><span class="section-number">1.2.1. </span>Line Editor<a class="headerlink" href="#line-editor" title="Permalink to this headline">¶</a></h3>
+<p>You can use the left and right arrow keys to move the cursor to edit the currently entered line；Press the Home key or ctrl-A to move the cursor to the beginning of the line, press End or ctrl-E to move to the end of the line; the Delete key or backspace key is used to delete.</p>
+</div>
+<div class="section" id="enter-history">
+<h3><span class="section-number">1.2.2. </span>Enter History<a class="headerlink" href="#enter-history" title="Permalink to this headline">¶</a></h3>
+<p>REPL will remember a certain amount of the first few lines of text you entered (up to 8 lines on ESP32).
+To call the previous line, use the up and down arrow keys.</p>
+</div>
+<div class="section" id="tab-key">
+<h3><span class="section-number">1.2.3. </span>Tab Key<a class="headerlink" href="#tab-key" title="Permalink to this headline">¶</a></h3>
+<p>Tab key to view the list of all members in the module. This is very useful for finding out the functions and methods that a module or object has.
+Suppose you imported the machine in the above example and then typed  <code class="docutils literal notranslate"><span class="pre">.</span></code> and then press the Tab key to view the list of all members of the machine module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">machine</span><span class="o">.</span>
+<span class="go">__class__       __name__        ADC             DAC</span>
+<span class="go">DEEPSLEEP       DEEPSLEEP_RESET                 EXT0_WAKE</span>
+<span class="go">EXT1_WAKE       HARD_RESET      I2C             PIN_WAKE</span>
+<span class="go">PWM             PWRON_RESET     Pin             RTC</span>
+<span class="go">SLEEP           SOFT_RESET      SPI             Signal</span>
+<span class="go">TIMER_WAKE      TOUCHPAD_WAKE   Timer           TouchPad</span>
+<span class="go">UART            ULP_WAKE        WDT             WDT_RESET</span>
+<span class="go">deepsleep       disable_irq     enable_irq      freq</span>
+<span class="go">idle            mem16           mem32           mem8</span>
+<span class="go">reset           reset_cause     sleep           time_pulse_us</span>
+<span class="go">unique_id       wake_reason</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">machine</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="line-continue-and-auto-indent">
+<h3><span class="section-number">1.2.4. </span>Line continue and auto indent<a class="headerlink" href="#line-continue-and-auto-indent" title="Permalink to this headline">¶</a></h3>
+<p>Something you type will need to “continue”, that is, more lines of text are needed to generate the correct Python statement. under these circumstances,
+The prompt will change to <code class="docutils literal notranslate"><span class="pre">...</span></code> and the cursor will automatically be indented by the correct amount so that you can immediately start typing the next line.
+Try this by defining the following function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">toggle</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="n">p</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">value</span><span class="p">())</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>In the above, you need to press the Enter key three times in a row to complete the compound statement (that is, there are only dots on the three lines). Another way to complete the compound statement is to press the backspace key to reach the beginning of the line, and then press Enter. (If you make a mistake and want to quit, then press ctrl-C, all lines will be ignored.)</p>
+<p>You just defined the function function to flip the pin level. The pin object you created earlier should still exist.
+(If not, you need to recreate it), you can use the following command to flip the LED:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">toggle</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s flip the LEDs in a loop (if you don’t have LEDs, then you can print some text instead of calling toggle to see the effect)：</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">time</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">toggle</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>This will flip the LED at 1 Hz (on half a second, off half a second). To stop switching press <code class="docutils literal notranslate"><span class="pre">ctrl-C</span></code> , this will cause keyboard interrupt exception and exit the loop.</p>
+</div>
+<div class="section" id="paste-mode">
+<h3><span class="section-number">1.2.5. </span>Paste mode<a class="headerlink" href="#paste-mode" title="Permalink to this headline">¶</a></h3>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ctrl-E</span></code> to enter the special paste mode, you can copy and paste a large block of text into the REPL. If you press ctrl-E, you will see the paste mode prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">paste</span> <span class="n">mode</span><span class="p">;</span> <span class="n">Ctrl</span><span class="o">-</span><span class="n">C</span> <span class="n">to</span> <span class="n">cancel</span><span class="p">,</span> <span class="n">Ctrl</span><span class="o">-</span><span class="n">D</span> <span class="n">to</span> <span class="n">finish</span>
+<span class="o">===</span>
+</pre></div>
+</div>
+<p>You can then paste (or type) your text. Please note that there are no special keys or commands that work in paste mode (eg Tab or Backspace),
+they are just accepted as they are. Press``ctrl-D`` to finish entering text and execute.</p>
+</div>
+<div class="section" id="other-control-commands">
+<h3><span class="section-number">1.2.6. </span>Other control commands<a class="headerlink" href="#other-control-commands" title="Permalink to this headline">¶</a></h3>
+<p>There are four other control commands：</p>
+<ul class="simple">
+<li><p>Ctrl-A on the blank line will enter the original REPL mode. This is similar to permanent paste mode, except that characters are not echoed.</p></li>
+<li><p>Ctrl-B in the blank space goes to normal REPL mode.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-C</span></code> cancels any input or interrupts the currently running code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code> on the blank line will perform a soft restart.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="oled.html" class="btn btn-neutral float-right" title="2. Display" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Basic Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>12.2. Analogue I/O &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Advance Tutorials" href="../../advance/index.html" />
+    <link rel="prev" title="12.1. Digital I/O" href="digital_io.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">12. Pins</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="digital_io.html">12.1. Digital I/O</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">12.2. Analogue I/O</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#analog-input">12.2.1. Analog Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#analog-output">12.2.2. Analog output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../network/index.html">10. Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">12. Pins</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="digital_io.html">12.1. Digital I/O</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">12.2. Analogue I/O</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#analog-input">12.2.1. Analog Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#analog-output">12.2.2. Analog output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Basic Tutorials</a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">12. </span>Pins</a> &raquo;</li>
+        
+      <li><span class="section-number">12.2. </span>Analogue I/O</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/basics/io/analog_io.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="analogue-i-o">
+<h1><span class="section-number">12.2. </span>Analogue I/O<a class="headerlink" href="#analogue-i-o" title="Permalink to this headline">¶</a></h1>
+<p>This chapter introduces the use of mPython Board pins for analog input and output. These pins are for communication with external devices when connected. The mPython Board can expand through the mPython Expansion Board I/O pins to control or read external components or modules.。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>See <a class="reference internal" href="../../../board/hardware.html#mpythonpindesc"><span class="std std-ref">mPython Board Pins Description</span></a> , for analogue pins available details.</p>
+</div>
+<div class="section" id="analog-input">
+<span id="analog-in"></span><h2><span class="section-number">12.2.1. </span>Analog Input<a class="headerlink" href="#analog-input" title="Permalink to this headline">¶</a></h2>
+<p>The available analog input pins are <strong>P0</strong>、<strong>P1</strong>、<strong>P2</strong>、<strong>P3</strong>、P4、P10, of which P4, P10 are used for control of mPython Board built-in light, Microphone sensors.</p>
+<div class="admonition-what-s-analog-input admonition">
+<p class="admonition-title">What’s analog input?</p>
+<p>Analog input is to convert analog signal to digital signal, referred to as ADC.</p>
+</div>
+<p>To use P0 pin to read the analog input:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>     <span class="c1"># Instantiation mPythonPin, set P0 as &quot;PinMode.ANALOG&quot; mode</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">p0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>          <span class="c1"># Read P0 pin analog</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;analog:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">value</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">MPythonPin</span></code> Instantiation. <code class="docutils literal notranslate"><span class="pre">mode</span></code> set as <code class="docutils literal notranslate"><span class="pre">PinMode.ANALOG</span></code> analog input mode.</p>
+</div>
+<p>Read analog unput:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p0</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Width of ADC sampling data is 12bit, the full scale is 4095。</p>
+</div>
+<div class="section" id="ext-crocodile-clip">
+<h3><span class="section-number">12.2.1.1. </span>EXT Crocodile clip<a class="headerlink" href="#ext-crocodile-clip" title="Permalink to this headline">¶</a></h3>
+<p>Next, you can connect the resistive components (such as photosensitive and thermistor) to the <code class="docutils literal notranslate"><span class="pre">EXT</span></code> and <code class="docutils literal notranslate"><span class="pre">GND</span></code> soldering pads of the mPython Board through the alligator clip wire to measure the change of the input value of the sensor ……</p>
+<p>EXT connection is the P3 pin on the mPython Board:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+
+    <span class="n">p3</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">ANALOG</span><span class="p">)</span>     <span class="c1"># Instantiation MPythonPin, set P3 as &quot;PinMode.ANALOG&quot; mode</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">p3</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>          <span class="c1"># read EXT(P3) pin analog value</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">DispChar</span><span class="p">(</span><span class="s2">&quot;analog:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">value</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="n">oled</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../images/tutorials/ext.png"><img alt="../images/tutorials/ext.png" class="align-center" src="../images/tutorials/ext.png" style="width: 180px;" /></a>
+</div>
+</div>
+<div class="section" id="analog-output">
+<h2><span class="section-number">12.2.2. </span>Analog output<a class="headerlink" href="#analog-output" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-what-s-analog-output admonition">
+<p class="admonition-title">What’s analog output?</p>
+<p>Circuit board pins cannot process analog signals output of audio amplifiers - by modulating the voltage on the pins. As these pins only enable the full 3.3V output, or low level of 0V.
+However, it is still possible to control the brightness of the LED or the speed of the motor by turning the voltage on and off very quickly, and to control its ON and OFF timing.
+This technique is called pulse width modulation (PWM), which is the method of <code class="docutils literal notranslate"><span class="pre">write_analog</span></code> .</p>
+</div>
+<p>PWM signal for certain voltage output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span> <span class="o">*</span>           <span class="c1"># import mpython module</span>
+
+<span class="n">p0</span><span class="o">=</span><span class="n">MPythonPin</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">PinMode</span><span class="o">.</span><span class="n">PWM</span><span class="p">)</span>     <span class="c1"># Instantiation MPythonPin, set P0 as&quot;PinMode.PWM&quot; mode</span>
+
+<span class="n">voltage</span><span class="o">=</span><span class="mf">2.0</span>                      <span class="c1"># 电压2V</span>
+<span class="n">p0</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">voltage</span><span class="o">/</span><span class="mf">3.3</span><span class="o">*</span><span class="mi">1023</span><span class="p">))</span>    <span class="c1">#Compute the duty ratio of the corresponding voltage PWM</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">value</span></code> in <code class="docutils literal notranslate"><span class="pre">write_analog(value)</span></code> is the duty ratio of PWM signal。</p></li>
+<li><p>Since the I/O pin voltage is 3.3V, we need the output voltage to be 2V. Therefore, the mapping value is 2/3 * 1023.</p></li>
+<li><p>Since the calculated number is a floating point number, we also need to use <code class="docutils literal notranslate"><span class="pre">int()</span></code> to convert to an integer.</p></li>
+</ul>
+</div>
+<img alt="../images/tutorials/pwm.png" src="../images/tutorials/pwm.png" />
+<p>Observe three different PWM signals on the above cahrt. All have the same period (hence frequency), but with different duty ratio.</p>
+<ul class="simple">
+<li><p>The first one produced is <code class="docutils literal notranslate"><span class="pre">write_analog(511)</span></code> because it has a duty cycle of exactly 50% - the power is in half the time and half the time. The result is that the total energy of the signal is the same, as if it were 1.65V instead of 3.3V.</p></li>
+<li><p>The second signal has a 25% duty cycle and written as <code class="docutils literal notranslate"><span class="pre">write_analog(255)</span></code> . It has a similar effect as 0.825V output.</p></li>
+<li><p>The third signal has a 75% duty cycle and can generate <code class="docutils literal notranslate"><span class="pre">write_analog(767)</span></code>.Its energy is three times that of the second signal, which is equivalent to output 2.475V on the second pin.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../advance/index.html" class="btn btn-neutral float-right" title="Advance Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="digital_io.html" class="btn btn-neutral float-left" title="12.1. Digital I/O" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

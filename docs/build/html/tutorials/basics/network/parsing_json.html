@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>10.6. Parsing JSON &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="11. Serial Port" href="../uart.html" />
+    <link rel="prev" title="10.5. HTTP" href="http.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html">
+          
+
+          
+            
+            <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">10. Network</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="network_basics.html">10.1. Network Basic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tcpip.html">10.2. Introduction to TCP/IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tcp.html">10.3. Socket - TCP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="udp.html">10.4. Socket - UDP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="http.html">10.5. HTTP</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">10.6. Parsing JSON</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#network-access-to-parse-json">10.6.1. Network access to parse JSON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Basic Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../repl.html">1. REPL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oled.html">2. Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../neopixel.html">3. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buzz.html">4. Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../buttons.html">5. Key Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touchpad.html">6. Touchpad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound.html">7. Microphone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../light.html">8. Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../accelerometer.html">9. Accelerometer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">10. Network</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="network_basics.html">10.1. Network Basic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tcpip.html">10.2. Introduction to TCP/IP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tcp.html">10.3. Socket - TCP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="udp.html">10.4. Socket - UDP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="http.html">10.5. HTTP</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">10.6. Parsing JSON</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#network-access-to-parse-json">10.6.1. Network access to parse JSON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../uart.html">11. Serial Port</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/index.html">12. Pins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../advance/index.html">Advance Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Basic Tutorials</a> &raquo;</li>
+        
+          <li><a href="index.html"><span class="section-number">10. </span>Network</a> &raquo;</li>
+        
+      <li><span class="section-number">10.6. </span>Parsing JSON</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/basics/network/parsing_json.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="parsing-json">
+<h1><span class="section-number">10.6. </span>Parsing JSON<a class="headerlink" href="#parsing-json" title="Permalink to this headline">¶</a></h1>
+<p>JSON (JavaScript Object Notation, JS Object Notation) is a lightweight data exchange format. It uses a text format that is completely independent of the programming language to store and represent data, which is easy for humans to read and write, and also easy for machine analysis and generation, so it is widely used in the Internet.</p>
+<p>In python, json and dict are very similar, both are in the form of key-value, and json and dict can also be easily converted between each other through the: <code class="xref py py-mod docutils literal notranslate"><span class="pre">json</span></code> module.</p>
+<ul class="simple">
+<li><p>json：Is a data format, is a pure string, is essentially a file organization, such as your familiarntxt、csv、doc、docx、xls、xlsx files, etc.</p></li>
+<li><p>dict：is a data structure, such as list, set, string str, array。</p></li>
+</ul>
+<div class="section" id="network-access-to-parse-json">
+<h2><span class="section-number">10.6.1. </span>Network access to parse JSON<a class="headerlink" href="#network-access-to-parse-json" title="Permalink to this headline">¶</a></h2>
+<p>The http protocol uses a request / response model, the browser or client sends a request, and the server responds。</p>
+<p>For example, if you want to obtain the IP address and other information from the open interface <a class="reference external" href="http://ip-api.com/json/">http://ip-api.com/json/</a> , we enter the address directly in the browser, you can see：</p>
+<a class="reference internal image-reference" href="../images/tutorials/httpjson.png"><img alt="../images/tutorials/httpjson.png" class="align-center" src="../images/tutorials/httpjson.png" /></a>
+<p>This is a JSON array containing information such as IP address. By accessing this URL, we can get the information and return the string TEXT, and use ujson.loads(str) to give the string to the generated DICT dictionary type, we can directly read the key （key）to obtain the corresponding value（value）.</p>
+<a class="reference internal image-reference" href="../images/tutorials/json.jpg"><img alt="../images/tutorials/json.jpg" class="align-center" src="../images/tutorials/json.jpg" /></a>
+<p>We analyze it step by step in the interactive programming environment of REPL and can view the results more intuitively.</p>
+<p>First, import mpython、json、urequests modules:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mpython</span> <span class="kn">import</span><span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">urequests</span>
+</pre></div>
+</div>
+<p>Connect to WiFi network, then set up your WiFi ID and Password:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mywifi</span><span class="o">=</span><span class="n">wifi</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mywifi</span><span class="o">.</span><span class="n">connectWiFi</span><span class="p">(</span><span class="s1">&#39;yourESSID&#39;</span><span class="p">,</span> <span class="s1">&#39;yourpassword&#39;</span><span class="p">)</span>
+<span class="go">Connecting to network...</span>
+<span class="go">Connecting to network...</span>
+<span class="go">Connecting to network...</span>
+<span class="go">WiFi Connection Successful,Network Config:(&#39;&#39;,&#39;&#39;,&#39;&#39;,&#39;&#39;)</span>
+</pre></div>
+</div>
+<p>Add request address, send GET request, get data returned by third-party interface of webpage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url_ip</span> <span class="o">=</span><span class="s2">&quot;http://ip-api.com/json/&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rsp</span><span class="o">=</span><span class="n">urequests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url_ip</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The obtained data is returned in JSON data text format, print out, we can see the returned data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipJson</span><span class="o">=</span><span class="n">rsp</span><span class="o">.</span><span class="n">text</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">jpJson</span><span class="p">)</span>
+<span class="go">{&quot;as&quot;:&quot;AS56040 China Mobile Communications Corporation&quot;,&quot;city&quot;:&quot;Guangzhou&quot;,&quot;country&quot;:&quot;China&quot;,&quot;countryCode&quot;:&quot;CN&quot;,&quot;isp&quot;:&quot;China Mobile communications corporation&quot;,&quot;lat&quot;:23.1292,&quot;lon&quot;:113.264,&quot;org&quot;:&quot;China Mobile&quot;,&quot;query&quot;:&quot;120.234.223.173&quot;,&quot;region&quot;:&quot;GD&quot;,&quot;regionName&quot;:&quot;Guangdong&quot;,&quot;status&quot;:&quot;success&quot;,&quot;timezone&quot;:&quot;Asia/Shanghai&quot;,&quot;zip&quot;:&quot;&quot;}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>rsp.text is returned as JSON data text format.</p>
+</div>
+<p>Convert the obtained data to DICT dictionary type, print out, we can see the returned data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">ipJson</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ipDict</span><span class="p">)</span>
+<span class="go">{&#39;countryCode&#39;: &#39;CN&#39;, &#39;lon&#39;: 113.264, &#39;regionName&#39;: &#39;Guangdong&#39;, &#39;query&#39;: &#39;120.234.223.173&#39;, &#39;city&#39;: &#39;Guangzhou&#39;, &#39;status&#39;: &#39;success&#39;, &#39;org&#39;: &#39;China Mobile&#39;, &#39;timezone&#39;: &#39;Asia/Shanghai&#39;, &#39;region&#39;: &#39;GD&#39;, &#39;lat&#39;: 23.1292, &#39;isp&#39;: &#39;China Mobile communications corporation&#39;, &#39;as&#39;: &#39;AS56040 China Mobile Communications Corporation&#39;, &#39;zip&#39;: &#39;&#39;, &#39;country&#39;: &#39;China&#39;}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>json.loads(str) parse JSON string and return object。</p>
+</div>
+<p>To type the key（key）in the DICT dictionary to get the corresponding information value（value），such as city, IP address:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span>
+<span class="go">&#39;Guangzhou&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ipDict</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">]</span>
+<span class="go">&#39;120.234.223.173&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../uart.html" class="btn btn-neutral float-right" title="11. Serial Port" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="http.html" class="btn btn-neutral float-left" title="10.5. HTTP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

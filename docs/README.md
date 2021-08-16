@@ -50,6 +50,6 @@ HƯỚNG DẪN CẬP NHẬT HTML READTHEDOCS SAU KHI THAY ĐỔI NỘI DUNG CÁC
 
 Yêu cầu: Kiểm tra xem đã cài đặt sphinx chưa, nếu chưa thì chạy lệnh cài đặt pip install sphinx
 
-Bước 1: Trỏ CMD vào trong thư mục dóc như trên
+Bước 1: Trỏ CMD vào trong thư mục docs như trên
 
 Bước 2: Render file html: make html

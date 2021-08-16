@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>led_onboard — Onboard LED &mdash; OhStem Product Documents 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OhStem Product Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/index.html">xController Board Contents</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Micropython API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">xController MicroPython API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/masterarduino-api/led_onboard.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-led_onboard">
+<span id="led-onboard-onboard-led"></span><h1><a class="reference internal" href="../micropython-api/led_onboard.html#module-led_onboard" title="led_onboard: Onboard LED"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code></a> — Onboard LED<a class="headerlink" href="#module-led_onboard" title="Permalink to this headline">¶</a></h1>
+<p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">led_onboard</span></code></p>
+<p>xController được tích hợp sẵn 2 đèn LED đa màu RGB trên board. Đèn LED RGB là đèn LED đặc biệt, có thể phát sáng với nhiều màu khác nhau (lên đến 16 triệu màu). Màu của đèn LED được tổng hợp từ 3 đèn màu đỏ (Red), xanh lục (Green), xanh lam (Blue) bên trong.</p>
+<p>Các LED màu này có độ sáng từ 0 đến 255. Để thay đổi màu đèn LED RGB, chúng ta sẽ thay đổi độ sáng của 3 LED màu này.</p>
+<a class="reference internal image-reference" href="../_images/led_RGB1.png"><img alt="../_images/led_RGB1.png" src="../_images/led_RGB1.png" style="width: 400px;" /></a>
+<div class="section" id="function">
+<h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="led_onboard.led_onboard.show">
+<span class="sig-prename descclassname"><span class="pre">led_onboard.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#led_onboard.led_onboard.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hiển thị đèn led trên mạch xController, với các tham số:</p>
+<blockquote>
+<div><ul>
+<li><p><em>index</em> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>0</em> : Cả hai LED</p></li>
+<li><p><em>1</em> : LED bên trái</p></li>
+<li><p><em>2</em> : LED bên phải.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><em>color</em> : Có thể sử dụng 2 hệ màu là RGB hoặc HEX.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>RGB</em> : (Red,Green,Blue) với phạm vi mỗi tham số là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">255</span></code>. Nếu bằng <code class="docutils literal notranslate"><span class="pre">0</span></code> tương ứng không có thành phần màu và nếu bằng <code class="docutils literal notranslate"><span class="pre">255</span></code> trương ứng thành phần màu cao nhất.</p></li>
+<li><p><em>HEX</em> : hex_to_rgb(‘#0000ff’)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-prename descclassname"><span class="pre">led_onboard.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">0</span></em>, <em class="sig-param"><span class="pre">(0</span></em>, <em class="sig-param"><span class="pre">0</span></em>, <em class="sig-param"><span class="pre">0)</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tắt LED</p>
+</dd></dl>
+
+</div>
+<div class="section" id="sample-code">
+<h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
+<p>Bật tắt hai LED Onboard</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">hex_to_rgb</span><span class="p">(</span><span class="s1">&#39;#0000ff&#39;</span><span class="p">))</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

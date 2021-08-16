@@ -38,8 +38,8 @@ xController Board materials
    :maxdepth: 2
    :caption: xController Micropython Tutorial
 
-   tutorials/basics/index.rst
-   tutorials/advance/index.rst
+   library/micropython-api/index.rst
+   library/arduino-api/index.rst
 
 ---------
 
@@ -47,8 +47,8 @@ xController Board materials
    :maxdepth: 2
    :caption: xController Arduino Tutorial
 
-   tutorials/basics/index.rst
-   tutorials/advance/index.rst
+   library/micropython-api/index.rst
+   library/arduino-api/index.rst
 
 ---------
 

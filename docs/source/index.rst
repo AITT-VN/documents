@@ -6,7 +6,7 @@ Ohstem xin chào tất cả các bạn!
 xBuild Creator Kit là bộ kit được thiết kế dành cho giáo dục STEM, giúp các em làm quen với thế giới lập trình và điện tử một cách dễ dàng thông qua các ứng dụng thực tế. Bộ kit có thể được lập trình được bằng ngôn ngữ khối lệnh (cho các em từ 8-12 tuổi) hoặc ngôn ngữ nâng cao như Arduino, MicroPython (cho các lứa tuổi cao hơn).
 
 |
-.. image:: images/xBuild.png
+.. image:: images/xBuild.jpg
    :width: 800
    :align: center
 |

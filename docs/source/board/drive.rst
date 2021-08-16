@@ -10,13 +10,13 @@ Driver download
     
     Bước 3. Click vào INSTALL:
 
-    .. image:: /./images/driver-1.png
+    .. image:: images/driver-1.png
         :width: 400
         :align: center
 
     Bước 4. Sau khi cài đặt xong, màn hình sẽ hiển thị: “The drive is successfully Pre-install in advance” như hình. Lúc này, bạn hãy nhấn vào “OK” và tắt app.
 
-    .. image:: /./images/driver-2.png
+    .. image:: images/driver-2.png
         :width: 400
         :align: center
 
@@ -24,7 +24,7 @@ Driver download
 
         Dành cho người dùng hệ điều hành Windows: Bạn có thể vào phần Device Manager. Trong phần Ports (COM & LPT), bạn sẽ thấy một cổng COM mới mỗi khi kết nối USB với xController. Cổng này sẽ biến mất khi rút cáp USB ra.
 
-        .. image:: /./images/driver-3.png
+        .. image:: images/driver-3.png
             :width: 400
             :align: center
 

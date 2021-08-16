@@ -10,7 +10,7 @@ xController được tích hợp sẵn 2 đèn LED đa màu RGB trên board. Đ�
 
 Các LED màu này có độ sáng từ 0 đến 255. Để thay đổi màu đèn LED RGB, chúng ta sẽ thay đổi độ sáng của 3 LED màu này.
 
-.. image:: images/led_RGB.png
+.. image:: /./images/micropython-api/led_RGB.png
     :width: 400
     :align: center
 

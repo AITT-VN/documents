@@ -7,6 +7,6 @@ Sử dụng công cụ nạp firmware tại trang `Phần mềm cài đặt Ohst
 
 ---------
 
-.. image:: images/burn-fw-1.png
+.. image:: /./images/burn-fw-1.png
     :width: 800
     :align: center

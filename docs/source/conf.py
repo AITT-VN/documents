@@ -52,6 +52,11 @@ html_theme = 'sphinx_rtd_theme' # pip3 install sphinx_rtd_theme
 
 html_logo = 'images/logo-ohstem.png'
 
+# The name of an image file (within the static path) to use as favicon of the
+# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# pixels large.
+html_favicon = 'images/favicon.ico'
+
 html_theme_options = {
     'canonical_url': '',
     #'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
@@ -60,7 +65,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
     'vcs_pageview_mode': '',
-    # 'style_nav_header_background': 'white',
+    'style_nav_header_background': 'white',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,

@@ -22,7 +22,7 @@ Function
             + *Bài hát* : ``BIRTHDAY, TWINKLE, JINGLE_BELLS, WHEEL_ON_BUS, FUR_ELISE,CHASE,JUMP_UP,jUMP_DOWN,POWER_UP,POWER_DOWN``
             + *Tone* : Đây là các nốt trong nhạc lý:
 
-            .. image:: images/speaker.png
+            .. image:: images/speaker.jpg
 
         - *wait* : Nếu bằng ``True`` thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là ``False``.
         - *loop* :

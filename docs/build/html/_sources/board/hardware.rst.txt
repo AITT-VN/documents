@@ -3,7 +3,7 @@ Hardware
 
 xController được thiết kế bởi Ohstem với khả năng lập trình đa nền tảng như Block, Arduino, MicroPython.
 
-.. image:: images/xBuild-2.png
+.. image:: images/xBuild-2.jpg
   :width: 600
   :align: center
 
@@ -56,7 +56,7 @@ Kích thước và bố cục
 Bố cục thành phần / Định nghĩa mã pin
 --------------
 
-.. figure:: images/xBuild-3.png
+.. image:: images/xBuild-3.jpg
   :width: 600px
   :align: center
 

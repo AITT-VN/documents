@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Bài học 2: Blink LED &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bài học 3: Nhấn nút bật đèn LED" href="lesson3.html" />
+    <link rel="prev" title="Bài học 1: Hello world" href="lesson1.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Cơ bản</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 2: Blink LED</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kien-thuc-moi">Kiến thức mới</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi-phan-cung">Kết nối phần cứng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-su-dung">Thiết bị cần sử dụng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giai-thich-chuong-trinh">Giải thích chương trình</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson4.html">Bài học 3: Điều khiển tốc độ chớp tắt đèn LED</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Arduino Cơ bản</a> &raquo;</li>
+        
+      <li>Bài học 2: Blink LED</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson2.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bai-hoc-2-blink-led">
+<h1>Bài học 2: Blink LED<a class="headerlink" href="#bai-hoc-2-blink-led" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
+<p>Sau khi hoàn thành chương trình đầu tiên để làm quen với Arduino trong bài trước, bây giờ, chúng ta hãy thử học cách điều khiển module đèn LED. Trong bài tập này, chúng ta sẽ lập trình cho module đèn LED bật và tắt liên tục (còn gọi là <code class="docutils literal notranslate"><span class="pre">blink</span></code>) sau mỗi giây.</p>
+</div>
+<div class="section" id="kien-thuc-moi">
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this headline">¶</a></h2>
+<p>Các yếu tố cấu thành một hệ thống điều khiển</p>
+<blockquote>
+<div><dl class="simple">
+<dt>3 yếu tố cơ bản cấu thành nên một hệ thống điều khiển là:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">Input</span></code>: Thông tin đầu vào
+<code class="docutils literal notranslate"><span class="pre">Control</span></code> Unit: Trung tâm xử lý và điều khiển
+<code class="docutils literal notranslate"><span class="pre">Output</span></code>: Xuất ra thông tin hoặc hành động đã được lập trình sẵn</p>
+</dd>
+</dl>
+<p>Trong chương trình bật/tắt LED, chúng ta sẽ chỉ sử dụng <cite>Output</cite> mà không sử dụng Input. xController chính là Control Unit - sử dụng tín hiệu Digital để điều khiển module Output là đèn LED .</p>
+</div></blockquote>
+<p>Tín hiệu Digital là gì?</p>
+<blockquote>
+<div><p>Có 2 loại tín hiệu cơ bản mà chúng ta sẽ làm việc với chúng trong lập trình điện tử, đó là <code class="docutils literal notranslate"><span class="pre">tín</span> <span class="pre">hiệu</span> <span class="pre">Digital</span></code> và tín hiệu Analog. Chúng ta sẽ tìm hiểu về Analog trong các bài học sau.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tín</span> <span class="pre">hiệu</span> <span class="pre">Digital</span></code> là tín hiệu chỉ có 2 giá trị là <code class="docutils literal notranslate"><span class="pre">Tắt</span></code> (còn gọi là LOW, 0V) và <code class="docutils literal notranslate"><span class="pre">Bật</span></code> (HIGH, 3.3V hay 5V tùy vào điện áp hoạt động của hệ thống, xController sử dụng 3.3V).</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-1.png"><img alt="../../_images/ls-2-1.png" class="align-center" src="../../_images/ls-2-1.png" style="width: 420px;" /></a>
+<p>Module LED hoạt động dựa vào tín hiệu Digital:</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-2.png"><img alt="../../_images/ls-2-2.png" class="align-center" src="../../_images/ls-2-2.png" style="width: 420px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="ket-noi-phan-cung">
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/ls-2-3.png"><img alt="../../_images/ls-2-3.png" class="align-center" src="../../_images/ls-2-3.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/device-2.png"><img alt="../../_images/device-2.png" class="align-center" src="../../_images/device-2.png" style="width: 480px;" /></a>
+</div>
+<div class="section" id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">Blink</span> <span class="nv">LED</span>
+<span class="o">//</span> <span class="nv">B</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">sau</span> <span class="nv">m</span>ỗ<span class="nv">i</span> <span class="mi">1</span> <span class="nv">gi</span>â<span class="nv">y</span>
+<span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
+
+<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+}
+</pre></div>
+</div>
+<p>Sau khi chạy chương trình, bạn sẽ thấy đèn LED  phát sáng và tắt liên lục mỗi 1 giây.</p>
+</div>
+<div class="section" id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>setup(){
+}
+</pre></div>
+</div>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">setup()</span></code> trong chương trình Arduino sẽ được gọi khi chương trình bắt đầu. Hàm này được sử dụng để khởi tạo giá trị của các biến hoặc các thư viện (bạn cần phải khởi tạo chúng trước khi sử dụng). Hàm <code class="docutils literal notranslate"><span class="pre">setup()</span></code> chỉ cần được gọi đúng một lần, sau mỗi lần board khởi động hoặc được reset.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">loop</span><span class="ss">()</span>{
+}
+</pre></div>
+</div>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">loop()</span></code> sẽ thực hiện đúng như tên gọi của nó: lặp đi lặp lại liên tục các lệnh trong nó. Hàm này chứa các logic chính để để điều khiển hệ thống.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int  LEDPin = D1_1;
+</pre></div>
+</div>
+<p>Dòng lệnh này khai báo một biến có tên là <code class="docutils literal notranslate"><span class="pre">LEDPin</span></code> với kiểu dữ liệu int (integer: số nguyên), đồng thời gán giá trị là <code class="docutils literal notranslate"><span class="pre">D1_1</span></code> (tương ứng với cổng mở rộng trên board mà bạn dùng để kết nối với module LED).</p>
+<p>Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>2 đường tín hiệu dành cho nguồn điện là GND (nguồn âm, 0V) và VCC (nguồn dương, 3.3V)</p></li>
+<li><p>2 đường tín hiệu logic, có thể sử dụng cho tín hiệu Digital (cả 6 cổng) hoặc Analog (chỉ hỗ trợ trên cổng 4, 5 và 6)</p></li>
+</ul>
+</div></blockquote>
+<p>Do module LED sử dụng tín hiệu Digital và chỉ sử dụng 1 tín hiệu nên chúng ta khai báo chân IO (Input Output Pin) trong chương trình là <code class="docutils literal notranslate"><span class="pre">D1_1</span></code>. Ở các bài học sau, bạn sẽ sử dụng một số module dùng cả 2 chân tín hiệu như màn hình LCD hoặc 1 số module sử dụng tín hiệu Analog. Lúc này, bạn sẽ khai báo chân IO là A4_1, A5_1 hoặc A6_1 (A là analog).</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
+</pre></div>
+</div>
+<p>Câu lệnh này cấu hình chế độ hoạt động của chân IO (nối với module LED) thành OUTPUT để có thể điều khiển được.</p>
+<p><em>Lưu ý:</em> Một chân IO có thể được sử dụng với các chế độ hoạt động khác nhau:</p>
+<blockquote>
+<div><p>Tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">Analog</span></code>
+Có thể là <code class="docutils literal notranslate"><span class="pre">Input</span></code> (nếu nhận thông tin từ các module như module cảm biến) hoặc <code class="docutils literal notranslate"><span class="pre">Output</span></code> (nếu dùng để điều khiển bật tắt module gắn vào).</p>
+</div></blockquote>
+<p>Do tính đa năng như vậy, nên các chân IO còn được gọi là <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">Purpose</span></code> Input <code class="docutils literal notranslate"><span class="pre">Output</span></code> (các chân IO đa mục đích), hay gọi tắt là <code class="docutils literal notranslate"><span class="pre">GPIO</span></code>.</p>
+<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">pinMode()</span></code> có cú pháp như sau:</p>
+<p>Các tham số truyền vào:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: Số của chân Digital cần cấu hình</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mode</span></code>: Khai báo chế độ hoạt động, có thể là INPUT , OUTPUT , hoặc  INPUT_PULLUP (bạn sẽ tìm hiểu từng mode này trong các bài học)</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(LEDPin, HIGH);
+</pre></div>
+</div>
+<p>Xuất ra tín hiệu mức HIGH cho chân IO nối với module LED.</p>
+<p>Nếu chân IO được khai báo mode hoạt động là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> bằng hàm <code class="docutils literal notranslate"><span class="pre">pinMode()</span></code>, thì điện áp xuất ra sẽ là 3.3V (hoặc 5V trên board sử dụng 5V) đối với mức HIGH, và 0V đối với mức LOW.</p>
+<p>Câu lệnh trên sẽ xuất ra tín hiệu mức HIGH (3.3V). Khi đó, LED sẽ được bật do có điện.</p>
+<p>Câu lệnh digitalWrite() có cú pháp như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(pin, value)
+</pre></div>
+</div>
+<p>Các tham số truyền vào:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: chân IO cần xuất tín hiệu</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Value</span></code>: giá trị cần xuất, HIGH hoặc LOW .</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(LEDPin, LOW);
+</pre></div>
+</div>
+<p>Tương tự, câu lệnh này xuất tín hiệu LOW cho chân IO nối với module LED, tương ứng với mức điện áp 0V. Khi đó, LED sẽ được tắt.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(1000);
+</pre></div>
+</div>
+<p>Dừng chương trình trong một khoảng thời gian (đơn vị mili giây), 1000 mili giây tương ứng với 1 giây.</p>
+<p>Câu lệnh delay() có cú pháp như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(ms)
+</pre></div>
+</div>
+<p>Tham số truyền vào:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">ms</span></code>: số mili giây chương trình tạm dừng.</p>
+</div></blockquote>
+<p>Chúng ta cần tạm dừng chương trình trong khoảng thời gian 1 giây để có thể nhìn rõ được hiệu ứng bật và tắt đèn LED. Nếu không, đèn LED sẽ được bật và tắt một cách chớp nhoáng, mắt người không nhìn rõ được.</p>
+<p>Vậy là bạn đã làm quen với khái niệm tín hiệu Digital và biết cách điều khiển module LED. Ở bài học sau, bạn sẽ kết hợp thêm các tín hiệu Input khác để làm những bài học nâng cao hơn.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="lesson3.html" class="btn btn-neutral float-right" title="Bài học 3: Nhấn nút bật đèn LED" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lesson1.html" class="btn btn-neutral float-left" title="Bài học 1: Hello world" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

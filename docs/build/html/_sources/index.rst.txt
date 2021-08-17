@@ -47,8 +47,7 @@ xController Board materials
    :maxdepth: 2
    :caption: xController Arduino Tutorial
 
-   library/micropython-api/index.rst
-   library/arduino-api/index.rst
+   tutorials/arduino/index.rst
 
 ---------
 

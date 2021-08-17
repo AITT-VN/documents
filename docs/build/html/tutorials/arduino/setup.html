@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Hướng Dẫn Cài Đặt Arduino và xController &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bài học 1: Hello world" href="lesson1.html" />
+    <link rel="prev" title="Arduino Cơ bản" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Cơ bản</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hướng Dẫn Cài Đặt Arduino và xController</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cai-dat-arduino-ide">Cài đặt Arduino IDE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cai-dat-board-xcontroller-trong-arduino-ide">Cài đặt board xController trong Arduino IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Arduino Cơ bản</a> &raquo;</li>
+        
+      <li>Hướng Dẫn Cài Đặt Arduino và xController</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/setup.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="huong-dan-cai-dat-arduino-va-xcontroller">
+<h1>Hướng Dẫn Cài Đặt Arduino và xController<a class="headerlink" href="#huong-dan-cai-dat-arduino-va-xcontroller" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cai-dat-arduino-ide">
+<h2>Cài đặt Arduino IDE<a class="headerlink" href="#cai-dat-arduino-ide" title="Permalink to this headline">¶</a></h2>
+<p>Bạn có thể tải phiên bản Arduino IDE mới nhất, phù hợp với hệ điều hành của máy tính của bạn tại trang chủ của Arduino (Đường dẫn: <a class="reference external" href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>)</p>
+<a class="reference internal image-reference" href="../../_images/P1-1.png"><img alt="../../_images/P1-1.png" class="align-center" src="../../_images/P1-1.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="cai-dat-board-xcontroller-trong-arduino-ide">
+<h2>Cài đặt board xController trong Arduino IDE<a class="headerlink" href="#cai-dat-board-xcontroller-trong-arduino-ide" title="Permalink to this headline">¶</a></h2>
+<p>Phần mềm Arduino có thể lập trình cho rất nhiều loại board mạch khác nhau. Tuy nhiên, bạn cần làm thêm một vài bước sau để có thể làm việc với xController:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a href="#id1"><span class="problematic" id="id2">`</span></a>Mở phần mềm Arduino đã cài đặt.</p></li>
+</ol>
+<p>2. Vào menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span></code>. Trong tab <code class="docutils literal notranslate"><span class="pre">Settings</span></code>, mục <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">Boards</span> <span class="pre">Manager</span></code>, thêm địa chỉ đường dẫn mô tả thông tin xController như hình và nhấn “OK”
+<a href="#id3"><span class="problematic" id="id4">``</span></a><a class="reference external" href="https://raw.githubusercontent.com/AITT-VN/ohstem_arduino_board/main/package_xcon_index.json">https://raw.githubusercontent.com/AITT-VN/ohstem_arduino_board/main/package_xcon_index.json</a> ``</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/P1-2.png"><img alt="../../_images/P1-2.png" class="align-center" src="../../_images/P1-2.png" style="width: 480px;" /></a>
+<p>Sau này, để hỗ trợ nhiều loại board khác, bạn có thể nhập nhiều dòng bằng cách nhấn Enter để xuống dòng cho từng link.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Mở menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Board</span> <span class="pre">[tên</span> <span class="pre">board</span> <span class="pre">đang</span> <span class="pre">được</span> <span class="pre">chọn]</span> <span class="pre">&gt;</span> <span class="pre">Boards</span> <span class="pre">Manager…</span></code>, nhập Ohstem vào thanh search và chọn board <code class="docutils literal notranslate"><span class="pre">OhStem</span> <span class="pre">Boards</span> <span class="pre">by</span> <span class="pre">OhStem</span> <span class="pre">Education</span></code> được tìm thấy như hình dưới, nhấn vào <code class="docutils literal notranslate"><span class="pre">Install</span></code>, chờ đến khi board được cài đặt hoàn tất. Sau khi cài đặt xong, nhấn vào <code class="docutils literal notranslate"><span class="pre">Close</span></code>.</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/P1-3.png"><img alt="../../_images/P1-3.png" class="align-center" src="../../_images/P1-3.png" style="width: 480px;" /></a>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Vào menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Board</span></code>, chọn loại board là <code class="docutils literal notranslate"><span class="pre">OhStem</span> <span class="pre">Boards</span> <span class="pre">&gt;</span> <span class="pre">xController</span></code> vừa được cài đặt:</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/P1-4.png"><img alt="../../_images/P1-4.png" class="align-center" src="../../_images/P1-4.png" style="width: 480px;" /></a>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Vào menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Port</span></code> để chọn Cổng kết nối đến xController (chính là COM Port hiện ra trong <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">Manager</span></code> chúng ta đã thấy lúc nãy)</p></li>
+</ol>
+<blockquote>
+<div><p>Ví dụ: Trong máy tính Windows của tác giả, cổng trên Device Manager là <code class="docutils literal notranslate"><span class="pre">COM12</span></code>:</p>
+<blockquote>
+<div><img alt="../../_images/P1-2.png" src="../../_images/P1-2.png" />
+<dl class="field-list simple">
+<dt class="field-odd">width</dt>
+<dd class="field-odd"><p>480</p>
+</dd>
+<dt class="field-even">align</dt>
+<dd class="field-even"><p>center</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Đối với người dùng hệ điều hành macOS, cổng kết nối sẽ được hiển thị là: <code class="docutils literal notranslate"><span class="pre">/dev/cu.SLAB_USBtoUART</span></code>.</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="lesson1.html" class="btn btn-neutral float-right" title="Bài học 1: Hello world" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Arduino Cơ bản" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

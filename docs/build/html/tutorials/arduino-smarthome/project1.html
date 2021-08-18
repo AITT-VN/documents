@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Project 1: Đèn điều khiển từ xa &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Project 2: Quạt thông minh" href="project2.html" />
+    <link rel="prev" title="Giới thiệu" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../micropython/index.html">Arduino Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino Cơ bản</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Dự án nhà thông minh - Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="intro.html">Giới thiệu</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Project 1: Đèn điều khiển từ xa</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-su-dung">Thiết bị cần sử dụng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giai-thich-chuong-trinh">Giải thích chương trình</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="project2.html">Project 2: Quạt thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project3.html">Project 3: Đèn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project4.html">Project 4: Hệ thống chống trộm và báo động</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project5.html">Project 5: Cửa thông minh</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Dự án nhà thông minh - Arduino</a> &raquo;</li>
+        
+      <li>Project 1: Đèn điều khiển từ xa</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino-smarthome/project1.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="project-1-den-dieu-khien-tu-xa">
+<h1>Project 1: Đèn điều khiển từ xa<a class="headerlink" href="#project-1-den-dieu-khien-tu-xa" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
+<p>Bạn vừa lên giường trùm chăn ấm và chợt nhận ra là quên chưa tắt đèn, hay bạn băn khoăn không biết vừa nãy đã tắt điện phòng tắm chưa. Nếu ở trong những tình huống này, bạn sẽ làm gì?</p>
+<p>Sẽ rất thuận tiện nếu bạn có thể bật tắt đèn từ xa bằng remote phải không nào? Ngoài ra, không chỉ là bật tắt, chúng ta sẽ dùng remote để điều chỉnh độ sáng đèn phù hợp cho nhiều hoàn cảnh sử dụng như đọc sách, xem phim hay khi chuẩn bị đi ngủ.</p>
+<p>Trong dự án này, chúng ta sẽ dùng đèn LED RGB có trên hộp điều khiển xController để mô phỏng đèn trong nhà và sử dụng remote hồng ngoại để có thể:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Tăng giảm độ sáng bằng 2 phím <code class="docutils literal notranslate"><span class="pre">lên</span></code> và <code class="docutils literal notranslate"><span class="pre">xuống</span></code>. Mỗi lần tăng giảm 25% độ sáng.</p></li>
+<li><p>Bật hoặc tắt đèn LED bằng phím <code class="docutils literal notranslate"><span class="pre">Setup</span></code></p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/project-1-1.png"><img alt="../../_images/project-1-1.png" class="align-center" src="../../_images/project-1-1.png" style="width: 320px;" /></a>
+</div>
+<div class="section" id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/project-1-2.png"><img alt="../../_images/project-1-2.png" class="align-center" src="../../_images/project-1-2.png" style="width: 420px;" /></a>
+</div>
+<div class="section" id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;IRremote.h&gt;</span><span class="cp"></span>
+
+<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
+<span class="n">IRrecv</span> <span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RX</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">irCommand</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">irrecv</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">irCommand</span> <span class="o">=</span> <span class="n">irrecv</span><span class="p">.</span><span class="n">decodedIRData</span><span class="p">.</span><span class="n">command</span><span class="p">;</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">irCommand</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_UP</span><span class="p">){</span>
+      <span class="n">lightLevel</span> <span class="o">+=</span> <span class="mi">50</span><span class="p">;</span> <span class="c1">// tăng độ sáng 25%</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_DOWN</span><span class="p">){</span>
+      <span class="n">lightLevel</span> <span class="o">-=</span> <span class="mi">50</span><span class="p">;</span> <span class="c1">// giảm độ sáng 25%</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_SETUP</span><span class="p">){</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// đèn đang bật thì tắt</span>
+        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="c1">// đèn đang tắt thì bật</span>
+        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lightLevel</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<p>Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên <code class="docutils literal notranslate"><span class="pre">lightLevel</span></code> có kiểu là <code class="docutils literal notranslate"><span class="pre">int</span></code> để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="project2.html" class="btn btn-neutral float-right" title="Project 2: Quạt thông minh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro.html" class="btn btn-neutral float-left" title="Giới thiệu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

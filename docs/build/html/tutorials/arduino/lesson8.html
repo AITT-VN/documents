@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Bài học 8: Phát nhạc với còi báo &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bài học 9: Cảm biến gia tốc góc nghiêng" href="lesson9.html" />
+    <link rel="prev" title="Bài học 7: Vỗ tay thay đổi màu đèn LED" href="lesson7.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../micropython/index.html">Arduino Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Cơ bản</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson4.html">Bài học 4: Điều khiển tốc độ chớp tắt đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson5.html">Bài học 5: Điều chỉnh độ sáng LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson6.html">Bài học 6: Đèn LED RGB cảm ứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson7.html">Bài học 7: Vỗ tay thay đổi màu đèn LED</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 8: Phát nhạc với còi báo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-su-dung">Thiết bị cần sử dụng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giai-thich-chuong-trinh">Giải thích chương trình</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lesson9.html">Bài học 9: Cảm biến gia tốc góc nghiêng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arduino-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Arduino Cơ bản</a> &raquo;</li>
+        
+      <li>Bài học 8: Phát nhạc với còi báo</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson8.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bai-hoc-8-phat-nhac-voi-coi-bao">
+<h1>Bài học 8: Phát nhạc với còi báo<a class="headerlink" href="#bai-hoc-8-phat-nhac-voi-coi-bao" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
+<p>Tương tự như module đèn LED, còi báo (buzzer) được tích hợp trên board xController cũng là một module thuộc loại output, có chức năng phát ra âm thanh. Trong bài học này, chúng ta sẽ học cách dùng thư viện xController để buzzer phát ra các nốt nhạc và ghép thành một bài nhạc hoàn chỉnh.</p>
+</div>
+<div class="section" id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/device-1.png"><img alt="../../_images/device-1.png" class="align-center" src="../../_images/device-1.png" style="width: 480px;" /></a>
+</div>
+<div class="section" id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#define BUZZER_CHANNEL 0 </span><span class="c1">// giá trị bất kỳ từ 0 đến 15</span>
+
+<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// phát bài nhạc Twinkle twinkle little stars</span>
+  <span class="c1">// đoạn 1: Đồ, Đồ, Son, Son, La, La, Son</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_A4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_A4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+  <span class="c1">// đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_E4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_E4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_D4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_D4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#define BUZZER_CHANNEL 0 // giá trị bất kỳ từ 0 đến 15
+</pre></div>
+</div>
+<p>Thư viện làm việc với còi báo cũng sử dụng PWM để phát nhạc. Bạn có thể xem lại kiến thức về PWM trong bài học 5. Ở đây, chúng ta khai báo kênh PWM muốn sử dụng là 0.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
+xcon.noTone(BUZZER_CHANNEL);
+</pre></div>
+</div>
+<p>Trong hàm <code class="docutils literal notranslate"><span class="pre">loop()</span></code> của chương trình, 2 câu hàm <code class="docutils literal notranslate"><span class="pre">tone()</span></code> và <code class="docutils literal notranslate"><span class="pre">notone()</span></code> được sử dụng để phát ra nhạc và tắt nhạc. Hai hàm này có cú pháp như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>tone(frequency, duration, channel);
+</pre></div>
+</div>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>noTone(channel);
+</pre></div>
+</div>
+<p>Ý nghĩa các tham số:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code>: Tần số hoặc tên nốt nhạc cần phát</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">duration</span></code>: Thời gian kéo dài</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">channel</span></code>: kênh PWM dùng để phát (nhận giá trị từ 0-15)</p></li>
+</ul>
+</div></blockquote>
+<p><em>Sau khi chạy chương trình, còi báo tích hợp trên board xController sẽ liên tục phát ra các nốt nhạc của bài hát quen thuộc “Twinkle Twinkle Little Stars”.</em></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="lesson9.html" class="btn btn-neutral float-right" title="Bài học 9: Cảm biến gia tốc góc nghiêng" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lesson7.html" class="btn btn-neutral float-left" title="Bài học 7: Vỗ tay thay đổi màu đèn LED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

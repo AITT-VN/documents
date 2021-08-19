@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="motion — Motion" href="motion.html" />
+    <link rel="next" title="minifan — Minifan" href="minifan.html" />
     <link rel="prev" title="led_onboard — Onboard LED" href="led_onboard.html" /> 
 </head>
 
@@ -97,8 +97,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Arduino Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Microython Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
 <ul>
@@ -109,27 +109,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">MicroPython Library</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ble.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="btn_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btn_onboard</span></code> — Onboard Button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color_sensor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">color_sensor</span></code> — Color Sensor Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ir_receiver.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_receiver</span></code> — IR Receiver Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir_sender.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_sender</span></code> — IR Sender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lcd_1602.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lcd_1602</span></code> — LCD 1602 Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="led_matrix.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_matrix</span></code> — LED Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="led_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code> — Line Array Module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sample-code">Sample Code</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="minifan.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">minifan</span></code> — Minifan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motion.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code> — Motor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oled_i2c.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code> — OLED I2C Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pins.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code> — Pins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="robot.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">robot</span></code> — Robot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="servo.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — Servo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="speaker.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code> — Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ultrasonic.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ultrasonic</span></code> — Ultrasonic Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wifi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wifi</span></code> — Wifi</a></li>
 </ul>
 </li>
 </ul>
@@ -203,19 +199,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-line_array">
-<span id="line-array-line-array-module"></span><h1><a class="reference internal" href="../micropython-api/line_array.html#module-line_array" title="line_array: Line Array Module"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code></a> — Line Array Module<a class="headerlink" href="#module-line_array" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="line-array-line-array-module">
+<h1><a class="reference internal" href="../micropython-api/line_array.html#module-line_array" title="line_array: Line Array Module"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code></a> — Line Array Module<a class="headerlink" href="#line-array-line-array-module" title="Permalink to this headline">¶</a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">line_array</span></code></p>
 <div class="section" id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="line_array.line_array.read">
-<span class="sig-prename descclassname"><span class="pre">line_array.</span></span><span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">PORT</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#line_array.line_array.read" title="Permalink to this definition">¶</a></dt>
-<dd><p>Đọc trạng thái của line finder array.
-Trong đó:</p>
+<dt class="sig sig-object py" id="LineArray">
+<span class="sig-name descname"><span class="pre">LineArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sda</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#LineArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Khởi tạo module Line Array và khai báo 2 chân IO (sử dụng cho giao tiếp I2C) để kết nối với module.</p>
+<p>Ví dụ: Nếu chúng ta sử dụng PORT số 1 thì 2 chân IO tín hiệu tương ứng sẽ là D1_1 và D1_2.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Đọc trạng thái của line finder array.</p>
+<p>Trong đó:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>PORT</em> : Có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">5</span></code> tương ứng từ PORT 1 đến PORT 6 của xController.</p></li>
 <li><p>Kết quả trả về <code class="docutils literal notranslate"><span class="pre">TUPLE</span></code> 4 giá trị tương ứng với trạng thái của 4 mắt S1 đến S4, ví dụ: <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0)</span></code> với <code class="docutils literal notranslate"><span class="pre">0</span></code> là đọc được line trắng còn <code class="docutils literal notranslate"><span class="pre">1</span></code> là line đen.</p></li>
 </ul>
 </div></blockquote>
@@ -223,32 +225,26 @@ Trong đó:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="id0">
-<span class="sig-prename descclassname"><span class="pre">line_array.</span></span><span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">PORT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TUPLE</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
-<dd><p>Đọc trạng thái từng mắt đọc của Module.
-Trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>PORT</em> : Có giá trị từ <a href="#id1"><span class="problematic" id="id2">``</span></a>0 ~ 5``tương ứng từ PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>TUPLE</em> : Có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">3</span></code> tương ứng với 4 mắt đọc của Module.</p></li>
-</ul>
-</div></blockquote>
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TUPLE</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Đọc trạng thái từng mắt đọc của Module.</p>
+<p><em>TUPLE</em> : Có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">3</span></code> tương ứng với 4 mắt đọc của Module.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="sample-code">
 <h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
-<p>Test module bám line đen</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">line_array</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Đang đi theo line&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Đang đi lệch khỏi line&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Test trạng thái mắt đọc số 1</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line_array</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
-    <span class="n">time</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;LineArray.h&quot;</span><span class="cp"></span>
+
+<span class="n">line_array</span> <span class="n">LineArray</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span> <span class="n">D1_2</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">line_array</span><span class="p">.</span><span class="n">read</span><span class="p">());</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -260,7 +256,7 @@ Trong đó:</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="motion.html" class="btn btn-neutral float-right" title="motion — Motion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="minifan.html" class="btn btn-neutral float-right" title="minifan — Minifan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="led_onboard.html" class="btn btn-neutral float-left" title="led_onboard — Onboard LED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

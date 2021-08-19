@@ -1,46 +1,45 @@
 :mod:`line_array` --- Line Array Module
 =============================================
 
-.. module:: line_array
-    :synopsis: Line Array Module
-
 Chức năng chính và chức năng của ``line_array``
 
 Function
 ----------------------
 
-.. function:: line_array.read(PORT)
+.. function:: LineArray(scl, sda)
+
+    Khởi tạo module Line Array và khai báo 2 chân IO (sử dụng cho giao tiếp I2C) để kết nối với module.
+     
+    Ví dụ: Nếu chúng ta sử dụng PORT số 1 thì 2 chân IO tín hiệu tương ứng sẽ là D1_1 và D1_2.
+
+.. function:: read()
 
     Đọc trạng thái của line finder array.
+
     Trong đó:
 
-        - *PORT* : Có giá trị từ ``0 ~ 5`` tương ứng từ PORT 1 đến PORT 6 của xController.
         - Kết quả trả về ``TUPLE`` 4 giá trị tương ứng với trạng thái của 4 mắt S1 đến S4, ví dụ: ``(0, 1, 1, 0)`` với ``0`` là đọc được line trắng còn ``1`` là line đen.
 
-.. function:: line_array.read(PORT, TUPLE)
+.. function:: read(TUPLE)
 
     Đọc trạng thái từng mắt đọc của Module.
-    Trong đó:
-    
-        - *PORT* : Có giá trị từ ``0 ~ 5``tương ứng từ PORT 1 đến PORT 6 của xController.
-        - *TUPLE* : Có giá trị từ ``0 ~ 3`` tương ứng với 4 mắt đọc của Module.
+
+    *TUPLE* : Có giá trị từ ``0 ~ 3`` tương ứng với 4 mắt đọc của Module.
 
 Sample Code
 ----------------------
-Test module bám line đen
 
-.. code-block:: python
+.. code-block:: guess
 
-    while True:
-        if line_array.read(0) == (0, 1, 1, 0):
-            print(' Đang đi theo line')
-        else:
-            print('Đang đi lệch khỏi line')
+    #include "LineArray.h"
 
-Test trạng thái mắt đọc số 1
+    line_array LineArray(D1_1, D1_2;
 
-.. code-block:: python
+    void setup() {
+        Serial.begin(9600); 
+    }
 
-    while True:
-        print(line_array.read(0,0))
-        time(1)
+    void loop(){
+        Serial.println(line_array.read());
+        delay(1000)
+    }

@@ -97,8 +97,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Arduino Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Microython Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
 <ul>
@@ -109,19 +109,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">MicroPython Library</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ble.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="btn_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btn_onboard</span></code> — Onboard Button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color_sensor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">color_sensor</span></code> — Color Sensor Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ir_receiver.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_receiver</span></code> — IR Receiver Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir_sender.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_sender</span></code> — IR Sender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lcd_1602.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lcd_1602</span></code> — LCD 1602 Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="led_matrix.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_matrix</span></code> — LED Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="led_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="line_array.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code> — Line Array Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="minifan.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">minifan</span></code> — Minifan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motion.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code> — Motor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oled_i2c.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code> — OLED I2C Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pins.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code> — Pins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="robot.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">robot</span></code> — Robot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="servo.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — Servo</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code> — Speaker</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
@@ -129,7 +126,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ultrasonic.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ultrasonic</span></code> — Ultrasonic Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wifi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wifi</span></code> — Wifi</a></li>
 </ul>
 </li>
 </ul>
@@ -203,47 +199,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-speaker">
-<span id="speaker-speaker"></span><h1><a class="reference internal" href="../micropython-api/speaker.html#module-speaker" title="speaker: Speaker"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code></a> — Speaker<a class="headerlink" href="#module-speaker" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="speaker-speaker">
+<h1><a class="reference internal" href="../micropython-api/speaker.html#module-speaker" title="speaker: Speaker"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code></a> — Speaker<a class="headerlink" href="#speaker-speaker" title="Permalink to this headline">¶</a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">speaker</span></code></p>
 <div class="section" id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="speaker.speaker.stop">
-<span class="sig-prename descclassname"><span class="pre">speaker.</span></span><span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#speaker.speaker.stop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Dừng chơi nhạc.</p>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">noTone(channel);</span></span></dt>
+<dd><p>Dừng chơi nhạc. Với <code class="docutils literal notranslate"><span class="pre">channel</span></code> là kênh PWM dùng để phát (nhận giá trị từ 0-15) và phải trùng <code class="docutils literal notranslate"><span class="pre">channel</span></code> trong hàm <code class="docutils literal notranslate"><span class="pre">tone</span></code>.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="speaker.speaker.play">
-<span class="sig-prename descclassname"><span class="pre">speaker.</span></span><span class="sig-name descname"><span class="pre">play</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tune</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#speaker.speaker.play" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">tone(frequency,</span> <span class="pre">duration,</span> <span class="pre">channel);</span></span></dt>
 <dd><p>Phát 1 bài nhạc hoặc 1 nốt nhạc. Trong đó:</p>
 <blockquote>
-<div><ul>
-<li><p><em>tune</em> : Có thể là 1 trong các bài hát hoặc một tone nhạc nào đó:</p>
-<blockquote>
 <div><ul class="simple">
-<li><p><em>Bài hát</em> : <code class="docutils literal notranslate"><span class="pre">BIRTHDAY,</span> <span class="pre">TWINKLE,</span> <span class="pre">JINGLE_BELLS,</span> <span class="pre">WHEEL_ON_BUS,</span> <span class="pre">FUR_ELISE,CHASE,JUMP_UP,jUMP_DOWN,POWER_UP,POWER_DOWN</span></code></p></li>
-<li><p><em>Tone</em> : Đây là các nốt trong nhạc lý:</p></li>
-</ul>
-<img alt="../../_images/speaker.png" src="../../_images/speaker.png" />
-</div></blockquote>
-</li>
-<li><p><em>wait</em> : Nếu bằng <code class="docutils literal notranslate"><span class="pre">True</span></code> thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><em>loop</em> :</p></li>
-<li><p><em>duration</em> : Thời gian kéo dài.</p></li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="speaker.speaker.pitch">
-<span class="sig-prename descclassname"><span class="pre">speaker.</span></span><span class="sig-name descname"><span class="pre">pitch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#speaker.speaker.pitch" title="Permalink to this definition">¶</a></dt>
-<dd><p>Phát 1 âm thanh với tần số và độ dài truyền vào, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>frequency</em> : Dữ liệu số, tần số âm thanh được phát và phạm vi giá trị của nó là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">5000</span></code>.</p></li>
-<li><p><em>time</em>: Tính theo <code class="docutils literal notranslate"><span class="pre">giây</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code>: Tần số hoặc tên nốt nhạc cần phát</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">duration</span></code>: Thời gian kéo dài</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">channel</span></code>: kênh PWM dùng để phát (nhận giá trị từ 0-15)</p></li>
 </ul>
 </div></blockquote>
 </dd></dl>
@@ -252,11 +227,32 @@
 <div class="section" id="sample-code">
 <h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
 <p>Phát bài Happy Birthday khi nhấn giữ nút trên xController</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
-        <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">BIRTHDAY</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">speaker</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#define BUZZER_CHANNEL 0 </span><span class="c1">// any from 0-15</span>
+
+<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
+<span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="c1">// the loop function runs over and over again forever</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_D4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_E4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_A4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_B4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>

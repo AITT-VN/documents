@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="oled_i2c — OLED I2C Module" href="oled_i2c.html" />
+    <link rel="next" title="pins — Pins" href="pins.html" />
     <link rel="prev" title="motion — Motion" href="motion.html" /> 
 </head>
 
@@ -97,8 +97,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Arduino Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Microython Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
 <ul>
@@ -109,27 +109,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">MicroPython Library</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ble.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="btn_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btn_onboard</span></code> — Onboard Button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color_sensor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">color_sensor</span></code> — Color Sensor Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ir_receiver.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_receiver</span></code> — IR Receiver Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir_sender.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_sender</span></code> — IR Sender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lcd_1602.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lcd_1602</span></code> — LCD 1602 Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="led_matrix.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_matrix</span></code> — LED Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="led_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="line_array.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code> — Line Array Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="minifan.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">minifan</span></code> — Minifan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motion.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code> — Motor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sample-code">Sample Code</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="oled_i2c.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code> — OLED I2C Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pins.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code> — Pins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="robot.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">robot</span></code> — Robot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="servo.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — Servo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="speaker.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code> — Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ultrasonic.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ultrasonic</span></code> — Ultrasonic Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wifi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wifi</span></code> — Wifi</a></li>
 </ul>
 </li>
 </ul>
@@ -203,30 +199,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-motor">
-<span id="motor-motor"></span><h1><a class="reference internal" href="../micropython-api/motor.html#module-motor" title="motor: Motor"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code></a> — Motor<a class="headerlink" href="#module-motor" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="motor-motor">
+<h1><a class="reference internal" href="../micropython-api/motor.html#module-motor" title="motor: Motor"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code></a> — Motor<a class="headerlink" href="#motor-motor" title="Permalink to this headline">¶</a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">motor</span></code></p>
 <div class="section" id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="motor.motor.speed">
-<span class="sig-prename descclassname"><span class="pre">motor.</span></span><span class="sig-name descname"><span class="pre">speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#motor.motor.speed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Điều chỉnh tốc độ quay của động cơ <code class="docutils literal notranslate"><span class="pre">M1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">M2</span></code>, speed là từ -4095 đến 4095, âm là quay ngược, dương là quay tới.</p>
+<dt class="sig sig-object py" id="speed">
+<span class="sig-name descname"><span class="pre">speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#speed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><p>Điều chỉnh tốc độ quay của động cơ <code class="docutils literal notranslate"><span class="pre">M1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">M2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m1</span></code> và <code class="docutils literal notranslate"><span class="pre">m2</span></code> tương ứng với 2 port động cơ <code class="docutils literal notranslate"><span class="pre">M1</span></code> và <code class="docutils literal notranslate"><span class="pre">M2</span></code>, là giá trị tốc độ <a href="#id1"><span class="problematic" id="id2">``</span></a>-100 ~ 100`, số âm và số dương biểu thị chiều quay của động cơ.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Di chuyển xController dựa trên chuyển động của 2 động cơ M1 và M2</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>value</em> là giá trị tốc độ <code class="docutils literal notranslate"><span class="pre">-4095</span> <span class="pre">~</span> <span class="pre">4095`,</span> <span class="pre">số</span> <span class="pre">âm</span> <span class="pre">và</span> <span class="pre">số</span> <span class="pre">dương</span> <span class="pre">biểu</span> <span class="pre">thị</span> <span class="pre">chiều</span> <span class="pre">quay</span> <span class="pre">của</span> <span class="pre">động</span> <span class="pre">cơ.</span> <span class="pre">Nếu</span> <span class="pre">``value</span></code> k truyền vào (None) thì trả về <code class="docutils literal notranslate"><span class="pre">value</span></code> hiện tại.</p></li>
-<li><p><em>index</em> có giá trị <code class="docutils literal notranslate"><span class="pre">0|1</span></code> tương ứng <code class="docutils literal notranslate"><span class="pre">M1|M2</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dir</span></code> là tham số hướng di chuyển xủa xController với dải giá trị <code class="docutils literal notranslate"><span class="pre">1~8</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">speed</span></code> là tham số tốc độ di chuyển với dải giá trị <code class="docutils literal notranslate"><span class="pre">0-100</span></code>.</p></li>
 </ul>
+<dl class="simple">
+<dt>/*</dt><dd><dl class="simple">
+<dt>calculate direction based on angle</dt><dd><ul class="simple">
+<li><p>90(3)</p></li>
+<li><p>135(4) |  45(2)</p></li>
+<li><p>180(5)—+—-Angle=0(dir=1)</p></li>
+<li><p>225(6) |  315(8)</p></li>
+<li><p>270(7)</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>/</p>
 </div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dừng quay cả 2 động cơ <code class="docutils literal notranslate"><span class="pre">M1</span></code> và <code class="docutils literal notranslate"><span class="pre">M2</span></code></p>
 </dd></dl>
 
 </div>
 <div class="section" id="sample-code">
 <h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
 <p>Xoay M1 và M2 ngược chiều nhau với tốc độ tối đa.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">motor</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">)</span>
-    <span class="n">motor</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4095</span><span class="p">)</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;Motors.h&quot;</span><span class="cp"></span>
+
+<span class="n">Motors</span> <span class="n">m</span><span class="p">;</span>
+
+<span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="c1">// the loop function runs over and over again forever</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="n">m</span><span class="p">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="n">m</span><span class="p">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="n">m</span><span class="p">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">-100</span><span class="p">,</span> <span class="mi">-100</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -238,7 +278,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="oled_i2c.html" class="btn btn-neutral float-right" title="oled_i2c — OLED I2C Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pins.html" class="btn btn-neutral float-right" title="pins — Pins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="motion.html" class="btn btn-neutral float-left" title="motion — Motion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

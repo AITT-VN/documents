@@ -1,57 +1,81 @@
 :mod:`lcd_1602` --- LCD 1602 Module
 =============================================
 
-.. module:: lcd_1602
-    :synopsis: LCD 1602 Module
 
 Chức năng chính và chức năng của ``lcd_1602``
 
 Function
 ----------------------
 
-.. function:: lcd1602 = LCD1602(PORT)
+.. function:: begin(scl, sda)
 
-     Khai báo *PORT* đã được kết nối với LCD 1602.
-     *PORT* Có giá trị từ ``1 ~ 6`` tương ứng từ PORT 1 đến PORT 6 của xController.
+     Khởi tạo màn hình LCD và khai báo 2 chân IO (sử dụng cho giao tiếp I2C) để kết nối với module.
+     
+     Ví dụ: Nếu chúng ta sử dụng PORT số 1 thì 2 chân I2C tương ứng sẽ là D1_1 và D1_2.
 
-.. function:: lcd1602.backlight_on()
+.. function:: backlight()
 
      Bặt đèn nền của màn hình.
 
-.. function:: lcd1602.backlight_off()
+.. function:: noBacklight()
 
      Tắt đèn nền của màn hình.
 
-.. function:: lcd1602.move_to(X, Y)
+.. function:: setCursor(0, 0)
 
      Di chuyển con trỏ đến vị trí muốn xuất hiện kí tự, trong đó:
 
           - *X* là tọa độ theo chiều ngang.
           - *Y* là tọa độ theo chiều dọc.
 
-.. function:: lcd1602.putstr(TEXT)
+.. function:: print(TEXT)
 
     In dòng kí tự ``TEXT`` lên màn hình. ``TEXT`` ghi không có dấu.
 
-.. function:: lcd1602.clear()
+.. function:: clear()
 
      Xóa kí tự trên màn hình.
+
+Các hàm nâng cao:
+----------------------
+
+    - home();
+    - leftToRight();
+    - rightToLeft();
+    - autoscroll();
+    - noAutoscroll();
+    - display();
+    - noDisplay();
+    - cursor();
+    - noCursor();
+    - blink();
+    - noBlink();
+    - scrollDisplayLeft();
+    - scrollDisplayRight();
+    - createChar(uint8_t location, uint8_t charmap[]);
+
 
 Sample Code
 ----------------------
 Hiển thị kí tự trên màn hình LCD 1602
 
-.. code-block:: python
+.. code-block:: guess
 
-   from lcd_1602 import LCD1602
+     #include <LCD_1602.h>
 
-   lcd1602 = LCD1602(0)
-   lcd1602.backlight_off()
-   while True:
-      lcd1602.move_to(0, 0)
-      lcd1602.putstr('Ohstem')
-      lcd1602.move_to(0, 1)
-      lcd1602.putstr('Xin chao ban')
-      time.sleep(2)
-      lcd1602.clear()
-      time.sleep(1)
+     LCD_1602 lcd(0x21);
+
+     void setup() {
+     lcd.begin(D1_1, D1_2);
+     lcd.backlight();
+     }
+
+     void loop(){
+     lcd.setCursor(0, 0);
+     lcd.print("OhStem");
+     lcd.setCursor(0, 1);
+     lcd.print("xin chao ban!"); 
+     delay(2000);
+     lcd.clear();
+     delay(1000);
+     }

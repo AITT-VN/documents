@@ -43,8 +43,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="robot — Robot" href="robot.html" />
-    <link rel="prev" title="oled_i2c — OLED I2C Module" href="oled_i2c.html" /> 
+    <link rel="next" title="servo — Servo" href="servo.html" />
+    <link rel="prev" title="motor — Motor" href="motor.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,8 +97,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Arduino Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Microython Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
 <ul>
@@ -109,27 +109,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">MicroPython Library</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ble.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="btn_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btn_onboard</span></code> — Onboard Button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color_sensor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">color_sensor</span></code> — Color Sensor Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ir_receiver.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_receiver</span></code> — IR Receiver Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir_sender.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_sender</span></code> — IR Sender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lcd_1602.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lcd_1602</span></code> — LCD 1602 Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="led_matrix.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_matrix</span></code> — LED Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="led_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="line_array.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code> — Line Array Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="minifan.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">minifan</span></code> — Minifan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motion.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="motor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code> — Motor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oled_i2c.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code> — OLED I2C Module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code> — Pins</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sample-code">Sample Code</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="robot.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">robot</span></code> — Robot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="servo.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — Servo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="speaker.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code> — Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ultrasonic.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ultrasonic</span></code> — Ultrasonic Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wifi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wifi</span></code> — Wifi</a></li>
 </ul>
 </li>
 </ul>
@@ -203,96 +199,97 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-pins">
-<span id="pins-pins"></span><h1><a class="reference internal" href="../micropython-api/pins.html#module-pins" title="pins: Pins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code></a> — Pins<a class="headerlink" href="#module-pins" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pins-pins">
+<h1><a class="reference internal" href="../micropython-api/pins.html#module-pins" title="pins: Pins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code></a> — Pins<a class="headerlink" href="#pins-pins" title="Permalink to this headline">¶</a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">pins</span></code></p>
+<p>Có 2 loại tín hiệu cơ bản mà chúng ta sẽ làm việc với chúng trong lập trình điện tử, đó là tín hiệu Digital và tín hiệu Analog. Chúng ta sẽ tìm hiểu về Analog trong các bài học sau.</p>
+<p>Tín hiệu Digital là tín hiệu chỉ có 2 giá trị là Tắt (còn gọi là LOW, 0V) và Bật (HIGH, 3.3V hay 5V tùy vào điện áp hoạt động của hệ thống, xController sử dụng 3.3V).</p>
+<p>Khác với tín hiệu Digital Input, tín hiệu Analog Input giúp đo các giá trị đầu vào theo một dải giá trị thay vì chỉ là HIGH và LOW.</p>
+<p>Tuy nhiên, xét về bản chất, máy tính chỉ có thể hiểu được tín hiệu Digital (các giá trị 0 và 1). Do đó, các chip vi điều khiển đều có 1 bộ chuyển đổi từ tín hiệu Analog sang Digital, gọi là ADC (Analog to Digital Converter).</p>
+<p>Lưu ý: Trong 6 cổng mở rộng của xController, chỉ có cổng 4, 5 và 6 là có bộ ADC và có thể giao tiếp được với các module sử dụng tín hiệu Analog. Giá trị tín hiệu các chân Analog này có dải từ 0 (tương ứng với 0V) đến 4095 (tương ứng với 3.3V).</p>
+<p>Ví dụ: Nếu giá trị tín hiệu Analog xuất ra là 2047 thì điện áp sẽ nằm trong khoảng 1.65V.</p>
 <div class="section" id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">pin[X][Y].write_digital((STATE))</span></span></dt>
-<dd><p>Đổi trạng thái BẬT|TẮT của 1 PORT, trong đó:</p>
+<p>Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:</p>
+<blockquote>
+<div><ul>
+<li><p>2 đường tín hiệu dành cho nguồn điện là GND (nguồn âm, 0V) và VCC (nguồn dương, 3.3V)</p></li>
+<li><p>2 đường tín hiệu logic, có thể sử dụng cho tín hiệu Digital (cả 6 cổng) hoặc Analog (chỉ hỗ trợ trên cổng 4, 5 và 6)</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1|2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
-<li><p><em>STATE</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với trạng thái TẮT|BẬT PORT.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Digital</span></code>: D1_1|D1_2|D2_1|D2_2|D3_1|D3_2|D4_1|D4_2|D5_1|D5_2|D6_1|D6_2</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Analog</span></code>: A4_1|A4_2|A5_1|A5_2|A6_1|A6_2|</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="pinMode">
+<span class="sig-name descname"><span class="pre">pinMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pinMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cấu hình 1 pin quy định hoạt động như là một đầu vào (INPUT) hoặc đầu ra (OUTPUT). Xem mô tả kỹ thuật số (datasheet) để biết chi tiết về các chức năng của các chân.</p>
+<p>Như trong phiên bản Arduino 1.0.1, nó có thể kích hoạt các điện trở pullup nội bộ với chế độ INPUT_PULLUP. Ngoài ra, chế độ INPUT vô hiệu hóa một cách rõ ràng điện trở pullups nội bộ.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: tương ứng với cổng mở rộng trên board. Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code>: INPUT, INPUT_PULLUP hoặc OUTPUT</p></li>
 </ul>
 </div></blockquote>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">pin[X][Y].read_digital()</span></span></dt>
-<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">0</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">1</span></code>, trong đó:</p>
+<dt class="sig sig-object py" id="digitalWrite">
+<span class="sig-name descname"><span class="pre">digitalWrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalWrite" title="Permalink to this definition">¶</a></dt>
+<dd><ul>
+<li><p>Xuất tín hiệu ra các chân digital, có 2 giá trị là HIGH hoặc là LOW</p></li>
+<li><p>Nếu một pin được thiết đặt là OUTPUT bởi pinMode(). Và bạn dùng digitalWrite để xuất tín hiệu thì điện thế tại chân này sẽ là 5V (hoặc là 3,3 V trên mạch 3,3 V) nếu được xuất tín hiệu là HIGH, và 0V nếu được xuất tín hiệu là LOW.</p></li>
+<li><p>Nếu một pin được thiết đặt là INPUT bởi pinMode(). Lúc này digitalWrite sẽ bật (HIGH) hoặc tắt (LOW) hệ thống điện trở pullup nội bộ. Chúng tôi khuyên bạn nên dùng INPUT_PULLUP nếu muốn bật hệ thống điện trở pullup nội bộ.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: chân IO cần xuất tín hiệu</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Value</span></code>: giá trị cần xuất, HIGH hoặc LOW .</p></li>
 </ul>
 </div></blockquote>
+</li>
+</ul>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="pins.pin11.write_analog">
-<span class="sig-prename descclassname"><span class="pre">pin11.</span></span><span class="sig-name descname"><span class="pre">write_analog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">STATE</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pins.pin11.write_analog" title="Permalink to this definition">¶</a></dt>
-<dd><p>Đổi trạng thái BẬT|TẮT của 1 PORT, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
-<li><p><em>STATE</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code> tương ứng mức điện áp <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">3.3</span></code> volt</p></li>
+<dt class="sig sig-object py" id="digitalRead">
+<span class="sig-name descname"><span class="pre">digitalRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalRead" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><p>Đọc tín hiệu điện từ một chân digital (được thiết đặt là INPUT). Trả về 2 giá trị HIGH hoặc LOW.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: giá trị của Digital muốn đọc.</p></li>
 </ul>
-</div></blockquote>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">pin[X][Y].read_analog()</span></span></dt>
-<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code></p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 4 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
+<dt class="sig sig-object py" id="analogRead">
+<span class="sig-name descname"><span class="pre">analogRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analogRead" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><p>Đọc giá trị tín hiệu Analog ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên int (nằm trong khoảng từ 0 đến 4095)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: giá trị của Analog muốn đọc.</p></li>
 </ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">pin[X][Y].pulse_in(STATE)</span></span></dt>
-<dd><p>Trả về độ dài (tính theo micro giây) của một xung <code class="docutils literal notranslate"><span class="pre">Bật</span></code> hay <code class="docutils literal notranslate"><span class="pre">Tắt</span></code> phát ra từ chân cắm, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
-<li><p><em>STATE</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">0|1</span></code> tương ứng với trạng thái <code class="docutils literal notranslate"><span class="pre">TẮT|BẬT</span></code>.</p></li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">pin[X][Y].set_pull(MODE)</span></span></dt>
-<dd><p>Cấu hình điện nổi trở của chân cắm, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>X</em> Có giá trị từ <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">~</span> <span class="pre">6</span></code> đại diện PORT 1 đến PORT 6 của xController.</p></li>
-<li><p><em>Y</em> Có giá trị là <code class="docutils literal notranslate"><span class="pre">1</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">2</span></code> tương ứng với tín hiệu 1 hoặc tín hiệu 2 đối với mỗi PORT. Đối với một số module thì mặc định là 1.</p></li>
-<li><p><em>MODE</em> Có các chế độ <code class="docutils literal notranslate"><span class="pre">up</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">down</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">none</span></code>.</p></li>
-</ul>
-</div></blockquote>
 </dd></dl>
 
 </div>
 <div class="section" id="sample-code">
 <h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
 <p>Bật tắt PORT 1 - PIN 1 của xController</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">1</span><span class="p">))</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">0</span><span class="p">))</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">Blink</span> <span class="nv">LED</span>
+<span class="o">//</span> <span class="nv">B</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">sau</span> <span class="nv">m</span>ỗ<span class="nv">i</span> <span class="mi">1</span> <span class="nv">gi</span>â<span class="nv">y</span>
+<span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
+
+<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+<span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+<span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
+<span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+<span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
+<span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+}
 </pre></div>
 </div>
 </div>
@@ -304,8 +301,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="robot.html" class="btn btn-neutral float-right" title="robot — Robot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="oled_i2c.html" class="btn btn-neutral float-left" title="oled_i2c — OLED I2C Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="servo.html" class="btn btn-neutral float-right" title="servo — Servo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="motor.html" class="btn btn-neutral float-left" title="motor — Motor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

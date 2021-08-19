@@ -1,49 +1,53 @@
 :mod:`speaker` --- Speaker
 =============================================
 
-.. module:: speaker
-    :synopsis: Speaker
 
 Chức năng chính và chức năng của ``speaker``
 
 Function
 ----------------------
 
-.. function:: speaker.stop()
+.. function:: noTone(channel);
 
-    Dừng chơi nhạc.
+    Dừng chơi nhạc. Với ``channel`` là kênh PWM dùng để phát (nhận giá trị từ 0-15) và phải trùng ``channel`` trong hàm ``tone``.
 
-.. function:: speaker.play(tune, wait=False, loop=False, duration=None)
+.. function:: tone(frequency, duration, channel);
 
     Phát 1 bài nhạc hoặc 1 nốt nhạc. Trong đó:
     
-        - *tune* : Có thể là 1 trong các bài hát hoặc một tone nhạc nào đó:
-        
-            + *Bài hát* : ``BIRTHDAY, TWINKLE, JINGLE_BELLS, WHEEL_ON_BUS, FUR_ELISE,CHASE,JUMP_UP,jUMP_DOWN,POWER_UP,POWER_DOWN``
-            + *Tone* : Đây là các nốt trong nhạc lý:
-
-            .. image:: images/speaker.png
-
-        - *wait* : Nếu bằng ``True`` thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là ``False``.
-        - *loop* :
-        - *duration* : Thời gian kéo dài.
-
-.. function:: speaker.pitch(frequency, time)
-
-    Phát 1 âm thanh với tần số và độ dài truyền vào, trong đó:
-    
-        - *frequency* : Dữ liệu số, tần số âm thanh được phát và phạm vi giá trị của nó là ``0 ~ 5000``.
-        - *time*: Tính theo ``giây``.
-
+        - ``frequency``: Tần số hoặc tên nốt nhạc cần phát
+        - ``duration``: Thời gian kéo dài
+        - ``channel``: kênh PWM dùng để phát (nhận giá trị từ 0-15)
 
 Sample Code
 ----------------------
 Phát bài Happy Birthday khi nhấn giữ nút trên xController
 
-.. code-block:: python
+.. code-block:: guess
 
-    while True:
-        if btn_onboard.is_pressed():
-            speaker.play(BIRTHDAY)
-        else:
-            speaker.stop()
+    #include <xcontroller.h>
+
+    #define BUZZER_CHANNEL 0 // any from 0-15
+
+    XController xcon;
+    // the setup function runs once when you press reset or power the board
+    void setup() {
+    }
+
+    // the loop function runs over and over again forever
+    void loop() {
+    xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_D4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_E4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_F4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_G4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_A4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    xcon.tone(NOTE_B4, 500, BUZZER_CHANNEL);
+    xcon.noTone(BUZZER_CHANNEL);
+    }

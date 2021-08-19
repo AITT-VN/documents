@@ -44,7 +44,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="motor — Motor" href="motor.html" />
-    <link rel="prev" title="line_array — Line Array Module" href="line_array.html" /> 
+    <link rel="prev" title="minifan — Minifan" href="minifan.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,8 +97,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Arduino Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Microython Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
 <ul>
@@ -109,27 +109,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../micropython-api/index.html">MicroPython Library</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ble.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="btn_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">btn_onboard</span></code> — Onboard Button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color_sensor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">color_sensor</span></code> — Color Sensor Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ir_receiver.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_receiver</span></code> — IR Receiver Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir_sender.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ir_sender</span></code> — IR Sender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lcd_1602.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lcd_1602</span></code> — LCD 1602 Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="led_matrix.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_matrix</span></code> — LED Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="led_onboard.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">led_onboard</span></code> — Onboard LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="line_array.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">line_array</span></code> — Line Array Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="minifan.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">minifan</span></code> — Minifan</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sample-code">Sample Code</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="motor.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motor</span></code> — Motor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="oled_i2c.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code> — OLED I2C Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pins.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code> — Pins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="robot.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">robot</span></code> — Robot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="servo.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">servo</span></code> — Servo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="speaker.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">speaker</span></code> — Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ultrasonic.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ultrasonic</span></code> — Ultrasonic Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wifi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wifi</span></code> — Wifi</a></li>
 </ul>
 </li>
 </ul>
@@ -203,79 +199,71 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-motion">
-<span id="motion-motion"></span><h1><a class="reference internal" href="../micropython-api/motion.html#module-motion" title="motion: Motion"><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code></a> — Motion<a class="headerlink" href="#module-motion" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="motion-motion">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">motion</span></code> — Motion<a class="headerlink" href="#motion-motion" title="Permalink to this headline">¶</a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">motion</span></code></p>
+<p>IMU (Inertial Measurement Unit) là một con chip để đo những chuyển động như đã giới thiệu ở trên. Một module IMU thường gồm 2 loại cảm biến: cảm biến gia tốc (Accelerometer) và cảm biến quay (Gyroscope).</p>
+<p>Accelerometer (gọi tắt là accel): như tên gọi của nó, accel đơn giản là một cảm biến đo gia tốc của chính nó. Thông thường, một cảm biến accel sẽ có 3 trục xyz tương ứng với 3 chiều không gian, giúp ta biết được module đang bị nghiêng về hướng nào (trục x và y) hoặc đang bị lật hay úp (trục z).</p>
+<p>Gyroscope (gọi tắt là gyro): đo tốc độ quay của nó quanh một trục. Tương tự với cảm biến gia tốc, thông thường, gyro sẽ có 3 trục xyz.</p>
+<p>Lưu ý: gyro chỉ đo tốc độ quay chứ không đo trực tiếp góc quay, nên khi bạn quay module một góc nào đó rồi dừng, giá trị của gyro sẽ tăng lên rồi hạ xuống về 0.</p>
+<p>Trên board xController đã tích hợp sẵn một module IMU tên là MPU6050.</p>
 <div class="section" id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="motion.motion.get_accel">
-<span class="sig-prename descclassname"><span class="pre">motion.</span></span><span class="sig-name descname"><span class="pre">get_accel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x|y|z</span></em><span class="sig-paren">)</span><a class="headerlink" href="#motion.motion.get_accel" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trả về giá trị góc nghiêng của xController và cho ta biết xController đang nghiêng về hướng nào.
-Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16384</span> <span class="pre">~</span> <span class="pre">16384</span></code></p>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">mpu.getAcc[X|Y|Z]()</span></span></dt>
+<dd><p>Trả về giá trị góc nghiêng của xController và cho ta biết xController đang nghiêng về hướng nào.</p>
+<p>Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16384</span> <span class="pre">~</span> <span class="pre">16384</span></code></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em>x</em> : nghiêng về sau hay trước.</p></li>
-<li><p><em>y</em> : nghiêng sang trái hay phải.</p></li>
-<li><p><em>z</em> : xController đang úp hay ngửa.</p></li>
+<li><p><em>X</em> : nghiêng về sau hay trước.</p></li>
+<li><p><em>Y</em> : nghiêng sang trái hay phải.</p></li>
+<li><p><em>Z</em> : xController đang úp hay ngửa.</p></li>
 </ul>
 </div></blockquote>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="motion.motion.get_gyro_roll">
-<span class="sig-prename descclassname"><span class="pre">motion.</span></span><span class="sig-name descname"><span class="pre">get_gyro_roll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#motion.motion.get_gyro_roll" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">roll</span></code> của cảm biến gyroscope.
-Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16</span> <span class="pre">~</span> <span class="pre">16</span></code></p>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">mpu.getGyro[X|Y|Z]()</span></span></dt>
+<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">roll|pitch|yaw</span></code> của cảm biến gyroscope.</p>
+<p>Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16</span> <span class="pre">~</span> <span class="pre">16</span></code></p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Hàm: motion.get_gyro_roll()</p></li>
-<li><p>Tham số: <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><em>X</em> : roll.</p></li>
+<li><p><em>Y</em> : pitch.</p></li>
+<li><p><em>Z</em> : yaw.</p></li>
 </ul>
 </div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="motion.motion.get_gyro_pitch">
-<span class="sig-prename descclassname"><span class="pre">motion.</span></span><span class="sig-name descname"><span class="pre">get_gyro_pitch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#motion.motion.get_gyro_pitch" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trả về giá trị pitch của cảm biến gyroscope.
-Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16</span> <span class="pre">~</span> <span class="pre">16</span></code></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Hàm: motion.get_gyro_pitch()</p></li>
-<li><p>Tham số: <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="motion.motion.get_gyro_yaw">
-<span class="sig-prename descclassname"><span class="pre">motion.</span></span><span class="sig-name descname"><span class="pre">get_gyro_yaw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#motion.motion.get_gyro_yaw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">yaw</span></code> của cảm biến gyroscope.
-Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span class="pre">-16</span> <span class="pre">~</span> <span class="pre">16</span></code></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Hàm: motion.get_gyro_yaw()</p></li>
-<li><p>Tham số: <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="motion.motion.is_shaked">
-<span class="sig-prename descclassname"><span class="pre">motion.</span></span><span class="sig-name descname"><span class="pre">is_shaked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#motion.motion.is_shaked" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trả về giá trị <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> khi xController bị lắc.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="sample-code">
 <h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
-<p>Xác định xController nghiêng qua trái hay phải</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">motion</span><span class="o">.</span><span class="n">get_accel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;xController nghiêng sang trái&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;xController nghiêng sang phải&#39;</span><span class="p">)</span>
+<p>Đọc các thông số đo được từ MPU6050</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;mpu6050.h&quot;</span><span class="cp"></span>
+
+<span class="n">MPU6050</span> <span class="n">mpu</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">tmp</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+<span class="n">mpu</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;AccelX:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">());</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelY:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">());</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelZ:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">());</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroX:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroX</span><span class="p">());</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroY:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroY</span><span class="p">());</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroZ:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroZ</span><span class="p">());</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;   &quot;</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -288,7 +276,7 @@ Tầm giá trị lý thuyết: <code class="docutils literal notranslate"><span 
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="motor.html" class="btn btn-neutral float-right" title="motor — Motor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="line_array.html" class="btn btn-neutral float-left" title="line_array — Line Array Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="minifan.html" class="btn btn-neutral float-left" title="minifan — Minifan" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

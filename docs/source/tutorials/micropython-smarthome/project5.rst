@@ -32,215 +32,152 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  from ir_receiver import *; ir_rx.start();
 
-  #include <xcontroller.h>
-  #include <IRremote.h>
-  #include <Servos.h>
-  #include <LCD_1602.h>
+  passcode_auth = '1234' # khai báo mật khẩu cố định
+  servo.position(0, 0)
+  lcd1602.backlight_off()
 
-  #define PASSCODE "1234"
+  while True:
+    if ir_rx.get_code() == IR_REMOTE_A:
+      # khóa cửa lại
+      servo.position(0, 0)
+    elif ir_rx.get_code() == IR_REMOTE_B:
+      # bắt đầu nhập mật mã
+      lcd1602.clear()
+      lcd1602.move_to(0, 0)
+      lcd1602.putstr('Hay nhap mat ma:')
+      passcode = ''
+      while not (ir_rx.get_code() == IR_REMOTE_C):
+        # liên tục đọc tín hiệu remote để nhập
+        # mật mã cho đến khi phím C được nhấn
+        print(ir_rx.get_raw_code())
+        if ir_rx.get_code() == IR_REMOTE_0:
+          passcode = str(passcode) + '0'
+        if ir_rx.get_code() == IR_REMOTE_1:
+          passcode = str(passcode) + '1'
+        if ir_rx.get_code() == IR_REMOTE_2:
+          passcode = str(passcode) + '2'
+        if ir_rx.get_code() == IR_REMOTE_3:
+          passcode = str(passcode) + '3'
+        if ir_rx.get_code() == IR_REMOTE_4:
+          passcode = str(passcode) + '4'
+        if ir_rx.get_code() == IR_REMOTE_5:
+          passcode = str(passcode) + '5'
+        if ir_rx.get_code() == IR_REMOTE_6:
+          passcode = str(passcode) + '6'
+        if ir_rx.get_code() == IR_REMOTE_7:
+          passcode = str(passcode) + '7'
+        if ir_rx.get_code() == IR_REMOTE_8:
+          passcode = str(passcode) + '8'
+        if ir_rx.get_code() == IR_REMOTE_9:
+          passcode = str(passcode) + '9'
+        lcd1602.move_to(0, 1)
+        lcd1602.putstr(passcode)
+        time.sleep(0.5)
+      // nhập mật mã đã xong, cần kiểm tra
+      if passcode == passcode_auth:
+        lcd1602.move_to(0, 1)
+        lcd1602.putstr('Mat ma dung')
+        servo.position(0, 90)
+      else:
+        lcd1602.move_to(0, 1)
+        lcd1602.putstr('Mat ma sai')
 
-  XController xcon;
-  IRrecv irrecv(IR_RX);
-  LCD_1602 lcd(0x21);
-  Servos s;
 
-  int irCommand;
-
-  void setup()
-  {
-    Serial.begin(9600);
-    irrecv.begin();
-    s.init();
-    s.position(0, 0);
-    lcd.begin(D1_1, D1_2);
-    lcd.backlight();
-  }
-
-  void loop() {
-    if (irrecv.decode()) {
-      irCommand = irrecv.decodedIRData.command;
-      Serial.println(irCommand);
-      irrecv.resume();
-      if (irCommand == IR_REMOTE_A){
-        // khóa cửa lại
-        s.position(0, 0);
-      } else if (irCommand == IR_REMOTE_B){
-        // bắt đầu nhập mật mã
-        lcd.clear();
-        lcd.setCursor(0, 0);
-        lcd.print("Hay nhap mat ma:");
-        String passcode = "";
-        while (irCommand != IR_REMOTE_C) {
-          // liên tục đọc tín hiệu remote để nhập
-          // mật mã cho đến khi phím C được nhấn
-          if (irrecv.decode()) {
-            irCommand = irrecv.decodedIRData.command;
-            Serial.println(irCommand);
-            char input;
-            switch (irCommand) {
-              case IR_REMOTE_0:
-                passcode += "0";
-                break;
-              case IR_REMOTE_1:
-                passcode += "1";
-                break;
-              case IR_REMOTE_2:
-                passcode += "2";
-                break;
-              case IR_REMOTE_3:
-                passcode += "3";
-                break;
-              case IR_REMOTE_4:
-                passcode += "4";
-                break;
-              case IR_REMOTE_5:
-                passcode += "5";
-                break;
-              case IR_REMOTE_6:
-                passcode += "6";
-                break;
-              case IR_REMOTE_7:
-                passcode += "7";
-                break;
-              case IR_REMOTE_8:
-                passcode += "8";
-                break;
-              case IR_REMOTE_9:
-                passcode += "9";
-                break;
-            }
-            lcd.setCursor(0, 1);
-            lcd.print(passcode);
-            delay(500);
-            irrecv.resume();
-          }
-        }
-
-        // nhập mật mã đã xong, cần kiểm tra
-        if (passcode == PASSCODE) {
-          lcd.setCursor(0, 1);
-          lcd.print("Mat ma dung");
-          s.position(0, 90);
-        } else {
-          lcd.setCursor(0, 1);
-          lcd.print("Mat ma sai");
-        }
-      }
-    }
-  }
 
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  #define PASSCODE "1234"
+  passcode_auth = '1234'
 
 Khai báo mật mã của ngôi nhà là 4 số “1234”.
 
-.. code-block:: guess
+.. code-block:: python
 
-  s.position(0, 0);
+  servo.position(0, 0)
 
-Trong hàm ``setup()``, ta cho Servo quay về góc ``0`` độ (vị trí mà cửa được khóa).
+Ta cho Servo quay về góc 0 độ (vị trí mà cửa được khóa).
 
-.. code-block:: guess
+.. code-block:: python
 
-  if (irCommand == IR_REMOTE_A){
-    // khóa cửa lại
-    s.position(0, 0);
-  }
+  servo.position(index, degree)
 
-Trong hàm ``loop()``, chúng ta liên tục kiểm tra tín hiệu từ remote. 
+Hàm điều khiển động cơ servo 180 độ quay tới một góc nào đó tức thời. Trong đó:
 
-Nếu phím A được nhấn thì sẽ khóa cửa lại bằng cách cho Servo quay về góc ``0`` độ (nếu đang mở).
+  - ``index`` là tham số có giá trị 0 ~ 7 tương ứng với 8 cổng gắn servo trên board xController.
+  - ``degree`` là tham số góc quay của servo có giá trị 0 ~ 180 độ.
 
-.. code-block:: guess
+.. code-block:: python
 
-  } else if (irCommand == IR_REMOTE_B){
-        // bắt đầu nhập mật mã
-        lcd.clear();
-        lcd.setCursor(0, 0);
-        lcd.print("Hay nhap mat ma:");
-        String passcode = "";
+  if ir_rx.get_code() == IR_REMOTE_A:
+    servo.position(0, 0)
 
-Nếu phím B được nhấn, ta sẽ xóa trắng màn hình LCD và hiển thị thông báo: “bắt đầu nhập mật mã”. Biến ``passcode`` có chức năng lưu mật mã đang nhập để kiểm tra sau khi nhập xong.
+Trong vòng lặp while True, chúng ta liên tục kiểm tra tín hiệu từ remote. 
 
-.. code-block:: guess
+Nếu phím A được nhấn thì sẽ khóa cửa lại bằng cách cho Servo quay về góc 0 độ (nếu đang mở).
 
-  while (irCommand != IR_REMOTE_C) {
-    // liên tục đọc tín hiệu remote để nhập
-    // mật mã cho đến khi phím C được nhấn
-    if (irrecv.decode()) {
-      irCommand = irrecv.decodedIRData.command;
-      Serial.println(irCommand);
-      char input;
-      switch (irCommand) {
-      case IR_REMOTE_0:
-        passcode += "0";
-        break;
-      case IR_REMOTE_1:
-        passcode += "1";
-        break;
-      case IR_REMOTE_2:
-        passcode += "2";
-        break;
-      case IR_REMOTE_3:
-        passcode += "3";
-        break;
-      case IR_REMOTE_4:
-        passcode += "4";
-        break;
-      case IR_REMOTE_5:
-        passcode += "5";
-        break;
-      case IR_REMOTE_6:
-        passcode += "6";
-        break;
-      case IR_REMOTE_7:
-        passcode += "7";
-        break;
-      case IR_REMOTE_8:
-        passcode += "8";
-        break;
-      case IR_REMOTE_9:
-        passcode += "9";
-        break;
-      }
-      lcd.setCursor(0, 1);
-      lcd.print(passcode);
-      delay(500);
-      irrecv.resume();
-    }
-  }
+.. code-block:: python
+
+  elif ir_rx.get_code() == IR_REMOTE_B:
+    lcd1602.clear()
+    lcd1602.move_to(0, 0)
+    lcd1602.putstr('Hay nhap mat ma:')
+    passcode = ''
+
+Nếu phím B được nhấn, ta sẽ xóa trắng màn hình LCD và hiển thị thông báo: “Hãy nhập mật mã”. Biến ``passcode`` có chức năng lưu mật mã đang nhập để kiểm tra sau khi nhập xong.
+
+.. code-block:: python
+
+  while not (ir_rx.get_code() == IR_REMOTE_C):
+        print(ir_rx.get_raw_code())
+        if ir_rx.get_code() == IR_REMOTE_0:
+          passcode = str(passcode) + '0'
+        if ir_rx.get_code() == IR_REMOTE_1:
+          passcode = str(passcode) + '1'
+        if ir_rx.get_code() == IR_REMOTE_2:
+          passcode = str(passcode) + '2'
+        if ir_rx.get_code() == IR_REMOTE_3:
+          passcode = str(passcode) + '3'
+        if ir_rx.get_code() == IR_REMOTE_4:
+          passcode = str(passcode) + '4'
+        if ir_rx.get_code() == IR_REMOTE_5:
+          passcode = str(passcode) + '5'
+        if ir_rx.get_code() == IR_REMOTE_6:
+          passcode = str(passcode) + '6'
+        if ir_rx.get_code() == IR_REMOTE_7:
+          passcode = str(passcode) + '7'
+        if ir_rx.get_code() == IR_REMOTE_8:
+          passcode = str(passcode) + '8'
+        if ir_rx.get_code() == IR_REMOTE_9:
+          passcode = str(passcode) + '9'
+        lcd1602.move_to(0, 1)
+        lcd1602.putstr(passcode)
+        time.sleep(0.5)
 
 Đây là đoạn code chính để xử lý phần nhập mật mã. Nếu phím được nhấn chưa phải là phím C thì sẽ tiếp tục lưu nút được nhấn vào biến ``passcode`` và hiện lên màn hình LCD.
 
-.. code-block:: guess
+.. code-block:: python
 
-  // nhập mật mã đã xong, cần kiểm tra
-  if (passcode == PASSCODE) {
-    lcd.setCursor(0, 1);
-    lcd.print("Mat ma dung");
-    s.position(0, 90);
-  } else {
-    lcd.setCursor(0, 1);
-    lcd.print("Mat ma sai");
-  }
+    if passcode == passcode_auth:
+      lcd1602.move_to(0, 1)
+      lcd1602.putstr('Mat ma dung')
+      servo.position(0, 90)
+    else:
+      lcd1602.move_to(0, 1)
+      lcd1602.putstr('Mat ma sai')
 
 Nếu phím C được nhấn, vòng lặp nhập mật mã sẽ kết thúc. Đến đây, chương trình sẽ kiểm tra mật mã đã nhập (được lưu trong biến ``passcode``) có giống mật mã ta đã khai báo ban đầu không (là ``1234``). 
 
-Nếu giống thì sẽ mở khóa bằng cách cho Servo quay đến góc ``90`` độ. Ngược lại, nếu mật mã sai thì sẽ thông báo cho người dùng biết.
+Nếu giống thì sẽ mở khóa bằng cách cho Servo quay đến góc 90 độ. Ngược lại, nếu mật mã sai thì sẽ thông báo cho người dùng biết.
 
 Như vậy, các bạn đã hoàn thành 5 project để hoàn thiện 5 chức năng khá thú vị của một ngôi nhà thông minh và hiện đại rồi. Bài tập dành cho bạn là hãy tìm cách tổng hợp code của cả 5 project thành một chương trình hoàn chỉnh cho ngôi nhà nhé.
-
-Bạn có thể tham khảo chương trình mẫu có sẵn trên đường link chứa toàn bộ code mẫu của tài liệu Arduino này nhé.
-
-* :download:`Arduino Tutorial Code <https://github.com/AITT-VN/xbuild_creator_kit/tree/main/Arduino>`

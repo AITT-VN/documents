@@ -34,84 +34,70 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.
+.. code-block:: python
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+  from lcd_1602 import LCD1602
 
-.. code-block:: guess
+  lcd1602 = LCD1602(0)
+  lcd1602.backlight_on()
+  while True:
+    lcd1602.move_to(0, 0)
+    lcd1602.putstr('OhStem')
+    lcd1602.move_to(0, 1)
+    lcd1602.putstr('Xin chao ban')
+    time.sleep(2)
+    lcd1602.clear()
+    time.sleep(1)
 
-  #include <LCD_1602.h>
-
-  LCD_1602 lcd(0x21);
-
-  void setup() {
-      lcd.begin(D1_1, D1_2);
-      lcd.backlight();
-  }
-
-  void loop(){
-      lcd.setCursor(0, 0);
-      lcd.print("OhStem"); 
-      lcd.setCursor(0, 1);
-      lcd.print("xin chao ban!"); 
-      delay(2000);
-      lcd.clear();
-      delay(1000);
-  }
-
+Sau khi nạp chương trình, bạn có thể xem các nội dung được in ra trên màn hình LCD1602.
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  #include <LCD_1602.h>
+  from lcd_1602 import LCD1602
 
 Khai báo thư viện để làm việc với màn hình LCD 1602.
 
-.. code-block:: guess
+.. code-block:: python
 
-  LCD_1602 lcd(0x21);
+  lcd1602 = LCD1602(0)
 
-Tạo một đối tượng tên là lcd và khai báo địa chỉ ``I2C``. Màn hình LCD1602 có trong bộ kit sử dụng địa chỉ là 0x21.
+Tạo một đối tượng tên là ``lcd``. Khởi tạo màn hình LCD Vì module LCD được nối với cổng 1, nên ta sẽ chọn giá trị 0. Ta có các giá trị ``0~5`` tương ứng ``PORT 1 ~ PORT 6``.
 
-.. code-block:: guess
+.. code-block:: python
 
-  lcd.begin(D1_1, D1_2);
+  lcd1602.backlight_on()
 
-Khởi tạo màn hình LCD và khai báo 2 chân IO (sử dụng cho giao tiếp I2C) để kết nối với module. Do chúng ta sử dụng cổng số 1 nên 2 chân IO tín hiệu tương ứng sẽ là ``D1_1`` và ``D1_2``.
+Bật đèn nền phía sau của màn hình lcd. Để tắt, ta sử dụng lệnh ``lcd1602.backlight_off()``
 
-.. code-block:: guess
+.. code-block:: python
 
-  lcd.backlight();
+  lcd1602.move_to(0, 0)
 
-Bật đèn nền phía sau của màn hình lcd. Để tắt, ta sử dụng lệnh: ``lcd.noBacklight()``;
+Di chuyển vị trí in ký tự tiếp theo đến vị trí hàng 0 cột 0. Hàm này có cú pháp là 	``lcd1602.move_to(X, Y)`` với x là cột và y là hàng.
 
-.. code-block:: guess
+.. code-block:: python
 
-  lcd.setCursor(0, 0);
-
-Di chuyển vị trí in ký tự tiếp theo đến vị trí hàng 0 cột 0. Hàm này có cú pháp là 	``setCursor(x,y)`` với x là cột và y là hàng.
-
-.. code-block:: guess
-
-  lcd.print("OhStem");
+  lcd1602.putstr('OhStem')
 
 In ra màn hình dòng chữ “OhStem” tại vị trí đã được cài đặt.
+.. code-block:: python
 
-.. code-block:: guess
+  lcd1602.move_to(0, 1)
+    lcd1602.putstr('Xin chao ban!')
 
-  lcd.setCursor(0, 1);
-  lcd.print("xin chao ban!");
+Để in ra dòng chữ “Xin chao ban!” trên dòng thứ 2 của màn hình, chúng ta làm tương tự bằng cách thay đổi vị trí in ra và dùng lệnh ``lcd1602.putstr()`` để hiển thị.
 
-Để in ra dòng chữ “xin chao ban!” trên dòng thứ 2 của màn hình, chúng ta làm tương tự bằng cách thay đổi vị trí in ra và dùng lệnh print() để hiển thị.
+.. code-block:: python
 
-.. code-block:: guess
-
-  lcd.clear();
+  lcd1602.clear()
 
 Câu lệnh này sẽ xóa trắng màn hình. Tất cả những gì đang được hiển thị sẽ bị biến mất..
 
-*Sau khi chạy chương trình, bạn sẽ thấy dòng chữ "OhStem xin chào bạn!" được hiển thị liên tục trên 2 dòng của màn hình LCD (hiển thị trong 2 giây rồi biến mất trong 1 giây)*
+Sau khi chạy chương trình, bạn sẽ thấy dòng chữ "OhStem Xin chào bạn!" được hiển thị liên tục trên 2 dòng của màn hình LCD (hiển thị trong 2 giây rồi biến mất trong 1 giây)

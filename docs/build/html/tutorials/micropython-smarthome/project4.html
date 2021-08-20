@@ -218,54 +218,38 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">alarmmode</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">pirstate</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="cp">#define BUZZER_CHANNEL 0 </span><span class="c1">// any from 0-15</span>
-<span class="cp">#define PIR_PIN D5_1</span>
-
-<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
-<span class="kt">bool</span> <span class="n">alarmMode</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">pirState</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-  <span class="n">pinMode</span><span class="p">(</span><span class="n">PIR_PIN</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
-  <span class="n">pinMode</span><span class="p">(</span><span class="n">BUTTON</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">BUTTON</span><span class="p">)</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// bật tắt chế độ bảo vệ</span>
-    <span class="n">alarmMode</span> <span class="o">=</span> <span class="o">!</span><span class="n">alarmMode</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">alarmMode</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Chế độ bảo vệ được bật&quot;</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Chế độ bảo vệ được tắt&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="n">pirState</span> <span class="o">=</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">PIR_PIN</span><span class="p">);</span>
-
-  <span class="k">if</span> <span class="p">(</span><span class="n">alarmMode</span> <span class="o">&amp;&amp;</span> <span class="n">pirState</span> <span class="o">==</span> <span class="n">HIGH</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Phát hiện có người xâm nhập&quot;</span><span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-      <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-      <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-      <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-      <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">())</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">alarmmode</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">alarmmode</span>
+    <span class="k">if</span> <span class="n">alarmmode</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Chế độ bảo vệ được bật&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Chế độ bảo vệ được tắt&#39;</span><span class="p">)</span>
+  <span class="n">pirstate</span> <span class="o">=</span> <span class="n">pin51</span><span class="o">.</span><span class="n">read_digital</span><span class="p">()</span>
+  <span class="k">if</span> <span class="n">alarmmode</span> <span class="ow">and</span> <span class="n">pirstate</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Phát hiện có người xâm nhập&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+      <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+      <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+      <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+      <span class="n">speaker</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Trong chương trình trên, chúng ta khai báo biến <code class="docutils literal notranslate"><span class="pre">alarmMode</span></code> kiểu <code class="docutils literal notranslate"><span class="pre">bool</span></code> (có giá trị <code class="docutils literal notranslate"><span class="pre">true</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">false</span></code>) để lưu trạng thái bật tắt của chế độ bảo vệ. Chế độ này sẽ <code class="docutils literal notranslate"><span class="pre">bật/tắt</span></code> khi nút trên board được nhấn.</p>
+<p>Trong chương trình trên, chúng ta khai báo biến <code class="docutils literal notranslate"><span class="pre">alarmmode</span></code> kiểu bool (có giá trị <code class="docutils literal notranslate"><span class="pre">true</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">false</span></code>) để lưu trạng thái bật tắt của chế độ bảo vệ. Chế độ này sẽ bật/tắt khi nút trên board được nhấn.</p>
 <p>Nếu chế độ này đang được bật, đồng thời phát hiện có sự chuyển động thì ngôi nhà sẽ nháy đèn LED RGB và phát âm thanh báo động 5 lần, đủ để cho kẻ trộm chạy mất và chủ nhà thức giấc.</p>
 </div>
 </div>

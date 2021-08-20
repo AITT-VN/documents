@@ -23,103 +23,83 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  from lcd_1602 import LCD1602
+  import dht
 
-  #include <LCD_1602.h>
-  #include <DHTesp.h>
-              
-  const int DHTPIN = D2_1;
+  dht11 = dht.DHT11(Pin(PORTS_DIGITAL[1][0]))
 
-  DHTesp dht;
-  LCD_1602 lcd(0x21);
+  lcd1602 = LCD1602(0)
 
-  void setup() {
-    lcd.begin(D1_1, D1_2);
-    lcd.backlight();
-    dht.setup(DHTPIN, DHTesp::DHT11);
-  }
-  
-  void loop() {
-      // chờ 2s giữa các lần đọc cảm biến
-      delay(2000);
-      lcd.clear();
-      float h = dht.getHumidity();    
-      float t = dht.getTemperature(); 
-      if (dht.getStatus() != 0) {
-        lcd.print("Read sensor faiLED!");
-        return;
-      }
-      lcd.setCursor(0, 0);
-      lcd.print("Temp:     ");
-      lcd.print(t);
-      lcd.print("C");
-      lcd.setCursor(0, 1);
-      lcd.print("Humidity: ");
-      lcd.print(h);
-      lcd.print("%");
-  }
+  while True:
+    dht11.measure()
+    lcd1602.move_to(0, 0)
+    lcd1602.putstr(('Nhiet do: ' + str(dht11.temperature())))
+    lcd1602.move_to(0, 1)
+    lcd1602.putstr(('Do am: ' + str(dht11.humidity())))
+    time.sleep(5)
+    lcd1602.clear()
 
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  #include <DHTesp.h>
+  import dht
 
-Khai báo thư viện ``DHTesp`` để có thể làm việc được với cảm biến DHT11.
+Khai báo thư viện ``dht`` để có thể làm việc được với cảm biến DHT11.
 
-.. code-block:: guess
+.. code-block:: python
 
-  const int DHTPIN = D2_1;
+  dht11 = dht.DHT11(Pin(PORTS_DIGITAL[1][0]))
 
-Khai báo chân IO nối với cảm biến. Do module cảm biến DHT11 nối vào cổng 2 nên chân IO sẽ là ``D2_1`` (vì cảm biến này chỉ dùng 1 chân tín hiệu Digital).
+Tạo đối tượng và khai báo chân IO nối với cảm biến. Do module cảm biến DHT11 nối vào cổng 2 nên chân IO sẽ là ``Pin(PORTS_DIGITAL[1][0])`` (vì cảm biến này chỉ dùng 1 chân tín hiệu Digital).
 
-.. code-block:: guess
+Hàm Pin(PORTS_DIGITAL[X][Y]) có các tham số như sau:
 
-  DHTesp dht;
+  - ``X`` là tham số có giá trị 0~5 tương ứng với PORT 1 ~ PORT6
+  - ``Y`` là tham số 0 hoặc 1 tương ứng với tín hiệu 1 và tín hiệu 2 của mỗi PORT.
 
-Khai báo và tạo đối tượng để làm việc với cảm biến DHT11.
+.. code-block:: python
 
-.. code-block:: guess
+  dht11.measure()
 
-  dht.setup(DHTPIN, DHTesp::DHT11);
+Cập nhật nhiệt độ từ cảm biến DHT11.
 
-Khởi tạo đối tượng ``dht`` và khai báo cảm biến DHT11.
+.. code-block:: python
 
-.. code-block:: guess
+  dht11.temperature()
+  dht11.humidity()
 
-  float h = dht.getHumidity();
-  float t = dht.getTemperature();
+Đọc và trả về độ ẩm (Humidity) và nhiệt độ (Temperature) của môi trường từ cảm biến.
 
-Đọc 2 thông tin về độ ẩm (``Humidity``) và nhiệt độ (``Temperature``) của môi trường từ cảm biến và lưu vào các biến có tên là ``h`` và ``t``. 
+.. code-block:: python
 
-*Lưu ý:* Do kết quả trả về có thể là số thập phân nên kiểu dữ liệu của 2 biến này là ``float`` (dùng cho các số thập phân) thay vì kiểu ``int`` (số nguyên) như ta đã dùng trong các bài học trước.
+  str(dht11.temperature())
+  str(dht11.humidity())
 
-.. code-block:: guess
 
-  if (dht.getStatus() != 0) {
-      lcd.print("Read sensor faiLED!");
-      return;
-  }
+Vì màn hình LCD 1602 nhận dữ liệu dạng văn bản. Trong khi giá trị trả về từ cảm biến là dạng số nên ta dùng hàm ``str()`` để chuyển kiểu dữ liệu sang dạng văn bản. Cấu trúc hàm ``str()`` cụ thể như sau:
 
-Chúng ta cần kiểm tra lỗi xảy ra nếu có trong quá trình đọc giá trị cảm biến. Nếu bị lỗi, hàm ``getStatus()`` sẽ trả về một mã lỗi khác 0. Khi có lỗi xảy ra, chúng ta in ra thông báo trên màn hình LCD.
+.. code-block:: python
 
-.. code-block:: guess
+  str(VALUE)
 
-  lcd.setCursor(0, 0);
-  lcd.print("Temp:     ");
-  lcd.print(t);
-  lcd.print("C");
-  lcd.setCursor(0, 1);
-  lcd.print("Humidity: ");
-  lcd.print(h);
-  lcd.print("%");
+Trong đó ``VALUE`` là giá trị cần chuyển đổi.
+
+.. code-block:: python
+
+  lcd1602.move_to(0, 0)
+  lcd1602.putstr(('Nhiet do: ' + str(dht11.temperature())))
+  lcd1602.move_to(0, 1)
+  lcd1602.putstr(('Do am: ' + str(dht11.humidity())))
 
 Đoạn lệnh này in ra kết quả đọc được trên 2 dòng của màn hình.
 
-*Sau khi chạy chương trình, bạn sẽ thấy giá trị nhiệt độ và độ ẩm được hiển thị trên màn hình LCD. Bạn thử thổi liên tục vào cảm biến để thấy sự thay đổi cả về nhiệt độ và độ ẩm.*
+Sau khi chạy chương trình, bạn sẽ thấy giá trị nhiệt độ và độ ẩm được hiển thị trên màn hình LCD. Bạn thử thổi liên tục vào cảm biến để thấy sự thay đổi cả về nhiệt độ và độ ẩm.

@@ -47,74 +47,54 @@ Thiết bị cần sử dụng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.
+.. code-block:: python
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+  while True:
+    tmp1 = translate((motion.get_accel('x')), (-16384), 16384, (-90), 90)
+    print('AccelX: ' + tmp1)
+    tmp2 = translate((motion.get_accel('y')), (-16384), 16384, (-90), 90)
+    print('AccelY: ' + tmp2)
+    tmp3 = translate((motion.get_accel('z')), (-16384), 16384, (-90), 90)
+    print('AccelZ: ' + tmp3)
+    print('GyroX:' + motion.get_gyro_roll())
+    print('GyroY:' + motion.get_gyro_pitch())
+    print('GyroZ:' + motion.get_gyro_yaw())
 
-Bạn cũng có thể mở chương trình mẫu tương tự bằng cách vào ``File > Examples > xController library``, chọn chương trình ``motion``.
-
-.. code-block:: guess
-
-  #include "mpu6050.h"
-
-  MPU6050 mpu;
-  float tmp;
-
-  void setup(){
-    Serial.begin(115200);
-    mpu.begin();
-  }
-
-  void loop(){
-    tmp = map(mpu.getAccX(), -16384, 16384, -90, 90);
-    Serial.print("	  AccelX:  "); Serial.print(mpu.getAccX());
-    tmp = map(mpu.getAccY(), -16384, 16384, -90, 90);
-    Serial.print("    AccelY:  "); Serial.print(mpu.getAccY());
-    tmp = map(mpu.getAccZ(), -16384, 16384, -90, 90);
-    Serial.print("    AccelZ:  "); Serial.print(mpu.getAccZ());
-    Serial.print("    GyroX:  "); Serial.print(mpu.getGyroX());
-    Serial.print("    GyroY:  "); Serial.print(mpu.getGyroY());
-    Serial.print("    GyroZ:  "); Serial.print(mpu.getGyroZ()); 
-    Serial.println("   ");
-    delay(500);
-  }
+Sau khi nạp chương trình, Bạn có thể xem các giá trị đọc được từ cảm biến gia tốc góc nghiêng trong cửa sổ Terminal.
 
 Giải thích chương trình
 --------------
 
-Chương trình trên liên tục đọc và in ra giá trị tất cả các trục xyz của cảm biến gia tốc và cảm biến quay. Sau khi chạy chương trình, bạn hãy mở cửa sổ Serial để quan sát kết quả đọc được.
+Chương trình trên liên tục đọc và in ra giá trị tất cả các trục xyz của cảm biến gia tốc và cảm biến quay.
 
-.. code-block:: guess
+.. code-block:: python
 
-  #include "mpu6050.h"
+  tmp1 = translate((motion.get_accel('x')), (-16384), 16384, (-90), 90)
+  print('AccelX: ' + tmp1)
 
-Khai báo thư viện để làm việc với mpu6050.
+Đọc giá trị trục X của cảm biến gia tốc. Do cảm biến gia tốc trả về giá trị từ ``-16384 đến 16384`` nên ta dùng hàm ``translate()`` để chuyển sang dải giá trị góc từ ``-90 đến 90`` (để dễ hiểu hơn). Sau đó, dùng hàm ``print()`` để in ra giá trị này.
 
-Tạo biến để lưu giá trị đọc được từ cảm biến MPU6050. 
+.. code-block:: python
 
-.. code-block:: guess
-  
-  Serial.print("AccelX:  "); Serial.print(mpu.getAccX());  
-
-Đọc giá trị trục X của cảm biến gia tốc. Do cảm biến gia tốc trả về giá trị từ ``-16384 ~ 16384`` nên ta dùng hàm ``map()`` để chuyển sang dải giá trị góc từ ``-90 ~ 90`` (để dễ hiểu hơn). Sau đó, dùng hàm ``Serial.print()`` để in ra giá trị này.
-
-.. code-block:: guess
-
-  tmp = map(mpu.getAccY(), -16384, 16384, -90, 90);
-  Serial.print("    AccelY:  "); Serial.print(mpu.getAccY());
-  tmp = map(mpu.getAccZ(), -16384, 16384, -90, 90);
-  Serial.print("    AccelZ:  "); Serial.print(mpu.getAccZ());
+  tmp2 = translate((motion.get_accel('y')), (-16384), 16384, (-90), 90)
+  print('AccelY: ' + tmp2)
+  tmp3 = translate((motion.get_accel('z')), (-16384), 16384, (-90), 90)
+  print('AccelZ: ' + tmp3)
 
 Áp dụng tương tự để đọc và in ra trục Y và Z của cảm biến gia tốc.
 
-.. code-block:: guess
+.. code-block:: python
 
-  Serial.print("    GyroX:  "); Serial.print(mpu.getGyroX());
-  Serial.print("    GyroY:  "); Serial.print(mpu.getGyroY());
-  Serial.print("    GyroZ:  "); Serial.print(mpu.getGyroZ());
+  print('GyroX:' + motion.get_gyro_roll())
+  print('GyroY:' + motion.get_gyro_pitch())
+  print('GyroZ:' + motion.get_gyro_yaw())
 
 Đọc và in ra giá trị 3 trục XYZ của cảm biến quay Gyroscope.
 
-*Khi chương trình chạy, giá trị các trục XYZ của 2 cảm biến sẽ được hiển thị lên cửa sổ Serial.*
+Khi chương trình chạy, giá trị các trục XYZ của 2 cảm biến sẽ được hiển thị lên cửa sổ Terminal.
+
+Ngoài ra, bạn có thể sử dụng thêm hàm ``motion.is_shaked()`` để xác định xController có đang bị lắc hay không.

@@ -51,88 +51,71 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  rotaryvalue = pin41.read_analog()
 
-  int LEDPin = D1_1; // Module LED nối vào cổng số 1
-  int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
-  int rotaryValue = 0; 
-
-  // khai cấu hình PWM
-  const int frequency = 5000;
-  const int pwmChannel = 0; // channel bất kỳ 0-15
-  const int resolution = 12;
-  
-  void setup(){
-    // cấu hình và khởi tạo PWM
-    ledcSetup(pwmChannel, frequency, resolution);
-    
-    // gắn PWM với chân IO của đèn LED
-    ledcAttachPin(LEDPin, pwmChannel);
-  }
-  
-  void loop() {
-    // đọc giá trị cảm biến
-    rotaryValue = analogRead(rotaryPin);
-    // thay đổi tín hiệu PWM
-    ledcWrite(pwmChannel, rotaryValue);
-  }
+  while True:
+    translate_value = translate(rotaryvalue, 0, 4095, 0, 1023)
+    pin11.write_analog(translate_value)
 
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  int LEDPin = D1_1; // Module LED nối vào cổng số 1
-  int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
-  int rotaryValue = 0;
+  rotaryvalue = pin41.read_analog()
 
-Khai báo các chân IO nối với cảm biến xoay và LED như trong bài học trước.
+Đặt biến ``rotaryvalue`` là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến xoay trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng ``pin41.read_analog()``. Lúc này biến ``rotaryvalue`` sẽ trả về giá trị kiểu số nguyên (``int``) nằm trong khoảng từ 0 đến 4095.
 
-.. code-block:: guess
+Tuy nhiên, hàm ``pin[X][Y].write_analog`` chỉ nhận giá trị từ 0 đến 1023, trong khi cảm biến xoay có giá trị từ 0 đến 4095, nên ta cần quy đổi các khoảng giá trị này bằng hàm translate sau đây:
+
+.. code-block:: python
+
+  translate_value = translate(rotaryvalue, 0, 4095, 0, 1023)
+
+Ta sẽ gán giá trị quy đổi bằng biến ``translate_value``.
+
+Hàm ``translate()`` có cấu trúc đầy đủ như sau:
+
+.. code-block:: python
   
-  const int frequency = 5000;
+  translate(value, min_in, max_in, min_out, max_out)
 
-Khai báo tần số sử dụng cho ``PWM`` là ``5000 Hz = 5 KHz``. Tần số này đủ nhanh để mắt người có thể quan sát rõ được.
 
-.. code-block:: guess
-  
-  const int pwmChannel = 0; // channel bất kỳ 0-15
+Hàm ``translate`` sẽ quy đổi khoảng giá trị ban đầu thành khoảng giá trị khác mà chúng ta cần. Trong đó:
 
-Khai báo kênh ``PWM`` sử dụng, có thể chọn 1 kênh bất kỳ từ ``0 ~ 15``.
+  - value  là giá trị cần quy đổi.
+  - min_in là giá trị đầu vào nhỏ nhất.
+  - max_in là giá trị đầu vào lớn nhất.
+  - min_out là giá trị ra vào nhỏ nhất.
+  - max_out là giá trị ra vào lớn nhất.
 
-.. code-block:: guess
+.. image:: images/ls-4-3.png
+  :width: 320
+  :align: center
 
-  const int resolution = 12;
+Xuất giá trị analog ở PORT 4 với giá trị cần xuất ra là kết vừa quy đổi ở trên (``translate_value``)
 
-Chọn độ phân giải của ``duty cycle`` trong ``PWM``. Ở đây ta dùng ``12 bit``, tức là ``duty cycle`` có thể thay đổi trong khoảng từ ``0 ~ 4095``.
+.. code-block:: python
 
-.. code-block:: guess
-  
-  ledcSetup(pwmChannel, frequency, resolution);
+  pin41.write_analog(translate_value)
 
-Khởi tạo kênh ``PWM`` với cấu hình đã khai báo.
+Lệnh khởi tạo một ``Object Pin Analog Write`` đầy đủ như sau:
 
-.. code-block:: guess
+.. code-block:: python
 
-  ledcAttachPin(LEDPin, pwmChannel);
+  pin[X][Y].write_digital((STATE))
 
-Gắn kênh ``PWM`` đã tạo với chân IO của đèn LED để có thể điều khiển được LED bằng ``PWM``.
+Trong đó:
 
-.. code-block:: guess
+  - ``X`` Có giá trị từ 4 ~ 6 đại diện PORT 4 đến PORT 6 của xController.
+  - ``Y`` Có giá trị là 1 hoặc 2 tương ứng với 2 đường tín hiệu logic đối với mỗi PORT. Đối với một số module output thì mặc định là 1.
+  - ``STATE`` Có giá trị là 0 ~ 1023 tương ứng mức điện áp 0 ~ 3.3 volt
 
-  rotaryValue = analogRead(rotaryPin);
-
-Đọc giá trị tín hiệu ``Analog`` ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên ``int`` (nằm trong khoảng từ ``0 ~ 4095``), tương tự như trong bài trước.
-
-.. code-block:: guess
-
-  ledcWrite(pwmChannel, rotaryValue);
-
-Thay đổi độ sáng của đèn LED bằng cách thay đổi giá trị ``duty cycle`` của kênh ``PWM``. Giá trị thay đổi bằng với giá trị của cảm biến xoay.
-
-*Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về độ sáng của đèn LED.*
+Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về độ sáng của đèn LED. 

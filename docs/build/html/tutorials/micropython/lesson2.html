@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 2: Blink LED</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -241,100 +242,77 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">Blink</span> <span class="nv">LED</span>
-<span class="o">//</span> <span class="nv">B</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">sau</span> <span class="nv">m</span>ỗ<span class="nv">i</span> <span class="mi">1</span> <span class="nv">gi</span>â<span class="nv">y</span>
-<span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
-
-<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
-}
-
-<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
-}
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Sau khi chạy chương trình, bạn sẽ thấy đèn LED  phát sáng và tắt liên lục mỗi 1 giây.</p>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>setup(){
-}
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Hàm <code class="docutils literal notranslate"><span class="pre">setup()</span></code> trong chương trình Arduino sẽ được gọi khi chương trình bắt đầu. Hàm này được sử dụng để khởi tạo giá trị của các biến hoặc các thư viện (bạn cần phải khởi tạo chúng trước khi sử dụng). Hàm <code class="docutils literal notranslate"><span class="pre">setup()</span></code> chỉ cần được gọi đúng một lần, sau mỗi lần board khởi động hoặc được reset.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">loop</span><span class="ss">()</span>{
-}
+<p>Câu lệnh này cấu hình chế độ hoạt động của chân IO (nối với module LED) thành <code class="docutils literal notranslate"><span class="pre">DIGITAL</span> <span class="pre">OUTPUT</span></code> để có thể điều khiển được.</p>
+<p>Lưu ý: Một chân IO có thể được sử dụng với các chế độ hoạt động khác nhau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">Analog</span></code></p></li>
+<li><p>Có thể là <code class="docutils literal notranslate"><span class="pre">Input</span></code> (nếu nhận thông tin từ các module như module cảm biến) hoặc <code class="docutils literal notranslate"><span class="pre">Output</span></code> (nếu dùng để điều khiển bật tắt module gắn vào).</p></li>
+</ul>
+</div></blockquote>
+<p>Do tính đa năng như vậy, nên các chân IO còn được gọi là <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">Purpose</span> <span class="pre">Input</span> <span class="pre">Output</span></code> (các chân IO đa mục đích), hay gọi tắt là <code class="docutils literal notranslate"><span class="pre">GPIO</span></code>.</p>
+<p>Lệnh khởi tạo một Object Pin Digital đầy đủ như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>pin[X][Y].write_digital((STATE))
+
+- ``X`` Có giá trị từ ``1 ~ 6`` đại diện PORT 1 đến PORT 6 của xController.
+- ``Y`` Có giá trị là ``1`` hoặc ``2`` tương ứng với 2 đường tín hiệu logic đối với mỗi PORT. Đối với một số module output thì mặc định là 1.
 </pre></div>
 </div>
-<p>Hàm <code class="docutils literal notranslate"><span class="pre">loop()</span></code> sẽ thực hiện đúng như tên gọi của nó: lặp đi lặp lại liên tục các lệnh trong nó. Hàm này chứa các logic chính để để điều khiển hệ thống.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int  LEDPin = D1_1;
-</pre></div>
-</div>
-<p>Dòng lệnh này khai báo một biến có tên là <code class="docutils literal notranslate"><span class="pre">LEDPin</span></code> với kiểu dữ liệu int (integer: số nguyên), đồng thời gán giá trị là <code class="docutils literal notranslate"><span class="pre">D1_1</span></code> (tương ứng với cổng mở rộng trên board mà bạn dùng để kết nối với module LED).</p>
 <p>Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>2 đường tín hiệu dành cho nguồn điện là GND (nguồn âm, 0V) và VCC (nguồn dương, 3.3V)</p></li>
-<li><p>2 đường tín hiệu logic, có thể sử dụng cho tín hiệu Digital (cả 6 cổng) hoặc Analog (chỉ hỗ trợ trên cổng 4, 5 và 6)</p></li>
+<li><p>2 đường tín hiệu logic, có thể sử dụng cho tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> (cả 6 cổng) hoặc <code class="docutils literal notranslate"><span class="pre">Analog</span></code> (chỉ hỗ trợ trên cổng 4, 5 và 6)</p></li>
 </ul>
 </div></blockquote>
-<p>Do module LED sử dụng tín hiệu Digital và chỉ sử dụng 1 tín hiệu nên chúng ta khai báo chân IO (Input Output Pin) trong chương trình là <code class="docutils literal notranslate"><span class="pre">D1_1</span></code>. Ở các bài học sau, bạn sẽ sử dụng một số module dùng cả 2 chân tín hiệu như màn hình LCD hoặc 1 số module sử dụng tín hiệu Analog. Lúc này, bạn sẽ khai báo chân IO là A4_1, A5_1 hoặc A6_1 (A là analog).</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
+<p>Sau đó, dùng một vòng lặp <code class="docutils literal notranslate"><span class="pre">while</span></code> với biểu thức điều kiện luôn luôn trả về <code class="docutils literal notranslate"><span class="pre">True</span></code>. Điều này tương tự như hàm <code class="docutils literal notranslate"><span class="pre">loop</span> <span class="pre">()</span></code> trong Arduino IDE:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="c1"># Các lệnh cần thực hiện</span>
 </pre></div>
 </div>
-<p>Câu lệnh này cấu hình chế độ hoạt động của chân IO (nối với module LED) thành OUTPUT để có thể điều khiển được.</p>
-<p><em>Lưu ý:</em> Một chân IO có thể được sử dụng với các chế độ hoạt động khác nhau:</p>
-<blockquote>
-<div><p>Tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">Analog</span></code>
-Có thể là <code class="docutils literal notranslate"><span class="pre">Input</span></code> (nếu nhận thông tin từ các module như module cảm biến) hoặc <code class="docutils literal notranslate"><span class="pre">Output</span></code> (nếu dùng để điều khiển bật tắt module gắn vào).</p>
-</div></blockquote>
-<p>Do tính đa năng như vậy, nên các chân IO còn được gọi là <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">Purpose</span></code> Input <code class="docutils literal notranslate"><span class="pre">Output</span></code> (các chân IO đa mục đích), hay gọi tắt là <code class="docutils literal notranslate"><span class="pre">GPIO</span></code>.</p>
-<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">pinMode()</span></code> có cú pháp như sau:</p>
-<p>Các tham số truyền vào:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: Số của chân Digital cần cấu hình</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Mode</span></code>: Khai báo chế độ hoạt động, có thể là INPUT , OUTPUT , hoặc  INPUT_PULLUP (bạn sẽ tìm hiểu từng mode này trong các bài học)</p></li>
-</ul>
-</div></blockquote>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(LEDPin, HIGH);
+<p>Để điều khiển object led, ta dùng value(<code class="docutils literal notranslate"><span class="pre">state</span></code>), với <code class="docutils literal notranslate"><span class="pre">state</span></code> là đối số truyền vào giá trị cho led b``ật hoặc <code class="docutils literal notranslate"><span class="pre">tắt</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Xuất ra tín hiệu mức HIGH cho chân IO nối với module LED.</p>
-<p>Nếu chân IO được khai báo mode hoạt động là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> bằng hàm <code class="docutils literal notranslate"><span class="pre">pinMode()</span></code>, thì điện áp xuất ra sẽ là 3.3V (hoặc 5V trên board sử dụng 5V) đối với mức HIGH, và 0V đối với mức LOW.</p>
+<p>Nếu chân IO được khai báo mode <code class="docutils literal notranslate"><span class="pre">write_digital</span></code>, thì điện áp xuất ra sẽ là 3.3V (hoặc 5V trên board sử dụng 5V) đối với mức <code class="docutils literal notranslate"><span class="pre">HIGH</span></code>, và 0V đối với mức <code class="docutils literal notranslate"><span class="pre">LOW</span></code>.</p>
 <p>Câu lệnh trên sẽ xuất ra tín hiệu mức HIGH (3.3V). Khi đó, LED sẽ được bật do có điện.</p>
-<p>Câu lệnh digitalWrite() có cú pháp như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(pin, value)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Các tham số truyền vào:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: chân IO cần xuất tín hiệu</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Value</span></code>: giá trị cần xuất, HIGH hoặc LOW .</p></li>
-</ul>
-</div></blockquote>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>digitalWrite(LEDPin, LOW);
+<p>Tương tự, câu lệnh này xuất tín hiệu <code class="docutils literal notranslate"><span class="pre">LOW</span></code> cho chân IO nối với module LED, tương ứng với mức điện áp 0V. Khi đó, LED sẽ được tắt.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Tương tự, câu lệnh này xuất tín hiệu LOW cho chân IO nối với module LED, tương ứng với mức điện áp 0V. Khi đó, LED sẽ được tắt.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(1000);
-</pre></div>
-</div>
-<p>Dừng chương trình trong một khoảng thời gian (đơn vị mili giây), 1000 mili giây tương ứng với 1 giây.</p>
-<p>Câu lệnh delay() có cú pháp như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(ms)
+<p>Dừng chương trình trong một khoảng thời gian (đơn vị <code class="docutils literal notranslate"><span class="pre">giây</span></code>).</p>
+<p>Câu lệnh sleep() có cú pháp như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Tham số truyền vào:</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">ms</span></code>: số mili giây chương trình tạm dừng.</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">s</span></code>: số giây chương trình tạm dừng.</p>
 </div></blockquote>
 <p>Chúng ta cần tạm dừng chương trình trong khoảng thời gian 1 giây để có thể nhìn rõ được hiệu ứng bật và tắt đèn LED. Nếu không, đèn LED sẽ được bật và tắt một cách chớp nhoáng, mắt người không nhìn rõ được.</p>
 <p>Vậy là bạn đã làm quen với khái niệm tín hiệu Digital và biết cách điều khiển module LED. Ở bài học sau, bạn sẽ kết hợp thêm các tín hiệu Input khác để làm những bài học nâng cao hơn.</p>

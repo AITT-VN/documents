@@ -26,79 +26,63 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  from lcd_1602 import LCD1602
+  import dht
 
-  #include <LCD_1602.h>
-  #include <Mini_Fan.h>
+  dht11 = dht.DHT11(Pin(PORTS_DIGITAL[1][0]))
 
-  LCD_1602 lcd(0x21); 
-  DHTesp dht;
-  MiniFan fan(D3_1, D3_2);
+  lastchecktemp = 0
 
-  unsigned long lastCheckTemp = 0; // lưu thời gian cập nhật nhiệt độ
-
-  void setup(void) {
-    Serial.begin(9600);
-    lcd.begin(D1_1, D1_2);
-    lcd.backlight();
-    dht.setup(D2_1, DHTesp::DHT11);
-  }
-  void loop(void){
-    // lấy thời gian hiện tại
-    unsigned long currentMillis = millis();
-    if (currentMillis - lastCheckTemp >= 5000) {
-      // đã quá 5s kể từ lần cập nhật nhiệt độ cuối
-      // cần cập nhật lại
-      lastCheckTemp = currentMillis;
-      lcd.clear();
-      float h = dht.getHumidity();
-      float t = dht.getTemperature();
-      if (dht.getStatus() != 0) {
-        lcd.print("Read sensor faiLED!");
-        return;
-      }
-      lcd.setCursor(0, 0);
-      lcd.print("Temp:     "); lcd.print(t); lcd.print("C");
-      lcd.setCursor(0, 1);
-      lcd.print("Humidity: "); lcd.print(h); lcd.print("%");
-      if (t < 32){
-        Serial.println("Tắt quạt");
-        fan.off();
-      } else{
-        Serial.println("Bật quạt");
-        fan.on();
-      }
-    }
-  }
-
+  lcd1602 = LCD1602(0)
+  while True:
+    # lấy thời gian hiện tại
+    currentmillis = ticks_ms()
+    if currentmillis - lastchecktemp >= 5000:
+      # đã quá 5s kể từ lần cập nhật nhiệt độ cuối
+      # cần cập nhật lại
+      lastchecktemp = currentmillis
+      dht11.measure()
+      t = dht11.temperature()
+      h = dht11.humidity()
+      lcd1602.move_to(0, 0)
+      lcd1602.putstr((''.join([str(x) for x in ['Nhiet do: ', t, ' C']])))
+      lcd1602.move_to(0, 1)
+      lcd1602.putstr((''.join([str(x2) for x2 in ['Do am: ', h, ' %']])))
+      if t < 32:
+        pin31.write_digital((0))
+        print('Tắt quạt')
+      else:
+        pin31.write_digital((1))
+        print('Bật quạt')
 
 Giải thích chương trình
 --------------
 
-Chương trình trên sẽ tương tự như bài học số 9: Đọc và hiển thị nhiệt độ, độ ẩm lên màn hình LCD. Tuy nhiên, có một sự thay đổi đó là chương trình này không dùng hàm ``delay()`` để chờ 2 giây sau mỗi lần cập nhật, mà chúng ta sẽ dùng một phương pháp hay hơn: lưu thời gian lần cuối cập nhật và liên tục kiểm tra xem đã quá 5 giây kể từ lần cuối cập nhật chưa. Nếu đã quá 5 giây thì sẽ tiến hành cập nhật.
+Chương trình trên sẽ tương tự như bài học số 9: Đọc và hiển thị nhiệt độ, độ ẩm lên màn hình LCD. Tuy nhiên, có một sự thay đổi đó là chương trình này không dùng hàm ``time.sleep()`` để chờ 5 giây sau mỗi lần cập nhật, mà chúng ta sẽ dùng một phương pháp hay hơn: lưu thời gian lần cuối cập nhật và liên tục kiểm tra xem đã quá 5 giây kể từ lần cuối cập nhật chưa. Nếu đã quá 5 giây thì sẽ tiến hành cập nhật.
 
-.. code-block:: guess
+.. code-block:: python
 
-  unsigned long currentMillis = millis();
-  if (currentMillis - lastCheckTemp >= 5000) {
-      // đã quá 5s kể từ lần cập nhật nhiệt độ cuối
-      // cần cập nhật lại
-      lastCheckTemp = currentMillis;
+  currentmillis = ticks_ms()
+  if currentmillis - lastchecktemp >= 5000:
+    # đã quá 5s kể từ lần cập nhật nhiệt độ cuối
+    # cần cập nhật lại
+    lastchecktemp = currentmillis
 
-Hàm ``millis()`` trả về tổng số mili giây, tính từ lúc chương trình bắt đầu chạy cho đến hiện tại.
+Hàm ``ticks_ms()`` trả về tổng số mili giây, tính từ lúc chương trình bắt đầu chạy cho đến hiện tại.
 
-.. code-block:: guess
+.. code-block:: python
 
-  if (t < 32) {
-    Serial.println("Tắt quạt");
-    fan.off();
-  } else {
-    Serial.println("Bật quạt");
-    fan.on();
-  }
+    if t < 32:
+      pin31.write_digital((0))
+      print('Tắt quạt')
+    else:
+      pin31.write_digital((1))
+      print('Bật quạt')
 
 Đồng thời, chúng ta cũng kiểm tra với nhiệt độ hiện tại thì có nên bật quạt không với ngưỡng là 32 độ. Nếu quá 32 độ thì quạt sẽ được bật và ngược lại.

@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -244,71 +245,64 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1; // Module LED nối vào cổng số 1
-int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
-int rotaryValue = 0;
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 
-// khai cấu hình PWM
-const int frequency = 5000;
-const int pwmChannel = 0; // channel bất kỳ 0-15
-const int resolution = 12;
-
-void setup(){
-  // cấu hình và khởi tạo PWM
-  ledcSetup(pwmChannel, frequency, resolution);
-
-  // gắn PWM với chân IO của đèn LED
-  ledcAttachPin(LEDPin, pwmChannel);
-}
-
-void loop() {
-  // đọc giá trị cảm biến
-  rotaryValue = analogRead(rotaryPin);
-  // thay đổi tín hiệu PWM
-  ledcWrite(pwmChannel, rotaryValue);
-}
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">translate_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">)</span>
+  <span class="n">pin11</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">translate_value</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1; // Module LED nối vào cổng số 1
-int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
-int rotaryValue = 0;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Khai báo các chân IO nối với cảm biến xoay và LED như trong bài học trước.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="nb nb-Type">int</span> <span class="n">frequency</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">;</span>
+<p>Đặt biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến xoay trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng <code class="docutils literal notranslate"><span class="pre">pin41.read_analog()</span></code>. Lúc này biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> sẽ trả về giá trị kiểu số nguyên (<code class="docutils literal notranslate"><span class="pre">int</span></code>) nằm trong khoảng từ 0 đến 4095.</p>
+<p>Tuy nhiên, hàm <code class="docutils literal notranslate"><span class="pre">pin[X][Y].write_analog</span></code> chỉ nhận giá trị từ 0 đến 1023, trong khi cảm biến xoay có giá trị từ 0 đến 4095, nên ta cần quy đổi các khoảng giá trị này bằng hàm translate sau đây:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">translate_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Khai báo tần số sử dụng cho <code class="docutils literal notranslate"><span class="pre">PWM</span></code> là <code class="docutils literal notranslate"><span class="pre">5000</span> <span class="pre">Hz</span> <span class="pre">=</span> <span class="pre">5</span> <span class="pre">KHz</span></code>. Tần số này đủ nhanh để mắt người có thể quan sát rõ được.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="nb nb-Type">int</span> <span class="n">pwmChannel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">channel</span> <span class="n">bất</span> <span class="n">kỳ</span> <span class="mi">0</span><span class="o">-</span><span class="mi">15</span>
+<p>Ta sẽ gán giá trị quy đổi bằng biến <code class="docutils literal notranslate"><span class="pre">translate_value</span></code>.</p>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">translate()</span></code> có cấu trúc đầy đủ như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">translate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">min_in</span><span class="p">,</span> <span class="n">max_in</span><span class="p">,</span> <span class="n">min_out</span><span class="p">,</span> <span class="n">max_out</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Khai báo kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> sử dụng, có thể chọn 1 kênh bất kỳ từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">15</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span> <span class="nb nb-Type">int</span> <span class="n">resolution</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">translate</span></code> sẽ quy đổi khoảng giá trị ban đầu thành khoảng giá trị khác mà chúng ta cần. Trong đó:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value  là giá trị cần quy đổi.</p></li>
+<li><p>min_in là giá trị đầu vào nhỏ nhất.</p></li>
+<li><p>max_in là giá trị đầu vào lớn nhất.</p></li>
+<li><p>min_out là giá trị ra vào nhỏ nhất.</p></li>
+<li><p>max_out là giá trị ra vào lớn nhất.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/ls-4-3.png"><img alt="../../_images/ls-4-3.png" class="align-center" src="../../_images/ls-4-3.png" style="width: 320px;" /></a>
+<p>Xuất giá trị analog ở PORT 4 với giá trị cần xuất ra là kết vừa quy đổi ở trên (<code class="docutils literal notranslate"><span class="pre">translate_value</span></code>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pin41</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">translate_value</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Chọn độ phân giải của <code class="docutils literal notranslate"><span class="pre">duty</span> <span class="pre">cycle</span></code> trong <code class="docutils literal notranslate"><span class="pre">PWM</span></code>. Ở đây ta dùng <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">bit</span></code>, tức là <code class="docutils literal notranslate"><span class="pre">duty</span> <span class="pre">cycle</span></code> có thể thay đổi trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>ledcSetup(pwmChannel, frequency, resolution);
+<p>Lệnh khởi tạo một <code class="docutils literal notranslate"><span class="pre">Object</span> <span class="pre">Pin</span> <span class="pre">Analog</span> <span class="pre">Write</span></code> đầy đủ như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pin</span><span class="p">[</span><span class="n">X</span><span class="p">][</span><span class="n">Y</span><span class="p">]</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="n">STATE</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>Khởi tạo kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> với cấu hình đã khai báo.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>ledcAttachPin(LEDPin, pwmChannel);
-</pre></div>
-</div>
-<p>Gắn kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> đã tạo với chân IO của đèn LED để có thể điều khiển được LED bằng <code class="docutils literal notranslate"><span class="pre">PWM</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>rotaryValue = analogRead(rotaryPin);
-</pre></div>
-</div>
-<p>Đọc giá trị tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên <code class="docutils literal notranslate"><span class="pre">int</span></code> (nằm trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code>), tương tự như trong bài trước.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>ledcWrite(pwmChannel, rotaryValue);
-</pre></div>
-</div>
-<p>Thay đổi độ sáng của đèn LED bằng cách thay đổi giá trị <code class="docutils literal notranslate"><span class="pre">duty</span> <span class="pre">cycle</span></code> của kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code>. Giá trị thay đổi bằng với giá trị của cảm biến xoay.</p>
-<p><em>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về độ sáng của đèn LED.</em></p>
+<p>Trong đó:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> Có giá trị từ 4 ~ 6 đại diện PORT 4 đến PORT 6 của xController.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Y</span></code> Có giá trị là 1 hoặc 2 tương ứng với 2 đường tín hiệu logic đối với mỗi PORT. Đối với một số module output thì mặc định là 1.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">STATE</span></code> Có giá trị là 0 ~ 1023 tương ứng mức điện áp 0 ~ 3.3 volt</p></li>
+</ul>
+</div></blockquote>
+<p>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về độ sáng của đèn LED.</p>
 </div>
 </div>
 

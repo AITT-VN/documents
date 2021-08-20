@@ -17,87 +17,106 @@ Thiết bị cần sử dụng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.
+.. code-block:: python
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+  # Phát bài nhạc Twinkle twinkle little stars
+  # Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son
+  def song_1():
+    speaker.play(['C4:1'], wait=True)
+    speaker.play(['C4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
+    speaker.play(['A4:1'], wait=True)
+    speaker.play(['A4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
 
-.. code-block:: guess
+  # Đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ
+  def song_2():
+    speaker.play(['F4:1'], wait=True)
+    speaker.play(['F4:1'], wait=True)
+    speaker.play(['E4:1'], wait=True)
+    speaker.play(['E4:1'], wait=True)
+    speaker.play(['D4:1'], wait=True)
+    speaker.play(['D4:1'], wait=True)
+    speaker.play(['C4:1'], wait=True)
 
-  #include <xcontroller.h>
 
-  #define BUZZER_CHANNEL 0 // giá trị bất kỳ từ 0 đến 15
-
-  XController xcon;
-
-  void setup() { }
-
-  void loop() {
-    // phát bài nhạc Twinkle twinkle little stars
-    // đoạn 1: Đồ, Đồ, Son, Son, La, La, Son
-    xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_G4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_G4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_A4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_A4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_G4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    delay(500);
-    // đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ
-    xcon.tone(NOTE_F4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_F4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_E4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_E4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_D4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_D4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
-    xcon.noTone(BUZZER_CHANNEL);
-    delay(1000);
-  }
+  while True:
+    song_1()
+    time.sleep(0.5)
+    song_2()
+    time.sleep(1)
 
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+Với những chương trình dài có nhiều khối lệnh, chúng ta sẽ sử dụng Hàm để rút gọn những chương trình đó. Hàm sẽ chứa những hàm con bên trong. Khi bạn gọi tên Hàm thì các lệnh hàm con bên trong sẽ được thực hiện. Ta sử dụng cấu trúc sau để tạo một hàm:
 
-  #define BUZZER_CHANNEL 0 // giá trị bất kỳ từ 0 đến 15
+.. code-block:: python
 
-Thư viện làm việc với còi báo cũng sử dụng PWM để phát nhạc. Bạn có thể xem lại kiến thức về PWM trong bài học 5. Ở đây, chúng ta khai báo kênh PWM muốn sử dụng là 0.
+  def name():
+    # Doing something
 
-.. code-block:: guess
-  
-  xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
-  xcon.noTone(BUZZER_CHANNEL);
+Trong đó ``name`` là tên mà bạn muốn đặt cho hàm này. Khi bạn gọi ``name()`` ở bất kì đâu thì nó sẽ thực hiện những hàm bên trong này mà không cần phải viết lại.
 
-Trong hàm ``loop()`` của chương trình, 2 câu hàm ``tone()`` và ``notone()`` được sử dụng để phát ra nhạc và tắt nhạc. Hai hàm này có cú pháp như sau:
+Chúng ta sẽ viết 1 bài nhạc gồm 2 đoạn
 
-.. code-block:: guess
+  - Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son
+  - Đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ
 
-  tone(frequency, duration, channel);
+Vì thế chúng ta sẽ tạo hai hàm ``song_1(), song_2()``:
 
-.. code-block:: guess
+.. code-block:: python
 
-  noTone(channel);
+  # Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son
+  def song_1():
+    speaker.play(['C4:1'], wait=True)
+    speaker.play(['C4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
+    speaker.play(['A4:1'], wait=True)
+    speaker.play(['A4:1'], wait=True)
+    speaker.play(['G4:1'], wait=True)
+  def song_2():
+    speaker.play(['F4:1'], wait=True)
+    speaker.play(['F4:1'], wait=True)
+    speaker.play(['E4:1'], wait=True)
+    speaker.play(['E4:1'], wait=True)
+    speaker.play(['D4:1'], wait=True)
+    speaker.play(['D4:1'], wait=True)
+    speaker.play(['C4:1'], wait=True)
+
+
+Trong các hàm ``song_1() ``và ``song_2()`` của chương trình, hàm ``speaker.play()`` được sử dụng để phát ra nhạc. Hàm này có cú pháp như sau:
+
+.. code-block:: python
+
+  speaker.play(tune, wait=False, loop=False, duration=None)
 
 Ý nghĩa các tham số:
 
-  - ``frequency``: Tần số hoặc tên nốt nhạc cần phát
-  - ``duration``: Thời gian kéo dài
-  - ``channel``: kênh PWM dùng để phát (nhận giá trị từ 0-15)
+  - tune: Có thể là 1 trong các bài hát hoặc một tone nhạc nào đó:
 
-*Sau khi chạy chương trình, còi báo tích hợp trên board xController sẽ liên tục phát ra các nốt nhạc của bài hát quen thuộc “Twinkle Twinkle Little Stars”.*
+    - ``Bài hát`` : BIRTHDAY, TWINKLE, JINGLE_BELLS, WHEEL_ON_BUS, FUR_ELISE,CHASE,JUMP_UP,JUMP_DOWN,POWER_UP,POWER_DOWN
+    - ``Tone`` : Đây là các nốt trong nhạc lý:
+
+    .. image:: images/ls-8-1.png
+      :width: 480
+      :align: center
+
+  - ``wait``: Nếu bằng True thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là False.
+
+  - ``duration``: Thời gian kéo dài
+
+Ngoài ra, để dừng play nhạc, bạn có thể dùng thêm hàm sau:
+
+.. code-block:: python
+
+  speaker.stop()
+
+Sau khi chạy chương trình, còi báo tích hợp trên board xController sẽ liên tục phát ra các nốt nhạc của bài hát quen thuộc “Twinkle Twinkle Little Stars”.

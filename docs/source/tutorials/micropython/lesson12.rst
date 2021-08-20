@@ -39,88 +39,66 @@ Thiết bị cần sử dụng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  from ir_receiver import *;ir_rx.start();
 
-  #include <IRremote.h>
 
-  XController xcon;
-  IRrecv irrecv(IR_RX);
-  int irCommand;
+  while True:
+    if ir_rx.get_code() == IR_REMOTE_A:
+      led_onboard.show(0, (255, 0, 0))
+      ir_rx.clear_code()
+    elif ir_rx.get_code() == IR_REMOTE_B:
+      led_onboard.show(0, (0, 255, 0))
+      ir_rx.clear_code()
+    elif ir_rx.get_code() == IR_REMOTE_C:
+      led_onboard.show(0, (0, 0, 255))
+      ir_rx.clear_code()
+    elif ir_rx.get_code() == IR_REMOTE_D:
+      led_onboard.show(0, (255, 255, 255))
+      ir_rx.clear_code()
+    else:
+      led_onboard.show(0, (0, 0, 0))
+      ir_rx.clear_code()
 
-  void setup()
-  {
-    IrReceiver.begin(); 
-    Serial.begin(9600);   
-  }
-
-  void loop() {
-    if (irrecv.decode()) {
-      irCommand = irrecv.decodedIRData.command;
-      Serial.println(irCommand);
-      irrecv.resume();
-      if (irCommand == IR_REMOTE_A){
-        xcon.showLED(0, 255, 0, 0);
-      } else if (irCommand == IR_REMOTE_B){
-        xcon.showLED(0, 0, 255, 0);
-      } else if (irCommand == IR_REMOTE_C){
-        xcon.showLED(0, 0, 0, 255);
-      } else if (irCommand == IR_REMOTE_D){
-        xcon.showLED(0, 255, 255, 255);
-      } else {
-        xcon.showLED(0, 0, 0, 0);
-      }
-    }
-  }
 
 Giải thích chương trình
 --------------
 
 Chương trình trên sẽ liên tục đọc tín hiệu IR (nếu có) và giải mãi. Nếu tín hiệu giải mã trùng với các phím A, B, C hoặc D trên remote hồng ngoại đi kèm, đèn LED RGB sẽ đổi màu tương ứng. Nếu tín hiệu nhận được không phải 1 trong 4 phím đó thì đèn LED sẽ tắt.
 
+.. code-block:: python
 
-.. code-block:: guess
-
-  #include <IRremote.h>
+  from ir_receiver import *;
 
 Khai báo sử dụng thư viện để làm việc với remote IR.
 
-.. code-block:: guess
+.. code-block:: python
 
-  IRrecv irrecv(IR_RX);
-
-Khai báo đối tượng để thu và xử lý tín hiệu IR cùng với chân IO nối với đèn LED thu IR. ``IR_RX`` là số chân IO đã được định nghĩa sẵn trong cài đặt của board xController.
-
-.. code-block:: guess
-
-  irrecv.begin();
+  ir_rx.start();
 
 Khởi tạo và bắt đầu xử lý tín hiệu IR.
 
-.. code-block:: guess
+.. code-block:: python
 
-  if (irrecv.decode()) {
+  ir_rx.get_code()
 
-Hàm ``decode()`` sẽ giải mã tín hiệu nhận được. Nếu có tín hiệu nhận được và giải mã thành công thì hàm này sẽ trả về ``true``. Do đó, ta kiểm tra bằng câu lệnh ``if`` và đưa ra các lệnh xử lý tương ứng.
+Hàm ``ir_rx.get_code()`` sẽ trả về chuỗi tương ứng với phím được nhấn trên IR remote.
 
-.. code-block:: guess
-  irCommand = irrecv.decodedIRData.command;
-  Serial.println(irCommand);
-  irrecv.resume();
+.. code-block:: python
 
-Đọc giá trị tín hiệu đã được giải mã và in ra cửa sổ Serial. Đồng thời, chạy lại chức năng thu tín hiệu bằng hàm ``resume()``.
+  if ir_rx.get_code() == IR_REMOTE_A:
+    led_onboard.show(0, (255, 0, 0))
+    ir_rx.clear_code()
 
-.. code-block:: guess
+Dúng hàm If kiểm tra: Nếu tín hiệu trùng với phím A trên remote thì đổi màu đèn LED RGB thành màu đỏ. ``IR_REMOTE_A`` là giá trị tín hiệu của phím A trên remote đi kèm bộ kit (đã được khai báo trong thư viện IRRemote).
 
-  if (irCommand == IR_REMOTE_A){
-    xcon.showLED(0, 255, 0, 0);
-  }
-
-Kiểm tra: Nếu tín hiệu trùng với phím A trên remote thì đổi màu đèn LED RGB thành màu đỏ. ``IR_REMOTE_A`` là giá trị tín hiệu của phím A trên remote đi kèm bộ kit (đã được khai báo trong thư viện IRRemote).
+Đồng thời ta sẽ sử dụng thêm hàm ``ir_rx.clear_code()`` để xóa các giá trị đã nhận để tránh trùng lặp với các giá trị mới.
 
 Kiểm tra tương tự với các phím B, C và D bằng đoạn code bên dưới.
 
-*Sau khi chạy chương trình, bạn thử hướng remote về phía board và nhấn các phím A, B, C, D. Bạn sẽ thấy màu LED thay đổi theo như logic trong chương trình.*
+Sau khi chạy chương trình, bạn thử hướng remote về phía board và nhấn các phím A, B, C, D. Bạn sẽ thấy màu LED thay đổi theo như logic trong chương trình.

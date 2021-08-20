@@ -52,26 +52,17 @@ Thiết bị cần sử dụng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
-
-  // Blink LED
-  // Bật tắt đèn LED sau mỗi 1 giây
-  int LEDPin = D1_1; 
-
-  void setup() { 
-    pinMode(LEDPin, OUTPUT);
-  }
-
-  void loop() {
-    digitalWrite(LEDPin, HIGH);
-    delay(1000);
-    digitalWrite(LEDPin, LOW);
-    delay(1000);
-  }
+  while True:
+    pin11.write_digital(1)
+    time.sleep(1)
+    pin11.write_digital(0)
+    time.sleep(1)
 
 Sau khi chạy chương trình, bạn sẽ thấy đèn LED  phát sáng và tắt liên lục mỗi 1 giây.
 
@@ -79,99 +70,74 @@ Sau khi chạy chương trình, bạn sẽ thấy đèn LED  phát sáng và t�
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  setup(){ 
-  }
+  pin11.write_digital(1)
 
-Hàm ``setup()`` trong chương trình Arduino sẽ được gọi khi chương trình bắt đầu. Hàm này được sử dụng để khởi tạo giá trị của các biến hoặc các thư viện (bạn cần phải khởi tạo chúng trước khi sử dụng). Hàm ``setup()`` chỉ cần được gọi đúng một lần, sau mỗi lần board khởi động hoặc được reset.
+Câu lệnh này cấu hình chế độ hoạt động của chân IO (nối với module LED) thành ``DIGITAL OUTPUT`` để có thể điều khiển được. 
 
-.. code-block:: guess
+Lưu ý: Một chân IO có thể được sử dụng với các chế độ hoạt động khác nhau:
 
-  loop(){
-  }
+  - Tín hiệu ``Digital`` hoặc ``Analog``
+  - Có thể là ``Input`` (nếu nhận thông tin từ các module như module cảm biến) hoặc ``Output`` (nếu dùng để điều khiển bật tắt module gắn vào). 
 
-Hàm ``loop()`` sẽ thực hiện đúng như tên gọi của nó: lặp đi lặp lại liên tục các lệnh trong nó. Hàm này chứa các logic chính để để điều khiển hệ thống.
+Do tính đa năng như vậy, nên các chân IO còn được gọi là ``General Purpose Input Output`` (các chân IO đa mục đích), hay gọi tắt là ``GPIO``.
 
-.. code-block:: guess
+Lệnh khởi tạo một Object Pin Digital đầy đủ như sau:
 
- 	int  LEDPin = D1_1;
+.. code-block:: python
 
-Dòng lệnh này khai báo một biến có tên là ``LEDPin`` với kiểu dữ liệu int (integer: số nguyên), đồng thời gán giá trị là ``D1_1`` (tương ứng với cổng mở rộng trên board mà bạn dùng để kết nối với module LED).
+  pin[X][Y].write_digital((STATE))
+
+  - ``X`` Có giá trị từ ``1 ~ 6`` đại diện PORT 1 đến PORT 6 của xController.
+  - ``Y`` Có giá trị là ``1`` hoặc ``2`` tương ứng với 2 đường tín hiệu logic đối với mỗi PORT. Đối với một số module output thì mặc định là 1.
 
 Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:
 
   - 2 đường tín hiệu dành cho nguồn điện là GND (nguồn âm, 0V) và VCC (nguồn dương, 3.3V)
-  - 2 đường tín hiệu logic, có thể sử dụng cho tín hiệu Digital (cả 6 cổng) hoặc Analog (chỉ hỗ trợ trên cổng 4, 5 và 6)
+  - 2 đường tín hiệu logic, có thể sử dụng cho tín hiệu ``Digital`` (cả 6 cổng) hoặc ``Analog`` (chỉ hỗ trợ trên cổng 4, 5 và 6)
 
-Do module LED sử dụng tín hiệu Digital và chỉ sử dụng 1 tín hiệu nên chúng ta khai báo chân IO (Input Output Pin) trong chương trình là ``D1_1``. Ở các bài học sau, bạn sẽ sử dụng một số module dùng cả 2 chân tín hiệu như màn hình LCD hoặc 1 số module sử dụng tín hiệu Analog. Lúc này, bạn sẽ khai báo chân IO là A4_1, A5_1 hoặc A6_1 (A là analog).
+Sau đó, dùng một vòng lặp ``while`` với biểu thức điều kiện luôn luôn trả về ``True``. Điều này tương tự như hàm ``loop ()`` trong Arduino IDE:
 
-.. code-block:: guess
+.. code-block:: python
 
-  pinMode(LEDPin, OUTPUT);
+  while True:
+    # Các lệnh cần thực hiện
 
-Câu lệnh này cấu hình chế độ hoạt động của chân IO (nối với module LED) thành OUTPUT để có thể điều khiển được. 
+Để điều khiển object led, ta dùng value(``state``), với ``state`` là đối số truyền vào giá trị cho led b``ật hoặc ``tắt``.
 
-*Lưu ý:* Một chân IO có thể được sử dụng với các chế độ hoạt động khác nhau:
+.. code-block:: python
 
-  Tín hiệu ``Digital`` hoặc ``Analog``
-  Có thể là ``Input`` (nếu nhận thông tin từ các module như module cảm biến) hoặc ``Output`` (nếu dùng để điều khiển bật tắt module gắn vào). 
-
-Do tính đa năng như vậy, nên các chân IO còn được gọi là ``General Purpose`` Input ``Output`` (các chân IO đa mục đích), hay gọi tắt là ``GPIO``.
-
-Câu lệnh ``pinMode()`` có cú pháp như sau:
-
-.. code-block:: guess
-  pinMode(pin, mode)
-
-Các tham số truyền vào:
-
-  - ``pin``: Số của chân Digital cần cấu hình
-  - ``Mode``: Khai báo chế độ hoạt động, có thể là INPUT , OUTPUT , hoặc  INPUT_PULLUP (bạn sẽ tìm hiểu từng mode này trong các bài học)
-
-.. code-block:: guess
-
-  digitalWrite(LEDPin, HIGH);
+  pin11.write_digital(1)
 
 Xuất ra tín hiệu mức HIGH cho chân IO nối với module LED.
 
-Nếu chân IO được khai báo mode hoạt động là ``OUTPUT`` bằng hàm ``pinMode()``, thì điện áp xuất ra sẽ là 3.3V (hoặc 5V trên board sử dụng 5V) đối với mức HIGH, và 0V đối với mức LOW.
+Nếu chân IO được khai báo mode ``write_digital``, thì điện áp xuất ra sẽ là 3.3V (hoặc 5V trên board sử dụng 5V) đối với mức ``HIGH``, và 0V đối với mức ``LOW``.
 
 Câu lệnh trên sẽ xuất ra tín hiệu mức HIGH (3.3V). Khi đó, LED sẽ được bật do có điện.
 
-Câu lệnh digitalWrite() có cú pháp như sau:
+.. code-block:: python
 
-.. code-block:: guess
+  pin11.write_digital(0)
 
-  digitalWrite(pin, value)
+Tương tự, câu lệnh này xuất tín hiệu ``LOW`` cho chân IO nối với module LED, tương ứng với mức điện áp 0V. Khi đó, LED sẽ được tắt.
 
-Các tham số truyền vào:
+.. code-block:: python
 
-  - ``pin``: chân IO cần xuất tín hiệu
-  - ``Value``: giá trị cần xuất, HIGH hoặc LOW .
+  time.sleep(1)
 
-.. code-block:: guess
+Dừng chương trình trong một khoảng thời gian (đơn vị ``giây``).
 
-  digitalWrite(LEDPin, LOW);
+Câu lệnh sleep() có cú pháp như sau:
 
-Tương tự, câu lệnh này xuất tín hiệu LOW cho chân IO nối với module LED, tương ứng với mức điện áp 0V. Khi đó, LED sẽ được tắt.
+.. code-block:: python
 
-.. code-block:: guess
-
-  delay(1000);
-
-Dừng chương trình trong một khoảng thời gian (đơn vị mili giây), 1000 mili giây tương ứng với 1 giây.
-
-Câu lệnh delay() có cú pháp như sau:
-
-.. code-block:: guess
-
-  delay(ms)
+  time.sleep(s)
 
 Tham số truyền vào:
 
-  ``ms``: số mili giây chương trình tạm dừng.
-  
+  ``s``: số giây chương trình tạm dừng.
+
 Chúng ta cần tạm dừng chương trình trong khoảng thời gian 1 giây để có thể nhìn rõ được hiệu ứng bật và tắt đèn LED. Nếu không, đèn LED sẽ được bật và tắt một cách chớp nhoáng, mắt người không nhìn rõ được.
 
 Vậy là bạn đã làm quen với khái niệm tín hiệu Digital và biết cách điều khiển module LED. Ở bài học sau, bạn sẽ kết hợp thêm các tín hiệu Input khác để làm những bài học nâng cao hơn.

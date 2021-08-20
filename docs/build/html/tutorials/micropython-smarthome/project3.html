@@ -221,49 +221,36 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#<span class="nv">define</span> <span class="nv">LIGHT_PIN</span> <span class="nv">A4_1</span>
-#<span class="nv">define</span> <span class="nv">PIR_PIN</span> <span class="nv">D5_1</span>
-#<span class="nv">define</span> <span class="nv">LED_PIN</span> <span class="nv">D6_1</span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lightsensorvalue</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">pirstate</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ledstate</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ledontime</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nv">int</span> <span class="nv">lightSensorValue</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-<span class="nv">int</span> <span class="nv">pirState</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-<span class="nv">int</span> <span class="nv">LEDState</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-
-<span class="nv">unsigned</span> <span class="nv">long</span> <span class="nv">LEDOnTime</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">; // lưu thời gian lúc bật đèn</span>
-
-<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LED_PIN</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">PIR_PIN</span>, <span class="nv">INPUT</span><span class="ss">)</span><span class="c1">;</span>
-}
-
-<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
-  <span class="o">//</span> đọ<span class="nv">c</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> á<span class="nv">nh</span> <span class="nv">s</span>á<span class="nv">ng</span>
-  <span class="nv">lightSensorValue</span> <span class="o">=</span> <span class="nv">analogRead</span><span class="ss">(</span><span class="nv">LIGHT_PIN</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">pirState</span> <span class="o">=</span> <span class="nv">digitalRead</span><span class="ss">(</span><span class="nv">PIR_PIN</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">pirState</span> <span class="o">==</span> <span class="nv">HIGH</span> <span class="o">&amp;&amp;</span> <span class="nv">lightSensorValue</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="ss">)</span> {
-    <span class="o">//</span> <span class="nv">tr</span>ờ<span class="nv">i</span> <span class="nv">t</span>ố<span class="nv">i</span> <span class="nv">v</span>à <span class="nv">ph</span>á<span class="nv">t</span> <span class="nv">hi</span>ệ<span class="nv">n</span> <span class="nv">c</span>ó <span class="nv">ng</span>ườ<span class="nv">i</span> <span class="o">=&gt;</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LED_PIN</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-    <span class="nv">LEDOnTime</span> <span class="o">=</span> <span class="nv">millis</span><span class="ss">()</span><span class="c1">;</span>
-    <span class="nv">LEDState</span> <span class="o">=</span> <span class="mi">1</span><span class="c1">;</span>
-  }
-
-  <span class="o">//</span> <span class="nv">l</span>ấ<span class="nv">y</span> <span class="nv">th</span>ờ<span class="nv">i</span> <span class="nv">gian</span> <span class="nv">hi</span>ệ<span class="nv">n</span> <span class="nv">t</span>ạ<span class="nv">i</span>
-  <span class="nv">unsigned</span> <span class="nv">long</span> <span class="nv">currentMillis</span> <span class="o">=</span> <span class="nv">millis</span><span class="ss">()</span><span class="c1">;</span>
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">LEDState</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nv">currentMillis</span> <span class="o">-</span> <span class="nv">LEDOnTime</span> <span class="o">&gt;=</span> <span class="mi">10000</span><span class="ss">)</span> {
-    <span class="o">//</span> đã <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> đượ<span class="nv">c</span> <span class="nv">qu</span>á <span class="mi">15</span><span class="nv">s</span> <span class="o">=&gt;</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LED_PIN</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-    <span class="nv">LEDOnTime</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-    <span class="nv">LEDState</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-  }
-}
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">lightsensorvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
+  <span class="n">pirstate</span> <span class="o">=</span> <span class="n">pin51</span><span class="o">.</span><span class="n">read_digital</span><span class="p">()</span>
+  <span class="k">if</span> <span class="n">pirstate</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">lightsensorvalue</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="n">pin61</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">ledontime</span> <span class="o">=</span> <span class="n">ticks_ms</span>
+    <span class="n">ledstate</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">currentmillis</span> <span class="o">=</span> <span class="n">ticks_ms</span>
+  <span class="k">if</span> <span class="n">ledstate</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">currentmillis</span> <span class="o">-</span> <span class="n">ledontime</span> <span class="o">&gt;=</span> <span class="mi">10000</span><span class="p">:</span>
+    <span class="n">pin61</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">ledontime</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">ledstate</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Trong chương trình trên, chúng ta sẽ sử dụng các hàm đơn giản đã học là <code class="docutils literal notranslate"><span class="pre">digitalRead()</span></code> để đọc tín hiệu Digital từ cảm biến PIR và hàm <code class="docutils literal notranslate"><span class="pre">analogRead()</span></code> để đọc giá trị cảm biến ánh sáng. Sau đó, chương trình kiểm tra điều kiện có phát hiện sự chuyển động và trời có đang tối không để bật đèn.</p>
+<p>Trong chương trình trên, chúng ta sẽ sử dụng các hàm đơn giản đã học là <code class="docutils literal notranslate"><span class="pre">read_digital()</span></code> để đọc tín hiệu Digital từ cảm biến PIR và hàm <code class="docutils literal notranslate"><span class="pre">read_analog()</span></code> để đọc giá trị cảm biến ánh sáng. Sau đó, chương trình kiểm tra điều kiện có phát hiện sự chuyển động và trời có đang tối không để bật đèn.</p>
 <p>Sau khi bật đèn, chúng ta sử dụng cách thức đo thời gian như trong project 2 để biết đến lúc phải tắt đèn (sau 10 giây tính từ lúc bật đèn).</p>
 </div>
 </div>

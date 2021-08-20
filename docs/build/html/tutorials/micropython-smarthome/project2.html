@@ -212,71 +212,61 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;Mini_Fan.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lcd_1602</span> <span class="kn">import</span> <span class="n">LCD1602</span>
+<span class="kn">import</span> <span class="nn">dht</span>
 
-<span class="n">LCD_1602</span> <span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span>
-<span class="n">DHTesp</span> <span class="n">dht</span><span class="p">;</span>
-<span class="n">MiniFan</span> <span class="nf">fan</span><span class="p">(</span><span class="n">D3_1</span><span class="p">,</span> <span class="n">D3_2</span><span class="p">);</span>
+<span class="n">dht11</span> <span class="o">=</span> <span class="n">dht</span><span class="o">.</span><span class="n">DHT11</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="n">PORTS_DIGITAL</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
 
-<span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastCheckTemp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// lưu thời gian cập nhật nhiệt độ</span>
+<span class="n">lastchecktemp</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-  <span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span> <span class="n">D1_2</span><span class="p">);</span>
-  <span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
-  <span class="n">dht</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span><span class="n">D2_1</span><span class="p">,</span> <span class="n">DHTesp</span><span class="o">::</span><span class="n">DHT11</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-  <span class="c1">// lấy thời gian hiện tại</span>
-  <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">currentMillis</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">currentMillis</span> <span class="o">-</span> <span class="n">lastCheckTemp</span> <span class="o">&gt;=</span> <span class="mi">5000</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// đã quá 5s kể từ lần cập nhật nhiệt độ cuối</span>
-    <span class="c1">// cần cập nhật lại</span>
-    <span class="n">lastCheckTemp</span> <span class="o">=</span> <span class="n">currentMillis</span><span class="p">;</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="kt">float</span> <span class="n">h</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="n">getHumidity</span><span class="p">();</span>
-    <span class="kt">float</span> <span class="n">t</span> <span class="o">=</span> <span class="n">dht</span><span class="p">.</span><span class="n">getTemperature</span><span class="p">();</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">dht</span><span class="p">.</span><span class="n">getStatus</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Read sensor faiLED!&quot;</span><span class="p">);</span>
-      <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temp:     &quot;</span><span class="p">);</span> <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span> <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;C&quot;</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span> <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span> <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;%&quot;</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">){</span>
-      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Tắt quạt&quot;</span><span class="p">);</span>
-      <span class="n">fan</span><span class="p">.</span><span class="n">off</span><span class="p">();</span>
-    <span class="p">}</span> <span class="k">else</span><span class="p">{</span>
-      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Bật quạt&quot;</span><span class="p">);</span>
-      <span class="n">fan</span><span class="p">.</span><span class="n">on</span><span class="p">();</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="n">lcd1602</span> <span class="o">=</span> <span class="n">LCD1602</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="c1"># lấy thời gian hiện tại</span>
+  <span class="n">currentmillis</span> <span class="o">=</span> <span class="n">ticks_ms</span><span class="p">()</span>
+  <span class="k">if</span> <span class="n">currentmillis</span> <span class="o">-</span> <span class="n">lastchecktemp</span> <span class="o">&gt;=</span> <span class="mi">5000</span><span class="p">:</span>
+    <span class="c1"># đã quá 5s kể từ lần cập nhật nhiệt độ cuối</span>
+    <span class="c1"># cần cập nhật lại</span>
+    <span class="n">lastchecktemp</span> <span class="o">=</span> <span class="n">currentmillis</span>
+    <span class="n">dht11</span><span class="o">.</span><span class="n">measure</span><span class="p">()</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">dht11</span><span class="o">.</span><span class="n">temperature</span><span class="p">()</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">dht11</span><span class="o">.</span><span class="n">humidity</span><span class="p">()</span>
+    <span class="n">lcd1602</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">lcd1602</span><span class="o">.</span><span class="n">putstr</span><span class="p">((</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Nhiet do: &#39;</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39; C&#39;</span><span class="p">]])))</span>
+    <span class="n">lcd1602</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">lcd1602</span><span class="o">.</span><span class="n">putstr</span><span class="p">((</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span> <span class="k">for</span> <span class="n">x2</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Do am: &#39;</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="s1">&#39; %&#39;</span><span class="p">]])))</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">:</span>
+      <span class="n">pin31</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">0</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tắt quạt&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">pin31</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">1</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bật quạt&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Chương trình trên sẽ tương tự như bài học số 9: Đọc và hiển thị nhiệt độ, độ ẩm lên màn hình LCD. Tuy nhiên, có một sự thay đổi đó là chương trình này không dùng hàm <code class="docutils literal notranslate"><span class="pre">delay()</span></code> để chờ 2 giây sau mỗi lần cập nhật, mà chúng ta sẽ dùng một phương pháp hay hơn: lưu thời gian lần cuối cập nhật và liên tục kiểm tra xem đã quá 5 giây kể từ lần cuối cập nhật chưa. Nếu đã quá 5 giây thì sẽ tiến hành cập nhật.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">unsigned</span> <span class="nv">long</span> <span class="nv">currentMillis</span> <span class="o">=</span> <span class="nv">millis</span><span class="ss">()</span><span class="c1">;</span>
-<span class="k">if</span> <span class="ss">(</span><span class="nv">currentMillis</span> <span class="o">-</span> <span class="nv">lastCheckTemp</span> <span class="o">&gt;=</span> <span class="mi">5000</span><span class="ss">)</span> {
-    <span class="o">//</span> đã <span class="nv">qu</span>á <span class="mi">5</span><span class="nv">s</span> <span class="nv">k</span>ể <span class="nv">t</span>ừ <span class="nv">l</span>ầ<span class="nv">n</span> <span class="nv">c</span>ậ<span class="nv">p</span> <span class="nv">nh</span>ậ<span class="nv">t</span> <span class="nv">nhi</span>ệ<span class="nv">t</span> độ <span class="nv">cu</span>ố<span class="nv">i</span>
-    <span class="o">//</span> <span class="nv">c</span>ầ<span class="nv">n</span> <span class="nv">c</span>ậ<span class="nv">p</span> <span class="nv">nh</span>ậ<span class="nv">t</span> <span class="nv">l</span>ạ<span class="nv">i</span>
-    <span class="nv">lastCheckTemp</span> <span class="o">=</span> <span class="nv">currentMillis</span><span class="c1">;</span>
+<p>Chương trình trên sẽ tương tự như bài học số 9: Đọc và hiển thị nhiệt độ, độ ẩm lên màn hình LCD. Tuy nhiên, có một sự thay đổi đó là chương trình này không dùng hàm <code class="docutils literal notranslate"><span class="pre">time.sleep()</span></code> để chờ 5 giây sau mỗi lần cập nhật, mà chúng ta sẽ dùng một phương pháp hay hơn: lưu thời gian lần cuối cập nhật và liên tục kiểm tra xem đã quá 5 giây kể từ lần cuối cập nhật chưa. Nếu đã quá 5 giây thì sẽ tiến hành cập nhật.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">currentmillis</span> <span class="o">=</span> <span class="n">ticks_ms</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">currentmillis</span> <span class="o">-</span> <span class="n">lastchecktemp</span> <span class="o">&gt;=</span> <span class="mi">5000</span><span class="p">:</span>
+  <span class="c1"># đã quá 5s kể từ lần cập nhật nhiệt độ cuối</span>
+  <span class="c1"># cần cập nhật lại</span>
+  <span class="n">lastchecktemp</span> <span class="o">=</span> <span class="n">currentmillis</span>
 </pre></div>
 </div>
-<p>Hàm <code class="docutils literal notranslate"><span class="pre">millis()</span></code> trả về tổng số mili giây, tính từ lúc chương trình bắt đầu chạy cho đến hiện tại.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">t</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="ss">)</span> {
-  <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Tắt quạt</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">fan</span>.<span class="nv">off</span><span class="ss">()</span><span class="c1">;</span>
-} <span class="k">else</span> {
-  <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Bật quạt</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">fan</span>.<span class="nv">on</span><span class="ss">()</span><span class="c1">;</span>
-}
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">ticks_ms()</span></code> trả về tổng số mili giây, tính từ lúc chương trình bắt đầu chạy cho đến hiện tại.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">:</span>
+  <span class="n">pin31</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">0</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tắt quạt&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">pin31</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">1</span><span class="p">))</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bật quạt&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Đồng thời, chúng ta cũng kiểm tra với nhiệt độ hiện tại thì có nên bật quạt không với ngưỡng là 32 độ. Nếu quá 32 độ thì quạt sẽ được bật và ngược lại.</p>

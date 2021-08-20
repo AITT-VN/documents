@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Bài học 13: Giao tiếp Bluetooth Low Energy &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  <title>Bài học 13: Điều khiển góc quay Servo &mdash; OhStem Product Documents 0.0.2 documentation</title>
   
 
   
@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -111,7 +112,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 13: Giao tiếp Bluetooth Low Energy</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 13: Điều khiển góc quay Servo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#kien-thuc-moi">Kiến thức mới</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-su-dung">Thiết bị cần sử dụng</a></li>
@@ -183,7 +184,7 @@
         
           <li><a href="index.html">Microython Cơ bản</a> &raquo;</li>
         
-      <li>Bài học 13: Giao tiếp Bluetooth Low Energy</li>
+      <li>Bài học 13: Điều khiển góc quay Servo</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -204,20 +205,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="bai-hoc-13-giao-tiep-bluetooth-low-energy">
-<h1>Bài học 13: Giao tiếp Bluetooth Low Energy<a class="headerlink" href="#bai-hoc-13-giao-tiep-bluetooth-low-energy" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="bai-hoc-13-dieu-khien-goc-quay-servo">
+<h1>Bài học 13: Điều khiển góc quay Servo<a class="headerlink" href="#bai-hoc-13-dieu-khien-goc-quay-servo" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="muc-tieu">
 <h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
-<p>Tìm hiểu về giao tiếp bằng tín hiệu Bluetooth Low Energy (BLE) và viết chương trình để điều khiển động cơ Servo bằng phần mềm trên điện thoại thông qua BLE.</p>
+<p>Trong bài 3, chúng ta đã tìm hiểu về đọc tín hiệu Analog từ cảm biến xoay để điều chỉnh độ sáng đèn LED. Trong bài học này, chúng ta sẽ sử dụng tín hiệu từ cảm biến xoay để điều khiển góc quay của động cơ Servo 180 độ.</p>
 </div>
 <div class="section" id="kien-thuc-moi">
 <h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this headline">¶</a></h2>
-<p><em>Bluetooth Low Energy (BLE)</em></p>
-<p>xController sử dụng chip điều khiển ESP32, tích hợp nhiều kết nối không dây bao gồm Wi-Fi và Bluetooth Low Energy (BLE). BLE là một công nghệ Bluetooth tiết kiệm năng lượng, chủ yếu được dùng để truyền lượng dữ liệu nhỏ (băng thông thấp) với khoảng cách ngắn.</p>
-<p>Khác với chuẩn Bluetooth classic luôn được bật, BLE ngủ liên tục trừ khi bắt đầu kết nối. Đây là lý do BLE tiêu thụ năng lượng thấp: lượng tiêu thụ ít hơn 100 lần so với Bluetooth classic (tùy vào môi trường sử dụng). Hơn nữa, BLE không chỉ hỗ trợ giao tiếp Point-to-Point mà còn hỗ trợ Broadcast và Mesh Network.</p>
-<a class="reference internal image-reference" href="../../_images/ls-13-11.png"><img alt="../../_images/ls-13-11.png" class="align-center" src="../../_images/ls-13-11.png" style="width: 480px;" /></a>
-<p>Do tính chất của nó, BLE phù hợp với các ứng dụng cần trao đổi một lượng nhỏ dữ liệu định kỳ, chỉ chạy trên một viên Pin. Ví dụ, BLE được sử dụng rất nhiều trong chăm sóc sức khỏe, thể dục, theo dõi, Beacons, an ninh và nhà thông minh.</p>
-<a class="reference internal image-reference" href="../../_images/ls-13-21.png"><img alt="../../_images/ls-13-21.png" class="align-center" src="../../_images/ls-13-21.png" style="width: 480px;" /></a>
 <p><em>Động cơ Servo</em></p>
 <p>Servo là một dạng động cơ điện đặc biệt. Không giống như động cơ thông thường, cứ cắm điện vào là quay liên tục, Servo chỉ quay khi được điều khiển (bằng xung PPM) với góc quay nằm trong khoảng bất kì từ 0o - 180o. Mỗi loại Servo có kích thước, khối lượng và cấu tạo khác nhau, phù hợp với nhiều ứng dụng khác nhau.</p>
 <p>Bộ xBuild Creator Kit cung cấp sẵn một động cơ Servo loại nhỏ là SG92R.</p>
@@ -234,76 +229,32 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;esp32BLEUtilities.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;Servos.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 
-<span class="cp">#define LEFT_PRESSED &quot;!B714&quot; </span><span class="c1">// sự kiện nút left được nhấn</span>
-<span class="cp">#define RIGHT_PRESSED &quot;!B813&quot; </span><span class="c1">// sự kiện nút right được nhấn</span>
-
-<span class="n">Servos</span> <span class="n">s</span><span class="p">;</span>
-
-<span class="n">String</span> <span class="n">cmd</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-  <span class="n">s</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
-  <span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
-  <span class="n">BLE</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&quot;OhStem-xController&quot;</span><span class="p">);</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Setup Done!&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">isConnected</span><span class="p">())</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
-      <span class="n">cmd</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
-      <span class="k">while</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span> <span class="p">{</span>
-        <span class="kt">char</span> <span class="n">data</span> <span class="o">=</span> <span class="n">BLE</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
-        <span class="n">cmd</span> <span class="o">+=</span> <span class="n">data</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">cmd</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">cmd</span> <span class="o">==</span> <span class="n">LEFT_PRESSED</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">angle</span> <span class="o">-=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">angle</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">cmd</span> <span class="o">==</span> <span class="n">RIGHT_PRESSED</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">angle</span> <span class="o">&lt;</span> <span class="mi">180</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">angle</span> <span class="o">+=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">angle</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">translate_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
+  <span class="n">servo</span><span class="o">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">translate_value</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Chương trình trên sẽ kiểm tra xem có nhận được dữ liệu gửi qua giao thức BLE hay không. Nếu tín hiệu tương ứng với nút sang trái trên phần mềm điều khiển (được giới thiệu bên dưới) thì cho động cơ Servo quay về 0 độ. Ngược lại, nếu tín hiệu nhận được tương ứng với nút sang phải thì cho động cơ xoay về 180 độ.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;esp32BLEUtilities.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;Servos.h&gt;</span><span class="cp"></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Khai báo sử dụng thư viện để làm việc với BLE và động cơ Servo.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Servos s;
+<p>Đặt biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến xoay trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng <code class="docutils literal notranslate"><span class="pre">pin41.read_analog()</span></code>. Lúc này biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> sẽ trả về giá trị kiểu số nguyên (<code class="docutils literal notranslate"><span class="pre">int</span></code>) nằm trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">đến</span> <span class="pre">4095</span></code>. Tuy nhiên, hàm <code class="docutils literal notranslate"><span class="pre">servo.positon()</span></code> chỉ nhận giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">đến</span> <span class="pre">180</span></code> (độ), trong khi cảm biến xoay có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">đến</span> <span class="pre">4095</span></code>, nên ta cần quy đổi các khoảng giá trị này bằng hàm <code class="docutils literal notranslate"><span class="pre">translate</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">translate_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Khai báo đối tượng <code class="docutils literal notranslate"><span class="pre">Servos</span></code> để điều khiển động cơ Servo.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>s.init();
-s.position(0, 90);
-</pre></div>
-</div>
-<p>Khởi tạo đối tượng làm việc với Servo và quay Servo gắn vào cổng S1 đến trị trí chính giữa là góc 90 độ bằng hàm <code class="docutils literal notranslate"><span class="pre">position</span></code> của thư viện Servos.</p>
-<p>Hàm <code class="docutils literal notranslate"><span class="pre">position()</span></code> có cấu trúc như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>position(index, angle)
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">servo.position()</span></code> có cấu trúc như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">servo</span><span class="o">.</span><span class="n">position</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">angle</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Các tham số sử dụng:</p>
@@ -313,46 +264,7 @@ s.position(0, 90);
 <li><p><code class="docutils literal notranslate"><span class="pre">Angle</span></code>: Góc cần quay, từ 0 đến 180 độ.</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>BLE.begin(&quot;OhStem-xController&quot;);
-</pre></div>
-</div>
-<p>Phát BLE với tên gọi là “OhStem-xController” để phần mềm có thể quét ra được và kết nối.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">isConnected</span><span class="ss">())</span> {
-    <span class="k">if</span> <span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span> {
-      <span class="nv">cmd</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="c1">;</span>
-      <span class="k">while</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span> {
-        <span class="nv">char</span> <span class="nv">data</span> <span class="o">=</span> <span class="nv">BLE</span>.<span class="nv">read</span><span class="ss">()</span><span class="c1">;</span>
-        <span class="nv">cmd</span> <span class="o">+=</span> <span class="nv">data</span><span class="c1">;</span>
-      }
-      <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="nv">cmd</span><span class="ss">)</span><span class="c1">;</span>
-    }
-</pre></div>
-</div>
-<p>Sử dụng câu lệnh điều kiện: Nếu có phần mềm đang kết nối vào và có dữ liệu được gửi đến thì ta sẽ xóa lệnh cũ lúc trước đã lưu trong biến <code class="docutils literal notranslate"><span class="pre">cmd</span></code>, đọc dữ liệu mới và lưu lại vào biến <code class="docutils literal notranslate"><span class="pre">cmd</span></code>. Đồng thời, in ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">cmd</span> <span class="o">==</span> <span class="nv">LEFT_PRESSED</span><span class="ss">)</span> {
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">angle</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="ss">)</span> {
-    <span class="nv">angle</span> <span class="o">-=</span> <span class="mi">5</span><span class="c1">;</span>
-    <span class="nv">s</span>.<span class="nv">position</span><span class="ss">(</span><span class="mi">0</span>, <span class="nv">angle</span><span class="ss">)</span><span class="c1">;</span>
-  }
-}
-</pre></div>
-</div>
-<p>Kiểm tra xem lệnh nhận được lúc này có phải đang là nút sang trái không. Nếu điều kiện đúng thì giảm góc quay được lưu trong biến Angle và điều khiển Servo quay đến vị trí góc mới này.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>} <span class="k">else</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">cmd</span> <span class="o">==</span> <span class="nv">RIGHT_PRESSED</span><span class="ss">)</span> {
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">angle</span> <span class="o">&lt;</span> <span class="mi">180</span><span class="ss">)</span> {
-    <span class="nv">angle</span> <span class="o">+=</span> <span class="mi">5</span><span class="c1">;</span>
-    <span class="nv">s</span>.<span class="nv">position</span><span class="ss">(</span><span class="mi">0</span>, <span class="nv">angle</span><span class="ss">)</span><span class="c1">;</span>
-  }
-}
-</pre></div>
-</div>
-<p>Tương tự: kiểm tra phím sang phải và tăng góc quay để điều chỉnh Servo.</p>
-<p><em>Lưu ý</em>: Ở cả 2 trường hợp, ta cần kiểm tra các góc giới hạn là 0 và 180 độ vì Servo chỉ có thể quay trong khoảng này.</p>
-<p>Để kiểm tra chương trình trên, bạn cần cài đặt phần mềm có thể giao tiếp BLE, ví dụ như <code class="docutils literal notranslate"><span class="pre">Bluefruit</span> <span class="pre">Connect</span></code> của Adafruit.</p>
-<a class="reference internal image-reference" href="../../_images/ls-13-51.png"><img alt="../../_images/ls-13-51.png" class="align-center" src="../../_images/ls-13-51.png" style="width: 480px;" /></a>
-<p>Sau khi cài đặt, bạn chạy app sẽ quét thấy một thiết bị BLE tên là <code class="docutils literal notranslate"><span class="pre">OhStem-xController</span></code>. Nhấn vào nút <code class="docutils literal notranslate"><span class="pre">Connect</span></code> để kết nối và vào mục <code class="docutils literal notranslate"><span class="pre">Controller</span> <span class="pre">&gt;</span> <span class="pre">Control</span> <span class="pre">Pad</span></code> để hiển thị giao diện điều khiển như hình bên dưới.</p>
-<a class="reference internal image-reference" href="../../_images/ls-13-61.png"><img alt="../../_images/ls-13-61.png" class="align-center" src="../../_images/ls-13-61.png" style="width: 240px;" /></a>
-<p><em>Bạn thử lần lượt nhấn vào nút sang trái và sang phải để điều chỉnh góc quay của động cơ.</em></p>
+<p>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về góc của servo.</p>
 </div>
 </div>
 

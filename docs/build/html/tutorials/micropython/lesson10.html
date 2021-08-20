@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -119,7 +120,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -226,66 +227,64 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lcd_1602</span> <span class="kn">import</span> <span class="n">LCD1602</span>
 
-<span class="n">LCD_1602</span> <span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span> <span class="n">D1_2</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;OhStem&quot;</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;xin chao ban!&quot;</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="n">lcd1602</span> <span class="o">=</span> <span class="n">LCD1602</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">lcd1602</span><span class="o">.</span><span class="n">backlight_on</span><span class="p">()</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">lcd1602</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="n">lcd1602</span><span class="o">.</span><span class="n">putstr</span><span class="p">(</span><span class="s1">&#39;OhStem&#39;</span><span class="p">)</span>
+  <span class="n">lcd1602</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="n">lcd1602</span><span class="o">.</span><span class="n">putstr</span><span class="p">(</span><span class="s1">&#39;Xin chao ban&#39;</span><span class="p">)</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">lcd1602</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Sau khi nạp chương trình, bạn có thể xem các nội dung được in ra trên màn hình LCD1602.</p>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lcd_1602</span> <span class="kn">import</span> <span class="n">LCD1602</span>
 </pre></div>
 </div>
 <p>Khai báo thư viện để làm việc với màn hình LCD 1602.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>LCD_1602 lcd(0x21);
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lcd1602</span> <span class="o">=</span> <span class="n">LCD1602</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Tạo một đối tượng tên là lcd và khai báo địa chỉ <code class="docutils literal notranslate"><span class="pre">I2C</span></code>. Màn hình LCD1602 có trong bộ kit sử dụng địa chỉ là 0x21.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.begin(D1_1, D1_2);
+<p>Tạo một đối tượng tên là <code class="docutils literal notranslate"><span class="pre">lcd</span></code>. Khởi tạo màn hình LCD Vì module LCD được nối với cổng 1, nên ta sẽ chọn giá trị 0. Ta có các giá trị <code class="docutils literal notranslate"><span class="pre">0~5</span></code> tương ứng <code class="docutils literal notranslate"><span class="pre">PORT</span> <span class="pre">1</span> <span class="pre">~</span> <span class="pre">PORT</span> <span class="pre">6</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lcd1602</span><span class="o">.</span><span class="n">backlight_on</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Khởi tạo màn hình LCD và khai báo 2 chân IO (sử dụng cho giao tiếp I2C) để kết nối với module. Do chúng ta sử dụng cổng số 1 nên 2 chân IO tín hiệu tương ứng sẽ là <code class="docutils literal notranslate"><span class="pre">D1_1</span></code> và <code class="docutils literal notranslate"><span class="pre">D1_2</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.backlight();
+<p>Bật đèn nền phía sau của màn hình lcd. Để tắt, ta sử dụng lệnh <code class="docutils literal notranslate"><span class="pre">lcd1602.backlight_off()</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lcd1602</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Bật đèn nền phía sau của màn hình lcd. Để tắt, ta sử dụng lệnh: <code class="docutils literal notranslate"><span class="pre">lcd.noBacklight()</span></code>;</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.setCursor(0, 0);
+<p>Di chuyển vị trí in ký tự tiếp theo đến vị trí hàng 0 cột 0. Hàm này có cú pháp là      <code class="docutils literal notranslate"><span class="pre">lcd1602.move_to(X,</span> <span class="pre">Y)</span></code> với x là cột và y là hàng.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lcd1602</span><span class="o">.</span><span class="n">putstr</span><span class="p">(</span><span class="s1">&#39;OhStem&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Di chuyển vị trí in ký tự tiếp theo đến vị trí hàng 0 cột 0. Hàm này có cú pháp là      <code class="docutils literal notranslate"><span class="pre">setCursor(x,y)</span></code> với x là cột và y là hàng.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.print(&quot;OhStem&quot;);
-</pre></div>
-</div>
-<p>In ra màn hình dòng chữ “OhStem” tại vị trí đã được cài đặt.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.setCursor(0, 1);
-lcd.print(&quot;xin chao ban!&quot;);
-</pre></div>
-</div>
-<p>Để in ra dòng chữ “xin chao ban!” trên dòng thứ 2 của màn hình, chúng ta làm tương tự bằng cách thay đổi vị trí in ra và dùng lệnh print() để hiển thị.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>lcd.clear();
+<p>In ra màn hình dòng chữ “OhStem” tại vị trí đã được cài đặt.
+.. code-block:: python</p>
+<blockquote>
+<div><dl class="simple">
+<dt>lcd1602.move_to(0, 1)</dt><dd><p>lcd1602.putstr(‘Xin chao ban!’)</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Để in ra dòng chữ “Xin chao ban!” trên dòng thứ 2 của màn hình, chúng ta làm tương tự bằng cách thay đổi vị trí in ra và dùng lệnh <code class="docutils literal notranslate"><span class="pre">lcd1602.putstr()</span></code> để hiển thị.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lcd1602</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Câu lệnh này sẽ xóa trắng màn hình. Tất cả những gì đang được hiển thị sẽ bị biến mất..</p>
-<p><em>Sau khi chạy chương trình, bạn sẽ thấy dòng chữ “OhStem xin chào bạn!” được hiển thị liên tục trên 2 dòng của màn hình LCD (hiển thị trong 2 giây rồi biến mất trong 1 giây)</em></p>
+<p>Sau khi chạy chương trình, bạn sẽ thấy dòng chữ “OhStem Xin chào bạn!” được hiển thị liên tục trên 2 dòng của màn hình LCD (hiển thị trong 2 giây rồi biến mất trong 1 giây)</p>
 </div>
 </div>
 

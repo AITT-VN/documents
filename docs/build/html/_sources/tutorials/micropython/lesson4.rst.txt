@@ -43,63 +43,36 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  rotaryvalue = pin41.read_analog()
 
-  int LEDPin = D1_1; // Module LED nối vào cổng số 1
-  int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
-  int rotaryValue = 0; 
-
-  void setup() {
-    pinMode(LEDPin, OUTPUT);
-  }
-
-  void loop() {
-    // đọc giá trị cảm biến
-    rotaryValue = analogRead(rotaryPin);
-    // bật đèn LED
-    digitalWrite(LEDPin, HIGH);
-    // dừng chương trình trong khoảng thời gian 
-    // bằng đúng giá trị cảm biến đọc được (milliseconds)
-    delay(rotaryValue);
-    // tắt đèn LED
-    digitalWrite(LEDPin, LOW);
-    // dừng chương trình trong khoảng thời gian 
-    // bằng đúng giá trị cảm biến đọc được (milliseconds)
-    delay(rotaryValue);
-  }
+  while True:
+    pin11.write_digital((1))
+    time.sleep(rotaryvalue)
+    pin11.write_digital((0))
+    time.sleep(rotaryvalue)
 
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  int rotaryPin = A4_1; 
+  rotaryvalue = pin41.read_analog()
 
-Khai báo chân IO nối với cảm biến xoay. Do cảm biến xoay trả về tín hiệu ``Analog`` và được kết nối với cổng số 4 trên xController nên ta khai báo là ``A4_1``.
+Đặt biến ``rotaryvalue`` là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến xoay trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng ``pin41.read_analog()``. Lúc này biến ``rotaryvalue`` sẽ trả về giá trị kiểu số nguyên (``int``) nằm trong khoảng từ ``0 ~ 4095``.
 
-.. code-block:: guess
-  
-  pinMode(LEDPin, OUTPUT);
+.. code-block:: python
 
-Cấu hình module LED là ``OUTPUT`` như đã học trong các bài trước.
-
-.. code-block:: guess
-  
-  rotaryValue = analogRead(rotaryPin);
-
-Đọc giá trị tín hiệu ``Analog`` ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên (int) nằm trong khoảng từ ``0`` đến ``4095``.
-
-.. code-block:: guess
-
-  delay(rotaryValue);
+  time.sleep(rotaryvalue)
 
 Tạm ngừng chương trình một khoảng thời gian bằng với giá trị đọc được từ cảm biến xoay. Do đó, bạn có thể điều chỉnh thời gian tạm ngừng bằng cách xoay cảm biến qua trái (giảm dần) hoặc qua phải (tăng dần).
 
-*Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về thời gian bật tắt đèn LED.*
+Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về thời gian bật tắt đèn LED. 
 
-*Nếu xoay về tận cùng bên trái (giá trị là 0) thì LED sẽ chớp liên tục và rất khó để nhận ra trạng thái bật tắt của đèn LED. Ngược lại, nếu xoay về tận cùng bên phải, giá trị đọc được sẽ là 4095 (tương đương với hơn 4 giây), bạn sẽ dễ dàng nhìn thấy LED bật và tắt hơn.*
+Nếu xoay về tận cùng bên trái (giá trị là 0) thì LED sẽ chớp liên tục và rất khó để nhận ra trạng thái bật tắt của đèn LED. Ngược lại, nếu xoay về tận cùng bên phải, giá trị đọc được sẽ là ``4095`` (tương đương với hơn 4 giây), bạn sẽ dễ dàng nhìn thấy LED bật và tắt hơn.

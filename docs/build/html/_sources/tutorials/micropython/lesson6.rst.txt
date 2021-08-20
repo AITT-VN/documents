@@ -6,7 +6,7 @@ Mục tiêu
 
 Vận dụng kiến thức về tín hiệu Analog Input đã học để làm việc với cảm biến ánh sáng và điều khiển đèn LED đa màu RGB được tích hợp sẵn trên xController.
 
-Tìm hiểu cách sử dụng cửa sổ Serial Monitor để xem và theo dõi kết quả đọc được từ cảm biến, từ đó có thể viết đúng logic hoạt động của chương trình.
+Tìm hiểu cách sử dụng cửa sổ Terminal để xem và theo dõi kết quả đọc được từ cảm biến, từ đó có thể viết đúng logic hoạt động của chương trình.
 
 Viết chương trình điều chỉnh độ sáng của đèn LED RGB một cách tự động dựa vào ánh sáng môi trường.
 
@@ -33,19 +33,6 @@ Các LED màu này có độ sáng từ ``0 ~ 255``. Để thay đổi màu đè
     :width: 600
     :align: center
 
-*Cửa sổ Serial Monitor*
-
-Cửa sổ ``Serial Monitor`` (gọi tắt là cửa sổ Serial) là một công cụ rất hữu ích để quan sát và theo dõi những thông tin trong một chương trình, như in kết quả đọc được từ cảm biến, giúp chỉnh sửa lỗi chương trình một cách dễ dàng.
-
-Bạn có thể mở ``Serial Monitor`` bằng cách click vào ``Tools -> Serial Monitor``.
-
-
-  .. image:: images/ls-6-3.png
-    :width: 600
-    :align: center
-
-*Lưu ý*: xController có 16 kênh ``PWM`` độc lập (đánh số từ ``0-15``). Mỗi kênh này có thể cấu hình để sử dụng với tần số và Duty Cycle khác nhau.
-
 Thiết bị cần sử dụng
 -----------
 
@@ -64,121 +51,109 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Để làm việc với đèn LED RGB tích hợp trên xController, bạn cài đặt thư viện của xController ở link này: https://github.com/AITT-VN/xcontroller_arduino_lib/archive/refs/heads/main.zip hoặc vào link Github để tải về tại https://github.com/AITT-VN/xcontroller_arduino_lib 
+.. code-block:: python
 
-Sau khi tải xong, bạn vào menu ``Sketch > Include library > Add .ZIP library``, chọn file zip thư viện vừa tải để thêm vào Arduino IDE.
+  light_value = pin41.read_analog()
 
-.. image:: images/ls-6-5.png
-  :width: 500
-  :align: center
+  while True:
+    print(light_value) # In giá trị cảm biến ánh sáng
+    led_value = translate(light_value, 0, 4095, 0, 255)
+    print(led_value) # In giá trị độ sáng của đèn đã được tính toán
+    led_onboard.show(0, (led_value, 0, 0))
+    time.sleep_ms(10)
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
 
-.. code-block:: guess
-
-  #include <xcontroller.h>
-
-  XController xcon;
-  
-  int lightSensorPin = A4_1; // cảm biến ánh sáng nối với cổng 4
-  int sensorValue= 0; // giá trị đọc được từ cảm biến
-  int outputValue= 0; // giá trị xuất ra cho LED RGB
-
-  void setup() {
-    Serial.begin(9600);
-  }
-
-  void loop() {
-    //  đọc giá trị cảm biến ánh sáng (0-4095)
-    sensorValue = analogRead(lightSensorPin);
-    // in ra cửa sổ Serial kết quả đọc được
-    Serial.println(sensorValue);
-    //  chuyển kết quả đọc được sang dải giá trị 0-255
-    outputValue = map(sensorValue, 0, 4095, 0, 255);
-    // in ra kết quả chuyển đổi
-    Serial.println(outputValue);
-    // thay đổi màu sắc của LED RGB, chỉ thay đổi giá trị màu đỏ
-    xcon.showLED(0, outputValue, 0, 0);
-    delay(100);                    
-  }
-
-Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến ánh sáng và kết quả tính toán độ sáng của đèn LED RGB trong cửa sổ Serial Monitor.
+Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến ánh sáng và kết quả tính toán độ sáng của đèn LED RGB trong cửa sổ Terminal.
 
 Giải thích chương trình
 --------------
 
-.. code-block:: guess
+.. code-block:: python
 
-  #include <xcontroller.h>
+  light_value = pin41.read_analog()
 
-Để sử dụng thư viện của xController, bạn cần cài đặt như hướng dẫn ở trên. Trong chương trình, bạn cần khai báo thư viện (có tên ``<xcontroller.h>``) bằng câu lệnh ``#include``.
+Đặt biến ``light_value`` là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến ánh sáng trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng ``pin41.read_analog()``. Lúc này biến ``light_value`` sẽ trả về giá trị kiểu số nguyên (``int``) nằm trong khoảng từ 0 đến 4095.
 
-.. code-block:: guess
-  
-  XController xcon;
+Dùng hàm ``print`` để in giá trị ra cửa sổ Terminal trên phần mềm uPyCraft
 
-Sau khi khai báo thư viện của xController, chúng ta khai báo một đối tượng là XController. Đối tượng này có các hàm để chúng ta làm việc với các chức năng tích hợp trên xController như đèn LED RGB, loa hay cảm biến gia tốc,…
+.. code-block:: python
 
-.. code-block:: guess
+  print(light_value)
 
-  Serial.begin(9600);
-
-Khởi tạo giao tiếp ``Serial`` với tốc độ (baud rate) là ``9600``. Để thông tin hiển thị đúng trong cửa sổ ``Serial``, bạn phải chọn tốc độ truyền nhận (ở góc dưới bên phải của giao diện màn hình Serial) đúng với giá trị dùng để khởi tạo trong chương trình.
-
-.. code-block:: guess
-  
-  Serial.println(sensorValue);
-
-.. image:: images/ls-6-6.png
+.. image:: images/ls-1-7.png
   :width: 500
   :align: center
 
-In ra cửa sổ ``Serial`` giá trị đọc được từ cảm biến và ngắt xuống dòng. Một câu lệnh tương tự cũng in ra cửa sổ ``Serial`` nhưng không ngắt xuống dòng là ``Serial.print()``.
+.. code-block:: python
 
-.. code-block:: guess
+  >>>
+  Ready to download this file,please wait!
+  .
+  download ok
+  0
+  0
+  4095
+  4095
 
-  outputValue = map(sensorValue, 0, 4095, 0, 255);
+Nếu cửa sổ Terminal in ra các giá trị trong khoảng 0 đến 4095 một cách ngẫu nhiên khi bạn di chuyển cảm biến ánh sáng vào những vùng sáng tối khác nhau thì cảm biến đã hoạt động tốt.
 
-Như ta đã biết, cảm biến xuất ra tín hiệu Analog có giá trị từ ``0 ~ 4095``, trong khi độ sáng của 3 đèn LED trong đèn LED RGB tích hợp nhận giá trị từ ``0 ~ 255``. Vậy nên, ta cần quy đổi hai thang đo này thành một: 
+Như ta đã biết, cảm biến xuất ra tín hiệu Analog có giá trị từ 0 đến 4095, trong khi độ sáng của 3 đèn LED trong đèn LED RGB tích hợp nhận giá trị từ 0 đến 255. Vậy nên, ta cần quy đổi hai thang đo này thành một: 
 
   - Khi giá trị cảm biến là 0 thì độ sáng của LED đỏ trong LED RGB là 0. 
   - Khi giá trị cảm biến là 4095 thì độ sáng LED đỏ trong LED RGB là 255.
 
-Để chuyển đổi tự động, chúng ta sử dụng hàm ``map()`` cho phép chuyển đổi giá trị trong 1 dải giá trị này sang 1 dải giá trị khác.
+.. code-block:: python
 
-Cú pháp của câu lệnh map như sau:
+  led_value = translate(light_value, 0, 4095, 0, 255)
 
-.. code-block:: guess
+Bạn có thể xem lại bài trước để hiểu rõ hơn về hàm ``translate``.
 
-  map(value, fromLow, fromHigh, toLow, toHigh)
+.. code-block:: python
 
-Các tham số:
+  led_onboard.show(0, (led_value, 0, 0))
 
-  - ``value``: Số cần chuyển đổi.
-  - ``fromLow``: Giới hạn dưới của dải giá trị hiện tại.
-  - ``fromHigh``: Giới hạn trên của dải giá trị hiện tại.
-  - ``toLow``: Giới hạn dưới của dải giá trị mới cần chuyển đổi.
-  - ``toHigh``: Giới hạn trên của dải giá trị mới cần chuyển đổi.
+Để thay đổi màu và độ sáng của đèn LED RGB trên xController, chúng ta sử dụng hàm ``led_onboard.show(index, color)``. Hàm này có cú pháp như sau: 
 
-.. code-block:: guess
+.. code-block:: python
 
-  xcon.showLED(0, outputValue, 0, 0);
-
-Để thay đổi màu và độ sáng của đèn LED RGB trên xController, chúng ta sử dụng hàm ``showLED()``. Hàm này có cú pháp như sau: 
-
-.. code-block:: guess
-  
-  showLED(whichLED, redValue, greenValue, blueValue);
+  led_onboard.show(index, color)
 
 Các tham số bao gồm:
 
-  - ``whichLED``: LED RGB cần thay đổi màu sắc, nhận 1 trong các giá trị là 0 (cả 2 LED), 1 (LED trái), 2 (LED phải). Trong chương trình trên, chúng ta dùng giá trị 0 để đổi màu cả 2 LED trái phải trên xController.
-  - ``redValue``: Độ sáng của LED đỏ.
-  - ``greenValue``: Độ sáng của LED xanh lục.
-  - ``blueValue``: Độ sáng của LED xanh lam.
+  - ``index`` : 0-Cả hai LED, 1-LED bên trái, 2-LED bên phải.
+  - ``color`` : Có thể sử dụng 2 hệ màu là RGB hoặc HEX:
 
-Để thay đổi độ sáng của đèn LED RGB, chúng ta chỉ cần thay đổi độ sáng của LED đỏ và tắt các LED xanh lục, xanh lam. 
+    - ``RGB`` : (Red,Green,Blue) với phạm vi mỗi tham số là 0 ~ 255. Nếu bằng 0 tương ứng không có thành phần màu và nếu bằng 255 trương ứng thành phần màu cao nhất.
+    - ``HEX`` : hex_to_rgb(‘#0000ff’)
 
-*Sau khi nạp chương trình, bạn thử lấy tay che cảm biến ánh sáng và quan sát sự thay đổi độ sáng của cả 2 đèn LED RGB trên xController.*
+Ở đây chúng ta đang sử dụng hệ màu RGB. Và trong ví dụ này, chúng ta chỉ cần thay đổi độ sáng của LED đỏ và tắt các LED xanh lục, xanh lam nên ta có hệ màu RGB như sau :
+
+.. code-block:: python
+
+  (led_value, 0, 0)
+
+Với ``led_value`` là giá trị ``0~255`` sau khi đã quy đổi từ việc phân tích giá trị xuất ra từ cảm biến ánh sáng.
+
+.. code-block:: python
+
+    time.sleep_ms(10)
+
+Dừng chương trình trong một khoảng thời gian (đơn vị ``mili giây``).
+
+Câu lệnh ``sleep_ms()`` có cú pháp như sau:
+
+.. code-block:: python
+
+  time.sleep_ms(s)
+
+Tham số truyền vào:
+
+  ``s``: số mili giây chương trình tạm dừng. (1 giây = 1000 mili giây)
+
+Chúng ta cần tạm dừng chương trình trong khoảng thời gian 10 mili giây để cảm biến ánh sáng được cập nhật liên tục và độ sáng của đèn thay đổi mượt hơn. Tuy nhiên bạn có thể tăng hoặc giảm tham số này đề so sánh sự khác biệt.
+
+Sau khi nạp chương trình, bạn thử lấy tay che cảm biến ánh sáng và quan sát sự thay đổi độ sáng của cả 2 đèn LED RGB trên xController.

@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -117,7 +118,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -214,81 +215,101 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Phát bài nhạc Twinkle twinkle little stars</span>
+<span class="c1"># Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son</span>
+<span class="k">def</span> <span class="nf">song_1</span><span class="p">():</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;A4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;A4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="cp">#define BUZZER_CHANNEL 0 </span><span class="c1">// giá trị bất kỳ từ 0 đến 15</span>
+<span class="c1"># Đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ</span>
+<span class="k">def</span> <span class="nf">song_2</span><span class="p">():</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;F4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;F4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;E4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;E4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;D4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;D4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
 
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// phát bài nhạc Twinkle twinkle little stars</span>
-  <span class="c1">// đoạn 1: Đồ, Đồ, Son, Son, La, La, Son</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_A4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_A4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_G4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-  <span class="c1">// đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_F4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_E4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_E4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_D4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_D4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">tone</span><span class="p">(</span><span class="n">NOTE_C4</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">noTone</span><span class="p">(</span><span class="n">BUZZER_CHANNEL</span><span class="p">);</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">song_1</span><span class="p">()</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+  <span class="n">song_2</span><span class="p">()</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#define BUZZER_CHANNEL 0 // giá trị bất kỳ từ 0 đến 15
+<p>Với những chương trình dài có nhiều khối lệnh, chúng ta sẽ sử dụng Hàm để rút gọn những chương trình đó. Hàm sẽ chứa những hàm con bên trong. Khi bạn gọi tên Hàm thì các lệnh hàm con bên trong sẽ được thực hiện. Ta sử dụng cấu trúc sau để tạo một hàm:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">name</span><span class="p">():</span>
+  <span class="c1"># Doing something</span>
 </pre></div>
 </div>
-<p>Thư viện làm việc với còi báo cũng sử dụng PWM để phát nhạc. Bạn có thể xem lại kiến thức về PWM trong bài học 5. Ở đây, chúng ta khai báo kênh PWM muốn sử dụng là 0.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>xcon.tone(NOTE_C4, 500, BUZZER_CHANNEL);
-xcon.noTone(BUZZER_CHANNEL);
+<p>Trong đó <code class="docutils literal notranslate"><span class="pre">name</span></code> là tên mà bạn muốn đặt cho hàm này. Khi bạn gọi <code class="docutils literal notranslate"><span class="pre">name()</span></code> ở bất kì đâu thì nó sẽ thực hiện những hàm bên trong này mà không cần phải viết lại.</p>
+<p>Chúng ta sẽ viết 1 bài nhạc gồm 2 đoạn</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son</p></li>
+<li><p>Đoạn 2: Fa, Fa, Mi, Mi, Rê, Rê, Đồ</p></li>
+</ul>
+</div></blockquote>
+<p>Vì thế chúng ta sẽ tạo hai hàm <code class="docutils literal notranslate"><span class="pre">song_1(),</span> <span class="pre">song_2()</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Đoạn 1: Đồ, Đồ, Son, Son, La, La, Son</span>
+<span class="k">def</span> <span class="nf">song_1</span><span class="p">():</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;A4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;A4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;G4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">song_2</span><span class="p">():</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;F4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;F4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;E4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;E4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;D4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;D4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">([</span><span class="s1">&#39;C4:1&#39;</span><span class="p">],</span> <span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Trong hàm <code class="docutils literal notranslate"><span class="pre">loop()</span></code> của chương trình, 2 câu hàm <code class="docutils literal notranslate"><span class="pre">tone()</span></code> và <code class="docutils literal notranslate"><span class="pre">notone()</span></code> được sử dụng để phát ra nhạc và tắt nhạc. Hai hàm này có cú pháp như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>tone(frequency, duration, channel);
-</pre></div>
-</div>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>noTone(channel);
+<p>Trong các hàm <code class="docutils literal notranslate"><span class="pre">song_1()</span> <span class="pre">``và</span> <span class="pre">``song_2()</span></code> của chương trình, hàm <code class="docutils literal notranslate"><span class="pre">speaker.play()</span></code> được sử dụng để phát ra nhạc. Hàm này có cú pháp như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">speaker</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">tune</span><span class="p">,</span> <span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Ý nghĩa các tham số:</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">frequency</span></code>: Tần số hoặc tên nốt nhạc cần phát</p></li>
+<div><ul>
+<li><p>tune: Có thể là 1 trong các bài hát hoặc một tone nhạc nào đó:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Bài</span> <span class="pre">hát</span></code> : BIRTHDAY, TWINKLE, JINGLE_BELLS, WHEEL_ON_BUS, FUR_ELISE,CHASE,JUMP_UP,JUMP_DOWN,POWER_UP,POWER_DOWN</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Tone</span></code> : Đây là các nốt trong nhạc lý:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/ls-8-1.png"><img alt="../../_images/ls-8-1.png" class="align-center" src="../../_images/ls-8-1.png" style="width: 480px;" /></a>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wait</span></code>: Nếu bằng True thì sẽ phát hết bài hát mới kết thúc hàm. Mặc định nếu không ghi thì là False.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">duration</span></code>: Thời gian kéo dài</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">channel</span></code>: kênh PWM dùng để phát (nhận giá trị từ 0-15)</p></li>
 </ul>
 </div></blockquote>
-<p><em>Sau khi chạy chương trình, còi báo tích hợp trên board xController sẽ liên tục phát ra các nốt nhạc của bài hát quen thuộc “Twinkle Twinkle Little Stars”.</em></p>
+<p>Ngoài ra, để dừng play nhạc, bạn có thể dùng thêm hàm sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">speaker</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sau khi chạy chương trình, còi báo tích hợp trên board xController sẽ liên tục phát ra các nốt nhạc của bài hát quen thuộc “Twinkle Twinkle Little Stars”.</p>
 </div>
 </div>
 

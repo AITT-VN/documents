@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Làm quen với phần mềm uPyCraft IDE &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bài học 1: Hello world" href="lesson1.html" />
+    <link rel="prev" title="Hướng Dẫn Cài Đặt uPyCraft IDE" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/index.html">xController Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Làm quen với phần mềm uPyCraft IDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#giao-dien">Giao diện</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson4.html">Bài học 4: Điều khiển tốc độ chớp tắt đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson5.html">Bài học 5: Điều chỉnh độ sáng LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson6.html">Bài học 6: Đèn LED RGB cảm ứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson7.html">Bài học 7: Vỗ tay thay đổi màu đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson8.html">Bài học 8: Phát nhạc với còi báo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson9.html">Bài học 9: Cảm biến gia tốc góc nghiêng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Arduino Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Arduino Cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arduino-smarthome/index.html">Dự án nhà thông minh - Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xController Library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../library/micropython-api/index.html">MicroPython Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library/arduino-api/index.html">Arduino Library</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Microython Cơ bản</a> &raquo;</li>
+        
+      <li>Làm quen với phần mềm uPyCraft IDE</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/micropython/about-upycraft.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lam-quen-voi-phan-mem-upycraft-ide">
+<h1>Làm quen với phần mềm uPyCraft IDE<a class="headerlink" href="#lam-quen-voi-phan-mem-upycraft-ide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="giao-dien">
+<h2>Giao diện<a class="headerlink" href="#giao-dien" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/ls-1-11.png"><img alt="../../_images/ls-1-11.png" class="align-center" src="../../_images/ls-1-11.png" style="width: 480px;" /></a>
+<p><em>Cây thư mục bên tay trái:</em> hiển thị danh sách các file và thư mục trong file system của board đang kết nối và của máy tính.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Device:</span></code> là thư mục chứa file system internal của board đang được kết nối.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SD:</span></code> là thư mục chứa các file của thẻ nhớ SD gắn với board (nếu có) đang kết nối.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uPy_lib:</span></code> chưa một số các thư viện cung cấp sẵn bởi uPyCraft.</p></li>
+</ul>
+</div></blockquote>
+<p><em>Cửa sổ soạn thảo Edit box bên tay phải:</em> là nơi hiển thị và hỗ trợ soạn thảo nội dung các file code để upload.</p>
+<p><em>Terminal bên dưới khu vực soạn thảo code:</em> đây là command-line của micro-python, giúp chúng ta dễ dàng tương tác với board, có thể chạy trực tiếp các lệnh hoặc stop các chương trình đang chạy bằng Ctrl+C. Đây cũng là cửa sổ giúp chúng ta in ra các thông tin trong quá trình debug.</p>
+<p><em>Toolbar bên phải:</em></p>
+<a class="reference internal image-reference" href="../../_images/ls-1-21.png"><img alt="../../_images/ls-1-21.png" class="align-center" src="../../_images/ls-1-21.png" style="width: 600px;" /></a>
+<p><em>Right-click menu trong cây thư mục</em></p>
+<p>Khi bạn chọn một file trong phần Device ở cây thư mục bên tay trái và right click, menu sau sẽ hiển thị:</p>
+<a class="reference internal image-reference" href="../../_images/ls-1-31.png"><img alt="../../_images/ls-1-31.png" class="align-center" src="../../_images/ls-1-31.png" style="width: 600px;" /></a>
+<p><em>Quản lý file trong uPyCraft</em></p>
+<p>Khi sử dụng uPyCraft, bạn cần phân biệt nơi lưu file vì bạn có thể lưu file thẳng vào board hay lưu trên máy tính.</p>
+<p>Nếu file đang mở nằm trên máy tính, biểu tượng sẽ là hình laptop. Ngược lại nếu file được lưu trên board, biểu tượng sẽ là hình một con chip hình vuông (giống một con CPU Intel trên máy tính).</p>
+<a class="reference internal image-reference" href="../../_images/ls-1-41.png"><img alt="../../_images/ls-1-41.png" class="align-center" src="../../_images/ls-1-41.png" style="width: 600px;" /></a>
+<p><em>Kết nối với board</em></p>
+<a class="reference internal image-reference" href="../../_images/ls-1-51.png"><img alt="../../_images/ls-1-51.png" class="align-center" src="../../_images/ls-1-51.png" style="width: 320px;" /></a>
+<a class="reference internal image-reference" href="../../_images/ls-1-6.png"><img alt="../../_images/ls-1-6.png" class="align-center" src="../../_images/ls-1-6.png" style="width: 320px;" /></a>
+<a class="reference internal image-reference" href="../../_images/ls-1-7.png"><img alt="../../_images/ls-1-7.png" class="align-center" src="../../_images/ls-1-7.png" style="width: 320px;" /></a>
+<p>Để làm việc với board, sau khi bạn nối dây cáp micro usb với máy tính qua cổng usb, bạn chọn loại board là esp32 và cổng COM tương ứng. Khi đó nếu board đã được nạp firmware micropython thì uPyCraft sẽ kết nối với board và cửa sổ command-line sẽ có dấu nhắc &gt;&gt;&gt;. Nếu báo lỗi kết nối, bạn thử reset board vài lần và kết nối lại thử.
+Trong quá trình làm việc với board trong uPyCraft, bạn có thể ngắt kết nối hoặc kết nối lại với board thông qua chức năng connect/disconnect trong toolbar bên tay phải hoặc top menu.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="lesson1.html" class="btn btn-neutral float-right" title="Bài học 1: Hello world" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-left" title="Hướng Dẫn Cài Đặt uPyCraft IDE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

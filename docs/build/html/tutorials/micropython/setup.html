@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Hướng Dẫn Cài Đặt Arduino và xController &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  <title>Hướng Dẫn Cài Đặt uPyCraft IDE &mdash; OhStem Product Documents 0.0.2 documentation</title>
   
 
   
@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Bài học 1: Hello world" href="lesson1.html" />
+    <link rel="next" title="Làm quen với phần mềm uPyCraft IDE" href="about-upycraft.html" />
     <link rel="prev" title="Microython Cơ bản" href="index.html" /> 
 </head>
 
@@ -98,14 +98,11 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Hướng Dẫn Cài Đặt Arduino và xController</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#cai-dat-arduino-ide">Cài đặt Arduino IDE</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cai-dat-board-xcontroller-trong-arduino-ide">Cài đặt board xController trong Arduino IDE</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hướng Dẫn Cài Đặt uPyCraft IDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -118,7 +115,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -182,7 +179,7 @@
         
           <li><a href="index.html">Microython Cơ bản</a> &raquo;</li>
         
-      <li>Hướng Dẫn Cài Đặt Arduino và xController</li>
+      <li>Hướng Dẫn Cài Đặt uPyCraft IDE</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -203,63 +200,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="huong-dan-cai-dat-arduino-va-xcontroller">
-<h1>Hướng Dẫn Cài Đặt Arduino và xController<a class="headerlink" href="#huong-dan-cai-dat-arduino-va-xcontroller" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="cai-dat-arduino-ide">
-<h2>Cài đặt Arduino IDE<a class="headerlink" href="#cai-dat-arduino-ide" title="Permalink to this headline">¶</a></h2>
-<p>Bạn có thể tải phiên bản Arduino IDE mới nhất, phù hợp với hệ điều hành của máy tính của bạn tại trang chủ của Arduino (Đường dẫn: <a class="reference external" href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>)</p>
-<a class="reference internal image-reference" href="../../_images/P1-11.png"><img alt="../../_images/P1-11.png" class="align-center" src="../../_images/P1-11.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="cai-dat-board-xcontroller-trong-arduino-ide">
-<h2>Cài đặt board xController trong Arduino IDE<a class="headerlink" href="#cai-dat-board-xcontroller-trong-arduino-ide" title="Permalink to this headline">¶</a></h2>
-<p>Phần mềm Arduino có thể lập trình cho rất nhiều loại board mạch khác nhau. Tuy nhiên, bạn cần làm thêm một vài bước sau để có thể làm việc với xController:</p>
+  <div class="section" id="huong-dan-cai-dat-upycraft-ide">
+<h1>Hướng Dẫn Cài Đặt uPyCraft IDE<a class="headerlink" href="#huong-dan-cai-dat-upycraft-ide" title="Permalink to this headline">¶</a></h1>
+<p>Để cài đặt và sử dụng uPyCraft IDE, trước tiên máy tính của bạn cần có Python 3.7.X bản mới nhất (bỏ qua các bước hướng dẫn cài đặt Python dưới đây nếu bạn đã cài Python rồi).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Bước</span> <span class="pre">1</span></code>: Nhâp vào <a class="reference external" href="https://www.python.org/downloads">đây</a> để tải file cài đặt Python.</p>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">`</span></a>Mở phần mềm Arduino đã cài đặt.</p></li>
-</ol>
-<p>2. Vào menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span></code>. Trong tab <code class="docutils literal notranslate"><span class="pre">Settings</span></code>, mục <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">Boards</span> <span class="pre">Manager</span></code>, thêm địa chỉ đường dẫn mô tả thông tin xController như hình và nhấn “OK”
-<a href="#id3"><span class="problematic" id="id4">``</span></a><a class="reference external" href="https://raw.githubusercontent.com/AITT-VN/ohstem_arduino_board/main/package_xcon_index.json">https://raw.githubusercontent.com/AITT-VN/ohstem_arduino_board/main/package_xcon_index.json</a> ``</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="../../_images/P1-21.png"><img alt="../../_images/P1-21.png" class="align-center" src="../../_images/P1-21.png" style="width: 480px;" /></a>
-<p>Sau này, để hỗ trợ nhiều loại board khác, bạn có thể nhập nhiều dòng bằng cách nhấn Enter để xuống dòng cho từng link.</p>
+<div><a class="reference internal image-reference" href="../../_images/ls-0-1.png"><img alt="../../_images/ls-0-1.png" class="align-center" src="../../_images/ls-0-1.png" style="width: 480px;" /></a>
 </div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p>Mở menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Board</span> <span class="pre">[tên</span> <span class="pre">board</span> <span class="pre">đang</span> <span class="pre">được</span> <span class="pre">chọn]</span> <span class="pre">&gt;</span> <span class="pre">Boards</span> <span class="pre">Manager…</span></code>, nhập Ohstem vào thanh search và chọn board <code class="docutils literal notranslate"><span class="pre">OhStem</span> <span class="pre">Boards</span> <span class="pre">by</span> <span class="pre">OhStem</span> <span class="pre">Education</span></code> được tìm thấy như hình dưới, nhấn vào <code class="docutils literal notranslate"><span class="pre">Install</span></code>, chờ đến khi board được cài đặt hoàn tất. Sau khi cài đặt xong, nhấn vào <code class="docutils literal notranslate"><span class="pre">Close</span></code>.</p></li>
-</ol>
+<p><code class="docutils literal notranslate"><span class="pre">Bước</span> <span class="pre">2</span></code>: Nháy đúp chuột vào file vừa tải về để tiến hành cài đặt.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/P1-31.png"><img alt="../../_images/P1-31.png" class="align-center" src="../../_images/P1-31.png" style="width: 480px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/ls-0-2.png"><img alt="../../_images/ls-0-2.png" class="align-center" src="../../_images/ls-0-2.png" style="width: 480px;" /></a>
 </div></blockquote>
-<ol class="arabic simple" start="4">
-<li><p>Vào menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Board</span></code>, chọn loại board là <code class="docutils literal notranslate"><span class="pre">OhStem</span> <span class="pre">Boards</span> <span class="pre">&gt;</span> <span class="pre">xController</span></code> vừa được cài đặt:</p></li>
-</ol>
+<p><code class="docutils literal notranslate"><span class="pre">Bước</span> <span class="pre">3</span></code>: Chọn Add Python 3.7 to PATH, sau đó Install Now</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/P1-41.png"><img alt="../../_images/P1-41.png" class="align-center" src="../../_images/P1-41.png" style="width: 480px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/ls-0-3.png"><img alt="../../_images/ls-0-3.png" class="align-center" src="../../_images/ls-0-3.png" style="width: 480px;" /></a>
+<p>Quá trình cài đặt có thể diễn ra trong vài giây:</p>
+<a class="reference internal image-reference" href="../../_images/ls-0-4.png"><img alt="../../_images/ls-0-4.png" class="align-center" src="../../_images/ls-0-4.png" style="width: 480px;" /></a>
 </div></blockquote>
-<ol class="arabic simple" start="5">
-<li><p>Vào menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Port</span></code> để chọn Cổng kết nối đến xController (chính là COM Port hiện ra trong <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">Manager</span></code> chúng ta đã thấy lúc nãy)</p></li>
-</ol>
+<p><code class="docutils literal notranslate"><span class="pre">Bước</span> <span class="pre">4</span></code>: Khi hoàn tất, bạn sẽ thấy thông báo Setup was successful.</p>
 <blockquote>
-<div><p>Ví dụ: Trong máy tính Windows của tác giả, cổng trên Device Manager là <code class="docutils literal notranslate"><span class="pre">COM12</span></code>:</p>
+<div><a class="reference internal image-reference" href="../../_images/ls-0-5.png"><img alt="../../_images/ls-0-5.png" class="align-center" src="../../_images/ls-0-5.png" style="width: 480px;" /></a>
+<p>Tiếp theo, nhấp vào <a class="reference external" href="https://randomnerdtutorials.com/uPyCraftWindows">đây</a> để tải xuống uPyCraft IDE cho Windows.</p>
+<a class="reference internal image-reference" href="../../_images/ls-0-6.png"><img alt="../../_images/ls-0-6.png" class="align-center" src="../../_images/ls-0-6.png" style="width: 480px;" /></a>
+</div></blockquote>
+<p>Đối với uPyCraft IDE, bạn không cần thực hiện bất cứ các thao tác cài đặt phức tạp nào, chỉ cần tải về file thực thi ở trên về rồi nháy đúp chuột để khởi động nó, một cửa sổ mới được mở ra như hình dưới là bạn đã có thể sử dụng nó.</p>
 <blockquote>
-<div><img alt="../../_images/P1-21.png" src="../../_images/P1-21.png" />
-<dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>480</p>
-</dd>
-<dt class="field-even">align</dt>
-<dd class="field-even"><p>center</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>Đối với người dùng hệ điều hành macOS, cổng kết nối sẽ được hiển thị là: <code class="docutils literal notranslate"><span class="pre">/dev/cu.SLAB_USBtoUART</span></code>.</p>
-</div></blockquote>
+<div><a class="reference internal image-reference" href="../../_images/ls-0-7.png"><img alt="../../_images/ls-0-7.png" class="align-center" src="../../_images/ls-0-7.png" style="width: 480px;" /></a>
 </div></blockquote>
 <div class="section" id="chuong-trinh-mau">
-<h3>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this headline">¶</a></h3>
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference download external" download="" href="https://github.com/AITT-VN/xbuild_creator_kit/tree/main/Arduino"><code class="xref download docutils literal notranslate"><span class="pre">Arduino</span> <span class="pre">Tutorial</span> <span class="pre">Code</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../../_downloads/a037217d4a315b1ecf436bbf3b8e597e/ "><code class="xref download docutils literal notranslate"><span class="pre">Micropython</span> <span class="pre">Tutorial</span> <span class="pre">Code</span></code></a></p></li>
 </ul>
-</div>
 </div>
 </div>
 
@@ -269,7 +241,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="lesson1.html" class="btn btn-neutral float-right" title="Bài học 1: Hello world" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="about-upycraft.html" class="btn btn-neutral float-right" title="Làm quen với phần mềm uPyCraft IDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="index.html" class="btn btn-neutral float-left" title="Microython Cơ bản" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

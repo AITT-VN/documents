@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -214,11 +215,6 @@
 <h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this headline">¶</a></h2>
 <p><em>Cảm biến âm thanh</em></p>
 <p>Cảm biến âm thanh có thể dùng để phát hiện và đo cường độ âm thanh của môi trường xung quanh. Chúng ta có thể ứng dụng cảm biến này để điều khiển đèn LED RGB bằng tiếng vỗ tay.</p>
-<p><em>Vẽ biểu đồ dữ liệu bằng cửa sổ Serial Plotter</em></p>
-<p>Cửa sổ Serial Plotter có chức năng tương tự như cửa sổ Serial Monitor, cho phép bạn có thể quan sát các giá trị đo được trong chương trình, tuy nhiên Serial Plotter hỗ trợ biểu diễn dưới dạng biểu đồ theo thời gian thực. Điều này rất hữu ích đối với những dữ liệu cần được quan sát trực quan.</p>
-<a class="reference internal image-reference" href="../../_images/ls-7-11.png"><img alt="../../_images/ls-7-11.png" class="align-center" src="../../_images/ls-7-11.png" style="width: 600px;" /></a>
-<p>Bạn có thể mở cửa sổ Serial Plotter bằng cách vào menu <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Serial</span> <span class="pre">Plotter</span></code>.</p>
-<a class="reference internal image-reference" href="../../_images/ls-7-21.png"><img alt="../../_images/ls-7-21.png" class="align-center" src="../../_images/ls-7-21.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="thiet-bi-can-su-dung">
 <h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
@@ -230,77 +226,56 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
-
-<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">soundSensorPin</span> <span class="o">=</span> <span class="n">A4_1</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">sensorValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">LEDState</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
-  <span class="c1">// đọc giá trị cảm biến</span>
-  <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">soundSensorPin</span><span class="p">);</span>
-  <span class="c1">// in ra giá trị cửa sổ Serial đọc được</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
-  <span class="c1">// nếu giá trị cảm biến lớn hơn 1000</span>
-  <span class="c1">// thì đảo trạng thái bật tắt của đèn LED</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">sensorValue</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">){</span>
-    <span class="n">LEDState</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">LEDState</span><span class="p">;</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="c1">// bật tắt đèn LED RGB dựa vào trạng thái đã được xử lý</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">LEDState</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
-    <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="p">}</span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_state</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">sound_value</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">sound_value</span><span class="p">)</span> <span class="c1"># In giá trị cảm biến âm thanh</span>
+  <span class="k">if</span> <span class="n">sound_value</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">:</span>
+    <span class="n">led_state</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">led_state</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">led_state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Sau khi chạy chương trình, bạn có thể xem giá trị của cảm biến âm thanh từ cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code>, bằng cách vào mục <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Serial</span> <span class="pre">Plotter</span></code>. Bạn thử vỗ tay phát ra tiếng động hoặc chạm nhẹ vào microphone của cảm biến để thấy sự thay đổi của giá trị cường độ âm thanh bằng biểu đồ.</p>
-<a class="reference internal image-reference" href="../../_images/ls-7-41.png"><img alt="../../_images/ls-7-41.png" class="align-center" src="../../_images/ls-7-41.png" style="width: 600px;" /></a>
+<p>Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến âm thanh trong cửa sổ Terminal.</p>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Các câu lệnh include thư viện, khai báo đối tượng XController và các biến sẽ tương tự như các bài trước. Tuy nhiên, chúng ta cần để ý đoạn code đảo trạng thái của đèn LED RGB như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">n</span>ế<span class="nv">u</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> <span class="nv">l</span>ớ<span class="nv">n</span> <span class="nv">h</span>ơ<span class="nv">n</span> <span class="mi">1000</span>
-<span class="o">//</span> <span class="nv">th</span>ì đả<span class="nv">o</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> <span class="nv">b</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> <span class="nv">c</span>ủ<span class="nv">a</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-<span class="k">if</span> <span class="ss">(</span><span class="nv">sensorValue</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="ss">)</span>{
-  <span class="nv">LEDState</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">LEDState</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">300</span><span class="ss">)</span><span class="c1">;</span>
-}
+<p>Các câu lệnh khai báo đối tượng XController và các biến sẽ tương tự như các bài trước. Tuy nhiên, chúng ta cần để ý đoạn code đảo trạng thái của đèn LED RGB như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># nếu giá trị cảm biến lớn hơn 1000 thì đảo trạng thái bật tắt của đèn LED</span>
+<span class="k">if</span> <span class="n">sound_value</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">:</span>
+    <span class="n">led_state</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">led_state</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">if</span></code> sẽ kiểm tra kết quả đo được có lớn hơn 1000 hay không, nếu có thì mới đảo trạng thái đèn LED. Giá trị 1000 ở đây gọi là ngưỡng, do chúng ta tự đo và ấn định. Trong trường hợp này, nếu chúng ta để ngưỡng càng nhỏ thì chương trình sẽ chạy càng nhạy.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>LEDState = 1 - LEDState;
+<p>Câu lệnh if sẽ kiểm tra kết quả đo được có lớn hơn 1000 hay không, nếu có thì mới đảo trạng thái đèn LED. Giá trị 1000 ở đây gọi là ngưỡng, do chúng ta tự đo và ấn định. Trong trường hợp này, nếu chúng ta để ngưỡng càng nhỏ thì chương trình sẽ chạy càng nhạy.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_state</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">led_state</span>
 </pre></div>
 </div>
-<p>Đảo trạng thái LED (<code class="docutils literal notranslate"><span class="pre">LEDState</span></code>) đơn giản từ 0 thành 1 hoặc từ 1 thành 0: Nếu LEDState đang có giá trị là 0 thì LEDState mới = 1 - 0, sẽ thành 1. Ngược lại, nếu LEDState đang là 1 thì <code class="docutils literal notranslate"><span class="pre">LEDState</span></code> mới (= 1 - 1) sẽ thành 0.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(300);
+<p>Đảo trạng thái LED (<code class="docutils literal notranslate"><span class="pre">led_state</span></code>) đơn giản từ 0 thành 1 hoặc từ 1 thành 0: Nếu <code class="docutils literal notranslate"><span class="pre">led_state</span></code> đang có giá trị là 0 thì <code class="docutils literal notranslate"><span class="pre">led_state</span></code> mới bằng 1 - 0, sẽ thành 1. Ngược lại, nếu <code class="docutils literal notranslate"><span class="pre">led_state</span></code> đang là 1 thì <code class="docutils literal notranslate"><span class="pre">led_state</span></code> mới (= 1 - 1) sẽ thành 0.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Sau khi xử lý xong, chúng ta cần phải tạm dừng chương trình trong một thời gian ngắn để tránh trường hợp do chương trình chạy quá nhanh, lúc đó tiếng động truyền vào kéo dài chưa kịp dứt thì sẽ bị xử lý nhiều lần, tạo ra kết quả bật tắt không mong muốn.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">RGB</span> <span class="nv">d</span>ự<span class="nv">a</span> <span class="nv">v</span>à<span class="nv">o</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> đã đượ<span class="nv">c</span> <span class="nv">x</span>ử <span class="nv">l</span>ý
-<span class="k">if</span> <span class="ss">(</span><span class="nv">LEDState</span> <span class="o">==</span> <span class="mi">0</span><span class="ss">)</span>{
-  <span class="nv">xcon</span>.<span class="nv">showLED</span><span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span><span class="c1">;</span>
-} <span class="k">else</span> {
-  <span class="nv">xcon</span>.<span class="nv">showLED</span><span class="ss">(</span><span class="mi">0</span>, <span class="mi">255</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span><span class="c1">;</span>
-}
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># bật tắt đèn LED RGB dựa vào trạng thái đã được xử lý</span>
+<span class="k">if</span> <span class="n">led_state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>Cuối vòng lặp, chúng ta sẽ dùng cấu trúc <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">...</span> <span class="pre">else</span> <span class="pre">...</span></code> để bật tắt đèn LED, tùy vào giá trị của biến LEDState. Hàm để bật tắt LED RGB (thực chất là thay đổi màu vì ta chỉ sử dụng màu đỏ) là hàm <code class="docutils literal notranslate"><span class="pre">showLED()</span></code> đã được giải thích ở bài học trước.</p>
-<p><em>Khi chương trình chạy, đèn LED sẽ thay đổi màu nếu phát hiện âm thanh của môi trường xung quanh đủ lớn.</em></p>
+<p>Cuối vòng lặp, chúng ta sẽ dùng cấu trúc if else để bật tắt đèn LED, tùy vào giá trị của biến <code class="docutils literal notranslate"><span class="pre">led_state</span></code>. Hàm để bật tắt LED RGB (thực chất là thay đổi màu vì ta chỉ sử dụng màu đỏ) là hàm <code class="docutils literal notranslate"><span class="pre">led_onboard.show()</span></code> đã được giải thích ở bài học trước.</p>
+<p>Khi chương trình chạy, đèn LED sẽ thay đổi màu nếu phát hiện âm thanh của môi trường xung quanh đủ lớn.</p>
 </div>
 </div>
 

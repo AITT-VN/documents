@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -230,53 +231,35 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">; // Module LED nối vào cổng số 1</span>
-<span class="nv">int</span> <span class="nv">rotaryPin</span> <span class="o">=</span> <span class="nv">A4_1</span><span class="c1">; // Module rotary nối vào cổng số 4</span>
-<span class="nv">int</span> <span class="nv">rotaryValue</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 
-<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
-}
-
-<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
-  <span class="o">//</span> đọ<span class="nv">c</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span>
-  <span class="nv">rotaryValue</span> <span class="o">=</span> <span class="nv">analogRead</span><span class="ss">(</span><span class="nv">rotaryPin</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="o">//</span> <span class="nv">d</span>ừ<span class="nv">ng</span> <span class="nv">ch</span>ươ<span class="nv">ng</span> <span class="nv">tr</span>ì<span class="nv">nh</span> <span class="nv">trong</span> <span class="nv">kho</span>ả<span class="nv">ng</span> <span class="nv">th</span>ờ<span class="nv">i</span> <span class="nv">gian</span>
-  <span class="o">//</span> <span class="nv">b</span>ằ<span class="nv">ng</span> đú<span class="nv">ng</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> đọ<span class="nv">c</span> đượ<span class="nv">c</span> <span class="ss">(</span><span class="nv">milliseconds</span><span class="ss">)</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="nv">rotaryValue</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="o">//</span> <span class="nv">d</span>ừ<span class="nv">ng</span> <span class="nv">ch</span>ươ<span class="nv">ng</span> <span class="nv">tr</span>ì<span class="nv">nh</span> <span class="nv">trong</span> <span class="nv">kho</span>ả<span class="nv">ng</span> <span class="nv">th</span>ờ<span class="nv">i</span> <span class="nv">gian</span>
-  <span class="o">//</span> <span class="nv">b</span>ằ<span class="nv">ng</span> đú<span class="nv">ng</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> đọ<span class="nv">c</span> đượ<span class="nv">c</span> <span class="ss">(</span><span class="nv">milliseconds</span><span class="ss">)</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="nv">rotaryValue</span><span class="ss">)</span><span class="c1">;</span>
-}
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">1</span><span class="p">))</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">)</span>
+  <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">((</span><span class="mi">0</span><span class="p">))</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int rotaryPin = A4_1;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Khai báo chân IO nối với cảm biến xoay. Do cảm biến xoay trả về tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> và được kết nối với cổng số 4 trên xController nên ta khai báo là <code class="docutils literal notranslate"><span class="pre">A4_1</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
-</pre></div>
-</div>
-<p>Cấu hình module LED là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> như đã học trong các bài trước.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>rotaryValue = analogRead(rotaryPin);
-</pre></div>
-</div>
-<p>Đọc giá trị tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên (int) nằm trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span></code> đến <code class="docutils literal notranslate"><span class="pre">4095</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(rotaryValue);
+<p>Đặt biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến xoay trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng <code class="docutils literal notranslate"><span class="pre">pin41.read_analog()</span></code>. Lúc này biến <code class="docutils literal notranslate"><span class="pre">rotaryvalue</span></code> sẽ trả về giá trị kiểu số nguyên (<code class="docutils literal notranslate"><span class="pre">int</span></code>) nằm trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">rotaryvalue</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Tạm ngừng chương trình một khoảng thời gian bằng với giá trị đọc được từ cảm biến xoay. Do đó, bạn có thể điều chỉnh thời gian tạm ngừng bằng cách xoay cảm biến qua trái (giảm dần) hoặc qua phải (tăng dần).</p>
-<p><em>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về thời gian bật tắt đèn LED.</em></p>
-<p><em>Nếu xoay về tận cùng bên trái (giá trị là 0) thì LED sẽ chớp liên tục và rất khó để nhận ra trạng thái bật tắt của đèn LED. Ngược lại, nếu xoay về tận cùng bên phải, giá trị đọc được sẽ là 4095 (tương đương với hơn 4 giây), bạn sẽ dễ dàng nhìn thấy LED bật và tắt hơn.</em></p>
+<p>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về thời gian bật tắt đèn LED.</p>
+<p>Nếu xoay về tận cùng bên trái (giá trị là 0) thì LED sẽ chớp liên tục và rất khó để nhận ra trạng thái bật tắt của đèn LED. Ngược lại, nếu xoay về tận cùng bên phải, giá trị đọc được sẽ là <code class="docutils literal notranslate"><span class="pre">4095</span></code> (tương đương với hơn 4 giây), bạn sẽ dễ dàng nhìn thấy LED bật và tắt hơn.</p>
 </div>
 </div>
 

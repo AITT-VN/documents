@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Bài học 3: Nhấn nút bật đèn LED</a><ul>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -235,89 +236,59 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
-<span class="nv">int</span> <span class="nv">buttonPin</span> <span class="o">=</span> <span class="nv">D2_1</span><span class="c1">;</span>
-<span class="nv">int</span> <span class="nv">buttonState</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
-
-<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">buttonPin</span>, <span class="nv">INPUT</span><span class="ss">)</span><span class="c1">;</span>
-}
-
-<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
-  <span class="o">//</span> đọ<span class="nv">c</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> <span class="nv">c</span>ủ<span class="nv">a</span> <span class="nv">n</span>ú<span class="nv">t</span> <span class="nv">nh</span>ấ<span class="nv">n</span>
-  <span class="nv">buttonState</span> <span class="o">=</span> <span class="nv">digitalRead</span><span class="ss">(</span><span class="nv">buttonPin</span><span class="ss">)</span><span class="c1">;</span>
-
-  <span class="o">//</span> <span class="nv">ki</span>ể<span class="nv">m</span> <span class="nv">tra</span> <span class="nv">xem</span> <span class="nv">n</span>ú<span class="nv">t</span> <span class="nv">c</span>ó đượ<span class="nv">c</span> <span class="nv">nh</span>ấ<span class="nv">n</span> <span class="nv">kh</span>ô<span class="nv">ng</span>
-  <span class="o">//</span> <span class="nv">n</span>ế<span class="nv">u</span> <span class="nv">n</span>ú<span class="nv">t</span> đượ<span class="nv">c</span> <span class="nv">nh</span>ấ<span class="nv">n</span> <span class="nv">th</span>ì <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">l</span>à <span class="nv">LOW</span>
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">buttonState</span> <span class="o">==</span> <span class="nv">LOW</span><span class="ss">)</span> {
-    <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-  } <span class="k">else</span> {
-    <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-  }
-}
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">()):</span>
+    <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">pin11</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1;
-int buttonPin = D2_1;
-int buttonState = 0;
-</pre></div>
-</div>
-<p>Như trong bài trước, ta khai báo các biến để lưu thông tin chân IO đã kết nối với module đèn LED và nút nhấn. Do nút nhấn được nối với cổng 2 trên board và chỉ dùng 1 đường tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code>, nên ta sử dụng giá trị là <code class="docutils literal notranslate"><span class="pre">D2_1</span></code>.</p>
-<p>Ngoài ra, ta cũng khai báo 1 biến có tên là <code class="docutils literal notranslate"><span class="pre">buttonState</span></code> để chứa trạng thái hiện tại của nút nhấn, dùng để xử lý trong chương trình chính.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
-</pre></div>
-</div>
-<p>Câu lệnh này chúng ta đã tìm hiểu trong bài trước, giúp cấu hình chân IO nối với module LED là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> để có thể điều khiển bật tắt LED được.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(buttonPin, INPUT);
-</pre></div>
-</div>
-<p>Tương tự, chúng ta cấu hình cho nút nhấn là <code class="docutils literal notranslate"><span class="pre">INPUT</span></code>. Ngược với mode <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code>, mode <code class="docutils literal notranslate"><span class="pre">INPUT</span></code> là để xController nhận tín hiệu từ nút nhấn thay vì xuất tín hiệu để điều khiển.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>buttonState = digitalRead(buttonPin);
-</pre></div>
-</div>
-<p>Câu lệnh này đọc tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> từ một chân IO được chỉ định. Kết quả trả về sẽ là mức <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">LOW</span></code>, tùy theo nút có được nhấn hay không.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">buttonState</span> <span class="o">==</span> <span class="nv">LOW</span><span class="ss">)</span> {
-    <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-} <span class="k">else</span> {
-    <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-}
-</pre></div>
-</div>
 <p>Để xử lý tín hiệu đọc được, đoạn code này sử dụng một cú pháp rất phổ biến trong lập trình là câu lệnh kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">if…else...</span></code>. Câu lệnh điều kiện cho phép chúng ta kiểm tra một điều kiện là đúng hay sai, và tùy theo kết quả đúng sai mà những khối lệnh liên quan sẽ được thực hiện.</p>
 <p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">if...else…</span></code> có cú pháp đầy đủ như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">condition1</span><span class="ss">)</span> {
-    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">A</span>
-}
-<span class="k">else</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">condition2</span><span class="ss">)</span> {
-    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">B</span>
-}
-<span class="k">else</span> {
-    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">C</span>
-}
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condition1</span><span class="p">:</span>
+    <span class="c1"># do Thing A</span>
+<span class="k">elif</span> <span class="n">condition2</span><span class="p">:</span>
+    <span class="c1"># do Thing B</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># do Thing C</span>
 </pre></div>
 </div>
 <p>Ở cú pháp trên, chương trình sẽ kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">condition1</span></code> đầu tiên:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> đúng: thực hiện các dòng lệnh trong phần “// do Thing A”</p></li>
-<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> sai: chương trình sẽ tiếp tục kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">condition2</span></code>:</p></li>
-<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition</span></code> 2 đúng, thực hiện các lệnh trong nhóm “// do Thing B.</p></li>
-<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition</span></code> 2 sai, chương trình sẽ thực hiện các lệnh trong nhóm cuối cùng là “// do Thing C”.</p></li>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> đúng: thực hiện các dòng lệnh trong phần “do Thing A”</p></li>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> sai: chương trình sẽ tiếp tục kiểm tra điều kiện condition2:</p>
+<ul>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition</span> <span class="pre">2</span></code> đúng, thực hiện các lệnh trong nhóm “do Thing B.</p></li>
+<li><p>Nếu <a href="#id1"><span class="problematic" id="id2">``</span></a>condition 2 <a href="#id3"><span class="problematic" id="id4">``</span></a>sai, chương trình sẽ thực hiện các lệnh trong nhóm cuối cùng là “do Thing C”.</p></li>
+</ul>
+</li>
 </ul>
 </div></blockquote>
-<p>Có thể sử dụng nhiều hơn 1 điều kiện trong câu lệnh if… else…</p>
-<p>Theo đó, trong chương trình bật tắt đèn LED ở trên, chương trình sẽ kiểm tra xem kết quả trạng thái nút nhấn có là LOW (nút được nhấn) hay không. Nếu trạng thái của nút nhấn đang là LOW, đèn LED sẽ được bật và ngược lại (trạng thái ở mức HIGH, nút không được nhấn), đèn LED sẽ tắt.</p>
-<p><em>Bạn hãy thử chạy chương trình, nhấn nút và quan sát kết quả đèn LED.</em></p>
+<p>Có thể sử dụng nhiều hơn 1 điều kiện trong câu lệnh <code class="docutils literal notranslate"><span class="pre">if...</span> <span class="pre">else…</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Câu lệnh này lấy giá trị hiện tại của nút nhấn trên board.</p>
+<p>Kết quả trả về là:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: Khi nút được nhấn</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>: Khi nút không được nhấn.</p></li>
+</ul>
+</div></blockquote>
+<p>Theo đó, trong chương trình bật tắt đèn LED ở trên, chương trình sẽ kiểm tra xem kết quả trạng thái nút nhấn có là <code class="docutils literal notranslate"><span class="pre">True</span></code> (nút được nhấn) hay không. Nếu trạng thái của nút nhấn đang là True, đèn LED sẽ được bật và ngược lại (trạng thái ở mức HIGH, nút không được nhấn), đèn LED sẽ tắt.</p>
+<p>Bạn hãy thử chạy chương trình, nhấn nút và quan sát kết quả đèn LED.</p>
 </div>
 </div>
 

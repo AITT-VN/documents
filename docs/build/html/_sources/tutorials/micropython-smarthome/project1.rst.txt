@@ -28,54 +28,35 @@ Thiết bị cần sử dụng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  from ir_receiver import *; ir_rx.start();
 
-  #include <xcontroller.h>
-  #include <IRremote.h>
-
-  XController xcon;
-  IRrecv irrecv(IR_RX);
-  int irCommand;
-  int lightLevel = 0;
-
-  void setup()
-  {
-    irrecv.begin();
-    Serial.begin(9600);   
-  }
-
-  void loop() {
-    if (irrecv.decode()) {
-      irCommand = irrecv.decodedIRData.command;
-      Serial.println(irCommand);
-      if (irCommand == IR_REMOTE_UP){
-        lightLevel += 50; // tăng độ sáng 25%
-        if (lightLevel > 255) {
-          lightLevel = 255;
-        }
-      } else if (irCommand == IR_REMOTE_DOWN){
-        lightLevel -= 50; // giảm độ sáng 25%
-        if (lightLevel < 0) {
-          lightLevel = 0;
-        }
-      } else if (irCommand == IR_REMOTE_SETUP){
-        if (lightLevel > 0) { // đèn đang bật thì tắt
-          lightLevel = 0;
-        } else { // đèn đang tắt thì bật
-          lightLevel = 255;
-        }
-      }
-      xcon.showLED(0, lightLevel, 0, 0);
-      irrecv.resume();
-      delay(200);
-    }
-  }
+  while True:
+    if ir_rx.get_code() == IR_REMOTE_UP:
+      light_level = light_level + 50
+      if light_level > 255:
+        light_level = 255
+      ir_rx.clear_code()
+    elif ir_rx.get_code() == IR_REMOTE_DOWN:
+      light_level = light_level - 50
+      if light_level < 0:
+        light_level = 0
+      ir_rx.clear_code()
+    elif ir_rx.get_code() == IR_REMOTE_SETUP:
+      if light_level > 0:
+        light_level = 0
+      else:
+        light_level = 255
+      ir_rx.clear_code()
+    led_onboard.show(0, (light_level, 0, 0))
+    time.sleep(0.2)
 
 Giải thích chương trình
 --------------
 
-Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên ``lightLevel`` có kiểu là ``int`` để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.
+Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên ``light_level`` (có kiểu là int) để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.

@@ -215,54 +215,40 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;IRremote.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ir_receiver</span> <span class="kn">import</span> <span class="o">*</span><span class="p">;</span> <span class="n">ir_rx</span><span class="o">.</span><span class="n">start</span><span class="p">();</span>
 
-<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
-<span class="n">IRrecv</span> <span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RX</span><span class="p">);</span>
-<span class="kt">int</span> <span class="n">irCommand</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">irrecv</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">())</span> <span class="p">{</span>
-    <span class="n">irCommand</span> <span class="o">=</span> <span class="n">irrecv</span><span class="p">.</span><span class="n">decodedIRData</span><span class="p">.</span><span class="n">command</span><span class="p">;</span>
-    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">irCommand</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_UP</span><span class="p">){</span>
-      <span class="n">lightLevel</span> <span class="o">+=</span> <span class="mi">50</span><span class="p">;</span> <span class="c1">// tăng độ sáng 25%</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_DOWN</span><span class="p">){</span>
-      <span class="n">lightLevel</span> <span class="o">-=</span> <span class="mi">50</span><span class="p">;</span> <span class="c1">// giảm độ sáng 25%</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">irCommand</span> <span class="o">==</span> <span class="n">IR_REMOTE_SETUP</span><span class="p">){</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">lightLevel</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// đèn đang bật thì tắt</span>
-        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="c1">// đèn đang tắt thì bật</span>
-        <span class="n">lightLevel</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lightLevel</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">ir_rx</span><span class="o">.</span><span class="n">get_code</span><span class="p">()</span> <span class="o">==</span> <span class="n">IR_REMOTE_UP</span><span class="p">:</span>
+    <span class="n">light_level</span> <span class="o">=</span> <span class="n">light_level</span> <span class="o">+</span> <span class="mi">50</span>
+    <span class="k">if</span> <span class="n">light_level</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">:</span>
+      <span class="n">light_level</span> <span class="o">=</span> <span class="mi">255</span>
+    <span class="n">ir_rx</span><span class="o">.</span><span class="n">clear_code</span><span class="p">()</span>
+  <span class="k">elif</span> <span class="n">ir_rx</span><span class="o">.</span><span class="n">get_code</span><span class="p">()</span> <span class="o">==</span> <span class="n">IR_REMOTE_DOWN</span><span class="p">:</span>
+    <span class="n">light_level</span> <span class="o">=</span> <span class="n">light_level</span> <span class="o">-</span> <span class="mi">50</span>
+    <span class="k">if</span> <span class="n">light_level</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="n">light_level</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">ir_rx</span><span class="o">.</span><span class="n">clear_code</span><span class="p">()</span>
+  <span class="k">elif</span> <span class="n">ir_rx</span><span class="o">.</span><span class="n">get_code</span><span class="p">()</span> <span class="o">==</span> <span class="n">IR_REMOTE_SETUP</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">light_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="n">light_level</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">light_level</span> <span class="o">=</span> <span class="mi">255</span>
+    <span class="n">ir_rx</span><span class="o">.</span><span class="n">clear_code</span><span class="p">()</span>
+  <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">light_level</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên <code class="docutils literal notranslate"><span class="pre">lightLevel</span></code> có kiểu là <code class="docutils literal notranslate"><span class="pre">int</span></code> để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.</p>
+<p>Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên <code class="docutils literal notranslate"><span class="pre">light_level</span></code> (có kiểu là int) để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.</p>
 </div>
 </div>
 

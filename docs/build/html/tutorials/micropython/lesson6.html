@@ -98,7 +98,8 @@
 <p class="caption" role="heading"><span class="caption-text">xController Micropython Tutorial</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Microython Cơ bản</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt Arduino và xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
@@ -119,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Giao tiếp Bluetooth Low Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../micropython-smarthome/index.html">Dự án nhà thông minh - Micropython</a></li>
@@ -209,7 +210,7 @@
 <div class="section" id="muc-tieu">
 <h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
 <p>Vận dụng kiến thức về tín hiệu Analog Input đã học để làm việc với cảm biến ánh sáng và điều khiển đèn LED đa màu RGB được tích hợp sẵn trên xController.</p>
-<p>Tìm hiểu cách sử dụng cửa sổ Serial Monitor để xem và theo dõi kết quả đọc được từ cảm biến, từ đó có thể viết đúng logic hoạt động của chương trình.</p>
+<p>Tìm hiểu cách sử dụng cửa sổ Terminal để xem và theo dõi kết quả đọc được từ cảm biến, từ đó có thể viết đúng logic hoạt động của chương trình.</p>
 <p>Viết chương trình điều chỉnh độ sáng của đèn LED RGB một cách tự động dựa vào ánh sáng môi trường.</p>
 </div>
 <div class="section" id="kien-thuc-moi">
@@ -226,13 +227,6 @@
 <blockquote>
 <div><a class="reference internal image-reference" href="../../_images/ls-6-21.png"><img alt="../../_images/ls-6-21.png" class="align-center" src="../../_images/ls-6-21.png" style="width: 600px;" /></a>
 </div></blockquote>
-<p><em>Cửa sổ Serial Monitor</em></p>
-<p>Cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code> (gọi tắt là cửa sổ Serial) là một công cụ rất hữu ích để quan sát và theo dõi những thông tin trong một chương trình, như in kết quả đọc được từ cảm biến, giúp chỉnh sửa lỗi chương trình một cách dễ dàng.</p>
-<p>Bạn có thể mở <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code> bằng cách click vào <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Serial</span> <span class="pre">Monitor</span></code>.</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="../../_images/ls-6-31.png"><img alt="../../_images/ls-6-31.png" class="align-center" src="../../_images/ls-6-31.png" style="width: 600px;" /></a>
-</div></blockquote>
-<p><em>Lưu ý</em>: xController có 16 kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> độc lập (đánh số từ <code class="docutils literal notranslate"><span class="pre">0-15</span></code>). Mỗi kênh này có thể cấu hình để sử dụng với tần số và Duty Cycle khác nhau.</p>
 </div>
 <div class="section" id="thiet-bi-can-su-dung">
 <h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
@@ -244,102 +238,96 @@
 </div>
 <div class="section" id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<p>Mở phần mềm Arduino IDE.</p>
-<p>Để làm việc với đèn LED RGB tích hợp trên xController, bạn cài đặt thư viện của xController ở link này: <a class="reference external" href="https://github.com/AITT-VN/xcontroller_arduino_lib/archive/refs/heads/main.zip">https://github.com/AITT-VN/xcontroller_arduino_lib/archive/refs/heads/main.zip</a> hoặc vào link Github để tải về tại <a class="reference external" href="https://github.com/AITT-VN/xcontroller_arduino_lib">https://github.com/AITT-VN/xcontroller_arduino_lib</a></p>
-<p>Sau khi tải xong, bạn vào menu <code class="docutils literal notranslate"><span class="pre">Sketch</span> <span class="pre">&gt;</span> <span class="pre">Include</span> <span class="pre">library</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">.ZIP</span> <span class="pre">library</span></code>, chọn file zip thư viện vừa tải để thêm vào Arduino IDE.</p>
-<a class="reference internal image-reference" href="../../_images/ls-6-51.png"><img alt="../../_images/ls-6-51.png" class="align-center" src="../../_images/ls-6-51.png" style="width: 500px;" /></a>
-<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở phần mềm uPyCraft.</p></li>
+<li><p>Tạo một file chương trình mới (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code>) và lưu với tên main.py bằng cách chọn menu <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save…</span></code>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">DownloadAndRun</span></code> để chạy chương trình.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">light_value</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 
-<span class="n">XController</span> <span class="n">xcon</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">lightSensorPin</span> <span class="o">=</span> <span class="n">A4_1</span><span class="p">;</span> <span class="c1">// cảm biến ánh sáng nối với cổng 4</span>
-<span class="kt">int</span> <span class="n">sensorValue</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// giá trị đọc được từ cảm biến</span>
-<span class="kt">int</span> <span class="n">outputValue</span><span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// giá trị xuất ra cho LED RGB</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">//  đọc giá trị cảm biến ánh sáng (0-4095)</span>
-  <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">lightSensorPin</span><span class="p">);</span>
-  <span class="c1">// in ra cửa sổ Serial kết quả đọc được</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
-  <span class="c1">//  chuyển kết quả đọc được sang dải giá trị 0-255</span>
-  <span class="n">outputValue</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-  <span class="c1">// in ra kết quả chuyển đổi</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">outputValue</span><span class="p">);</span>
-  <span class="c1">// thay đổi màu sắc của LED RGB, chỉ thay đổi giá trị màu đỏ</span>
-  <span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">outputValue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">light_value</span><span class="p">)</span> <span class="c1"># In giá trị cảm biến ánh sáng</span>
+  <span class="n">led_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">light_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">led_value</span><span class="p">)</span> <span class="c1"># In giá trị độ sáng của đèn đã được tính toán</span>
+  <span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">led_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến ánh sáng và kết quả tính toán độ sáng của đèn LED RGB trong cửa sổ Serial Monitor.</p>
+<p>Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến ánh sáng và kết quả tính toán độ sáng của đèn LED RGB trong cửa sổ Terminal.</p>
 </div>
 <div class="section" id="giai-thich-chuong-trinh">
 <h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">light_value</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Để sử dụng thư viện của xController, bạn cần cài đặt như hướng dẫn ở trên. Trong chương trình, bạn cần khai báo thư viện (có tên <code class="docutils literal notranslate"><span class="pre">&lt;xcontroller.h&gt;</span></code>) bằng câu lệnh <code class="docutils literal notranslate"><span class="pre">#include</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>XController xcon;
+<p>Đặt biến <code class="docutils literal notranslate"><span class="pre">light_value</span></code> là giá trị tín hiệu Analog ở chân IO được chỉ định. Do cảm biến ánh sáng trả về tín hiệu Analog và được kết nối với cổng số 4 trên xController nên ta dùng <code class="docutils literal notranslate"><span class="pre">pin41.read_analog()</span></code>. Lúc này biến <code class="docutils literal notranslate"><span class="pre">light_value</span></code> sẽ trả về giá trị kiểu số nguyên (<code class="docutils literal notranslate"><span class="pre">int</span></code>) nằm trong khoảng từ 0 đến 4095.</p>
+<p>Dùng hàm <code class="docutils literal notranslate"><span class="pre">print</span></code> để in giá trị ra cửa sổ Terminal trên phần mềm uPyCraft</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">light_value</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Sau khi khai báo thư viện của xController, chúng ta khai báo một đối tượng là XController. Đối tượng này có các hàm để chúng ta làm việc với các chức năng tích hợp trên xController như đèn LED RGB, loa hay cảm biến gia tốc,…</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Serial.begin(9600);
+<a class="reference internal image-reference" href="../../_images/ls-1-7.png"><img alt="../../_images/ls-1-7.png" class="align-center" src="../../_images/ls-1-7.png" style="width: 500px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">Ready to download this file,please wait!</span>
+<span class="go">.</span>
+<span class="go">download ok</span>
+<span class="go">0</span>
+<span class="go">0</span>
+<span class="go">4095</span>
+<span class="go">4095</span>
 </pre></div>
 </div>
-<p>Khởi tạo giao tiếp <code class="docutils literal notranslate"><span class="pre">Serial</span></code> với tốc độ (baud rate) là <code class="docutils literal notranslate"><span class="pre">9600</span></code>. Để thông tin hiển thị đúng trong cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code>, bạn phải chọn tốc độ truyền nhận (ở góc dưới bên phải của giao diện màn hình Serial) đúng với giá trị dùng để khởi tạo trong chương trình.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Serial.println(sensorValue);
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/ls-6-61.png"><img alt="../../_images/ls-6-61.png" class="align-center" src="../../_images/ls-6-61.png" style="width: 500px;" /></a>
-<p>In ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code> giá trị đọc được từ cảm biến và ngắt xuống dòng. Một câu lệnh tương tự cũng in ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code> nhưng không ngắt xuống dòng là <code class="docutils literal notranslate"><span class="pre">Serial.print()</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>outputValue = map(sensorValue, 0, 4095, 0, 255);
-</pre></div>
-</div>
-<p>Như ta đã biết, cảm biến xuất ra tín hiệu Analog có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code>, trong khi độ sáng của 3 đèn LED trong đèn LED RGB tích hợp nhận giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">255</span></code>. Vậy nên, ta cần quy đổi hai thang đo này thành một:</p>
+<p>Nếu cửa sổ Terminal in ra các giá trị trong khoảng 0 đến 4095 một cách ngẫu nhiên khi bạn di chuyển cảm biến ánh sáng vào những vùng sáng tối khác nhau thì cảm biến đã hoạt động tốt.</p>
+<p>Như ta đã biết, cảm biến xuất ra tín hiệu Analog có giá trị từ 0 đến 4095, trong khi độ sáng của 3 đèn LED trong đèn LED RGB tích hợp nhận giá trị từ 0 đến 255. Vậy nên, ta cần quy đổi hai thang đo này thành một:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Khi giá trị cảm biến là 0 thì độ sáng của LED đỏ trong LED RGB là 0.</p></li>
 <li><p>Khi giá trị cảm biến là 4095 thì độ sáng LED đỏ trong LED RGB là 255.</p></li>
 </ul>
 </div></blockquote>
-<p>Để chuyển đổi tự động, chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">map()</span></code> cho phép chuyển đổi giá trị trong 1 dải giá trị này sang 1 dải giá trị khác.</p>
-<p>Cú pháp của câu lệnh map như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>map(value, fromLow, fromHigh, toLow, toHigh)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_value</span> <span class="o">=</span> <span class="n">translate</span><span class="p">(</span><span class="n">light_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4095</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Các tham số:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code>: Số cần chuyển đổi.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fromLow</span></code>: Giới hạn dưới của dải giá trị hiện tại.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fromHigh</span></code>: Giới hạn trên của dải giá trị hiện tại.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">toLow</span></code>: Giới hạn dưới của dải giá trị mới cần chuyển đổi.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">toHigh</span></code>: Giới hạn trên của dải giá trị mới cần chuyển đổi.</p></li>
-</ul>
-</div></blockquote>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>xcon.showLED(0, outputValue, 0, 0);
+<p>Bạn có thể xem lại bài trước để hiểu rõ hơn về hàm <code class="docutils literal notranslate"><span class="pre">translate</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">led_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>Để thay đổi màu và độ sáng của đèn LED RGB trên xController, chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">showLED()</span></code>. Hàm này có cú pháp như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>showLED(whichLED, redValue, greenValue, blueValue);
+<p>Để thay đổi màu và độ sáng của đèn LED RGB trên xController, chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">led_onboard.show(index,</span> <span class="pre">color)</span></code>. Hàm này có cú pháp như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_onboard</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Các tham số bao gồm:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">whichLED</span></code>: LED RGB cần thay đổi màu sắc, nhận 1 trong các giá trị là 0 (cả 2 LED), 1 (LED trái), 2 (LED phải). Trong chương trình trên, chúng ta dùng giá trị 0 để đổi màu cả 2 LED trái phải trên xController.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">redValue</span></code>: Độ sáng của LED đỏ.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">greenValue</span></code>: Độ sáng của LED xanh lục.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">blueValue</span></code>: Độ sáng của LED xanh lam.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index</span></code> : 0-Cả hai LED, 1-LED bên trái, 2-LED bên phải.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : Có thể sử dụng 2 hệ màu là RGB hoặc HEX:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">RGB</span></code> : (Red,Green,Blue) với phạm vi mỗi tham số là 0 ~ 255. Nếu bằng 0 tương ứng không có thành phần màu và nếu bằng 255 trương ứng thành phần màu cao nhất.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HEX</span></code> : hex_to_rgb(‘#0000ff’)</p></li>
+</ul>
+</li>
 </ul>
 </div></blockquote>
-<p>Để thay đổi độ sáng của đèn LED RGB, chúng ta chỉ cần thay đổi độ sáng của LED đỏ và tắt các LED xanh lục, xanh lam.</p>
-<p><em>Sau khi nạp chương trình, bạn thử lấy tay che cảm biến ánh sáng và quan sát sự thay đổi độ sáng của cả 2 đèn LED RGB trên xController.</em></p>
+<p>Ở đây chúng ta đang sử dụng hệ màu RGB. Và trong ví dụ này, chúng ta chỉ cần thay đổi độ sáng của LED đỏ và tắt các LED xanh lục, xanh lam nên ta có hệ màu RGB như sau :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">led_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Với <code class="docutils literal notranslate"><span class="pre">led_value</span></code> là giá trị <code class="docutils literal notranslate"><span class="pre">0~255</span></code> sau khi đã quy đổi từ việc phân tích giá trị xuất ra từ cảm biến ánh sáng.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Dừng chương trình trong một khoảng thời gian (đơn vị <code class="docutils literal notranslate"><span class="pre">mili</span> <span class="pre">giây</span></code>).</p>
+<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">sleep_ms()</span></code> có cú pháp như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Tham số truyền vào:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">s</span></code>: số mili giây chương trình tạm dừng. (1 giây = 1000 mili giây)</p>
+</div></blockquote>
+<p>Chúng ta cần tạm dừng chương trình trong khoảng thời gian 10 mili giây để cảm biến ánh sáng được cập nhật liên tục và độ sáng của đèn thay đổi mượt hơn. Tuy nhiên bạn có thể tăng hoặc giảm tham số này đề so sánh sự khác biệt.</p>
+<p>Sau khi nạp chương trình, bạn thử lấy tay che cảm biến ánh sáng và quan sát sự thay đổi độ sáng của cả 2 đèn LED RGB trên xController.</p>
 </div>
 </div>
 

@@ -37,52 +37,34 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  lightsensorvalue = 0
+  pirstate = 0
+  ledstate = 0
+  ledontime = 0
 
-  #define LIGHT_PIN A4_1
-  #define PIR_PIN D5_1
-  #define LED_PIN D6_1
-  
-  int lightSensorValue = 0;
-  int pirState = 0;
-  int LEDState = 0;
-
-  unsigned long LEDOnTime = 0; // lưu thời gian lúc bật đèn
-
-  void setup() {
-    pinMode(LED_PIN, OUTPUT);
-    pinMode(PIR_PIN, INPUT);
-  }
-
-  void loop() {
-    // đọc giá trị cảm biến ánh sáng
-    lightSensorValue = analogRead(LIGHT_PIN);
-    pirState = digitalRead(PIR_PIN);
-    if (pirState == HIGH && lightSensorValue < 200) {
-      // trời tối và phát hiện có người => bật đèn
-      digitalWrite(LED_PIN, HIGH);
-      LEDOnTime = millis();
-      LEDState = 1;
-    }
-
-    // lấy thời gian hiện tại
-    unsigned long currentMillis = millis();
-    if (LEDState == 1 && currentMillis - LEDOnTime >= 10000) {
-      // đã bật đèn được quá 15s => tắt đèn
-      digitalWrite(LED_PIN, LOW);
-      LEDOnTime = 0;
-      LEDState = 0;
-    }
-  }
+  while True:
+    lightsensorvalue = pin41.read_analog()
+    pirstate = pin51.read_digital()
+    if pirstate == 1 and lightsensorvalue < 200:
+      pin61.write_digital((1))
+      ledontime = ticks_ms
+      ledstate = 1
+    currentmillis = ticks_ms
+    if ledstate == 1 and currentmillis - ledontime >= 10000:
+      pin61.write_digital((0))
+      ledontime = 0
+      ledstate = 0
 
 
 Giải thích chương trình
 --------------
 
-Trong chương trình trên, chúng ta sẽ sử dụng các hàm đơn giản đã học là ``digitalRead()`` để đọc tín hiệu Digital từ cảm biến PIR và hàm ``analogRead()`` để đọc giá trị cảm biến ánh sáng. Sau đó, chương trình kiểm tra điều kiện có phát hiện sự chuyển động và trời có đang tối không để bật đèn.
+Trong chương trình trên, chúng ta sẽ sử dụng các hàm đơn giản đã học là ``read_digital()`` để đọc tín hiệu Digital từ cảm biến PIR và hàm ``read_analog()`` để đọc giá trị cảm biến ánh sáng. Sau đó, chương trình kiểm tra điều kiện có phát hiện sự chuyển động và trời có đang tối không để bật đèn.
 
 Sau khi bật đèn, chúng ta sử dụng cách thức đo thời gian như trong project 2 để biết đến lúc phải tắt đèn (sau 10 giây tính từ lúc bật đèn).

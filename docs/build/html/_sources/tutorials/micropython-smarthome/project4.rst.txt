@@ -30,57 +30,36 @@ Kết nối phần cứng
 Viết chương trình
 --------------
 
-Mở phần mềm Arduino IDE.
+  - Mở phần mềm uPyCraft.
+  - Tạo một file chương trình mới (``File > New``) và lưu với tên main.py bằng cách chọn menu ``File > Save…``.
+  - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
-Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+.. code-block:: python
 
-.. code-block:: guess
+  alarmmode = False
+  pirstate = 0
 
-  #include <xcontroller.h>
-
-  #define BUZZER_CHANNEL 0 // any from 0-15
-  #define PIR_PIN D5_1
-
-  XController xcon;
-  bool alarmMode = false;
-  int pirState = 0;
-
-  void setup() {
-    Serial.begin(9600);
-    pinMode(PIR_PIN, INPUT);
-    pinMode(BUTTON, INPUT);
-  }
-
-  void loop() {
-    if (digitalRead(BUTTON) == LOW) {
-      // bật tắt chế độ bảo vệ
-      alarmMode = !alarmMode;
-      if (alarmMode) {
-        Serial.println("Chế độ bảo vệ được bật");
-      } else {
-        Serial.println("Chế độ bảo vệ được tắt");
-      }
-      delay(200);
-    }
-
-    pirState = digitalRead(PIR_PIN);
-
-    if (alarmMode && pirState == HIGH) {
-      Serial.println("Phát hiện có người xâm nhập");
-      for (int i=0; i<5; i++) {
-        xcon.showLED(0, 255, 0, 0);
-        xcon.tone(NOTE_C4, 1000, BUZZER_CHANNEL);
-        xcon.noTone(BUZZER_CHANNEL);
-        xcon.showLED(0, 0, 0, 0);
-        delay(1000);      
-      }
-    }
-  }
+  while True:
+    if (btn_onboard.is_pressed()) == False:
+      alarmmode = not alarmmode
+      if alarmmode:
+        print('Chế độ bảo vệ được bật')
+      else:
+        print('Chế độ bảo vệ được tắt')
+    pirstate = pin51.read_digital()
+    if alarmmode and pirstate == 1:
+      print('Phát hiện có người xâm nhập')
+      for count in range(5):
+        led_onboard.show(0, (255, 0, 0))
+        speaker.play(['C4:1'], wait=True)
+        time.sleep(1)
+        led_onboard.show(0, (0, 0, 0))
+        speaker.stop()
 
 
 Giải thích chương trình
 --------------
 
-Trong chương trình trên, chúng ta khai báo biến ``alarmMode`` kiểu ``bool`` (có giá trị ``true`` hoặc ``false``) để lưu trạng thái bật tắt của chế độ bảo vệ. Chế độ này sẽ ``bật/tắt`` khi nút trên board được nhấn.
+Trong chương trình trên, chúng ta khai báo biến ``alarmmode`` kiểu bool (có giá trị ``true`` hoặc ``false``) để lưu trạng thái bật tắt của chế độ bảo vệ. Chế độ này sẽ bật/tắt khi nút trên board được nhấn.
 
 Nếu chế độ này đang được bật, đồng thời phát hiện có sự chuyển động thì ngôi nhà sẽ nháy đèn LED RGB và phát âm thanh báo động 5 lần, đủ để cho kẻ trộm chạy mất và chủ nhà thức giấc.

@@ -1,4 +1,4 @@
-Microython Cơ bản
+Hướng dẫn lập trình MicroPython
 ====================
 
 .. toctree::
@@ -19,3 +19,10 @@ Microython Cơ bản
    lesson11.rst
    lesson12.rst
    lesson13.rst
+
+   intro.rst
+   project1.rst
+   project2.rst
+   project3.rst
+   project4.rst
+   project5.rst

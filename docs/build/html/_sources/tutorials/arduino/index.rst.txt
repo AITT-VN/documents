@@ -1,4 +1,4 @@
-Arduino Cơ bản
+Hướng dẫn lập trình Arduino
 ====================
 
 .. toctree::
@@ -18,3 +18,10 @@ Arduino Cơ bản
    lesson11.rst
    lesson12.rst
    lesson13.rst
+
+   intro.rst
+   project1.rst
+   project2.rst
+   project3.rst
+   project4.rst
+   project5.rst

@@ -1,5 +1,4 @@
-
-Driver download
+Cài đặt Driver
 =======
 
 Để máy tính có thể giao tiếp và lập trình được cho xController, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau:

@@ -23,41 +23,51 @@ xBuild Creator Kit là bộ kit được thiết kế dành cho giáo dục STEM
 
 ---------
 
-xController Board materials
+.. toctree::
+   :maxdepth: 2
+   :caption: xController
+
+   board/introduction.rst
+   board/hardware.rst
+   board/drive.rst
+   board/app.rst
+   board/flashburn.rst
+   api/micropython-api/index.rst
+   api/arduino-api/index.rst
+
+
 ---------
 
 .. toctree::
    :maxdepth: 2
-
-   board/index.rst
-
-
----------
-
-.. toctree::
-   :maxdepth: 2
-   :caption: xController Micropython Tutorial
+   :caption: xBuild Creator Kit
 
    tutorials/micropython/index.rst
-   tutorials/micropython-smarthome/index.rst
-
----------
-
-.. toctree::
-   :maxdepth: 2
-   :caption: xController Arduino Tutorial
-
    tutorials/arduino/index.rst
-   tutorials/arduino-smarthome/index.rst
 
 ---------
 
 .. toctree::
    :maxdepth: 2
-   :caption: xController Library
-   :hidden:
+   :caption: Yolo:Bit
 
-   library/micropython-api/index.rst
-   library/arduino-api/index.rst
+   yolobit/introduction.rst
+   yolobit/hardware.rst
+   yolobit/drive.rst
+   yolobit/flashburn.rst
 
 ---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Phần mềm Ohstem App
+
+   app/introduction.rst
+   app/install.rst
+   app/frontend.rst
+   app/connect.rst
+   app/runandsave.rst
+   app/setting.rst
+   app/createnew.rst
+   app/blockapi.rst
+

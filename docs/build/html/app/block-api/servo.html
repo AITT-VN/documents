@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Động cơ Servo &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">xController</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/drive.html">Cài đặt Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/app.html">Phần mềm lập trình</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/flashburn.html">Cập nhật Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/micropython-api/index.html">MicroPython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/arduino-api/index.html">Arduino API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/drive.html">Driver download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/flashburn.html">Cập nhật Firmware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Cài đặt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frontend.html">Giao diện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../connect.html">Kết nối</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../runandsave.html">Chạy và lưu project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../createnew.html">Tạo một mục mở rộng mới</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blockapi.html">Block API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Động cơ Servo</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/masterapp/block-api/servo.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dong-co-servo">
+<h1>Động cơ Servo<a class="headerlink" href="#dong-co-servo" title="Permalink to this headline">¶</a></h1>
+<p>Chức năng chính động cơ Servo.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="servo.position">
+<span class="sig-prename descclassname"><span class="pre">servo.</span></span><span class="sig-name descname"><span class="pre">position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/servo-11.png"><img alt="../../_images/servo-11.png" class="align-center" src="../../_images/servo-11.png" style="width: 400px;" /></a>
+<p>Điều khiển động cơ servo 180 độ quay tới một góc nào đó tức thời. Trong đó:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
+<li><p><em>degree</em> là tham số góc quay của servo có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">180</span></code> độ.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="servo.rotate">
+<span class="sig-prename descclassname"><span class="pre">servo.</span></span><span class="sig-name descname"><span class="pre">rotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.rotate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/servo-21.png"><img alt="../../_images/servo-21.png" class="align-center" src="../../_images/servo-21.png" style="width: 480px;" /></a>
+<p>Điều khiển động cơ servo 180 độ quay tới một góc tới hạn <code class="docutils literal notranslate"><span class="pre">degree</span></code> với thời gian nghỉ <code class="docutils literal notranslate"><span class="pre">sleep</span></code> sau mỗi bước di chuyển <code class="docutils literal notranslate"><span class="pre">change</span></code>. Trong đó:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
+<li><p><em>change</em> là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span></code> đến <code class="docutils literal notranslate"><span class="pre">(degree/change)</span></code>. <code class="docutils literal notranslate"><span class="pre">change</span></code> có giá trị càng nhỏ thì servo chuyển bước cằng mượt.</p></li>
+<li><p><em>sleep</em> là thời gian nghỉ giữa mỗi bước <code class="docutils literal notranslate"><span class="pre">change</span></code> có đơn vị là <code class="docutils literal notranslate"><span class="pre">mili</span> <span class="pre">giây</span></code>.</p></li>
+<li><p><em>degree</em> là tham số góc quay tới hạn của servo có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">180</span></code> độ.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="servo.spin">
+<span class="sig-prename descclassname"><span class="pre">servo.</span></span><span class="sig-name descname"><span class="pre">spin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#servo.spin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/servo-31.png"><img alt="../../_images/servo-31.png" class="align-center" src="../../_images/servo-31.png" style="width: 480px;" /></a>
+<p>Điều khiển động cơ servo 360 độ quay với tốc độ <code class="docutils literal notranslate"><span class="pre">speed</span></code>. Trong đó:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
+<li><p><em>speed</em> là tốc độ quay của servo 360 độ với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">-100</span> <span class="pre">~</span> <span class="pre">100</span></code>. Số âm và số dương biểu thị chiều quay của động cơ.</p></li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-prename descclassname"><span class="pre">servo.</span></span><span class="sig-name descname"><span class="pre">position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/servo-41.png"><img alt="../../_images/servo-41.png" class="align-center" src="../../_images/servo-41.png" style="width: 320px;" /></a>
+<p>Trả về giá trị góc hiện tại của servo. Trong đó <code class="docutils literal notranslate"><span class="pre">index</span></code> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p>
+<div class="section" id="vi-du">
+<h2>Ví dụ<a class="headerlink" href="#vi-du" title="Permalink to this headline">¶</a></h2>
+<p>Điều khiển động cơ servo 180 độ</p>
+<a class="reference internal image-reference" href="../../_images/servo-51.png"><img alt="../../_images/servo-51.png" class="align-center" src="../../_images/servo-51.png" style="width: 420px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

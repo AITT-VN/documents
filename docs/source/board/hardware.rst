@@ -1,4 +1,4 @@
-Hardware
+Phần cứng
 ====================
 
 xController được thiết kế bởi Ohstem với khả năng lập trình đa nền tảng như Block, Arduino, MicroPython.

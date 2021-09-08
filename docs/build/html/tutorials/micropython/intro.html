@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Giới thiệu về dự án Nhà thông minh &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Project 1: Đèn điều khiển từ xa" href="project1.html" />
+    <link rel="prev" title="Bài học 13: Điều khiển góc quay Servo" href="lesson13.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">xController</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../board/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/drive.html">Cài đặt Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/app.html">Phần mềm lập trình</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/flashburn.html">Cập nhật Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/micropython-api/index.html">MicroPython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/arduino-api/index.html">Arduino API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Hướng dẫn lập trình MicroPython</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Hướng Dẫn Cài Đặt uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-upycraft.html">Làm quen với phần mềm uPyCraft IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson1.html">Bài học 1: Hello world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson2.html">Bài học 2: Blink LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson3.html">Bài học 3: Nhấn nút bật đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson4.html">Bài học 4: Điều khiển tốc độ chớp tắt đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson5.html">Bài học 5: Điều chỉnh độ sáng LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson6.html">Bài học 6: Đèn LED RGB cảm ứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson7.html">Bài học 7: Vỗ tay thay đổi màu đèn LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson8.html">Bài học 8: Phát nhạc với còi báo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson9.html">Bài học 9: Cảm biến gia tốc góc nghiêng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson10.html">Bài học 10: Hiển thị thông tin lên màn hình LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson11.html">Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson12.html">Bài học 12: Remote hồng ngoại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson13.html">Bài học 13: Điều khiển góc quay Servo</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Giới thiệu về dự án Nhà thông minh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#so-do-noi-day-hoan-chinh-cua-he-thong-nhu-sau">Sơ đồ nối dây hoàn chỉnh của hệ thống như sau:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="project1.html">Project 1: Đèn điều khiển từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project2.html">Project 2: Quạt thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project3.html">Project 3: Đèn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project4.html">Project 4: Hệ thống chống trộm và báo động</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project5.html">Project 5: Cửa thông minh</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/drive.html">Driver download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/flashburn.html">Cập nhật Firmware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../app/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/install.html">Cài đặt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/frontend.html">Giao diện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/connect.html">Kết nối</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/runandsave.html">Chạy và lưu project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/createnew.html">Tạo một mục mở rộng mới</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/blockapi.html">Block API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Hướng dẫn lập trình MicroPython</a> &raquo;</li>
+        
+      <li>Giới thiệu về dự án Nhà thông minh</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/username/reponame/blob/mastertutorials/micropython/intro.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gioi-thieu-ve-du-an-nha-thong-minh">
+<h1>Giới thiệu về dự án Nhà thông minh<a class="headerlink" href="#gioi-thieu-ve-du-an-nha-thong-minh" title="Permalink to this headline">¶</a></h1>
+<p>Ở phần trước, bạn đã làm quen với các module và cách lập trình để làm việc với chúng một cách đơn giản. Trong phần này, để ứng dụng kiến thức đã học, chúng ta hãy cùng nhau xây dựng một dự án nhà thông minh hoàn chỉnh, bao gồm các chức năng sau:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Đèn điều khiển từ xa</p></li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Có</span> <span class="pre">thể</span> <span class="pre">bật</span> <span class="pre">tắt</span> <span class="pre">và</span> <span class="pre">điều</span> <span class="pre">chỉnh</span> <span class="pre">độ</span> <span class="pre">sáng</span> <span class="pre">tối</span> <span class="pre">đèn</span> <span class="pre">của</span> <span class="pre">ngôi</span> <span class="pre">nhà</span> <span class="pre">từ</span> <span class="pre">xa</span> <span class="pre">bằng</span> <span class="pre">remote</span></code></p>
+</div></blockquote>
+<p>2.Quạt thông minh</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Tự</span> <span class="pre">động</span> <span class="pre">bật</span> <span class="pre">tắt</span> <span class="pre">quạt</span> <span class="pre">một</span> <span class="pre">cách</span> <span class="pre">thông</span> <span class="pre">minh</span> <span class="pre">dựa</span> <span class="pre">trên</span> <span class="pre">nhiệt</span> <span class="pre">độ</span> <span class="pre">và</span> <span class="pre">độ</span> <span class="pre">ẩm</span> <span class="pre">của</span> <span class="pre">ngôi</span> <span class="pre">nhà.</span></code></p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Đèn thông minh</p></li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Tự</span> <span class="pre">động</span> <span class="pre">bật</span> <span class="pre">khi</span> <span class="pre">trời</span> <span class="pre">tối</span> <span class="pre">và</span> <span class="pre">khi</span> <span class="pre">phát</span> <span class="pre">hiện</span> <span class="pre">có</span> <span class="pre">người</span> <span class="pre">đến</span> <span class="pre">gần</span></code></p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Hệ thống chống trộm</p></li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Phát</span> <span class="pre">âm</span> <span class="pre">thanh</span> <span class="pre">cảnh</span> <span class="pre">báo</span> <span class="pre">khi</span> <span class="pre">phát</span> <span class="pre">hiện</span> <span class="pre">có</span> <span class="pre">sự</span> <span class="pre">đột</span> <span class="pre">nhập</span> <span class="pre">(nếu</span> <span class="pre">chế</span> <span class="pre">độ</span> <span class="pre">bảo</span> <span class="pre">vệ</span> <span class="pre">được</span> <span class="pre">bật).</span></code></p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Cửa thông minh</p></li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Có</span> <span class="pre">thể</span> <span class="pre">khóa</span> <span class="pre">và</span> <span class="pre">mở</span> <span class="pre">khóa</span> <span class="pre">cửa</span> <span class="pre">bằng</span> <span class="pre">mật</span> <span class="pre">mã</span> <span class="pre">(nhập</span> <span class="pre">mật</span> <span class="pre">mã</span> <span class="pre">bằng</span> <span class="pre">remote)</span></code></p>
+</div></blockquote>
+</div></blockquote>
+<div class="section" id="so-do-noi-day-hoan-chinh-cua-he-thong-nhu-sau">
+<h2>Sơ đồ nối dây hoàn chỉnh của hệ thống như sau:<a class="headerlink" href="#so-do-noi-day-hoan-chinh-cua-he-thong-nhu-sau" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/intro-14.png"><img alt="../../_images/intro-14.png" class="align-center" src="../../_images/intro-14.png" style="width: 600px;" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>xController</p></td>
+<td><p>Thiết bị</p></td>
+</tr>
+<tr class="row-even"><td><p>PORT 1</p></td>
+<td><p>LCD 1602</p></td>
+</tr>
+<tr class="row-odd"><td><p>PORT 2</p></td>
+<td><p>DHT11</p></td>
+</tr>
+<tr class="row-even"><td><p>PORT 3</p></td>
+<td><p>Quạt Mini</p></td>
+</tr>
+<tr class="row-odd"><td><p>PORT 4</p></td>
+<td><p>Cảm biến ánh sáng</p></td>
+</tr>
+<tr class="row-even"><td><p>PORT 5</p></td>
+<td><p>Cảm biến PIR</p></td>
+</tr>
+<tr class="row-odd"><td><p>PORT 6</p></td>
+<td><p>Đèn LED</p></td>
+</tr>
+<tr class="row-even"><td><p>S1</p></td>
+<td><p>Servo</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jack pin</p></td>
+<td><p>Pin</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="chuong-trinh-mau">
+<h3>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://github.com/AITT-VN/xbuild_creator_kit/tree/main/Arduino"><code class="xref download docutils literal notranslate"><span class="pre">Arduino</span> <span class="pre">Tutorial</span> <span class="pre">Code</span></code></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="project1.html" class="btn btn-neutral float-right" title="Project 1: Đèn điều khiển từ xa" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lesson13.html" class="btn btn-neutral float-left" title="Bài học 13: Điều khiển góc quay Servo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, OHSTEM.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

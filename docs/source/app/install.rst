@@ -10,14 +10,14 @@ Phần mềm này hỗ trợ tất cả thiết bị trên các nền tảng ph�
 Đối với các thiết bị di động như Android hay iOS, bạn có thể vào Play Store (đối với Android) hoặc App Store (đối với iOS) để tải và cài đặt:
 
 .. image:: images/install-2.png
-    :width: 320
+    :width: 240
     :align: center
 
 Đối với PC hoặc laptop, bạn truy cập theo địa chỉ https://app.ohstem.vn để sử dụng phần mềm trực tuyến (không cần phải cài đặt).
 
  
 .. image:: images/install-3.png
-    :width: 400
+    :width: 320
     :align: center
 
 

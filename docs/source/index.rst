@@ -42,6 +42,7 @@ xBuild Creator Kit là bộ kit được thiết kế dành cho giáo dục STEM
    :maxdepth: 2
    :caption: xBuild Creator Kit
 
+   tutorials/intro.rst
    tutorials/micropython/index.rst
    tutorials/arduino/index.rst
 

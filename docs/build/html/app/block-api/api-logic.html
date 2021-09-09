@@ -43,8 +43,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Các khối lệnh “Tính toán”" href="api-math.html" />
-    <link rel="prev" title="Các khối lệnh “Vòng lặp”" href="api-loop.html" /> 
+    <link rel="next" title="If…" href="api-logic-1.html" />
+    <link rel="prev" title="break" href="api-loop-8.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -104,6 +104,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/intro.html">Thành phần bộ kit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
 </ul>
@@ -128,13 +129,12 @@
 <li class="toctree-l2"><a class="reference internal" href="api-effect.html">Các khối lệnh “Hiệu ứng”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-loop.html">Các khối lệnh “Vòng lặp”</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Các khối lệnh “Logic”</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#if">If…</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#if-else">If…Else…</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#so-sanh-cac-dieu-kien">So sánh các điều kiện</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#toan-tu-and-va-toan-tu-or">Toán tử AND và toán tử OR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#not-true">Not True</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#true-va-false">True và False</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cac-vi-du">Các ví dụ:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-1.html">If…</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-2.html">If…Else…</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-3.html">So sánh các điều kiện</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-4.html">Toán tử AND và toán tử OR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-5.html">Not True</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-logic-6.html">True và False</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api-math.html">Các khối lệnh “Tính toán”</a></li>
@@ -214,46 +214,23 @@
             
   <div class="section" id="cac-khoi-lenh-logic">
 <h1>Các khối lệnh “Logic”<a class="headerlink" href="#cac-khoi-lenh-logic" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="if">
-<h2>If…<a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h2>
-<p>Nếu như điều kiện đúng thì thực hiện các lệnh.</p>
-<a class="reference internal image-reference" href="../../_images/logic-1.png"><img alt="../../_images/logic-1.png" class="align-center" src="../../_images/logic-1.png" style="width: 174.0px; height: 105.0px;" /></a>
-<p>Bạn có thể thêm nhiều điều kiện và đầu ra tương ứng bằng cách nhấn vào “”Cài đặt””</p>
-<a class="reference internal image-reference" href="../../_images/logic-1-1.png"><img alt="../../_images/logic-1-1.png" class="align-center" src="../../_images/logic-1-1.png" style="width: 399.0px; height: 312.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="if-else">
-<h2>If…Else…<a class="headerlink" href="#if-else" title="Permalink to this headline">¶</a></h2>
-<p>Nếu như điều kiện đúng thì thực hiện các lệnh đầu. Nếu điều kiện sai thì thực hiện các lệnh sau.</p>
-<a class="reference internal image-reference" href="../../_images/logic-2.png"><img alt="../../_images/logic-2.png" class="align-center" src="../../_images/logic-2.png" style="width: 190.0px; height: 164.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/catologe-logic.png"><img alt="../../_images/catologe-logic.png" class="align-center" src="../../_images/catologe-logic.png" style="width: 345.0px; height: 106.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="so-sanh-cac-dieu-kien">
-<h2>So sánh các điều kiện<a class="headerlink" href="#so-sanh-cac-dieu-kien" title="Permalink to this headline">¶</a></h2>
-<p>Trả về kết quả đúng nếu 2 điều kiện thỏa mãn phương thức so sánh: bằng, khác, nhỏ hơn, nhỏ hơn hoặc bằng, lớn hơn, lớn hơn hoặc bằng.</p>
-<p>Nếu như điều kiện đúng thì thực hiện các lệnh đầu. Nếu điều kiện sai thì thực hiện các lệnh sau.</p>
-<a class="reference internal image-reference" href="../../_images/logic-3.png"><img alt="../../_images/logic-3.png" class="align-center" src="../../_images/logic-3.png" style="width: 179.0px; height: 245.0px;" /></a>
-</div>
-<div class="section" id="toan-tu-and-va-toan-tu-or">
-<h2>Toán tử AND và toán tử OR<a class="headerlink" href="#toan-tu-and-va-toan-tu-or" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">và</span></code> Trả về giá trị <code class="docutils literal notranslate"><span class="pre">True</span></code> nếu cả hai đầu vào đều đúng.</p>
-<p><code class="docutils literal notranslate"><span class="pre">hoặc</span></code> Trả về giá trị <code class="docutils literal notranslate"><span class="pre">True</span></code> nếu ít nhất một trong hai đầu vào đúng.</p>
-<a class="reference internal image-reference" href="../../_images/logic-4.png"><img alt="../../_images/logic-4.png" class="align-center" src="../../_images/logic-4.png" style="width: 202.0px; height: 139.0px;" /></a>
-</div>
-<div class="section" id="not-true">
-<h2>Not True<a class="headerlink" href="#not-true" title="Permalink to this headline">¶</a></h2>
-<p>Hoàn trả Đúng (<code class="docutils literal notranslate"><span class="pre">True</span></code>) nếu đầu vào Sai. Hoàn trả Sai (<code class="docutils literal notranslate"><span class="pre">False</span></code>) nếu đầu vào Đúng.</p>
-<a class="reference internal image-reference" href="../../_images/logic-5.png"><img alt="../../_images/logic-5.png" class="align-center" src="../../_images/logic-5.png" style="width: 121.0px; height: 50.0px;" /></a>
-</div>
-<div class="section" id="true-va-false">
-<h2>True và False<a class="headerlink" href="#true-va-false" title="Permalink to this headline">¶</a></h2>
-<p>Hoàn trả về giá trị <code class="docutils literal notranslate"><span class="pre">Đúng</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">Sai</span></code>.</p>
-<a class="reference internal image-reference" href="../../_images/logic-6.png"><img alt="../../_images/logic-6.png" class="align-center" src="../../_images/logic-6.png" style="width: 166.0px; height: 128.0px;" /></a>
-</div>
-<div class="section" id="cac-vi-du">
-<h2>Các ví dụ:<a class="headerlink" href="#cac-vi-du" title="Permalink to this headline">¶</a></h2>
-<p><strong>Ví dụ 1:</strong> Sử dụng khối “”nếu…không…””</p>
-<a class="reference internal image-reference" href="../../_images/logic-7.png"><img alt="../../_images/logic-7.png" class="align-center" src="../../_images/logic-7.png" style="width: 745.0px; height: 334.0px;" /></a>
-<p><strong>Ví dụ 2:</strong> Sử dụng khối so sánh</p>
-<a class="reference internal image-reference" href="../../_images/logic-8.png"><img alt="../../_images/logic-8.png" class="align-center" src="../../_images/logic-8.png" style="width: 890.0px; height: 290.0px;" /></a>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-1.html">If…</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-2.html">If…Else…</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-3.html">So sánh các điều kiện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-4.html">Toán tử AND và toán tử OR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-5.html">Not True</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-logic-6.html">True và False</a></li>
+</ul>
 </div>
 </div>
 
@@ -263,8 +240,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="api-math.html" class="btn btn-neutral float-right" title="Các khối lệnh “Tính toán”" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="api-loop.html" class="btn btn-neutral float-left" title="Các khối lệnh “Vòng lặp”" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api-logic-1.html" class="btn btn-neutral float-right" title="If…" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="api-loop-8.html" class="btn btn-neutral float-left" title="break" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

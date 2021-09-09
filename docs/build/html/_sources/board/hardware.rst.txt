@@ -3,8 +3,8 @@ Phần cứng
 
 xController được thiết kế bởi Ohstem với khả năng lập trình đa nền tảng như Block, Arduino, MicroPython.
 
-.. image:: images/xBuild-2.jpg
-  :width: 600
+.. image:: images/xController.png
+  :scale: 90%
   :align: center
 
 Thông số kỹ thuật
@@ -79,26 +79,3 @@ xController Board interface pin configuration
    
 =============== ======  ==================================== 
 
-
-Tải xuống các tài liệu liên quan (Cập nhật sau)
---------------
-
-Schematic Diagram
-++++++
-
-* :download:`mPython掌控板V2.0.3原理图 </../datasheet/掌控板-V2.0.3.pdf>`
-
-Data Sheet
-++++++++++++++++
-
-* :download:`USB-to-UART Bridge：cp2104 </../datasheet/CP2104-SiliconLaboratories.pdf>`
-* :download:`ESP32-WROOM </../datasheet/esp32-wroom-32_datasheet_cn.pdf>`
-* :download:`LDO稳压:CE6210 </../datasheet/CE6210.jpg>`
-* :download:`加速度计:MSA300 </../datasheet/MSA300-V1.0-ENG.pdf>`
-* :download:`地磁传感器:MMC5983MA </../datasheet/MMC5983MA.pdf>`
-* :download:`OLED：128x64 </../datasheet/1.30-SPEC QG-2864KSWLG01 VER A.pdf>`
-
-Mechanical Drawing
-+++++++++++++++++
-
-* :download:`mPython掌控板v2.0外观规格图 </../datasheet/掌控板V2.0-3D-2D图档-20200102.rar>`

@@ -43,8 +43,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Các khối lệnh “Biến”" href="api-variable.html" />
-    <link rel="prev" title="Các khối lệnh “Logic”" href="api-logic.html" /> 
+    <link rel="next" title="Số" href="api-math-1.html" />
+    <link rel="prev" title="True và False" href="api-logic-6.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -104,6 +104,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/intro.html">Thành phần bộ kit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
 </ul>
@@ -129,15 +130,16 @@
 <li class="toctree-l2"><a class="reference internal" href="api-loop.html">Các khối lệnh “Vòng lặp”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-logic.html">Các khối lệnh “Logic”</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Các khối lệnh “Tính toán”</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#so">Số</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#phep-toan-co-ban">Phép toán cơ bản</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#random-ngau-nhien">Random (Ngẫu nhiên)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#phep-toan-nang-cao">Phép toán nâng cao</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kiem-tra-loai-so">Kiểm tra loại số</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lam-tron">Làm tròn</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lay-so-du">Lấy số dư</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#quy-doi">Quy đổi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#vi-du">Ví dụ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-1.html">Số</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-2.html">Phép toán cơ bản</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-3.html">randint()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-4.html">random()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-5.html">Các hàm toán học nâng cao</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-6.html">Các hàm lượng giác</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-7.html">Kiểm tra loại số</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-8.html">Làm tròn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-9.html">Lấy số dư</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-math-10.html">Quy đổi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api-variable.html">Các khối lệnh “Biến”</a></li>
@@ -216,62 +218,27 @@
             
   <div class="section" id="cac-khoi-lenh-tinh-toan">
 <h1>Các khối lệnh “Tính toán”<a class="headerlink" href="#cac-khoi-lenh-tinh-toan" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="so">
-<h2>Số<a class="headerlink" href="#so" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/math-1.png"><img alt="../../_images/math-1.png" class="align-center" src="../../_images/math-1.png" style="width: 70.0px; height: 52.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="phep-toan-co-ban">
-<h2>Phép toán cơ bản<a class="headerlink" href="#phep-toan-co-ban" title="Permalink to this headline">¶</a></h2>
-<p>Trả về kết quả của các phép toán cộng, trừ, nhân, chia, bình phương</p>
-<a class="reference internal image-reference" href="../../_images/math-2.png"><img alt="../../_images/math-2.png" class="align-center" src="../../_images/math-2.png" style="width: 222.0px; height: 217.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/catologe-math.png"><img alt="../../_images/catologe-math.png" class="align-center" src="../../_images/catologe-math.png" style="width: 346.0px; height: 105.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="random-ngau-nhien">
-<h2>Random (Ngẫu nhiên)<a class="headerlink" href="#random-ngau-nhien" title="Permalink to this headline">¶</a></h2>
-<p>Hoàn trả một số nguyên bất kì lớn hơn hoặc bằng số đầu và nhỏ hơn hoặc bằng số sau</p>
-<a class="reference internal image-reference" href="../../_images/math-3.png"><img alt="../../_images/math-3.png" class="align-center" src="../../_images/math-3.png" style="width: 434.0px; height: 63.0px;" /></a>
-<p>Hoàn trả một phân số bất kì không nhỏ hơn 0 và không lớn hơn 1</p>
-<a class="reference internal image-reference" href="../../_images/math-4.png"><img alt="../../_images/math-4.png" class="align-center" src="../../_images/math-4.png" style="width: 189.0px; height: 47.0px;" /></a>
-</div>
-<div class="section" id="phep-toan-nang-cao">
-<h2>Phép toán nâng cao<a class="headerlink" href="#phep-toan-nang-cao" title="Permalink to this headline">¶</a></h2>
-<p>Hoàn trả về kết quả của phép toán:</p>
-<blockquote>
-<div><p>Căn bậc hai của số đầu vào</p>
-<p>Giá trị tuyệt đối của số đầu vào</p>
-<p>Đổi dấu (âm sang dương và ngược lại) của số đầu vào</p>
-<p>Logarit của số đầu vào</p>
-<p>Logarit cơ số 10 của số đầu vào</p>
-<p>Lũy thừa cơ số e với số mũ đầu vào</p>
-<p>Lũy thừa cơ số 10 với số mũ đầu vào</p>
-</div></blockquote>
-<a class="reference internal image-reference" href="../../_images/math-5.png"><img alt="../../_images/math-5.png" class="align-center" src="../../_images/math-5.png" style="width: 243.0px; height: 274.0px;" /></a>
-<p>Hoàn trả về kết quả của phép toán sin, cos, tan, asin, acos, atan của một góc (theo độ) là đầu vào</p>
-<a class="reference internal image-reference" href="../../_images/math-6.png"><img alt="../../_images/math-6.png" class="align-center" src="../../_images/math-6.png" style="width: 195.0px; height: 238.0px;" /></a>
-</div>
-<div class="section" id="kiem-tra-loai-so">
-<h2>Kiểm tra loại số<a class="headerlink" href="#kiem-tra-loai-so" title="Permalink to this headline">¶</a></h2>
-<p>Kiểm tra con số xem nó có phải là số chẵn, số lẻ, nguyên tố, nguyên, dương. âm, hay xem nó có chia hết cho số dư đầu vào vào hay không. Hoàn trả đúng (<code class="docutils literal notranslate"><span class="pre">True</span></code>) hay sai (<code class="docutils literal notranslate"><span class="pre">False</span></code>)</p>
-<a class="reference internal image-reference" href="../../_images/math-7.png"><img alt="../../_images/math-7.png" class="align-center" src="../../_images/math-7.png" style="width: 240.0px; height: 267.0px;" /></a>
-</div>
-<div class="section" id="lam-tron">
-<h2>Làm tròn<a class="headerlink" href="#lam-tron" title="Permalink to this headline">¶</a></h2>
-<p>Làm tròn lên hoặc làm tròn xuống đầu vào.</p>
-<a class="reference internal image-reference" href="../../_images/math-8.png"><img alt="../../_images/math-8.png" class="align-center" src="../../_images/math-8.png" style="width: 231.0px; height: 150.0px;" /></a>
-</div>
-<div class="section" id="lay-so-du">
-<h2>Lấy số dư<a class="headerlink" href="#lay-so-du" title="Permalink to this headline">¶</a></h2>
-<p>Kết quả trả về là số dư khi chia số thứ nhất cho số thứ 2</p>
-<a class="reference internal image-reference" href="../../_images/math-9.png"><img alt="../../_images/math-9.png" class="align-center" src="../../_images/math-9.png" style="width: 327.0px; height: 68.0px;" /></a>
-</div>
-<div class="section" id="quy-doi">
-<h2>Quy đổi<a class="headerlink" href="#quy-doi" title="Permalink to this headline">¶</a></h2>
-<p>Đổi một số trong một khoảng này sang một khoảng khác</p>
-<a class="reference internal image-reference" href="../../_images/math-10.png"><img alt="../../_images/math-10.png" class="align-center" src="../../_images/math-10.png" style="width: 288.0px; height: 199.0px;" /></a>
-</div>
-<div class="section" id="vi-du">
-<h2>Ví dụ<a class="headerlink" href="#vi-du" title="Permalink to this headline">¶</a></h2>
-<p>In ra màn hình các phép toán</p>
-<a class="reference internal image-reference" href="../../_images/math-11.png"><img alt="../../_images/math-11.png" class="align-center" src="../../_images/math-11.png" style="width: 661.0px; height: 778.0px;" /></a>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-math-1.html">Số</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-2.html">Phép toán cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-3.html">randint()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-4.html">random()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-5.html">Các hàm toán học nâng cao</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-6.html">Các hàm lượng giác</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-7.html">Kiểm tra loại số</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-8.html">Làm tròn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-9.html">Lấy số dư</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-math-10.html">Quy đổi</a></li>
+</ul>
 </div>
 </div>
 
@@ -281,8 +248,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="api-variable.html" class="btn btn-neutral float-right" title="Các khối lệnh “Biến”" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="api-logic.html" class="btn btn-neutral float-left" title="Các khối lệnh “Logic”" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api-math-1.html" class="btn btn-neutral float-right" title="Số" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="api-logic-6.html" class="btn btn-neutral float-left" title="True và False" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Các khối lệnh “Đầu vào”" href="api-input.html" />
+    <link rel="next" title="robot.forward|backward|turn_left|turn_right(speed, t)" href="api-move-1.html" />
     <link rel="prev" title="Block API" href="../blockapi.html" /> 
 </head>
 
@@ -104,6 +104,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/intro.html">Thành phần bộ kit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
 </ul>
@@ -124,22 +125,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../createnew.html">Tạo một mục mở rộng mới</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../blockapi.html">Block API</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Các khối lệnh “Di chuyển”</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#robot-forward-backward-turn-left-turn-right-speed">robot.forward|backward|turn_left|turn_right(speed)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-forward-backward-turn-left-turn-right-speed-t-none">robot.forward|backward|turn_left|turn_right(speed, t = None)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-turn-right-angle-turn-left-angle-angle">robot.turn_right_angle|turn_left_angle(angle)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-set-wheel-speed-speed-1-speed-2">robot.set_wheel_speed(speed_1, speed_2)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-stop">robot.stop()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#servo-position-index-degree">servo.position(index, degree)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#servo-rotate-index-change-sleep-degree">servo.rotate(index, change, sleep, degree)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#servo-spin-index-speed">servo.spin(index, speed)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#servo-position-index">servo.position(index)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cac-vi-du">Các ví dụ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-1.html">robot.forward|backward|turn_left|turn_right(speed, t)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-2.html">robot.forward|backward|turn_left|turn_right(speed)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-3.html">robot.turn_right_angle|turn_left_angle(angle)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-4.html">robot.set_wheel_speed(speed_1, speed_2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-5.html">robot.stop()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-6.html">servo.position(index, degree)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-7.html">servo.rotate(index, change, sleep, degree)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-8.html">servo.spin(index, speed)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-move-9.html">servo.position(index)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api-input.html">Các khối lệnh “Đầu vào”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-effect.html">Các khối lệnh “Hiệu ứng”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-loop.html">Các khối lệnh “Vòng lặp”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-logic.html">Các khối lệnh “Logic”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-math.html">Các khối lệnh “Tính toán”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-variable.html">Các khối lệnh “Biến”</a></li>
 </ul>
 </li>
 </ul>
@@ -215,90 +217,26 @@
             
   <div class="section" id="cac-khoi-lenh-di-chuyen">
 <h1>Các khối lệnh “Di chuyển”<a class="headerlink" href="#cac-khoi-lenh-di-chuyen" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="robot-forward-backward-turn-left-turn-right-speed">
-<h2>robot.forward|backward|turn_left|turn_right(speed)<a class="headerlink" href="#robot-forward-backward-turn-left-turn-right-speed" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/robot-11.png"><img alt="../../_images/robot-11.png" class="align-center" src="../../_images/robot-11.png" style="width: 505.0px; height: 219.0px;" /></a>
-<p>Điều khiển xBot di chuyển tiến về phía trước/sau/trái/phải, trong đó <em>speed</em> là tốc độ quay của động cơ với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">100</span></code>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="robot-forward-backward-turn-left-turn-right-speed-t-none">
-<h2>robot.forward|backward|turn_left|turn_right(speed, t = None)<a class="headerlink" href="#robot-forward-backward-turn-left-turn-right-speed-t-none" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/robot-21.png"><img alt="../../_images/robot-21.png" class="align-center" src="../../_images/robot-21.png" style="width: 671.0px; height: 74.0px;" /></a>
-<p>Điều khiển xController di chuyển lui về trước/sau/trái/phải trong khoảng thời gian <code class="docutils literal notranslate"><span class="pre">time</span></code>, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>speed</em> tốc độ quay của động cơ với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">100</span></code>.</p></li>
-<li><p><em>t</em> Giá trị của thời gian chuyển động, tính bằng <code class="docutils literal notranslate"><span class="pre">giây</span></code>. Nếu thông số này không được thiết lập, trạng thái tiến được duy trì cho đến khi có lệnh dừng chuyển động hoặc lệnh chuyển động mới.</p></li>
+<a class="reference internal image-reference" href="../../_images/catologe-move.png"><img alt="../../_images/catologe-move.png" class="align-center" src="../../_images/catologe-move.png" style="width: 348.0px; height: 109.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-move-1.html">robot.forward|backward|turn_left|turn_right(speed, t)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-2.html">robot.forward|backward|turn_left|turn_right(speed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-3.html">robot.turn_right_angle|turn_left_angle(angle)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-4.html">robot.set_wheel_speed(speed_1, speed_2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-5.html">robot.stop()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-6.html">servo.position(index, degree)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-7.html">servo.rotate(index, change, sleep, degree)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-8.html">servo.spin(index, speed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-move-9.html">servo.position(index)</a></li>
 </ul>
-</div></blockquote>
-</div>
-<div class="section" id="robot-turn-right-angle-turn-left-angle-angle">
-<h2>robot.turn_right_angle|turn_left_angle(angle)<a class="headerlink" href="#robot-turn-right-angle-turn-left-angle-angle" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/robot-31.png"><img alt="../../_images/robot-31.png" class="align-center" src="../../_images/robot-31.png" style="width: 360.0px; height: 145.0px;" /></a>
-<p>Điều khiển xBot di chuyển rẽ qua phải/trái một góc <code class="docutils literal notranslate"><span class="pre">angle</span></code> với tốc độ <code class="docutils literal notranslate"><span class="pre">speed</span></code>, trong đó <em>angle</em> là góc cần xoay với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">360</span></code>.</p>
-</div>
-<div class="section" id="robot-set-wheel-speed-speed-1-speed-2">
-<h2>robot.set_wheel_speed(speed_1, speed_2)<a class="headerlink" href="#robot-set-wheel-speed-speed-1-speed-2" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/robot-51.png"><img alt="../../_images/robot-51.png" class="align-center" src="../../_images/robot-51.png" style="width: 757.0px; height: 68.0px;" /></a>
-<p>Điều khiển tốc độ độc lập của 2 động cơ M1 và M2, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>speed_1</em> là tham số tốc độ của động cơ M1.</p></li>
-<li><p><em>speed_2</em> là tham số tốc độ của động cơ M2.</p></li>
-<li><p><em>speed_1</em> và <em>speed_2</em> có phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">-100</span> <span class="pre">~</span> <span class="pre">100</span></code>. Số âm và số dương biểu thị chiều quay của động cơ.</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="robot-stop">
-<h2>robot.stop()<a class="headerlink" href="#robot-stop" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/robot-41.png"><img alt="../../_images/robot-41.png" class="align-center" src="../../_images/robot-41.png" style="width: 232.0px; height: 68.0px;" /></a>
-<p>Dừng tất cả chuyển động của xBot.</p>
-</div>
-<div class="section" id="servo-position-index-degree">
-<h2>servo.position(index, degree)<a class="headerlink" href="#servo-position-index-degree" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/servo-11.png"><img alt="../../_images/servo-11.png" class="align-center" src="../../_images/servo-11.png" style="width: 459.0px; height: 294.0px;" /></a>
-<p>Điều khiển động cơ servo 180 độ quay tới một góc nào đó tức thời. Trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
-<li><p><em>degree</em> là tham số góc quay của servo có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">180</span></code> độ.</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="servo-rotate-index-change-sleep-degree">
-<h2>servo.rotate(index, change, sleep, degree)<a class="headerlink" href="#servo-rotate-index-change-sleep-degree" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/servo-21.png"><img alt="../../_images/servo-21.png" class="align-center" src="../../_images/servo-21.png" style="width: 814.0px; height: 76.0px;" /></a>
-<p>Điều khiển động cơ servo 180 độ quay tới một góc tới hạn <code class="docutils literal notranslate"><span class="pre">degree</span></code> với thời gian nghỉ <code class="docutils literal notranslate"><span class="pre">sleep</span></code> sau mỗi bước di chuyển <code class="docutils literal notranslate"><span class="pre">change</span></code>. Trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
-<li><p><em>change</em> là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span></code> đến <code class="docutils literal notranslate"><span class="pre">(degree/change)</span></code>. <code class="docutils literal notranslate"><span class="pre">change</span></code> có giá trị càng nhỏ thì servo chuyển bước cằng mượt.</p></li>
-<li><p><em>sleep</em> là thời gian nghỉ giữa mỗi bước <code class="docutils literal notranslate"><span class="pre">change</span></code> có đơn vị là <code class="docutils literal notranslate"><span class="pre">mili</span> <span class="pre">giây</span></code>.</p></li>
-<li><p><em>degree</em> là tham số góc quay tới hạn của servo có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">180</span></code> độ.</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="servo-spin-index-speed">
-<h2>servo.spin(index, speed)<a class="headerlink" href="#servo-spin-index-speed" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/servo-31.png"><img alt="../../_images/servo-31.png" class="align-center" src="../../_images/servo-31.png" style="width: 666.0px; height: 73.0px;" /></a>
-<p>Điều khiển động cơ servo 360 độ quay với tốc độ <code class="docutils literal notranslate"><span class="pre">speed</span></code>. Trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>index</em> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p></li>
-<li><p><em>speed</em> là tốc độ quay của servo 360 độ với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">-100</span> <span class="pre">~</span> <span class="pre">100</span></code>. Số âm và số dương biểu thị chiều quay của động cơ.</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="servo-position-index">
-<h2>servo.position(index)<a class="headerlink" href="#servo-position-index" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/servo-41.png"><img alt="../../_images/servo-41.png" class="align-center" src="../../_images/servo-41.png" style="width: 380.0px; height: 62.0px;" /></a>
-<p>Trả về giá trị góc hiện tại của servo. Trong đó <code class="docutils literal notranslate"><span class="pre">index</span></code> là tham số có giá trị <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">7</span></code> tương ứng với 8 cổng gắn servo trên board xController.</p>
-</div>
-<div class="section" id="cac-vi-du">
-<h2>Các ví dụ<a class="headerlink" href="#cac-vi-du" title="Permalink to this headline">¶</a></h2>
-<p><strong>Ví dụ 1:</strong> Điều khiển xBot di chuyển</p>
-<a class="reference internal image-reference" href="../../_images/robot-61.png"><img alt="../../_images/robot-61.png" class="align-center" src="../../_images/robot-61.png" style="width: 725.0px; height: 297.0px;" /></a>
-<p><strong>Ví dụ 2:</strong> Điều khiển động cơ servo 180 độ</p>
-<a class="reference internal image-reference" href="../../_images/servo-51.png"><img alt="../../_images/servo-51.png" class="align-center" src="../../_images/servo-51.png" style="width: 503.0px; height: 300.0px;" /></a>
 </div>
 </div>
 
@@ -308,7 +246,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="api-input.html" class="btn btn-neutral float-right" title="Các khối lệnh “Đầu vào”" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="api-move-1.html" class="btn btn-neutral float-right" title="robot.forward|backward|turn_left|turn_right(speed, t)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../blockapi.html" class="btn btn-neutral float-left" title="Block API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

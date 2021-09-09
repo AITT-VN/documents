@@ -1,6 +1,14 @@
 Các khối lệnh "Biến"
 ==========
 
+|
+.. image:: images/catologe-variable.png
+   :scale: 100%
+   :align: center
+|
+
+---------
+
 Chúng ta có thể hiểu, biến như một chiếc hộp, nơi ta có thể chứa thông tin mà ta cần đến để sử dụng nó sau này, và mỗi hộp chỉ có thể chứa duy nhất một giá trị (chữ, số, chuỗi, dữ liệu) tại một thời điểm.
 
 .. image:: images/variable-0.png

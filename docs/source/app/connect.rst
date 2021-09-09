@@ -1,21 +1,12 @@
 Kết nối
 ====================
 
-Bước 1: Cài đặt driver trên máy tính
------------
 
-(Nếu bạn sử dụng kết nối Bluetooth để làm việc với xController thì hãy bỏ qua bước này)
-
-Để cài driver cho máy, bạn tham khảo hướng dẫn chi tiết trên Wiki của xBuild tại đường link  https://ohstem.vn/knowLEDge-base/xbuild/.
-
-Bước 2: Kết nối trên app
------------
+1. Chạy ứng dụng OhStem App hoặc truy cập vào https://app.ohstem.vn, chọn thiết bị mà bạn đang cần làm việc.
 
 .. image:: images/connect-1.png
     :width: 420
     :align: center
-
-1. Chạy ứng dụng OhStem App hoặc truy cập vào https://app.ohstem.vn, chọn thiết bị là xBuild.
 
 2. Vào menu Lập Trình.
 

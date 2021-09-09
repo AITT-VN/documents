@@ -43,8 +43,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Các khối lệnh “Vòng lặp”" href="api-loop.html" />
-    <link rel="prev" title="Các khối lệnh “Đầu vào”" href="api-input.html" /> 
+    <link rel="next" title="say(TEXT)" href="api-effect-1.html" />
+    <link rel="prev" title="motion.is_shaked()" href="api-input-13.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -104,6 +104,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/intro.html">Thành phần bộ kit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
 </ul>
@@ -126,23 +127,24 @@
 <li class="toctree-l2"><a class="reference internal" href="api-move.html">Các khối lệnh “Di chuyển”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-input.html">Các khối lệnh “Đầu vào”</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Các khối lệnh “Hiệu ứng”</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#say-text">say(TEXT)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#speaker-play-birthday">speaker.play(BIRTHDAY)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#speaker-play-birthday-wait-true">speaker.play(BIRTHDAY, wait=True)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#speaker-play-c3-1-wait-true">speaker.play([‘C3:1’], wait=True)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#speaker-pitch-frequency-time">speaker.pitch(frequency, time)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#speaker-stop">speaker.stop()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-onboard-show-index-color-time">led_onboard.show(index, color, time)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-onboard-show-index-color">led_onboard.show(index, color)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-onboard-show-0-50-50-50">led_onboard.show(0, (50, 50, 50))</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-onboard-show-0-0-0-0">led_onboard.show(0, (0, 0, 0))</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-matrix-show-port-image-image">led_matrix.show(PORT, Image.IMAGE)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-matrix-show-port-text">led_matrix.show(PORT, TEXT)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cac-vi-du">Các ví dụ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-1.html">say(TEXT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-2.html">speaker.play(BIRTHDAY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-3.html">speaker.play(BIRTHDAY, wait=True)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-4.html">speaker.play([‘C3:1’], wait=True)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-5.html">speaker.pitch(frequency, time)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-6.html">speaker.stop()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-7.html">led_onboard.show(index, color, time)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-8.html">led_onboard.show(index, color)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-9.html">led_onboard.show(0, (50, 50, 50))</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-10.html">led_onboard.show(0, (0, 0, 0))</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-11.html">led_matrix.show(PORT, Image.IMAGE)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-effect-12.html">led_matrix.show(PORT, TEXT)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api-loop.html">Các khối lệnh “Vòng lặp”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-logic.html">Các khối lệnh “Logic”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-math.html">Các khối lệnh “Tính toán”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-variable.html">Các khối lệnh “Biến”</a></li>
 </ul>
 </li>
 </ul>
@@ -218,97 +220,29 @@
             
   <div class="section" id="cac-khoi-lenh-hieu-ung">
 <h1>Các khối lệnh “Hiệu ứng”<a class="headerlink" href="#cac-khoi-lenh-hieu-ung" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="say-text">
-<h2>say(TEXT)<a class="headerlink" href="#say-text" title="Permalink to this headline">¶</a></h2>
-<p>In ra cửa sổ thông tin một giá trị <code class="docutils literal notranslate"><span class="pre">TEXT</span></code> nào đó</p>
-<a class="reference internal image-reference" href="../../_images/show-1.png"><img alt="../../_images/show-1.png" class="align-center" src="../../_images/show-1.png" style="width: 379.0px; height: 73.0px;" /></a>
-<p>Khi chạy chương trình, nhấn vào menu Chức năng <code class="docutils literal notranslate"><span class="pre">Setting</span></code> &gt; chọn <code class="docutils literal notranslate"><span class="pre">Hiện</span> <span class="pre">thông</span> <span class="pre">tin</span> <span class="pre">từ</span> <span class="pre">xBuild</span></code> để mở cửa sổ hiển thị thông tin.</p>
-<a class="reference internal image-reference" href="../../_images/show-3.png"><img alt="../../_images/show-3.png" class="align-center" src="../../_images/show-3.png" style="width: 452.0px; height: 272.0px;" /></a>
-<p>Trên màn hình chính xẽ xuất hiện một chú xBot kèm giá trị bạn muốn in vừa rồi.</p>
-<a class="reference internal image-reference" href="../../_images/show-2.png"><img alt="../../_images/show-2.png" class="align-center" src="../../_images/show-2.png" style="width: 117.0px; height: 135.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="speaker-play-birthday">
-<h2>speaker.play(BIRTHDAY)<a class="headerlink" href="#speaker-play-birthday" title="Permalink to this headline">¶</a></h2>
-<p>Phát một bài hát như được lựa chọn trong danh sách có sẵn.</p>
-<a class="reference internal image-reference" href="../../_images/speaker-11.png"><img alt="../../_images/speaker-11.png" class="align-center" src="../../_images/speaker-11.png" style="width: 372.0px; height: 356.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/catologe-effect.png"><img alt="../../_images/catologe-effect.png" class="align-center" src="../../_images/catologe-effect.png" style="width: 346.0px; height: 105.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="speaker-play-birthday-wait-true">
-<h2>speaker.play(BIRTHDAY, wait=True)<a class="headerlink" href="#speaker-play-birthday-wait-true" title="Permalink to this headline">¶</a></h2>
-<p>Phát một bài hát như được lựa chọn trong danh sách có sẵn và chờ đến khi bài hát kết thúc.</p>
-<a class="reference internal image-reference" href="../../_images/speaker-21.png"><img alt="../../_images/speaker-21.png" class="align-center" src="../../_images/speaker-21.png" style="width: 492.0px; height: 346.0px;" /></a>
-</div>
-<div class="section" id="speaker-play-c3-1-wait-true">
-<h2>speaker.play([‘C3:1’], wait=True)<a class="headerlink" href="#speaker-play-c3-1-wait-true" title="Permalink to this headline">¶</a></h2>
-<p>Phát một nốt nhạc với độ dài nhất định theo nhạc lý.</p>
-<a class="reference internal image-reference" href="../../_images/speaker-31.png"><img alt="../../_images/speaker-31.png" class="align-center" src="../../_images/speaker-31.png" style="width: 509.0px; height: 272.0px;" /></a>
-</div>
-<div class="section" id="speaker-pitch-frequency-time">
-<h2>speaker.pitch(frequency, time)<a class="headerlink" href="#speaker-pitch-frequency-time" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/speaker-41.png"><img alt="../../_images/speaker-41.png" class="align-center" src="../../_images/speaker-41.png" style="width: 642.0px; height: 78.0px;" /></a>
-<p>Phát 1 âm thanh với tần số và độ dài truyền vào, trong đó:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><em>frequency</em> : Dữ liệu số, tần số âm thanh được phát và phạm vi giá trị của nó là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">5000</span></code>.</p></li>
-<li><p><em>time</em>: Tính theo <code class="docutils literal notranslate"><span class="pre">giây</span></code>.</p></li>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-1.html">say(TEXT)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-2.html">speaker.play(BIRTHDAY)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-3.html">speaker.play(BIRTHDAY, wait=True)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-4.html">speaker.play([‘C3:1’], wait=True)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-5.html">speaker.pitch(frequency, time)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-6.html">speaker.stop()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-7.html">led_onboard.show(index, color, time)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-8.html">led_onboard.show(index, color)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-9.html">led_onboard.show(0, (50, 50, 50))</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-10.html">led_onboard.show(0, (0, 0, 0))</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-11.html">led_matrix.show(PORT, Image.IMAGE)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-effect-12.html">led_matrix.show(PORT, TEXT)</a></li>
 </ul>
-</div></blockquote>
-</div>
-<div class="section" id="speaker-stop">
-<h2>speaker.stop()<a class="headerlink" href="#speaker-stop" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/speaker-51.png"><img alt="../../_images/speaker-51.png" class="align-center" src="../../_images/speaker-51.png" style="width: 245.0px; height: 64.0px;" /></a>
-<p>Dừng chơi nhạc.</p>
-</div>
-<div class="section" id="led-onboard-show-index-color-time">
-<h2>led_onboard.show(index, color, time)<a class="headerlink" href="#led-onboard-show-index-color-time" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-onboard-11.png"><img alt="../../_images/led-onboard-11.png" class="align-center" src="../../_images/led-onboard-11.png" style="width: 562.0px; height: 146.0px;" /></a>
-<p>Hiển thị cả 2 đèn led trên mạch xController với màu sắc như bảng lựa chọn trong khoảng thời gian <code class="docutils literal notranslate"><span class="pre">time</span></code> (Tính theo giây).</p>
-</div>
-<div class="section" id="led-onboard-show-index-color">
-<h2>led_onboard.show(index, color)<a class="headerlink" href="#led-onboard-show-index-color" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-onboard-21.png"><img alt="../../_images/led-onboard-21.png" class="align-center" src="../../_images/led-onboard-21.png" style="width: 560.0px; height: 153.0px;" /></a>
-<p>Hiển thị đèn led trên mạch xController tùy chọn từng màu sắc cho đèn bên trái hoặc đèn bên phải.</p>
-</div>
-<div class="section" id="led-onboard-show-0-50-50-50">
-<h2>led_onboard.show(0, (50, 50, 50))<a class="headerlink" href="#led-onboard-show-0-50-50-50" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-onboard-31.png"><img alt="../../_images/led-onboard-31.png" class="align-center" src="../../_images/led-onboard-31.png" style="width: 794.0px; height: 159.0px;" /></a>
-<p>Hiển thị đèn led trên mạch xController tùy chọn từng thông số <code class="docutils literal notranslate"><span class="pre">R|G|B</span></code> màu sắc cho đèn bên trái, đèn bên phải, hoặc cả hai.</p>
-</div>
-<div class="section" id="led-onboard-show-0-0-0-0">
-<h2>led_onboard.show(0, (0, 0, 0))<a class="headerlink" href="#led-onboard-show-0-0-0-0" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-onboard-41.png"><img alt="../../_images/led-onboard-41.png" class="align-center" src="../../_images/led-onboard-41.png" style="width: 289.0px; height: 67.0px;" /></a>
-<p>Tắt toàn bộ LED.</p>
-</div>
-<div class="section" id="led-matrix-show-port-image-image">
-<h2>led_matrix.show(PORT, Image.IMAGE)<a class="headerlink" href="#led-matrix-show-port-image-image" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-matrix-21.png"><img alt="../../_images/led-matrix-21.png" class="align-center" src="../../_images/led-matrix-21.png" style="width: 538.0px; height: 89.0px;" /></a>
-<p>Hiển thị lên màn hình LED Matrix những hình ảnh có sẵn hoặc vẽ.</p>
-<p>Giao diện trình chỉnh sửa hình ảnh hiển thị lên Led Matrix:</p>
-<a class="reference internal image-reference" href="../../_images/led-matrix-31.png"><img alt="../../_images/led-matrix-31.png" class="align-center" src="../../_images/led-matrix-31.png" style="width: 1144.0px; height: 616.0px;" /></a>
-<p>Trong đó:</p>
-<blockquote>
-<div><p>1: Bút vẽ - Chọn rồi nhấn vào các chấm trắng trên khung vẽ 7. Khi chấm trắng chuyển sang chấm xanh tức là led led tại vị trị trí đó sẽ sáng.</p>
-<p>2: Tẩy - Chọn rồi xóa các chấm xanh trên khung vẽ 7.</p>
-<p>3: Delete - Xóa toàn bộ nội dung trên khung vẽ 7.</p>
-<p>4: Thước đo - Bật hoặc tắt thước đo để dễ dàng xác định vị trí đèn led cần sáng hoặc tắt.</p>
-<p>5: Lưu - Lưu lại nội dung bạn vừa vẽ. Nội dụng đã lưu sẽ xuất hiện trong danh sách 8.</p>
-<p>6: Play/Pause - Chạy thử hoặc dừng hiển thị nội dung trên module để kiểm tra kết quả.</p>
-<p>7: Khung vẽ - Đây là nơi bạn tạo nội dung cho Lex Matrix.</p>
-<p>8: Danh sách nội dung: Nơi đây chứa các nội dung có sẵn, cũng như các nội dung mà bạn đã khởi tạo. Rê chuột hoặc kéo qua trái phải để xem thêm nội dung.</p>
-</div></blockquote>
-</div>
-<div class="section" id="led-matrix-show-port-text">
-<h2>led_matrix.show(PORT, TEXT)<a class="headerlink" href="#led-matrix-show-port-text" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../../_images/led-matrix-11.png"><img alt="../../_images/led-matrix-11.png" class="align-center" src="../../_images/led-matrix-11.png" style="width: 526.0px; height: 246.0px;" /></a>
-<p>Hiển thị lên màn hình LED Matrix những văn bản bất kì, trong đó <em>TEXT</em> là văn bản bạn muốn hiển thị. <code class="docutils literal notranslate"><span class="pre">TEXT</span></code> ghi không có dấu.</p>
-</div>
-<div class="section" id="cac-vi-du">
-<h2>Các ví dụ<a class="headerlink" href="#cac-vi-du" title="Permalink to this headline">¶</a></h2>
-<p><strong>Ví dụ 1:</strong> Phát bài Happy Birthday khi nhấn giữ nút trên xController</p>
-<a class="reference internal image-reference" href="../../_images/speaker-61.png"><img alt="../../_images/speaker-61.png" class="align-center" src="../../_images/speaker-61.png" style="width: 513.0px; height: 210.0px;" /></a>
-<p><strong>Ví dụ 2:</strong> Bật tắt hai LED Onboard</p>
-<a class="reference internal image-reference" href="../../_images/led-onboard-51.png"><img alt="../../_images/led-onboard-51.png" class="align-center" src="../../_images/led-onboard-51.png" style="width: 807.0px; height: 291.0px;" /></a>
-<p><strong>Ví dụ 3:</strong> Hiển thị hình trái tim và chữ OHSTEM lên màn hình LED Matrix</p>
-<a class="reference internal image-reference" href="../../_images/led-matrix-51.png"><img alt="../../_images/led-matrix-51.png" class="align-center" src="../../_images/led-matrix-51.png" style="width: 647.0px; height: 528.0px;" /></a>
 </div>
 </div>
 
@@ -318,8 +252,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="api-loop.html" class="btn btn-neutral float-right" title="Các khối lệnh “Vòng lặp”" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="api-input.html" class="btn btn-neutral float-left" title="Các khối lệnh “Đầu vào”" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api-effect-1.html" class="btn btn-neutral float-right" title="say(TEXT)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="api-input-13.html" class="btn btn-neutral float-left" title="motion.is_shaked()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

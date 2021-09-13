@@ -111,9 +111,11 @@
 <p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit/introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../yolobit/hardware.html">Hardware</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../yolobit/drive.html">Driver download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/drive.html">Cài đặt Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/app.html">Phần mềm lập trình</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit/flashburn.html">Cập nhật Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit/blockapi.html">Yolo:Bit Block API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
 <ul class="current">
@@ -124,7 +126,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../runandsave.html">Chạy và lưu project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../createnew.html">Tạo một mục mở rộng mới</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../blockapi.html">Block API</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="api-move.html">Các khối lệnh “Di chuyển”</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="api-move.html">Di chuyển</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="api-move-1.html">robot.forward|backward|turn_left|turn_right(speed, t)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">robot.forward|backward|turn_left|turn_right(speed)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cac-vi-du">Các ví dụ</a></li>
@@ -139,12 +141,13 @@
 <li class="toctree-l3"><a class="reference internal" href="api-move-9.html">servo.position(index)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="api-input.html">Các khối lệnh “Đầu vào”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-effect.html">Các khối lệnh “Hiệu ứng”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-loop.html">Các khối lệnh “Vòng lặp”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-logic.html">Các khối lệnh “Logic”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-math.html">Các khối lệnh “Tính toán”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-variable.html">Các khối lệnh “Biến”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-input.html">Đầu vào</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-effect.html">Hiệu ứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-loop.html">Vòng lặp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-logic.html">Logic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-math.html">Tính toán</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-variable.html">Biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../block-api-advance/index.html">Nâng cao</a></li>
 </ul>
 </li>
 </ul>
@@ -197,7 +200,7 @@
         
           <li><a href="../blockapi.html">Block API</a> &raquo;</li>
         
-          <li><a href="api-move.html">Các khối lệnh “Di chuyển”</a> &raquo;</li>
+          <li><a href="api-move.html">Di chuyển</a> &raquo;</li>
         
       <li>robot.forward|backward|turn_left|turn_right(speed)</li>
     
@@ -222,7 +225,7 @@
             
   <div class="section" id="robot-forward-backward-turn-left-turn-right-speed">
 <h1>robot.forward|backward|turn_left|turn_right(speed)<a class="headerlink" href="#robot-forward-backward-turn-left-turn-right-speed" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../../_images/robot-11.png"><img alt="../../_images/robot-11.png" class="align-center" src="../../_images/robot-11.png" style="width: 505.0px; height: 219.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/robot-1.png"><img alt="../../_images/robot-1.png" class="align-center" src="../../_images/robot-1.png" style="width: 505.0px; height: 219.0px;" /></a>
 <p>Điều khiển xBot di chuyển tiến về phía trước/sau/trái/phải, trong đó <em>speed</em> là tốc độ quay của động cơ với phạm vi tham số là <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">100</span></code>.</p>
 <div class="section" id="cac-vi-du">
 <h2>Các ví dụ<a class="headerlink" href="#cac-vi-du" title="Permalink to this headline">¶</a></h2>

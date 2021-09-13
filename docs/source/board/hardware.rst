@@ -43,14 +43,6 @@ xController Board có các tính năng phần cứng sau:
     - Loa (buzzer)
     - LED thu và LED phát hồng ngoại
     - Cảm biến gia tốc và Gyroscope MPU6050
-
-
-
-Kích thước và bố cục
---------------
-
-.. image:: images/掌控板V2.0-2D图档-20200102-1.png
-  :width: 800px
   
 
 Bố cục thành phần / Định nghĩa mã pin

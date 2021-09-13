@@ -1,16 +1,18 @@
-Hardware
+Phần cứng
 ====================
 
-xController được thiết kế bởi Ohstem với khả năng lập trình đa nền tảng như Block, Arduino, MicroPython.
+.. image:: images/yolo-2.png
+  :width: 600
+  :align: center
 
-.. image:: images/xBuild-2.jpg
+.. image:: images/yolo-3.png
   :width: 600
   :align: center
 
 Thông số kỹ thuật
 -----------
 
-xController Board có các tính năng phần cứng sau:
+Máy tính Yolo:Bit có các tính năng phần cứng sau:
 
   - Bộ vi điều khiển ESP-32
 
@@ -25,80 +27,45 @@ xController Board có các tính năng phần cứng sau:
     - Truyền phát âm thanh qua Bluetooth ：CVSD và âm thanh SBC công suất thấp ：10uA
 
   - Chế độ cấp nguồn:
-    - Sử dụng cáp micro USB nối với máy tính (dùng khi lập trình) hoặc kết nối với củ sạc điện thoại, sạc dự phòng
-    - Sử dụng cặp pin sạc 18650 8.4V cắm vào 1 trong 2 cổng nguồn có trên board
-    - Sử dụng nguồn DC adapter 7-12V cắm vào jack tròn trên board 
 
-    Bạn có thể bật tắt nguồn điện bằng công tắc trên bo (chỉ áp dụng với 2 cổng cắm nguồn, nguồn điện từ USB sẽ không bị ảnh hưởng). Khi sử dụng động cơ thì chúng ta cần cấp nguồn bằng pin hoặc DC adapter vì nguồn từ cổng USB là không đủ.
+    - Sử dụng cáp micro USB nối với máy tính (dùng khi lập trình) hoặc kết nối với củ sạc điện thoại, sạc dự phòng.
+    - Sử dụng pin sạc với jack pin mini.
 
   - Điện áp hoạt động：3.3V
-  - Dòng hoạt động tối đa:200mA
-  - Dòng tải tối đa::1000mA
+
   - Phần cứng tích hợp trên xController Board:
 
-    - Bộ điều khiển động cơ DC 2 kênh
-    - 8 cổng kết nối cho động cơ servo
-    - 6 cổng mở rộng để giao tiếp với các module chức năng
-    - 2 đèn LED đa màu RGB
+    - 20 cổng mở rộng để giao tiếp với các module chức năng
+    - 25 đèn LED đa màu RGB
     - Loa (buzzer)
-    - LED thu và LED phát hồng ngoại
-    - Cảm biến gia tốc và Gyroscope MPU6050
+    - 2 Nút nhấn
+    - Cảm biển nhiệt độ
+    - Cảm biến ánh sáng
+    - Cảm biến gia tốc
 
 
-
-Kích thước và bố cục
+Các tính năng
 --------------
 
-.. image:: images/掌控板V2.0-2D图档-20200102-1.png
-  :width: 800px
-  
+.. image:: images/yolo-6.png
+  :width: 600px
+  :align: center
 
-Bố cục thành phần / Định nghĩa mã pin
+Chân cắm mở rộng
 --------------
 
-.. image:: images/xBuild-3.jpg
+.. image:: images/yolo-7.png
   :width: 600px
   :align: center
 
 
-.. _mPythonPindesc:
-
-xController Board interface pin configuration
-+++++++++++++++++++++++++
-
-
-
-=============== ======  ====================================  
- PORT            Type    Mô Tả
- PORT 1          I/O     Digital Input, Analogue/Digital Output
- PORT 2          I/O     Digital Input, Analogue/Digital Output
- PORT 3          I/O     Digital Input, Analogue/Digital Output 
- PORT 4          I/O     Analogue/Digital Input, Analogue/Digital Output 
- PORT 5          I/O     Analogue/Digital Input, Analogue/Digital Output 
- PORT 6          I/O     Analogue/Digital Input, Analogue/Digital Output 
-   
-=============== ======  ==================================== 
-
-
-Tải xuống các tài liệu liên quan (Cập nhật sau)
+Kích thước
 --------------
 
-Schematic Diagram
-++++++
+Kích thước nhỏ gọn, dễ dàng thao tác với:
 
-* :download:`mPython掌控板V2.0.3原理图 </../datasheet/掌控板-V2.0.3.pdf>`
+  **Chiều dài:** 52mm.
 
-Data Sheet
-++++++++++++++++
+  **Chiều rộng:** 50mm
 
-* :download:`USB-to-UART Bridge：cp2104 </../datasheet/CP2104-SiliconLaboratories.pdf>`
-* :download:`ESP32-WROOM </../datasheet/esp32-wroom-32_datasheet_cn.pdf>`
-* :download:`LDO稳压:CE6210 </../datasheet/CE6210.jpg>`
-* :download:`加速度计:MSA300 </../datasheet/MSA300-V1.0-ENG.pdf>`
-* :download:`地磁传感器:MMC5983MA </../datasheet/MMC5983MA.pdf>`
-* :download:`OLED：128x64 </../datasheet/1.30-SPEC QG-2864KSWLG01 VER A.pdf>`
-
-Mechanical Drawing
-+++++++++++++++++
-
-* :download:`mPython掌控板v2.0外观规格图 </../datasheet/掌控板V2.0-3D-2D图档-20200102.rar>`
+  **Độ dày:** 11.7mm.

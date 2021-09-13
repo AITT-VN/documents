@@ -1,4 +1,4 @@
-Các khối lệnh "Vòng lặp"
+Vòng lặp
 ==========
 
 |

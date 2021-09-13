@@ -1,4 +1,4 @@
-Các khối lệnh "Di chuyển"
+Di chuyển
 ==========
 
 |

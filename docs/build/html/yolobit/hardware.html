@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Hardware &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  <title>Phần cứng &mdash; OhStem Product Documents 0.0.2 documentation</title>
   
 
   
@@ -43,7 +43,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Driver download" href="drive.html" />
+    <link rel="next" title="Cài đặt Driver" href="drive.html" />
     <link rel="prev" title="Giới thiệu" href="introduction.html" /> 
 </head>
 
@@ -111,23 +111,17 @@
 <p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Phần cứng</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#thong-so-ky-thuat">Thông số kỹ thuật</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#kich-thuoc-va-bo-cuc">Kích thước và bố cục</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bo-cuc-thanh-phan-dinh-nghia-ma-pin">Bố cục thành phần / Định nghĩa mã pin</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#xcontroller-board-interface-pin-configuration">xController Board interface pin configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cac-tinh-nang">Các tính năng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chan-cam-mo-rong">Chân cắm mở rộng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kich-thuoc">Kích thước</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#tai-xuong-cac-tai-lieu-lien-quan-cap-nhat-sau">Tải xuống các tài liệu liên quan (Cập nhật sau)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#schematic-diagram">Schematic Diagram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-sheet">Data Sheet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mechanical-drawing">Mechanical Drawing</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="drive.html">Driver download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drive.html">Cài đặt Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app.html">Phần mềm lập trình</a></li>
 <li class="toctree-l1"><a class="reference internal" href="flashburn.html">Cập nhật Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockapi.html">Yolo:Bit Block API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
 <ul>
@@ -186,7 +180,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Hardware</li>
+      <li>Phần cứng</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -207,17 +201,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hardware">
-<h1>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h1>
-<p>xController được thiết kế bởi Ohstem với khả năng lập trình đa nền tảng như Block, Arduino, MicroPython.</p>
-<a class="reference internal image-reference" href="../_images/xBuild-2.jpg"><img alt="../_images/xBuild-2.jpg" class="align-center" src="../_images/xBuild-2.jpg" style="width: 600px;" /></a>
+  <div class="section" id="phan-cung">
+<h1>Phần cứng<a class="headerlink" href="#phan-cung" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/yolo-2.png"><img alt="../_images/yolo-2.png" class="align-center" src="../_images/yolo-2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/yolo-3.png"><img alt="../_images/yolo-3.png" class="align-center" src="../_images/yolo-3.png" style="width: 600px;" /></a>
 <div class="section" id="thong-so-ky-thuat">
 <h2>Thông số kỹ thuật<a class="headerlink" href="#thong-so-ky-thuat" title="Permalink to this headline">¶</a></h2>
-<p>xController Board có các tính năng phần cứng sau:</p>
+<p>Máy tính Yolo:Bit có các tính năng phần cứng sau:</p>
 <blockquote>
-<div><ul>
+<div><ul class="simple">
 <li><p>Bộ vi điều khiển ESP-32</p>
-<ul class="simple">
+<ul>
 <li><p>Bộ xử lý ：Bộ vi xử lý lõi kép Tensilica LX6（một để Xử lý Kết nối Tốc độ Cao và một để Phát triển Ứng dụng Độc lập）</p></li>
 <li><p>Tần số chính: tần số đồng hồ lên đến 240mhz</p></li>
 <li><p>SRAM：520KB</p></li>
@@ -229,102 +223,43 @@
 <li><p>Truyền phát âm thanh qua Bluetooth ：CVSD và âm thanh SBC công suất thấp ：10uA</p></li>
 </ul>
 </li>
-<li><p>Chế độ cấp nguồn:
-- Sử dụng cáp micro USB nối với máy tính (dùng khi lập trình) hoặc kết nối với củ sạc điện thoại, sạc dự phòng
-- Sử dụng cặp pin sạc 18650 8.4V cắm vào 1 trong 2 cổng nguồn có trên board
-- Sử dụng nguồn DC adapter 7-12V cắm vào jack tròn trên board</p>
-<p>Bạn có thể bật tắt nguồn điện bằng công tắc trên bo (chỉ áp dụng với 2 cổng cắm nguồn, nguồn điện từ USB sẽ không bị ảnh hưởng). Khi sử dụng động cơ thì chúng ta cần cấp nguồn bằng pin hoặc DC adapter vì nguồn từ cổng USB là không đủ.</p>
+<li><p>Chế độ cấp nguồn:</p>
+<ul>
+<li><p>Sử dụng cáp micro USB nối với máy tính (dùng khi lập trình) hoặc kết nối với củ sạc điện thoại, sạc dự phòng.</p></li>
+<li><p>Sử dụng pin sạc với jack pin mini.</p></li>
+</ul>
 </li>
 <li><p>Điện áp hoạt động：3.3V</p></li>
-<li><p>Dòng hoạt động tối đa:200mA</p></li>
-<li><p>Dòng tải tối đa::1000mA</p></li>
 <li><p>Phần cứng tích hợp trên xController Board:</p>
-<ul class="simple">
-<li><p>Bộ điều khiển động cơ DC 2 kênh</p></li>
-<li><p>8 cổng kết nối cho động cơ servo</p></li>
-<li><p>6 cổng mở rộng để giao tiếp với các module chức năng</p></li>
-<li><p>2 đèn LED đa màu RGB</p></li>
+<ul>
+<li><p>20 cổng mở rộng để giao tiếp với các module chức năng</p></li>
+<li><p>25 đèn LED đa màu RGB</p></li>
 <li><p>Loa (buzzer)</p></li>
-<li><p>LED thu và LED phát hồng ngoại</p></li>
-<li><p>Cảm biến gia tốc và Gyroscope MPU6050</p></li>
+<li><p>2 Nút nhấn</p></li>
+<li><p>Cảm biển nhiệt độ</p></li>
+<li><p>Cảm biến ánh sáng</p></li>
+<li><p>Cảm biến gia tốc</p></li>
 </ul>
 </li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="kich-thuoc-va-bo-cuc">
-<h2>Kích thước và bố cục<a class="headerlink" href="#kich-thuoc-va-bo-cuc" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/掌控板V2.0-2D图档-20200102-11.png"><img alt="../_images/掌控板V2.0-2D图档-20200102-11.png" src="../_images/掌控板V2.0-2D图档-20200102-11.png" style="width: 800px;" /></a>
+<div class="section" id="cac-tinh-nang">
+<h2>Các tính năng<a class="headerlink" href="#cac-tinh-nang" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/yolo-6.png"><img alt="../_images/yolo-6.png" class="align-center" src="../_images/yolo-6.png" style="width: 600px;" /></a>
 </div>
-<div class="section" id="bo-cuc-thanh-phan-dinh-nghia-ma-pin">
-<h2>Bố cục thành phần / Định nghĩa mã pin<a class="headerlink" href="#bo-cuc-thanh-phan-dinh-nghia-ma-pin" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/xBuild-31.jpg"><img alt="../_images/xBuild-31.jpg" class="align-center" src="../_images/xBuild-31.jpg" style="width: 600px;" /></a>
-<div class="section" id="xcontroller-board-interface-pin-configuration">
-<span id="mpythonpindesc"></span><h3>xController Board interface pin configuration<a class="headerlink" href="#xcontroller-board-interface-pin-configuration" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 9%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>PORT</p></td>
-<td><p>Type</p></td>
-<td><p>Mô Tả</p></td>
-</tr>
-<tr class="row-even"><td><p>PORT 1</p></td>
-<td><p>I/O</p></td>
-<td><p>Digital Input, Analogue/Digital Output</p></td>
-</tr>
-<tr class="row-odd"><td><p>PORT 2</p></td>
-<td><p>I/O</p></td>
-<td><p>Digital Input, Analogue/Digital Output</p></td>
-</tr>
-<tr class="row-even"><td><p>PORT 3</p></td>
-<td><p>I/O</p></td>
-<td><p>Digital Input, Analogue/Digital Output</p></td>
-</tr>
-<tr class="row-odd"><td><p>PORT 4</p></td>
-<td><p>I/O</p></td>
-<td><p>Analogue/Digital Input, Analogue/Digital Output</p></td>
-</tr>
-<tr class="row-even"><td><p>PORT 5</p></td>
-<td><p>I/O</p></td>
-<td><p>Analogue/Digital Input, Analogue/Digital Output</p></td>
-</tr>
-<tr class="row-odd"><td><p>PORT 6</p></td>
-<td><p>I/O</p></td>
-<td><p>Analogue/Digital Input, Analogue/Digital Output</p></td>
-</tr>
-</tbody>
-</table>
+<div class="section" id="chan-cam-mo-rong">
+<h2>Chân cắm mở rộng<a class="headerlink" href="#chan-cam-mo-rong" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/yolo-7.png"><img alt="../_images/yolo-7.png" class="align-center" src="../_images/yolo-7.png" style="width: 600px;" /></a>
 </div>
-</div>
-<div class="section" id="tai-xuong-cac-tai-lieu-lien-quan-cap-nhat-sau">
-<h2>Tải xuống các tài liệu liên quan (Cập nhật sau)<a class="headerlink" href="#tai-xuong-cac-tai-lieu-lien-quan-cap-nhat-sau" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="schematic-diagram">
-<h3>Schematic Diagram<a class="headerlink" href="#schematic-diagram" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">mPython掌控板V2.0.3原理图</span></code></p></li>
-</ul>
-</div>
-<div class="section" id="data-sheet">
-<h3>Data Sheet<a class="headerlink" href="#data-sheet" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">USB-to-UART</span> <span class="pre">Bridge：cp2104</span></code></p></li>
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">ESP32-WROOM</span></code></p></li>
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">LDO稳压:CE6210</span></code></p></li>
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">加速度计:MSA300</span></code></p></li>
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">地磁传感器:MMC5983MA</span></code></p></li>
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">OLED：128x64</span></code></p></li>
-</ul>
-</div>
-<div class="section" id="mechanical-drawing">
-<h3>Mechanical Drawing<a class="headerlink" href="#mechanical-drawing" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="xref download docutils literal notranslate"><span class="pre">mPython掌控板v2.0外观规格图</span></code></p></li>
-</ul>
-</div>
+<div class="section" id="kich-thuoc">
+<h2>Kích thước<a class="headerlink" href="#kich-thuoc" title="Permalink to this headline">¶</a></h2>
+<p>Kích thước nhỏ gọn, dễ dàng thao tác với:</p>
+<blockquote>
+<div><p><strong>Chiều dài:</strong> 52mm.</p>
+<p><strong>Chiều rộng:</strong> 50mm</p>
+<p><strong>Độ dày:</strong> 11.7mm.</p>
+</div></blockquote>
 </div>
 </div>
 
@@ -334,7 +269,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="drive.html" class="btn btn-neutral float-right" title="Driver download" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="drive.html" class="btn btn-neutral float-right" title="Cài đặt Driver" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="introduction.html" class="btn btn-neutral float-left" title="Giới thiệu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

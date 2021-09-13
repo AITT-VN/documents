@@ -1,8 +1,7 @@
-
-Driver download
+Cài đặt Driver
 =======
 
-Để máy tính có thể giao tiếp và lập trình được cho xController, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau:
+Để máy tính có thể giao tiếp và lập trình được cho Yolo:Bit, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau:
 
     Bước 1. Tải file cài đặt driver cho chip giao tiếp USB CH340G có trên xController tại `Driver CH340 <https://ohstem.vn/wp-content/uploads/2021/01/CH341SER.zip>`_
     
@@ -20,7 +19,7 @@ Driver download
         :width: 400
         :align: center
 
-    Bước 5. Tiếp theo, bạn hãy kết nối xController với máy tính bằng cáp micro USB.
+    Bước 5. Tiếp theo, bạn hãy kết nối Yolo:Bit với máy tính bằng cáp micro USB.
 
         Dành cho người dùng hệ điều hành Windows: Bạn có thể vào phần Device Manager. Trong phần Ports (COM & LPT), bạn sẽ thấy một cổng COM mới mỗi khi kết nối USB với xController. Cổng này sẽ biến mất khi rút cáp USB ra.
 

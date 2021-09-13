@@ -1,4 +1,4 @@
-Các khối lệnh "Hiệu ứng"
+Hiệu ứng
 ==========
 
 |

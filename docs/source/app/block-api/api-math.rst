@@ -1,4 +1,4 @@
-Các khối lệnh "Tính toán"
+Tính toán
 ==========
 
 |

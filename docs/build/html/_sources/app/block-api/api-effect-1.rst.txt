@@ -7,7 +7,7 @@ In ra cửa sổ thông tin một giá trị ``TEXT`` nào đó
     :scale: 100 %
     :align: center
 
-Khi chạy chương trình, nhấn vào menu Chức năng ``Setting`` > chọn ``Hiện thông tin từ xBuild`` để mở cửa sổ hiển thị thông tin.
+Khi chạy chương trình, nhấn vào menu Chức năng ``Setting`` > chọn ``Hiện cửa sổ thông tin`` để mở cửa sổ hiển thị thông tin.
 
 
 .. image:: images/show-3.png

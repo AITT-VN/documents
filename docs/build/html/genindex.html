@@ -109,9 +109,11 @@
 <p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="yolobit/introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="yolobit/hardware.html">Hardware</a></li>
-<li class="toctree-l1"><a class="reference internal" href="yolobit/drive.html">Driver download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yolobit/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yolobit/drive.html">Cài đặt Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yolobit/app.html">Phần mềm lập trình</a></li>
 <li class="toctree-l1"><a class="reference internal" href="yolobit/flashburn.html">Cập nhật Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yolobit/blockapi.html">Yolo:Bit Block API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
 <ul>
@@ -315,14 +317,6 @@
 </li>
         <li><a href="api/arduino-api/pins.html#digitalWrite">digitalWrite()</a>
 </li>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.clear">lcd1602.clear()</a>
-</li>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.move_to">lcd1602.move_to()</a>
-</li>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.putstr">lcd1602.putstr()</a>
-</li>
-        <li><a href="app/block-api-old/led_matrix.html#id0">led_matrix.show()</a>, <a href="app/block-api-old/led_matrix.html#led_matrix.show">[1]</a>
-</li>
         <li><a href="api/arduino-api/line_array.html#LineArray">LineArray()</a>
 </li>
         <li><a href="api/arduino-api/ultrasonic.html#measureDistanceCm">measureDistanceCm()</a>
@@ -331,23 +325,13 @@
 </li>
         <li><a href="api/arduino-api/minifan.html#MiniFan">MiniFan()</a>
 </li>
-        <li><a href="app/block-api-old/motion.html#motion.get_accel">motion.get_accel()</a>
-</li>
-        <li><a href="app/block-api-old/motion.html#motion.is_shaked">motion.is_shaked()</a>
-</li>
         <li><a href="api/arduino-api/motor.html#move">move()</a>
 </li>
         <li><a href="api/arduino-api/lcd_1602.html#noBacklight">noBacklight()</a>
 </li>
         <li><a href="api/arduino-api/minifan.html#off">off()</a>
 </li>
-        <li><a href="app/block-api-old/oled_i2c.html#oled.fill">oled.fill()</a>
-</li>
-        <li><a href="app/block-api-old/oled_i2c.html#id0">oled.show()</a>, <a href="app/block-api-old/oled_i2c.html#oled.show">[1]</a>
-</li>
         <li><a href="api/arduino-api/minifan.html#on">on()</a>
-</li>
-        <li><a href="app/block-api-old/pins.html#pin11.write_analog">pin11.write_analog()</a>
 </li>
         <li><a href="api/arduino-api/pins.html#pinMode">pinMode()</a>
 </li>
@@ -357,31 +341,13 @@
 </li>
         <li><a href="api/arduino-api/ir_receiver.html#resume">resume()</a>
 </li>
-        <li><a href="app/block-api-old/robot.html#robot.set_wheel_speed">robot.set_wheel_speed()</a>
-</li>
-        <li><a href="app/block-api-old/robot.html#robot.stop">robot.stop()</a>
-</li>
-        <li><a href="app/block-api-old/servo.html#id0">servo.position()</a>, <a href="app/block-api-old/servo.html#servo.position">[1]</a>
-</li>
-        <li><a href="app/block-api-old/servo.html#servo.rotate">servo.rotate()</a>
-</li>
-        <li><a href="app/block-api-old/servo.html#servo.spin">servo.spin()</a>
-</li>
         <li><a href="api/arduino-api/lcd_1602.html#setCursor">setCursor()</a>
-</li>
-        <li><a href="app/block-api-old/speaker.html#speaker.pitch">speaker.pitch()</a>
-</li>
-        <li><a href="app/block-api-old/speaker.html#id0">speaker.play()</a>, <a href="app/block-api-old/speaker.html#id1">[1]</a>, <a href="app/block-api-old/speaker.html#speaker.play">[2]</a>
-</li>
-        <li><a href="app/block-api-old/speaker.html#speaker.stop">speaker.stop()</a>
 </li>
         <li><a href="api/arduino-api/motor.html#speed">speed()</a>
 </li>
         <li><a href="api/arduino-api/motor.html#stop">stop()</a>
 </li>
         <li><a href="api/arduino-api/ultrasonic.html#Ultrasonic">Ultrasonic()</a>
-</li>
-        <li><a href="app/block-api-old/ultrasonic.html#ultrasonic.distance_cm">ultrasonic.distance_cm()</a>
 </li>
       </ul></li>
   </ul></td>
@@ -390,7 +356,7 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/micropython-api/wifi.html#wifi.check_message">check_message() (in module wifi)</a>, <a href="app/block-api-old/wifi.html#wifi.check_message">[1]</a>
+      <li><a href="api/micropython-api/wifi.html#wifi.check_message">check_message() (in module wifi)</a>
 </li>
       <li>
     clear()
@@ -403,16 +369,16 @@
     color_sensor
 
       <ul>
-        <li><a href="api/micropython-api/color_sensor.html#module-color_sensor">module</a>, <a href="app/block-api-old/color_sensor.html#module-color_sensor">[1]</a>
+        <li><a href="api/micropython-api/color_sensor.html#module-color_sensor">module</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/micropython-api/color_sensor.html#color_sensor.color_sensor.detect">color_sensor.detect() (in module color_sensor)</a>, <a href="app/block-api-old/color_sensor.html#color_sensor.color_sensor.detect">[1]</a>
+      <li><a href="api/micropython-api/color_sensor.html#color_sensor.color_sensor.detect">color_sensor.detect() (in module color_sensor)</a>
 </li>
-      <li><a href="api/micropython-api/color_sensor.html#color_sensor.color_sensor.read">color_sensor.read() (in module color_sensor)</a>, <a href="app/block-api-old/color_sensor.html#color_sensor.color_sensor.read">[1]</a>
+      <li><a href="api/micropython-api/color_sensor.html#color_sensor.color_sensor.read">color_sensor.read() (in module color_sensor)</a>
 </li>
-      <li><a href="api/micropython-api/wifi.html#wifi.connect">connect() (in module wifi)</a>, <a href="app/block-api-old/wifi.html#wifi.connect">[1]</a>
+      <li><a href="api/micropython-api/wifi.html#wifi.connect">connect() (in module wifi)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -460,27 +426,27 @@
     ir_receiver
 
       <ul>
-        <li><a href="api/micropython-api/ir_receiver.html#module-ir_receiver">module</a>, <a href="app/block-api-old/ir_receiver.html#module-ir_receiver">[1]</a>
+        <li><a href="api/micropython-api/ir_receiver.html#module-ir_receiver">module</a>
 </li>
       </ul></li>
-      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.clear_code">ir_rx.clear_code() (in module ir_receiver)</a>, <a href="app/block-api-old/ir_receiver.html#ir_receiver.ir_rx.clear_code">[1]</a>
+      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.clear_code">ir_rx.clear_code() (in module ir_receiver)</a>
 </li>
-      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.get_code">ir_rx.get_code() (in module ir_receiver)</a>, <a href="app/block-api-old/ir_receiver.html#ir_receiver.ir_rx.get_code">[1]</a>
+      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.get_code">ir_rx.get_code() (in module ir_receiver)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.get_raw_code">ir_rx.get_raw_code() (in module ir_receiver)</a>, <a href="app/block-api-old/ir_receiver.html#ir_receiver.ir_rx.get_raw_code">[1]</a>
+      <li><a href="api/micropython-api/ir_receiver.html#ir_receiver.ir_rx.get_raw_code">ir_rx.get_raw_code() (in module ir_receiver)</a>
 </li>
       <li>
     ir_sender
 
       <ul>
-        <li><a href="api/micropython-api/ir_sender.html#module-ir_sender">module</a>, <a href="app/block-api-old/ir_sender.html#module-ir_sender">[1]</a>
+        <li><a href="api/micropython-api/ir_sender.html#module-ir_sender">module</a>
 </li>
       </ul></li>
-      <li><a href="api/micropython-api/ir_sender.html#id0">ir_tx.send() (in module ir_sender)</a>, <a href="api/micropython-api/ir_sender.html#ir_sender.ir_tx.send">[1]</a>, <a href="app/block-api-old/ir_sender.html#id0">[2]</a>, <a href="app/block-api-old/ir_sender.html#ir_sender.ir_tx.send">[3]</a>
+      <li><a href="api/micropython-api/ir_sender.html#id0">ir_tx.send() (in module ir_sender)</a>, <a href="api/micropython-api/ir_sender.html#ir_sender.ir_tx.send">[1]</a>
 </li>
-      <li><a href="api/micropython-api/wifi.html#wifi.isconnected">isconnected() (in module wifi)</a>, <a href="app/block-api-old/wifi.html#wifi.isconnected">[1]</a>
+      <li><a href="api/micropython-api/wifi.html#wifi.isconnected">isconnected() (in module wifi)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -492,31 +458,10 @@
 </li>
       <li><a href="api/micropython-api/lcd_1602.html#lcd_1602.lcd1602.backlight_on">lcd1602.backlight_on() (in module lcd_1602)</a>
 </li>
-      <li>
-    lcd1602.clear()
-
-      <ul>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.clear">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/lcd_1602.html#lcd_1602.lcd1602.clear">lcd1602.clear() (in module lcd_1602)</a>
 </li>
-      <li>
-    lcd1602.move_to()
-
-      <ul>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.move_to">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/lcd_1602.html#lcd_1602.lcd1602.move_to">lcd1602.move_to() (in module lcd_1602)</a>
 </li>
-      <li>
-    lcd1602.putstr()
-
-      <ul>
-        <li><a href="app/block-api-old/lcd_1602.html#lcd1602.putstr">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/lcd_1602.html#lcd_1602.lcd1602.putstr">lcd1602.putstr() (in module lcd_1602)</a>
 </li>
       <li>
@@ -526,8 +471,6 @@
         <li><a href="api/micropython-api/lcd_1602.html#module-lcd_1602">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     led_matrix
 
@@ -535,13 +478,8 @@
         <li><a href="api/micropython-api/led_matrix.html#module-led_matrix">module</a>
 </li>
       </ul></li>
-      <li>
-    led_matrix.show()
-
-      <ul>
-        <li><a href="app/block-api-old/led_matrix.html#id0">built-in function</a>, <a href="app/block-api-old/led_matrix.html#led_matrix.show">[1]</a>
-</li>
-      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/micropython-api/led_matrix.html#id0">led_matrix.show() (in module led_matrix)</a>, <a href="api/micropython-api/led_matrix.html#led_matrix.led_matrix.show">[1]</a>
 </li>
       <li>
@@ -602,11 +540,11 @@
       <ul>
         <li><a href="api/micropython-api/btn_onboard.html#module-btn_onboard">btn_onboard</a>
 </li>
-        <li><a href="api/micropython-api/color_sensor.html#module-color_sensor">color_sensor</a>, <a href="app/block-api-old/color_sensor.html#module-color_sensor">[1]</a>
+        <li><a href="api/micropython-api/color_sensor.html#module-color_sensor">color_sensor</a>
 </li>
-        <li><a href="api/micropython-api/ir_receiver.html#module-ir_receiver">ir_receiver</a>, <a href="app/block-api-old/ir_receiver.html#module-ir_receiver">[1]</a>
+        <li><a href="api/micropython-api/ir_receiver.html#module-ir_receiver">ir_receiver</a>
 </li>
-        <li><a href="api/micropython-api/ir_sender.html#module-ir_sender">ir_sender</a>, <a href="app/block-api-old/ir_sender.html#module-ir_sender">[1]</a>
+        <li><a href="api/micropython-api/ir_sender.html#module-ir_sender">ir_sender</a>
 </li>
         <li><a href="api/micropython-api/lcd_1602.html#module-lcd_1602">lcd_1602</a>
 </li>
@@ -632,7 +570,7 @@
 </li>
         <li><a href="api/micropython-api/ultrasonic.html#module-ultrasonic">ultrasonic</a>
 </li>
-        <li><a href="api/micropython-api/wifi.html#module-wifi">wifi</a>, <a href="app/block-api-old/wifi.html#module-wifi">[1]</a>
+        <li><a href="api/micropython-api/wifi.html#module-wifi">wifi</a>
 </li>
       </ul></li>
   </ul></td>
@@ -644,13 +582,6 @@
         <li><a href="api/micropython-api/motion.html#module-motion">module</a>
 </li>
       </ul></li>
-      <li>
-    motion.get_accel()
-
-      <ul>
-        <li><a href="app/block-api-old/motion.html#motion.get_accel">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/motion.html#motion.motion.get_accel">motion.get_accel() (in module motion)</a>
 </li>
       <li><a href="api/micropython-api/motion.html#motion.motion.get_gyro_pitch">motion.get_gyro_pitch() (in module motion)</a>
@@ -659,13 +590,6 @@
 </li>
       <li><a href="api/micropython-api/motion.html#motion.motion.get_gyro_yaw">motion.get_gyro_yaw() (in module motion)</a>
 </li>
-      <li>
-    motion.is_shaked()
-
-      <ul>
-        <li><a href="app/block-api-old/motion.html#motion.is_shaked">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/motion.html#motion.motion.is_shaked">motion.is_shaked() (in module motion)</a>
 </li>
       <li>
@@ -710,26 +634,12 @@
         <li><a href="api/arduino-api/minifan.html#off">built-in function</a>
 </li>
       </ul></li>
-      <li>
-    oled.fill()
-
-      <ul>
-        <li><a href="app/block-api-old/oled_i2c.html#oled.fill">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/oled_i2c.html#oled_i2c.oled.fill">oled.fill() (in module oled_i2c)</a>
 </li>
-      <li>
-    oled.show()
-
-      <ul>
-        <li><a href="app/block-api-old/oled_i2c.html#id0">built-in function</a>, <a href="app/block-api-old/oled_i2c.html#oled.show">[1]</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/micropython-api/oled_i2c.html#oled_i2c.oled.show">oled.show() (in module oled_i2c)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     oled_i2c
 
@@ -744,7 +654,7 @@
         <li><a href="api/arduino-api/minifan.html#on">built-in function</a>
 </li>
       </ul></li>
-      <li><a href="api/micropython-api/wifi.html#wifi.on_receive_message">on_receive_message() (in module wifi)</a>, <a href="app/block-api-old/wifi.html#wifi.on_receive_message">[1]</a>
+      <li><a href="api/micropython-api/wifi.html#wifi.on_receive_message">on_receive_message() (in module wifi)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -752,13 +662,6 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    pin11.write_analog()
-
-      <ul>
-        <li><a href="app/block-api-old/pins.html#pin11.write_analog">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/pins.html#pins.pin11.write_analog">pin11.write_analog() (in module pins)</a>
 </li>
       <li>
@@ -813,26 +716,12 @@
       </ul></li>
       <li><a href="api/micropython-api/robot.html#robot.robot.backward">robot.backward() (in module robot)</a>
 </li>
-      <li><a href="api/micropython-api/robot.html#robot.robot.forward">robot.forward() (in module robot)</a>
-</li>
-      <li>
-    robot.set_wheel_speed()
-
-      <ul>
-        <li><a href="app/block-api-old/robot.html#robot.set_wheel_speed">built-in function</a>
-</li>
-      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/micropython-api/robot.html#robot.robot.forward">robot.forward() (in module robot)</a>
+</li>
       <li><a href="api/micropython-api/robot.html#robot.robot.set_wheel_speed">robot.set_wheel_speed() (in module robot)</a>
 </li>
-      <li>
-    robot.stop()
-
-      <ul>
-        <li><a href="app/block-api-old/robot.html#robot.stop">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/robot.html#robot.robot.stop">robot.stop() (in module robot)</a>
 </li>
       <li><a href="api/micropython-api/robot.html#robot.robot.turn_left">robot.turn_left() (in module robot)</a>
@@ -849,7 +738,7 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/micropython-api/wifi.html#id0">send_message() (in module wifi)</a>, <a href="api/micropython-api/wifi.html#wifi.send_message">[1]</a>, <a href="app/block-api-old/wifi.html#id0">[2]</a>, <a href="app/block-api-old/wifi.html#wifi.send_message">[3]</a>
+      <li><a href="api/micropython-api/wifi.html#id0">send_message() (in module wifi)</a>, <a href="api/micropython-api/wifi.html#wifi.send_message">[1]</a>
 </li>
       <li>
     servo
@@ -858,31 +747,10 @@
         <li><a href="api/micropython-api/servo.html#module-servo">module</a>
 </li>
       </ul></li>
-      <li>
-    servo.position()
-
-      <ul>
-        <li><a href="app/block-api-old/servo.html#id0">built-in function</a>, <a href="app/block-api-old/servo.html#servo.position">[1]</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/servo.html#id0">servo.position() (in module servo)</a>, <a href="api/micropython-api/servo.html#servo.servo.position">[1]</a>
 </li>
-      <li>
-    servo.rotate()
-
-      <ul>
-        <li><a href="app/block-api-old/servo.html#servo.rotate">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/servo.html#servo.servo.rotate">servo.rotate() (in module servo)</a>
 </li>
-      <li>
-    servo.spin()
-
-      <ul>
-        <li><a href="app/block-api-old/servo.html#servo.spin">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/servo.html#servo.servo.spin">servo.spin() (in module servo)</a>
 </li>
       <li>
@@ -901,31 +769,10 @@
         <li><a href="api/micropython-api/speaker.html#module-speaker">module</a>
 </li>
       </ul></li>
-      <li>
-    speaker.pitch()
-
-      <ul>
-        <li><a href="app/block-api-old/speaker.html#speaker.pitch">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/speaker.html#speaker.speaker.pitch">speaker.pitch() (in module speaker)</a>
 </li>
-      <li>
-    speaker.play()
-
-      <ul>
-        <li><a href="app/block-api-old/speaker.html#id0">built-in function</a>, <a href="app/block-api-old/speaker.html#id1">[1]</a>, <a href="app/block-api-old/speaker.html#speaker.play">[2]</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/speaker.html#speaker.speaker.play">speaker.play() (in module speaker)</a>
 </li>
-      <li>
-    speaker.stop()
-
-      <ul>
-        <li><a href="app/block-api-old/speaker.html#speaker.stop">built-in function</a>
-</li>
-      </ul></li>
       <li><a href="api/micropython-api/speaker.html#speaker.speaker.stop">speaker.stop() (in module speaker)</a>
 </li>
       <li>
@@ -955,20 +802,13 @@
         <li><a href="api/micropython-api/ultrasonic.html#module-ultrasonic">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     Ultrasonic()
 
       <ul>
         <li><a href="api/arduino-api/ultrasonic.html#Ultrasonic">built-in function</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    ultrasonic.distance_cm()
-
-      <ul>
-        <li><a href="app/block-api-old/ultrasonic.html#ultrasonic.distance_cm">built-in function</a>
 </li>
       </ul></li>
       <li><a href="api/micropython-api/ultrasonic.html#ultrasonic.ultrasonic.distance_cm">ultrasonic.distance_cm() (in module ultrasonic)</a>
@@ -983,7 +823,7 @@
     wifi
 
       <ul>
-        <li><a href="api/micropython-api/wifi.html#module-wifi">module</a>, <a href="app/block-api-old/wifi.html#module-wifi">[1]</a>
+        <li><a href="api/micropython-api/wifi.html#module-wifi">module</a>
 </li>
       </ul></li>
   </ul></td>

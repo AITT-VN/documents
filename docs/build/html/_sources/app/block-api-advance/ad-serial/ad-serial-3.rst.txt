@@ -1,4 +1,4 @@
-print(VALUE-A + ': ' + str(VALUE-B))
+In một cặp giá trị
 ==========
 
 .. image:: images/ad-serial-3.png

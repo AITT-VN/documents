@@ -1,4 +1,4 @@
-print(' ')
+In một chuỗi - bắt đầu dòng mới
 ==========
 
 .. image:: images/ad-serial-4.png

@@ -7,7 +7,6 @@ Nâng cao
    :align: center
 |
 
-Đang cập nhật...
 ---------
 
 .. toctree::

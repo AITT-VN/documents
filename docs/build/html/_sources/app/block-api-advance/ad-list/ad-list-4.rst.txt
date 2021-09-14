@@ -1,4 +1,4 @@
-len([])
+Đếm số thành phần của danh sách
 ==========
 
 .. image:: images/ad-list-4.png

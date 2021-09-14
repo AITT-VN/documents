@@ -1,4 +1,4 @@
-print(TEXT, end =' ')
+In một chuỗi - không bắt đầu dòng mới
 ==========
 
 .. image:: images/ad-serial-1.png

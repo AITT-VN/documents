@@ -1,4 +1,4 @@
-[]
+Tạo danh sách rỗng
 ==========
 
 .. image:: images/ad-list-1.png

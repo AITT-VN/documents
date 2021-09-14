@@ -1,4 +1,4 @@
-print(str(NUMBER))
+In một số
 ==========
 
 .. image:: images/ad-serial-2.png

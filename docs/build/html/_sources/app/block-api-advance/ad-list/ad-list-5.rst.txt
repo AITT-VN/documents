@@ -1,4 +1,4 @@
-not len([])
+Kiểm tra danh sách rỗng
 ==========
 
 .. image:: images/ad-list-5.png

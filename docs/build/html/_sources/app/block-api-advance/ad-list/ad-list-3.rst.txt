@@ -1,4 +1,4 @@
-[VALUE] * (số lần)
+Tạo danh sách với N số thành phần giống nhau
 ==========
 
 .. image:: images/ad-list-3.png

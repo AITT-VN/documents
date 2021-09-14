@@ -1,4 +1,4 @@
-print and time
+In với thời gian chờ
 ==========
 
 .. image:: images/ad-serial-5.png

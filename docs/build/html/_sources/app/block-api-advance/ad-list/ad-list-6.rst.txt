@@ -1,4 +1,4 @@
-first_index() và last_index()
+Tìm vị trí đầu tiên hoặc cuối cũng của một thành phần trong của danh sách
 ==========
 
 .. image:: images/ad-list-6.png

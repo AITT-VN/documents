@@ -16,6 +16,8 @@ Giáo trình này hướng dẫn bạn làm quen với ngôn ngữ MicroPython �
 .. toctree::
    :maxdepth: 1
 
+   micropython-exp/intro.rst
+   micropython-exp/use.rst
    micropython-exp/xin-chao-the-gioi.rst
    micropython-exp/hinh-anh.rst
    micropython-exp/nut-nhan.rst

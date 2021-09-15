@@ -209,11 +209,201 @@
             
   <div class="section" id="hinh-anh">
 <h1>Hình ảnh<a class="headerlink" href="#hinh-anh" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="k">if</span> <span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Button Onboard is pressed&quot;</span><span class="p">)</span>
+<p>Tuy Yolo:Bit chỉ có màn hình Led 5×5 nhưng chúng ta có thể làm rất nhiều thứ với nó bằng MicroPython nhé, đặc biệt là hiện ra các hình ảnh vui.</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-12.png"><img alt="../../_images/ls-2-12.png" class="align-center" src="../../_images/ls-2-12.png" style="width: 600px;" /></a>
+<p>MicroPython trên Yolo:Bit đi kèm rất nhiều các hình ảnh có sẵn để sử dụng. Ví dụ để hiện ra khuôn mặt cười, bạn có thể dùng các lệnh sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Dòng lệnh đầu tiên thì hẳn là bạn vẫn còn nhớ phần giải thích trong bài trước. Dòng lệnh thứ hai dùng hàm show của đối tượng display để hiện ra một hình ảnh (Image) tên là HAPPY (hạnh phúc).</p>
+<p>Bạn hãy thử copy 2 dòng lệnh trên và chạy thử trên Yolo:Bit xem coi có mặt cười nào trên màn hình Led không nhé.</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-22.png"><img alt="../../_images/ls-2-22.png" class="align-center" src="../../_images/ls-2-22.png" style="width: 600px;" /></a>
+<p>Ngoài Image.HAPPY ra, thư viện display còn rất nhiều các hình ảnh khác như là:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Image.HEART</p></li>
+<li><p>Image.HEART_SMALL</p></li>
+<li><p>Image.HAPPY</p></li>
+<li><p>Image.SMILE</p></li>
+<li><p>Image.SAD</p></li>
+<li><p>Image.CONFUSED</p></li>
+<li><p>Image.ANGRY</p></li>
+<li><p>Image.ASLEEP</p></li>
+<li><p>Image.SURPRISED</p></li>
+<li><p>Image.SILLY</p></li>
+<li><p>Image.FABULOUS</p></li>
+<li><p>Image.MEH</p></li>
+<li><p>Image.YES</p></li>
+<li><p>Image.NO</p></li>
+<li><p>Image.CLOCK12, Image.CLOCK11, Image.CLOCK10, Image.CLOCK9, Image.CLOCK8, Image.CLOCK7, Image.CLOCK6, Image.CLOCK5, Image.CLOCK4, Image.CLOCK3, Image.CLOCK2, Image.CLOCK1</p></li>
+<li><p>Image.ARROW_N, Image.ARROW_NE, Image.ARROW_E, Image.ARROW_SE, Image.ARROW_S, Image.ARROW_SW, Image.ARROW_W, Image.ARROW_NW</p></li>
+<li><p>Image.TRIANGLE</p></li>
+<li><p>Image.TRIANGLE_LEFT</p></li>
+<li><p>Image.CHESSBOARD</p></li>
+<li><p>Image.DIAMOND</p></li>
+<li><p>Image.DIAMOND_SMALL</p></li>
+<li><p>Image.SQUARE</p></li>
+<li><p>Image.SQUARE_SMALL</p></li>
+<li><p>Image.RABBIT</p></li>
+<li><p>Image.COW</p></li>
+<li><p>Image.MUSIC_CROTCHET</p></li>
+<li><p>Image.MUSIC_QUAVER</p></li>
+<li><p>Image.MUSIC_QUAVERS</p></li>
+<li><p>Image.PITCHFORK</p></li>
+<li><p>Image.XMAS</p></li>
+<li><p>Image.PACMAN</p></li>
+<li><p>Image.TARGET</p></li>
+<li><p>Image.TSHIRT</p></li>
+<li><p>Image.ROLLERSKATE</p></li>
+<li><p>Image.DUCK</p></li>
+<li><p>Image.HOUSE</p></li>
+<li><p>Image.TORTOISE</p></li>
+<li><p>Image.BUTTERFLY</p></li>
+<li><p>Image.STICKFIGURE</p></li>
+<li><p>Image.GHOST</p></li>
+<li><p>Image.SWORD</p></li>
+<li><p>Image.GIRAFFE</p></li>
+<li><p>Image.SKULL</p></li>
+<li><p>Image.UMBRELLA</p></li>
+<li><p>Image.SNAKE</p></li>
+</ul>
+</div></blockquote>
+<p>Bạn hãy thử sửa chương trình trên và thay <code class="docutils literal notranslate"><span class="pre">Image.HAPPY</span></code> thành một hình ảnh khác tùy ý muốn và quan sát xem chúng trông thế nào.</p>
+<p><strong>Hình ảnh tùy ý</strong></p>
+<p>Ngoài các hình ảnh có sẵn, bạn cũng có thể tự vẽ hình ảnh tùy ý của riêng mình. Rất dễ nhé.</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-32.png"><img alt="../../_images/ls-2-32.png" class="align-center" src="../../_images/ls-2-32.png" style="width: 600px;" /></a>
+<p>Mỗi đèn LED trên màn hình Led 5×5 có thể nhận 1 trong 9 giá trị, từ 0 đến 8 với các màu tương ứng như sau:</p>
+<p>0-Tắt, 1-Đỏ, 2-Cam, 3-Vàng, 4-Xanh lá cây (lục), 5-Xanh dương (lam), 6-Chàm, 7-Tím, 8-Trắng</p>
+<p>Dựa trên đó, bạn thử hiện ra một hình theo ý mình, ví dụ như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+
+boat = Image(“01010:”
+
+            “01010:”
+
+            “01010:”
+
+            “44444:”
+
+            “04440”)
+
+display.show(boat)
+</pre></div>
+</div>
+<p>Bạn tưởng tượng được ra hình gì không nhỉ? Bạn thử chạy chương trình này và quan sát sẽ thấy màn hình Led hiện ra hình một con thuyền màu xanh lá cây với 2 cột buồm màu đỏ.</p>
+<a class="reference internal image-reference" href="../../_images/ls-2-4.png"><img alt="../../_images/ls-2-4.png" class="align-center" src="../../_images/ls-2-4.png" style="width: 600px;" /></a>
+<p>Hãy tìm hiểu thử các lệnh trong chương trình ở trên nào. Chúng ta bỏ qua dòng lệnh quen thuộc đầu tiên. Dòng lệnh tiếp theo khai báo một đối tượng hình ảnh và đặt tên là boat (con thuyền). Bên trong giữa 2 dấu ngoặc tròn () là khai báo hình ảnh con thuyền bao gồm 5 dòng cho 5 hàng Led. Các số bên trong mỗi hàng là màu của từng Led. Các hàng cách nhau bởi dấu hai chấm :.</p>
+<p>Thật là đơn giản phải không? Bạn cũng có thể khai báo màu cho các Led trên cùng một hàng như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>boat = Image(“01010:01010:01010:44444:04440”)
+</pre></div>
+</div>
+<p><strong>Hoạt hình</strong></p>
+<p>Ngoài hiện ra hình ảnh tĩnh ra, chúng ta hãy thử làm một thứ thú vị hơn, đó là hoạt hình, tức là hiện ra nhiều hình ảnh khác nhau liên tục, thay vì chỉ một hình. Trong MicroPython, chúng ta sẽ dùng một danh sách (list) các hình.</p>
+<p>Ví dụ chúng ta có một danh sách các thứ cần phải mua sắm:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Eggs</p></li>
+<li><p>Shoes</p></li>
+<li><p>Tomatoes</p></li>
+</ul>
+</div></blockquote>
+<p>Để tạo danh sách trong Python, chúng ta dùng lệnh sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>shopping = [“Eggs”, “Shoes”, “Tomatoes”]
+</pre></div>
+</div>
+<p>Trong danh sách được đặt tên là shopping ở trên có 3 thứ, gọi là phần tử. Python hiểu được chúng ta đang muốn tạo ra một danh sách bởi vì chúng được đặt trong 2 dấu ngoặc vuông [ ]. Các thứ trong danh sách được phân cách nhau bởi dấu phẩy và các thứ này là 3 dòng chữ do chúng được đặt trong 2 dấu nháy kép “ ”.</p>
+<p>Ngoài ra bạn có thể chứa bất kỳ thứ gì trong một danh sách. Ví dụ bạn có thể tạo ra một danh sách các số lẻ như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">odds</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Vì là các số nên chúng ta không dùng dấu nháy kép bọc giữa các phần tử.</p>
+<p>Bạn cũng có thể trộn lẫn các loại phần tử khác nhau như số, chữ và cả hình ảnh.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>mixed_list = [“hello!”, 10, Image.HAPPY]
+</pre></div>
+</div>
+<p>Bằng cách dùng danh sách, bạn có thể yêu cầu MicroPython hiện ra các hình ảnh khác nhau liên tục. Thư viện hình ảnh của Yolo:Bit đã cung cấp sẵn cho chúng ta một danh sách các hình ảnh, là Image.ALL_CLOCKS chứa các hình của 12 giờ và Image.ALL_ARROWS chứa hình các mũi tên của 8 hướng. Hãy thử viết chương trình hiện chúng ra xem sao nào:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ALL_CLOCKS</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sau khi chạy chương trình, bạn sẽ thấy hình kim đồng hồ xoay 1 vòng giống như 1 hình ảnh hoạt hình phải không nào.</p>
+<p>Câu lệnh display.show ngoài việc hiện ra 1 hình ảnh, bạn cũng có thể truyền vào 1 danh sách các hình để hiện ra lần lượt, và mỗi hình các nhau 1 khoảng thời gian được khai báo trong tham số delay là 200 milli giây (tức là 0.2 giây).</p>
+<p>Bạn hãy thử chiếu một danh sách các hình theo ý mình, ví dụ như dưới đây:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+
+boat1 = Image(“01010:”
+
+              “01010:”
+
+              “01010:”
+
+              “44444:”
+
+              “04440”)
+
+boat2 = Image(“00000:”
+
+              “01010:”
+
+              “01010:”
+
+              “01010:”
+
+              “44444”)
+
+boat3 = Image(“00000:”
+
+              “00000:”
+
+              “01010:”
+
+              “01010:”
+
+              “01010”)
+
+boat4 = Image(“00000:”
+
+              “00000:”
+
+              “00000:”
+
+              “01010:”
+
+              “01010”)
+
+boat5 = Image(“00000:”
+
+              “00000:”
+
+              “00000:”
+
+              “00000:”
+
+              “01010”)
+
+boat6 = Image(“00000:”
+
+              “00000:”
+
+              “00000:”
+
+              “00000:”
+
+              “00000”)
+
+all_boats = [boat1, boat2, boat3, boat4, boat5, boat6]
+
+display.show(all_boats, delay=500)
+</pre></div>
+</div>
+<p>Một đoạn code rất dài phải không nào, tuy nhiên nó không phức tạp lắm đâu. Hãy cùng xem nó làm gì nào:</p>
+<p>Đầu tiên chúng ta tạo ra 6 hình ảnh của con thuyền đặt tên từ boat1 đến boat6 như phần tạo ra hình ảnh ở đầu bài này.
+Sau đó ta cho hết chúng vào một danh sách đặt tên là boats.
+Cuối cùng chúng ta dùng lệnh display.show để lần lượt hiện ra các hình cách nhau 500 milli giây (nửa giây)
+Làm hoạt hình MicroPython thật dễ phải không nào? Bạn hãy thử tạo ra các hình ảnh hoạt họa sáng tạo khác nhé.</p>
 </div>
 
 

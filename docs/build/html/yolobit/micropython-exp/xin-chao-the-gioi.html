@@ -209,11 +209,31 @@
             
   <div class="section" id="xin-chao-the-gioi">
 <h1>Xin chào thế giới<a class="headerlink" href="#xin-chao-the-gioi" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="k">if</span> <span class="n">btn_onboard</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Button Onboard is pressed&quot;</span><span class="p">)</span>
+<p>Trong hầu hết các tài liệu hướng dẫn lập trình một ngôn ngữ, thì bài học đầu tiên phần lớn sẽ là viết một chương trình cho máy tính hiện ra dòng chữ Hello World (xin chào thế giới). Chúng ta cũng sẽ làm tương tự nhé.</p>
+<a class="reference internal image-reference" href="../../_images/ls-1-12.png"><img alt="../../_images/ls-1-12.png" class="align-center" src="../../_images/ls-1-12.png" style="width: 600px;" /></a>
+<p>Để làm được điều đó thì thật là dễ với MicroPython với các dòng lệnh sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+
+display.scroll(‘Hello World’)
 </pre></div>
 </div>
+<p>Chúng ta tìm hiểu từng dòng lệnh một nhé. Dòng đầu tiên là:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Dòng lệnh này bảo MicroPython rằng hãy sử dụng tất cả mọi thứ cần thiết để làm việc với Yolo:Bit. Tất cả các thứ cần thiết này được chứa trong một thành phần đã được tạo sẵn tên là yolobit (trong lập trình người ta gọi các thành phần như vậy là thư viện, giống như thư viện là nơi bạn hay đọc sách nhé).</p>
+<p>Khi bạn dùng lệnh import nghĩa là bạn muốn sử dụng, còn dấu * nghĩa là bạn muốn sử dụng toàn bộ những gì có trong thư viện đó.</p>
+<p>Còn dòng thứ 2 như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>display.scroll(‘Hello World’)
+</pre></div>
+</div>
+<p>Dòng lệnh này yêu cầu MicroPython thực hiện hành động scroll của đối tượng display để hiện ra dòng chữ Hello World. Đối tượng display này là một đối tượng có trong thư viện yolobit được dùng để làm việc với màn hình LED của Yolo:Bit. Ngoài scroll ra thì đối tượng display này còn có nhiều hành động khác nữa mà chúng ta sẽ tìm hiểu sau. Các hành động này trong lập trình còn được gọi là các hàm.</p>
+<p>Khi chúng ta gọi các hàm này, chúng ta có thể truyền vào thông tin để các hàm này chạy theo ý muốn. Ví dụng trong câu lệnh trên, để hiện ra dòng chữ Hello World thì ta truyền dòng chữ này trong câu lệnh và bọc trong ngoặc tròn và dấu nháy kép (“  “).</p>
+<p>Một số hàm nếu không cần truyền thêm thông tin vào thì có thể gọi và bọc trong 2 dấu ngoặc tròn mà không có dấu nháy kép ( ).</p>
+<p>Bạn hãy copy 2 dòng lệnh trên vào giao diện lập trình Python của Yolo:Bit, kết nối Yolo:Bit và nhấn nút Chạy để chạy thử chương trình.</p>
+<a class="reference internal image-reference" href="../../_images/ls-1-22.png"><img alt="../../_images/ls-1-22.png" class="align-center" src="../../_images/ls-1-22.png" style="width: 600px;" /></a>
+<p>Nếu thành công bạn sẽ thấy màn hình LED của Yolo:Bit hiện ra dòng chữ Hello World nhé. Thật đơn giản phải không?</p>
+<p>Như vậy bạn đã biết cách viết và chạy một chương trình MicroPython đơn giản và học được một số khái niệm cơ bản. Chúng ta cùng tìm hiểu thêm những thứ hấp dẫn hơn nữa ở phần sau nào.</p>
 </div>
 
 

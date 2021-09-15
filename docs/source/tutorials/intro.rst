@@ -1,5 +1,4 @@
-xBuild Creator Kit 
-Cho Giáo Dục STEM
+xBuild Creator Kit Cho Giáo Dục STEM
 ====================
 
 

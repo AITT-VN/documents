@@ -5,7 +5,7 @@ timer.get()
     :scale: 100 %
     :align: center
 
-Hoàn trả về giá trị thời gian tính bằng ``ms`` kể từ lúc reset.
+Trả về giá trị tổng thời gian chạy của chương trình kể từ khi bắt đầu (tính theo mili giây)
 
 Ví dụ
 ----------------------

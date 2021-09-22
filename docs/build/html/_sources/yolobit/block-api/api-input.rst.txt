@@ -12,15 +12,15 @@ Ngõ vào
 .. toctree::
    :maxdepth: 1
 
-   api-input/api-input-1.rst
-   api-input/api-input-2.rst
-   api-input/api-input-3.rst
-   api-input/api-input-4.rst
-   api-input/api-input-5.rst
-   api-input/api-input-10.rst
-   api-input/api-input-11.rst
-   api-input/api-input-6.rst
-   api-input/api-input-7.rst
-   api-input/api-input-8.rst
-   api-input/api-input-9.rst
+   api-input/yolobit_input_button_is_pressed.rst
+   api-input/yolobit_input_button_get_presses.rst
+   api-input/yolobit_input_pin_touched.rst
+   api-input/yolobit_input_gesture_detected.rst
+   api-input/yolobit_input_running_time.rst
+   api-input/yolobit_input_timer_reset.rst
+   api-input/yolobit_input_timer_get.rst
+   api-input/yolobit_input_get_temperature.rst
+   api-input/yolobit_input_get_light_level.rst
+   api-input/yolobit_input_accelerometer_get_value.rst
+   api-input/yolobit_input_on_button_pressed.rst
 

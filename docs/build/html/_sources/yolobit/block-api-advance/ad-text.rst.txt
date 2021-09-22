@@ -12,14 +12,14 @@ Chữ viết
 .. toctree::
    :maxdepth: 1
 
-   ad-text/ad-text-1.rst
-   ad-text/ad-text-2.rst
-   ad-text/ad-text-3.rst
-   ad-text/ad-text-4.rst
-   ad-text/ad-text-5.rst
-   ad-text/ad-text-6.rst
-   ad-text/ad-text-7.rst
-   ad-text/ad-text-8.rst
-   ad-text/ad-text-9.rst
-   ad-text/ad-text-10.rst
-   ad-text/ad-text-11.rst
+   ad-text/text.rst
+   ad-text/text_join.rst
+   ad-text/text_append.rst
+   ad-text/text_length.rst
+   ad-text/text_isEmpty.rst
+   ad-text/text_indexOf.rst
+   ad-text/text_charAt.rst
+   ad-text/text_getSubstring.rst
+   ad-text/text_changeCase.rst
+   ad-text/text_trim.rst
+   ad-text/text_print.rst

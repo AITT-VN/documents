@@ -12,12 +12,12 @@ Di chuyển
 .. toctree::
    :maxdepth: 1
 
-   api-move-1.rst
-   api-move-2.rst
-   api-move-3.rst
-   api-move-4.rst
-   api-move-5.rst
-   api-move-6.rst
-   api-move-7.rst
-   api-move-8.rst
-   api-move-9.rst
+   api-move/xbot_move_move_delay.rst
+   api-move/xbot_move_move.rst
+   api-move/xbot_move_turn_angle.rst
+   api-move/xbot_move_motor.rst
+   api-move/time.rst
+   api-move/xbot_move_stop.rst
+   api-move/block_move_servo.rst
+   api-move/block_move_servo_rotate.rst
+   api-move/block_move_servo360_xbot.rst

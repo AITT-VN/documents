@@ -12,8 +12,8 @@ Serial
 .. toctree::
    :maxdepth: 1
 
-   ad-serial/ad-serial-1.rst
-   ad-serial/ad-serial-2.rst
-   ad-serial/ad-serial-3.rst
-   ad-serial/ad-serial-4.rst
-   ad-serial/ad-serial-5.rst
+   ad-serial/xbot_serial_write_string.rst
+   ad-serial/xbot_serial_write_number.rst
+   ad-serial/xbot_serial_write_value.rst
+   ad-serial/xbot_serial_write_line.rst
+   ad-serial/xbot_serial_write_timer.rst

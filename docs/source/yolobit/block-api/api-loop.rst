@@ -12,8 +12,9 @@ Vòng lặp
 .. toctree::
    :maxdepth: 1
 
-   api-loop/api-loop-4.rst
-   api-loop/api-loop-5.rst
-   api-loop/api-loop-6.rst
-   api-loop/api-loop-7.rst
-   api-loop/api-loop-8.rst
+   api-loop/block_wait_until.rst
+   api-loop/controls_repeat_ext.rst
+   api-loop/controls_whileUntil.rst
+   api-loop/controls_for.rst
+   api-loop/controls_forEach.rst
+   api-loop/controls_flow_statements.rst

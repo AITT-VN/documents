@@ -12,15 +12,15 @@ Hiệu ứng
 .. toctree::
    :maxdepth: 1
 
-   api-effect-1.rst
-   api-effect-2.rst
-   api-effect-3.rst
-   api-effect-4.rst
-   api-effect-5.rst
-   api-effect-6.rst
-   api-effect-7.rst
-   api-effect-8.rst
-   api-effect-9.rst
-   api-effect-10.rst
-   api-effect-11.rst
-   api-effect-12.rst
+   api-effect/xbot_message.rst
+   api-effect/xbot_speaker_play_built_in.rst
+   api-effect/xbot_speaker_play_until_done.rst
+   api-effect/xbot_speaker_play_note.rst
+   api-effect/xbot_speaker_stop.rst
+   api-effect/xbot_speaker_pitch.rst
+   api-effect/xbot_led_onboard_delay.rst
+   api-effect/xbot_led_onboard_single.rst
+   api-effect/xbot_led_onboard_rgb.rst
+   api-effect/xbot_led_onboard_clear.rst
+   api-effect/xbot_LED_matrix_show_adv_image.rst
+   api-effect/xbot_LED_matrix_display.rst

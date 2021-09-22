@@ -12,11 +12,11 @@ WIFI
 .. toctree::
    :maxdepth: 1
 
-   api-wifi/api-wifi-1.rst
-   api-wifi/api-wifi-2.rst
-   api-wifi/api-wifi-3.rst
-   api-wifi/api-wifi-4.rst
+   api-wifi/yolobit_wifi_connect.rst
+   api-wifi/apyolobit_wifi_check_message.rst
+   api-wifi/yolobit_wifi_send_message.rst
+   api-wifi/yolobit_wifi_on_receive_message.rst
    api-wifi/api-wifi-example-1.rst
-   api-wifi/api-wifi-5.rst
-   api-wifi/api-wifi-6.rst
+   api-wifi/yolobit_wifi_log_data.rst
+   api-wifi/yolobit_wifi_on_receive_message_from_dashboard.rst
    api-wifi/api-wifi-example-2.rst

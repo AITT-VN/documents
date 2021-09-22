@@ -12,12 +12,13 @@
 .. toctree::
    :maxdepth: 1
 
-   api-music/api-music-1.rst
-   api-music/api-music-2.rst
-   api-music/api-music-3.rst
-   api-music/api-music-4.rst
-   api-music/api-music-5.rst
-   api-music/api-music-6.rst
-   api-music/api-music-7.rst
-   api-music/api-music-8.rst
-   api-music/api-music-9.rst
+   api-music/yolobit_music_play_built_in.rst
+   api-music/yolobit_music_play_built_in_until_done.rst
+   api-music/yolobit_music_note.rst
+   api-music/yolobit_music_play_note.rst
+   api-music/yolobit_music_rest.rst
+   api-music/yolobit_music_stop.rst
+   api-music/yolobit_music_pitch.rst
+   api-music/yolobit_music_set_tempo.rst
+   api-music/yolobit_music_reset.rst
+   api-music/yolobit_music_get_tempo.rst

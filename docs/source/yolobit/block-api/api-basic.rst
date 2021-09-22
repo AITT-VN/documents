@@ -12,12 +12,12 @@ Cơ bản
 .. toctree::
    :maxdepth: 1
 
-   api-basic/api-basic-1.rst
-   api-basic/api-basic-2.rst
-   api-basic/api-basic-3.rst
-   api-basic/api-basic-4.rst
-   api-basic/api-basic-5.rst
-   api-basic/api-basic-6.rst
-   api-basic/api-basic-7.rst
-   api-basic/api-basic-9.rst
-   api-basic/api-basic-8.rst
+   api-basic/yolobit_basic_scroll_number.rst
+   api-basic/yolobit_basic_scroll_text.rst
+   api-basic/yolobit_basic_show_image_built.rst
+   api-basic/yolobit_basic_show_image.rst
+   api-basic/yolobit_basic_sleep.rst
+   api-basic/yolobit_basic_clear_display.rst
+   api-basic/yolobit_basic_timer.rst
+   api-basic/yolobit_basic_message.rst
+   api-basic/yolobit_basic_forever.rst

@@ -12,13 +12,13 @@ Tính toán
 .. toctree::
    :maxdepth: 1
 
-   api-math-1.rst
-   api-math-2.rst
-   api-math-3.rst
-   api-math-4.rst
-   api-math-5.rst
-   api-math-6.rst
-   api-math-7.rst
-   api-math-8.rst
-   api-math-9.rst
-   api-math-10.rst
+   api-math/math_number.rst
+   api-math/math_arithmetic.rst
+   api-math/math_random_int.rst
+   api-math/math_random_float.rst
+   api-math/math_single.rst
+   api-math/math_trig.rst
+   api-math/math_number_property.rst
+   api-math/math_round.rst
+   api-math/math_modulo.rst
+   api-math/xbot_math_map.rst

@@ -12,9 +12,9 @@ LED
 .. toctree::
    :maxdepth: 1
 
-   api-led/api-led-1.rst
-   api-led/api-led-2.rst
-   api-led/api-led-3.rst
-   api-led/api-led-4.rst
-   api-led/api-led-5.rst
-   api-led/api-led-6.rst
+   api-led/yolobit_led_set_xy.rst
+   api-led/yolobit_led_clear_xy.rst
+   api-led/yolobit_led_set_all.rst
+   api-led/yolobit_led_show_graph.rst
+   api-led/yolobit_led_set_brightness.rst
+   api-led/yolobit_led_colour_rgb.rst

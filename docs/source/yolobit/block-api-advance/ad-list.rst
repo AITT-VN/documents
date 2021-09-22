@@ -12,14 +12,14 @@ Danh sách
 .. toctree::
    :maxdepth: 1
 
-   ad-list/ad-list-1.rst
-   ad-list/ad-list-2.rst
-   ad-list/ad-list-3.rst
-   ad-list/ad-list-4.rst
-   ad-list/ad-list-5.rst
-   ad-list/ad-list-6.rst
-   ad-list/ad-list-7.rst
-   ad-list/ad-list-8.rst
-   ad-list/ad-list-9.rst
-   ad-list/ad-list-10.rst
-   ad-list/ad-list-11.rst
+   ad-list/lists_create_with_1.rst
+   ad-list/lists_create_with_2.rst
+   ad-list/lists_repeat.rst
+   ad-list/lists_length.rst
+   ad-list/lists_isEmpty.rst
+   ad-list/lists_indexOf.rst
+   ad-list/lists_getIndex.rst
+   ad-list/lists_setIndex.rst
+   ad-list/lists_getSublist.rst
+   ad-list/lists_split.rst
+   ad-list/lists_sort.rst

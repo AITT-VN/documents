@@ -19,13 +19,13 @@ Chân cắm
 .. toctree::
    :maxdepth: 1
 
-   ad-pin/ad-pin-1.rst
-   ad-pin/ad-pin-2.rst
-   ad-pin/ad-pin-3.rst
-   ad-pin/ad-pin-4.rst
-   ad-pin/ad-pin-5.rst
-   ad-pin/ad-pin-6.rst
-   ad-pin/ad-pin-7.rst
-   ad-pin/ad-pin-8.rst
-   ad-pin/ad-pin-9.rst
-   ad-pin/ad-pin-10.rst
+   ad-pin/yolobit_pin_touched.rst
+   ad-pin/yolobit_pin_read_analog.rst
+   ad-pin/yolobit_pin_write_analog.rst
+   ad-pin/yolobit_pin_read_digital.rst
+   ad-pin/yolobit_pin_pulse_in.rst
+   ad-pin/yolobit_pin_write_digital.rst
+   ad-pin/yolobit_pin_servo_write_angle.rst
+   ad-pin/yolobit_pin_servo360_write.rst
+   ad-pin/yolobit_pin_set_pull.rst
+   ad-pin/yolobit_pin_onoff_value.rst

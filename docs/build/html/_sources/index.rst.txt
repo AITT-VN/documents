@@ -7,7 +7,7 @@ OhStem xin chào tất cả các bạn!
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Cửa hàng
 
    store/store.rst

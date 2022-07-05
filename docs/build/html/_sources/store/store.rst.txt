@@ -1,2 +1,2 @@
-`Đi tới cửa hàng <https://ohstem.vn/do-choi-thong-minh/>`_
+`Đi tới cửa hàng <https://ohstem.vn/>`_
 ====================================================

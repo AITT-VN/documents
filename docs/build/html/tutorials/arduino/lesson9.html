@@ -1,78 +1,37 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Bài học 9: Cảm biến gia tốc góc nghiêng &mdash; OhStem Product Documents 0.0.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-
-  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Bài học 10: Hiển thị thông tin lên màn hình LCD" href="lesson10.html" />
     <link rel="prev" title="Bài học 8: Phát nhạc với còi báo" href="lesson8.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: white" >
-          
-
-          
             <a href="../../index.html">
-          
-
-          
-            
             <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -80,18 +39,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">xController</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../board/introduction.html">Giới thiệu</a></li>
@@ -158,84 +106,40 @@
 <li class="toctree-l1"><a class="reference internal" href="../../app/blockapi.html">Block API</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">OhStem Product Documents</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="index.html">Hướng dẫn lập trình Arduino</a> &raquo;</li>
-        
       <li>Bài học 9: Cảm biến gia tốc góc nghiêng</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson9.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="bai-hoc-9-cam-bien-gia-toc-goc-nghieng">
-<h1>Bài học 9: Cảm biến gia tốc góc nghiêng<a class="headerlink" href="#bai-hoc-9-cam-bien-gia-toc-goc-nghieng" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="bai-hoc-9-cam-bien-gia-toc-goc-nghieng">
+<h1>Bài học 9: Cảm biến gia tốc góc nghiêng<a class="headerlink" href="#bai-hoc-9-cam-bien-gia-toc-goc-nghieng" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <p>Các bạn sử dụng điện thoại ắt hẳn đã từng chơi qua những game như đua xe, lắc banh… mà trong đó, các bạn phải nghiêng, xoay điện thoại phải không? Làm sao điện thoại có thể biết chính nó bị nghiêng hay xoay về hướng nào? Câu trả lời là dựa vào cảm biến gia tốc.</p>
 <p>Trong bài học này, chúng ta sẽ cùng tìm hiểu về cảm biến gia tốc, góc nghiêng và một phương thức giao tiếp mới là I2C.</p>
-</div>
-<div class="section" id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="kien-thuc-moi">
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
 <p><em>IMU</em></p>
 <p>IMU (<code class="docutils literal notranslate"><span class="pre">Inertial</span> <span class="pre">Measurement</span> <span class="pre">Unit</span></code>) là một con chip để đo những chuyển động như đã giới thiệu ở trên. Một module IMU thường gồm 2 loại cảm biến: cảm biến gia tốc (Accelerometer) và cảm biến quay (Gyroscope).</p>
 <blockquote>
@@ -257,118 +161,101 @@
 </ul>
 </div></blockquote>
 <p>Nhiều thiết bị có thể được kết nối vào cùng một bus I2C, tuy nhiên điều này sẽ không gây xung đột bởi mỗi thiết bị đều được nhận diện bởi một địa chỉ I2C duy nhất.</p>
-</div>
-<div class="section" id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-1.png"><img alt="../../_images/device-1.png" class="align-center" src="../../_images/device-1.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
 <p>Bạn cũng có thể mở chương trình mẫu tương tự bằng cách vào <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Examples</span> <span class="pre">&gt;</span> <span class="pre">xController</span> <span class="pre">library</span></code>, chọn chương trình <code class="docutils literal notranslate"><span class="pre">motion</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;mpu6050.h&quot;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;mpu6050.h&quot;</span><span class="cp"></span>
 
-<span class="n">MPU6050</span> <span class="n">mpu</span><span class="p">;</span>
-<span class="kt">float</span> <span class="n">tmp</span><span class="p">;</span>
+<span class="n">MPU6050</span><span class="w"> </span><span class="n">mpu</span><span class="p">;</span><span class="w"></span>
+<span class="kt">float</span><span class="w"> </span><span class="n">tmp</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
-  <span class="n">mpu</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(){</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">mpu</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
-  <span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;        AccelX:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">());</span>
-  <span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelY:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">());</span>
-  <span class="n">tmp</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">(),</span> <span class="mi">-16384</span><span class="p">,</span> <span class="mi">16384</span><span class="p">,</span> <span class="mi">-90</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelZ:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">());</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroX:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroX</span><span class="p">());</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroY:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroY</span><span class="p">());</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroZ:  &quot;</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroZ</span><span class="p">());</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;   &quot;</span><span class="p">);</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(){</span><span class="w"></span>
+<span class="w">  </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">(),</span><span class="w"> </span><span class="mi">-16384</span><span class="p">,</span><span class="w"> </span><span class="mi">16384</span><span class="p">,</span><span class="w"> </span><span class="mi">-90</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;        AccelX:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccX</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">(),</span><span class="w"> </span><span class="mi">-16384</span><span class="p">,</span><span class="w"> </span><span class="mi">16384</span><span class="p">,</span><span class="w"> </span><span class="mi">-90</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelY:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccY</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">(),</span><span class="w"> </span><span class="mi">-16384</span><span class="p">,</span><span class="w"> </span><span class="mi">16384</span><span class="p">,</span><span class="w"> </span><span class="mi">-90</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    AccelZ:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getAccZ</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroX:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroX</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroY:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroY</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;    GyroZ:  &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">mpu</span><span class="p">.</span><span class="n">getGyroZ</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;   &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Chương trình trên liên tục đọc và in ra giá trị tất cả các trục xyz của cảm biến gia tốc và cảm biến quay. Sau khi chạy chương trình, bạn hãy mở cửa sổ Serial để quan sát kết quả đọc được.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;mpu6050.h&quot;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;mpu6050.h&quot;</span><span class="cp"></span>
 </pre></div>
 </div>
 <p>Khai báo thư viện để làm việc với mpu6050.</p>
 <p>Tạo biến để lưu giá trị đọc được từ cảm biến MPU6050.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;AccelX:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccX</span><span class="o">());</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;AccelX:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccX</span><span class="o">());</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Đọc giá trị trục X của cảm biến gia tốc. Do cảm biến gia tốc trả về giá trị từ <code class="docutils literal notranslate"><span class="pre">-16384</span> <span class="pre">~</span> <span class="pre">16384</span></code> nên ta dùng hàm <code class="docutils literal notranslate"><span class="pre">map()</span></code> để chuyển sang dải giá trị góc từ <code class="docutils literal notranslate"><span class="pre">-90</span> <span class="pre">~</span> <span class="pre">90</span></code> (để dễ hiểu hơn). Sau đó, dùng hàm <code class="docutils literal notranslate"><span class="pre">Serial.print()</span></code> để in ra giá trị này.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">tmp</span> <span class="o">=</span> <span class="nt">map</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccY</span><span class="o">(),</span> <span class="nt">-16384</span><span class="o">,</span> <span class="nt">16384</span><span class="o">,</span> <span class="nt">-90</span><span class="o">,</span> <span class="nt">90</span><span class="o">);</span>
-<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    AccelY:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccY</span><span class="o">());</span>
-<span class="nt">tmp</span> <span class="o">=</span> <span class="nt">map</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccZ</span><span class="o">(),</span> <span class="nt">-16384</span><span class="o">,</span> <span class="nt">16384</span><span class="o">,</span> <span class="nt">-90</span><span class="o">,</span> <span class="nt">90</span><span class="o">);</span>
-<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    AccelZ:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccZ</span><span class="o">());</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">map</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccY</span><span class="o">(),</span><span class="w"> </span><span class="nt">-16384</span><span class="o">,</span><span class="w"> </span><span class="nt">16384</span><span class="o">,</span><span class="w"> </span><span class="nt">-90</span><span class="o">,</span><span class="w"> </span><span class="nt">90</span><span class="o">);</span><span class="w"></span>
+<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    AccelY:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccY</span><span class="o">());</span><span class="w"></span>
+<span class="nt">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">map</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccZ</span><span class="o">(),</span><span class="w"> </span><span class="nt">-16384</span><span class="o">,</span><span class="w"> </span><span class="nt">16384</span><span class="o">,</span><span class="w"> </span><span class="nt">-90</span><span class="o">,</span><span class="w"> </span><span class="nt">90</span><span class="o">);</span><span class="w"></span>
+<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    AccelZ:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getAccZ</span><span class="o">());</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Áp dụng tương tự để đọc và in ra trục Y và Z của cảm biến gia tốc.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroX:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroX</span><span class="o">());</span>
-<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroY:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroY</span><span class="o">());</span>
-<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroZ:  &quot;</span><span class="o">);</span> <span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroZ</span><span class="o">());</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroX:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroX</span><span class="o">());</span><span class="w"></span>
+<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroY:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroY</span><span class="o">());</span><span class="w"></span>
+<span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="s2">&quot;    GyroZ:  &quot;</span><span class="o">);</span><span class="w"> </span><span class="nt">Serial</span><span class="p">.</span><span class="nc">print</span><span class="o">(</span><span class="nt">mpu</span><span class="p">.</span><span class="nc">getGyroZ</span><span class="o">());</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Đọc và in ra giá trị 3 trục XYZ của cảm biến quay Gyroscope.</p>
 <p><em>Khi chương trình chạy, giá trị các trục XYZ của 2 cảm biến sẽ được hiển thị lên cửa sổ Serial.</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="lesson10.html" class="btn btn-neutral float-right" title="Bài học 10: Hiển thị thông tin lên màn hình LCD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="lesson8.html" class="btn btn-neutral float-left" title="Bài học 8: Phát nhạc với còi báo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="lesson10.html" class="btn btn-neutral float-right" title="Bài học 10: Hiển thị thông tin lên màn hình LCD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, OHSTEM.
-
-    </p>
+    <p>&#169; Copyright 2021, OHSTEM.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

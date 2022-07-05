@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Âm nhạc &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/">Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../app/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/install.html">Cài đặt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/frontend.html">Giao diện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/connect.html">Kết nối</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/runandsave.html">Chạy và lưu project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/createnew.html">Tạo một mục mở rộng mới</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/blockapi.html">Block API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Âm nhạc</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteryolobit_v1/micropython-exp/am-nhac.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="am-nhac">
+<h1>Âm nhạc<a class="headerlink" href="#am-nhac" title="Permalink to this heading"></a></h1>
+<p>MicroPython trên Yolo:Bit cung cấp đi kèm một thư viện rất thú vị để làm việc với loa có sẵn trên Yolo:Bit để phát ra âm nhạc.</p>
+<p>Chúng ta hãy thử phát ra một bài nhạc nào:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+<span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">music</span><span class="o">.</span><span class="n">NYAN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Bạn để ý thấy để làm việc với âm nhạc, ta sử dụng thư viện music bằng câu lệnh import. Trong thư viện này, ta dùng hàm <code class="docutils literal notranslate"><span class="pre">play()</span></code> để chơi một bài nhạc. Sau đây là danh sách các bài nhạc có sẵn trong Yolo:Bit:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>music.DADADADUM</p></li>
+<li><p>music.ENTERTAINER</p></li>
+<li><p>music.PRELUDE</p></li>
+<li><p>music.ODE</p></li>
+<li><p>music.NYAN</p></li>
+<li><p>music.RINGTONE</p></li>
+<li><p>music.FUNK</p></li>
+<li><p>music.BLUES</p></li>
+<li><p>music.BIRTHDAY</p></li>
+<li><p>music.WEDDING</p></li>
+<li><p>music.CHASE</p></li>
+<li><p>music.JUMP_UP</p></li>
+<li><p>music.JUMP_DOWN</p></li>
+<li><p>music.POWER_UP</p></li>
+<li><p>music.POWER_DOWN</p></li>
+</ul>
+</div></blockquote>
+<p>Ngoài ra, bạn cũng có thể dễ dàng chơi các nốt nhạc để tạo thành một bản nhạc theo ý muốn. Các nốt nhạc được đặt tên theo ký tự như sau: C (Đồ), D (Rê), E (Mi), F (Fa), G (Son), A (La), B (Si).</p>
+<p>Ngoài ra, mỗi nốt nhạc còn có quãng tám octave, chấp nhận các giá trị là từ 1 đến 8 và độ dài chấp nhận một trong các giá trị 0.25, 0.5, 1, 2, 4, 8.</p>
+<p>Mỗi nốt nhạc được viết như sau: <code class="docutils literal notranslate"><span class="pre">NOTE[octave]:[duration]</span></code>.</p>
+<p>Ví dụ nốt nhạc “A4:4” là nốt La quãng trung có độ dài là 4. Dựa theo đó, bạn thử chạy chương trình này và đoán xem bài gì nhé:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>import music
+
+  tune = [“C4:4”, “D4:4”, “E4:4”, “C4:4”, “C4:4”, “D4:4”, “E4:4”, “C4:4”,
+
+          “E4:4”, “F4:4”, “G4:8”, “E4:4”, “F4:4”, “G4:8”]
+
+  music.play(tune)
+</pre></div>
+</div>
+<p><strong>Hiệu ứng âm thanh</strong></p>
+<p>Không chỉ phát ra các nốt nhạc, thư viện music của MicroPython trên Yolo:Bit còn có thể phát ra các âm thanh ở các tần số khác nhau, giúp chúng ta phát ra được những hiệu ứng âm thanh theo ý muốn.</p>
+<p>Ví dụ nếu ta muốn phát ra âm thanh hú còi báo động giống của cảnh sát:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+      <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">880</span><span class="p">,</span> <span class="mi">1760</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
+
+          <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+      <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1760</span><span class="p">,</span> <span class="mi">880</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">):</span>
+
+          <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">music.pitch()</span></code> nhận đầu vào là tần số của âm thanh cần phát và độ dài. Nốt A (La) quãng trung có tần số khoảng 440.</p>
+<p>Trong chương trình trên, ta dùng hàm <code class="docutils literal notranslate"><span class="pre">range()</span></code> của MicroPython để tạo ra một danh sách các tần số theo thông tin truyền vào. Hàm này nhận 3 thông tin truyền vào là số bắt đầu, số kết thúc và giá trị mỗi lần tăng hoặc giảm (nếu là số âm).</p>
+<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">range(880,</span> <span class="pre">1760,</span> <span class="pre">16)</span></code> ý nghĩa là yêu cầu MicroPython tạo ra một dãy các số bắt đầu từ 880 và kết thúc ở 1760 với bước nhảy là 16.</p>
+<p>Sau khi tạo ra dãy số, chúng ta dùng vòng lặp for để lặp qua từng con số trong dãy số được tạo ra và dùng hàm music.pitch để phát ra âm thanh có tần số bằng với số đang được lặp qua trong dãy số đó.</p>
+<p>Làm việc với âm nhạc trong Yolo:Bit thật dễ dàng phải không các bạn.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

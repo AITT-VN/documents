@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nút nhấn &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/">Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../app/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/install.html">Cài đặt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/frontend.html">Giao diện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/connect.html">Kết nối</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/runandsave.html">Chạy và lưu project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/createnew.html">Tạo một mục mở rộng mới</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../app/blockapi.html">Block API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Nút nhấn</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteryolobit_v1/micropython-exp/nut-nhan.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nut-nhan">
+<h1>Nút nhấn<a class="headerlink" href="#nut-nhan" title="Permalink to this heading"></a></h1>
+<p>Trong các bài trước, bạn đã học được cách viết các lệnh yêu cầu Yolo:Bit làm các việc nào đó như hiện ra hình ảnh trên màn hình LED. Các lệnh đó gọi là lệnh điều khiển và xuất ra thông tin (output). Chúng ta cũng cần thiết bị Yolo:Bit phản ứng lại với các tác động từ bên ngoài, gọi là xử lý thông tin nhập vào (input).</p>
+<p>Hãy nhớ một cách đơn giản nhé, output là những gì thiết bị đưa ra cho chúng ta nhìn thấy, hoặc nghe được,  còn input là những thông tin được đưa vào để thiết bị nhận được và xử lý.</p>
+<a class="reference internal image-reference" href="../../_images/ls-3-12.png"><img alt="../../_images/ls-3-12.png" class="align-center" src="../../_images/ls-3-12.png" style="width: 600px;" /></a>
+<p>Một thành phần input quan trọng được tích hợp sẵn trên Yolo:Bit đó là 2 nút nhấn trái phải được đặt tên là A và B.</p>
+<p>Chúng ta sẽ lập trình cho MicroPython xử lý khi các nút được nhấn. Bạn hãy thử chương trình này:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>Trong đoạn chương trình trên thì chúng ta cho Yolo:Bit tạm dừng chương trình trong 5 giây và sau đó hiện ra số lần nút A được nhấn trong 5 giây tạm dừng đó.</p>
+<p>Hàm sleep yêu cầu tạm dừng chương trình trong khoảng thời gian do bạn truyền vào khi gọi hàm. Trong đoạn lệnh trên chúng ta truyền vào số 5, tức là yêu cầu tạm dừng 5 giây.</p>
+<p>Trong dòng số 3, chúng ta dùng hàm <code class="docutils literal notranslate"><span class="pre">get_presses()</span></code> của đối tượng button_a để đọc ra số lần nút A được nhấn. button_a là đối tượng có sẵn trong thư viện yolobit để làm việc với nút A. Tương tự cho nút B chúng ta sẽ sử dụng đối tượng button_b.</p>
+<p>Dòng lệnh gọi hàm display.scroll bạn nhìn thấy có vẻ hơi lạ phải không nào vì được lồng nhiều lớp trong các ngoặc tròn (). Do hàm <code class="docutils literal notranslate"><span class="pre">get_presses()</span></code> trả về một số, nên chúng ta dùng hàm <code class="docutils literal notranslate"><span class="pre">str()</span></code> để đổi sang dạng chữ. Các câu lệnh lồng nhau như vậy rất giống hình ảnh các con búp bê Nga được lồng vào nhau từ nhỏ đến lớn phải không nào?</p>
+<a class="reference internal image-reference" href="../../_images/ls-3-22.png"><img alt="../../_images/ls-3-22.png" class="align-center" src="../../_images/ls-3-22.png" style="width: 600px;" /></a>
+<p>MicroPython sẽ xử lý từ bên trong ra ngoài trong trường hợp lệnh được viết như lồng nhau thế. Từ câu lệnh gốc ban đầu là:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>Giả sử bạn nhấn 10 lần trong thời gian tạm dừng, hàm <code class="docutils literal notranslate"><span class="pre">button_a.get_presses()</span></code> sẽ trả về 10, khi đó câu lệnh cần xử lý sẽ thành:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Hàm <code class="docutils literal notranslate"><span class="pre">str()</span></code> sẽ đổi 1 số thành 1 chuỗi chữ, nên câu lệnh sẽ thành:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>display.scroll(“10”)
+</pre></div>
+</div>
+<p>Khi đó, hàm <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> sẽ hoạt động như trong các ví dụ trước đó. Cũng không phức tạp lắm nhỉ.</p>
+<p><strong>Vòng lặp</strong></p>
+<a class="reference internal image-reference" href="../../_images/ls-3-32.png"><img alt="../../_images/ls-3-32.png" class="align-center" src="../../_images/ls-3-32.png" style="width: 600px;" /></a>
+<p>Trong phần lớn các chương trình viết ra, thì bạn sẽ cần chương trình đợi một sự kiện nào đó xảy ra (ví dụ như tới giờ thực hiện, nút A được nhấn hay khi nhiệt độ quá cao…) và thực hiện xử lý tình huống đó.</p>
+<p>Để làm được việc này, bạn sẽ cần dùng các lệnh về vòng lặp. Một vòng lặp phổ biến trong MicroPython là vòng lặp while, nó sẽ liên tục kiểm tra xem điều kiện nào đó có xảy ra hay không, nếu có thì sẽ thực hiện các lệnh được khai báo bên trong vòng lặp, còn nếu không thì chương trình sẽ tiếp tục chờ và kiểm tra liên tục.</p>
+<p>Các lệnh được khai báo trong vòng lặp này sẽ được nhóm thành 1 khối lệnh, tức là một danh sách các lệnh cần được thực hiện. Ví dụ các khối lệnh trong thực tế nhé. Giả sử một ngày hôm nay chúng ta cần làm 3 việc là:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Đi chợ mua đồ</p></li>
+<li><p>Dọn dẹp nhà cửa</p></li>
+<li><p>Nấu ăn</p></li>
+</ul>
+</div></blockquote>
+<p>Với mỗi việc đó, chúng ta sẽ liệt kê chi tiết ra các việc cần làm cho mỗi việc:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Đi chợ mua đồ</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Trứng</p></li>
+<li><p>Thịt</p></li>
+<li><p>Gạo</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Dọn dẹp nhà cửa</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Quét nhà</p></li>
+<li><p>Lau nhà</p></li>
+<li><p>Rửa chén</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Nấu ăn</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nấu cơm</p></li>
+<li><p>Nấu canh</p></li>
+<li><p>Chiên trứng</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p>Như bạn thấy ở trên, các danh sách công việc chi tiết được nhóm lại và được viết rõ ràng dễ nhìn bằng cách thụt đầu vào so với tên công việc chính. Tương tự các khối lệnh cũng được viết như vậy trong một chương trình MicroPython.</p>
+<p>Chúng ta thử xem chương trình ví dụ bên dưới đây:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="n">running_time</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="p">:</span>
+
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ASLEEP</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SURPRISED</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Trong chương trình trên, hàm <code class="docutils literal notranslate"><span class="pre">running_time()</span></code> sẽ trả về tổng thời gian từ lúc Yolo:Bit được cấp điện và chạy đến thời điểm hiện tại, và tính bằng đơn vị milli giây.</p>
+<p>Câu lệnh while <code class="docutils literal notranslate"><span class="pre">running_time()</span> <span class="pre">&lt;</span> <span class="pre">10000:</span></code> kiểm tra xem tổng thời gian chạy có nhỏ hơn 10000 milli giây (bằng 10 giây) hay không. Nếu đúng là nhỏ hơn, thì yêu cầu MicroPython hiện ra hình ảnh tên là Image.ASLEEP. Các bạn để ý thấy cách viết dòng lệnh bên dưới while được thụt vào, giống như khi ta khai báo danh sách công việc chi tiết ở bên trên.</p>
+<p>Sau đó, nếu chạy được một lúc và tổng thời gian chạy vượt quá 10000 milli giây thì màn hình Led sẽ hiện ra hình ảnh <code class="docutils literal notranslate"><span class="pre">Image.SURPRISED</span></code>. Vì sao vậy nhỉ? Bởi vì khi đó điều kiện của câu lệnh while sẽ bị sai (running_time không còn nhỏ hơn 10000 nữa), chương trình sẽ kết thúc vòng lặp và chạy tiếp câu lệnh bên dưới khối lệnh while.</p>
+<p>Bạn thử chạy chương trình để xem thử có phải đúng như vậy không nhé.</p>
+<p><strong>Xử lý sự kiện</strong></p>
+<p>Nếu chúng ta muốn MicroPython xử lý sự kiện nút nhấn thì chúng ta sẽ dùng một vòng lặp while vô tận và kiểm tra xem nút có được nhấn ở trong vòng lặp đó không bằng hàm is_pressed.</p>
+<p>Một vòng lặp vô tận có cú pháp như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="c1"># do something</span>
+</pre></div>
+</div>
+<p>Do điều kiện kiểm tra của vòng lặp <code class="docutils literal notranslate"><span class="pre">while</span></code> là <code class="docutils literal notranslate"><span class="pre">True</span></code> (luôn đúng), nên vòng lặp này sẽ chạy mãi mãi.</p>
+<p>Chúng ta hãy thử viết một chương trình luôn hiện ra mặt buồn (<code class="docutils literal notranslate"><span class="pre">Image.SAD</span></code>). Nhưng khi nút A được nhấn thì hiện ra mặt cười (<code class="docutils literal notranslate"><span class="pre">Image.HAPPY</span></code>). Nếu nút B được nhấn thì xóa màn hình và dừng chương trình.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>from yolobit import *</p>
+<blockquote>
+<div><p>while True:</p>
+<blockquote>
+<div><p>if button_a.is_pressed():</p>
+<blockquote>
+<div><p>display.show(Image.HAPPY)</p>
+</div></blockquote>
+<p>elif button_b.is_pressed():</p>
+<blockquote>
+<div><p>break</p>
+</div></blockquote>
+<p>else:</p>
+<blockquote>
+<div><p>display.show(Image.SAD)</p>
+</div></blockquote>
+</div></blockquote>
+<p>display.clear()</p>
+</div></blockquote>
+<p>Trong đoạn chương trình trên, chúng ta dùng một câu lệnh đặc biệt là <code class="docutils literal notranslate"><span class="pre">if</span></code> và <code class="docutils literal notranslate"><span class="pre">elif</span></code> (viết tắt của <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>) để kiểm tra nút A có được nhấn hay không. Câu lệnh này hoạt động như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">something</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="c1"># do one thing</span>
+
+<span class="k">elif</span> <span class="n">some</span> <span class="n">other</span> <span class="n">thing</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="c1"># do another thing</span>
+
+<span class="k">else</span><span class="p">:</span>
+
+    <span class="c1"># do yet another thing.</span>
+</pre></div>
+</div>
+<p>Cấu trúc rất giống một câu tiếng Anh bình thường phải không nào?</p>
+<p>Hàm is_pressed() chỉ trả về một trong 2 kết quả: <code class="docutils literal notranslate"><span class="pre">True</span></code> (đúng) hoặc <code class="docutils literal notranslate"><span class="pre">False</span></code> (sai). Nếu nút đang được nhấn thì hàm này trả về <code class="docutils literal notranslate"><span class="pre">True</span></code>, ngược lại sẽ trả về <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Trong vòng lặp vô tận trên, ta luôn kiểm tra xem nút A có được nhấn không, nếu nút A được nhấn thì hiện ra hình ảnh Image.HAPPY. Nếu nút A không được nhấn thì ta lại kiểm tra tiếp nút B có được nhấn không, nếu có thì thoát khỏi vòng lặp bằng lệnh break. Còn cuối cùng nếu không nữa (cả nút A và nút B đều không được nhấn) thì hiện ra mặt buồn Image.SAD.</p>
+<p>Cuối chương trình ta xóa màn hình Led và kết thúc vì đó là lệnh cuối cùng.</p>
+<p>Ngoài ra bạn còn có thể kết hợp nhiều điều kiện trong câu lệnh if hay elif bằng các toán tử như and, or và not.</p>
+<p>Ví dụ nếu ta muốn kiểm tra xem cả 2 nút A và B có được nhấn không thì có thể dùng như sau:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">()</span> <span class="ow">and</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Làm việc với nút nhấn kết hợp với vòng lặp và các lệnh kiểm tra sẽ giúp các bạn viết được các chương trình có logic phức tạp.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

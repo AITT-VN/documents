@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ví dụ - Kết nối Yolo:Bit với Yolo:Bit qua Wifi &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../../index.html">
+            <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/">Cửa hàng OhStem: https://ohstem.vn/do-choi-thong-minh/</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/introduction.html">Giới thiệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/install.html">Cài đặt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/frontend.html">Giao diện</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/connect.html">Kết nối</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/runandsave.html">Chạy và lưu project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/createnew.html">Tạo một mục mở rộng mới</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/blockapi.html">Block API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Ví dụ - Kết nối Yolo:Bit với Yolo:Bit qua Wifi</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteryolobit_v1/block-api/api-wifi/api-wifi-example-1.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vi-du-ket-noi-yolo-bit-voi-yolo-bit-qua-wifi">
+<h1>Ví dụ - Kết nối Yolo:Bit với Yolo:Bit qua Wifi<a class="headerlink" href="#vi-du-ket-noi-yolo-bit-voi-yolo-bit-qua-wifi" title="Permalink to this heading"></a></h1>
+<p>Với kết nối WiFi sẵn có, các Yolo:Bit có thể truyền nhận thông tin cho nhau từ bất kỳ đâu thông qua kết nối WiFi và Internet. Bạn thử tưởng tượng xem 2 Yolo:Bit có thể gửi tin nhắn cho nhau dù ở cách xa nhau nửa vòng trái đất. Thật là hay phải không nào?</p>
+<a class="reference internal image-reference" href="../../../_images/yolo-yolo-1.png"><img alt="../../../_images/yolo-yolo-1.png" class="align-center" src="../../../_images/yolo-yolo-1.png" style="width: 600px;" /></a>
+<p>Trước tiên, để Yolo:Bit nói chuyện được với nhau thì chúng cần phải kết nối tới WiFi để đi ra Internet. Để kết nốiYolo:Bit với WiFi, bạn cần:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Tên WiFi (ở nhà, ở trường, hoặc tên WiFi nào bạn có thể sử dụng được)</p></li>
+<li><p>Mật khẩu WiFi</p></li>
+<li><p>Đặt tên cho Yolo:Bit (hãy sử dụng tên để tránh bị trùng nhé!)</p></li>
+</ol>
+</div></blockquote>
+<p>Lưu ý: Nếu tên của Yolo:Bit đặt bị trùng thì Yolo:Bit trùng tên có thể nhận được hết thông tin bạn truyền về Yolo:Bit của mình. Một gợi ý để chọn tên không bị trùng là có thể dùng tên bạn và 1 dãy số đặc biệt nào đó như khanhchi-38811 hay baongoc-23156.</p>
+<p>Chương trình sau sẽ thực hiện các việc sau:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Cho Yolo:Bit kết nối WiFi với tên được đặt lần lượt là  yolobit_0001 và yolobit_0002. Bạn hãy thay đổi thông tin WiFi theo WiFi mà bạn đang kết nối.</p></li>
+<li><p>Sau khi kết nối WiFi, Yolo:Bit sẽ hiện hình mặt cười lên màn hình LED trong nửa giây để ta biết khi nào Yolo:Bit đã kết nối WiFi thành công.</p></li>
+<li><p>Khi nút A hay B được nhấn thì Yolo:Bit này sẽ gửi chữ A hoặc B đến Yolo:Bit kia thông qua tên.</p></li>
+<li><p>Yolo:Bit sẽ liên tục kiểm tra tin nhắn và hiện ra nội dung tin nhắn trên màn hình LED.</p></li>
+</ol>
+</div></blockquote>
+<p>Chương trình của Yolo:Bit(1) với tên là yolobit_0001:</p>
+<a class="reference internal image-reference" href="../../../_images/yolo-yolo-2.png"><img alt="../../../_images/yolo-yolo-2.png" class="align-center" src="../../../_images/yolo-yolo-2.png" style="width: 600px;" /></a>
+<p>Chương trình của Yolo:Bit(2) với tên là yolobit_0002:</p>
+<a class="reference internal image-reference" href="../../../_images/yolo-yolo-3.png"><img alt="../../../_images/yolo-yolo-3.png" class="align-center" src="../../../_images/yolo-yolo-3.png" style="width: 600px;" /></a>
+<p>Sau khi lần lượt nạp chương trình vào cả 2 Yolo:Bit, bạn quan sát xem Yolo:Bit có kết nối WiFi thành công hay không. Nếu không thành công, bạn nên kiểm tra lại thông tin WiFi và mật khẩu đã được nhập vào chính xác hay chưa nhé.</p>
+<p>Khi đã kết nối WiFi, nếu nút A hoặc B được nhấn thì Yolo:Bit kia sẽ nhận được và hiện lên màn hình LED mà không cần dây nối gì cả. Thật là ngầu phải không bạn. 2 Yolo:Bit hoàn toàn có thể nói chuyện với nhau với 2 mạng Wifi ở hai nơi khác nhau luôn nhé.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

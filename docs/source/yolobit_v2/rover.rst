@@ -1,4 +1,4 @@
-**Rover - Kit lập trình**
+**Rover - Kit robot lập trình**
 ====================
 
 .. toctree::

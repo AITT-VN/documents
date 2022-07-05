@@ -1,19 +1,20 @@
-Ohstem Education
+OhStem Education
 ======================================
 
-Ohstem xin chào tất cả các bạn!
+OhStem xin chào tất cả các bạn!
 
 Đây là trang tài liệu của OhStem Education.
 
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Cửa hàng
-   
-   https://ohstem.vn/do-choi-thong-minh/
+
+   store/store.rst
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Yolo:Bit
 
    yolobit_v2/lam-quen.rst
@@ -36,23 +37,25 @@ Ohstem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Game Kit - Kit học điện tử
+   :caption: Game Kit - Kit học lập trình game 
 
-   gamekit/gioi-thieu.rst
-   gamekit/bai-hoc.rst
+   gamekit/huong-dan.rst
+   
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Các module mở rộng
 
-   module/mach-mo-rong.rst
-   module/led-don-sac.rst
-   module/dht20.rst
+   module/cam-bien.rst
+   module/hien-thi.rst
+   module/dieu-khien-dong-ngat.rst
+   module/board-mo-rong.rst 
+
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Tài liệu học STEM 
 
    tai_lieu_stem/tai-lieu-1.rst

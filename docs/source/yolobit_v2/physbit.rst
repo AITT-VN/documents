@@ -2,7 +2,7 @@
 ======================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    physbit/gioi-thieu-physbit.rst
    physbit/khai-niem.rst

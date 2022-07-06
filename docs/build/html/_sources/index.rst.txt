@@ -27,12 +27,14 @@ OhStem xin chào tất cả các bạn!
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Robot lập trình xBot
+   :maxdepth: 3
+   :caption: xBot
 
-   xbot/gioi-thieu.rst
-   xbot/lap-rap.rst
-   xbot/bai-hoc.rst
+   xbot/xbot.rst
+   xbot/inventor.rst
+   xbot/gripper.rst
+   xbot/dumptruck.rst
+   xbot/dau-nang.rst
 
 
 .. toctree::
@@ -41,7 +43,6 @@ OhStem xin chào tất cả các bạn!
 
    gamekit/huong-dan.rst
    
-
 
 .. toctree::
    :maxdepth: 2

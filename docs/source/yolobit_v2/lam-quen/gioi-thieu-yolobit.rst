@@ -1,5 +1,8 @@
 1. Giới thiệu về Yolo:Bit
 ===================================
 
+**Video bài học:** `<https://youtu.be/5zIOGBKg8zY>`_
 
-**Video bài học:** `Giới thiệu Yolo:Bit <https://www.youtube.com/watch?v=5zIOGBKg8zY&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=1&t=6s>`_
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/5zIOGBKg8zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

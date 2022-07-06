@@ -2,4 +2,9 @@
 ===========================
 
 
-**Video bài học:** `Làm việc với nút nhấn <https://www.youtube.com/watch?v=XCi3xxoz9sc&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=4>`_
+**Video bài học:** `<https://youtu.be/XCi3xxoz9sc>`_
+
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/XCi3xxoz9sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

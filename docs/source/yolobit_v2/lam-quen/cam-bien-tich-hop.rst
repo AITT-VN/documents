@@ -2,4 +2,8 @@
 =======================================
 
 
-**Video bài học:** `Cảm biến <https://www.youtube.com/watch?v=poTxWrPS8-A&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=6>`_
+**Video bài học:** `<https://youtu.be/poTxWrPS8-A>`_
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/poTxWrPS8-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

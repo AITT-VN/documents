@@ -2,4 +2,8 @@
 ====================
 
 
-**Link bài học:** `Chân cắm <https://www.youtube.com/watch?v=G5aBEcuIKM0&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=7>`_
+**Video bài họcc:** `<https://youtu.be/G5aBEcuIKM0>`_
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/G5aBEcuIKM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

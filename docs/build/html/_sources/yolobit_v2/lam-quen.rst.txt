@@ -2,7 +2,7 @@
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    lam-quen/gioi-thieu-yolobit.rst
    lam-quen/thiet-lap-cai-dat-driver.rst

@@ -2,4 +2,8 @@
 =============================
 
 
-**Video bài học:** `Làm việc với loa <https://www.youtube.com/watch?v=8KAmdAhwclY&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=3>`_
+**Video bài học:** `<https://youtu.be/8KAmdAhwclY>`_
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/8KAmdAhwclY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

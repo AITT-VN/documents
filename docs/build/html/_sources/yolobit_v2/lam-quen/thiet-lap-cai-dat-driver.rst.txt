@@ -1,4 +1,8 @@
 2. Thiết lặp và cài đặt Driver
 =====================================
 
-**Video bài học:** `Thiết lặp và cài đặt Driver <https://www.youtube.com/watch?v=W_hgIQiq5jw&list=PLtkN2G0bngmsHx_Q5vs6EENIIPgBOgBSZ&index=2>`_
+**Video bài học:** `<https://youtu.be/W_hgIQiq5jw>`_
+
+.. raw:: html
+
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/W_hgIQiq5jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

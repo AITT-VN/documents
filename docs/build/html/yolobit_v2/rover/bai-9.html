@@ -61,7 +61,11 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">10. Bài 6: Vượt chướng ngại vật</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">11. Bài 7: Bám sát mục tiêu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">12. Bài 8: Vết tích để lại</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">13. Bài 9: Lần theo dấu vết</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">13. Bài 9: Lần theo dấu vết</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-10.html">14. Bài 10: Né tránh nguy hiểm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-11.html">15. Bài 11: Hoàn trả vật phẩm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-12.html">16. Bài 12: Hạ gục tội phạm</a></li>
@@ -76,11 +80,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
@@ -97,6 +103,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">nhap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v1/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
 </ul>
 
         </div>
@@ -126,6 +137,54 @@
              
   <section id="bai-9-lan-theo-dau-vet">
 <h1>13. Bài 9: Lần theo dấu vết<a class="headerlink" href="#bai-9-lan-theo-dau-vet" title="Permalink to this heading"></a></h1>
+<p><em>Vết tích mà Rover tìm được dường như đang dẫn đến nơi nào đó. Rover quyết định đi theo để tìm lại những vật bị mất</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Ứng dụng cảm biến dò đường để Rover tự động đi theo line</p></li>
+</ul>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Rover sẽ chạy theo vạch đen trên bản đồ nhờ 4 mắt đọc, cơ chế hoạt động sẽ như sau:</p>
+<ul>
+<li><dl>
+<dt><strong>Đi thẳng</strong>: S1 và S4 không đọc được vạch đen</dt><dd><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.1.png"><img alt="yolobit_v2/rover/images/bai_9.1.png" class="align-center" src="yolobit_v2/rover/images/bai_9.1.png" /></a>
+</dd>
+</dl>
+</li>
+<li><p><strong>Rẽ trái:</strong>  S1 đọc được vạch đen, S4 thì không</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.2.png"><img alt="yolobit_v2/rover/images/bai_9.2.png" class="align-center" src="yolobit_v2/rover/images/bai_9.2.png" /></a>
+</div></blockquote>
+</li>
+<li><p><strong>Rẽ phải:</strong> S4 đọc được vạch đen, S1 thì không</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.3.png"><img alt="yolobit_v2/rover/images/bai_9.3.png" class="align-center" src="yolobit_v2/rover/images/bai_9.3.png" /></a>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Viết thuật toán</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.4.png"><img alt="yolobit_v2/rover/images/bai_9.4.png" class="align-center" src="yolobit_v2/rover/images/bai_9.4.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Viết chương trình: Tạo điều kiện thứ nhất, nếu mắt S1 đọc được vạch đen thì rẽ trái</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.5.png"><img alt="yolobit_v2/rover/images/bai_9.5.png" class="align-center" src="yolobit_v2/rover/images/bai_9.5.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Tạo điều kiện tiếp theo, nếu mắt S4 đọc được vạch đen thì rẽ phải. Nếu cả 2 điều kiện không đúng, đi thẳng</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_9.6.png"><img alt="yolobit_v2/rover/images/bai_9.6.png" class="align-center" src="yolobit_v2/rover/images/bai_9.6.png" /></a>
+</div></blockquote>
+</li>
+</ol>
+</section>
 </section>
 
 

@@ -54,7 +54,13 @@
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện</a></li>
 <li class="toctree-l2"><a class="reference internal" href="che-do-mac-dinh.html">4. Các chế độ mặc định</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">5. Bài 1: Cùng di chuyển nào</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 2: Chú ý từng bước đi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 2: Chú ý từng bước đi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#co-che-hoat-dong">Cơ chế hoạt động</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Thắp sáng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Trở thành cảnh sát</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">9. Bài 5: Đôi mắt tinh tường</a></li>
@@ -76,11 +82,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
@@ -97,6 +105,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">nhap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v1/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
 </ul>
 
         </div>
@@ -126,6 +139,84 @@
              
   <section id="bai-2-chu-y-tung-buoc-di">
 <h1>6. Bài 2: Chú ý từng bước đi<a class="headerlink" href="#bai-2-chu-y-tung-buoc-di" title="Permalink to this heading"></a></h1>
+<p><em>Chuyến đi của Rover đã bắt đầu rồi. Hãy nhắc nhở Rover chú ý đến bánh xe mỗi bên của mình vì chúng không thực sự đồng đều đâu. Cùng Rover kiểm tra mỗi động cơ để đạt hành trình tuyệt vời nhé!</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hiểu được cách điều khiển từng động cơ.</p></li>
+</ul>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Khối lệnh hiện hình ảnh:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.1.png"><img alt="../../_images/bai_2.1.png" class="align-center" src="../../_images/bai_2.1.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh tạm dừng:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.2.png"><img alt="../../_images/bai_2.2.png" class="align-center" src="../../_images/bai_2.2.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh điều khiển động cơ:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.3.png"><img alt="../../_images/bai_2.3.png" class="align-center" src="../../_images/bai_2.3.png" style="width: 900px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="co-che-hoat-dong">
+<h2>Cơ chế hoạt động<a class="headerlink" href="#co-che-hoat-dong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Rover di chuyển nhờ sự hoạt động của 2 động cơ bên trái và phải. Vậy nếu 2 động cơ này đồng thời có chế độ hoạt động khác  nhau thì sẽ ra sao? Dưới đây là một số trường hợp di chuyển của 2 động cơ:</p>
+<blockquote>
+<div><ul>
+<li><p>2 động cơ quay cùng chiều, cùng tốc độ:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nếu &gt; 0: Tiến tới</p></li>
+<li><p>Nếu &lt; 0: Lùi lại</p></li>
+<li><p>Nếu = 0: Đứng yên</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_2.4.png"><img alt="../../_images/bai_2.4.png" class="align-center" src="../../_images/bai_2.4.png" style="width: 100px;" /></a>
+</div></blockquote>
+</li>
+<li><p>2 động cơ quay cùng chiều, khác tốc độ:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Động cơ trái &gt; Động cơ phải: Rẽ phải</p></li>
+<li><p>Động cơ phải &gt; Động cơ trái: Rẽ trái</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_2.5.png"><img alt="../../_images/bai_2.5.png" class="align-center" src="../../_images/bai_2.5.png" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+<li><p>2 động cơ quay khác chiều, cùng tốc độ: Xoay tại chỗ</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.6.png"><img alt="../../_images/bai_2.6.png" class="align-center" src="../../_images/bai_2.6.png" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Hiển thị hình ảnh trái tim và cho Rover xoay hình tròn (tốc độ động cơ phải bằng một nửa của động cơ trái) trong 3 giây</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.7.png"><img alt="../../_images/bai_2.7.png" class="align-center" src="../../_images/bai_2.7.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Hiển thị hình ảnh mặt cười và dừng di chuyển trong 3 giây</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_2.8.png"><img alt="../../_images/bai_2.8.png" class="align-center" src="../../_images/bai_2.8.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</section>
 </section>
 
 

@@ -63,4 +63,9 @@ OhStem xin chào tất cả các bạn!
    tai_lieu_stem/tai-lieu-2.rst
 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: nhap
 
+   yolobit_v1/hardware.rst
+   board/hardware.rst

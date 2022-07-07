@@ -67,7 +67,12 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-12.html">16. Bài 12: Hạ gục tội phạm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-13.html">17. Bài 13: Hỗ trợ từ xa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-14.html">18. Bài 14: Chỉ huy từ xa</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">19. Bài 15: Giao tiếp cùng đồng đội</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">19. Bài 15: Giao tiếp cùng đồng đội</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giao-tiep-giua-rover-va-yolo-bit">Giao tiếp giữa Rover và Yolo:Bit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
@@ -76,11 +81,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
@@ -97,6 +104,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">nhap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v1/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
 </ul>
 
         </div>
@@ -126,6 +138,99 @@
              
   <section id="bai-15-giao-tiep-cung-dong-doi">
 <h1>19. Bài 15: Giao tiếp cùng đồng đội<a class="headerlink" href="#bai-15-giao-tiep-cung-dong-doi" title="Permalink to this heading"></a></h1>
+<p><em>Yolo:Bit là đồng đội tiếp theo sẽ hỗ trợ Rover. Cả hai sẽ cùng giao tiếp với nhau để hoàn thành nhiệm vụ</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Làm quen với giao tiếp giữa 2 Yolo:Bit</p></li>
+<li><p>Điều khiển cơ bản Rover với Yolo:Bit khác</p></li>
+</ol>
+</section>
+<section id="giao-tiep-giua-rover-va-yolo-bit">
+<h2>Giao tiếp giữa Rover và Yolo:Bit<a class="headerlink" href="#giao-tiep-giua-rover-va-yolo-bit" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Các Yolo:Bit có thể giao tiếp với nhau. Bằng cách này chúng ta có thể sử dụng một Yolo:Bit khác như máy điều khiển để điều khiển hoạt động của Rover</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.1.png"><img alt="yolobit_v2/rover/images/bai_15.1.png" class="align-center" src="yolobit_v2/rover/images/bai_15.1.png" /></a>
+</div></blockquote>
+<p><strong>Đặt tên cho Yolo:Bit</strong></p>
+<p>Để phân biệt Yolo:Bit trên Rover và Yolo:Bit còn lại chúng ta cần đặt tên cho chúng:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Kết nối với Yolo:Bit</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.2.png"><img alt="yolobit_v2/rover/images/bai_15.2.png" class="align-center" src="yolobit_v2/rover/images/bai_15.2.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Chọn mục cài đặt &gt;&gt; Đổi tên thiết bị</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.3.png"><img alt="yolobit_v2/rover/images/bai_15.3.png" class="align-center" src="yolobit_v2/rover/images/bai_15.3.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Tiến hành đổi tên</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.4.png"><img alt="yolobit_v2/rover/images/bai_15.4.png" class="align-center" src="yolobit_v2/rover/images/bai_15.4.png" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Viết thuật toán cho Yolo:Bit riêng lẻ</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.5.png"><img alt="yolobit_v2/rover/images/bai_15.5.png" class="align-center" src="yolobit_v2/rover/images/bai_15.5.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Tạo các sự kiện khi kết nối và ngắt kết nối Bluetooth</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.6.png"><img alt="yolobit_v2/rover/images/bai_15.6.png" class="align-center" src="yolobit_v2/rover/images/bai_15.6.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Kết nối Bluetooth tự động và sáng đèn màu đỏ</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.7.png"><img alt="yolobit_v2/rover/images/bai_15.7.png" class="align-center" src="yolobit_v2/rover/images/bai_15.7.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Tạo nhóm điều kiện gộp tương ứng với trạng thái nghiêng của Yolo:Bit</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.8.png"><img alt="yolobit_v2/rover/images/bai_15.8.png" class="align-center" src="yolobit_v2/rover/images/bai_15.8.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Đặt lệnh gửi đi tương ứng trong thuật toán</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.9.png"><img alt="yolobit_v2/rover/images/bai_15.9.png" class="align-center" src="yolobit_v2/rover/images/bai_15.9.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Tạm dừng 100milli giây ở cuối chương trình</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.10.png"><img alt="yolobit_v2/rover/images/bai_15.10.png" class="align-center" src="yolobit_v2/rover/images/bai_15.10.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Chương trình đầy đủ cho Yolo:Bit riêng lẻ</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.11.png"><img alt="yolobit_v2/rover/images/bai_15.11.png" class="align-center" src="yolobit_v2/rover/images/bai_15.11.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Lưu chương trình vào Yolo:Bit</p>
+<blockquote>
+<div><p>Để không bị mất chương trình trên Yolo:Bit sau khi ngắt kết nối, bạn cần lưu chương trình vào Yolo:Bit. Thực hiện như sau:</p>
+<a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.12.png"><img alt="yolobit_v2/rover/images/bai_15.12.png" class="align-center" src="yolobit_v2/rover/images/bai_15.12.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Viết thuật toán cho Yolo:Bit trên Rover</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.13.png"><img alt="yolobit_v2/rover/images/bai_15.13.png" class="align-center" src="yolobit_v2/rover/images/bai_15.13.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Viết các lệnh phù hợp với tín hiệu nhận được từ Yolo:Bit khác</p>
+<a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_15.14.png"><img alt="yolobit_v2/rover/images/bai_15.14.png" class="align-center" src="yolobit_v2/rover/images/bai_15.14.png" /></a>
+</li>
+</ol>
+</section>
 </section>
 
 

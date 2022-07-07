@@ -53,7 +53,13 @@
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện</a></li>
 <li class="toctree-l2"><a class="reference internal" href="che-do-mac-dinh.html">4. Các chế độ mặc định</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Bài 1: Cùng di chuyển nào</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Bài 1: Cùng di chuyển nào</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bo-phan-dien-tu">Bộ phận điện tử</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Bài 2: Chú ý từng bước đi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Thắp sáng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Trở thành cảnh sát</a></li>
@@ -100,6 +106,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">nhap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v1/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
+</ul>
 
         </div>
       </div>
@@ -128,18 +139,103 @@
              
   <section id="bai-1-cung-di-chuyen-nao">
 <h1>5. Bài 1: Cùng di chuyển nào<a class="headerlink" href="#bai-1-cung-di-chuyen-nao" title="Permalink to this heading"></a></h1>
-<p><strong>Mục tiêu:</strong> Hiểu được cách điều khiển động cơ để di chuyển cơ bản.</p>
+<p><em>Xin chào các bạn! Đã đến lúc bắt đầu hành trình khám phá những điều mới rồi! Hãy bắt đầu cùng Rover nào.</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<p><strong>Bộ phận điện tử</strong></p>
+<ul class="simple">
+<li><p>Hiểu được cách điều khiển động cơ để di chuyển cơ bản.</p></li>
+</ul>
+</section>
+<section id="bo-phan-dien-tu">
+<h2>Bộ phận điện tử<a class="headerlink" href="#bo-phan-dien-tu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/bai_1.4.png"><img alt="../../_images/bai_1.4.png" class="align-center" src="../../_images/bai_1.4.png" style="width: 779.4px; height: 315.59999999999997px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p><strong>Giới thiệu khối lệnh</strong></p>
+<ul>
+<li><p>Động cơ là bộ phận giúp Robot Rover có thể di chuyển (tới, lùi, rẽ,…) cùng với tốc độ tùy chỉnh.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.4.png"><img alt="../../_images/bai_1.4.png" class="align-center" src="../../_images/bai_1.4.png" style="width: 300px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Rover có 2 động cơ bên trái và bên  phải, để Rover di chuyển, chúng ta  cần điều khiển 2 động cơ này</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.5.png"><img alt="../../_images/bai_1.5.png" class="align-center" src="../../_images/bai_1.5.png" style="width: 300px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/bai_1.5.png"><img alt="../../_images/bai_1.5.png" class="align-center" src="../../_images/bai_1.5.png" style="width: 777.0px; height: 173.4px;" /></a>
-<a class="reference internal image-reference" href="../../_images/bai_1.6.png"><img alt="../../_images/bai_1.6.png" class="align-center" src="../../_images/bai_1.6.png" style="width: 766.1999999999999px; height: 217.79999999999998px;" /></a>
+<ul>
+<li><p>Khối lệnh bắt đầu chương trình:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.6.png"><img alt="../../_images/bai_1.6.png" class="align-center" src="../../_images/bai_1.6.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh lặp lại số lần:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.7.png"><img alt="../../_images/bai_1.7.png" class="align-center" src="../../_images/bai_1.7.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh di chuyển:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.8.png"><img alt="../../_images/bai_1.8.png" class="align-center" src="../../_images/bai_1.8.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Chương trình đơn giản:</strong> Đây là chương trình điều khiển Rover đi tới và lùi, giúp bạn làm quen với lập trình điều khiển Rover di chuyển</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Gắn khối lệnh di chuyển vào lệnh lặp lại mãi</p>
+<a class="reference internal image-reference" href="../../_images/bai_1.9.png"><img alt="../../_images/bai_1.9.png" class="align-center" src="../../_images/bai_1.9.png" style="width: 800px;" /></a>
+</li>
+<li><p>Chọn hướng di chuyển và chỉnh tốc độ mong muốn</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Có 4 hướng di chuyển: tiến tới, lùi lại, rẽ trái, rẽ phải tương ứng với hình dạng mũi tên.</p></li>
+<li><p>Tốc độ của động cơ có giá trị từ 0 (đứng yên) đến 100 (tối đa).</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_1.10.png"><img alt="../../_images/bai_1.10.png" class="align-center" src="../../_images/bai_1.10.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Thêm khối tạm dừng 1 giây (1000ms)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.11.png"><img alt="../../_images/bai_1.11.png" class="align-center" src="../../_images/bai_1.11.png" style="width: 700px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Làm tương tự để tạo thêm lệnh đi lùi trong 1 giây</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.12.png"><img alt="../../_images/bai_1.12.png" class="align-center" src="../../_images/bai_1.12.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Chạy chương trình</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.13.png"><img alt="../../_images/bai_1.13.png" class="align-center" src="../../_images/bai_1.13.png" style="width: 700px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Bạn có thể nhấn nút tạm dừng để dừng chương trình lại</p>
+<a class="reference internal image-reference" href="../../_images/bai_1.14.png"><img alt="../../_images/bai_1.14.png" class="align-center" src="../../_images/bai_1.14.png" style="width: 70.95px; height: 75.35000000000001px;" /></a>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Chương trình di chuyển với thời gian:</strong>  Chương trình này sẽ giúp Rover đi theo hình vuông</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Gắn khối lệnh lặp số lần vào lệnh bắt đầu</p>
+<a class="reference internal image-reference" href="../../_images/bai_1.15.png"><img alt="../../_images/bai_1.15.png" class="align-center" src="../../_images/bai_1.15.png" style="width: 700px;" /></a>
+</li>
+<li><p>Sử dụng các khối lệnh di chuyển để hoàn thiện chương trình như hình minh họa (để ý các thông số)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_1.16.png"><img alt="../../_images/bai_1.16.png" class="align-center" src="../../_images/bai_1.16.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</section>
 </section>
 
 

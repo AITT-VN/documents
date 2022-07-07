@@ -64,7 +64,12 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-9.html">13. Bài 9: Lần theo dấu vết</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-10.html">14. Bài 10: Né tránh nguy hiểm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-11.html">15. Bài 11: Hoàn trả vật phẩm</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">16. Bài 12: Hạ gục tội phạm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">16. Bài 12: Hạ gục tội phạm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mo-ta">Mô tả</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-13.html">17. Bài 13: Hỗ trợ từ xa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-14.html">18. Bài 14: Chỉ huy từ xa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-15.html">19. Bài 15: Giao tiếp cùng đồng đội</a></li>
@@ -76,11 +81,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
@@ -97,6 +104,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">nhap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v1/hardware.html">Phần cứng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/hardware.html">Phần cứng</a></li>
 </ul>
 
         </div>
@@ -126,6 +138,48 @@
              
   <section id="bai-12-ha-guc-toi-pham">
 <h1>16. Bài 12: Hạ gục tội phạm<a class="headerlink" href="#bai-12-ha-guc-toi-pham" title="Permalink to this heading"></a></h1>
+<p><em>Là một cảnh sát, Rover luôn thể hiện rõ bản lĩnh của mình Rover có thể triệt phá vòng vây và hạ gục tội phạm dễ dàng để bảo vệ an toàn cho người dân</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Kết hợp chức năng của cảm biến khoảng cách và cảm biến dò đường</p></li>
+</ul>
+</section>
+<section id="mo-ta">
+<h2>Mô tả<a class="headerlink" href="#mo-ta" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Rover được đặt trong một vòng tròn vạch đen, các chai nước rỗng sẽ đóng vai tội phạm, Rover sẽ tìm ra và hạ gục chúng</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_12.1.png"><img alt="yolobit_v2/rover/images/bai_12.1.png" class="align-center" src="yolobit_v2/rover/images/bai_12.1.png" /></a>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Viết thuật toán</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_12.2.png"><img alt="yolobit_v2/rover/images/bai_12.2.png" class="align-center" src="yolobit_v2/rover/images/bai_12.2.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Rẽ phải liên tục cho đến khi tìm thấy vật cản</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_12.3.png"><img alt="yolobit_v2/rover/images/bai_12.3.png" class="align-center" src="yolobit_v2/rover/images/bai_12.3.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Nếu phát hiện vật cản thì đi tới để đẩy chai nước cho đến khi phát hiện vạch đen</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_12.3.png"><img alt="yolobit_v2/rover/images/bai_12.3.png" class="align-center" src="yolobit_v2/rover/images/bai_12.3.png" /></a>
+</div></blockquote>
+</li>
+<li><p>Khi chạm đến vạch đen, Rover sẽ lùi lại để không ra khỏi vạch đen</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="yolobit_v2/rover/images/bai_12.4.png"><img alt="yolobit_v2/rover/images/bai_12.4.png" class="align-center" src="yolobit_v2/rover/images/bai_12.4.png" /></a>
+</div></blockquote>
+</li>
+</ol>
+</section>
 </section>
 
 

@@ -48,27 +48,27 @@ Rover di chuyển nhờ sự hoạt động của 2 động cơ bên trái và p
         - Nếu < 0: Lùi lại
         - Nếu = 0: Đứng yên
 
-        .. image:: images/bai_2.4.png
-            :width: 100px
-            :align: center 
-    
+    .. image:: images/bai_2.4.png
+        :width: 200px
+        :align: center 
+
 
     - 2 động cơ quay cùng chiều, khác tốc độ:
 
         - Động cơ trái > Động cơ phải: Rẽ phải
         - Động cơ phải > Động cơ trái: Rẽ trái
 
-        .. image:: images/bai_2.5.png
-            :width: 200px
-            :align: center
+    .. image:: images/bai_2.5.png
+        :width: 200px
+        :align: center
     
-
+    
     - 2 động cơ quay khác chiều, cùng tốc độ: Xoay tại chỗ 
 
-        .. image:: images/bai_2.6.png
-            :width: 200px
-            :align: center
-
+    .. image:: images/bai_2.6.png
+        :width: 200px
+        :align: center
+    
     
 
 Viết chương trình 
@@ -77,16 +77,15 @@ Viết chương trình
 
 1. Hiển thị hình ảnh trái tim và cho Rover xoay hình tròn (tốc độ động cơ phải bằng một nửa của động cơ trái) trong 3 giây
 
-    .. image:: images/bai_2.7.png
-        :width: 800px
-        :align: center
-    
-
+.. image:: images/bai_2.7.png
+    :width: 800px
+    :align: center
+|   
 2. Hiển thị hình ảnh mặt cười và dừng di chuyển trong 3 giây
 
-    .. image:: images/bai_2.8.png
-        :width: 800px
-        :align: center
+.. image:: images/bai_2.8.png
+    :width: 800px
+    :align: center
 
 
 

@@ -17,17 +17,16 @@ Bộ phận điện tử
 
 - Động cơ là bộ phận giúp Robot Rover có thể di chuyển (tới, lùi, rẽ,...) cùng với tốc độ tùy chỉnh.
 
-    .. image:: images/bai_1.4.png
-        :width: 300px
-        :align: center
-    
-
+.. image:: images/bai_1.4.png
+    :width: 300px
+    :align: center
+|    
 - Rover có 2 động cơ bên trái và bên  phải, để Rover di chuyển, chúng ta  cần điều khiển 2 động cơ này
 
-    .. image:: images/bai_1.5.png
-        :width: 300px
-        :align: center
-    
+.. image:: images/bai_1.5.png
+    :width: 300px
+    :align: center
+|    
 
 Giới thiệu khối lệnh
 ---------------------------
@@ -35,24 +34,23 @@ Giới thiệu khối lệnh
 
 - Khối lệnh bắt đầu chương trình:
 
-    .. image:: images/bai_1.6.png
-        :width: 400px
-        :align: center
-    
-
+.. image:: images/bai_1.6.png
+    :width: 400px
+    :align: center
+| 
 - Khối lệnh lặp lại số lần:
 
-    .. image:: images/bai_1.7.png
-        :width: 400px
-        :align: center
-    
-
+.. image:: images/bai_1.7.png
+    :width: 400px
+    :align: center
+|   
 - Khối lệnh di chuyển:
 
     .. image:: images/bai_1.8.png
         :width: 800px
         :align: center
-    
+|    
+
 
 Viết chương trình
 ---------------------
@@ -62,61 +60,55 @@ Viết chương trình
 
     1.  Gắn khối lệnh di chuyển vào lệnh lặp lại mãi
 
-        .. image:: images/bai_1.9.png
-            :width: 800px
-            :align: center  
-    
-
+    .. image:: images/bai_1.9.png
+        :width: 800px
+        :align: center  
+    |
     2. Chọn hướng di chuyển và chỉnh tốc độ mong muốn
 
         - Có 4 hướng di chuyển: tiến tới, lùi lại, rẽ trái, rẽ phải tương ứng với hình dạng mũi tên.
 
         - Tốc độ của động cơ có giá trị từ 0 (đứng yên) đến 100 (tối đa).
 
-        .. image:: images/bai_1.10.png
-            :width: 400px
-            :align: center
-    
-
+    .. image:: images/bai_1.10.png
+        :width: 400px
+        :align: center
+    |
     3. Thêm khối tạm dừng 1 giây (1000ms)
 
-        .. image:: images/bai_1.11.png
-            :width: 700px
-            :align: center
-    
-
+    .. image:: images/bai_1.11.png
+        :width: 700px
+        :align: center
+    |
     4. Làm tương tự để tạo thêm lệnh đi lùi trong 1 giây
 
-        .. image:: images/bai_1.12.png
-            :width: 400px
-            :align: center
-    
-
+    .. image:: images/bai_1.12.png
+        :width: 400px
+        :align: center
+    |
     5. Chạy chương trình
 
-        .. image:: images/bai_1.13.png
-            :width: 700px
-            :align: center 
-    
-
+    .. image:: images/bai_1.13.png
+        :width: 700px
+        :align: center 
+    |
     6.  Bạn có thể nhấn nút tạm dừng để dừng chương trình lại
 
-        .. image:: images/bai_1.14.png
-            :scale: 55%
-            :align: center 
-
+    .. image:: images/bai_1.14.png
+        :scale: 55%
+        :align: center 
+    |
 
 **Chương trình di chuyển với thời gian:**  Chương trình này sẽ giúp Rover đi theo hình vuông
 
     1.  Gắn khối lệnh lặp số lần vào lệnh bắt đầu
 
-        .. image:: images/bai_1.15.png
-            :width: 700px
-            :align: center 
-      
-      
+    .. image:: images/bai_1.15.png
+        :width: 700px
+        :align: center 
+    |  
     2. Sử dụng các khối lệnh di chuyển để hoàn thiện chương trình như hình minh họa (để ý các thông số)
 
-        .. image:: images/bai_1.16.png
-            :width: 600px
-            :align: center 
+    .. image:: images/bai_1.16.png
+        :width: 600px
+        :align: center 

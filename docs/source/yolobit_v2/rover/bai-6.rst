@@ -19,7 +19,7 @@ Giới thiệu khối lệnh
 Chúng ta sẽ làm quen một biến thể khác của khối lệnh đọc cảm biến khoảng cách
 
     .. image:: images/bai_6.1.png
-        :scale: 65%
+        :width: 1000px
         :align: center 
 
 
@@ -32,21 +32,21 @@ Viết chương trình
 Việc đọc một chương trình thuần túy như vậy sẽ khiến chúng ta rất khó nắm bắt. Vì vậy, một thuật toán bằng hình ảnh như bên dưới sẽ giúp chúng ta dễ hình dung hơn rất nhiều:
 
     .. image:: images/bai_6.2.png
-        :scale: 65%
+        :width: 400px
         :align: center 
 
 
 2. Tạo điều kiện: **Nếu Rover phát hiện vật cản trong phạm vi 15cm thì sẽ sáng đèn màu đỏ và rẽ phải**
 
     .. image:: images/bai_6.3.png
-        :scale: 65%
+        :width: 400px
         :align: center 
 
 
 3. Tạo điều kiện: **Nếu không thì sáng đèn xanh và tiếp tục di chuyển**
 
     .. image:: images/bai_6.4.png
-        :scale: 65%
+        :width: 400px
         :align: center 
 
 

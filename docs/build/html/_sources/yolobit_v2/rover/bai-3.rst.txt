@@ -43,7 +43,7 @@ Giới thiệu khối lệnh
 - Khối lệnh so sánh:
 
 .. image:: images/bai_3.4.png
-    :width: 500px
+    :width: 400px
     :align: center
 |
 - Khối lệnh độ sáng:

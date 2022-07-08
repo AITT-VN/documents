@@ -18,9 +18,9 @@ Giao tiếp giữa Rover và Yolo:Bit
 Các Yolo:Bit có thể giao tiếp với nhau. Bằng cách này chúng ta có thể sử dụng một Yolo:Bit khác như máy điều khiển để điều khiển hoạt động của Rover
 
     .. image:: images/bai_15.1.png
-        :scale: 65%
+        :width: 400px
         :align: center 
-
+|
 
 **Đặt tên cho Yolo:Bit**
 
@@ -29,21 +29,21 @@ Các Yolo:Bit có thể giao tiếp với nhau. Bằng cách này chúng ta có 
     1. Kết nối với Yolo:Bit
 
         .. image:: images/bai_15.2.png
-            :scale: 65%
+            :width: 300px
             :align: center 
 
 
     2. Chọn mục cài đặt >> Đổi tên thiết bị
 
         .. image:: images/bai_15.3.png
-            :scale: 65%
+            :width: 200px
             :align: center  
 
 
     3. Tiến hành đổi tên 
 
         .. image:: images/bai_15.4.png
-            :scale: 65%
+            :width: 300px
             :align: center 
 
 
@@ -54,71 +54,63 @@ Viết chương trình
 1. Viết thuật toán cho Yolo:Bit riêng lẻ
 
     .. image:: images/bai_15.5.png
-        :scale: 65%
+        :width: 800px
         :align: center 
-
-
+|
 2. Tạo các sự kiện khi kết nối và ngắt kết nối Bluetooth
     
     .. image:: images/bai_15.6.png
-        :scale: 65%
+        :width: 800px
         :align: center 
-
-
+|
 3. Kết nối Bluetooth tự động và sáng đèn màu đỏ
 
     .. image:: images/bai_15.7.png
-        :scale: 65%
+        :width: 600px
         :align: center 
-
-
+|
 4. Tạo nhóm điều kiện gộp tương ứng với trạng thái nghiêng của Yolo:Bit
 
     .. image:: images/bai_15.8.png
-        :scale: 65%
+        :width: 500px
         :align: center 
-
-
+|
 5. Đặt lệnh gửi đi tương ứng trong thuật toán
 
     .. image:: images/bai_15.9.png
-        :scale: 65%
+        :width: 500px
         :align: center 
-
+|
 6. Tạm dừng 100milli giây ở cuối chương trình
 
     .. image:: images/bai_15.10.png
-        :scale: 65%
+        :width: 500px
         :align: center 
-
-
+|
 7. Chương trình đầy đủ cho Yolo:Bit riêng lẻ
 
     .. image:: images/bai_15.11.png
-        :scale: 65%
+        :width: 800px
         :align: center
-
-
+|
 8. Lưu chương trình vào Yolo:Bit      
 
     Để không bị mất chương trình trên Yolo:Bit sau khi ngắt kết nối, bạn cần lưu chương trình vào Yolo:Bit. Thực hiện như sau:
 
     .. image:: images/bai_15.12.png
-        :scale: 65%
+        :width: 800px
         :align: center
-
-
+|
 9. Viết thuật toán cho Yolo:Bit trên Rover
 
     .. image:: images/bai_15.13.png
-        :scale: 65%
+        :width: 800px
         :align: center
-
-
+|
 10. Viết các lệnh phù hợp với tín hiệu nhận được từ Yolo:Bit khác
 
     .. image:: images/bai_15.14.png
-        :scale: 65%
+        :width: 800px
         :align: center
 
 

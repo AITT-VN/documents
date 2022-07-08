@@ -1,22 +1,22 @@
 9. Bài 5: Đôi mắt tinh tường
 =================================
 
-*Rover có một đôi mắt cực kì nhạy bén với rất nhiều chức năng và công dụng. Trong đó, đo đạc là chức năng hữu ích nhất mà Rover thường dùng trong thành phố. Với đôi mắt đó, bạn có thể đo lường khoảng cách một cách dễ dàng mà không cần các thước đo thủ công. *
+*Rover có một đôi mắt cực kì nhạy bén với rất nhiều chức năng và công dụng. Trong đó, đo đạc là chức năng hữu ích nhất mà Rover thường dùng trong thành phố. Với đôi mắt đó, bạn có thể đo lường khoảng cách một cách dễ dàng mà không cần các thước đo thủ công.*
 
 
 Mục tiêu
 --------------
 --------------------------
 
-    1. Làm quen với cảm biến khoảng cách
-    2. Sử dụng cửa sổ thông tin
+1. Làm quen với cảm biến khoảng cách
+2. Sử dụng cửa sổ thông tin
 
 
 Bộ phận điện tử
 ---------------------
 -------------------------------
 
-Cảm biến khoảnh cách: Là thiết bị giúp phát hiện đối tượng phía trước bằng sóng siêu âm, nhờ đó có thể đo khoảng cách, tránh vật cản,...
+**Cảm biến khoảnh cách:** Là thiết bị giúp phát hiện đối tượng phía trước bằng sóng siêu âm, nhờ đó có thể đo khoảng cách, tránh vật cản,...
 
     .. image:: images/bai_5.1.png
         :width: 400px

@@ -21,7 +21,7 @@ Mục tiêu
 Remote (bộ điều khiển từ xa) là một thiết bị cầm tay có tác dụng gửi tín hiệu đến robot. Khi nhận được tín hiệu, robot sẽ chạy chương trình tương ứng
 
     .. image:: images/bai_13.1.png
-        :scale: 65%
+        :width: 800px
         :align: center    
 
 
@@ -32,14 +32,14 @@ Giới thiệu khối lệnh
 - Khối lệnh remote:
 
     .. image:: images/bai_13.2.png
-        :scale: 65%
+        :width: 800px
         :align: center  
 
 
 - Khối lệnh xóa tín hiệu:
 
     .. image:: images/bai_13.3.png
-        :scale: 65%
+        :width: 800px
         :align: center  
 
 
@@ -50,26 +50,24 @@ Viết chương trình
 1. Viết thuật toán
 
     .. image:: images/bai_13.4.png
-        :scale: 65%
+        :width: 800px
         :align: center  
-
+|
 2. Tạo 4 điều kiện tương ứng với 4 nút di chuyển
 
     .. image:: images/bai_13.5.png
-        :scale: 65%
+        :width: 800px
         :align: center  
-
-
+|
 3. Đặt lệnh di chuyển tương ứng với mỗi nút, dừng lại khi không nhận tín hiệu nào
 
     .. image:: images/bai_13.6.png
-        :scale: 65%
+        :width: 800px
         :align: center  
-
-
+|
 4. Xóa tín hiệu để để tiếp tục chương trình
 
     .. image:: images/bai_13.7.png
-        :scale: 65%
+        :width: 800px
         :align: center  
 

@@ -18,7 +18,7 @@ Mô tả
 Rover được đặt trong một vòng tròn vạch đen, các chai nước rỗng sẽ đóng vai tội phạm, Rover sẽ tìm ra và hạ gục chúng
 
     .. image:: images/bai_12.1.png
-        :scale: 65%
+        :width: 800px
         :align: center    
 
 
@@ -29,26 +29,23 @@ Viết chương trình
 1. Viết thuật toán
 
     .. image:: images/bai_12.2.png
-        :scale: 65%
+        :width: 800px
         :align: center   
-
-
+|
 2. Rẽ phải liên tục cho đến khi tìm thấy vật cản
 
     .. image:: images/bai_12.3.png
-        :scale: 65%
+        :width: 800px
         :align: center   
-
-
+|
 3. Nếu phát hiện vật cản thì đi tới để đẩy chai nước cho đến khi phát hiện vạch đen
 
-    .. image:: images/bai_12.3.png
-        :scale: 65%
+    .. image:: images/bai_12.4.png
+        :width: 800px
         :align: center   
-
-
+|
 4. Khi chạm đến vạch đen, Rover sẽ lùi lại để không ra khỏi vạch đen
 
-    .. image:: images/bai_12.4.png
-        :scale: 65%
+    .. image:: images/bai_12.5.png
+        :width: 800px
         :align: center 

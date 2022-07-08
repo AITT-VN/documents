@@ -17,18 +17,23 @@ Bộ phận điện tử
 
 - Cảm biến dò đường trên Rover gồm 4 mắt đọc nằm ở mặt dưới xe được đánh số từ S1 đến S4.
 
+
 - Cảm biến này giúp Rover phát hiện vạch đen bên dưới để di chuyển, hoặc tránh né tùy theo mục đích lập trình
 
     .. image:: images/bai_8.1.png
-        :scale: 65%
+        :width: 1000px
         :align: center   
-
+|
 - Cảm biến dò đường trên Rover hoạt động như thế nào?
+
+    .. image:: images/bai_8.png
+        :width: 300
+        :align: center   
 
     - Mắt đọc dò đường sẽ phát ra và thu về hồng ngoại. Tùy theo mức độ hồng ngoại nhận lại mà xác định được bên dưới là vạch đen hay nền trắng.
 
         .. image:: images/bai_8.2.png
-            :scale: 65%
+            :width: 300
             :align: center   
 
     - Phía trên Rover có các đèn báo hiệu tương ứng với từng mắt đọc:
@@ -37,7 +42,7 @@ Bộ phận điện tử
         - Đọc được nền đen: Đèn tắt
 
         .. image:: images/bai_8.3.png
-            :scale: 65%
+            :width: 300
             :align: center   
 
 
@@ -45,12 +50,12 @@ Giới thiệu khối lệnh
 -----------------------
 -----------------------
 
-Khối lệnh đọc line:
+- Khối lệnh đọc line:
 
     .. image:: images/bai_8.4.png
-        :scale: 65%
+        :width: 1000
         :align: center   
-
+|
 
 Viết chương trình 
 ---------------------
@@ -59,21 +64,19 @@ Viết chương trình
 1. Viết chương trình
 
     .. image:: images/bai_8.5.png
-        :scale: 65%
+        :width: 800
         :align: center   
-
-
+|
 2. Tạo điều kiện đầu tiên: **Nếu mắt S1 đọc được vạch đen, bật đèn số 1, 2, 3. Nếu không, tắt đèn**
 
     .. image:: images/bai_8.6.png
-        :scale: 65%
+        :width: 800
         :align: center   
-
-
+|
 3. Tạo điều kiện thứ 2: **Nếu mắt S4 đọc được vạch đen, bật đèn số 4, 5, 6. Nếu không, tắt đèn**
 
     .. image:: images/bai_8.7.png
-        :scale: 65%
+        :width: 800
         :align: center
 
 

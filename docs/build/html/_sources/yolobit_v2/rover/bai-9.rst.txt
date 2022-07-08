@@ -18,41 +18,39 @@ Viết chương trình
 
     - **Đi thẳng**: S1 và S4 không đọc được vạch đen
         .. image:: images/bai_9.1.png
-            :scale: 65%
+            :width: 300px
             :align: center 
 
 
     - **Rẽ trái:**  S1 đọc được vạch đen, S4 thì không 
   
         .. image:: images/bai_9.2.png
-            :scale: 65%
+            :width: 300px
             :align: center 
 
 
     - **Rẽ phải:** S4 đọc được vạch đen, S1 thì không 
 
         .. image:: images/bai_9.3.png
-            :scale: 65%
+            :width: 300px
             :align: center 
-
-
+|
 2. Viết thuật toán
 
     .. image:: images/bai_9.4.png
-        :scale: 65%
+        :width: 800px
         :align: center   
-
+|
 3. Viết chương trình: Tạo điều kiện thứ nhất, nếu mắt S1 đọc được vạch đen thì rẽ trái
 
     .. image:: images/bai_9.5.png
-        :scale: 65%
+        :width: 800px
         :align: center   
-
-
+|
 4. Tạo điều kiện tiếp theo, nếu mắt S4 đọc được vạch đen thì rẽ phải. Nếu cả 2 điều kiện không đúng, đi thẳng
 
     .. image:: images/bai_9.6.png
-        :scale: 65%
+        :width: 800px
         :align: center 
 
 

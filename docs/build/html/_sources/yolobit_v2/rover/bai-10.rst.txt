@@ -34,4 +34,13 @@ Viết chương trình
         :align: center   
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Né tránh nguy hiểm: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeX7G4LO7hYYlVlIw0r8CwIEl3>`_
+
+.. image:: images/bai_10.4.png
+    :width: 200px
+    :align: center 
 

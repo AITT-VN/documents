@@ -80,4 +80,14 @@ Viết chương trình
         :align: center
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Vết tích để lại: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeWXV0PSKrWqs4gdNub3l7LaW6>`_
+
+.. image:: images/bai_8.8.png
+    :width: 200px
+    :align: center 
+
 

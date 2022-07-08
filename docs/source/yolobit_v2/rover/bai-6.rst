@@ -45,8 +45,18 @@ Việc đọc một chương trình thuần túy như vậy sẽ khiến chúng 
 
     .. image:: images/bai_6.4.png
         :width: 700px
-        :align: center 
+        :align: center  
 
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Vượt chướng ngại vật: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeVcjD0dC304bNk9PleahuFYsX>`_
+
+.. image:: images/bai_6.5.png
+    :width: 200px
+    :align: center 
 
 
 

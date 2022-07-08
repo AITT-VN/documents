@@ -54,3 +54,12 @@ Viết chương trình
         :align: center 
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Lần theo dấu vết: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeWoF7zQjV3kSvA350Ch1sPc1f>`_
+
+.. image:: images/bai_9.7.png
+    :width: 200px
+    :align: center 

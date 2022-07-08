@@ -71,3 +71,13 @@ Viết chương trình
         :width: 800px
         :align: center  
 
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Hỗ trợ từ xa: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeYIDNLNVND4XhPYZSvaoabYdV>`_
+
+.. image:: images/bai_13.8.png
+    :width: 200px
+    :align: center 

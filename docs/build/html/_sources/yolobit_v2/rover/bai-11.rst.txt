@@ -87,3 +87,12 @@ Viết chương trình
 **Lưu ý: Nếu xóa Hàm bên ngoài, hàm trong chương trình chính sẽ biến mất**
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Hoàn trả vật phẩm: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeXYn9nCYGBYWRNzSdDAHLH2Ta>`_
+
+.. image:: images/bai_11.11.png
+    :width: 200px
+    :align: center 

@@ -113,3 +113,23 @@ Viết chương trình
     .. image:: images/bai_1.16.png
         :width: 600px
         :align: center 
+    |
+
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Nhấp vào chữ **tại đây** để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
+
+- Robot di chuyển tới lui: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeTmtVhptwmDZJMtzCrBz2Hc5n>`_
+
+.. image:: images/bai_1.17.png
+    :width: 200px
+    :align: center 
+| 
+- Robot di chuyển hình vuông: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeTxamvWwDappzIrPkZx9j7xl3>`_
+
+.. image:: images/bai_1.18.png
+    :width: 200px
+    :align: center 

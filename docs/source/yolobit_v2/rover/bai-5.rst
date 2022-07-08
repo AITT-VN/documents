@@ -61,3 +61,15 @@ Hiện thông tin cảm biến khoảng cách đọc được lên cửa sổ th
     .. image:: images/bai_5.5.png
         :width: 700px
         :align: center  
+
+    |
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Đôi mắt tinh tường: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeVBpINJkmSSzCWzf5lB5p1CnC>`_
+
+.. image:: images/bai_5.6.png
+    :width: 200px
+    :align: center 

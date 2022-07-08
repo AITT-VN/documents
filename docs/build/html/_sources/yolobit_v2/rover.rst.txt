@@ -24,3 +24,6 @@
    rover/bai-13.rst
    rover/bai-14.rst
    rover/bai-15.rst
+   rover/bai-16.rst
+   rover/bai-17.rst
+   rover/bai-18.rst

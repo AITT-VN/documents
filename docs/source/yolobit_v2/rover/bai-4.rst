@@ -61,7 +61,15 @@ Viết chương trình
         :width: 700px
         :align: center     
 
+Chương trình mẫu
+--------------
+-------------------
 
+- Trở thành cảnh sát: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeV3NydHQBWHOMNWowpDh7aRQ4>`_
+
+.. image:: images/bai_4.7.png
+    :width: 200px
+    :align: center 
 
 
 

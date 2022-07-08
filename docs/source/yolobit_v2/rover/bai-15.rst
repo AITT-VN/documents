@@ -114,6 +114,15 @@ Viết chương trình
         :align: center
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Giao tiếp cùng đồng đội: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeZHkGMwf5gCeaOPHSj5n60Inj>`_
+
+.. image:: images/bai_15.15.png
+    :width: 200px
+    :align: center 
 
 
 

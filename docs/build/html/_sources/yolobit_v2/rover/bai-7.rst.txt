@@ -97,11 +97,20 @@ Viết chương trình
 |
 5. Tạo điều kiện thứ hai: **Nếu khoảng cách > 20cm và < 40cm thì tiến tới với tốc độ 50. Nếu cả 2 điều kiện không đúng, dừng di chuyển**
 
-    .. image:: images/bai_7.10.png
+    .. image:: images/bai_7.11.png
         :width: 800px
         :align: center 
 
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Bám sát mục tiêu: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeVzmPaysgSHHG0dA9GriT347D>`_
+
+.. image:: images/bai_7.12.png
+    :width: 200px
+    :align: center 
 
 
 

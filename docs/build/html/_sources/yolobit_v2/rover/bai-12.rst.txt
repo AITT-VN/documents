@@ -49,3 +49,14 @@ Viết chương trình
     .. image:: images/bai_12.5.png
         :width: 900px
         :align: center 
+
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Hạ gục tội phạm: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeXrreJF9ttLybdobfHnWefF1S>`_
+
+.. image:: images/bai_12.6.png
+    :width: 200px
+    :align: center 

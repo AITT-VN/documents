@@ -82,7 +82,17 @@ Viết chương trình
 .. image:: images/bai_3.9.png
     :width: 400px
     :align: center
+|
 
+Chương trình mẫu
+--------------
+-------------------
+
+- Thắp sáng `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeUMyVld6irjlm4IwBoNkwOAAy>`_
+
+.. image:: images/bai_3.10.png
+    :width: 200px
+    :align: center 
 
 
 

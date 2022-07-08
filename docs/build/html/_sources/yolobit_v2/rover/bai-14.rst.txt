@@ -85,5 +85,13 @@ Viết chương trình
         :align: center
 
 
+Chương trình mẫu
+--------------
+-------------------
 
+- Chỉ huy từ xa: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeYnFfI3AtZaNJWfiKsVTP47iy>`_
+
+.. image:: images/bai_14.10.png
+    :width: 200px
+    :align: center 
 

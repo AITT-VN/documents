@@ -34,13 +34,13 @@ Giới thiệu khối lệnh
 - Khối lệnh đèn RGB
 
     .. image:: images/bai_4.3.png
-        :width: 1000px
+        :width: 1200px
         :align: center    
 |
 - Khối lệnh âm nhạc 
 
     .. image:: images/bai_4.4.png
-        :width: 1000px
+        :width: 1200px
         :align: center    
 |
 
@@ -52,7 +52,7 @@ Viết chương trình
 1. Phát bài nhạc khi bắt đầu chương trình và cho Rover di chuyển 
 
     .. image:: images/bai_4.5.png
-        :width: 500px
+        :width: 700px
         :align: center    
 |
 2. Cho dãy LED RGB sáng xanh đỏ luân phiên

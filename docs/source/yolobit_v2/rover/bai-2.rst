@@ -32,7 +32,7 @@ Giới thiệu khối lệnh
 - Khối lệnh điều khiển động cơ:
     
     .. image:: images/bai_2.3.png
-        :width: 900px
+        :width: 1100px
         :align: center
 
 

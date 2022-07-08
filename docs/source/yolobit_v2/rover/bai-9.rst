@@ -44,13 +44,13 @@ Viết chương trình
 3. Viết chương trình: Tạo điều kiện thứ nhất, nếu mắt S1 đọc được vạch đen thì rẽ trái
 
     .. image:: images/bai_9.5.png
-        :width: 800px
+        :width: 900px
         :align: center   
 |
 4. Tạo điều kiện tiếp theo, nếu mắt S4 đọc được vạch đen thì rẽ phải. Nếu cả 2 điều kiện không đúng, đi thẳng
 
     .. image:: images/bai_9.6.png
-        :width: 800px
+        :width: 900px
         :align: center 
 
 

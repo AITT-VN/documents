@@ -18,7 +18,7 @@ Giới thiệu khối lệnh
 - Khối lệnh toán tử:
 
     .. image:: images/bai_7.1.png
-        :width: 1000px
+        :width: 900px
         :align: center 
 |
 

@@ -35,17 +35,17 @@ Viết chương trình
 2. Rẽ phải liên tục cho đến khi tìm thấy vật cản
 
     .. image:: images/bai_12.3.png
-        :width: 800px
+        :width: 900px
         :align: center   
 |
 3. Nếu phát hiện vật cản thì đi tới để đẩy chai nước cho đến khi phát hiện vạch đen
 
     .. image:: images/bai_12.4.png
-        :width: 800px
+        :width: 900px
         :align: center   
 |
 4. Khi chạm đến vạch đen, Rover sẽ lùi lại để không ra khỏi vạch đen
 
     .. image:: images/bai_12.5.png
-        :width: 800px
+        :width: 900px
         :align: center 

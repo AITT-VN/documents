@@ -98,7 +98,7 @@ Viết chương trình
     Để không bị mất chương trình trên Yolo:Bit sau khi ngắt kết nối, bạn cần lưu chương trình vào Yolo:Bit. Thực hiện như sau:
 
     .. image:: images/bai_15.12.png
-        :width: 800px
+        :width: 900px
         :align: center
 |
 9. Viết thuật toán cho Yolo:Bit trên Rover

@@ -53,7 +53,7 @@ Giới thiệu khối lệnh
 - Khối lệnh đọc line:
 
     .. image:: images/bai_8.4.png
-        :width: 1000
+        :width: 1000px
         :align: center   
 |
 
@@ -64,19 +64,19 @@ Viết chương trình
 1. Viết chương trình
 
     .. image:: images/bai_8.5.png
-        :width: 800
+        :width: 800px
         :align: center   
 |
 2. Tạo điều kiện đầu tiên: **Nếu mắt S1 đọc được vạch đen, bật đèn số 1, 2, 3. Nếu không, tắt đèn**
 
     .. image:: images/bai_8.6.png
-        :width: 800
+        :width: 800px
         :align: center   
 |
 3. Tạo điều kiện thứ 2: **Nếu mắt S4 đọc được vạch đen, bật đèn số 4, 5, 6. Nếu không, tắt đèn**
 
     .. image:: images/bai_8.7.png
-        :width: 800
+        :width: 800px
         :align: center
 
 

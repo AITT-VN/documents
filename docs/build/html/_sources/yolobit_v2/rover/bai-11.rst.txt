@@ -68,20 +68,20 @@ Viết chương trình
 2.  Sử dụng lại chương trình của chương 10 để tạo thành hàm “dò line”
 
     .. image:: images/bai_11.8.png
-        :width: 800px
+        :width: 900px
         :align: center 
 |
 3. Gọi hàm “dò line” vào chương trình chính, sau đó tạo điều kiện phát hiện ra vạch nằm ngang thì dừng lại
 
 
     .. image:: images/bai_11.9.png
-        :width: 800px
+        :width: 900px
         :align: center 
 |
 4. Rover sẽ quay lại cho đến khi gặp được vạch thẳng di chuyển (S4 đọc được vạch đen)
 
     .. image:: images/bai_11.10.png
-        :width: 800px
+        :width: 900px
         :align: center 
 |
 **Lưu ý: Nếu xóa Hàm bên ngoài, hàm trong chương trình chính sẽ biến mất**

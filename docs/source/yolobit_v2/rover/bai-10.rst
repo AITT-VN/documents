@@ -24,13 +24,13 @@ Viết chương trình
 2. Nếu 4 mắt đọc được vạch đen, lùi lại và rẽ trái để tránh
 
     .. image:: images/bai_10.2.png
-        :width: 800px
+        :width: 900px
         :align: center   
 |        
 3. Tiếp tục đi thẳng nếu không thấy vạch đen
 
     .. image:: images/bai_10.3.png
-        :width: 800px
+        :width: 900px
         :align: center   
 
 

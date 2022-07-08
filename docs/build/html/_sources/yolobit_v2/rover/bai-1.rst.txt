@@ -46,9 +46,9 @@ Giới thiệu khối lệnh
 |   
 - Khối lệnh di chuyển:
 
-    .. image:: images/bai_1.8.png
-        :width: 800px
-        :align: center
+ .. image:: images/bai_1.8.png
+    :width: 1200px
+    :align: center
 |    
 
 
@@ -95,9 +95,10 @@ Viết chương trình
     6.  Bạn có thể nhấn nút tạm dừng để dừng chương trình lại
 
     .. image:: images/bai_1.14.png
-        :scale: 55%
+        :width: 70px
         :align: center 
-    |
+    
+
 
 **Chương trình di chuyển với thời gian:**  Chương trình này sẽ giúp Rover đi theo hình vuông
 

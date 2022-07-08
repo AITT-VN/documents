@@ -41,14 +41,14 @@ Giới thiệu khối lệnh
 - Khối lệnh hiện thông tin:
 
     .. image:: images/bai_5.3.png
-        :width: 1000px
+        :width: 1200px
         :align: center  
 
 
 - Khối lệnh đọc cảm biến khoảng cách:
 
     .. image:: images/bai_5.4.png
-        :width: 1000px
+        :width: 1200px
         :align: center  
 
 
@@ -59,5 +59,5 @@ Viết chương trình
 Hiện thông tin cảm biến khoảng cách đọc được lên cửa sổ thông tin
 
     .. image:: images/bai_5.5.png
-        :width: 600px
+        :width: 700px
         :align: center  

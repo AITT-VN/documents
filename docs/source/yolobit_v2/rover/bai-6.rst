@@ -38,13 +38,13 @@ Việc đọc một chương trình thuần túy như vậy sẽ khiến chúng 
 2. Tạo điều kiện: **Nếu Rover phát hiện vật cản trong phạm vi 15cm thì sẽ sáng đèn màu đỏ và rẽ phải**
 
     .. image:: images/bai_6.3.png
-        :width: 600px
+        :width: 700px
         :align: center 
 |
 3. Tạo điều kiện: **Nếu không thì sáng đèn xanh và tiếp tục di chuyển**
 
     .. image:: images/bai_6.4.png
-        :width: 600px
+        :width: 700px
         :align: center 
 
 

@@ -68,6 +68,9 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-13.html">17. Bài 13: Hỗ trợ từ xa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-14.html">18. Bài 14: Chỉ huy từ xa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-15.html">19. Bài 15: Giao tiếp cùng đồng đội</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-16.html">20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-17.html">21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-18.html">22. Bài 18: Điều khiển và giám sát robot qua IoT</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
@@ -76,11 +79,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
@@ -128,10 +133,56 @@
 <h1>1. Giới thiệu về robot Rover<a class="headerlink" href="#gioi-thieu-ve-robot-rover" title="Permalink to this heading"></a></h1>
 <p><strong>1.1 Robot Rover là gì?</strong></p>
 <hr class="docutils" />
-<p>Robot Rover là xe lập trình điều khiển thông minh, được thiết kế để ứng dụng vào giảng dạy STEM cho học sinh và người
-mới bắt đầu học lập trình. Bộ Kit này sẽ là công cụ giúp trẻ phát triển tư duy sáng tạo và trí tuệ hiệu quả. Thông qua phương
-pháp lập trình kéo thả khối lệnh đơn giản, chúng ta có thể xây dựng nhiều tính năng thú vị và độc đáo cho Robot Rover.</p>
-<p><strong>1.2 Mô tả chi tiết thành phần robot Rover</strong></p>
+<p>Robot Rover là xe lập trình điều khiển thông minh, được thiết kế để ứng dụng vào giảng dạy STEM cho học sinh và người mới bắt đầu học lập trình. Bộ Kit này sẽ là công cụ giúp trẻ phát triển tư duy sáng tạo và trí tuệ hiệu quả. Thông qua phương pháp lập trình kéo thả khối lệnh đơn giản, chúng ta có thể xây dựng nhiều tính năng thú vị và độc đáo cho Robot Rover.</p>
+<p><strong>1.2 Đặc điểm</strong></p>
+<p><strong>1.3 Hình ảnh</strong></p>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/rover_1.1.png"><img alt="../../_images/rover_1.1.png" class="align-center" src="../../_images/rover_1.1.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+<p><strong>1.4 Tham số</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Tên</strong></p></td>
+<td><p><strong>Tham số</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Điện áp</p></td>
+<td><p>3.3 V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kích thước</p></td>
+<td><p>85.68mm x 85.34mm x 38.10mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Điều khiển hồng ngoại</p></td>
+<td><p>Kết nối với P4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Đèn RGB WS2812B</p></td>
+<td><p>6 x RGB kết nối với P6</p></td>
+</tr>
+<tr class="row-even"><td><p>White LED</p></td>
+<td><p>2 Led 5mmm kết nối với I2C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kết nối</p></td>
+<td><p>Cổng IIC (P19, P20), Cổng Servo (S1-P16, S2-P3), Cổng siêu âm (Ultrasonic) (P13-P14), P0, P1</p></td>
+</tr>
+<tr class="row-even"><td><p>Động cơ</p></td>
+<td><p>Động cơ giảm tốc vi bánh răng GA12-N20 DC (145 vòng / phút)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cảm biến siêu âm</p></td>
+<td><p>HC-SR04 (phát hiện khoảng cách không tiếp xúc 2cm-200cm, độ chính xác ± 1.5mm)</p></td>
+</tr>
+<tr class="row-even"><td><p>Cảm biến dò line</p></td>
+<td><p>4 x mắt đọc</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>1.5 Mô tả chi tiết thành phần robot Rover</strong></p>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/rover_1.png"><img alt="../../_images/rover_1.png" class="align-center" src="../../_images/rover_1.png" style="width: 845.5px; height: 450.0px;" /></a>
 </section>

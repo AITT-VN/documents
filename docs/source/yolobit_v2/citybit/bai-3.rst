@@ -1,2 +1,2 @@
-6. Bài 3: Thùng rác thông minh
+5. Bài 3: Thùng rác thông minh
 ==================================

@@ -14,7 +14,7 @@ OhStem xin chào tất cả các bạn!
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Yolo:Bit
 
    yolobit_v2/lam-quen.rst

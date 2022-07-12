@@ -2,7 +2,7 @@
 ====================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
 
    rover/gioi-thieu-rover.rst

@@ -59,7 +59,16 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">4. Bài 2: Bãi đậu xe thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Thùng rác thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">6. Bài 4: Hệ thống cảnh báo tiếng ồn</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Bài 5: Hệ thống cảnh báo tốc độ</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Bài 5: Hệ thống cảnh báo tốc độ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-rap-mo-hinh">Lắp ráp mô hình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cach-tinh-van-toc">Cách tính vận tốc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Đèn giao thông</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Hệ thống phát hiện ngập nước</a></li>
@@ -119,6 +128,186 @@
              
   <section id="bai-5-he-thong-canh-bao-toc-do">
 <h1>7. Bài 5: Hệ thống cảnh báo tốc độ<a class="headerlink" href="#bai-5-he-thong-canh-bao-toc-do" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong thành phố, di chuyển vượt tốc độ là hành vi vi phạm. Vì vậy, thiết bị đo tốc độ rất cần thiết để kiểm tra tốc độ chạy của xe. Nếu tốc độ của xe vượt mức quy định, hệ thống sẽ hiển thị số lần vi phạm và giá trị vận tốc lớn nhất của xe lên màn hình LCD.</p>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Cảm biến khoảng cách (P10/P13)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.11.png"><img alt="../../_images/bai_5.11.png" class="align-center" src="../../_images/bai_5.11.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Màn hình LCD OLED (I2C1)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.21.png"><img alt="../../_images/bai_5.21.png" class="align-center" src="../../_images/bai_5.21.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Kết nối</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.31.png"><img alt="../../_images/bai_5.31.png" class="align-center" src="../../_images/bai_5.31.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="lap-rap-mo-hinh">
+<h2>Lắp ráp mô hình<a class="headerlink" href="#lap-rap-mo-hinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.41.png"><img alt="../../_images/bai_5.41.png" class="align-center" src="../../_images/bai_5.41.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_5.51.png"><img alt="../../_images/bai_5.51.png" class="align-center" src="../../_images/bai_5.51.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.61.png"><img alt="../../_images/bai_5.61.png" class="align-center" src="../../_images/bai_5.61.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="cach-tinh-van-toc">
+<h2>Cách tính vận tốc<a class="headerlink" href="#cach-tinh-van-toc" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.7.png"><img alt="../../_images/bai_5.7.png" class="align-right" src="../../_images/bai_5.7.png" style="width: 400px;" /></a>
+</div></blockquote>
+<p>Để tính vận tốc xe, chúng ta sẽ sử dụng công thức sau:</p>
+<blockquote>
+<div><p><strong>v = S / t</strong></p>
+</div></blockquote>
+<dl class="simple">
+<dt>Trong đó:</dt><dd><ul class="simple">
+<li><p>v là vận tốc</p></li>
+<li><p>S là quãng đường</p></li>
+<li><p>t là thời gian</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ta sẽ tiến hành đo khoảng cách đến xe trong 2 mốc thời gian khác nhau, từ đó tính ra quãng đường xe đi được:</p>
+<blockquote>
+<div><p><strong>S = Khoảng cách 1 - Khoảng cách 2</strong></p>
+<p><strong>Thời gian di chuyển = thời gian giữa 2 mốc thời gian</strong></p>
+<a class="reference internal image-reference" href="../../_images/bai_5.8.png"><img alt="../../_images/bai_5.8.png" class="align-center" src="../../_images/bai_5.8.png" style="width: 600px;" /></a>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Tạo 3 biến để chứa giá trị tốc độ, khoảng cách 1 và khoảng cách 2. Gán giá trị 0 cho các biến này</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.9.png"><img alt="../../_images/bai_5.9.png" class="align-center" src="../../_images/bai_5.9.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khởi tạo cảm biến khoảng cách tại cổng P10/P13 và màn hình LCD:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.10.png"><img alt="../../_images/bai_5.10.png" class="align-center" src="../../_images/bai_5.10.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu phát hiện có xe đến gần (khoảng cách &lt; 40cm), tiến hành đo khoảng cách tại 2 thời điểm cách nhau 1 giây và lưu giá trị vào biến tương ứng:</p>
+<a class="reference internal image-reference" href="../../_images/bai_5.111.png"><img alt="../../_images/bai_5.111.png" class="align-center" src="../../_images/bai_5.111.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Lồng điều kiện nếu xe đang tiến lại gần (khoảng cách 2 &lt; khoảng cách 1) vào bên trong:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.12.png"><img alt="../../_images/bai_5.12.png" class="align-center" src="../../_images/bai_5.12.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Áp dụng công thức tính vận tốc vào và gán giá trị tính được vào biến tốc độ (thời gian là 1 giây):</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.13.png"><img alt="../../_images/bai_5.13.png" class="align-center" src="../../_images/bai_5.13.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu tốc độ quá hạn mức quy định (15), ta tiến hành bật đèn LED thành màu đỏ và xóa màn hình LCD:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.14.png"><img alt="../../_images/bai_5.14.png" class="align-center" src="../../_images/bai_5.14.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>In dòng chữ “Vuot qua toc do” và giá trị tốc độ lên màn hình LCD (lấy thông tin từ biến tốc độ):</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.15.png"><img alt="../../_images/bai_5.15.png" class="align-center" src="../../_images/bai_5.15.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Lặp lại 2 nốt nhạc A5 và E3 liên tục 3 lần để báo hiệu:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.16.png"><img alt="../../_images/bai_5.16.png" class="align-center" src="../../_images/bai_5.16.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu tốc độ không vượt mức 15, bật đèn LED thành màu xanh và hiển thị giá trị tốc độ lên màn hình LCD</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_5.17.png"><img alt="../../_images/bai_5.17.png" class="align-center" src="../../_images/bai_5.17.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạm dừng chương trình trong 2 giây để xe rời khỏi</p>
+<a class="reference internal image-reference" href="../../_images/bai_5.18.png"><img alt="../../_images/bai_5.18.png" class="align-center" src="../../_images/bai_5.18.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Tạm dừng toàn bộ chương trình trong 50ms ở cuối chương trình</p>
+<a class="reference internal image-reference" href="../../_images/bai_5.19.png"><img alt="../../_images/bai_5.19.png" class="align-center" src="../../_images/bai_5.19.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hệ thống cảnh báo tốc độ: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BsHSUZg4JGKkIpGDnjW8Vj86ya">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_5.20.png"><img alt="../../_images/bai_5.20.png" class="align-center" src="../../_images/bai_5.20.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 

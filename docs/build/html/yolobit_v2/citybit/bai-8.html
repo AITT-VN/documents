@@ -62,7 +62,15 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Hệ thống cảnh báo tốc độ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Đèn giao thông</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Bài 8: Hệ thống phát hiện ngập nước</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Bài 8: Hệ thống phát hiện ngập nước</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-rap-mo-hinh">Lắp ráp mô hình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
@@ -119,6 +127,107 @@
              
   <section id="bai-8-he-thong-phat-hien-ngap-nuoc">
 <h1>10. Bài 8: Hệ thống phát hiện ngập nước<a class="headerlink" href="#bai-8-he-thong-phat-hien-ngap-nuoc" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Tại các con đường ở vùng trũng trong thành phố thường xuất hiện tình trạng bị ngập nước. Do đó, chúng ta hãy cùng làm một hệ thống theo dõi và báo động tình trạng ngập nước nhé.</p></li>
+<li><p>Khi bị ngập nước, đèn LED ở 2 bên đường sẽ báo động để các xe đang lưu thông biết và né tránh các đoạn đường này.</p></li>
+</ul>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Cảm biến mực nước (P1)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.11.png"><img alt="../../_images/bai_8.11.png" class="align-center" src="../../_images/bai_8.11.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Kết nối</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.21.png"><img alt="../../_images/bai_8.21.png" class="align-center" src="../../_images/bai_8.21.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="lap-rap-mo-hinh">
+<h2>Lắp ráp mô hình<a class="headerlink" href="#lap-rap-mo-hinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Sử dụng lại mô hình trạm theo dõi thời tiết và chất lượng không khí. Nối thêm module cảm biến mực nước để hoàn thiện.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.31.png"><img alt="../../_images/bai_8.31.png" class="align-center" src="../../_images/bai_8.31.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.41.png"><img alt="../../_images/bai_8.41.png" class="align-center" src="../../_images/bai_8.41.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Tạo điều kiện <strong>nếu đọc bộ đếm thời gian ≥ 3000 ms</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.51.png"><img alt="../../_images/bai_8.51.png" class="align-center" src="../../_images/bai_8.51.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Đặt điều kiện: nếu đọc cảm biến ngập nước &gt; 40%</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.61.png"><img alt="../../_images/bai_8.61.png" class="align-center" src="../../_images/bai_8.61.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu điều kiện:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Đúng: đổi các LED thành màu đỏ</p></li>
+<li><p>Sai: Đổi các LED thành màu xanh lá</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_8.71.png"><img alt="../../_images/bai_8.71.png" class="align-center" src="../../_images/bai_8.71.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Reset bộ đếm thời gian ở cuối điều kiện</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.81.png"><img alt="../../_images/bai_8.81.png" class="align-center" src="../../_images/bai_8.81.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hệ thống phát hiện ngập nước: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BsdmIJRmcZklka5PEUlx9A2dqG">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_8.9.png"><img alt="../../_images/bai_8.9.png" class="align-center" src="../../_images/bai_8.9.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 

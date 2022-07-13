@@ -61,7 +61,15 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">6. Bài 4: Hệ thống cảnh báo tiếng ồn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Hệ thống cảnh báo tốc độ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Đèn giao thông</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-rap-mo-hinh">Lắp ráp mô hình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Hệ thống phát hiện ngập nước</a></li>
 </ul>
 </li>
@@ -119,6 +127,133 @@
              
   <section id="bai-7-he-thong-theo-doi-thoi-tiet-va-chat-luong-khong-khi">
 <h1>9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí<a class="headerlink" href="#bai-7-he-thong-theo-doi-thoi-tiet-va-chat-luong-khong-khi" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Ở thành phố, chất lượng không khí là mối quan tâm hàng đầu. Để đo lường và đưa ra giải pháp tương ứng, chúng ta hãy cùng lập trình một hệ thống để theo dõi chất lượng không khí và thời tiết nhé! Các giá trị này sẽ được hiển thị trên màn hình LCD.</p></li>
+<li><p>Nếu chất lượng không khí xuống thấp, hệ thống sẽ báo động bằng màn hình LED 5 x 5 trên Yolo:Bit.</p></li>
+</ul>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Cảm biến nhiệt độ độ ẩm DHT20 (I2C2)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.13.png"><img alt="../../_images/bai_7.13.png" class="align-center" src="../../_images/bai_7.13.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Cảm biến chất lượng không khí MQ-135 (P0)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.21.png"><img alt="../../_images/bai_7.21.png" class="align-center" src="../../_images/bai_7.21.png" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Lưu ý:</strong> Cảm biến chất lượng không khí sẽ ấm lên khi được cấp điện, đây là đặc tính đốt nóng không khí của thiết bị.</p>
+<ul>
+<li><p>Màn hình LCD OLED (I2C1)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.31.png"><img alt="../../_images/bai_7.31.png" class="align-center" src="../../_images/bai_7.31.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Kết nối</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.41.png"><img alt="../../_images/bai_7.41.png" class="align-center" src="../../_images/bai_7.41.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="lap-rap-mo-hinh">
+<h2>Lắp ráp mô hình<a class="headerlink" href="#lap-rap-mo-hinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.51.png"><img alt="../../_images/bai_7.51.png" class="align-center" src="../../_images/bai_7.51.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_7.61.png"><img alt="../../_images/bai_7.61.png" class="align-center" src="../../_images/bai_7.61.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_7.71.png"><img alt="../../_images/bai_7.71.png" class="align-center" src="../../_images/bai_7.71.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.81.png"><img alt="../../_images/bai_7.81.png" class="align-center" src="../../_images/bai_7.81.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Reset bộ đếm thời gian và đặt điều kiện <strong>nếu đọc bộ đếm thời gian &gt; 3000 ms</strong>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.91.png"><img alt="../../_images/bai_7.91.png" class="align-center" src="../../_images/bai_7.91.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khởi tạo màn hình LCD. Xóa màn hình LCD trước đó và in ra giá trị nhiệt độ, độ ẩm, chất lượng không khí (PPM) lên màn hình LCD tại vị trí 3 hàng khác nhau:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.101.png"><img alt="../../_images/bai_7.101.png" class="align-center" src="../../_images/bai_7.101.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạo điều kiện để báo động về chất lượng không khí: Nếu chất lượng không khí &gt; 1000 (Đạt mức độ đáng báo động)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.111.png"><img alt="../../_images/bai_7.111.png" class="align-center" src="../../_images/bai_7.111.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu điều kiện đúng: Hiện đèn màu đỏ và thông báo “Khong khi: Xau” lên màn hình LCD</p>
+<p>Nếu không: đổi màu đèn LED thành màu xanh và hiển thị dòng chữ “TKhong khi: Tot” lên màn hình LCD</p>
+<a class="reference internal image-reference" href="../../_images/bai_7.121.png"><img alt="../../_images/bai_7.121.png" class="align-center" src="../../_images/bai_7.121.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Reset bộ đếm thời gian ở cuối điều kiện chính</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.131.png"><img alt="../../_images/bai_7.131.png" class="align-center" src="../../_images/bai_7.131.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hệ thống theo dõi thời tiết và chất lượng không khí: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BsZMk5w3M7jC7a3AXSgWQtA3iu">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_7.14.png"><img alt="../../_images/bai_7.14.png" class="align-center" src="../../_images/bai_7.14.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 

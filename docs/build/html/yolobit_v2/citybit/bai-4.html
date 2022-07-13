@@ -58,7 +58,16 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">3. Bài 1: Đèn công cộng thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">4. Bài 2: Bãi đậu xe thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Thùng rác thông minh</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 4: Hệ thống cảnh báo tiếng ồn</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 4: Hệ thống cảnh báo tiếng ồn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-rap-mo-hinh">Lắp ráp mô hình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-ham">Giới thiệu về hàm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Hệ thống cảnh báo tốc độ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Đèn giao thông</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a></li>
@@ -119,6 +128,214 @@
              
   <section id="bai-4-he-thong-canh-bao-tieng-on">
 <h1>6. Bài 4: Hệ thống cảnh báo tiếng ồn<a class="headerlink" href="#bai-4-he-thong-canh-bao-tieng-on" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Tại các khu vực cần sự yên tĩnh như trường học, bệnh viện, chúng ta sẽ thiết lập một hệ thống đo lường và cảnh báo khi tiếng ồn vượt hạn mức cho phép. Hệ thống sẽ lưu lại số lần vượt mức và hiển thị chúng lên màn hình LCD.</p>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Cảm biến âm thanh (P0)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.11.png"><img alt="../../_images/bai_4.11.png" class="align-center" src="../../_images/bai_4.11.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Màn hình LCD OLED (I2C1)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.21.png"><img alt="../../_images/bai_4.21.png" class="align-center" src="../../_images/bai_4.21.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Kết nối</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.31.png"><img alt="../../_images/bai_4.31.png" class="align-center" src="../../_images/bai_4.31.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="lap-rap-mo-hinh">
+<h2>Lắp ráp mô hình<a class="headerlink" href="#lap-rap-mo-hinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.41.png"><img alt="../../_images/bai_4.41.png" class="align-center" src="../../_images/bai_4.41.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_4.51.png"><img alt="../../_images/bai_4.51.png" class="align-center" src="../../_images/bai_4.51.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.61.png"><img alt="../../_images/bai_4.61.png" class="align-center" src="../../_images/bai_4.61.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_4.71.png"><img alt="../../_images/bai_4.71.png" class="align-center" src="../../_images/bai_4.71.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_4.8.png"><img alt="../../_images/bai_4.8.png" class="align-center" src="../../_images/bai_4.8.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-ve-ham">
+<h2>Giới thiệu về hàm<a class="headerlink" href="#gioi-thieu-ve-ham" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Với những chương trình dài có nhiều khối lệnh, chúng ta sẽ sử dụng <strong>Hàm</strong> để rút gọn những chương trình đó.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.9.png"><img alt="../../_images/bai_4.9.png" class="align-center" src="../../_images/bai_4.9.png" style="width: 250px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Hàm</strong> giống như việc bạn tạo thêm một loại khối lệnh mới để sử dụng, và khối lệnh này bao gồm các khối lệnh con bên trong</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.10.png"><img alt="../../_images/bai_4.10.png" class="align-center" src="../../_images/bai_4.10.png" style="width: 250px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Cách tạo và sử dụng hàm</strong></p>
+<ol class="arabic">
+<li><p>Chọn mục <strong>Nâng cao</strong> &gt;&gt; <strong>Hàm</strong>: sử dụng khối lệnh hàm để làm gì để tạo hàm.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.111.png"><img alt="../../_images/bai_4.111.png" class="align-center" src="../../_images/bai_4.111.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Đưa các khối lệnh vào trong hàm, sau đó đặt tên cho hàm.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.12.png"><img alt="../../_images/bai_4.12.png" class="align-center" src="../../_images/bai_4.12.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh mới với tên vừa đặt sẽ xuất hiện trong mục <strong>Hàm</strong>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.13.png"><img alt="../../_images/bai_4.13.png" class="align-center" src="../../_images/bai_4.13.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Tạo một hàm để khởi động lại màn hình.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In ra nội dung “Vi pham: 0”, “Do on toi da: 0” tại dòng 15 và dòng 30</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_4.14.png"><img alt="../../_images/bai_4.14.png" class="align-center" src="../../_images/bai_4.14.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạo 2 biến để chứa thông tin về số lần tiếng ồn vượt mức và giá trị tiếng ồn cao nhất, gán dữ liệu số cho 2 biến:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.15.png"><img alt="../../_images/bai_4.15.png" class="align-center" src="../../_images/bai_4.15.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khởi tạo màn hình LCD và đổi màu tất cả đèn LED thành màu xanh lá, sau đó khởi động lại màn hình LCD</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.16.png"><img alt="../../_images/bai_4.16.png" class="align-center" src="../../_images/bai_4.16.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạo biến độ ồn và gán giá trị nhận từ cảm biến âm thanh</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.17.png"><img alt="../../_images/bai_4.17.png" class="align-center" src="../../_images/bai_4.17.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu tiếng ồn lớn hơn mức 15, ta sẽ hiển thị giá trị tiếng ồn lên màn hình LED của Yolo:Bit dưới dạng biểu đồ phần trăm</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.18.png"><img alt="../../_images/bai_4.18.png" class="align-center" src="../../_images/bai_4.18.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Chương trình liên tục kiểm tra và lưu giá trị tiếng ồn cao nhất vào biến</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.19.png"><img alt="../../_images/bai_4.19.png" class="align-center" src="../../_images/bai_4.19.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu giá trị tiếng ồn lớn hơn 25:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Đổi tất cả LED thành màu đỏ</p></li>
+<li><p>Cộng thêm 1 vào biến số lần vượt mức</p></li>
+<li><p>Xóa màn hình LCD trước đó và hiển thị số lần vượt mức (dòng 15), giá trị tiếng ồn cao nhất (dòng 30) ra màn hình</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_4.20.png"><img alt="../../_images/bai_4.20.png" class="align-center" src="../../_images/bai_4.20.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạm dừng 50ms</p>
+<a class="reference internal image-reference" href="../../_images/bai_4.211.png"><img alt="../../_images/bai_4.211.png" class="align-center" src="../../_images/bai_4.211.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Nhấn nút A để đặt lại số liệu, bật đèn LED màu xanh để báo hiệu</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_4.22.png"><img alt="../../_images/bai_4.22.png" class="align-center" src="../../_images/bai_4.22.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hệ thống cảnh báo tiếng ồn: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BsC7c89yhsN09u77mhXArcqx7Q">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_4.24.png"><img alt="../../_images/bai_4.24.png" class="align-center" src="../../_images/bai_4.24.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 

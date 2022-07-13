@@ -60,7 +60,15 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Thùng rác thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">6. Bài 4: Hệ thống cảnh báo tiếng ồn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Hệ thống cảnh báo tốc độ</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 6: Đèn giao thông</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 6: Đèn giao thông</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-rap-mo-hinh">Lắp ráp mô hình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Hệ thống phát hiện ngập nước</a></li>
 </ul>
@@ -119,6 +127,160 @@
              
   <section id="bai-6-den-giao-thong">
 <h1>8. Bài 6: Đèn giao thông<a class="headerlink" href="#bai-6-den-giao-thong" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài học này, chúng ta sẽ cùng làm một hệ thống mô phỏng đèn giao thông thực tế.</p>
+<ul class="simple">
+<li><p>Khi nhấn nút A: chế độ đèn giao thông bình thường</p></li>
+<li><p>Khi nhấn nút B: chế độ ban đêm (đèn sẽ nhấp nháy đèn vàng)</p></li>
+</ul>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Đèn LED (số lương: 3)</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.11.png"><img alt="../../_images/bai_6.11.png" class="align-center" src="../../_images/bai_6.11.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Đèn LED Đỏ: P0</p></li>
+<li><p>Đèn LED Vàng: P1</p></li>
+<li><p>Đèn LED Xanh: P2</p></li>
+<li><p><strong>Kết nối</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.21.png"><img alt="../../_images/bai_6.21.png" class="align-center" src="../../_images/bai_6.21.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="lap-rap-mo-hinh">
+<h2>Lắp ráp mô hình<a class="headerlink" href="#lap-rap-mo-hinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.31.png"><img alt="../../_images/bai_6.31.png" class="align-center" src="../../_images/bai_6.31.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_6.41.png"><img alt="../../_images/bai_6.41.png" class="align-center" src="../../_images/bai_6.41.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.51.png"><img alt="../../_images/bai_6.51.png" class="align-center" src="../../_images/bai_6.51.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/bai_6.6.png"><img alt="../../_images/bai_6.6.png" class="align-center" src="../../_images/bai_6.6.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Tạo một biến tên là chế độ và gán giá trị 0 vào biến:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.7.png"><img alt="../../_images/bai_6.7.png" class="align-center" src="../../_images/bai_6.7.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khi nút A được nhấn, cho chế độ bằng 0</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.8.png"><img alt="../../_images/bai_6.8.png" class="align-center" src="../../_images/bai_6.8.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khi nút B được nhấn, cho chế độ bằng 1 và hiển thị hình dấu chấm than lên màn hình Yolo:Bit</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.9.png"><img alt="../../_images/bai_6.9.png" class="align-center" src="../../_images/bai_6.9.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Trong chế độ đèn giao thông, cho bật đèn LED màu xanh (chân P2):</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.10.png"><img alt="../../_images/bai_6.10.png" class="align-center" src="../../_images/bai_6.10.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạo hàm đếm 5 giây</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.111.png"><img alt="../../_images/bai_6.111.png" class="align-center" src="../../_images/bai_6.111.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Tạo hàm đếm 3 giây</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.12.png"><img alt="../../_images/bai_6.12.png" class="align-center" src="../../_images/bai_6.12.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Bật đèn xanh P2, gọi hàm đếm 5 giây, sau đó tắt đèn</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.13.png"><img alt="../../_images/bai_6.13.png" class="align-center" src="../../_images/bai_6.13.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Bật đèn vàng P1, gọi hàm đếm 3 giây, sau đó tắt đèn</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.14.png"><img alt="../../_images/bai_6.14.png" class="align-center" src="../../_images/bai_6.14.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Bật đèn đỏ P0, gọi hàm đếm 5 giây, sau đó tắt đèn</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.15.png"><img alt="../../_images/bai_6.15.png" class="align-center" src="../../_images/bai_6.15.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Nếu chế độ = 1 (nút B được nhấn), ta tiến hành bật đèn vàng trong 1 giây và tắt đèn trong 0,5 giây liên tục</p>
+<a class="reference internal image-reference" href="../../_images/bai_6.16.png"><img alt="../../_images/bai_6.16.png" class="align-center" src="../../_images/bai_6.16.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Đèn giao thông: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BsW3uYe2BBTDV3Oukf7uTGHmgY">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_6.18.png"><img alt="../../_images/bai_6.18.png" class="align-center" src="../../_images/bai_6.18.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 

@@ -89,7 +89,7 @@ Viết chương trình
 1. Kéo khối lệnh điều kiện vào phần **lặp lại mãi**
 
     .. image:: images/bai_1.7.png
-        :width: 400px
+        :width: 300px
         :align: center 
     |
 2. Cho khối lệnh toán tử **VÀ** vào phần nếu
@@ -121,7 +121,7 @@ Viết chương trình
 **Giới thiệu khối lệnh**
 
     .. image:: images/bai_1.11.png
-        :width: 1000px
+        :width: 800px
         :align: center 
     |
 
@@ -130,13 +130,13 @@ Viết chương trình
 1. Nếu trời tối và cảm biến phát hiện có người thì bật đèn LED
 
     .. image:: images/bai_1.12.png
-        :width: 1000px
+        :width: 800px
         :align: center 
     |
 2. Sau khi bật đèn, reset bộ đếm để đếm lại từ đầu
 
     .. image:: images/bai_1.13.png
-        :width: 1000px
+        :width: 800px
         :align: center 
     |
 3. Nếu đếm được 10 giây (trong vòng 10 giây liên tiếp không có người xuất hiện) thì tắt đèn LED

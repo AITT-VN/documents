@@ -56,7 +56,13 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Điều khiển đèn bằng Remote</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">5. Bài 2: Điều chỉnh độ sáng đèn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">6. Bài 3: Hiển thị nhiệt độ</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Bài 4: Quạt thông minh</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Bài 4: Quạt thông minh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">8. Bài 5: Cảnh báo trộm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Đèn cổng thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">10. Bài 7: Khóa cửa thông minh</a></li>
@@ -120,6 +126,53 @@
              
   <section id="bai-4-quat-thong-minh">
 <h1>7. Bài 4: Quạt thông minh<a class="headerlink" href="#bai-4-quat-thong-minh" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài học này, chúng ta sẽ cùng lập trình bật quạt thông minh tùy theo nhiệt độ phòng ở: nếu trời nóng (nhiệt độ ≥ 29) thì quạt tự động bật, ngược lại, nếu trời lạnh (nhiệt độ &lt; 29) thì quạt tự tắt.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/homebit_51.png"><img alt="../../_images/homebit_51.png" class="align-center" src="../../_images/homebit_51.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/homebit_39.png"><img alt="../../_images/homebit_39.png" class="align-center" src="../../_images/homebit_39.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Kết nối cảm biến DHT20 và màn hình LCD như bài 2</p></li>
+<li><p>Kết nối quạt mini vào cổng P10</p></li>
+</ul>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/homebit_40.png"><img alt="../../_images/homebit_40.png" class="align-center" src="../../_images/homebit_40.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Tạo điều kiện: Nếu đọc nhiệt độ ≥ 29, thực hiện bật quạt với tốc độ 50</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/homebit_52.png"><img alt="../../_images/homebit_52.png" class="align-center" src="../../_images/homebit_52.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Tương tự, nếu nhiệt độ dưới 29, quạt sẽ tự tắt (tốc độ 0%)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/homebit_53.png"><img alt="../../_images/homebit_53.png" class="align-center" src="../../_images/homebit_53.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 

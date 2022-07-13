@@ -9,7 +9,7 @@ Trong bài học đầu tiên, chúng ta sẽ sử dụng đèn LED trên Yolo:B
 
 - Nhấn nút A trên remote để bật đèn
 
-- Nhấn nút C trên remote để tắt đèn
+- Nhấn nút C trên remote để tắt đèn 
   
 Thiết bị cần dùng
 ----------------------

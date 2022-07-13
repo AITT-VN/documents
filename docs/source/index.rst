@@ -1,71 +1,66 @@
-Ohstem Education
+OhStem Education
 ======================================
 
-Ohstem xin chào tất cả các bạn!
+OhStem xin chào tất cả các bạn!
 
 Đây là trang tài liệu của OhStem Education.
 
-| **Ohstem Official Website**: https://www.ohstem.vn
-| **GitHub Open Source**: https://github.com/AITT-VN
-| **Ohstem Education Documentation**: https://docs.ohstem.vn
-| **Ohstem Block Programming**: https://app.ohstem.vn
-
-
-.. Chú ý::
-
-     Dự án đang được phát triển tích cực. Vì xController đang được cải tiến từng ngày, không phải thiết bị ngoại vi nào cũng có thể sử dụng hoàn hảo, có thể vẫn còn một số lỗi, chúng tôi sẽ tiếp tục sửa chữa và cập nhật kịp thời.
 
 .. toctree::
    :maxdepth: 1
-   :caption: xController
+   :caption: Cửa hàng
 
-
-   board/introduction.rst
-   board/hardware.rst
-   board/drive.rst
-   board/app.rst
-   board/flashburn.rst
-   api/micropython-api/index.rst
-   api/arduino-api/index.rst
+   store/store.rst
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: xBuild Creator Kit
-
-
-   tutorials/intro.rst
-   tutorials/micropython/index.rst
-   tutorials/arduino/index.rst
-
-
-.. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Yolo:Bit
 
-
-   yolobit/introduction.rst
-   yolobit/hardware.rst
-   yolobit/drive.rst
-   yolobit/app.rst
-   yolobit/flashburn.rst
-   yolobit/micropython-exp.rst
-   yolobit/blockapi.rst
-   
-   
+   yolobit_v2/lam-quen.rst
+   yolobit_v2/rover.rst
+   yolobit_v2/aiot.rst
+   yolobit_v2/homebit.rst
+   yolobit_v2/plantbit.rst
+   yolobit_v2/citybit.rst
+   yolobit_v2/physbit.rst
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Phần mềm Ohstem App
+   :maxdepth: 2
+   :caption: xBot
+
+   xbot/xbot.rst
+   xbot/inventor.rst
+   xbot/gripper.rst
+   xbot/dumptruck.rst
+   xbot/dau-nang.rst
 
 
-   app/introduction.rst
-   app/install.rst
-   app/frontend.rst
-   app/connect.rst
-   app/runandsave.rst
-   app/setting.rst
-   app/createnew.rst
-   app/blockapi.rst
+.. toctree::
+   :maxdepth: 2
+   :caption: Game Kit - Kit học lập trình game 
+
+   gamekit/huong-dan.rst
+   
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Các module mở rộng
+
+   module/cam-bien.rst
+   module/hien-thi.rst
+   module/dieu-khien-dong-ngat.rst
+   module/board-mo-rong.rst 
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Tài liệu học STEM 
+
+   tai_lieu_stem/tai-lieu-1.rst
+   tai_lieu_stem/tai-lieu-2.rst
+
+
 

@@ -44,7 +44,7 @@ Viết chương trình
 1. Kéo khối lệnh điều kiện vào phần lặp lại mãi mãi
 
 .. image:: images/homebit_25.png
-    :width: 300px
+    :width: 100px
     :align: center
 |    
 2. Nếu nút A được nhấn, đèn LED sẽ bật màu đỏ

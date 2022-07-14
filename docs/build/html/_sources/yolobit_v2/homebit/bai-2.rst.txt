@@ -30,7 +30,7 @@ Giới thiệu khối lệnh
 --------------------------
 
 .. image:: images/homebit_29.png
-    :width: 400px
+    :width: 900px
     :align: center
 |    
 Giới thiệu về biến

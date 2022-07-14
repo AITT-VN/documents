@@ -59,7 +59,14 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">5. Bài 2: Cảnh báo khi thiếu nước</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">6. Bài 3: Bật tắt máy bơm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Tưới nước tự động</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 5: Hiển thị thông tin</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 5: Hiển thị thông tin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Bật tắt đèn LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">10. Bài 7: Hiển thị độ sáng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">11. Bài 8: Bật tắt đèn tự động</a></li>
@@ -122,6 +129,82 @@
              
   <section id="bai-5-hien-thi-thong-tin">
 <h1>8. Bài 5: Hiển thị thông tin<a class="headerlink" href="#bai-5-hien-thi-thong-tin" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài này, chúng ta sẽ sử dụng cảm biến nhiệt độ độ ẩm DHT20 và cảm biến ánh sáng để đọc giá trị từ môi trường và hiển thị các giá trị đó lên màn hình LCD OLED. Đây là những thông tin quan trọng ảnh hưởng tới sự sinh trưởng của cây. Dựa trên thông tin này, ta có thể đưa ra các quyết định chăm sóc cây hợp lý hơn.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_52.png"><img alt="../../_images/planbit_52.png" class="align-center" src="../../_images/planbit_52.png" style="width: 200.0px; height: 210.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_53.png"><img alt="../../_images/planbit_53.png" class="align-center" src="../../_images/planbit_53.png" style="width: 439.0px; height: 246.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/planbit_54.png"><img alt="../../_images/planbit_54.png" class="align-center" src="../../_images/planbit_54.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_55.png"><img alt="../../_images/planbit_55.png" class="align-center" src="../../_images/planbit_55.png" style="width: 900px;" /></a>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Khởi tạo màn hình LCD và Reset bộ đếm thời gian</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_56.png"><img alt="../../_images/planbit_56.png" class="align-center" src="../../_images/planbit_56.png" style="width: 219.0px; height: 161.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Tạo điều kiện: Nếu bộ đếm thời gian ≥ 5000ms (5 giây). Điều kiện này giúp mỗi 5 giây chương trình sẽ thực hiện lệnh bên trong</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_57.png"><img alt="../../_images/planbit_57.png" class="align-center" src="../../_images/planbit_57.png" style="width: 456.0px; height: 218.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Bắt đầu cập nhật cảm biến nhiệt độ và xóa màn hình LCD cũ sau mỗi 5 giây:</p></li>
+</ol>
+<p>Kéo thả khối <strong>cập nhật cảm biến DHT20</strong> và <strong>xóa màn hình LCD</strong> vào phần thực hiện</p>
+<a class="reference internal image-reference" href="../../_images/planbit_58.png"><img alt="../../_images/planbit_58.png" class="align-center" src="../../_images/planbit_58.png" style="width: 439.0px; height: 240.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Tạo văn bản in ra LCD nội dung “nhiet do” lấy thông tin từ <strong>khối lệnh đọc nhiệt độ</strong> cho dòng 1 (tọa độ y=0)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_59.png"><img alt="../../_images/planbit_59.png" class="align-center" src="../../_images/planbit_59.png" style="width: 791.0px; height: 303.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Tương tự, tạo văn bản in ra 2 nội dung còn lại:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Nội dung “do am” lấy thông tin từ <strong>khối lệnh đọc độ ẩm</strong> cho dòng 2 (y = 15)</p></li>
+<li><p>Nội dung “do sang” lấy thông tin từ <strong>khối lệnh đọc độ sáng</strong> cho dòng 3 (y = 30)</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Reset bộ đếm để đếm lại sau mỗi 5 giây</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_60.png"><img alt="../../_images/planbit_60.png" class="align-center" src="../../_images/planbit_60.png" style="width: 702.0px; height: 414.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 

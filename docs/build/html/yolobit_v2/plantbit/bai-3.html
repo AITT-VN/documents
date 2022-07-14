@@ -57,7 +57,14 @@
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện Plant:Bit V2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Hiển thị độ ẩm đất</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">5. Bài 2: Cảnh báo khi thiếu nước</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 3: Bật tắt máy bơm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 3: Bật tắt máy bơm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Tưới nước tự động</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">8. Bài 5: Hiển thị thông tin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Bật tắt đèn LED</a></li>
@@ -122,6 +129,67 @@
              
   <section id="bai-3-bat-tat-may-bom">
 <h1>6. Bài 3: Bật tắt máy bơm<a class="headerlink" href="#bai-3-bat-tat-may-bom" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài này, chúng ta sẽ điều khiển bật tắt máy bơm nước bằng cách nhấn nút A và B trên Yolo:Bit.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_41.png"><img alt="../../_images/planbit_41.png" class="align-center" src="../../_images/planbit_41.png" style="width: 291.0px; height: 108.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_42.png"><img alt="../../_images/planbit_42.png" class="align-center" src="../../_images/planbit_42.png" style="width: 275.0px; height: 198.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Kết nối <strong>Module đóng ngắt 2 kênh</strong> vào cổng P14/P15. Nối <strong>động cơ bơm nước</strong> vào cổng USB Output1</p>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/planbit_43.png"><img alt="../../_images/planbit_43.png" class="align-center" src="../../_images/planbit_43.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_44.png"><img alt="../../_images/planbit_44.png" class="align-center" src="../../_images/planbit_44.png" style="width: 900px;" /></a>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Chọn <strong>khối lệnh khi nút được nhấn</strong> từ mục <strong>Ngõ vào</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_45.png"><img alt="../../_images/planbit_45.png" class="align-center" src="../../_images/planbit_45.png" style="width: 206.0px; height: 78.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Kéo thả <strong>khối lệnh bật máy bơm</strong> vào <strong>khối lệnh khi nút được nhấn</strong> và chọn tốc độ là 50</p></li>
+</ol>
+<p>Tiếp tục, gắn thêm <strong>khối lệnh đổi màu tất cả LED</strong> và chọn màu xanh lá</p>
+<a class="reference internal image-reference" href="../../_images/planbit_46.png"><img alt="../../_images/planbit_46.png" class="align-center" src="../../_images/planbit_46.png" style="width: 481.0px; height: 134.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Tương tụ, tạo sự kiện khi nút B được nhấn:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Tắt máy bơm (tốc độ = 0%)</p></li>
+<li><p>Tắt đèn (đổi màu LED thành màu đen)</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_47.png"><img alt="../../_images/planbit_47.png" class="align-center" src="../../_images/planbit_47.png" style="width: 455.0px; height: 132.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Ghi chú</strong>: <em>Động cơ của máy bơm có thể hoạt động với tốc độ từ 0 - 100. Chúng ta nên sử dụng ở mức 50 để tránh tình trạng Yolo:Bit bị nóng (do máy bơm cần nguồn điện lớn để chạy).</em></p>
+</section>
 </section>
 
 

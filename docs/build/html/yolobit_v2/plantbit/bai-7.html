@@ -61,7 +61,13 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Tưới nước tự động</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">8. Bài 5: Hiển thị thông tin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Bật tắt đèn LED</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Bài 7: Hiển thị độ sáng</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Bài 7: Hiển thị độ sáng</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-8.html">11. Bài 8: Bật tắt đèn tự động</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-9.html">12. Bài 9: Hiển thị mực nước</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-10.html">13. Bài 10: Cảnh báo mực nước</a></li>
@@ -122,6 +128,56 @@
              
   <section id="bai-7-hien-thi-do-sang">
 <h1>10. Bài 7: Hiển thị độ sáng<a class="headerlink" href="#bai-7-hien-thi-do-sang" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Độ sáng môi trường sẽ ảnh hưởng lớn tới quá trình quang hợp và phát triển của cây trồng. Trong bài này, chúng ta sẽ đo lường và hiển thị giá trị độ sáng môi trường lên OhStem App nhé!</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_67.png"><img alt="../../_images/planbit_67.png" class="align-center" src="../../_images/planbit_67.png" style="width: 196.0px; height: 100.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_68.png"><img alt="../../_images/planbit_68.png" class="align-center" src="../../_images/planbit_68.png" style="width: 161.0px; height: 219.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Cảm biến ánh sáng nối vào chân P1</p></li>
+</ul>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Bắt đầu với khối lệnh hiện thông tin nằm trong lệnh lặp lại mãi</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_69.png"><img alt="../../_images/planbit_69.png" class="align-center" src="../../_images/planbit_69.png" style="width: 290.0px; height: 146.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Kéo thả khối lệnh đọc độ sáng vào khối lệnh hiện thông tin và chọn chân là P1</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_70.png"><img alt="../../_images/planbit_70.png" class="align-center" src="../../_images/planbit_70.png" style="width: 435.0px; height: 150.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Đặt thời gian chờ cập nhật lại độ sáng đo được là 3 giây</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_71.png"><img alt="../../_images/planbit_71.png" class="align-center" src="../../_images/planbit_71.png" style="width: 441.0px; height: 180.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Lưu ý</strong>: Chọn <strong>Hiển thị cửa sổ thông tin</strong> trong mục <strong>Cài đặt</strong> để xem được thông tin hiển thị</p>
+</section>
 </section>
 
 

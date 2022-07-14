@@ -36,7 +36,7 @@
 |
 6. Sau khi tải thư viện xong, trong danh mục khối lệnh bên trái sẽ xuất hiện HOME:BIT V3
 
-.. image:: images/homebit_20.png
+.. image:: images/homebit_90.png
     :width: 400px
     :align: center 
 |

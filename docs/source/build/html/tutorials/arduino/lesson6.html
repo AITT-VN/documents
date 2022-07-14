@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài học 6: Đèn LED RGB cảm ứng &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Bài học 6: Đèn LED RGB cảm ứng</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson6.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bai-hoc-6-den-led-rgb-cam-ung">
+<h1>Bài học 6: Đèn LED RGB cảm ứng<a class="headerlink" href="#bai-hoc-6-den-led-rgb-cam-ung" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<p>Vận dụng kiến thức về tín hiệu Analog Input đã học để làm việc với cảm biến ánh sáng và điều khiển đèn LED đa màu RGB được tích hợp sẵn trên xController.</p>
+<p>Tìm hiểu cách sử dụng cửa sổ Serial Monitor để xem và theo dõi kết quả đọc được từ cảm biến, từ đó có thể viết đúng logic hoạt động của chương trình.</p>
+<p>Viết chương trình điều chỉnh độ sáng của đèn LED RGB một cách tự động dựa vào ánh sáng môi trường.</p>
+</section>
+<section id="kien-thuc-moi">
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<p><em>Cảm biến ánh sáng</em></p>
+<p>Cảm biến ánh sáng có nhiều loại, trong đó loại dùng quang trở là phổ biến nhất. Quang trở là một loại điện trở mà giá trị của nó thay đổi theo cường độ ánh sáng nó thu được. Nếu đặt ở môi trường có ít ánh sáng, có bóng râm hoặc bóng tối thì điện trở của quang trở sẽ tăng cao. Ngược lại, nếu đặt ở ngoài nắng, hoặc nơi có ánh sáng thì điện trở sẽ giảm.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/ls-6-1.png"><img alt="../../_images/ls-6-1.png" class="align-center" src="../../_images/ls-6-1.png" style="width: 600px;" /></a>
+</div></blockquote>
+<p>Ta có thể sử dụng cảm biến ánh sáng trong rất nhiều ứng dụng thực tế, ví dụ như bật tắt đèn tự động mỗi khi trời tối.</p>
+<p><em>LED đa màu RGB</em></p>
+<p>xController được tích hợp sẵn 2 đèn LED đa màu RGB trên board. Đèn LED RGB là đèn LED đặc biệt, có thể phát sáng với nhiều màu khác nhau (lên đến 16 triệu màu). Màu của đèn LED được tổng hợp từ 3 đèn màu đỏ (Red), xanh lục (Green), xanh lam (Blue) bên trong.</p>
+<p>Các LED màu này có độ sáng từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">255</span></code>. Để thay đổi màu đèn LED RGB, chúng ta sẽ thay đổi độ sáng của 3 LED màu này.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/ls-6-2.png"><img alt="../../_images/ls-6-2.png" class="align-center" src="../../_images/ls-6-2.png" style="width: 600px;" /></a>
+</div></blockquote>
+<p><em>Cửa sổ Serial Monitor</em></p>
+<p>Cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code> (gọi tắt là cửa sổ Serial) là một công cụ rất hữu ích để quan sát và theo dõi những thông tin trong một chương trình, như in kết quả đọc được từ cảm biến, giúp chỉnh sửa lỗi chương trình một cách dễ dàng.</p>
+<p>Bạn có thể mở <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code> bằng cách click vào <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Serial</span> <span class="pre">Monitor</span></code>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/ls-6-3.png"><img alt="../../_images/ls-6-3.png" class="align-center" src="../../_images/ls-6-3.png" style="width: 600px;" /></a>
+</div></blockquote>
+<p><em>Lưu ý</em>: xController có 16 kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> độc lập (đánh số từ <code class="docutils literal notranslate"><span class="pre">0-15</span></code>). Mỗi kênh này có thể cấu hình để sử dụng với tần số và Duty Cycle khác nhau.</p>
+</section>
+<section id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/device-6.png"><img alt="../../_images/device-6.png" class="align-center" src="../../_images/device-6.png" style="width: 600px;" /></a>
+</section>
+<section id="ket-noi-phan-cung">
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/ls-6-4.png"><img alt="../../_images/ls-6-4.png" class="align-center" src="../../_images/ls-6-4.png" style="width: 500px;" /></a>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Để làm việc với đèn LED RGB tích hợp trên xController, bạn cài đặt thư viện của xController ở link này: <a class="reference external" href="https://github.com/AITT-VN/xcontroller_arduino_lib/archive/refs/heads/main.zip">https://github.com/AITT-VN/xcontroller_arduino_lib/archive/refs/heads/main.zip</a> hoặc vào link Github để tải về tại <a class="reference external" href="https://github.com/AITT-VN/xcontroller_arduino_lib">https://github.com/AITT-VN/xcontroller_arduino_lib</a></p>
+<p>Sau khi tải xong, bạn vào menu <code class="docutils literal notranslate"><span class="pre">Sketch</span> <span class="pre">&gt;</span> <span class="pre">Include</span> <span class="pre">library</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">.ZIP</span> <span class="pre">library</span></code>, chọn file zip thư viện vừa tải để thêm vào Arduino IDE.</p>
+<a class="reference internal image-reference" href="../../_images/ls-6-5.png"><img alt="../../_images/ls-6-5.png" class="align-center" src="../../_images/ls-6-5.png" style="width: 500px;" /></a>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+
+<span class="n">XController</span><span class="w"> </span><span class="n">xcon</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">lightSensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A4_1</span><span class="p">;</span><span class="w"> </span><span class="c1">// cảm biến ánh sáng nối với cổng 4</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// giá trị đọc được từ cảm biến</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">outputValue</span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// giá trị xuất ra cho LED RGB</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//  đọc giá trị cảm biến ánh sáng (0-4095)</span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">lightSensorPin</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// in ra cửa sổ Serial kết quả đọc được</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//  chuyển kết quả đọc được sang dải giá trị 0-255</span>
+<span class="w">  </span><span class="n">outputValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">map</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">4095</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// in ra kết quả chuyển đổi</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">outputValue</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// thay đổi màu sắc của LED RGB, chỉ thay đổi giá trị màu đỏ</span>
+<span class="w">  </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">outputValue</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Sau khi nạp chương trình, Bạn có thể xem giá trị của cảm biến ánh sáng và kết quả tính toán độ sáng của đèn LED RGB trong cửa sổ Serial Monitor.</p>
+</section>
+<section id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>Để sử dụng thư viện của xController, bạn cần cài đặt như hướng dẫn ở trên. Trong chương trình, bạn cần khai báo thư viện (có tên <code class="docutils literal notranslate"><span class="pre">&lt;xcontroller.h&gt;</span></code>) bằng câu lệnh <code class="docutils literal notranslate"><span class="pre">#include</span></code>.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>XController xcon;
+</pre></div>
+</div>
+<p>Sau khi khai báo thư viện của xController, chúng ta khai báo một đối tượng là XController. Đối tượng này có các hàm để chúng ta làm việc với các chức năng tích hợp trên xController như đèn LED RGB, loa hay cảm biến gia tốc,…</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Serial.begin(9600);
+</pre></div>
+</div>
+<p>Khởi tạo giao tiếp <code class="docutils literal notranslate"><span class="pre">Serial</span></code> với tốc độ (baud rate) là <code class="docutils literal notranslate"><span class="pre">9600</span></code>. Để thông tin hiển thị đúng trong cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code>, bạn phải chọn tốc độ truyền nhận (ở góc dưới bên phải của giao diện màn hình Serial) đúng với giá trị dùng để khởi tạo trong chương trình.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Serial.println(sensorValue);
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/ls-6-6.png"><img alt="../../_images/ls-6-6.png" class="align-center" src="../../_images/ls-6-6.png" style="width: 500px;" /></a>
+<p>In ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code> giá trị đọc được từ cảm biến và ngắt xuống dòng. Một câu lệnh tương tự cũng in ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code> nhưng không ngắt xuống dòng là <code class="docutils literal notranslate"><span class="pre">Serial.print()</span></code>.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>outputValue = map(sensorValue, 0, 4095, 0, 255);
+</pre></div>
+</div>
+<p>Như ta đã biết, cảm biến xuất ra tín hiệu Analog có giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">4095</span></code>, trong khi độ sáng của 3 đèn LED trong đèn LED RGB tích hợp nhận giá trị từ <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">~</span> <span class="pre">255</span></code>. Vậy nên, ta cần quy đổi hai thang đo này thành một:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Khi giá trị cảm biến là 0 thì độ sáng của LED đỏ trong LED RGB là 0.</p></li>
+<li><p>Khi giá trị cảm biến là 4095 thì độ sáng LED đỏ trong LED RGB là 255.</p></li>
+</ul>
+</div></blockquote>
+<p>Để chuyển đổi tự động, chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">map()</span></code> cho phép chuyển đổi giá trị trong 1 dải giá trị này sang 1 dải giá trị khác.</p>
+<p>Cú pháp của câu lệnh map như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>map(value, fromLow, fromHigh, toLow, toHigh)
+</pre></div>
+</div>
+<p>Các tham số:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code>: Số cần chuyển đổi.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fromLow</span></code>: Giới hạn dưới của dải giá trị hiện tại.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fromHigh</span></code>: Giới hạn trên của dải giá trị hiện tại.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">toLow</span></code>: Giới hạn dưới của dải giá trị mới cần chuyển đổi.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">toHigh</span></code>: Giới hạn trên của dải giá trị mới cần chuyển đổi.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>xcon.showLED(0, outputValue, 0, 0);
+</pre></div>
+</div>
+<p>Để thay đổi màu và độ sáng của đèn LED RGB trên xController, chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">showLED()</span></code>. Hàm này có cú pháp như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>showLED(whichLED, redValue, greenValue, blueValue);
+</pre></div>
+</div>
+<p>Các tham số bao gồm:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">whichLED</span></code>: LED RGB cần thay đổi màu sắc, nhận 1 trong các giá trị là 0 (cả 2 LED), 1 (LED trái), 2 (LED phải). Trong chương trình trên, chúng ta dùng giá trị 0 để đổi màu cả 2 LED trái phải trên xController.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">redValue</span></code>: Độ sáng của LED đỏ.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">greenValue</span></code>: Độ sáng của LED xanh lục.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">blueValue</span></code>: Độ sáng của LED xanh lam.</p></li>
+</ul>
+</div></blockquote>
+<p>Để thay đổi độ sáng của đèn LED RGB, chúng ta chỉ cần thay đổi độ sáng của LED đỏ và tắt các LED xanh lục, xanh lam.</p>
+<p><em>Sau khi nạp chương trình, bạn thử lấy tay che cảm biến ánh sáng và quan sát sự thay đổi độ sáng của cả 2 đèn LED RGB trên xController.</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

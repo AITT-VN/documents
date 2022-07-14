@@ -20,7 +20,7 @@ Giới thiệu khối lệnh
 -------------------
 
 .. image:: images/homebit_86.png
-    :width: 700px
+    :width: 650px
     :align: center
 |   
 Viết chương trình 
@@ -30,13 +30,13 @@ Viết chương trình
 1. Tạo điều khiện: Nếu bị lắc với độ nhạy là 11
 
 .. image:: images/homebit_87.png
-    :width: 700px
+    :width: 650px
     :align: center
 |   
 
 2. Khi phát hiện có động đất (ngôi nhà bị lắc), chương trình bắt đầu xóa màn hình LCD trước đó, hiện 2 dòng chữ "Alarm - Earthquake!!!" lên Lcd và phát ra âm thanh cảnh báo
 
 .. image:: images/homebit_88.png
-    :width: 700px
+    :width: 650px
     :align: center
 |   

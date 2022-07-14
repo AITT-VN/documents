@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài học 3: Nhấn nút bật đèn LED &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Bài học 3: Nhấn nút bật đèn LED</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson3.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bai-hoc-3-nhan-nut-bat-den-led">
+<h1>Bài học 3: Nhấn nút bật đèn LED<a class="headerlink" href="#bai-hoc-3-nhan-nut-bat-den-led" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<p>Trong bài học này, bạn sẽ tìm hiểu về tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code> và học cách điều khiển đèn LED bằng nút nhấn, thay vì tự động bật tắt LED đơn giản như trong bài học trước.</p>
+</section>
+<section id="kien-thuc-moi">
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<p><em>Tín hiệu Digital Input</em></p>
+<p>Ngược với tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Output</span></code> là tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code>. Bạn sẽ dùng <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code> khi chân IO nối với các module xuất tín hiệu HIGH (3.3V) hoặc LOW (0V), ví dụ như nút nhấn.</p>
+<p>Để biết khi nút được nhấn là <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> hay <code class="docutils literal notranslate"><span class="pre">LOW</span></code>, chúng ta cần tìm hiểu thiết kế của module nút nhấn mà chúng ta đang sử dụng. Sơ đồ thiết kế của module nút nhấn:</p>
+<a class="reference internal image-reference" href="../../_images/ls-3-1.png"><img alt="../../_images/ls-3-1.png" class="align-center" src="../../_images/ls-3-1.png" style="width: 500px;" /></a>
+<p>Ta thấy, chân tín hiệu đầu ra của nút nhấn được nối với input pin của xController (đường màu xanh lá).</p>
+<p>Ở trạng thái bình thường chưa được nhấn, chân tín hiệu này được nối với nguồn điện dương 3.3V thông qua một điện trở R1, khi đó, tín hiệu này có giá trị là HIGH (3.3V).</p>
+<p>Khi nút được nhấn, mạch đóng lại, chân tín hiệu này được nối thẳng với nguồn điện âm (GND, Ground) thay vì 3.3V (do điện trở R1 cản trở) nên tín hiệu sẽ có giá trị là LOW (0V).</p>
+<a class="reference internal image-reference" href="../../_images/ls-3-2.png"><img alt="../../_images/ls-3-2.png" class="align-center" src="../../_images/ls-3-2.png" style="width: 500px;" /></a>
+<p>Kiểu thiết kế như trên còn được gọi là Input Pullup (điện trở kéo lên 3.3V). Một kiểu thiết kế khác ngược lại là Input Pulldown, có sơ đồ như sau:</p>
+<a class="reference internal image-reference" href="../../_images/ls-3-3.png"><img alt="../../_images/ls-3-3.png" class="align-center" src="../../_images/ls-3-3.png" style="width: 500px;" /></a>
+<p>Với thiết kế này, chân IO tín hiệu mặc định khi chưa nhấn nút sẽ được nối với GND (đường màu xanh lá) và có giá trị ở mức LOW (0V). Khi nút được nhấn, chân IO sẽ được nối thẳng lên 3.3V và có giá trị là HIGH. Khi làm việc với các module, bạn cần hiểu rõ cách thiết kế của chúng, từ đó chọn cách xử lý đúng tín hiệu trả về.</p>
+</section>
+<section id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/device-2.png"><img alt="../../_images/device-2.png" class="align-center" src="../../_images/device-2.png" style="width: 600px;" /></a>
+</section>
+<section id="ket-noi-phan-cung">
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/ls-3-4.png"><img alt="../../_images/ls-3-4.png" class="align-center" src="../../_images/ls-3-4.png" style="width: 500px;" /></a>
+<p>Cả LED và nút nhấn đều sử dụng tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code>, nên 2 module này sẽ được kết nối với cổng giao tiếp <code class="docutils literal notranslate"><span class="pre">Digital</span></code>.</p>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
+<span class="nv">int</span> <span class="nv">buttonPin</span> <span class="o">=</span> <span class="nv">D2_1</span><span class="c1">;</span>
+<span class="nv">int</span> <span class="nv">buttonState</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
+
+<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">buttonPin</span>, <span class="nv">INPUT</span><span class="ss">)</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+  <span class="o">//</span> đọ<span class="nv">c</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> <span class="nv">c</span>ủ<span class="nv">a</span> <span class="nv">n</span>ú<span class="nv">t</span> <span class="nv">nh</span>ấ<span class="nv">n</span>
+  <span class="nv">buttonState</span> <span class="o">=</span> <span class="nv">digitalRead</span><span class="ss">(</span><span class="nv">buttonPin</span><span class="ss">)</span><span class="c1">;</span>
+
+  <span class="o">//</span> <span class="nv">ki</span>ể<span class="nv">m</span> <span class="nv">tra</span> <span class="nv">xem</span> <span class="nv">n</span>ú<span class="nv">t</span> <span class="nv">c</span>ó đượ<span class="nv">c</span> <span class="nv">nh</span>ấ<span class="nv">n</span> <span class="nv">kh</span>ô<span class="nv">ng</span>
+  <span class="o">//</span> <span class="nv">n</span>ế<span class="nv">u</span> <span class="nv">n</span>ú<span class="nv">t</span> đượ<span class="nv">c</span> <span class="nv">nh</span>ấ<span class="nv">n</span> <span class="nv">th</span>ì <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">l</span>à <span class="nv">LOW</span>
+  <span class="k">if</span> <span class="ss">(</span><span class="nv">buttonState</span> <span class="o">==</span> <span class="nv">LOW</span><span class="ss">)</span> {
+    <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
+  } <span class="k">else</span> {
+    <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
+  }
+}
+</pre></div>
+</div>
+</section>
+<section id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1;
+int buttonPin = D2_1;
+int buttonState = 0;
+</pre></div>
+</div>
+<p>Như trong bài trước, ta khai báo các biến để lưu thông tin chân IO đã kết nối với module đèn LED và nút nhấn. Do nút nhấn được nối với cổng 2 trên board và chỉ dùng 1 đường tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code>, nên ta sử dụng giá trị là <code class="docutils literal notranslate"><span class="pre">D2_1</span></code>.</p>
+<p>Ngoài ra, ta cũng khai báo 1 biến có tên là <code class="docutils literal notranslate"><span class="pre">buttonState</span></code> để chứa trạng thái hiện tại của nút nhấn, dùng để xử lý trong chương trình chính.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
+</pre></div>
+</div>
+<p>Câu lệnh này chúng ta đã tìm hiểu trong bài trước, giúp cấu hình chân IO nối với module LED là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> để có thể điều khiển bật tắt LED được.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(buttonPin, INPUT);
+</pre></div>
+</div>
+<p>Tương tự, chúng ta cấu hình cho nút nhấn là <code class="docutils literal notranslate"><span class="pre">INPUT</span></code>. Ngược với mode <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code>, mode <code class="docutils literal notranslate"><span class="pre">INPUT</span></code> là để xController nhận tín hiệu từ nút nhấn thay vì xuất tín hiệu để điều khiển.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>buttonState = digitalRead(buttonPin);
+</pre></div>
+</div>
+<p>Câu lệnh này đọc tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> từ một chân IO được chỉ định. Kết quả trả về sẽ là mức <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">LOW</span></code>, tùy theo nút có được nhấn hay không.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">buttonState</span> <span class="o">==</span> <span class="nv">LOW</span><span class="ss">)</span> {
+    <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
+} <span class="k">else</span> {
+    <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
+}
+</pre></div>
+</div>
+<p>Để xử lý tín hiệu đọc được, đoạn code này sử dụng một cú pháp rất phổ biến trong lập trình là câu lệnh kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">if…else...</span></code>. Câu lệnh điều kiện cho phép chúng ta kiểm tra một điều kiện là đúng hay sai, và tùy theo kết quả đúng sai mà những khối lệnh liên quan sẽ được thực hiện.</p>
+<p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">if...else…</span></code> có cú pháp đầy đủ như sau:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">condition1</span><span class="ss">)</span> {
+    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">A</span>
+}
+<span class="k">else</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">condition2</span><span class="ss">)</span> {
+    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">B</span>
+}
+<span class="k">else</span> {
+    <span class="o">//</span> <span class="k">do</span> <span class="nv">Thing</span> <span class="nv">C</span>
+}
+</pre></div>
+</div>
+<p>Ở cú pháp trên, chương trình sẽ kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">condition1</span></code> đầu tiên:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> đúng: thực hiện các dòng lệnh trong phần “// do Thing A”</p></li>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition1</span></code> sai: chương trình sẽ tiếp tục kiểm tra điều kiện <code class="docutils literal notranslate"><span class="pre">condition2</span></code>:</p></li>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition</span></code> 2 đúng, thực hiện các lệnh trong nhóm “// do Thing B.</p></li>
+<li><p>Nếu <code class="docutils literal notranslate"><span class="pre">condition</span></code> 2 sai, chương trình sẽ thực hiện các lệnh trong nhóm cuối cùng là “// do Thing C”.</p></li>
+</ul>
+</div></blockquote>
+<p>Có thể sử dụng nhiều hơn 1 điều kiện trong câu lệnh if… else…</p>
+<p>Theo đó, trong chương trình bật tắt đèn LED ở trên, chương trình sẽ kiểm tra xem kết quả trạng thái nút nhấn có là LOW (nút được nhấn) hay không. Nếu trạng thái của nút nhấn đang là LOW, đèn LED sẽ được bật và ngược lại (trạng thái ở mức HIGH, nút không được nhấn), đèn LED sẽ tắt.</p>
+<p><em>Bạn hãy thử chạy chương trình, nhấn nút và quan sát kết quả đèn LED.</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

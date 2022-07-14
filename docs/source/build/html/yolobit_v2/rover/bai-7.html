@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11. Bài 7: Bám sát mục tiêu &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12. Bài 8: Vết tích để lại" href="bai-8.html" />
+    <link rel="prev" title="10. Bài 6: Vượt chướng ngại vật" href="bai-6.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-rover.html">1. Giới thiệu về robot Rover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="che-do-mac-dinh.html">4. Các chế độ mặc định</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-1.html">5. Bài 1: Cùng di chuyển nào</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Bài 2: Chú ý từng bước đi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Thắp sáng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Trở thành cảnh sát</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-5.html">9. Bài 5: Đôi mắt tinh tường</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-6.html">10. Bài 6: Vượt chướng ngại vật</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Bài 7: Bám sát mục tiêu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-bien">Giới thiệu về biến</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bai-8.html">12. Bài 8: Vết tích để lại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-9.html">13. Bài 9: Lần theo dấu vết</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-10.html">14. Bài 10: Né tránh nguy hiểm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-11.html">15. Bài 11: Hoàn trả vật phẩm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-12.html">16. Bài 12: Hạ gục tội phạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-13.html">17. Bài 13: Hỗ trợ từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-14.html">18. Bài 14: Chỉ huy từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-15.html">19. Bài 15: Giao tiếp cùng đồng đội</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-16.html">20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-17.html">21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-18.html">22. Bài 18: Điều khiển và giám sát robot qua IoT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a> &raquo;</li>
+      <li>11. Bài 7: Bám sát mục tiêu</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteryolobit_v2/rover/bai-7.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bai-7-bam-sat-muc-tieu">
+<h1>11. Bài 7: Bám sát mục tiêu<a class="headerlink" href="#bai-7-bam-sat-muc-tieu" title="Permalink to this heading"></a></h1>
+<p><em>Vượt qua các chướng ngại, Rover đã tiếp cận được mục tiêu. “Không thể để kẻ này thoát được” - Rover thầm nghĩ. Ý chí kiên định đó đã giúp Rover khai phá một kỹ năng mới cho bản thân - Bám sát mục tiêu</em></p>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Làm quen với điều kiện gộp</p></li>
+<li><p>Xây dựng chương trình bám sát vật cản</p></li>
+</ol>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Khối lệnh toán tử:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.1.png"><img alt="../../_images/bai_7.1.png" class="align-center" src="../../_images/bai_7.1.png" style="width: 900px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-ve-bien">
+<h2>Giới thiệu về biến<a class="headerlink" href="#gioi-thieu-ve-bien" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để chương trình không cần phải đọc khoảng cách và xử lý giá trị liên tục, chúng ta cần sử dụng biến. Có thể hiểu, biến như một chiếc hộp, nơi chứa giá trị mà ta cần sử dụng.</p>
+<p>Mỗi hộp chỉ có thể chứa duy nhất một giá trị (chữ, số, chuỗi, dữ liệu) tại một thời điểm. Trong bài này, biến sẽ chứa giá trị số, đại diện cho khoảng cách từ Rover đến vật thể trước mặt.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.2.png"><img alt="../../_images/bai_7.2.png" class="align-center" src="../../_images/bai_7.2.png" style="width: 400px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Cách tạo và sử dụng biến</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để tạo</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.3.png"><img alt="../../_images/bai_7.3.png" class="align-center" src="../../_images/bai_7.3.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khi tạo biến thành công, trong mục Biến sẽ xuất hiện những khối lệnh liên quan để làm việc với biến.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.4.png"><img alt="../../_images/bai_7.4.png" class="align-center" src="../../_images/bai_7.4.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Viết thuật toán</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.5.png"><img alt="../../_images/bai_7.5.png" class="align-center" src="../../_images/bai_7.5.png" style="width: 800px;" /></a>
+<p><em>Dựa vào thuật toán, hãy viết ra nội dung của chương trình.</em></p>
+</div></blockquote>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>Hướng dẫn tạo điều kiện gộp</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.6.png"><img alt="../../_images/bai_7.6.png" class="align-center" src="../../_images/bai_7.6.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Giải thích về điều kiện gộp “Nếu không nếu”</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Điều kiện “nếu không nếu” là một điều kiện gộp giữa “nếu không” và “nếu”</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.7.png"><img alt="../../_images/bai_7.7.png" class="align-center" src="../../_images/bai_7.7.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+<li><p><strong>Ví dụ:</strong> Nếu trời mưa bạn A sẽ ở lại trường, nếu không bạn A sẽ về nhà nếu hết giờ học</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.8.png"><img alt="../../_images/bai_7.8.png" class="align-center" src="../../_images/bai_7.8.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="3">
+<li><p>Khởi tạo biến “khoảng cách” (cho biến có giá trị bằng 0), và gán giá trị khoảng cách đọc được vào biến</p>
+<a class="reference internal image-reference" href="../../_images/bai_7.9.png"><img alt="../../_images/bai_7.9.png" class="align-center" src="../../_images/bai_7.9.png" style="width: 800px;" /></a>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="4">
+<li><p>Tạo điều kiện thứ nhất: <strong>Nếu khoảng cách &lt; 15cm, lùi lại với tốc độ 50</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.10.png"><img alt="../../_images/bai_7.10.png" class="align-center" src="../../_images/bai_7.10.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="5">
+<li><p>Tạo điều kiện thứ hai: <strong>Nếu khoảng cách &gt; 20cm và &lt; 40cm thì tiến tới với tốc độ 50. Nếu cả 2 điều kiện không đúng, dừng di chuyển</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.11.png"><img alt="../../_images/bai_7.11.png" class="align-center" src="../../_images/bai_7.11.png" style="width: 800px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Bám sát mục tiêu: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BeVzmPaysgSHHG0dA9GriT347D">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_7.12.png"><img alt="../../_images/bai_7.12.png" class="align-center" src="../../_images/bai_7.12.png" style="width: 200px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bai-6.html" class="btn btn-neutral float-left" title="10. Bài 6: Vượt chướng ngại vật" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bai-8.html" class="btn btn-neutral float-right" title="12. Bài 8: Vết tích để lại" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

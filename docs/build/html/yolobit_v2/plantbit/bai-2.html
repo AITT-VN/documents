@@ -56,7 +56,14 @@
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp Plant:Bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện Plant:Bit V2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Hiển thị độ ẩm đất</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Bài 2: Cảnh báo khi thiếu nước</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Bài 2: Cảnh báo khi thiếu nước</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">6. Bài 3: Bật tắt máy bơm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Tưới nước tự động</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">8. Bài 5: Hiển thị thông tin</a></li>
@@ -122,6 +129,74 @@
              
   <section id="bai-2-canh-bao-khi-thieu-nuoc">
 <h1>5. Bài 2: Cảnh báo khi thiếu nước<a class="headerlink" href="#bai-2-canh-bao-khi-thieu-nuoc" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Khi biết tình trạng độ ẩm, chúng ta có thể chăm sóc cây tốt hơn để tăng năng suất của cây trồng. Hãy cùng thực hành dự án đơn giản: hiển thị mặt vui khi đất đủ ẩm, ngược lại, hiển thị mặt buồn khi đất thiếu ẩm nhé!</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_29.png"><img alt="../../_images/planbit_29.png" class="align-center" src="../../_images/planbit_29.png" style="width: 218.0px; height: 108.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_30.png"><img alt="../../_images/planbit_30.png" class="align-center" src="../../_images/planbit_30.png" style="width: 278.0px; height: 70.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Kết nối <strong>cảm biến độ ẩm đất</strong> vào cổng PO</p>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/planbit_35.png"><img alt="../../_images/planbit_35.png" class="align-center" src="../../_images/planbit_35.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_36.png"><img alt="../../_images/planbit_36.png" class="align-center" src="../../_images/planbit_36.png" style="width: 900px;" /></a>
+</div></blockquote>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Kéo thả <strong>khối lệnh điều kiện</strong> vào pahàn lặp lại mãi</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_37.png"><img alt="../../_images/planbit_37.png" class="align-center" src="../../_images/planbit_37.png" style="width: 208.0px; height: 200.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Kéo thả <strong>khối lệnh so sánh</strong> vào điều kiện nếu</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_38.png"><img alt="../../_images/planbit_38.png" class="align-center" src="../../_images/planbit_38.png" style="width: 270.0px; height: 209.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Đặt điều kiện nếu độ ẩm đất ≤ 30% như sau:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Đặt <strong>khối lệnh đọc độ ẩm đất</strong> và <strong>khối lệnh số vào khối lệnh so sánh</strong></p></li>
+<li><p>Chọn phép so sánh là ≤</p></li>
+<li><p>Thay giá trị <strong>khối lệnh số</strong> là 30</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_39.png"><img alt="../../_images/planbit_39.png" class="align-center" src="../../_images/planbit_39.png" style="width: 458.0px; height: 222.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Nếu điều kiện đúng, hiện mặt buồn: Kéo thả <strong>khối lệnh hiện hình ảnh SAD</strong> vào phần thực hiện</p></li>
+</ol>
+<p>Nếu không, hiện mặt vui: Kéo thả <strong>khối lệnh hiện hình ảnh SMILE</strong> vào phần nếu không</p>
+<a class="reference internal image-reference" href="../../_images/planbit_40.png"><img alt="../../_images/planbit_40.png" class="align-center" src="../../_images/planbit_40.png" style="width: 470.0px; height: 238.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 

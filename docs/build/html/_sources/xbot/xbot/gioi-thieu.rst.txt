@@ -14,13 +14,13 @@ xBot là một robot giáo dục, giúp các bạn nhỏ từ 8 tuổi có thể
 xBot được điều khiển và lập trình bằng các thiết bị như smartphone, máy tính bảng, laptop hoặc remote đi kèm thông qua các khối lệnh đơn giản và trực quan.
 
 .. image:: images/xbot_2.png
-    :width: 300px
+    :width: 900px
     :align: center
 |   
 xBot là công cụ giúp bạn làm quen với thế giới thiết kế và lập trình  robot dễ dàng.
 
 .. image:: images/xbot_3.png
-    :width: 300px
+    :width: 900px
     :align: center
 |   
 So sánh xBot với các robot có chức năng tương đương của Lego
@@ -77,5 +77,30 @@ Tự thiết kế là lắp ráp các mô hình theo ý thích, giúp kích thí
 
 .. image:: images/xbot_11.png
     :width: 500px
+    :align: center
+|   
+
+Thành phần của xBot
+------------------------
+------------------------
+
+**Mạch điều khiển xController**
+
+Mạch điều khiển xController đóng vai trò là bộ xử lý trung tâm của xBot, giúp kết nối các thành phần quan trọng như input, output, nguồn pin,...
+
+.. image:: images/xbot_18.png
+    :width: 500px
+    :align: center
+|   
+**Các cảm biến đi kèm**
+
+.. image:: images/xbot_19.png
+    :width: 500px
+    :align: center
+|   
+**Các cổng mở rộng**
+
+.. image:: images/xbot_20.png
+    :width: 400px
     :align: center
 |   

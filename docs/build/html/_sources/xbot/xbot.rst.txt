@@ -5,6 +5,7 @@
    :maxdepth: 2
 
    xbot/gioi-thieu.rst
+   xbot/phan-mem.rst
    xbot/lap-rap.rst
    xbot/bai-1.rst
    xbot/bai-2.rst

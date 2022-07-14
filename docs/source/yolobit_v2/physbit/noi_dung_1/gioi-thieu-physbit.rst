@@ -17,7 +17,7 @@ Giới thiệu về PHYS:BIT
 **Phys:Bit** là một bộ kit hỗ trợ giảng dạy các kiến thức cơ bản về mạch điện. Bộ kit gồm các linh kiện cơ bản thường được dùng trong các mạch điện thông dụng.
 
     .. image:: images/n-1.png
-        :width: 400px
+        :width: 600px
         :align: center 
 
 Kit học vật lý điện tử **Phys:Bit** sẽ giúp các bạn điều khiển các mạch điện theo ý muốn, từ đó kích thích niềm đam mê với môn học quan trọng này

@@ -8,7 +8,7 @@ Giới thiệu
 Nút nhấn giữ, sau khi được nhấn sẽ giữ nguyên trạng thái và sẽ đổi lại trạng thái ban đầu khi được nhấn thêm lần nữa.
 
     .. image:: images/2_2.png
-        :width: 200px
+        :width: 400px
         :align: center 
     |
 
@@ -22,8 +22,10 @@ Xây dụng mạch điện
     - Điện trở R1 100 Ω. 
     - Nút nhấn S1.
 
+- **Sơ đồ mạch điện**
+
     .. image:: images/2_3.png
-        :width: 300px
+        :width: 400px
         :align: center 
     |
 - Giống như bài trước, khi dòng điện đi qua các thiết bị điện tạo thành mạch điện (cực dương đi đến cực âm). 
@@ -41,7 +43,7 @@ Kết nối mạch điện
         :align: center 
     |
 
-Có thể bạn chưa biết 
+Có thể bạn chưa biết? 
 -----------
 -------------
 

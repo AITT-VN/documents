@@ -14,13 +14,13 @@ Giới thiệu
     - **Nhấn thả** (Push button): luôn ở trạng thái ngắt. Khi được nhấn thì sẽ đóng mạch điện. Nếu thả ra thì sẽ tự trả về lại trạng thái ngắt. Các nút nhấn trên các điều khiển TV, máy lạnh là loại này.
 
     .. image:: images/2_1.png
-        :width: 200px
+        :width: 400px
         :align: center 
     |
     - **Nhấn và giữ trạng thái đóng hoặc ngắt** (Lock button): mỗi khi được nhấn thì sẽ chuyển sang trạng thái ngược lại, ví dụ từ đóng (ON) thì sẽ chuyển sang ngắt (OFF) hoặc ngược lại. Các công tắc bật đèn quạt trong nhà thuộc loại này.
 
     .. image:: images/2_2.png
-        :width: 200px
+        :width: 400px
         :align: center 
     |
 
@@ -33,6 +33,8 @@ Xây dụng mạch điện
     - Đèn LED. 
     - Điện trở R1 100 Ω. 
     - Nút nhấn S1.
+
+- **Sơ đồ mạch điện**
 
     .. image:: images/2_3.png
         :width: 300px
@@ -59,7 +61,7 @@ Kết nối mạch điện
         :align: center 
     |
 
-Có thể bạn chưa biết 
+Có thể bạn chưa biết? 
 -----------
 -------------
 

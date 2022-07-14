@@ -19,6 +19,8 @@ Xây dụng mạch điện
 
     - Điện trở R1 100 Ω. 
 
+- **Sơ đồ mạch điện**
+
     .. image:: images/1_1.png
         :width: 400px
         :align: center 
@@ -46,7 +48,7 @@ Hãy kết nối mạch điện như hình minh họa:
 **Lưu ý:** Đừng quên gắn hộp pin và bật công tắc của Phys:Bit 
 
 
-Có thể bạn chưa biết 
+Có thể bạn chưa biết? 
 -----------
 -------------
 

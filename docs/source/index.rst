@@ -39,6 +39,15 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
+   :caption: xBuild Creator Kit
+
+   tutorials/intro.rst
+   tutorials/micropython/index.rst
+   tutorials/arduino/index.rst
+
+
+.. toctree::
+   :maxdepth: 2
    :caption: Game Kit - Kit học lập trình game 
 
    gamekit/huong-dan.rst
@@ -52,7 +61,6 @@ OhStem xin chào tất cả các bạn!
    module/hien-thi.rst
    module/dieu-khien-dong-ngat.rst
    module/board-mo-rong.rst 
-
 
 
 .. toctree::

@@ -45,6 +45,12 @@ Robot Rover là xe lập trình điều khiển thông minh, được thiết k�
 
 ------------------------------------
 
+Mắt nhận hồng ngoại kết nối với cổng P4 của Yolo:Bit được đặt ở phần đầu Rover 
+
+    .. image:: images/5_rover.png
+        :width: 400px
+        :align: center 
+    |
 Hai đèn LED trắng đầy đủ màu được điều khiển bởi mạch mở rộng robot Rover, được đặt cả hai bên của phần mặt trước 
 
     .. image:: images/2_rover.png
@@ -60,18 +66,6 @@ Sáu đèn LED RGB được đặt ở 2 phía mặt trước của Rover, có t
 Kết nối cảm biến khoảng cách và cổng I2C, cổng Servo(S1,S2) được đặt ở phía sau Rover:
 
     .. image:: images/4_rover.png
-        :width: 200px
-        :align: center 
-    |
-Mắt nhận hồng ngoại kết nối với cổng P4 của Yolo:Bit được đặt ở phần đầu Rover 
-
-    .. image:: images/5_rover.png
-        :width: 400px
-        :align: center 
-    |
-Cảm biến dò đường kết nối với cổng I2C của Yolo:Bit đặt ở phía dưới Rover được sử dụng để phát hiện đường màu đen.  
-
-    .. image:: images/6_rover.png
         :width: 400px
         :align: center 
     |
@@ -84,7 +78,13 @@ Khe cắm pin Lipo 18650 được đặt ở giữa Rover.
 Công tắc nguồn, được đặt ở bên trái xe.
  
     .. image:: images/10_rover.png
-        :width: 200px
+        :width: 400px
+        :align: center 
+    |
+Cảm biến dò đường kết nối với cổng I2C của Yolo:Bit đặt ở phía dưới Rover được sử dụng để phát hiện đường màu đen.  
+
+    .. image:: images/6_rover.png
+        :width: 400px
         :align: center 
     |
 Bánh xe đa năng được đặt ở phía trước của Rover, có thể đi được mọi hướng với các tốc độ khác nhau
@@ -93,10 +93,9 @@ Bánh xe đa năng được đặt ở phía trước của Rover, có thể đi
         :width: 400px
         :align: center 
     |
-
 Hai bánh xe ở cả hai bên được dẫn bởi động cơ giảm tốc DC vi bánh răng (145 vòng/ phút)
 
     .. image:: images/8_rover.png
-        :width: 200px
+        :width: 400px
         :align: center 
 

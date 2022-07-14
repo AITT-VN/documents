@@ -1,78 +1,36 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>led_onboard.show(index, color, time) &mdash; OhStem Product Documents 0.0.2 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-
-  
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
-
-    
+    <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="led_onboard.show(index, color)" href="xbot_led_onboard_single.html" />
-    <link rel="prev" title="speaker.pitch(frequency, time)" href="xbot_speaker_pitch.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: white" >
-          
-
-          
             <a href="../../../index.html">
-          
-
-          
-            
             <img src="../../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -80,209 +38,104 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption" role="heading"><span class="caption-text">xController</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/hardware.html">Phần cứng</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/drive.html">Cài đặt Driver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/app.html">Phần mềm lập trình</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../board/flashburn.html">Cập nhật Firmware</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../api/micropython-api/index.html">MicroPython API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../api/arduino-api/index.html">Arduino API</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/intro.html">xBuild Creator Kit Cho Giáo Dục STEM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../store/store.html">Đi tới cửa hàng</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/hardware.html">Phần cứng</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/drive.html">Cài đặt Driver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/app.html">Phần mềm lập trình</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/flashburn.html">Cập nhật Firmware</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/micropython-exp.html">MicroPython example</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../yolobit/blockapi.html">Yolo:Bit Block API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Phần mềm Ohstem App</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../install.html">Cài đặt</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../frontend.html">Giao diện</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../connect.html">Kết nối</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../runandsave.html">Chạy và lưu project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../createnew.html">Tạo một mục mở rộng mới</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../blockapi.html">Block API</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../api-move.html">Di chuyển</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api-input.html">Đầu vào</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../api-effect.html">Hiệu ứng</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="xbot_message.html">say(TEXT)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_speaker_play_built_in.html">speaker.play(BIRTHDAY)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_speaker_play_until_done.html">speaker.play(BIRTHDAY, wait=True)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_speaker_play_note.html">speaker.play([‘C3:1’], wait=True)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_speaker_stop.html">speaker.stop()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_speaker_pitch.html">speaker.pitch(frequency, time)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">led_onboard.show(index, color, time)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#vi-du">Ví dụ</a></li>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../xbot/gioi-thieu.html"><strong>Giới thiệu về xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../xbot/lap-rap.html"><strong>Hướng dẫn lắp ráp xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../xbot/bai-hoc.html"><strong>Các bài học của xBot</strong></a></li>
 </ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_led_onboard_single.html">led_onboard.show(index, color)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_led_onboard_rgb.html">led_onboard.show(0, (50, 50, 50))</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_led_onboard_clear.html">led_onboard.show(0, (0, 0, 0))</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_LED_matrix_show_adv_image.html">led_matrix.show(PORT, Image.IMAGE)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="xbot_LED_matrix_display.html">led_matrix.show(PORT, TEXT)</a></li>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../api-loop.html">Vòng lặp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api-logic.html">Logic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api-math.html">Tính toán</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api-variable.html">Biến</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../block-api-advance/index.html">Nâng cao</a></li>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 </ul>
-</li>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../index.html">OhStem Product Documents</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../../blockapi.html">Block API</a> &raquo;</li>
-        
-          <li><a href="../api-effect.html">Hiệu ứng</a> &raquo;</li>
-        
       <li>led_onboard.show(index, color, time)</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/username/reponame/blob/masterapp/block-api/api-effect/xbot_led_onboard_delay.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="led-onboard-show-index-color-time">
-<h1>led_onboard.show(index, color, time)<a class="headerlink" href="#led-onboard-show-index-color-time" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="led-onboard-show-index-color-time">
+<h1>led_onboard.show(index, color, time)<a class="headerlink" href="#led-onboard-show-index-color-time" title="Permalink to this heading"></a></h1>
 <a class="reference internal image-reference" href="../../../_images/led-onboard-1.png"><img alt="../../../_images/led-onboard-1.png" class="align-center" src="../../../_images/led-onboard-1.png" style="width: 562.0px; height: 146.0px;" /></a>
 <p>Hiển thị cả 2 đèn led trên mạch xController với màu sắc như bảng lựa chọn trong khoảng thời gian <code class="docutils literal notranslate"><span class="pre">time</span></code> (Tính theo giây).</p>
-<div class="section" id="vi-du">
-<h2>Ví dụ<a class="headerlink" href="#vi-du" title="Permalink to this headline">¶</a></h2>
+<section id="vi-du">
+<h2>Ví dụ<a class="headerlink" href="#vi-du" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../../_images/effect-vd-7.png"><img alt="../../../_images/effect-vd-7.png" class="align-center" src="../../../_images/effect-vd-7.png" style="width: 561.0px; height: 123.0px;" /></a>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="xbot_led_onboard_single.html" class="btn btn-neutral float-right" title="led_onboard.show(index, color)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="xbot_speaker_pitch.html" class="btn btn-neutral float-left" title="speaker.pitch(frequency, time)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, OHSTEM.
-
-    </p>
+    <p>&#169; Copyright 2021, OHSTEM.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

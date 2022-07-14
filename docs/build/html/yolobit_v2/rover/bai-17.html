@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="22. Bài 18: Điều khiển và giám sát robot qua IoT" href="bai-18.html" />
+    <link rel="prev" title="20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói" href="bai-16.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-rover.html">1. Giới thiệu về robot Rover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="che-do-mac-dinh.html">4. Các chế độ mặc định</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-1.html">5. Bài 1: Cùng di chuyển nào</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Bài 2: Chú ý từng bước đi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Thắp sáng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Trở thành cảnh sát</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-5.html">9. Bài 5: Đôi mắt tinh tường</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-6.html">10. Bài 6: Vượt chướng ngại vật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-7.html">11. Bài 7: Bám sát mục tiêu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-8.html">12. Bài 8: Vết tích để lại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-9.html">13. Bài 9: Lần theo dấu vết</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-10.html">14. Bài 10: Né tránh nguy hiểm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-11.html">15. Bài 11: Hoàn trả vật phẩm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-12.html">16. Bài 12: Hạ gục tội phạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-13.html">17. Bài 13: Hỗ trợ từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-14.html">18. Bài 14: Chỉ huy từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-15.html">19. Bài 15: Giao tiếp cùng đồng đội</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-16.html">20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-cong-nghe-nhan-dang-hinh-anh">Giới thiệu về Công nghệ nhận dạng hình ảnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quy-trinh-huan-luyen-mo-hinh-ai">Quy trình huấn luyện mô hình AI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huan-luyen-mo-hinh-ai">Huấn luyện mô hình AI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hien-thuc-du-an-ai">Hiện thực dự án AI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thuc-thi-du-an-tren-robot">Thực thi dự án trên Robot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bai-18.html">22. Bài 18: Điều khiển và giám sát robot qua IoT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a> &raquo;</li>
+      <li>21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteryolobit_v2/rover/bai-17.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bai-17-lap-trinh-ai-dieu-khien-bang-cu-chi">
+<h1>21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ<a class="headerlink" href="#bai-17-lap-trinh-ai-dieu-khien-bang-cu-chi" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Làm quen công nghệ nhận dạng hình ảnh trong thực tế</p></li>
+<li><p>Nắm được quy trình huấn luyện mô hình AI</p></li>
+<li><p>Thực hành huấn luyện mô hình AI</p></li>
+<li><p>Ứng dụng vào lập trình điều khiển robot</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_17.png"><img alt="../../_images/bai_17.png" class="align-center" src="../../_images/bai_17.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="gioi-thieu-ve-cong-nghe-nhan-dang-hinh-anh">
+<h2>Giới thiệu về Công nghệ nhận dạng hình ảnh<a class="headerlink" href="#gioi-thieu-ve-cong-nghe-nhan-dang-hinh-anh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Giúp tạo ra nhiều ứng dụng hữu ích trong thực tế:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở khóa thiết bị thông minh</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.1.png"><img alt="../../_images/bai_17.1.png" class="align-center" src="../../_images/bai_17.1.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Nhận dạng tội phạm tại nơi công cộng:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.2.png"><img alt="../../_images/bai_17.2.png" class="align-center" src="../../_images/bai_17.2.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Điểm danh học sinh đến lớp và nhiều ứng dụng khác</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.3.png"><img alt="../../_images/bai_17.3.png" class="align-center" src="../../_images/bai_17.3.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Khối lệnh Bật Camera trên thiết bị (có thể chọn camera trước / selfi).</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_17.3.1.png"><img alt="../../_images/bai_17.3.1.png" class="align-center" src="../../_images/bai_17.3.1.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh chức năng nhận diện bằng AI, đây là câu lệnh có thể chọn lựa và chúng ta cần chọn đúng mô hình AI đã huấn luyện ở phần trước.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_17.3.2.png"><img alt="../../_images/bai_17.3.2.png" class="align-center" src="../../_images/bai_17.3.2.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Khối lệnh đổi hình nền sang màu trắng để xóa kết quả nhận dạng trước đó.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_17.3.3.png"><img alt="../../_images/bai_17.3.3.png" class="align-center" src="../../_images/bai_17.3.3.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="quy-trinh-huan-luyen-mo-hinh-ai">
+<h2>Quy trình huấn luyện mô hình AI<a class="headerlink" href="#quy-trinh-huan-luyen-mo-hinh-ai" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Quy trình huấn luyện mô hình AI gồm 4 bước:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Thu thập dữ liệu và gán nhãn (kiến thức)</p></li>
+<li><p>Huấn luyện</p></li>
+<li><p>Kiểm tra mô hình</p></li>
+<li><p>Phân tích dữ liệu thực tế</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="huan-luyen-mo-hinh-ai">
+<h2>Huấn luyện mô hình AI<a class="headerlink" href="#huan-luyen-mo-hinh-ai" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Giao diện trang trí tuệ nhân tạo</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_17.4.png"><img alt="../../_images/bai_17.4.png" class="align-center" src="../../_images/bai_17.4.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+<p><strong>Huấn luyện hệ thống</strong></p>
+<p><strong>Yêu cầu:</strong> Huấn luyện mô hình AI để nhận biết đeo khẩu trang và không đeo khẩu trang</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Bước 1:</strong> Từ trang chủ, bạn chọn vào <strong>Mô hình AI</strong>, chọn tiếp <strong>Tạo mô hình nhận diện hình ảnh</strong>, như minh họa ở hình bên dưới:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.5.png"><img alt="../../_images/bai_17.5.png" class="align-center" src="../../_images/bai_17.5.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Giao diện hiện ra có các chức năng như sau:</p>
+<a class="reference internal image-reference" href="../../_images/bai_17.6.png"><img alt="../../_images/bai_17.6.png" class="align-center" src="../../_images/bai_17.6.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Bước 2:</strong> Với giao diện mới được hiện ra, bạn đặt tên cho kiến thức mà mình muốn huấn luyện, chẳng hạn như là <strong>Đeo Khẩu Trang</strong>, và nhấn tiếp vào nút <strong>WEBCAM</strong>/ <strong>Tải lên</strong> ở ngay bên dưới để lấy mẫu.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.7.png"><img alt="../../_images/bai_17.7.png" class="align-center" src="../../_images/bai_17.7.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Lưu ý:</strong> Nhấn nút <strong>Nhấn giữ để chụp</strong>, chụp khoảng 30 - 40 hình cho một kiến thức.</p>
+<ul class="simple">
+<li><p><strong>Bước 3:</strong> Thực hiện tương tự cho kiến thức <strong>Không đeo khẩu trang</strong> và <strong>Không có người</strong>.</p></li>
+</ul>
+<p>Thực ra, việc cung cấp kiến thức đúng cho hệ thống AI chỉ là một phần. Muốn nó nhận dạng chính xác, bạn cần phải cung cấp thêm kiến thức sai cho nó.</p>
+<p>Tùy vào dự án, kiến thức sai này có thể rất đa dạng. Với dự án nhận diện đeo khẩu trang hay không đeo khẩu trang này, một kiến thức sai quan trọng là không có người, như minh hoạ ở hình bên dưới.</p>
+<a class="reference internal image-reference" href="../../_images/bai_17.8.png"><img alt="../../_images/bai_17.8.png" class="align-center" src="../../_images/bai_17.8.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Bước 4:</strong> Chọn <strong>HUẤN LUYỆN MÔ HÌNH</strong> và chờ hệ thống huấn luyện</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.9.png"><img alt="../../_images/bai_17.9.png" class="align-center" src="../../_images/bai_17.9.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Bước 5:</strong> Đặt tên và nhấn lưu mô hình</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.10.png"><img alt="../../_images/bai_17.10.png" class="align-center" src="../../_images/bai_17.10.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi huấn luyện hệ thống xong, bạn trở về giao diện trang trí tuệ nhân tạo.</p>
+</div></blockquote>
+</section>
+<section id="hien-thuc-du-an-ai">
+<h2>Hiện thực dự án AI<a class="headerlink" href="#hien-thuc-du-an-ai" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Yêu cầu:</strong> Lập trình để robot phát ra cảnh báo tương ứng:</p>
+<ul class="simple">
+<li><p>Không đeo khẩu trang    : Bật đèn LED màu đỏ</p></li>
+<li><p>Đeo khẩu trang          : Bật đèn LED màu xanh</p></li>
+<li><p>Không có người          : Tắt đèn LED</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Bước 1:</strong> Từ màn hình chính của trang lập trình, lần này chúng ta sẽ chọn vào <strong>Lập trình AI</strong>, như minh họa ở hình bên dưới:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.11.png"><img alt="../../_images/bai_17.11.png" class="align-center" src="../../_images/bai_17.11.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Bước 2</strong>: Thực hiện các tính năng cơ bản để khởi động Camera và hiện hình ảnh từ Camera.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.12.png"><img alt="../../_images/bai_17.12.png" class="align-center" src="../../_images/bai_17.12.png" style="width: 800px;" /></a>
+<p>Hiện tại, với phiên bản chạy trên máy tính, bạn đọc cần khởi động <strong>Camera trước</strong>. Với câu lệnh trong phần lặp mãi mãi, bạn hãy đảm bảo rằng mình đã chọn vào đảo ngược hình (do chúng ta đang sử dụng Camera trước của laptop).
+|</p>
+<ul class="simple">
+<li><p><strong>Bước 3:</strong> Hiện thực khối chức năng AI.</p></li>
+</ul>
+<p>Chúng ta phân loại kết quả nhận dạng từ AI bằng các câu lệnh nếu, và gửi kết quả này xuống mạch Yolo:Bit cho những bước xử lý tiếp theo, như gợi ý ở phần bên dưới:</p>
+<a class="reference internal image-reference" href="../../_images/bai_17.13.png"><img alt="../../_images/bai_17.13.png" class="align-center" src="../../_images/bai_17.13.png" style="width: 800px;" /></a>
+<p>Lệnh <strong>gửi tới thiết bị đang kết nối</strong> nằm trong nhóm lệnh <strong>GIAO TIẾP</strong>.</p>
+<p><strong>Lưu ý:</strong> Tên kiến thức phải <strong>chính xác 100%</strong> cả chữ hoa, chữ thường như đã khai báo trong mô hình AI</p>
+<ul class="simple">
+<li><p><strong>Bước 4:</strong> Hoàn thiện chương trình</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.14.png"><img alt="../../_images/bai_17.14.png" class="align-center" src="../../_images/bai_17.14.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="thuc-thi-du-an-tren-robot">
+<h2>Thực thi dự án trên Robot<a class="headerlink" href="#thuc-thi-du-an-tren-robot" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Xây dựng chương trình đổi màu đèn cho Rover.</p></li>
+<li><p>Tương tự như hướng dẫn ở Bài 16 để hiện thực chương trình cho Rover, ở đây sẽ tóm tắt lại các bước chính cho việc hiện thực này như sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hiện thực chương trình nhận lệnh cho thiết bị bằng cách khai báo thêm biến <strong>AI hình ảnh</strong> và xử lý chức năng với câu lệnh <strong>nếu … thực hiện</strong>.</p></li>
+<li><p>Lưu chương trình vào thiết bị, RESET lại thiết bị nếu kết nối bằng USB.</p></li>
+<li><p>Mở chương trình AI, kết nối lại với thiết bị, bằng USB hoặc Bluetooth. Trong trường hợp kết nối bằng USB, nên RESET lại thiết bị.</p></li>
+<li><p>Chạy chương trình AI.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Khi hiện thực chương trình trên thiết bị, hãy luôn luôn tận dụng đèn của nó để hiện thị thêm thông tin ở phần bắt đầu. Đây là dấu hiệu nhận biết quan trọng để chúng ta biết rằng thiết bị đã RESET thành công và sẵn sàng cho việc kết nối với chương trình AI.</p></li>
+<li><p><strong>Chương trình hoàn chỉnh:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.15.png"><img alt="../../_images/bai_17.15.png" class="align-center" src="../../_images/bai_17.15.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Điều khiển robot bằng cử chỉ: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BpKqusnQZvl4NCedunFO33IT9h">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_17.16.png"><img alt="../../_images/bai_17.16.png" class="align-center" src="../../_images/bai_17.16.png" style="width: 200px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bai-16.html" class="btn btn-neutral float-left" title="20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bai-18.html" class="btn btn-neutral float-right" title="22. Bài 18: Điều khiển và giám sát robot qua IoT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

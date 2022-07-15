@@ -63,7 +63,15 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">3. Bài 1: Cùng di chuyển nào</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">4. Bài 2: Nhảy múa cùng xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Xử lý thông tin</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 4: Robot dò đường</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 4: Robot dò đường</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-tia-hong-ngoai">Giới thiệu về tia hồng ngoại</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cam-bien-do-duong">Cảm biến dò đường</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#doc-trang-thai-cam-bien-do-duong">Đọc trạng thái cảm biến dò đường</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ap-dung-cam-bien-de-di-chuyen">Áp dụng cảm biến để di chuyển</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robot-do-duong">Robot dò đường</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Robot né vật cản</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Thử thách nâng cao</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Điều khiển từ xa</a></li>
@@ -118,6 +126,192 @@
              
   <section id="bai-4-robot-do-duong">
 <h1>6. Bài 4: Robot dò đường<a class="headerlink" href="#bai-4-robot-do-duong" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Hiểu về cảm biến dò đường và cách lập trình cho robot di chuyển chính xác theo đường kẻ.</p>
+</section>
+<section id="gioi-thieu-ve-tia-hong-ngoai">
+<h2>Giới thiệu về tia hồng ngoại<a class="headerlink" href="#gioi-thieu-ve-tia-hong-ngoai" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để giúp robot có thể di chuyển chính xác, chúng ta có thể thiết lập sẵn một đường đi đặc biệt cho chúng.</p>
+<p><strong>Ví dụ:</strong> đoàn tàu di chuyển trên các đường ray. Sử dụng vạch đen và cảm biến hồng ngoại cũng là một công nghệ phổ biến thường áp dụng. Nhờ vào cảm biến hồng ngoại, robot sẽ nhận biết được các vạch đen và có thể di chuyển theo.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_89.png"><img alt="../../_images/xbot_89.png" class="align-center" src="../../_images/xbot_89.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Tia hồng ngoại là gì?</strong></p>
+<p>Ánh sáng hồng ngoại là <strong>ánh sáng có bước sóng lớn hơn 700nm</strong> và mắt người không thể nhìn thấy được (<a href="#id1"><span class="problematic" id="id2">*</span></a>Mắt thường chỉ nhìn được ánh sáng có bước sóng trong khoảng 400nm đến 700nm)</p>
+<a class="reference internal image-reference" href="../../_images/xbot_90.png"><img alt="../../_images/xbot_90.png" class="align-center" src="../../_images/xbot_90.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Ứng dụng của tia hồng ngoại</strong></p>
+<p>Tia hồng ngoại có rất nhiều ứng dụng trong cuộc sống:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/xbot_91.png"><img alt="../../_images/xbot_91.png" class="align-center" src="../../_images/xbot_91.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_92.png"><img alt="../../_images/xbot_92.png" class="align-center" src="../../_images/xbot_92.png" style="width: 900px;" /></a>
+</div></blockquote>
+</section>
+<section id="cam-bien-do-duong">
+<h2>Cảm biến dò đường<a class="headerlink" href="#cam-bien-do-duong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Cảm biến dò đường là một loại cảm biến hồng ngoại, hoạt động bằng cách <strong>phát ra tia hồng ngoại xuống bề mặt và cảm nhận lượng tia hồng ngoại phản xạ trở lại.</strong></p>
+<a class="reference internal image-reference" href="../../_images/xbot_93.png"><img alt="../../_images/xbot_93.png" class="align-center" src="../../_images/xbot_93.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Dựa vào đặc tính phản xạ ánh sáng trên bề mặt, cảm biến sẽ phát hiện ra được màu đen và trắng:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_94.png"><img alt="../../_images/xbot_94.png" class="align-center" src="../../_images/xbot_94.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Hướng dẫn chỉnh mắt đọc hồng ngoại</strong></p>
+<p>Cảm biến đi kèm sản phẩm đã được tinh chỉnh để pahan biệt được vạch đen và nên trắng. Nếu cảm biến hoạt động không chính xác, bạn có thể chỉnh lại theo cách sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_95.png"><img alt="../../_images/xbot_95.png" class="align-center" src="../../_images/xbot_95.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="doc-trang-thai-cam-bien-do-duong">
+<h2>Đọc trạng thái cảm biến dò đường<a class="headerlink" href="#doc-trang-thai-cam-bien-do-duong" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/xbot_96.png"><img alt="../../_images/xbot_96.png" class="align-center" src="../../_images/xbot_96.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Khối lệnh sử dụng</strong></p>
+<a class="reference internal image-reference" href="../../_images/xbot_97.png"><img alt="../../_images/xbot_97.png" class="align-center" src="../../_images/xbot_97.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình đọc trạng thái cảm biến</strong></p>
+<p>Viết chương trình cho 2 LED RGB trên xBot theo 4 trường hợp mô tả dưới đây:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_98.png"><img alt="../../_images/xbot_98.png" class="align-center" src="../../_images/xbot_98.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sơ đồ xử lý chương trình như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_99.png"><img alt="../../_images/xbot_99.png" class="align-center" src="../../_images/xbot_99.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Để tạo ra 4 nhánh điều kiện, bạn áp dụng phương pháp đã học ở bài trước bằng cách thêm 3 khối lệnh <em>nếu không nếu</em> trong khối lệnh <em>nếu…thực hiện</em> nhé:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_100.png"><img alt="../../_images/xbot_100.png" class="align-center" src="../../_images/xbot_100.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Toàn bộ khối lệnh của chương trình như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_101.png"><img alt="../../_images/xbot_101.png" class="align-center" src="../../_images/xbot_101.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ap-dung-cam-bien-de-di-chuyen">
+<h2>Áp dụng cảm biến để di chuyển<a class="headerlink" href="#ap-dung-cam-bien-de-di-chuyen" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Chương trình 1</strong></p>
+<p>Sau khi nhấn nút, robot di chuyển về phía trước và dừng lại khi gặp vạch đen.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_102.png"><img alt="../../_images/xbot_102.png" class="align-center" src="../../_images/xbot_102.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_103.png"><img alt="../../_images/xbot_103.png" class="align-center" src="../../_images/xbot_103.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình 2: Robot băng qua đường</strong></p>
+<p>Ở bài này chúng ta sẽ sử dụng bản đồ (đi kèm) và lập trình cho robot băng qua đường. Robot sẽ băng qua đường tại vị trí có vạch kẻ trên bản đồ.</p>
+<p>Robot cần băng qua 5 vạch (tính cả 2 vạch của đường). Sau khi chạm vạch cuối, xBot cần di chuyển thêm một chút nữa để qua hẳn đường trước khi dừng lại.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_104.png"><img alt="../../_images/xbot_104.png" class="align-center" src="../../_images/xbot_104.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Gợi ý</em></p>
+<p>Hãy tạo một biến tên là đếm. Ban đầu biến đếm sẽ được gán giá trị là 0. Chúng ta sẽ thêm phần khối lệnh <em>chờ nút nhấn</em> để bắt đầu chương trình.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_105.png"><img alt="../../_images/xbot_105.png" class="align-center" src="../../_images/xbot_105.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Trong vòng lặp chính, ta sẽ yêu cầu robot tiến tới, nếu robot gặp vạch đen, giá trị biến đếm sẽ tăng 1. Đồng thời, chúng ta cần chờ cho robot di chuyển qua khỏi vạch đen để tránh đếm trùng nhiều lần.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_106.png"><img alt="../../_images/xbot_106.png" class="align-center" src="../../_images/xbot_106.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau đó chương trình sẽ kiểm tra xem giá trị đếm có tới số 5 chưa, nếu là số 5 thì sẽ cho robot dừng di chuyển.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_107.png"><img alt="../../_images/xbot_107.png" class="align-center" src="../../_images/xbot_107.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Tuy nhiên, sau đó vòng lặp sẽ quay lại và tiếp tục xử lý chương trình từ đầu. Chúng ta sẽ dùng thêm <strong>khối lệnh thoát ra khỏi vòng lặp</strong>, kết thức chương trình để giải quyết vấn đề này.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_108.png"><img alt="../../_images/xbot_108.png" class="align-center" src="../../_images/xbot_108.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bạn hãy đặt xBot trên bản đồ có 5 vạch đen và chạy thử chương trình xem nào.</p>
+</section>
+<section id="robot-do-duong">
+<h2>Robot dò đường<a class="headerlink" href="#robot-do-duong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Dựa vào những gì chúng ta đã hiểu về cảm biến ở phần trước, chúng ta sẽ viết chương trình điều khiển xBot vừa đi vừa dò đường bằng 2 mắt: S1 và S4, sử dụng bản đồ đi kèm sản phẩm. Mô tả như sau:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/xbot_109.png"><img alt="../../_images/xbot_109.png" class="align-center" src="../../_images/xbot_109.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_110.png"><img alt="../../_images/xbot_110.png" class="align-center" src="../../_images/xbot_110.png" style="width: 900px;" /></a>
+</div></blockquote>
+<p>Sơ đồ xử lý của chương trình sẽ như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_111.png"><img alt="../../_images/xbot_111.png" class="align-center" src="../../_images/xbot_111.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Thực hiện chương trình</strong></p>
+<ol class="arabic simple">
+<li><p>Sử dụng các khối lệnh quen thuộc để cảm biến có thể phát hiện vạch đen:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_112.png"><img alt="../../_images/xbot_112.png" class="align-center" src="../../_images/xbot_112.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Tạo thêm 2 nhánh điều kiện</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_113.png"><img alt="../../_images/xbot_113.png" class="align-center" src="../../_images/xbot_113.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Thêm các trường hợp còn lại theo hình để xe đi theo line</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_114.png"><img alt="../../_images/xbot_114.png" class="align-center" src="../../_images/xbot_114.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi chạy chương trình trên, bạn sẽ thấy xBot đi theo đường thẳng khá tốt, tuy nhiên đến khu vực bãi đậu xe nơi có các vạch đen ngang thì xBot sẽ không vượt qua được. Bạn cần điều chỉnh chương trình một chút để robot vẫn đi thẳng tiếp khi gặp các vạch đen ngang này.</p>
+<p>Chương trình sau khi chỉnh sửa sẽ như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_115.png"><img alt="../../_images/xbot_115.png" class="align-center" src="../../_images/xbot_115.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bạn có thể thử thay đổi tốc độ trong các trường hợp để robot di chuyển ổn định hơn và ít bị chệch khỏi đường line nhé.</p>
+<p>Bài tập mở rộng</p>
+<p><strong>1. Robot đậu xe thông minh</strong></p>
+<p>Trong bài này, bạn hãy viết chương trình để robot có thể đạu xe vào đúng vị trí số 3 bằng cách <strong>nhận diện các vạch đen nằm ngang</strong>.</p>
+<p>Bãi xe bao gồm 3 chỗ. Chúng ta sẽ sử dụng mô hình bãi xe trên bản đồ đi kèm.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_116.png"><img alt="../../_images/xbot_116.png" class="align-center" src="../../_images/xbot_116.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Gợi ý cách làm</strong></p>
+<ol class="arabic simple">
+<li><p>Dùng biến đếm để đếm số lần nhận vạch ngang</p></li>
+<li><p>Robot sẽ đến vị trí số 3 khi đếm = 3</p></li>
+<li><p>Robot cần xoay sang phải và lùi lại để vào đúng vị trí</p></li>
+</ol>
+<p>Câu hỏi ôn tập</p>
+<ol class="arabic simple">
+<li><p>Làm thế nào mà robot có thể tự động đi theo vạch kẻ sẵn?</p></li>
+<li><p>Viết ra nguyên lý hoạt động của cảm biến dò đường.</p></li>
+<li><p>Chỉ ra các khối lệnh để làm việc với cảm biến dò đường trên OhStem App.</p></li>
+</ol>
+</section>
 </section>
 
 

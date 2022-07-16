@@ -1,4 +1,4 @@
-Bài học 1: Hello world
+2. Bài học 1: Hello world
 ====================
 
 Mục tiêu

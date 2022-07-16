@@ -1,4 +1,4 @@
-Hướng Dẫn Cài Đặt Arduino và xController
+1. Hướng Dẫn Cài Đặt Arduino và xController
 ====================
 
 Cài đặt Arduino IDE

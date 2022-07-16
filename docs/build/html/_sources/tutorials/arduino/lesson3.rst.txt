@@ -1,4 +1,4 @@
-Bài học 3: Nhấn nút bật đèn LED
+4. Bài học 3: Nhấn nút bật đèn LED
 ====================
 
 Mục tiêu

@@ -1,4 +1,4 @@
-Bài học 2: Blink LED
+3. Bài học 2: Blink LED
 ====================
 
 Mục tiêu

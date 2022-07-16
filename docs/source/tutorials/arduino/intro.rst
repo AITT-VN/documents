@@ -1,4 +1,4 @@
-Giới thiệu về dự án Nhà thông minh
+15. Giới thiệu về dự án Nhà thông minh
 ====================
 
 Ở phần trước, bạn đã làm quen với các module và cách lập trình để làm việc với chúng một cách đơn giản. Trong phần này, để ứng dụng kiến thức đã học, chúng ta hãy cùng nhau xây dựng một dự án nhà thông minh hoàn chỉnh, bao gồm các chức năng sau:

@@ -1,4 +1,4 @@
-Hướng Dẫn Cài Đặt uPyCraft IDE
+2. Hướng Dẫn Cài Đặt uPyCraft IDE
 ====================
 
 Để cài đặt và sử dụng uPyCraft IDE, trước tiên máy tính của bạn cần có Python 3.7.X bản mới nhất (bỏ qua các bước hướng dẫn cài đặt Python dưới đây nếu bạn đã cài Python rồi).

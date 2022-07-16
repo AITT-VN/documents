@@ -1,4 +1,4 @@
-Làm quen với phần mềm uPyCraft IDE
+3. Làm quen với phần mềm uPyCraft IDE
 ====================
 
 Giao diện

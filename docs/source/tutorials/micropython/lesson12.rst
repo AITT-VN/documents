@@ -1,4 +1,4 @@
-Bài học 12: Remote hồng ngoại
+15. Bài học 12: Remote hồng ngoại
 ====================
 
 Mục tiêu

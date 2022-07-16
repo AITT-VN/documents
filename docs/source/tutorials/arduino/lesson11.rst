@@ -1,4 +1,4 @@
-Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD
+12. Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD
 ====================
 
 Mục tiêu

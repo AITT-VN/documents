@@ -1,4 +1,4 @@
-Bài học 4: Điều khiển tốc độ chớp tắt đèn LED
+5. Bài học 4: Điều khiển tốc độ chớp tắt đèn LED
 ====================
 
 Mục tiêu

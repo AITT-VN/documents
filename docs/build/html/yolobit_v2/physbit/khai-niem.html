@@ -55,15 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="gioi-thieu-physbit.html">1. Giới thiệu kit học điện tử Phys:Bit</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Các khái nhiệm cơ bản</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Các khái nhiệm cơ bản</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cac-khai-niem-co-ban">Các khái niệm cơ bản</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chu-thich-ky-hieu">Chú thích ký hiệu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">3. Bài 1: Đèn LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">4. Bài 2: Nút nhấn</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Nút nhán giữ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Nút nhấn giữ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">6. Bài 4: Đèn LED nhiều màu RGB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Biến trở</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Biến trở  (Potentiometer)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">8. Bài 6: Cảm biến ánh sáng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Còi báo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Điốt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Động cơ một chiều</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-9.html">11. Bài 9: Điốt</a></li>
 </ul>
 </li>
 </ul>
@@ -75,9 +80,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gioi-thieu.html">Giới thiệu về Gamekit và Arcade MakeCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/khai-niem.html">Các khái niệm trong Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html">Hướng dẫn làm một số Game cơ bản</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
@@ -119,6 +131,115 @@
              
   <section id="cac-khai-nhiem-co-ban">
 <h1>2. Các khái nhiệm cơ bản<a class="headerlink" href="#cac-khai-nhiem-co-ban" title="Permalink to this heading"></a></h1>
+<section id="cac-khai-niem-co-ban">
+<h2>Các khái niệm cơ bản<a class="headerlink" href="#cac-khai-niem-co-ban" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_11.png"><img alt="../../_images/n_11.png" class="align-right" src="../../_images/n_11.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Mạch điện</strong></p></li>
+</ul>
+<p>Là tập hợp các thiết bị điện nối với nhau bằng dây dẫn điện tạo thành vòng kín trong đó dòng điện có thể chạy qua.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_21.png"><img alt="../../_images/n_21.png" class="align-left" src="../../_images/n_21.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Nguồn điện</strong></p></li>
+</ul>
+<p>Là thiết bị phát ra điện năng. Các ví dụ về nguồn điện trong thực tế như pin, ắc quy, máy phát điện, nguồn điện từ ổ cắm điện trong nhà, v.v.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_31.png"><img alt="../../_images/n_31.png" class="align-right" src="../../_images/n_31.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Thiết bị tiêu thụ điện</strong></p></li>
+</ul>
+<p>Là các thiết bị biến đổi điện năng thành các dạng năng lượng khác như cơ năng (máy quạt, bơm nước, v.v.), nhiệt năng (lò nướng, nồi cơm điện, v.v.), quang năng (đèn LED, đèn huỳnh quang, v.v.).</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_41.png"><img alt="../../_images/n_41.png" class="align-left" src="../../_images/n_41.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Dây dẫn điện</strong></p></li>
+</ul>
+<p>Được làm bằng kim loại có khả năng dẫn điện như đồng, nhôm dùng để truyền điện năng từ nguồn điện đến các thiết bị tiêu thụ điện.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_51.png"><img alt="../../_images/n_51.png" class="align-right" src="../../_images/n_51.png" style="width: 100px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Cường độ dòng điện</strong></p></li>
+</ul>
+<p>Đại lượng đặc trưng cho độ mạnh yếu của dòng điện được gọi là cường độ dòng điện, kí hiệu là I, đơn vị là Ampe (A). Dòng điện càng mạnh thì cường độ dòng điện càng lớn và ngược lại.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_61.png"><img alt="../../_images/n_61.png" class="align-left" src="../../_images/n_61.png" style="width: 200px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Hiệu điện thế</strong></p></li>
+</ul>
+<p>Sự chênh lệnh điện thế giữa hai điểm trong mạch điện được gọi là hiệu điện thế (hay điện áp) giữa hai điểm đó, kí hiệu là U, đơn vị là Volt (V). Điện áp giữa hai điểm A và B được tính bằng công thức:</p>
+<p><strong>Uab = Ua - Ub</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_71.png"><img alt="../../_images/n_71.png" class="align-right" src="../../_images/n_71.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Điện trở</strong></p></li>
+</ul>
+<p>Đại lương đặc trưng cho tính chất cản trợ dòng điện của vật dẫn điện được gọi là điện trở, kí hiệu là R, đơn vị là Ohm (Ω). Vật có điện trở càng nhỏ thì dẫn điện càng tốt và ngược lại.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_81.png"><img alt="../../_images/n_81.png" class="align-left" src="../../_images/n_81.png" style="width: 300px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Định luật Ohm</strong></p></li>
+</ul>
+<p>Ohm là định luật quan trọng nhất trong điện học, do nhà vật lý học Georg Simon Ohm phát minh. Theo Định luật này mối quan hệ giữa 3 đại lượng U, I, R được thể hiện theo công thức:</p>
+<blockquote>
+<div><p><strong>I = U/R</strong></p>
+<dl class="simple">
+<dt>Trong đó:</dt><dd><ul class="simple">
+<li><p>Đơn vị của I là Ampe (A).</p></li>
+<li><p>Đơn vị của U là Volt (V).</p></li>
+<li><p>Đơn vị của R là Ohm (Ω).</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chu-thich-ky-hieu">
+<h2>Chú thích ký hiệu<a class="headerlink" href="#chu-thich-ky-hieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/n_91.png"><img alt="../../_images/n_91.png" class="align-center" src="../../_images/n_91.png" style="width: 600px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 

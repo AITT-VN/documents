@@ -1,4 +1,4 @@
-Bài học 7: Vỗ tay thay đổi màu đèn LED
+8. Bài học 7: Vỗ tay thay đổi màu đèn LED
 ====================
 
 Mục tiêu

@@ -1,2 +1,8 @@
 2. Bài 1:
 =============================
+
+
+    .. image:: images/pizza.gif
+        :width: 500px
+        :align: center 
+    

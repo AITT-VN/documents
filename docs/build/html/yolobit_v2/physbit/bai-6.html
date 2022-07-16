@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="9. Bài 7: Còi báo" href="bai-7.html" />
-    <link rel="prev" title="7. Bài 5: Biến trở" href="bai-5.html" /> 
+    <link rel="prev" title="7. Bài 5: Biến trở (Potentiometer)" href="bai-5.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,12 +58,22 @@
 <li class="toctree-l2"><a class="reference internal" href="khai-niem.html">2. Các khái nhiệm cơ bản</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">3. Bài 1: Đèn LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">4. Bài 2: Nút nhấn</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Nút nhán giữ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-3.html">5. Bài 3: Nút nhấn giữ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">6. Bài 4: Đèn LED nhiều màu RGB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Biến trở</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 6: Cảm biến ánh sáng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-5.html">7. Bài 5: Biến trở  (Potentiometer)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 6: Cảm biến ánh sáng</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu">Giới thiệu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xay-dung-mach-dien">Xây dụng mạch điện</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi-mach-dien">Kết nối mạch điện</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh">Chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-qua">Kết quả</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#co-the-ban-chua-biet">Có thể bạn chưa biết?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">9. Bài 7: Còi báo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Điốt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-8.html">10. Bài 8: Động cơ một chiều</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bai-9.html">11. Bài 9: Điốt</a></li>
 </ul>
 </li>
 </ul>
@@ -75,9 +85,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gioi-thieu.html">Giới thiệu về Gamekit và Arcade MakeCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/khai-niem.html">Các khái niệm trong Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html">Hướng dẫn làm một số Game cơ bản</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
@@ -119,13 +136,124 @@
              
   <section id="bai-6-cam-bien-anh-sang">
 <h1>8. Bài 6: Cảm biến ánh sáng<a class="headerlink" href="#bai-6-cam-bien-anh-sang" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu">
+<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p><strong>Cảm biến ánh sáng</strong> hay còn gọi là <strong>quang trở</strong>. Đây cũng là một loại biến trở, nhưng khác với biến trở Potentiometer. Giá trị điện trở của cảm biến ánh sáng thay đổi theo mức độ ánh sáng nhận được.</p></li>
+<li><p>Càng có nhiều ánh sáng chiếu vào thì điện trở của quang trở càng thấp và quang trở sẽ dẫn điện tốt hơn. Khi ánh sáng ít hoặc trời tối thì điện trở của quang trở tăng cao và hạn chế dòng điện đi qua</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/6.11.png"><img alt="../../_images/6.11.png" class="align-center" src="../../_images/6.11.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="xay-dung-mach-dien">
+<h2>Xây dụng mạch điện<a class="headerlink" href="#xay-dung-mach-dien" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p><strong>Thành phần:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nguồn điện 3V.</p></li>
+<li><p>Điện trở R1 10 KΩ.</p></li>
+<li><p>Quang trở P1.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Sơ đồ mạch điện</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.17.png"><img alt="../../_images/bai_6.17.png" class="align-center" src="../../_images/bai_6.17.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Nguyên lý hoạt động:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Theo sơ đồ trên, khi cảm biến P1 nhận được nhiều ánh sáng thì điện trở sẽ ở mức thấp và dòng điện sẽ chạy từ 3V qua chân P0 nhiều hơn, từ đó kết quả analog đọc được sẽ ở mức cao.</p></li>
+<li><p>Ngược lại, khi P1 nhận được ít ánh sáng, điện trở của P1 sẽ tăng lên cao và chân P0 sẽ không có hoặc có ít dòng điện chạy qua, kết quả đọc được sẽ nhỏ hoặc bằng 0.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="ket-noi-mach-dien">
+<h2>Kết nối mạch điện<a class="headerlink" href="#ket-noi-mach-dien" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Dựa vào độ sáng từ môi trường mà cảm biến ánh sáng đọc được, chúng ta cùng điều chỉnh độ sáng của màn hình LED. Trời càng tối, màn hình càng sáng và ngược lại.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.22.png"><img alt="../../_images/bai_6.22.png" class="align-center" src="../../_images/bai_6.22.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="chuong-trinh">
+<h2>Chương trình<a class="headerlink" href="#chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p>Giá trị analog đọc từ cảm biến ánh sáng là một số nằm trong khoảng từ 0 đến 4095. Tuy nhiên giá trị dùng để điều chỉnh độ sáng của đèn là một số trong khoảng 0 đến 100. Vì vậy ta cần dùng block đổi số để quy đổi độ sáng thành một số cũng nằm trong khoảng từ 0 đến 100.</p></li>
+<li><p><a href="#id1"><span class="problematic" id="id2">**</span></a>Cách tạo biến: **</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để tạo</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/bai_7.32.png"><img alt="../../_images/bai_7.32.png" class="align-center" src="../../_images/bai_7.32.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Khi tạo biến thành công, trong mục Biến sẽ xuất hiện những khối lệnh liên quan để làm việc với biến.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/bai_7.42.png"><img alt="../../_images/bai_7.42.png" class="align-center" src="../../_images/bai_7.42.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Chương trình được thực hiện như sau:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.32.png"><img alt="../../_images/bai_6.32.png" class="align-center" src="../../_images/bai_6.32.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="ket-qua">
+<h2>Kết quả<a class="headerlink" href="#ket-qua" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Kết quả của chương trình như sau:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_6.42.png"><img alt="../../_images/bai_6.42.png" class="align-center" src="../../_images/bai_6.42.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="co-the-ban-chua-biet">
+<h2>Có thể bạn chưa biết?<a class="headerlink" href="#co-the-ban-chua-biet" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Nhờ nguyên lý hoạt động đơn giản và dễ sử dụng, cảm biến ánh sáng ngày càng được ứng dụng rộng rãi trong đời sống.</p></li>
+<li><p>Một số ứng dụng phổ biến thường thấy chính là các hệ thống đèn thông minh tự động bật khi trời tối và tự động tắt khi trời sáng để tránh lãng phí năng lượng điện. Các ứng dụng này cũng giúp cho đời sống của con người trở nên tiện nghi và thú vị hơn.</p></li>
+</ul>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Cảm biến ánh sáng: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Bvj7i0nZRgJpXcZY4cYA5kZ4en">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/bai_6.52.png"><img alt="../../_images/bai_6.52.png" class="align-center" src="../../_images/bai_6.52.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="bai-5.html" class="btn btn-neutral float-left" title="7. Bài 5: Biến trở" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bai-5.html" class="btn btn-neutral float-left" title="7. Bài 5: Biến trở (Potentiometer)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="bai-7.html" class="btn btn-neutral float-right" title="9. Bài 7: Còi báo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -1,4 +1,4 @@
-Bài học 5: Điều chỉnh độ sáng LED
+8. Bài học 5: Điều chỉnh độ sáng LED
 ====================
 
 Mục tiêu

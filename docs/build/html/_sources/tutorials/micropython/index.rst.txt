@@ -4,6 +4,7 @@ Hướng dẫn lập trình MicroPython
 .. toctree::
    :maxdepth: 1
 
+   gioi-thieu.rst
    setup.rst
    about-upycraft.rst
    lesson1.rst
@@ -11,7 +12,7 @@ Hướng dẫn lập trình MicroPython
    lesson3.rst
    lesson4.rst
    lesson5.rst
-   lesson6.rst
+   lesson6.rst 
    lesson7.rst
    lesson8.rst
    lesson9.rst

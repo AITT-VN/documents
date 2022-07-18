@@ -45,7 +45,7 @@ Giới thiệu khối lệnh
 -----------------
 
     .. image:: images/bai_8.4.png
-        :width: 1000px
+        :width: 900px
         :align: center 
     |
 

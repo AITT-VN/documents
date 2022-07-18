@@ -1,4 +1,4 @@
-Bài học 10: Hiển thị thông tin lên màn hình LCD
+13. Bài học 10: Hiển thị thông tin lên màn hình LCD
 ====================
 
 Mục tiêu

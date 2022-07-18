@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9. Tạo hiệu ứng chữ chạy trên màn hình &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Hướng dẫn làm một số Game cơ bản" href="../huong-dan.html" />
+    <link rel="prev" title="8. Thao tác với nút nhấn" href="nut-nhan.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gioi-thieu.html">Giới thiệu về Gamekit và Arcade MakeCode</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../khai-niem.html">Các khái niệm trong Game</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nhan-vat.html">1. Đưa nhân vật vào trò chơi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vi-tri.html">2. Thiết lập vị trí của nhân vật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dieu-khien.html">3. Điều khiển hoạt động nhân vật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bat-nay.html">4. Bật nảy khi nhân vật gặp tường</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hieu-ung.html">5. Tạo hiệu ứng tuyết rơi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ky-nang.html">6. Tạo kỹ năng cho nhân vật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xe-chay.html">7. Tạo hiệu ứng xe chạy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nut-nhan.html">8. Thao tác với nút nhấn</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Tạo hiệu ứng chữ chạy trên màn hình</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../huong-dan.html">Hướng dẫn làm một số Game cơ bản</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../khai-niem.html">Các khái niệm trong Game</a> &raquo;</li>
+      <li>9. Tạo hiệu ứng chữ chạy trên màn hình</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastergamekit/khai-niem/chu-chay.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tao-hieu-ung-chu-chay-tren-man-hinh">
+<h1>9. Tạo hiệu ứng chữ chạy trên màn hình<a class="headerlink" href="#tao-hieu-ung-chu-chay-tren-man-hinh" title="Permalink to this heading"></a></h1>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/9.12.png"><img alt="../../_images/9.12.png" class="align-center" src="../../_images/9.12.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+<p><strong>Giới thiệu</strong></p>
+<p>Sẽ thật tuyệt nếu như có một câu truyện mở đầu trò chơi hay một đoạn hướng dẫn cách chơi khi mới vào game. Điều dó sẽ làm người chơi thấy thích thù, hiểu hơn về nội dung của trò chơi.</p>
+<p>Ở bài học này mình sẽ cung cấp cho các bạn một mẫu chương trình có sẵn để giới thiệu trò chơi theo cách cổ điển mà đa số các game 2D hiện nay đều có.</p>
+<p>Các bạn có thể copy  đoạn code JavaScript bên dưới bỏ vào phần giao diện JavaScript để xây dựng chương trình.</p>
+<p>Nếu bạn muốn thay đổi nội dung câu chuyện, cũng có thể viết lại bên trong đoạn <strong>“storyLine“</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>namespace SpriteKind {
+    export const Star = SpriteKind.create();
+}
+
+let ship: Sprite = null
+let hyper = false
+let star: Sprite = null
+let scroll = false
+let lineAdjust = 0
+let sagaSprite: Sprite = null
+let sagaImage: Image = null
+let storyLines = [
+    &quot;TALE OF TALAGRON&quot;,
+    &quot;&quot;,
+    &quot;Once upon a time,&quot;,
+    &quot;like really long ago,&quot;,
+    &quot;a peaceful people lived&quot;,
+    &quot;happily on Planet Talagron.&quot;,
+    &quot;&quot;,
+    &quot;They used the rare mineral&quot;,
+    &quot;Xelantium for energy to&quot;,
+    &quot;power their planet.&quot;,
+    &quot;&quot;,
+    &quot;Dobanites raided Talagron&quot;,
+    &quot;and took all the known&quot;,
+    &quot;Xelantium from them. Not&quot;,
+    &quot;nice! Ugh! Err!&quot;,
+    &quot;&quot;,
+    &quot;Your mission is to help&quot;,
+    &quot;protect Talagron from the&quot;,
+    &quot;greedy Dobanites. So, on&quot;,
+    &quot;your way now and good luck!&quot;
+]
+scroll = true
+sagaImage = image.create(scene.screenWidth(), 10 * storyLines.length)
+for (let i = 0; i &lt;= storyLines.length - 1; i++) {
+    sagaImage.printCenter(storyLines[i], i * 10, i &gt; 0 ? 7 : 4)
+}
+sagaSprite = sprites.create(sagaImage, 0)
+sagaSprite.top = scene.screenHeight() - 1
+sagaSprite.setFlag(SpriteFlag.AutoDestroy, true)
+sagaSprite.vy = -10
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!hyper) {
+        sagaSprite.vy = scroll ? 0 : -10
+        scroll = !(scroll)
+    }
+})
+
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!hyper) {
+        sagaSprite.vy = 0
+        scroll = false
+        lineAdjust = (sagaSprite.bottom + 1) % 10
+        sagaSprite.bottom -= (lineAdjust &gt; 0) ? lineAdjust : 10
+    }
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!hyper) {
+        sagaSprite.vy = 0
+        scroll = false
+        lineAdjust = (sagaSprite.top + 1) % 10
+        sagaSprite.top += 10 - lineAdjust
+    }
+})
+game.onUpdate(function () {
+    if (sagaSprite.bottom &lt; 0) {
+        sagaSprite.destroy()
+    }
+    if (Math.percentChance(25) || hyper) {
+        star = sprites.create(img`1`, SpriteKind.Star)
+        star.setFlag(SpriteFlag.AutoDestroy, true)
+        star.setFlag(SpriteFlag.Ghost, true)
+        star.x = Math.randomRange(0, scene.screenWidth())
+        star.y = Math.randomRange(0, scene.screenHeight())
+        star.vx = (star.x &lt; scene.screenWidth() / 2) ? -2 : 2
+        star.vy = (star.y &lt; scene.screenHeight() / 2) ? -1 : 1
+        if (hyper) {
+            star.ax = star.vx * 1000
+            star.ay = star.vy * 1000
+            if (Math.percentChance(15)) {
+                ship.x = Math.randomRange(scene.screenWidth() / 2 - 5, scene.screenWidth() / 2 + 5)
+                ship.y = Math.randomRange(scene.screenHeight() / 2 - 2, scene.screenHeight() / 2 + 2)
+            }
+        }
+    }
+})
+sagaSprite.onDestroyed(function () {
+    ship = sprites.create(img`
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . 7 4 . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . e e . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . e e . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . e e . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . e e . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . 4 e e 4 . . . . . . . . . . . . . .
+    . . . . . . . . . . . . e e e e e e e e . . . . . . . . . . . .
+    . . . . . . . . . . . e e e e e e e e e e . . . . . . . . . . .
+    . . . . . . . . . . e e e e 5 3 3 5 e e e e . . . . . . . . . .
+    . . . . . . . . . 4 e e e 5 3 5 2 2 5 e e e 4 . . . . . . . . .
+    . . . . . . . 7 7 e e e e 5 2 2 5 5 2 e e e e 7 7 . . . . . . .
+    . . . . . . 7 e e e e e e 2 2 5 2 3 3 e e e e e e 7 . . . . . .
+    . . . . 7 e e e e e e e e 5 2 2 2 5 2 e e e e e e e e 7 . . . .
+    . . e e e e e e e e e e e e 3 5 5 2 e e e e e e e e e e e e . .
+    . e e e e e e . . . 7 e e e e e e e e e e 7 . . . e e e e e e .
+    e e e e 7 . . . . . . . e e e e e e e e . . . . . . . 7 e e e e
+    e 7 . . . . . . . . . . . e e e e e e . . . . . . . . . . . 7 e
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+`, SpriteKind.Player)
+    ship.startEffect(effects.warmRadial)
+    hyper = true
+    for (let slowStar of sprites.allOfKind(SpriteKind.Star)) {
+        slowStar.ax = slowStar.vx * 1000
+        slowStar.ay = slowStar.vy * 1000
+    }
+})
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="nut-nhan.html" class="btn btn-neutral float-left" title="8. Thao tác với nút nhấn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../huong-dan.html" class="btn btn-neutral float-right" title="Hướng dẫn làm một số Game cơ bản" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

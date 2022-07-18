@@ -35,7 +35,7 @@ Kết nối
 - **Kết nối**
 
     .. image:: images/bai_3.4.png
-        :width: 200px
+        :width: 600px
         :align: center 
     |
 

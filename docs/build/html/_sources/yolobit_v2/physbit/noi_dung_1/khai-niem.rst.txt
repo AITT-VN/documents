@@ -1,6 +1,9 @@
 2. Các khái nhiệm cơ bản
 ========================================
 
+Các khái niệm cơ bản 
+------------
+----------------
 
     .. image:: images/n_1.png
         :width: 300px
@@ -75,6 +78,15 @@ Ohm là định luật quan trọng nhất trong điện học, do nhà vật l�
         - Đơn vị của I là Ampe (A).
         - Đơn vị của U là Volt (V).
         - Đơn vị của R là Ohm (Ω).
+|
+
+Chú thích ký hiệu
+--------------
+-------------------
+
+    .. image:: images/n_9.png
+        :width: 600px
+        :align: center
 |
 
 

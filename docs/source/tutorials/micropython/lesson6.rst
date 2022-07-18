@@ -1,4 +1,4 @@
-Bài học 6: Đèn LED RGB cảm ứng
+9. Bài học 6: Đèn LED RGB cảm ứng
 ====================
 
 Mục tiêu

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hướng dẫn lập trình GameKit &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  <title>Hướng dẫn làm một số Game cơ bản &mdash; OhStem Product Documents 0.0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. Giới thiệu" href="huong-dan/gioi-thieu.html" />
-    <link rel="prev" title="Đầu nâng ForkLift" href="../xbot/dau-nang.html" /> 
+    <link rel="next" title="1. Trò chơi ăn bánh" href="huong-dan/an-banh.html" />
+    <link rel="prev" title="9. Tạo hiệu ứng chữ chạy trên màn hình" href="khai-niem/chu-chay.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,12 +63,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Hướng dẫn lập trình GameKit</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="huong-dan/gioi-thieu.html">1. Giới thiệu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="huong-dan/bai-1.html">2. Bài 1:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="huong-dan/bai-2.html">3. Bài 2:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gioi-thieu.html">Giới thiệu về Gamekit và Arcade MakeCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="khai-niem.html">Các khái niệm trong Game</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hướng dẫn làm một số Game cơ bản</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/an-banh.html">1. Trò chơi ăn bánh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/bong-hoa.html">2. Bông hoa hạnh phúc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/qua-chanh.html">3. Quả chanh mọng nước</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/may-bay.html">4. Bắn máy bay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/me-cung.html">5. Phá giải mê cung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/bong-ro.html">6. Bóng rổ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/nhay-thung.html">7. Nhảy thùng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="huong-dan/mo-rong.html">8. Sử dụng thêm tiện ích mở rộng trong trò chơi</a></li>
 </ul>
 </li>
 </ul>
@@ -78,11 +90,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
 </ul>
 
         </div>
@@ -99,7 +106,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Hướng dẫn lập trình GameKit</strong></li>
+      <li>Hướng dẫn làm một số Game cơ bản</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastergamekit/huong-dan.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -109,13 +116,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="huong-dan-lap-trinh-gamekit">
-<h1><strong>Hướng dẫn lập trình GameKit</strong><a class="headerlink" href="#huong-dan-lap-trinh-gamekit" title="Permalink to this heading"></a></h1>
+  <section id="huong-dan-lam-mot-so-game-co-ban">
+<h1>Hướng dẫn làm một số Game cơ bản<a class="headerlink" href="#huong-dan-lam-mot-so-game-co-ban" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="huong-dan/gioi-thieu.html">1. Giới thiệu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="huong-dan/bai-1.html">2. Bài 1:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="huong-dan/bai-2.html">3. Bài 2:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/an-banh.html">1. Trò chơi ăn bánh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/bong-hoa.html">2. Bông hoa hạnh phúc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/qua-chanh.html">3. Quả chanh mọng nước</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/may-bay.html">4. Bắn máy bay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/me-cung.html">5. Phá giải mê cung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/bong-ro.html">6. Bóng rổ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/nhay-thung.html">7. Nhảy thùng</a></li>
+<li class="toctree-l1"><a class="reference internal" href="huong-dan/mo-rong.html">8. Sử dụng thêm tiện ích mở rộng trong trò chơi</a></li>
 </ul>
 </div>
 </section>
@@ -124,8 +136,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../xbot/dau-nang.html" class="btn btn-neutral float-left" title="Đầu nâng ForkLift" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="huong-dan/gioi-thieu.html" class="btn btn-neutral float-right" title="1. Giới thiệu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="khai-niem/chu-chay.html" class="btn btn-neutral float-left" title="9. Tạo hiệu ứng chữ chạy trên màn hình" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="huong-dan/an-banh.html" class="btn btn-neutral float-right" title="1. Trò chơi ăn bánh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

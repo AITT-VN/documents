@@ -64,12 +64,5 @@ OhStem xin chào tất cả các bạn!
    module/board-mo-rong.rst 
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Tài liệu học STEM 
-
-   tai_lieu_stem/tai-lieu-1.rst
-   tai_lieu_stem/tai-lieu-2.rst
-
 
 

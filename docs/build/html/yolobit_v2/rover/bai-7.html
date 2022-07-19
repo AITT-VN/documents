@@ -4,10 +4,9 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>11. Bài 7: Bám sát mục tiêu &mdash; OhStem Product Documents 0.0.2 documentation</title>
+  <title>11. Bài 7: Bám sát mục tiêu &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
@@ -29,9 +28,9 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search"  style="background: white" >
+        <div class="wy-side-nav-search" >
             <a href="../../index.html">
-            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -94,9 +93,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html">Hướng dẫn lập trình MicroPython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html">Hướng dẫn lập trình Arduino</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gioi-thieu.html">Giới thiệu về Gamekit và Arcade MakeCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/khai-niem.html">Các khái niệm trong Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html">Hướng dẫn làm một số Game cơ bản</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
@@ -105,19 +111,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
-</ul>
 
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">OhStem Product Documents</a>
+          <a href="../../index.html">OhStem Education Wiki</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -153,7 +154,7 @@
 <ul>
 <li><p>Khối lệnh toán tử:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.1.png"><img alt="../../_images/bai_7.1.png" class="align-center" src="../../_images/bai_7.1.png" style="width: 900px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.16.png"><img alt="../../_images/bai_7.16.png" class="align-center" src="../../_images/bai_7.16.png" style="width: 900px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -167,7 +168,7 @@
 <p>Để chương trình không cần phải đọc khoảng cách và xử lý giá trị liên tục, chúng ta cần sử dụng biến. Có thể hiểu, biến như một chiếc hộp, nơi chứa giá trị mà ta cần sử dụng.</p>
 <p>Mỗi hộp chỉ có thể chứa duy nhất một giá trị (chữ, số, chuỗi, dữ liệu) tại một thời điểm. Trong bài này, biến sẽ chứa giá trị số, đại diện cho khoảng cách từ Rover đến vật thể trước mặt.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.2.png"><img alt="../../_images/bai_7.2.png" class="align-center" src="../../_images/bai_7.2.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.23.png"><img alt="../../_images/bai_7.23.png" class="align-center" src="../../_images/bai_7.23.png" style="width: 400px;" /></a>
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -177,12 +178,12 @@
 <div><ol class="arabic">
 <li><p>Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để tạo</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.3.png"><img alt="../../_images/bai_7.3.png" class="align-center" src="../../_images/bai_7.3.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.33.png"><img alt="../../_images/bai_7.33.png" class="align-center" src="../../_images/bai_7.33.png" style="width: 400px;" /></a>
 </div></blockquote>
 </li>
 <li><p>Khi tạo biến thành công, trong mục Biến sẽ xuất hiện những khối lệnh liên quan để làm việc với biến.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.4.png"><img alt="../../_images/bai_7.4.png" class="align-center" src="../../_images/bai_7.4.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.43.png"><img alt="../../_images/bai_7.43.png" class="align-center" src="../../_images/bai_7.43.png" style="width: 400px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -194,7 +195,7 @@
 <ol class="arabic">
 <li><p>Viết thuật toán</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.5.png"><img alt="../../_images/bai_7.5.png" class="align-center" src="../../_images/bai_7.5.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.53.png"><img alt="../../_images/bai_7.53.png" class="align-center" src="../../_images/bai_7.53.png" style="width: 800px;" /></a>
 <p><em>Dựa vào thuật toán, hãy viết ra nội dung của chương trình.</em></p>
 </div></blockquote>
 </li>
@@ -205,7 +206,7 @@
 <ol class="arabic" start="2">
 <li><p>Hướng dẫn tạo điều kiện gộp</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.6.png"><img alt="../../_images/bai_7.6.png" class="align-center" src="../../_images/bai_7.6.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.63.png"><img alt="../../_images/bai_7.63.png" class="align-center" src="../../_images/bai_7.63.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -217,12 +218,12 @@
 <div><ul>
 <li><p>Điều kiện “nếu không nếu” là một điều kiện gộp giữa “nếu không” và “nếu”</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.7.png"><img alt="../../_images/bai_7.7.png" class="align-center" src="../../_images/bai_7.7.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.73.png"><img alt="../../_images/bai_7.73.png" class="align-center" src="../../_images/bai_7.73.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 <li><p><strong>Ví dụ:</strong> Nếu trời mưa bạn A sẽ ở lại trường, nếu không bạn A sẽ về nhà nếu hết giờ học</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.8.png"><img alt="../../_images/bai_7.8.png" class="align-center" src="../../_images/bai_7.8.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.81.png"><img alt="../../_images/bai_7.81.png" class="align-center" src="../../_images/bai_7.81.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -232,7 +233,7 @@
 </div>
 <ol class="arabic" start="3">
 <li><p>Khởi tạo biến “khoảng cách” (cho biến có giá trị bằng 0), và gán giá trị khoảng cách đọc được vào biến</p>
-<a class="reference internal image-reference" href="../../_images/bai_7.9.png"><img alt="../../_images/bai_7.9.png" class="align-center" src="../../_images/bai_7.9.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_7.92.png"><img alt="../../_images/bai_7.92.png" class="align-center" src="../../_images/bai_7.92.png" style="width: 800px;" /></a>
 </li>
 </ol>
 <div class="line-block">
@@ -241,7 +242,7 @@
 <ol class="arabic" start="4">
 <li><p>Tạo điều kiện thứ nhất: <strong>Nếu khoảng cách &lt; 15cm, lùi lại với tốc độ 50</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.10.png"><img alt="../../_images/bai_7.10.png" class="align-center" src="../../_images/bai_7.10.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.102.png"><img alt="../../_images/bai_7.102.png" class="align-center" src="../../_images/bai_7.102.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -251,7 +252,7 @@
 <ol class="arabic" start="5">
 <li><p>Tạo điều kiện thứ hai: <strong>Nếu khoảng cách &gt; 20cm và &lt; 40cm thì tiến tới với tốc độ 50. Nếu cả 2 điều kiện không đúng, dừng di chuyển</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_7.11.png"><img alt="../../_images/bai_7.11.png" class="align-center" src="../../_images/bai_7.11.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.112.png"><img alt="../../_images/bai_7.112.png" class="align-center" src="../../_images/bai_7.112.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -262,7 +263,7 @@
 <ul class="simple">
 <li><p>Bám sát mục tiêu: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BeVzmPaysgSHHG0dA9GriT347D">Tại đây</a></p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_7.12.png"><img alt="../../_images/bai_7.12.png" class="align-center" src="../../_images/bai_7.12.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_7.122.png"><img alt="../../_images/bai_7.122.png" class="align-center" src="../../_images/bai_7.122.png" style="width: 200px;" /></a>
 </section>
 </section>
 
@@ -277,7 +278,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, OHSTEM.</p>
+    <p>&#169; Copyright 2022, OHSTEM.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

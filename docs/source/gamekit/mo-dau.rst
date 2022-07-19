@@ -1,4 +1,4 @@
-1. Giới thiệu GamKit
+1. Giới thiệu GameKit
 ================================
 
 

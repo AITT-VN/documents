@@ -1,4 +1,4 @@
-9. Bài 7: Điều khiển từ xa
+11. Bài 7: Điều khiển từ xa
 ===========================
 
 Mục tiêu
@@ -234,6 +234,7 @@ Sau khi hoàn thành bảng điều khiển mới, bạn nhấn vào biểu tư�
     :align: center
 |   
 Cuối cùng, hãy tiến hành kết nối xBot và sử dụng bảng điều khiển vừa tạo xem có hoạt động đúng như mình cài đặt không nhé.
+
 
 
 

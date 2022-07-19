@@ -1,4 +1,4 @@
-8. Bài 6: Thử thách nâng cao 
+10. Bài 6: Thử thách nâng cao 
 ==================================
 
 Mục tiêu
@@ -149,7 +149,6 @@ Sơ đồ hoạt động như sau:
     :width: 700px
     :align: center
 |   
-
 
 
 

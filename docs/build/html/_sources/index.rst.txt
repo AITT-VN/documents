@@ -49,9 +49,8 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 2
    :caption: Game Kit - Kit học lập trình game 
 
-   gamekit/gioi-thieu.rst 
-   gamekit/khai-niem.rst 
-   gamekit/huong-dan.rst 
+   gamekit/gamekit.rst 
+
    
 
 .. toctree::

@@ -51,7 +51,7 @@ Từ ``Sprites`` kéo khối ``set mySprite velocity`` thả vào sau khối ``s
         :width: 600px
         :align: center 
     |
-**Bước 5 – làm player bật ra khi gặp tường (cạnh màn hình)**
+**Bước 5 – Làm player bật ra khi gặp tường (cạnh màn hình)**
 
 Nếu bạn sử dụng trình mô phỏng ở bước 4 sẽ thấy nhân vật player di chuyển ra khỏi màn hình, đây không phải là điều chúng ta muốn, ta cần phải làm cho nhân vật bật ra lại khi gặp cạnh màn hình. Từ ``Sprites`` chọn khối ``set mySprite stay`` trong ``screen`` đặt nó vào sau ``mySprite velocity``. trong ``set mySprite stay`` trong ``screen``, hãy sử dụng menu thả xuống để chọn thuộc tính **bounce on wall**, thay đổi giá trị thành **true**.
 

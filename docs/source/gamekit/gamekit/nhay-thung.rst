@@ -117,7 +117,7 @@ Nếu cái thùng chạm vào người chơi thì trò chơi sẽ kết thúc. K
     |
 **Hoàn thành**
 
-Như vậy ta đã có một trò chơi như ý muốn. Điều cuối cùng bạn cần làm là tải trò chơi về Kít của mình và trải nghiệm hoạt động trong trò chơi.
+Như vậy ta đã có một trò chơi như ý muốn. Điều cuối cùng bạn cần làm là tải trò chơi về kit của mình và trải nghiệm hoạt động trong trò chơi.
 
 
 

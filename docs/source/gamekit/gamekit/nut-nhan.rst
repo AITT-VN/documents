@@ -65,7 +65,7 @@ Tìm khối ``change life by -1`` trong ``Info``, thả vào on ``B button press
     |
 **Hoàn thành**
 
-Tải chương trình của bạn xuống Kit và sử dụng 2 nút nhấn A, B và xem thử chương trình hoạt động như thế nào nhé
+Tải chương trình của bạn xuống kit và sử dụng 2 nút nhấn A, B và xem thử chương trình hoạt động như thế nào nhé
 
 
 

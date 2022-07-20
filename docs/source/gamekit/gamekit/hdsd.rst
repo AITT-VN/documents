@@ -2,7 +2,7 @@
 ==========================
 
 
-Để lập trình cho GameKit, chúng ta dùng ứng dụng Makecode Arcade. Ở bài học này các ban jsex được hướng dẫn làm quen với giao diện lập trình của Makecode Arcade
+Để lập trình cho GameKit, chúng ta dùng ứng dụng Makecode Arcade. Ở bài học này các bạn sẽ được hướng dẫn làm quen với giao diện lập trình của Makecode Arcade
 
 Đầu tiên truy cập trang `<https://arcade.makecode.com>`_
 

@@ -1,13 +1,12 @@
 11. Bài 7: Điều khiển từ xa
 ===========================
 
-Mục tiêu
-----------------
-----------------
+**Mục tiêu:**
 
 Biết cách sử dụng remote hồng ngoại và phần mềm OhStem App để điều khiển robot từ xa theo ý muốn.
 
-Điều khiển bằng remote hồng ngoại
+
+11.1 Điều khiển bằng remote hồng ngoại
 -----------------------------------
 -----------------------------------
 
@@ -22,9 +21,10 @@ Trên mạch điều khiển xBot có tích hợp sẵn một mắt nhận tín 
 Remote hồng ngoại đi kèm xBot:
 
 .. image:: images/xbot_140.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
+
 **Yêu cầu đặt ra**
 
 Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho xBot nhận được tín hiệu khi ta nhấn các phím mũi tên và nút số, trong đó:
@@ -42,7 +42,7 @@ Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho 
 Để xBot đọc được tín hiệu, bạn cần sử dụng các khối lệnh sau:
 
 .. image:: images/xbot_142.png
-    :width: 700px
+    :width: 800px
     :align: center
 |   
 Để dễ hiểu, chúng ta sẽ viết chương trình đơn giản:
@@ -54,13 +54,13 @@ Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho 
 Sơ đồ xử lý như sau:
 
 .. image:: images/xbot_143.png
-    :width: 700px
+    :width: 400px
     :align: center
 |   
 Chương trình khối lệnh như sau:
 
 .. image:: images/xbot_144.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 Sau khi chạy chương trình, bạn thử nhấn nút A và B trên remote để xem kết quả.
@@ -72,13 +72,13 @@ Trong chương trình này, chúng ta sẽ liên tục kiểm tra và cho xBot d
 Sơ đồ xử lý của chương trình:
 
 .. image:: images/xbot_145.png
-    :width: 600px
+    :width: 400px
     :align: center
 |   
 Chương trình khối lệnh như sau:
 
 .. image:: images/xbot_146.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 **Thay đổi tốc độ**
@@ -88,7 +88,7 @@ Chúng ta sẽ viết chương trình thay đổi tốc độ cho xBot. Bằng c
 Để thay đổi được tốc độ, chúng ta sử dụng biến để lưu tốc độ hiện tại và thay đổi nó khi nhận được lệnh từ các nút số.
 
 .. image:: images/xbot_147.png
-    :width: 300px
+    :width: 400px
     :align: center
 |   
 Ban đầu ta cho biến này là giá trị 100, nghĩa là tốc độ tối đa.
@@ -98,13 +98,13 @@ Ban đầu ta cho biến này là giá trị 100, nghĩa là tốc độ tối �
 Sơ đồ xử lý của hàm đó như sau:
 
 .. image:: images/xbot_148.png
-    :width: 900px
+    :width: 800px
     :align: center
 |   
 Chương trình của hàm:
 
 .. image:: images/xbot_149.png
-    :width: 700px
+    :width: 500px
     :align: center
 |   
 Sau đó sử dụng hàm và biến tốc độ vào chương trình cũ, chúng ta có chương trình sau:
@@ -144,7 +144,7 @@ Tuy nhiên, bạn cũng có thể tự tạo một giao diện điều khiển t
 2. Sau đó nhấn vào biểu tượng Tạo mới, phần mềm sẽ mửo ra giao diện thiết kế bảng điều khiển mới:
 
 .. image:: images/xbot_154.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 3. Bạn có thể kéo các loại điều khiển (còn gọi là widget) bên trái vào trong và sắp xếp theo ý bạn.
@@ -190,13 +190,13 @@ Bạn nhấn vào widget thanh kéo Servo, chọn Cài đặt và cấu hình nh
 Bạn có thể thay đổi tốc độ quay của Servo tùy ý. Bạn chọn cổng Servo đúng với cổng dùng để cắm Servo, từ 1 đến 8.
 
 .. image:: images/xbot_158.png
-    :width: 500px
+    :width: 400px
     :align: center
 |   
 3. Đưa nút nhấn vào để bật còi cảnh báo:
 
 .. image:: images/xbot_159.png
-    :width: 700px
+    :width: 500px
     :align: center
 |   
 4. Bạn nhấn vào Nút nhấn và chọn đổi tên thành "Còi xe"
@@ -218,7 +218,7 @@ Lưu ý: Trong lúc viết chương trình, bạn có thể nhấn vào các nú
 6. Thêm vào một nút bật tắt và đặt tên là "Đèn xe"
 
 .. image:: images/xbot_162.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 7. Viết chương trình cho 2 trường hợp là khi nút được bật và tắt.

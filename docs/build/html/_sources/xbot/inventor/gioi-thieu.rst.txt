@@ -24,3 +24,38 @@ Bộ kit bao gồm
 - Hướng dẫn sử dụng chi tiết bằng hình vẽ 3D
 
 - Các phụ kiện hỗ trợ lắp ráp (Bu lông, đai ốc và trụ đồng)
+
+
+Danh sách các thành phần 
+--------
+-------------
+
+**Thước đo chi tiết:**
+
+.. image:: images/invento_1.1.png
+    :width: 1000px
+    :align: center
+|   
+
+**Danh sách các chi tiết:**
+
+**Chú ý:** Màu sắc của các chi tiết có thể khác so với sản phẩm thực tế, không ảnh hưởng đến việc sử dụng.
+
+.. image:: images/invento_1.2.png
+    :width: 1000px
+    :align: center
+|  
+.. image:: images/invento_1.3.png
+    :width: 1000px
+    :align: center
+|  
+
+
+
+
+
+
+
+
+
+

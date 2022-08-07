@@ -10,7 +10,9 @@ Thiết bị cần dùng
 ----------------------
 ----------------------
 
-.. image:: images/homebit_81.png
+- Cảm biến lửa 
+
+.. image:: images/homebit_91.png
     :width: 200px
     :align: center
 |   
@@ -19,20 +21,24 @@ Kết nối
 ------------------------
 ------------------------
 
-.. image:: images/homebit_82.png
-    :width: 300px
+- Kết nối cảm biến lửa vào cổng P2
+
+.. image:: images/homebit_92.png
+    :width: 500px
     :align: center
 |   
-- Kết nối cảm biến lửa vào cổng P2
+
 
 Giới thiệu khối lệnh
 ------------------------
 ------------------------
 
-.. image:: images/homebit_83.png
-    :width: 700px
+.. image:: images/homebit_93.png
+    :width: 550px
     :align: center
-|   
+| 
+
+
 Viết chương trình
 -----------------------
 -----------------------
@@ -40,13 +46,24 @@ Viết chương trình
 1. Tạo điều kiện: Nếu cảm biến chân P2 phát hiện
 ra lửa
 
-.. image:: images/homebit_84.png
-    :width: 700px
+.. image:: images/homebit_94.png
+    :width: 550px
     :align: center
 |   
 2. Khi phát hiện có lửa, chương trình bắt đầu xóa màn hình LCD trước đó, hiện 2 dòng chữ “Alarm - Fire detected!!!” lên LCD và phát ra âm thanh cảnh báo.
 
-.. image:: images/homebit_85.png
-    :width: 700px
+.. image:: images/homebit_95.png
+    :width: 600px
     :align: center
 |   
+
+Chương trình mẫu
+---------------------
+---------------------
+
+- Cảnh báo cháy: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2CycT2NG5NsIFWkXyDA4e1F1rmU>`_
+
+.. image:: images/homebit_96.png
+    :width: 200px
+    :align: center
+|

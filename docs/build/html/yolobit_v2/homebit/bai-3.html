@@ -51,6 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-homebit.html">1. Giới thiệu nhà thông minh Home:Bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp Home:Bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện Home:Bit V3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Điều khiển đèn bằng Remote</a></li>
@@ -58,8 +59,10 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">6. Bài 3: Hiển thị nhiệt độ</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Quạt thông minh</a></li>
@@ -134,51 +137,84 @@
 <section id="thiet-bi-can-dung">
 <h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/homebit_38.png"><img alt="../../_images/homebit_38.png" class="align-center" src="../../_images/homebit_38.png" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/homebit_39.png"><img alt="../../_images/homebit_39.png" class="align-center" src="../../_images/homebit_39.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p>Cảm biến DHT20</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_38.png"><img alt="../../_images/homebit_38.png" class="align-center" src="../../_images/homebit_38.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
+<li><p>Màn hình LCD</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_39.png"><img alt="../../_images/homebit_39.png" class="align-center" src="../../_images/homebit_39.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
 <li><p>Kết nối màn hình LCD vào cổng l2C 1</p></li>
 <li><p>Kết nối cảm biến DHT20 vào cổng I2C 2</p></li>
 </ul>
+<a class="reference internal image-reference" href="../../_images/homebit_40.png"><img alt="../../_images/homebit_40.png" class="align-center" src="../../_images/homebit_40.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="gioi-thieu-khoi-lenh">
 <h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/homebit_43.png"><img alt="../../_images/homebit_43.png" class="align-center" src="../../_images/homebit_43.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_41.png"><img alt="../../_images/homebit_41.png" class="align-center" src="../../_images/homebit_41.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/homebit_42.png"><img alt="../../_images/homebit_42.png" class="align-center" src="../../_images/homebit_42.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="../../_images/homebit_44.png"><img alt="../../_images/homebit_44.png" class="align-center" src="../../_images/homebit_44.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Tạo điều kiện: Nếu bộ đếm thời gian ≥ 5000ms (5 giây). Điều kiện này giúp mỗi 5 giây chương trình sẽ thực hiện lệnh bên trong</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/homebit_43.png"><img alt="../../_images/homebit_43.png" class="align-center" src="../../_images/homebit_43.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Cập nhật cảm biến nhiệt độ độ ẩm và xóa các thông tin đang có trên LCD để chuẩn bị hiển thị giá trị nhiệt độ, độ ẩm mới</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_48.png"><img alt="../../_images/homebit_48.png" class="align-center" src="../../_images/homebit_48.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_44.png"><img alt="../../_images/homebit_44.png" class="align-center" src="../../_images/homebit_44.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Hiển thị giá trị nhiệt độ, độ ẩm lên màn hình LCD  thành 2 hàng (hàng 0 và hàng 1)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_49.png"><img alt="../../_images/homebit_49.png" class="align-center" src="../../_images/homebit_49.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_45.png"><img alt="../../_images/homebit_45.png" class="align-center" src="../../_images/homebit_45.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>Reset bộ đếm thời gian để bắt đầu đếm lại sau mỗi 5 giây:</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_50.png"><img alt="../../_images/homebit_50.png" class="align-center" src="../../_images/homebit_50.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_46.png"><img alt="../../_images/homebit_46.png" class="align-center" src="../../_images/homebit_46.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hiển thị nhiệt độ: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Cyad0OxIWoDZ7CqVS9jizJgmDj">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_47.png"><img alt="../../_images/homebit_47.png" class="align-center" src="../../_images/homebit_47.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

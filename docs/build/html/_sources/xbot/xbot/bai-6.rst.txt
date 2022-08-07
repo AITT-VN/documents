@@ -1,32 +1,32 @@
 10. Bài 6: Thử thách nâng cao 
 ==================================
 
-Mục tiêu
---------------------
---------------------
+**Mục tiêu:**
 
 Biết cách kết hợp các loại cảm biến để có thể lập trình cho robot hoạt động thông minh hơn và giải quyết được các bài toán phức tạp. 
 
-Bản đồ sử dụng
+
+10.1 Bản đồ sử dụng
 ---------------------
 ---------------------
 
 Bạn sẽ sử dụng bản đồ đi kèm với xBot trong bài học này.
 
 .. image:: images/xbot_165.png
-    :width: 700px
+    :width: 500px
     :align: center
 |   
 Bạn cũng có thể sử dụng băng keo đen và giấy trắng để tự làm bản đồ theo ý mình.
 
-Bài toán dò đường kết hợp với né vật cản
+
+10.2 Bài toán dò đường kết hợp với né vật cản
 ---------------------------
 ---------------------------
 
 Bạn hãy đặt 1 vật cản ở vị trí bất kỳ trên vạch đen và nhiệm vụ của robot là vừa di chuyển theo vạch, vừa né vật cản.
 
 .. image:: images/xbot_166.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 Để giải quyết bài toán này thì chúng ta cần chia làm nhiều bài toán con và sử dụng khái niệm **Hàm** đã học để xử lý từng bài toán con.
@@ -44,7 +44,7 @@ Trước tiên là bài toán né vật cản. Nếu đang di chuyển mà gặp
 Chúng ta cần tạo một hàm riêng cho nhiệm vụ là dừng lại và phát âm thanh cảnh báo.
 
 .. image:: images/xbot_167.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 **Đi vòng qua vật cản**
@@ -52,7 +52,7 @@ Chúng ta cần tạo một hàm riêng cho nhiệm vụ là dừng lại và ph
 Để đi vòng qua vật cản thì cần rẽ phải, đi thẳng, rẽ trái, đi thẳng cho đến khi gặp vạch đen thì rẽ phải.
 
 .. image:: images/xbot_168.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 **Chú ý**: *Bạn cần phải tinh chỉnh thời gian cho phù hợp với tình trạng của robot và kích thước của vật cản.*
@@ -62,7 +62,7 @@ Chúng ta cần tạo một hàm riêng cho nhiệm vụ là dừng lại và ph
 Hàm để robot đi theo vạch đen sẽ giống ở phần 6-5.
 
 .. image:: images/xbot_169.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 **Đưa các hàm vào chương trình**
@@ -73,7 +73,9 @@ Sau khi ghép lại thì chương trình cuối cùng sẽ như sau:
     :width: 700px
     :align: center
 |   
-Bài toán tìm và đẩy ngã chai nước
+
+
+10.3 Bài toán tìm và đẩy ngã chai nước
 ----------------------------------
 ----------------------------------
 
@@ -96,7 +98,7 @@ Nhiệm vụ của xBot là tìm và đẩy ngã chai nước mà không ra ngo�
 Để tránh đi ra khỏi vòng tròn, robot cần phát hiện ra vạch đen sau đó dừng lại.
 
 .. image:: images/xbot_172.png
-    :width: 700px
+    :width: 600px
     :align: center
 |   
 **Lùi lại và rẽ hướng khác**

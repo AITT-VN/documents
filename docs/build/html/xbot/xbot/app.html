@@ -58,14 +58,13 @@
 <p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../xbot.html"><strong>Robot lập trình xBot</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Giới thiệu về robot xBot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Làm quen với xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3. Làm quen với phần mềm OhStem App</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#cac-moi-truong-lap-trinh-cho-xbot">Các môi trường lập trình cho xBot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lap-trinh-bang-micropython"><strong>Lập trình bằng MicroPython</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#download-va-cai-dat-phan-mem-ohstem-app">Download và cài đặt phần mềm OhStem App</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#giao-dien-lap-trinh-keo-tha-cua-ohstem-app">Giao diện lập trình kéo thả của OhStem App</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#thao-tac-lam-viec-voi-khoi-lenh">Thao tác làm việc với khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cac-moi-truong-lap-trinh-cho-xbot">3.1 Các môi trường lập trình cho xBot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-va-cai-dat-phan-mem-ohstem-app">3.2 Download và cài đặt phần mềm OhStem App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giao-dien-lap-trinh-keo-tha-cua-ohstem-app">3.3 Giao diện lập trình kéo thả của OhStem App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thao-tac-lam-viec-voi-khoi-lenh">3.4 Thao tác làm việc với khối lệnh</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="viet-chuong-trinh.html">4. Hướng dẫn viết chương trình</a></li>
@@ -127,110 +126,131 @@
              
   <section id="lam-quen-voi-phan-mem-ohstem-app">
 <h1>3. Làm quen với phần mềm OhStem App<a class="headerlink" href="#lam-quen-voi-phan-mem-ohstem-app" title="Permalink to this heading"></a></h1>
+<p><strong>Mục tiêu:</strong></p>
+<p>Biết cách sử dụng giao diện lập trình khối kéo thả của phần mềm OhStem App và viết một chương trình đơn giản để làm việc với đèn LED RGB có sẵn trên robot.</p>
 <section id="cac-moi-truong-lap-trinh-cho-xbot">
-<h2>Các môi trường lập trình cho xBot<a class="headerlink" href="#cac-moi-truong-lap-trinh-cho-xbot" title="Permalink to this heading"></a></h2>
+<h2>3.1 Các môi trường lập trình cho xBot<a class="headerlink" href="#cac-moi-truong-lap-trinh-cho-xbot" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<p><strong>Phần mềm OhStem App</strong></p>
-<p>Phần mềm này hỗ trợ <em>lập trình bằng giao diện kéo thả các khối lệnh</em>, phù hợp với các bạn nhỏ và người mới học lập trình.</p>
+<p>Chúng ta có thể sử dụng nhiều môi trường lập trình khác nhau để lập trình cho robot xBot, trong đó 3 môi trường phổ biến nhất là:</p>
+<ul class="simple">
+<li><p><strong>Phần mềm OhStem App</strong></p></li>
+</ul>
+<p>Phần mềm này hỗ trợ <strong>lập trình bằng giao diện kéo thả các khối lệnh</strong>, phù hợp với các bạn nhỏ và người mới học lập trình.</p>
 <p>OhStem App chạy được trên nhiều thiết bị khác nhau như máy tính, laptop, máy tính bảng, điện thoại (IOS và Android).</p>
-<a class="reference internal image-reference" href="../../_images/xbot_180.png"><img alt="../../_images/xbot_180.png" class="align-center" src="../../_images/xbot_180.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.1.png"><img alt="../../_images/xbot_3.1.png" class="align-center" src="../../_images/xbot_3.1.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Phần mềm Arduino</strong></p>
-<p>Arduino là môi trường <em>lập trình dạng chữ viết dựa trên ngôn ngữ C đã được chỉnh sửa</em>.</p>
+<ul class="simple">
+<li><p><strong>Phần mềm Arduino</strong></p></li>
+</ul>
+<p>Arduino là môi trường <strong>lập trình dạng chữ viết dựa trên ngôn ngữ C đã được chỉnh sửa</strong>.</p>
 <p>Arduino là phần mềm cực kỳ phổ biến và mạnh mẽ trong cộng đồng công nghê, phù hợp để lập trình các ứng dụng nâng cao và phức tạp hơn.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_181.png"><img alt="../../_images/xbot_181.png" class="align-center" src="../../_images/xbot_181.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.2.png"><img alt="../../_images/xbot_3.2.png" class="align-center" src="../../_images/xbot_3.2.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</section>
-<section id="lap-trinh-bang-micropython">
-<h2><strong>Lập trình bằng MicroPython</strong><a class="headerlink" href="#lap-trinh-bang-micropython" title="Permalink to this heading"></a></h2>
-<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Lập trình bằng MicroPython</strong></p></li>
+</ul>
 <p>Đây là ngôn ngữ được tạo ra dựa trên ngôn ngữ Python đã được rút gọn. Chúng phù hợp với các bộ xử lý nhỏ được sử dụng trong xBot, không có sức mạnh như máy tính của chúng ta.</p>
 <p>Có rất nhiều phần mềm hỗ trợ lập trình MicroPython cho xBot: uPyCraft, Visual Studio Code,…</p>
-<a class="reference internal image-reference" href="../../_images/xbot_182.png"><img alt="../../_images/xbot_182.png" class="align-center" src="../../_images/xbot_182.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.3.png"><img alt="../../_images/xbot_3.3.png" class="align-center" src="../../_images/xbot_3.3.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p><strong>Lưu ý</strong>: <em>Cuốn sách này sẽ sử dụng OhStem App để hướng dẫn lập trình. Các môi trường lập trình còn lại sẽ được hướng dẫn trong các tài liệu khác.</em></p>
 </section>
 <section id="download-va-cai-dat-phan-mem-ohstem-app">
-<h2>Download và cài đặt phần mềm OhStem App<a class="headerlink" href="#download-va-cai-dat-phan-mem-ohstem-app" title="Permalink to this heading"></a></h2>
+<h2>3.2 Download và cài đặt phần mềm OhStem App<a class="headerlink" href="#download-va-cai-dat-phan-mem-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<p><strong>Trên máy tính và laptop</strong></p>
-<p>Trên máy tính hoặc laptop, bạn có thể truy cập vào trang web <a class="reference external" href="https://app.ohstem.vn">https://app.ohstem.vn</a> để sử dụng phần mềm OhStem App mà không cần download và cài đặt gì khác.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_183.png"><img alt="../../_images/xbot_183.png" class="align-center" src="../../_images/xbot_183.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p><strong>Trên máy tính và laptop</strong></p></li>
+</ul>
+<p>Trên máy tính hoặc laptop, bạn có thể truy cập vào trang web <a href="#id1"><span class="problematic" id="id2">`&lt;https://app.ohstem.vn &gt;`_</span></a> để sử dụng phần mềm OhStem App mà không cần download và cài đặt gì khác.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_3.4.png"><img alt="../../_images/xbot_3.4.png" class="align-center" src="../../_images/xbot_3.4.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p><strong>Lưu ý</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Trình duyệt hỗ trợ OhStem App tốt nhất: Google Chrome, Microsoft Edge, Cốc Cốc</p></li>
+<li><p>Trình duyệt không hỗ trợ: Firefox, Opera,…</p></li>
+<li><p>Phải có kết nối Bluetooth</p></li>
+</ul>
+</div></blockquote>
 <p><strong>Trên máy tính bảng và điện thoại</strong></p>
 <p>Tìm và cài đặt ứng dụng <strong>OhStem App</strong> có trên Play Store của Android hoặc App Store của iOS.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_184.png"><img alt="../../_images/xbot_184.png" class="align-center" src="../../_images/xbot_184.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.5.png"><img alt="../../_images/xbot_3.5.png" class="align-center" src="../../_images/xbot_3.5.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="giao-dien-lap-trinh-keo-tha-cua-ohstem-app">
-<h2>Giao diện lập trình kéo thả của OhStem App<a class="headerlink" href="#giao-dien-lap-trinh-keo-tha-cua-ohstem-app" title="Permalink to this heading"></a></h2>
+<h2>3.3 Giao diện lập trình kéo thả của OhStem App<a class="headerlink" href="#giao-dien-lap-trinh-keo-tha-cua-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Chọn menu lập trình để vào giao diện lập trình cho xBot.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_185.png"><img alt="../../_images/xbot_185.png" class="align-center" src="../../_images/xbot_185.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.6.png"><img alt="../../_images/xbot_3.6.png" class="align-center" src="../../_images/xbot_3.6.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Các thành phần của giao diện lập trình này sẽ được giải thích chi tiết ở các phần tiếp theo.</p>
-<p><strong>Danh mục khối lệnh</strong></p>
-<p>Đây là khu vực chứa các nhóm khối lệnh, với nhiều màu sắc khác nhau cho từng nhóm, giúp chúng ta dễ dàng tìm được khối lệnh cần sử dụng khi cần.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_186.png"><img alt="../../_images/xbot_186.png" class="align-center" src="../../_images/xbot_186.png" style="width: 700px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/xbot_187.png"><img alt="../../_images/xbot_187.png" class="align-center" src="../../_images/xbot_187.png" style="width: 700px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<a class="reference internal image-reference" href="../../_images/xbot_188.png"><img alt="../../_images/xbot_188.png" class="align-center" src="../../_images/xbot_188.png" style="width: 700px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/xbot_189.png"><img alt="../../_images/xbot_189.png" class="align-center" src="../../_images/xbot_189.png" style="width: 700px;" /></a>
+<div><p><strong>3.3.1 Danh mục khối lệnh</strong></p>
 </div></blockquote>
+<p>Đây là khu vực chứa các nhóm khối lệnh, với nhiều màu sắc khác nhau cho từng nhóm, giúp chúng ta dễ dàng tìm được khối lệnh cần sử dụng khi cần.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_3.7.png"><img alt="../../_images/xbot_3.7.png" class="align-center" src="../../_images/xbot_3.7.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.8.png"><img alt="../../_images/xbot_3.8.png" class="align-center" src="../../_images/xbot_3.8.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.9.png"><img alt="../../_images/xbot_3.9.png" class="align-center" src="../../_images/xbot_3.9.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.10.png"><img alt="../../_images/xbot_3.10.png" class="align-center" src="../../_images/xbot_3.10.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Ngoài ra còn có một số khối lệnh nâng cao khác sẽ được nhắc đến trong bài sau.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_190.png"><img alt="../../_images/xbot_190.png" class="align-center" src="../../_images/xbot_190.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.11.png"><img alt="../../_images/xbot_3.11.png" class="align-center" src="../../_images/xbot_3.11.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Vùng viết chương trình</strong></p>
-<p>Đây là nơi chúng ta lắp ghép các khối lệnh với nhau và tạo thành chương trình.</p>
+<blockquote>
+<div><p><strong>3.3.2 Vùng viết chương trình</strong></p>
+</div></blockquote>
+<p>Đây là <strong>nơi chúng ta lắp ghép các khối lệnh với nhau</strong> và tạo thành chương trình.</p>
 <p>Bạn có thể kéo và di chuyển, phóng to, thu nhỏ các khối lệnh.</p>
-<p><strong>Chế độ lập trình</strong></p>
+<blockquote>
+<div><p><strong>3.3.3 Chế độ lập trình</strong></p>
+</div></blockquote>
 <p>OhStem App hỗ trợ 2  chế độ lập trình là: <strong>lập trình kéo thả khối lệnh</strong> và <strong>lập trình bằng code</strong> với ngôn ngữ MicroPython.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_191.png"><img alt="../../_images/xbot_191.png" class="align-center" src="../../_images/xbot_191.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.12.png"><img alt="../../_images/xbot_3.12.png" class="align-center" src="../../_images/xbot_3.12.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Các nút chức năng</strong></p>
-<a class="reference internal image-reference" href="../../_images/xbot_192.png"><img alt="../../_images/xbot_192.png" class="align-center" src="../../_images/xbot_192.png" style="width: 700px;" /></a>
+<blockquote>
+<div><p><strong>3.3.4 Các nút chức năng</strong></p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/xbot_3.13.png"><img alt="../../_images/xbot_3.13.png" class="align-center" src="../../_images/xbot_3.13.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="thao-tac-lam-viec-voi-khoi-lenh">
-<h2>Thao tác làm việc với khối lệnh<a class="headerlink" href="#thao-tac-lam-viec-voi-khoi-lenh" title="Permalink to this heading"></a></h2>
+<h2>3.4 Thao tác làm việc với khối lệnh<a class="headerlink" href="#thao-tac-lam-viec-voi-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/xbot_193.png"><img alt="../../_images/xbot_193.png" class="align-center" src="../../_images/xbot_193.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p><strong>Kết nối các khối lệnh</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_3.14.png"><img alt="../../_images/xbot_3.14.png" class="align-center" src="../../_images/xbot_3.14.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Kết nối các khối lệnh</strong></p>
-<p><strong>Xóa khối lệnh</strong></p>
-<ul class="simple">
+<a class="reference internal image-reference" href="../../_images/xbot_3.15.png"><img alt="../../_images/xbot_3.15.png" class="align-center" src="../../_images/xbot_3.15.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Xóa khối lệnh</strong></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Trên máy tính, laptop</p></li>
 </ul>
 <ol class="arabic simple">
@@ -238,64 +258,79 @@
 <li><p>Nhấp chuột phải (hiển thị bảng tùy chọn)</p></li>
 <li><p>Chọn <strong>Xóa mảnh này</strong></p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/xbot_194.png"><img alt="../../_images/xbot_194.png" class="align-center" src="../../_images/xbot_194.png" style="width: 500px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<ul class="simple">
-<li><p>Xóa trên thiết bị di động</p></li>
+</div></blockquote>
+</li>
 </ul>
-<ol class="arabic simple">
+<a class="reference internal image-reference" href="../../_images/xbot_3.16.png"><img alt="../../_images/xbot_3.16.png" class="align-center" src="../../_images/xbot_3.16.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line">- Xóa trên thiết bị di động</div>
+</div>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>Nhấn giữ khối lệnh để chờ bảng tùy chọn hiện ra.</p></li>
 <li><p>Chọn <strong>Xóa mảnh này</strong></p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/xbot_195.png"><img alt="../../_images/xbot_195.png" class="align-center" src="../../_images/xbot_195.png" style="width: 500px;" /></a>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/xbot_3.17.png"><img alt="../../_images/xbot_3.17.png" class="align-center" src="../../_images/xbot_3.17.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ul class="simple">
-<li><p>Xóa nhiều khối lệnh bằng khối lệnh cha</p></li>
-</ul>
-<ol class="arabic simple">
+<ul>
+<li><p><strong>Xóa nhiều khối lệnh bằng khối lệnh cha</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>Để xóa được nhiều khối lệnh, các khối lệnh cần nằm trong khối lệnh cha</p></li>
 <li><p>Khi <strong>xóa khối lệnh cha, các khối lệnh con sẽ bị xóa theo</strong> (bảng tùy chọn sẽ hiển thị số mảnh sẽ bị xóa)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/xbot_196.png"><img alt="../../_images/xbot_196.png" class="align-center" src="../../_images/xbot_196.png" style="width: 500px;" /></a>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_3.18.png"><img alt="../../_images/xbot_3.18.png" class="align-center" src="../../_images/xbot_3.18.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Xóa nhiều khối lệnh bằng cách kéo thả</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Nhấp giữ nhóm khối lệnh và kéo vào danh mục khối lệnh</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_3.19.png"><img alt="../../_images/xbot_3.19.png" class="align-center" src="../../_images/xbot_3.19.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Thả ra để xóa nhóm khối lệnh</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/xbot_3.20.png"><img alt="../../_images/xbot_3.20.png" class="align-center" src="../../_images/xbot_3.20.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li><p>Xóa nhiều khối lệnh bằng cách kéo thả</p></li>
+<li><p><strong>Sao chép khối lệnh</strong></p></li>
 </ul>
-<ol class="arabic simple">
-<li><p>Nhấp giữ nhóm khối lệnh và kéo vào danh mục khối lệnh</p></li>
-</ol>
-<a class="reference internal image-reference" href="../../_images/xbot_197.png"><img alt="../../_images/xbot_197.png" class="align-center" src="../../_images/xbot_197.png" style="width: 500px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Thả ra để xóa nhóm khối lệnh</p></li>
-</ol>
-<a class="reference internal image-reference" href="../../_images/xbot_198.png"><img alt="../../_images/xbot_198.png" class="align-center" src="../../_images/xbot_198.png" style="width: 500px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p><strong>Sao chép khối lệnh</strong></p>
 <p>Để rút ngắn thời gian viết chương trình, bạn nên sử dụng <strong>chức năng sao chép cho những khối lệnh cần lặp lại nhiều lần</strong>.</p>
 <p>Tương tự như xóa khối lệnh, bạn chọn khối lệnh và click chuột phải, chọn Tạo bản sao.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_199.png"><img alt="../../_images/xbot_199.png" class="align-center" src="../../_images/xbot_199.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.21.png"><img alt="../../_images/xbot_3.21.png" class="align-center" src="../../_images/xbot_3.21.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Bên cạnh đó, để tạo bản sao cho nhiều khối lệnh, các khối lệnh cần nằm trong khối lệnh cha, khi đó ta sao chếp khối lệnh cha sẽ sao chép luôn tất cả các khối lệnh con có trong đó:</p>
-<a class="reference internal image-reference" href="../../_images/xbot_200.png"><img alt="../../_images/xbot_200.png" class="align-center" src="../../_images/xbot_200.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_3.22.png"><img alt="../../_images/xbot_3.22.png" class="align-center" src="../../_images/xbot_3.22.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Cách chạy và dùng chương trình</strong></p>
+<ul class="simple">
+<li><p><strong>Cách chạy và dùng chương trình</strong></p></li>
+</ul>
 <p>Sau khi viết chương trình xong, bạn có thể gửi chương trình qua xBot để chạy bằng cách nhấn vào nút Chạy.</p>
 <p>Khi chương trình đang chạy, nếu bạn muốn dừng lại hãy nhấn vào nút Dừng.</p>
+<p><strong>Lưu ý:</strong> Bạn cần kết nối với xBot trước khi chạy chương trình. Hướng dẫn ở bài tiếp theo.</p>
 </section>
 </section>
 

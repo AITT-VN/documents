@@ -10,7 +10,7 @@ Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 để thực
 3. Tạo chương trình như hình minh họa và nhấn nút chạy 
 
 .. image:: images/homebit_21.png
-    :scale: 100%
+    :width: 600px
     :align: center
 |
 **2.1 Lắp ráp**
@@ -75,13 +75,13 @@ Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 để thực
 10. Lắp 2 tấm mái vào thân nhà
 
 .. image:: images/homebit_13.png
-    :scale: 1-0%
+    :scale: 100%
     :align: center
 |
-**2.1 Sơ đồ kết nối**
+**2.2 Sơ đồ kết nối**
 +++++++++++++++++++++++++
 ----------------------------
 
 .. image:: images/homebit_14.png
-    :scale: 100%
+    :width: 600px
     :align: center

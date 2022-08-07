@@ -51,6 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-homebit.html">1. Giới thiệu nhà thông minh Home:Bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp Home:Bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện Home:Bit V3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Điều khiển đèn bằng Remote</a></li>
@@ -62,6 +63,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-bien">Giới thiệu về biến</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cach-tao-va-su-dung-bien">Cách tạo và sử dụng biến</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">6. Bài 3: Hiển thị nhiệt độ</a></li>
@@ -141,7 +143,17 @@
 <section id="thiet-bi-can-dung">
 <h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/homebit_23.png"><img alt="../../_images/homebit_23.png" class="align-center" src="../../_images/homebit_23.png" style="width: 300px;" /></a>
+<ul class="simple">
+<li><p>Mắt đọc IR</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_23.1.png"><img alt="../../_images/homebit_23.1.png" class="align-center" src="../../_images/homebit_23.1.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Remote điều khiển</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_23.png"><img alt="../../_images/homebit_23.png" class="align-center" src="../../_images/homebit_23.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -149,14 +161,16 @@
 <section id="ket-noi">
 <h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<ul class="simple">
-<li><p>Tương tự bài 1</p></li>
-</ul>
+<p>Kết nối <strong>mắt đọc IR</strong> vào cổng P1</p>
+<a class="reference internal image-reference" href="../../_images/homebit_24.png"><img alt="../../_images/homebit_24.png" class="align-center" src="../../_images/homebit_24.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="gioi-thieu-khoi-lenh">
 <h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/homebit_29.png"><img alt="../../_images/homebit_29.png" class="align-center" src="../../_images/homebit_29.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_29.png"><img alt="../../_images/homebit_29.png" class="align-center" src="../../_images/homebit_29.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -202,28 +216,39 @@
 <ol class="arabic simple" start="2">
 <li><p>Tạo điều kiện: Nếu nút ↑ được nhấn, tăng giá trị độ sáng lên 25</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_37.png"><img alt="../../_images/homebit_37.png" class="align-center" src="../../_images/homebit_37.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_34.png"><img alt="../../_images/homebit_34.png" class="align-center" src="../../_images/homebit_34.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Thay đổi giá trị độ sáng theo giá trị biến. Sau đó chọn màu đèn sáng là đỏ. Xóa tín hiệu ở cuối chương trình</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_34.png"><img alt="../../_images/homebit_34.png" class="align-center" src="../../_images/homebit_34.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_35.png"><img alt="../../_images/homebit_35.png" class="align-center" src="../../_images/homebit_35.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>Thực hiện tương tự. Nếu nút ↓ được nhấn, giảm giá trị độ sáng xuống 25 (-25)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_35.png"><img alt="../../_images/homebit_35.png" class="align-center" src="../../_images/homebit_35.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_36.png"><img alt="../../_images/homebit_36.png" class="align-center" src="../../_images/homebit_36.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="5">
 <li><p>Kết hợp với chương trình của bài 1 để hoàn thiện chương trình</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/homebit_36.png"><img alt="../../_images/homebit_36.png" class="align-center" src="../../_images/homebit_36.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/homebit_37.png"><img alt="../../_images/homebit_37.png" class="align-center" src="../../_images/homebit_37.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Điều chỉnh độ sáng đèn: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Cvih3zEB0mBPESubn8On8NihS7">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_37.1.png"><img alt="../../_images/homebit_37.1.png" class="align-center" src="../../_images/homebit_37.1.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

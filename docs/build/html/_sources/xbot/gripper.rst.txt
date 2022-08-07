@@ -72,13 +72,13 @@ Hướng dẫn lập trình
 Động cơ servo có thể thực hiện được lệnh xoay cánh tay động cơ đến vị trí được lập trình sẵn (từ 0 đến 180 độ) một cách tức thời hoặc theo một tốc độ cho trước.
 
 .. image:: images/gripper_12.png
-    :width: 800px
+    :width: 400px
     :align: center
 |   
 Chiều xoay của động cơ servo là hướng khi chúng ta quan sát trực diện với mặt trục xoay. Theo quay ước, chiều xoay từ phải sang trái tức ngược chiều kim đồng hồ của động cơ servo sẽ tính từ góc 0 độ đến 180 độ.
 
 .. image:: images/gripper_13.png
-    :width: 800px
+    :width: 400px
     :align: center
 |   
 Servo sg90 có 3 dây tín hiệu như sau:
@@ -94,7 +94,7 @@ Servo sg90 có 3 dây tín hiệu như sau:
 Đầu tiên hãy lắp tay gắp xBot và kết nối dây servo vào như hình bên dưới.
 
 .. image:: images/gripper_14.png
-    :width: 800px
+    :width: 600px
     :align: center
 |   
 Ví dụ 1: Điều khiển đóng mở tay gắp nhanh
@@ -140,7 +140,7 @@ Trong ví dụ trên, ta sử dụng khối lệnh sau:
 **Thực hành robot di chuyển đồ vật**
 
 .. image:: images/gripper_19.png
-    :width: 800px
+    :width: 600px
     :align: center
 |   
 Ở bài trước, chúng ta đã tìm hiểu cách để lập trình cho robot đi theo vạch đen. Bây giờ chúng ta sẽ dựa vào chương trình đó và kết hợp thêm tay gắp, khi phát hiện có vật cản thì gắp vật, sau đó quay lại và tìm vạch đen gần nhất để thả vật. Sau đó là quay lại vị trí ban đầu để tìm thêm vật cản.
@@ -164,7 +164,7 @@ Chương trình mẫu:
     :align: center
 |   
 .. image:: images/gripper_21.png
-    :width: 900px
+    :width: 1000px
     :align: center
 |   
 .. image:: images/gripper_22.png
@@ -182,7 +182,7 @@ Giải thích chương trình
 Hàm **di_theo_vach_den()**
 
 .. image:: images/gripper_21.png
-    :width: 900px
+    :width: 1000px
     :align: center
 |   
 Đối với hàm này, các bạn xem lại bài hướng dẫn về cách thực hiện robot đi theo line để tìm hiểu thêm nhé.
@@ -230,6 +230,6 @@ Và cuối cùng, trong vòng lặp chính, ta chỉ cần gọi hàm lay_vat() 
 Các bạn có thể tải chương trình mẫu tại đây. Chúc các bạn thực hiện thành công!
 
 .. image:: images/gripper_24.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   

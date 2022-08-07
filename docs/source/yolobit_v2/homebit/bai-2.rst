@@ -15,24 +15,40 @@ Thiết bị cần dùng
 --------------------------
 --------------------------
 
+- Mắt đọc IR
+
+.. image:: images/homebit_23.1.png
+    :width: 200px
+    :align: center
+|   
+- Remote điều khiển 
+
 .. image:: images/homebit_23.png
-    :width: 300px
+    :width: 200px
+    :align: center
+| 
+
+Kết nối
+------------
+--------------
+
+Kết nối **mắt đọc IR** vào cổng P1
+
+.. image:: images/homebit_24.png
+    :width: 500px
     :align: center
 |    
-Kết nối
---------------------------
---------------------------
 
-- Tương tự bài 1
   
 Giới thiệu khối lệnh 
 --------------------------
 --------------------------
 
 .. image:: images/homebit_29.png
-    :width: 900px
+    :width: 600px
     :align: center
-|    
+|
+
 Giới thiệu về biến
 --------------------------
 --------------------------
@@ -45,6 +61,8 @@ Mỗi hộp chỉ có thể chứa duy nhất một giá trị (chữ, số, chu
     :width: 400px
     :align: center
 |    
+
+
 Cách tạo và sử dụng biến
 ---------------------------
 ---------------------------
@@ -60,7 +78,9 @@ Cách tạo và sử dụng biến
 .. image:: images/homebit_32.png
     :width: 400px
     :align: center
-|    
+|   
+
+
 Viết chương trình
 ----------------------------
 ----------------------------
@@ -73,25 +93,36 @@ Viết chương trình
 |    
 2. Tạo điều kiện: Nếu nút ↑ được nhấn, tăng giá trị độ sáng lên 25
 
-.. image:: images/homebit_37.png
-    :width: 400px
+.. image:: images/homebit_34.png
+    :width: 600px
     :align: center
 |    
 3. Thay đổi giá trị độ sáng theo giá trị biến. Sau đó chọn màu đèn sáng là đỏ. Xóa tín hiệu ở cuối chương trình
 
-.. image:: images/homebit_34.png
-    :width: 400px
+.. image:: images/homebit_35.png
+    :width: 600px
     :align: center
 |    
 4. Thực hiện tương tự. Nếu nút ↓ được nhấn, giảm giá trị độ sáng xuống 25 (-25)
 
-.. image:: images/homebit_35.png
-    :width: 400px
+.. image:: images/homebit_36.png
+    :width: 600px
     :align: center
 |    
 5. Kết hợp với chương trình của bài 1 để hoàn thiện chương trình
 
-.. image:: images/homebit_36.png
-    :width: 500px
+.. image:: images/homebit_37.png
+    :width: 600px
     :align: center
 |    
+
+Chương trình mẫu
+---------------------
+---------------------
+
+- Điều chỉnh độ sáng đèn: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2Cvih3zEB0mBPESubn8On8NihS7>`_
+
+.. image:: images/homebit_37.1.png
+    :width: 200px
+    :align: center
+| 

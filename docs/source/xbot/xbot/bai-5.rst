@@ -1,9 +1,7 @@
 9. Bài 5: Robot né vật cản 
 ====================================
 
-Mục tiêu
---------------------
---------------------
+**Mục tiêu:**
 
 Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.
 
@@ -19,12 +17,14 @@ Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm 
     :width: 700px
     :align: center
 |   
-Cảm biến khoảng cách
+
+
+9.1 Cảm biến khoảng cách
 ---------------------
 ---------------------
 
 .. image:: images/xbot_118.png
-    :width: 200px
+    :width: 300px
     :align: center
 |   
 xBot được trang bị một cảm biến khoảng cách có thể phát ra sóng siêu âm và đo thời gian phản hồi về:
@@ -39,7 +39,8 @@ xBot được trang bị một cảm biến khoảng cách có thể phát ra s�
 |   
 Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.
 
-Đọc trạng thái cảm biến
+
+9.2 Đọc trạng thái cảm biến
 -----------------------
 ---------------------
 Cảm biến khoảng cách được kết nối mặc định tới cổng 2 trên mạch điều khiển.
@@ -66,7 +67,9 @@ Bạn hãy đưa tay di chuyển lại gần hoặc ra xa dần cảm biến đ�
     :width: 500px
     :align: center
 |   
-Áp dụng cảm biến trong di chuyển
+
+
+9.3 Áp dụng cảm biến trong di chuyển
 ---------------------------
 ---------------------------
 
@@ -125,7 +128,9 @@ Bạn xây dựng các khối lệnh chương trình như sau:
     :width: 600px
     :align: center
 |   
-Robot biết né vật cản
+
+
+9.4 Robot biết né vật cản
 -----------------------
 -----------------------
 
@@ -163,7 +168,7 @@ Sau khi thay vào chương trình cũ thì sẽ thành:
     :width: 600px
     :align: center
 |   
-Bài tập mở rộng
+9.5 Bài tập mở rộng
 -----------------------
 ------------------------
 
@@ -207,7 +212,7 @@ Trong bài này, bạn hãy viết chương trình để robot có thể tìm v�
 
 4. Nếu không, xe rẽ trái trở lại và đi đến vạch kế tiếp
 
-Câu hỏi ôn tập
+9.6 Câu hỏi ôn tập
 ----------------
 ----------------
 

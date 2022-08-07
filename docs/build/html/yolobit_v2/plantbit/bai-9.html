@@ -69,6 +69,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-10.html">13. Bài 10: Cảnh báo mực nước</a></li>
@@ -133,7 +134,7 @@
 <h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Ở bài học này, chúng ta sẽ thực hiện chương trình để hiển thị khoảng cách từ cảm biến khoảng cách đến mực nước trong bể chứa của Plant:Bit, từ đó biết được mực nước trong bể đang đầy hay cạn.</p>
-<a class="reference internal image-reference" href="../../_images/planbit_76.png"><img alt="../../_images/planbit_76.png" class="align-center" src="../../_images/planbit_76.png" style="width: 311.0px; height: 241.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_87.png"><img alt="../../_images/planbit_87.png" class="align-center" src="../../_images/planbit_87.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -141,7 +142,17 @@
 <section id="thiet-bi-can-dung">
 <h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/planbit_77.png"><img alt="../../_images/planbit_77.png" class="align-center" src="../../_images/planbit_77.png" style="width: 190.0px; height: 101.0px;" /></a>
+<ul class="simple">
+<li><p>Mạch mở rộng gắn sẵn Yolo:Bit</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_31.png"><img alt="../../_images/planbit_31.png" class="align-center" src="../../_images/planbit_31.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Cảm biến khoảng cách</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_88.png"><img alt="../../_images/planbit_88.png" class="align-center" src="../../_images/planbit_88.png" style="width: 250px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -149,18 +160,18 @@
 <section id="ket-noi">
 <h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/planbit_78.png"><img alt="../../_images/planbit_78.png" class="align-center" src="../../_images/planbit_78.png" style="width: 162.0px; height: 186.0px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <ul class="simple">
 <li><p>Cảm biến khoảng cách nối vào chân P10/P13</p></li>
 </ul>
+<a class="reference internal image-reference" href="../../_images/planbit_89.png"><img alt="../../_images/planbit_89.png" class="align-center" src="../../_images/planbit_89.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="gioi-thieu-khoi-lenh">
 <h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/planbit_79.png"><img alt="../../_images/planbit_79.png" class="align-center" src="../../_images/planbit_79.png" style="width: 674.0px; height: 183.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_90.png"><img alt="../../_images/planbit_90.png" class="align-center" src="../../_images/planbit_90.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -171,18 +182,29 @@
 <ol class="arabic simple">
 <li><p>Khởi tạo cảm biến khoảng cách chân P10/P13</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/planbit_80.png"><img alt="../../_images/planbit_80.png" class="align-center" src="../../_images/planbit_80.png" style="width: 551.0px; height: 129.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_91.png"><img alt="../../_images/planbit_91.png" class="align-center" src="../../_images/planbit_91.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Hiện thông tin bằng <strong>khối lệnh đọc cảm biến khoảng cách</strong> và cho tạm dừng 5 giây (5000ms)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/planbit_81.png"><img alt="../../_images/planbit_81.png" class="align-center" src="../../_images/planbit_81.png" style="width: 550.0px; height: 182.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_92.png"><img alt="../../_images/planbit_92.png" class="align-center" src="../../_images/planbit_92.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p><strong>Lưu ý</strong> Chọn <strong>Hiện cửa số thông tin</strong> trong mục <strong>Cài đặt</strong> để xem được thông tin hiển thị</p>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hiển thị mực nước: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Cysomj5j0LLxeodbFFhkbV8lOw">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_93.png"><img alt="../../_images/planbit_93.png" class="align-center" src="../../_images/planbit_93.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 </section>
 

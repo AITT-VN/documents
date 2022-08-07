@@ -67,6 +67,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-9.html">12. Bài 9: Hiển thị mực nước</a></li>
@@ -136,7 +137,31 @@
 <section id="thiet-bi-can-dung">
 <h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/planbit_72.png"><img alt="../../_images/planbit_72.png" class="align-center" src="../../_images/planbit_72.png" style="width: 396.0px; height: 96.0px;" /></a>
+<ul class="simple">
+<li><p>Mạch mở rộng gắn sẵn Yolo:Bit</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_31.png"><img alt="../../_images/planbit_31.png" class="align-center" src="../../_images/planbit_31.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Cảm biến ánh sáng</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_60.png"><img alt="../../_images/planbit_60.png" class="align-center" src="../../_images/planbit_60.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Module đóng ngắt 2 kênh</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_45.png"><img alt="../../_images/planbit_45.png" class="align-center" src="../../_images/planbit_45.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Đèn LED màu</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_71.png"><img alt="../../_images/planbit_71.png" class="align-center" src="../../_images/planbit_71.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -144,10 +169,13 @@
 <section id="ket-noi">
 <h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/planbit_73.png"><img alt="../../_images/planbit_73.png" class="align-center" src="../../_images/planbit_73.png" style="width: 663.0px; height: 116.0px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<p>Kiểm tra lại kết nối tương tự như bài 6 và bài 7</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Bài 6: Kết nối Module đóng ngắt 2 kênh vào cổng P14/P15. Kết nối đèn LED màu vào cổng USB Ouput2</p></li>
+<li><p>Bài 7: Cảm biến ánh sáng nối vào chân P1</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="viet-chuong-trinh">
 <h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
@@ -155,15 +183,32 @@
 <ol class="arabic simple">
 <li><p>Tạo điều kiện: Nếu độ sáng ngoài trời ≤ 30 (cách thực hiện như bài 2)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/planbit_74.png"><img alt="../../_images/planbit_74.png" class="align-center" src="../../_images/planbit_74.png" style="width: 527.0px; height: 206.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_83.png"><img alt="../../_images/planbit_83.png" class="align-center" src="../../_images/planbit_83.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Nếu độ sáng ngoài trời ≤ 30, bật đèn LED màu với mức sáng là 70</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_84.png"><img alt="../../_images/planbit_84.png" class="align-center" src="../../_images/planbit_84.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
 <li><p>Nếu không, tắt đèn LED màu</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/planbit_75.png"><img alt="../../_images/planbit_75.png" class="align-center" src="../../_images/planbit_75.png" style="width: 600.0px; height: 249.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/planbit_85.png"><img alt="../../_images/planbit_85.png" class="align-center" src="../../_images/planbit_85.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Bật tắt đèn tự động: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Cysomj5j0LLxeodbFFhkbV8lOw">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_86.png"><img alt="../../_images/planbit_86.png" class="align-center" src="../../_images/planbit_86.png" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

@@ -1,6 +1,10 @@
 2. Hướng dẫn lắp ráp Plant:Bit 
 ========================================
 
+2.1 Lắp ráp
+-----------
+-------------
+
 Để lắp ráp mô hình hoàn chỉnh của Plant:Bit, ta làm theo những bước sau:
 
 1. Lắp tấm bên phải vào tấm mặt sau
@@ -60,13 +64,13 @@
 10. Gắn trụ nhựa vào mặt trêng
 
 .. image:: images/planbit_13.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 11. Gắn giá đỡ vào mặt trên
 
 .. image:: images/planbit_14.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 12. Gắn các module lên mặt trên
@@ -84,36 +88,45 @@
 14. Dán đèn lên trục đèn
 
 .. image:: images/planbit_17.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 15. Gắn trục đèn vào mô hình
 
 .. image:: images/planbit_18.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 16. Đặt chậu vào mô hình
 
 .. image:: images/planbit_19.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 17. Lắp máy bơm nướC
 
 .. image:: images/planbit_20.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 18. Cắm cảm biến độ ẩm đất vào chậu
 
 .. image:: images/planbit_21.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
 19. Hoàn thành
 
 .. image:: images/planbit_22.png
-    :width: 400px
+    :width: 200px
     :align: center
 |   
+
+2.2 Sơ đồ kết nối
+-----------
+-------------
+
+.. image:: images/planbit_22.1.png
+    :width: 800px
+    :align: center
+| 

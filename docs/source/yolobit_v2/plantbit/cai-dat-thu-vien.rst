@@ -1,4 +1,5 @@
 3. Cài đặt thư viện Plant:Bit V2
+<<<<<<< HEAD
 =========================================
 
 Cài đặt thư viện 
@@ -62,3 +63,6 @@ Chương trình trên đã lập trình đầy đủ tính năng cho Plant:Bit:
     3. Khi đất thiếu nước, Yolo:Bit hiển thị mặt buồn và tự động tưới nước trong 3 giây. Nếu đất đủ nước, Yolo:Bit hiển thị mặt cười.
     4. Nếu môi trường thiếu sáng thì Plant:Bit tự động bật đèn kích thích sinh trưởng (độ sáng 70%)
     5. Khi nước trong bể cạn (khoảng cách từ mặt nước đến cảm biến siêu âm lớn hơn 9cm), màn hình LCD hiển thị “Can do them nuoc” và Yolo:Bit phát âm thanh báo động.
+=======
+=========================================
+>>>>>>> main

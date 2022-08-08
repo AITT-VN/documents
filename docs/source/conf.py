@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'OhStem Product Documents'
-copyright = '2021, OHSTEM'
-author = 'OHSTEM'
+project = 'OhStem Education Wiki'
+copyright = '2022, OHSTEM'
+author = 'OHSTEM EDUCATION'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.2'
@@ -50,7 +50,7 @@ exclude_patterns = []
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme' # pip3 install sphinx_rtd_theme
 
-html_logo = 'images/logo-ohstem.png'
+html_logo = 'images/logo-ohstem-white.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -60,17 +60,24 @@ html_favicon = 'images/favicon.ico'
 html_theme_options = {
     #'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
     'logo_only': True,
-    'display_version': True,
+    # 'display_version': True,
     'prev_next_buttons_location': 'bottom',
    #  'style_external_links': True,
    #  'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
+    #'style_nav_header_background': 'white',
     # Toc options
+<<<<<<< HEAD
     'collapse_navigation': True,
     'sticky_navigation': True,
    #  'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False,
+=======
+    # 'collapse_navigation': True,
+    # 'sticky_navigation': True,
+   #  'navigation_depth': 4,
+    # 'includehidden': True,
+>>>>>>> main
 }
 
 html_context  = {
@@ -84,9 +91,12 @@ html_context  = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+<<<<<<< HEAD
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
 html_css_files = [
     'css/custom.css',
 ]
+=======
+>>>>>>> main

@@ -1,4 +1,4 @@
-Bài học 9: Cảm biến gia tốc góc nghiêng
+12. Bài học 9: Cảm biến gia tốc góc nghiêng
 ====================
 
 Mục tiêu

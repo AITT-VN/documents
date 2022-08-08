@@ -1,4 +1,5 @@
 **Đầu nâng ForkLift**
+<<<<<<< HEAD
 ============================
 
 Đầu nâng ForkLift là phụ kiện gắn vào xBot, giúp nâng hoặc thả đồ vật tùy thích.
@@ -24,3 +25,6 @@
 
 
 
+=======
+============================
+>>>>>>> main

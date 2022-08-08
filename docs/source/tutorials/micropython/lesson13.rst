@@ -1,4 +1,4 @@
-Bài học 13: Điều khiển góc quay Servo
+16. Bài học 13: Điều khiển góc quay Servo
 ====================
 
 Mục tiêu

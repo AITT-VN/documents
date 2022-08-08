@@ -1,4 +1,5 @@
 **Đầu gắp Gripper**
+<<<<<<< HEAD
 ===========================
 
 Giới thiệu
@@ -233,3 +234,6 @@ Các bạn có thể tải chương trình mẫu tại đây. Chúc các bạn t
     :width: 200px
     :align: center
 |   
+=======
+===========================
+>>>>>>> main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. Làm quen với xBot
 ==============================
 
@@ -194,3 +195,7 @@ Bạn có thể nhấn nút trên mạch điều khiển nhiều lần để chu
     :width: 500px
     :align: center
 | 
+=======
+1. Giới thiệu về robot xBot
+==============================
+>>>>>>> main

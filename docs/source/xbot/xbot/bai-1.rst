@@ -1,4 +1,5 @@
 5. Bài 1: Cùng di chuyển nào
+<<<<<<< HEAD
 ====================================
 
 **Mục tiêu:**
@@ -200,3 +201,6 @@ Chương trình khi đó sẽ như sau:
 1. Công dụng của động cơ trên xBot là gì?
 
 2. Có bao nhiều cách để lập trình điểu khiển động cơ? Liệt kê những khối lệnh cần dùng.
+=======
+====================================
+>>>>>>> main

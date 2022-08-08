@@ -1,4 +1,5 @@
 6. Bài 2: Nhảy múa cùng xBot
+<<<<<<< HEAD
 ======================================
 
 **Mục tiêu**
@@ -311,3 +312,6 @@ Bạn có thể nhấn vào nút Dừng chương trình để ngưng hiệu ứn
 2. Chỉ ra khối lệnh để lập trình xBot phát nhạc.
 
 3. Hàm có tác dụng gì? Liệt kê các thao tác để tạo một hàm.
+=======
+======================================
+>>>>>>> main

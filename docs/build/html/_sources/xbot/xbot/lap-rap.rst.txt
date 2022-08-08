@@ -1,4 +1,5 @@
 2. Hướng dẫn lắp ráp 
+<<<<<<< HEAD
 ============================
 
 .. image:: images/xbot_2.1.png
@@ -87,3 +88,6 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
     :width: 500px
     :align: center  
 |
+=======
+============================
+>>>>>>> main

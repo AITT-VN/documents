@@ -1,4 +1,4 @@
-Bài học 13: Giao tiếp Bluetooth Low Energy
+14. Bài học 13: Giao tiếp Bluetooth Low Energy
 ====================
 
 Mục tiêu

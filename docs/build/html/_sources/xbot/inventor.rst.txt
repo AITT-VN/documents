@@ -1,4 +1,5 @@
 **xBot Inventor Kit**
+<<<<<<< HEAD
 ====================
 
 
@@ -16,3 +17,6 @@
    inventor/xe-nang.rst
    inventor/xe-tai.rst
    inventor/xe-cuu-ho.rst 
+=======
+====================
+>>>>>>> main

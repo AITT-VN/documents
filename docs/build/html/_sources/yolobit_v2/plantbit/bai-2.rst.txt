@@ -1,5 +1,6 @@
 5. Bài 2: Cảnh báo khi thiếu nước
 ===================================
+<<<<<<< HEAD
 
 Mục tiêu
 ---------------------
@@ -98,3 +99,5 @@ Chương trình mẫu
     :width: 200px
     :align: center
 |
+=======
+>>>>>>> main

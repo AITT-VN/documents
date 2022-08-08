@@ -1,4 +1,5 @@
 **Bộ Dump Truck**
+<<<<<<< HEAD
 ========================
 
 Dump Truck là bộ phụ kiện được dùng để gắn lên xBot để vui chơi hoặc thi đấu trong các cuộc thi về Robotics. Sản phẩm được làm từ chất liệu an toàn, độ bền cao, phù hợp cho bé vui chơi tại nhà hoặc để ứng dụng vào giảng dạy bộ môn Robot cho học sinh.
@@ -101,3 +102,6 @@ Hướng dẫn lắp ráp
 
 
 
+=======
+========================
+>>>>>>> main

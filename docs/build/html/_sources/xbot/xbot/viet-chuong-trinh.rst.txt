@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4. Hướng dẫn viết chương trình
 =====================
 
@@ -149,3 +150,7 @@ Chương trình tham khảo:
 
 
 
+=======
+4. Hướng dẫn viết chương trình 
+=======================
+>>>>>>> main

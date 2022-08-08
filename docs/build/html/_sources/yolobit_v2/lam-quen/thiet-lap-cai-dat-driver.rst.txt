@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 2. Thiết lặp và cài đặt Driver
+=======
+2. Thiết lập và cài đặt Driver
+>>>>>>> main
 =====================================
 
 **Video bài học:** `<https://youtu.be/W_hgIQiq5jw>`_

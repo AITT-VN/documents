@@ -1,9 +1,25 @@
+<<<<<<< HEAD
 **Hướng dẫn lập trình GameKit**
 =====================================
+=======
+Hướng dẫn làm một số Game cơ bản 
+============================
+>>>>>>> main
 
 .. toctree::
    :maxdepth: 1
 
+<<<<<<< HEAD
    huong-dan/gioi-thieu.rst
    huong-dan/bai-1.rst
    huong-dan/bai-2.rst
+=======
+   huong-dan/an-banh.rst
+   huong-dan/bong-hoa.rst 
+   huong-dan/qua-chanh.rst 
+   huong-dan/may-bay.rst 
+   huong-dan/me-cung.rst 
+   huong-dan/bong-ro.rst 
+   huong-dan/nhay-thung.rst 
+   huong-dan/mo-rong.rst
+>>>>>>> main

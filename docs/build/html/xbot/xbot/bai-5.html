@@ -57,15 +57,24 @@
 <p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../xbot.html"><strong>Robot lập trình xBot</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Giới thiệu về robot xBot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Làm quen với xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="phan-mem.html">3. Giới thiệu phần mềm OhStem App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.html">3. Làm quen với phần mềm OhStem App</a></li>
 <li class="toctree-l2"><a class="reference internal" href="viet-chuong-trinh.html">4. Hướng dẫn viết chương trình</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">5. Bài 1: Cùng di chuyển nào</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Bài 2: Nhảy múa cùng xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Xử lý thông tin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Robot dò đường</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Bài 5: Robot né vật cản</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Bài 5: Robot né vật cản</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#toc-do-cua-am-thanh">9.1 Tốc độ của âm thanh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cam-bien-khoang-cach">9.2 Cảm biến khoảng cách</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#doc-trang-thai-cam-bien">9.3 Đọc trạng thái cảm biến</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ap-dung-cam-bien-trong-di-chuyen">9.4 Áp dụng cảm biến trong di chuyển</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robot-biet-ne-vat-can">9.5 Robot biết né vật cản</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bai-tap-mo-rong">9.6 Bài tập mở rộng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cau-hoi-on-tap">9.7 Câu hỏi ôn tập</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">10. Bài 6: Thử thách nâng cao</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">11. Bài 7: Điều khiển từ xa</a></li>
 </ul>
@@ -119,6 +128,189 @@
              
   <section id="bai-5-robot-ne-vat-can">
 <h1>9. Bài 5: Robot né vật cản<a class="headerlink" href="#bai-5-robot-ne-vat-can" title="Permalink to this heading"></a></h1>
+<p><strong>Mục tiêu:</strong></p>
+<p>Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.</p>
+<section id="toc-do-cua-am-thanh">
+<h2>9.1 Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Như đã biết, âm thanh được truyền đi dưới dạng sóng. Tốc độ truyền đi của âm thanh trong không khí là 340 m/s nhưng có thể thay đổi tùy vào nhiệt độ và độ ẩm.</p>
+<p>Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm thanh đó vọng lại, ta hoàn toàn có thể tính được khoảng cách đến vật cản.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_117.png"><img alt="../../_images/xbot_117.png" class="align-center" src="../../_images/xbot_117.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="cam-bien-khoang-cach">
+<h2>9.2 Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/xbot_118.png"><img alt="../../_images/xbot_118.png" class="align-center" src="../../_images/xbot_118.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>xBot được trang bị một cảm biến khoảng cách có thể phát ra sóng siêu âm và đo thời gian phản hồi về:</p>
+<ul class="simple">
+<li><p>Giúp phát hiện vật cản ở phía trước (nếu có)</p></li>
+<li><p>Đo khoảng cách đến vật cản (tối đa 200cm)</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_119.png"><img alt="../../_images/xbot_119.png" class="align-center" src="../../_images/xbot_119.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.</p>
+</section>
+<section id="doc-trang-thai-cam-bien">
+<h2>9.3 Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/xbot_120.png"><img alt="../../_images/xbot_120.png" class="align-center" src="../../_images/xbot_120.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Khối lệnh làm việc với cảm biến khoảng cách</strong></p>
+<a class="reference internal image-reference" href="../../_images/xbot_121.png"><img alt="../../_images/xbot_121.png" class="align-center" src="../../_images/xbot_121.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Viết chương trình và mở cửa sổ thông tin để xem kết quả:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_122.png"><img alt="../../_images/xbot_122.png" class="align-center" src="../../_images/xbot_122.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bạn hãy đưa tay di chuyển lại gần hoặc ra xa dần cảm biến để xem sự thay đổi của kết quả (mở cửa số thông tin để xem kết quả in ra)</p>
+<a class="reference internal image-reference" href="../../_images/xbot_123.png"><img alt="../../_images/xbot_123.png" class="align-center" src="../../_images/xbot_123.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ap-dung-cam-bien-trong-di-chuyen">
+<h2>9.4 Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Robot dừng lại khi phát hiện vật cản</strong></p>
+<p>Trong chương trình này, chúng ta sẽ cho robot di chuyển về phía trước và dừn glại nếu phát hiện vật cản ở khảong cách nhỏ hơn 25cm.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_124.png"><img alt="../../_images/xbot_124.png" class="align-center" src="../../_images/xbot_124.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Khối lệnh chương trình</p>
+<a class="reference internal image-reference" href="../../_images/xbot_125.png"><img alt="../../_images/xbot_125.png" class="align-center" src="../../_images/xbot_125.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Robot dừng và phát cảnh báo khi phát hiện vật cản</strong></p>
+<a class="reference internal image-reference" href="../../_images/xbot_126.png"><img alt="../../_images/xbot_126.png" class="align-center" src="../../_images/xbot_126.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Khối lệnh chương trình</p>
+<a class="reference internal image-reference" href="../../_images/xbot_127.png"><img alt="../../_images/xbot_127.png" class="align-center" src="../../_images/xbot_127.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Robot tự động dừng</strong></p>
+<p>Chúng ta thử làm cho robot dừng lại một cách thông minh hơn nữa xem nào. Robot sẽ giảm tốc độ dần dần và dừng lại hẳn khi đến gần vật cản. Hành động này khá giống với chúng ta lái xe phải không nào.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_128.png"><img alt="../../_images/xbot_128.png" class="align-center" src="../../_images/xbot_128.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bạn xây dựng các khối lệnh chương trình như sau:</p>
+<ol class="arabic simple">
+<li><p>Gắn khối lệnh làm tròn vào khối lệnh di chuyển, ở trước ô giá trị tốc đô. Khối lệnh này giúp bỏ bớt số lẻ khi chia</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_129.png"><img alt="../../_images/xbot_129.png" class="align-center" src="../../_images/xbot_129.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Kéo khối lệnh các phép tính toán vào và đổi thành phép nhân</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_130.png"><img alt="../../_images/xbot_130.png" class="align-center" src="../../_images/xbot_130.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Kéo khối lệnh đọc giá trị cảm biến vào bên trái phép nhân và nhận giá trị 2 vào ô bên phải</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_131.png"><img alt="../../_images/xbot_131.png" class="align-center" src="../../_images/xbot_131.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="robot-biet-ne-vat-can">
+<h2>9.5 Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong phần này, chúng ta sẽ viết chương trình cho robot vừa di chuyển vừa né vật cản một cách thông minh.</p>
+<ul class="simple">
+<li><p>Nếu cảm biến phát hiện vật cản phía trước gần hơn 20cm thì robot rẽ phải</p></li>
+<li><p>Nếu cảm biến phát hiện vật cản phía trước lớn hơn 20cm thì robot cứ đi thẳng</p></li>
+</ul>
+<p>Sơ đồ xử lý như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_132.png"><img alt="../../_images/xbot_132.png" class="align-center" src="../../_images/xbot_132.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Khối lệnh chương trình như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_133.png"><img alt="../../_images/xbot_133.png" class="align-center" src="../../_images/xbot_133.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Né qua bên trái hoặc bên phải</strong></p>
+<p>Trong chương trình trên, robot luôn rẽ phải khi gặp vật cản. Chúng ta thử làm cho xBot thông minh hơn bằng cách rẽ trái hoặc phải một cách ngẫu nhiên bằng khối lệnh <em>chọn một số bất kì</em> từ mục Tính toán, thực hiện như sau:</p>
+<p>Kết hợp khối lệnh <em>chọn một số bất kì</em> với câu lệnh điều kiện <em>nếu… thực hiện</em>:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_134.png"><img alt="../../_images/xbot_134.png" class="align-center" src="../../_images/xbot_134.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi thay vào chương trình cũ thì sẽ thành:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_135.png"><img alt="../../_images/xbot_135.png" class="align-center" src="../../_images/xbot_135.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="bai-tap-mo-rong">
+<h2>9.6 Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Robot thoát khỏi mê cung</p></li>
+</ol>
+<p>Robot biết thoát khỏi mê cung là một bài toán rất phổ biến trong các cuộc thi robot.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_136.png"><img alt="../../_images/xbot_136.png" class="align-center" src="../../_images/xbot_136.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Hướng dẫn</strong></p>
+<p><em>Dựng mê cung</em>:Dùng các đồ vật sắp xếp thành một mê cung như hình minh họa</p>
+<p><em>Xây dựng chương trình:</em></p>
+<ul class="simple">
+<li><p>Canh chỉnh thời gian rẽ =&gt; tìm thời gian rẽ góc vuông chính xác.</p></li>
+<li><p>Xây dựng chương trình theo sơ đồ.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_137.png"><img alt="../../_images/xbot_137.png" class="align-center" src="../../_images/xbot_137.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Tìm chỗ trống đậu xe</p></li>
+</ol>
+<p>Trong bài này, bạn hãy viết chương trình để robot có thể tìm và đậu xe vào vị trí còn trống bằng cách <strong>nhận diện vật cản</strong></p>
+<a class="reference internal image-reference" href="../../_images/xbot_138.png"><img alt="../../_images/xbot_138.png" class="align-center" src="../../_images/xbot_138.png" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Gợi ý cách làm</strong></p>
+<ol class="arabic simple">
+<li><p>Dùng biến đếm để đếm số lần nhận vạch ngang</p></li>
+<li><p>Mỗi lần đến vạch ngang, robot sẽ rẽ phải và xem vị trí đậu có trống hay không</p></li>
+<li><p>Nếu ô trống, xe tiến tới và đậu xe</p></li>
+<li><p>Nếu không, xe rẽ trái trở lại và đi đến vạch kế tiếp</p></li>
+</ol>
+</section>
+<section id="cau-hoi-on-tap">
+<h2>9.7 Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Chỉ ra cảm biến khoảng cách trên xBot. Công dụng của nó là gì?</p></li>
+<li><p>Nêu nguyên lý hoạt động của cảm biến khoảng cách. Chỉ ra các khối lệnh làm việc với cảm biến khoảng cách trên OhStem App.</p></li>
+<li><p>Cảm biến khoảng cách có thể được ứng dụng vào di chuyển xBot như thế nào? Kể tên ứng dụng và cách lập trình tương ứng.</p></li>
+</ol>
+</section>
 </section>
 
 

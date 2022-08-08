@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="5. Bài 1: Cùng di chuyển nào" href="bai-1.html" />
-    <link rel="prev" title="3. Giới thiệu phần mềm OhStem App" href="phan-mem.html" /> 
+    <link rel="prev" title="3. Làm quen với phần mềm OhStem App" href="app.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -57,10 +57,13 @@
 <p class="caption" role="heading"><span class="caption-text">xBot</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../xbot.html"><strong>Robot lập trình xBot</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Giới thiệu về robot xBot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Làm quen với xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="phan-mem.html">3. Giới thiệu phần mềm OhStem App</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Hướng dẫn viết chương trình</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.html">3. Làm quen với phần mềm OhStem App</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Hướng dẫn viết chương trình</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bai-tap-mo-rong">Bài tập mở rộng</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-1.html">5. Bài 1: Cùng di chuyển nào</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Bài 2: Nhảy múa cùng xBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Xử lý thông tin</a></li>
@@ -119,13 +122,135 @@
              
   <section id="huong-dan-viet-chuong-trinh">
 <h1>4. Hướng dẫn viết chương trình<a class="headerlink" href="#huong-dan-viet-chuong-trinh" title="Permalink to this heading"></a></h1>
+<p>Chúng ta hãy viết một chương trình đơn giản để điều khiển 2 đèn LED đa màu có trên xBot.</p>
+<p>Trước tiên bạn cần làm quen với đèn LED RGB và các khối lệnh liên quan sẽ được sử dụng trong chương trình.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.1.png"><img alt="../../_images/xbot_4.1.png" class="align-center" src="../../_images/xbot_4.1.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Đèn LED RGB trên robot</strong></p></li>
+</ul>
+<p>xBot được tích hợp sẵn 2 đèn LED RGB. Đèn này được cấu tạo từ 3 đèn màu đỏ (Red), xanh lá (Green), xanh dương (Blue). Bạn có thể lập trình để thay đổi dộ sáng của 3 màu này.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.2.png"><img alt="../../_images/xbot_4.2.png" class="align-center" src="../../_images/xbot_4.2.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Các khối lệnh dùng trong chương trình</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/xbot_4.3.png"><img alt="../../_images/xbot_4.3.png" class="align-center" src="../../_images/xbot_4.3.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_4.4.png"><img alt="../../_images/xbot_4.4.png" class="align-center" src="../../_images/xbot_4.4.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_4.5.png"><img alt="../../_images/xbot_4.5.png" class="align-center" src="../../_images/xbot_4.5.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi bạn đã nắm được các khối lệnh cần sử dụng, bạn hãy kéo chúng vào vùng viết chương trình và kết nối như hình dưới đây:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.6.png"><img alt="../../_images/xbot_4.6.png" class="align-center" src="../../_images/xbot_4.6.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Chạy chương trình</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Bạn cần kết nối với robot bằng cách nhấn vào biểu tượng Bluetooth.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_4.7.png"><img alt="../../_images/xbot_4.7.png" class="align-center" src="../../_images/xbot_4.7.png" style="width: 250px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Chọn robot có tên đúng với robot của bạn để kết nối.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/xbot_4.8.png"><img alt="../../_images/xbot_4.8.png" class="align-center" src="../../_images/xbot_4.8.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Khi kết nối thành công, nhấn vào nút chạy chương trình.</p></li>
+</ol>
+<p>Hãy quan sát xem màu sắc 2 đèn LED RGB trên xBot thay đổi như thế nào nhé.</p>
+<p><strong>Lưu chương trình</strong></p>
+<p>Để lưu một chương trình mới, bạn hãy nhấn <strong>nút Lưu</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.9.png"><img alt="../../_images/xbot_4.9.png" class="align-center" src="../../_images/xbot_4.9.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Để mở lại chương trình đã lưu, vào nút quản lý chương trình và chọn <strong>Project của tôi</strong>. Toàn bộ các chương trình đã lưu sẽ hiện ra và bạn có thể nhấn vào để mở chương trình cần xem lại.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.10.png"><img alt="../../_images/xbot_4.10.png" class="align-center" src="../../_images/xbot_4.10.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Tạo một chương trình mới</strong></p></li>
+</ul>
+<p>Để tạo mới một project, bạn chọn nút Quản lý chương trình và chọn Tạo mới Project.</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.11.png"><img alt="../../_images/xbot_4.11.png" class="align-center" src="../../_images/xbot_4.11.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Thay khối lệnh lặp lại mãi mãi bằng khối lệnh lặp lại theo số lần</strong></p></li>
+</ul>
+<p>Bạn hãy thử thay đổi chương trình để hiệu ứng đèn LED nhấp nháy hấp dẫn hơn bằng cách <em>nhấp nháy lần lượt từng màu đỏ, xanh lá, xanh dương, mỗi màu nhấp nháy 5 lần</em>.</p>
+<p>Trước tiên, bạn hãy thay khối lệnh <em>lặp lại mãi mãi</em> bằng khối lệnh <em>lặp lại 5 lần</em> để chỉ nháy đèn LED 5 lần. Các bước như sau:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Kéo các khối lệnh bên trong khối lặp lại mãi mãi ra ngoài.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/xbot_4.12.png"><img alt="../../_images/xbot_4.12.png" class="align-center" src="../../_images/xbot_4.12.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line">2. Kéo khối lặp lại 10 lần vào, sửa số 10 thành số 5 và kết nối với các khối lệnh cũ. Đồng thời, sửa thời gian chờ từ 1 giây thành 0.1 giây.</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_4.13.png"><img alt="../../_images/xbot_4.13.png" class="align-center" src="../../_images/xbot_4.13.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line">3. Click chuột phải vào khối lặp lại 5 lần và chọn Tạo bản sao: tạo thêm 2 bản sao.</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_4.14.png"><img alt="../../_images/xbot_4.14.png" class="align-center" src="../../_images/xbot_4.14.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line">4. Ghép 3 chương trình vào nhau, thay đổi màu cho từng chương trình và đưa vào khối lặp lại mãi mãi.</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_4.15.png"><img alt="../../_images/xbot_4.15.png" class="align-center" src="../../_images/xbot_4.15.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sơ đồ hoạt động của chương trình như sau:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.16.png"><img alt="../../_images/xbot_4.16.png" class="align-center" src="../../_images/xbot_4.16.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi hoàn thiện, bạn hãy chạy chương trình để xem đèn LED hoạt động nhưu thế nào.</p>
+<section id="bai-tap-mo-rong">
+<h2>Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Cùng bật tắt từng đèn LED riêng biệt nào! Bạn hãy thay đổi tùy chọn [tấtcả] thành [trái] hoặc [phải] trong khối lệnh thay đổi màu sắc.</p>
+<p>Chương trình tham khảo:</p>
+<a class="reference internal image-reference" href="../../_images/xbot_4.17.png"><img alt="../../_images/xbot_4.17.png" class="align-center" src="../../_images/xbot_4.17.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Câu hỏi ôn tập</strong></p>
+<ol class="arabic simple">
+<li><p>Có bao nhiêu môi trường lập trình cho xBot? Kể tên từng loại!</p></li>
+<li><p>Nêu tên các khu vực trong giao diện lập trình của OhStem App?</p></li>
+<li><p>Có bao nhiêu thao tác với khối lệnh? Kể tên và cách thực hiện từng thao tác.</p></li>
+</ol>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="phan-mem.html" class="btn btn-neutral float-left" title="3. Giới thiệu phần mềm OhStem App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="app.html" class="btn btn-neutral float-left" title="3. Làm quen với phần mềm OhStem App" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="bai-1.html" class="btn btn-neutral float-right" title="5. Bài 1: Cùng di chuyển nào" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

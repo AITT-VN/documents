@@ -52,13 +52,13 @@ Viết chương trình
 1. Phát bài nhạc khi bắt đầu chương trình và cho Rover di chuyển 
 
     .. image:: images/bai_4.5.png
-        :width: 700px
+        :width: 600px
         :align: center    
 |
 2. Cho dãy LED RGB sáng xanh đỏ luân phiên
 
     .. image:: images/bai_4.6.png
-        :width: 700px
+        :width: 600px
         :align: center     
 
 Chương trình mẫu

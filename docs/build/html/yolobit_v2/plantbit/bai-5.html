@@ -19,9 +19,7 @@
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="9. Bài 6: Bật tắt đèn LED" href="bai-6.html" />
-    <link rel="prev" title="7. Bài 4: Tưới nước tự động" href="bai-4.html" /> 
+    <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,27 +43,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aiot.html"><strong>AIoT Kit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-plantbit.html">1. Giới thiệu mô hình trồng cây thông minh Plant:Bit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lap-rap.html">2. Hướng dẫn lắp ráp Plant:Bit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cai-dat-thu-vien.html">3. Cài đặt thư viện Plant:Bit V2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-1.html">4. Bài 1: Hiển thị độ ẩm đất</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-2.html">5. Bài 2: Cảnh báo khi thiếu nước</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-3.html">6. Bài 3: Bật tắt máy bơm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-4.html">7. Bài 4: Tưới nước tự động</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Bài 5: Hiển thị thông tin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Bật tắt đèn LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-7.html">10. Bài 7: Hiển thị độ sáng</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-8.html">11. Bài 8: Bật tắt đèn tự động</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-9.html">12. Bài 9: Hiển thị mực nước</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bai-10.html">13. Bài 10: Cảnh báo mực nước</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
@@ -108,7 +91,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a> &raquo;</li>
       <li>8. Bài 5: Hiển thị thông tin</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masteryolobit_v2/plantbit/bai-5.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -121,15 +103,134 @@
              
   <section id="bai-5-hien-thi-thong-tin">
 <h1>8. Bài 5: Hiển thị thông tin<a class="headerlink" href="#bai-5-hien-thi-thong-tin" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài này, chúng ta sẽ sử dụng cảm biến nhiệt độ độ ẩm DHT20 và cảm biến ánh sáng để đọc giá trị từ môi trường và hiển thị các giá trị đó lên màn hình LCD OLED. Đây là những thông tin quan trọng ảnh hưởng tới sự sinh trưởng của cây. Dựa trên thông tin này, ta có thể đưa ra các quyết định chăm sóc cây hợp lý hơn.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mạch mở rộng gắn sẵn Yolo:Bit</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_31.png"><img alt="../../_images/planbit_31.png" class="align-center" src="../../_images/planbit_31.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Màn hình OLED LCD</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_58.png"><img alt="../../_images/planbit_58.png" class="align-center" src="../../_images/planbit_58.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Cảm biến nhiệt độ, độ ẩm DHT20</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_59.png"><img alt="../../_images/planbit_59.png" class="align-center" src="../../_images/planbit_59.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Cảm biến ánh sáng</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_60.png"><img alt="../../_images/planbit_60.png" class="align-center" src="../../_images/planbit_60.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Màn hình OLED LCD (I2C 1)</p></li>
+<li><p>Cảm biến nhiệt độ, độ ẩm DHT20 (I2C 2)</p></li>
+<li><p>Cảm biến ánh sáng (P1)</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_61.png"><img alt="../../_images/planbit_61.png" class="align-center" src="../../_images/planbit_61.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/planbit_62.png"><img alt="../../_images/planbit_62.png" class="align-center" src="../../_images/planbit_62.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/planbit_63.png"><img alt="../../_images/planbit_63.png" class="align-center" src="../../_images/planbit_63.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/planbit_64.png"><img alt="../../_images/planbit_64.png" class="align-center" src="../../_images/planbit_64.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Khởi tạo màn hình LCD và Reset bộ đếm thời gian</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_65.png"><img alt="../../_images/planbit_65.png" class="align-center" src="../../_images/planbit_65.png" style="width: 250px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Tạo điều kiện: Nếu bộ đếm thời gian ≥ 5000ms (5 giây). Điều kiện này giúp mỗi 5 giây chương trình sẽ thực hiện lệnh bên trong</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_66.png"><img alt="../../_images/planbit_66.png" class="align-center" src="../../_images/planbit_66.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Bắt đầu cập nhật cảm biến nhiệt độ và xóa màn hình LCD cũ sau mỗi 5 giây:</p></li>
+</ol>
+<p>Kéo thả khối <strong>cập nhật cảm biến DHT20</strong> và <strong>xóa màn hình LCD</strong> vào phần thực hiện</p>
+<a class="reference internal image-reference" href="../../_images/planbit_67.png"><img alt="../../_images/planbit_67.png" class="align-center" src="../../_images/planbit_67.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Tạo văn bản in ra LCD nội dung “nhiet do” lấy thông tin từ <strong>khối lệnh đọc nhiệt độ</strong> cho dòng 1 (tọa độ y=0)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/planbit_68.png"><img alt="../../_images/planbit_68.png" class="align-center" src="../../_images/planbit_68.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Tương tự, tạo văn bản in ra 2 nội dung còn lại:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Nội dung “do am” lấy thông tin từ <strong>khối lệnh đọc độ ẩm</strong> cho dòng 2 (y = 15)</p></li>
+<li><p>Nội dung “do sang” lấy thông tin từ <strong>khối lệnh đọc độ sáng</strong> cho dòng 3 (y = 30)</p></li>
+<li><p>Reset bộ đếm để đếm lại sau mỗi 5 giây</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_69.png"><img alt="../../_images/planbit_69.png" class="align-center" src="../../_images/planbit_69.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Hiển thị thông tin: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Cyq1mX3LGLTUl8N2IxLaYuKCyT">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/planbit_70.png"><img alt="../../_images/planbit_70.png" class="align-center" src="../../_images/planbit_70.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="bai-4.html" class="btn btn-neutral float-left" title="7. Bài 4: Tưới nước tự động" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bai-6.html" class="btn btn-neutral float-right" title="9. Bài 6: Bật tắt đèn LED" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

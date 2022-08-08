@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Bộ Dump Truck" href="dumptruck.html" />
-    <link rel="prev" title="xBot Inventor Kit" href="inventor.html" /> 
+    <link rel="prev" title="11. Xe cứu hộ" href="inventor/xe-cuu-ho.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,7 +58,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xbot.html"><strong>Robot lập trình xBot</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="inventor.html"><strong>xBot Inventor Kit</strong></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Đầu gắp Gripper</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu">Giới thiệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-rap">Hướng dẫn lắp ráp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh">Hướng dẫn lập trình</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 </ul>
@@ -105,13 +110,173 @@
              
   <section id="dau-gap-gripper">
 <h1><strong>Đầu gắp Gripper</strong><a class="headerlink" href="#dau-gap-gripper" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu">
+<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Đầu gắp Gripper có thể được sử dụng để gắn vào robot lập trình xBot. Bộ phận này có thể gắp và di chuyển đồ vật dễ dàng.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l9Vba8oYV9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="huong-dan-lap-rap">
+<h2>Hướng dẫn lắp ráp<a class="headerlink" href="#huong-dan-lap-rap" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><a class="reference internal image-reference" href="../_images/gripper_1.png"><img alt="../_images/gripper_1.png" class="align-center" src="../_images/gripper_1.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_2.png"><img alt="../_images/gripper_2.png" class="align-center" src="../_images/gripper_2.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_3.png"><img alt="../_images/gripper_3.png" class="align-center" src="../_images/gripper_3.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_4.png"><img alt="../_images/gripper_4.png" class="align-center" src="../_images/gripper_4.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_5.png"><img alt="../_images/gripper_5.png" class="align-center" src="../_images/gripper_5.png" style="width: 900px;" /></a>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gripper_6.png"><img alt="../_images/gripper_6.png" class="align-center" src="../_images/gripper_6.png" style="width: 900px;" /></a>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gripper_7.png"><img alt="../_images/gripper_7.png" class="align-center" src="../_images/gripper_7.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_8.png"><img alt="../_images/gripper_8.png" class="align-center" src="../_images/gripper_8.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_9.png"><img alt="../_images/gripper_9.png" class="align-center" src="../_images/gripper_9.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_10.png"><img alt="../_images/gripper_10.png" class="align-center" src="../_images/gripper_10.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/gripper_11.png"><img alt="../_images/gripper_11.png" class="align-center" src="../_images/gripper_11.png" style="width: 900px;" /></a>
+</div></blockquote>
+</section>
+<section id="huong-dan-lap-trinh">
+<h2>Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để Gripper có thể thực hiện được nhiệm vụ, chúng ta cần sử dụng động cơ servo sg90 nhé!</p>
+<p>Động cơ servo có thể thực hiện được lệnh xoay cánh tay động cơ đến vị trí được lập trình sẵn (từ 0 đến 180 độ) một cách tức thời hoặc theo một tốc độ cho trước.</p>
+<a class="reference internal image-reference" href="../_images/gripper_12.png"><img alt="../_images/gripper_12.png" class="align-center" src="../_images/gripper_12.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chiều xoay của động cơ servo là hướng khi chúng ta quan sát trực diện với mặt trục xoay. Theo quay ước, chiều xoay từ phải sang trái tức ngược chiều kim đồng hồ của động cơ servo sẽ tính từ góc 0 độ đến 180 độ.</p>
+<a class="reference internal image-reference" href="../_images/gripper_13.png"><img alt="../_images/gripper_13.png" class="align-center" src="../_images/gripper_13.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Servo sg90 có 3 dây tín hiệu như sau:</p>
+<ol class="arabic simple">
+<li><p>Dây nâu: cấp nguồn âm</p></li>
+<li><p>Dây đỏ: Cấp nguồn dương (3.3-6 vôn DC)</p></li>
+<li><p>Dây cam: dây tín hiệu điều khiển.</p></li>
+</ol>
+<p><strong>Viết chương trình điều khiển</strong></p>
+<p>Đầu tiên hãy lắp tay gắp xBot và kết nối dây servo vào như hình bên dưới.</p>
+<a class="reference internal image-reference" href="../_images/gripper_14.png"><img alt="../_images/gripper_14.png" class="align-center" src="../_images/gripper_14.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Ví dụ 1: Điều khiển đóng mở tay gắp nhanh</p>
+<a class="reference internal image-reference" href="../_images/gripper_15.png"><img alt="../_images/gripper_15.png" class="align-center" src="../_images/gripper_15.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Trong ví dụ trên, ta sử dụng khối lệnh sau:</p>
+<a class="reference internal image-reference" href="../_images/gripper_16.png"><img alt="../_images/gripper_16.png" class="align-center" src="../_images/gripper_16.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Điều khiển động cơ servo 180 độ quay tới một góc nào đó tức thời. Trong đó:</p>
+<ul class="simple">
+<li><p>Vị trí đầu tiên tương ứng với 8 cổng gắn servo trên mạch điều khiển.</p></li>
+<li><p>degree là tham số góc quay của servo có giá trị 0 đến 180 độ.</p></li>
+</ul>
+<p>Ví dụ 2: Điều khiển đóng mở tay gắp từ từ</p>
+<a class="reference internal image-reference" href="../_images/gripper_17.png"><img alt="../_images/gripper_17.png" class="align-center" src="../_images/gripper_17.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Trong ví dụ trên, ta sử dụng khối lệnh sau:</p>
+<a class="reference internal image-reference" href="../_images/gripper_18.png"><img alt="../_images/gripper_18.png" class="align-center" src="../_images/gripper_18.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Điều khiển động cơ servo 180 độ quay tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change. Trong đó:</p>
+<ul class="simple">
+<li><p>Vị trí đầu tiên tương ứng với 8 cổng gắn servo trên mạch điều khiển.</p></li>
+<li><p>change là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ 0 đến (degree/change). change có giá trị càng nhỏ thì servo chuyển bước cằng mượt.</p></li>
+<li><p>sleep là thời gian nghỉ giữa mỗi bước change có đơn vị là mili giây.</p></li>
+<li><p>degree là tham số góc quay tới hạn của servo có giá trị 0 ~ 180 độ.</p></li>
+</ul>
+<p><strong>Thực hành robot di chuyển đồ vật</strong></p>
+<a class="reference internal image-reference" href="../_images/gripper_19.png"><img alt="../_images/gripper_19.png" class="align-center" src="../_images/gripper_19.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Ở bài trước, chúng ta đã tìm hiểu cách để lập trình cho robot đi theo vạch đen. Bây giờ chúng ta sẽ dựa vào chương trình đó và kết hợp thêm tay gắp, khi phát hiện có vật cản thì gắp vật, sau đó quay lại và tìm vạch đen gần nhất để thả vật. Sau đó là quay lại vị trí ban đầu để tìm thêm vật cản.</p>
+<p>Và quá trình này lặp đi lặp lại tương tự như các dây chuyền trong quy trình sản xuất, và khi đó nhờ vào sự phát triển của những ứng dụng robot thế này mà chúng ta sẽ giảm đi rất nhiều nhân lực, sức lực và thời gian sản xuất.</p>
+<p>Và đầu tiên, chúng ta sẽ giải quyết bài toán như sau:</p>
+<ol class="arabic simple">
+<li><p>Cho robot đi theo vạch đen</p></li>
+<li><p>Khi cảm biến siêu âm phát hiện vật cản thì gặp vật &gt; quay 180 độ &gt; đi theo vạch đen</p></li>
+<li><p>Khi cảm biến vật cản phát hiện vạch đen gần nhất thì thả vật &gt; quay 180 độ &gt; đi theo vạch đen</p></li>
+</ol>
+<p>Quá trình trên thực hiện mãi cho đến khi nào chúng ta dừng robot.</p>
+<p>Chương trình mẫu:</p>
+<a class="reference internal image-reference" href="../_images/gripper_20.png"><img alt="../_images/gripper_20.png" class="align-center" src="../_images/gripper_20.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/gripper_21.png"><img alt="../_images/gripper_21.png" class="align-center" src="../_images/gripper_21.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/gripper_22.png"><img alt="../_images/gripper_22.png" class="align-center" src="../_images/gripper_22.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/gripper_23.png"><img alt="../_images/gripper_23.png" class="align-center" src="../_images/gripper_23.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Giải thích chương trình</p>
+<p>Ở chương trình này, ta sẽ sử dụng các hàm nhỏ để dễ dàng quản lý tác vụ cho robot. Chúng ta có 3 hàm chính như sau:</p>
+<p>Hàm <strong>di_theo_vach_den()</strong></p>
+<a class="reference internal image-reference" href="../_images/gripper_21.png"><img alt="../_images/gripper_21.png" class="align-center" src="../_images/gripper_21.png" style="width: 1000px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Đối với hàm này, các bạn xem lại bài hướng dẫn về cách thực hiện robot đi theo line để tìm hiểu thêm nhé.</p>
+<p>Hàm <strong>lay_vat()</strong></p>
+<a class="reference internal image-reference" href="../_images/gripper_22.png"><img alt="../_images/gripper_22.png" class="align-center" src="../_images/gripper_22.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Nếu cảm biến siêu âm của robot chưa phát hiện vật cản thì robot vẫn thực hiện hàm di_theo_vach_den()</p>
+<p>Nếu phát hiện vật thì:</p>
+<ul class="simple">
+<li><p>Dừng robot</p></li>
+<li><p>Gắp vật</p></li>
+<li><p>Phát âm thanh thông báo</p></li>
+<li><p>Quay 180 độ rồi trở lại đường đi</p></li>
+</ul>
+<p>Hàm <strong>tha_vat()</strong></p>
+<a class="reference internal image-reference" href="../_images/gripper_23.png"><img alt="../_images/gripper_23.png" class="align-center" src="../_images/gripper_23.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Nếu robot chưa phát hiện vạch đen thì robot vẫn thực hiện hàm di_theo_vach_den()</p>
+<p>Nếu robot phát hiện vạch đen thì</p>
+<ul class="simple">
+<li><p>Dừng robot</p></li>
+<li><p>Thả vật</p></li>
+<li><p>Phát âm thanh thông báo</p></li>
+<li><p>Lui lại 1 khoảng để khi xoay không vướng vật</p></li>
+<li><p>Quay qua trái cho tới khi trở lại đường đi</p></li>
+</ul>
+<p>Và cuối cùng, trong vòng lặp chính, ta chỉ cần gọi hàm lay_vat() và tha_vat() là hoàn tất:</p>
+<p>Các bạn có thể tải chương trình mẫu tại đây. Chúc các bạn thực hiện thành công!</p>
+<a class="reference internal image-reference" href="../_images/gripper_24.png"><img alt="../_images/gripper_24.png" class="align-center" src="../_images/gripper_24.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="inventor.html" class="btn btn-neutral float-left" title="xBot Inventor Kit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="inventor/xe-cuu-ho.html" class="btn btn-neutral float-left" title="11. Xe cứu hộ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="dumptruck.html" class="btn btn-neutral float-right" title="Bộ Dump Truck" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

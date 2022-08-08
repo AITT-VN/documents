@@ -173,7 +173,7 @@ Tạo bảng điều khiển IoT (Dashboard)
     1. Kết nối vào mạng WiFi. Đây là bước đầu mà chúng ta cần làm để thiết bị có thể kết nối với Internet. Cũng giống như máy tính, việc kết nối với mạng WiFi bất kỳ chỉ cần được thực hiện một lần. Do đó, chúng ta sẽ lập trình tính năng này trong phần **bắt đầu** của chương trình.
 
     .. image:: images/bai_18.21.png
-        :width: 800px
+        :width: 700px
         :align: center     
 
     **Lưu ý:** Trong câu lệnh này, bạn cần cung cấp đúng 2 thông tin là tên và mật khẩu của WiFi cho Yolo:Bit.
@@ -205,7 +205,7 @@ Tạo bảng điều khiển IoT (Dashboard)
     .. image:: images/bai_18.24.png
         :width: 800px
         :align: center     
-
+    |
     Chu kì kiểm tra kết nối với Server mà chúng tôi đề xuất ở đây là 1 giây, tức là 1000ms (sử dụng câu lệnh tạm dừng trong mục CƠ BẢN). Thời gian dừng càng lớn thì việc nhận tín hiệu điều khiển khi nhấn nút sẽ chậm. Tuy nhiên, nếu thời gian dừng nhỏ thì chúng sẽ làm tốn tài nguyên của mạng Internet (do mạch Yolo:Bit phải thường xuyên truy cập và gửi dữ liệu lên Server Adafruit IO). 
     
     Trong các ứng dụng hiện tại, chúng ta nên sử dụng độ trễ 1 giây.
@@ -238,13 +238,13 @@ Tạo bảng điều khiển IoT (Dashboard)
     2. Đặt tên, cấu hình kênh V2 và chọn cách hiển thị
 
     .. image:: images/bai_18.27.png
-        :width: 400px
+        :width: 300px
         :align: center 
     |
     3. Thực hiện tương tự với ánh sáng (V3)
 
     .. image:: images/bai_18.28.png
-        :width: 500px
+        :width: 400px
         :align: center 
     |    
 
@@ -253,7 +253,7 @@ Tạo bảng điều khiển IoT (Dashboard)
     1. Chọn Mở rộng trong giao diện lập trình thiết bị.
 
     .. image:: images/bai_18.29.png
-        :width: 300px
+        :width: 200px
         :align: center 
     |    
     2. Tải thư viện **SỰ KIỆN** 
@@ -274,7 +274,7 @@ Tạo bảng điều khiển IoT (Dashboard)
     1. Viết chương trình sau mỗi 2 giây thông tin **nhiệt độ** và **mức độ sáng** sẽ được cập nhật lên bảng điều khiển. Chương trình như sau:
 
     .. image:: images/bai_18.32.png
-        :width: 700px
+        :width: 500px
         :align: center 
     | 
     2. Chương trình hoàn chỉnh để gửi thông tin lên bảng điều khiển.

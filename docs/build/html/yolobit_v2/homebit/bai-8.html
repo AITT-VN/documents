@@ -60,7 +60,15 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-5.html">8. Bài 5: Cảnh báo trộm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">9. Bài 6: Đèn cổng thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-7.html">10. Bài 7: Khóa cửa thông minh</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Bài 8: Cảnh báo cháy</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Bài 8: Cảnh báo cháy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh">Giới thiệu khối lệnh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bai-9.html">12. Bài 9: Cảnh báo động đất</a></li>
 </ul>
 </li>
@@ -120,6 +128,69 @@
              
   <section id="bai-8-canh-bao-chay">
 <h1>11. Bài 8: Cảnh báo cháy<a class="headerlink" href="#bai-8-canh-bao-chay" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài này, chúng ta sẽ sử dụng cảm biến lửa để phát hiện có lửa cháy hay không, từ đó hiển thị lên màn hình LCD và phát ra âm thanh cảnh báo.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Cảm biến lửa</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_91.png"><img alt="../../_images/homebit_91.png" class="align-center" src="../../_images/homebit_91.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Kết nối cảm biến lửa vào cổng P2</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_92.png"><img alt="../../_images/homebit_92.png" class="align-center" src="../../_images/homebit_92.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/homebit_93.png"><img alt="../../_images/homebit_93.png" class="align-center" src="../../_images/homebit_93.png" style="width: 550px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>1. Tạo điều kiện: Nếu cảm biến chân P2 phát hiện
+ra lửa</p>
+<a class="reference internal image-reference" href="../../_images/homebit_94.png"><img alt="../../_images/homebit_94.png" class="align-center" src="../../_images/homebit_94.png" style="width: 550px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Khi phát hiện có lửa, chương trình bắt đầu xóa màn hình LCD trước đó, hiện 2 dòng chữ “Alarm - Fire detected!!!” lên LCD và phát ra âm thanh cảnh báo.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/homebit_95.png"><img alt="../../_images/homebit_95.png" class="align-center" src="../../_images/homebit_95.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Cảnh báo cháy: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2CycT2NG5NsIFWkXyDA4e1F1rmU">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/homebit_96.png"><img alt="../../_images/homebit_96.png" class="align-center" src="../../_images/homebit_96.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 

@@ -2,11 +2,11 @@
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    xbot/gioi-thieu.rst
    xbot/lap-rap.rst
-   xbot/phan-mem.rst
+   xbot/app.rst
    xbot/viet-chuong-trinh.rst
    xbot/bai-1.rst
    xbot/bai-2.rst

@@ -89,13 +89,13 @@ Viết chương trình
 1. Kéo khối lệnh điều kiện vào phần **lặp lại mãi**
 
     .. image:: images/bai_1.7.png
-        :width: 300px
+        :width: 200px
         :align: center 
     |
 2. Cho khối lệnh toán tử **VÀ** vào phần nếu
 
     .. image:: images/bai_1.8.png
-        :width: 400px
+        :width: 300px
         :align: center 
     |
 3. Tạo điều kiện: nếu trời tối (độ sáng < 30) và phát hiện có người

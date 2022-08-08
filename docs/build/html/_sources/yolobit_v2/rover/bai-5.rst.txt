@@ -19,7 +19,7 @@ Bộ phận điện tử
 **Cảm biến khoảnh cách:** Là thiết bị giúp phát hiện đối tượng phía trước bằng sóng siêu âm, nhờ đó có thể đo khoảng cách, tránh vật cản,...
 
     .. image:: images/bai_5.1.png
-        :width: 400px
+        :width: 500px
         :align: center        
 
 

@@ -2,7 +2,7 @@
 =================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    plantbit/gioi-thieu-plantbit.rst
    plantbit/lap-rap.rst

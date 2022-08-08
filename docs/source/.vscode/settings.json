@@ -1,8 +1,5 @@
 {
-<<<<<<< HEAD
-=======
     "restructuredtext.pythonRecommendation.disabled": true,
     "restructuredtext.syntaxHighlighting.disabled": true,
->>>>>>> main
     "esbonio.sphinx.confDir": ""
 }

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-7. Làm việc với loa phát nhạc 
-=======
 5. Làm việc với loa phát nhạc 
->>>>>>> main
 =============================
 
 

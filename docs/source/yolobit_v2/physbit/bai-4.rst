@@ -1,7 +1,4 @@
 6. Bài 4: Đèn LED nhiều màu RGB
-<<<<<<< HEAD
-=====================================
-=======
 =====================================
 
 Giới thiệu
@@ -106,4 +103,3 @@ Chương trình mẫu
 .. image:: images/bai_4.5.png
     :width: 200px
     :align: center 
->>>>>>> main

@@ -1,10 +1,6 @@
 11. Xe cứu hộ
 ===========================
 
-Hướng dẫn lắp ráp 
------------------
------------------
-
 .. image:: images/invento_56.png
     :width: 500px
     :align: center
@@ -52,6 +48,11 @@ Kết nối Servo vào chân S1 của bộ điều khiển
     :width: 400px
     :align: center
 | 
+
+Hướng dẫn lắp ráp 
+-----------------
+-----------------
+
 .. image:: images/invento_57.png
     :width: 900px
     :align: center

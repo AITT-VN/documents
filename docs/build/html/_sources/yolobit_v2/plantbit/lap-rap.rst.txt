@@ -1,5 +1,4 @@
 2. Hướng dẫn lắp ráp Plant:Bit 
-<<<<<<< HEAD
 ========================================
 
 2.1 Lắp ráp
@@ -89,37 +88,37 @@
 14. Dán đèn lên trục đèn
 
 .. image:: images/planbit_17.png
-    :width: 200px
+    :width: 700px
     :align: center
 |   
 15. Gắn trục đèn vào mô hình
 
 .. image:: images/planbit_18.png
-    :width: 200px
+    :width: 700px
     :align: center
 |   
 16. Đặt chậu vào mô hình
 
 .. image:: images/planbit_19.png
-    :width: 200px
+    :width: 700px
     :align: center
 |   
 17. Lắp máy bơm nướC
 
 .. image:: images/planbit_20.png
-    :width: 200px
+    :width: 700px
     :align: center
 |   
 18. Cắm cảm biến độ ẩm đất vào chậu
 
 .. image:: images/planbit_21.png
-    :width: 200px
+    :width: 700px
     :align: center
 |   
 19. Hoàn thành
 
 .. image:: images/planbit_22.png
-    :width: 200px
+    :width: 300px
     :align: center
 |   
 
@@ -131,6 +130,4 @@
     :width: 800px
     :align: center
 | 
-=======
-========================================
->>>>>>> main
+

@@ -1,5 +1,4 @@
 **Đầu gắp Gripper**
-<<<<<<< HEAD
 ===========================
 
 Giới thiệu
@@ -11,6 +10,8 @@ Giới thiệu
 .. raw:: html
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/l9Vba8oYV9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+|
+
 
 Hướng dẫn lắp ráp
 -----------------
@@ -63,7 +64,8 @@ Hướng dẫn lắp ráp
  .. image:: images/gripper_11.png
         :width: 900px
         :align: center 
-        
+
+
 Hướng dẫn lập trình
 ------------------
 ------------------
@@ -141,9 +143,10 @@ Trong ví dụ trên, ta sử dụng khối lệnh sau:
 **Thực hành robot di chuyển đồ vật**
 
 .. image:: images/gripper_19.png
-    :width: 600px
+    :width: 500px
     :align: center
 |   
+
 Ở bài trước, chúng ta đã tìm hiểu cách để lập trình cho robot đi theo vạch đen. Bây giờ chúng ta sẽ dựa vào chương trình đó và kết hợp thêm tay gắp, khi phát hiện có vật cản thì gắp vật, sau đó quay lại và tìm vạch đen gần nhất để thả vật. Sau đó là quay lại vị trí ban đầu để tìm thêm vật cản.
 
 Và quá trình này lặp đi lặp lại tương tự như các dây chuyền trong quy trình sản xuất, và khi đó nhờ vào sự phát triển của những ứng dụng robot thế này mà chúng ta sẽ giảm đi rất nhiều nhân lực, sức lực và thời gian sản xuất.
@@ -234,6 +237,3 @@ Các bạn có thể tải chương trình mẫu tại đây. Chúc các bạn t
     :width: 200px
     :align: center
 |   
-=======
-===========================
->>>>>>> main

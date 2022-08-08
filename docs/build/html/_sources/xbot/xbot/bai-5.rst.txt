@@ -1,12 +1,11 @@
 9. Bài 5: Robot né vật cản 
-<<<<<<< HEAD
 ====================================
 
 **Mục tiêu:**
 
 Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.
 
-Tốc độ của âm thanh
+9.1 Tốc độ của âm thanh
 ---------------------
 ---------------------
 
@@ -20,7 +19,7 @@ Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm 
 |   
 
 
-9.1 Cảm biến khoảng cách
+9.2 Cảm biến khoảng cách
 ---------------------
 ---------------------
 
@@ -41,7 +40,7 @@ xBot được trang bị một cảm biến khoảng cách có thể phát ra s�
 Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.
 
 
-9.2 Đọc trạng thái cảm biến
+9.3 Đọc trạng thái cảm biến
 -----------------------
 ---------------------
 Cảm biến khoảng cách được kết nối mặc định tới cổng 2 trên mạch điều khiển.
@@ -70,7 +69,7 @@ Bạn hãy đưa tay di chuyển lại gần hoặc ra xa dần cảm biến đ�
 |   
 
 
-9.3 Áp dụng cảm biến trong di chuyển
+9.4 Áp dụng cảm biến trong di chuyển
 ---------------------------
 ---------------------------
 
@@ -131,7 +130,7 @@ Bạn xây dựng các khối lệnh chương trình như sau:
 |   
 
 
-9.4 Robot biết né vật cản
+9.5 Robot biết né vật cản
 -----------------------
 -----------------------
 
@@ -169,7 +168,7 @@ Sau khi thay vào chương trình cũ thì sẽ thành:
     :width: 600px
     :align: center
 |   
-9.5 Bài tập mở rộng
+9.6 Bài tập mở rộng
 -----------------------
 ------------------------
 
@@ -213,7 +212,7 @@ Trong bài này, bạn hãy viết chương trình để robot có thể tìm v�
 
 4. Nếu không, xe rẽ trái trở lại và đi đến vạch kế tiếp
 
-9.6 Câu hỏi ôn tập
+9.7 Câu hỏi ôn tập
 ----------------
 ----------------
 
@@ -223,11 +222,3 @@ Trong bài này, bạn hãy viết chương trình để robot có thể tìm v�
 
 3. Cảm biến khoảng cách có thể được ứng dụng vào di chuyển xBot như thế nào? Kể tên ứng dụng và cách lập trình tương ứng.
 
-
-
-
-
-
-=======
-====================================
->>>>>>> main

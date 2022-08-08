@@ -1,5 +1,4 @@
 11. Bài 7: Điều khiển từ xa
-<<<<<<< HEAD
 ===========================
 
 **Mục tiêu:**
@@ -118,7 +117,7 @@ Khi nhấn nút để rẽ trái hoặc phải, ta sẽ cho robot di chuyển v�
 
 Sau khi chạy chương trình, bạn thử nhấn các nút 1 đến 4 trên remote và di chuyển để xem tốc độ thay đổi giữa các lần nhấn nút có đúng không nhé.
 
-Điều khiển bằng điện thoại qua Bluetooth
+11.2 Điều khiển bằng điện thoại qua Bluetooth
 -------------------------------------------
 -------------------------------------------
 
@@ -236,16 +235,3 @@ Sau khi hoàn thành bảng điều khiển mới, bạn nhấn vào biểu tư�
 |   
 Cuối cùng, hãy tiến hành kết nối xBot và sử dụng bảng điều khiển vừa tạo xem có hoạt động đúng như mình cài đặt không nhé.
 
-
-
-
-
-
-
-
-
-
-
-=======
-===========================
->>>>>>> main

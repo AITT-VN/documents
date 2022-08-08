@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 4. Hướng dẫn viết chương trình
 =====================
 
@@ -146,11 +145,3 @@ Chương trình tham khảo:
 
 3. Có bao nhiêu thao tác với khối lệnh? Kể tên và cách thực hiện từng thao tác.
 
-
-
-
-
-=======
-4. Hướng dẫn viết chương trình 
-=======================
->>>>>>> main

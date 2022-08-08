@@ -1,14 +1,15 @@
 4. Robot nhện 
 =====================
 
-Hướng dẫn lắp ráp
----------------
----------------
-
 .. image:: images/invento_8.png
     :width: 500px
     :align: center
 |   
+
+Hướng dẫn lắp ráp
+---------------
+---------------
+
 .. image:: images/invento_9.png
     :width: 900px
     :align: center

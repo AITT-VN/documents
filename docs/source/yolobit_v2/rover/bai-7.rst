@@ -73,7 +73,7 @@ Viết chương trình
     - Điều kiện “nếu không nếu” là một điều kiện gộp giữa “nếu không” và “nếu”
 
         .. image:: images/bai_7.7.png
-            :width: 800px
+            :width: 700px
             :align: center 
 
 
@@ -86,7 +86,7 @@ Viết chương trình
 3.  Khởi tạo biến “khoảng cách” (cho biến có giá trị bằng 0), và gán giá trị khoảng cách đọc được vào biến
 
     .. image:: images/bai_7.9.png
-        :width: 800px
+        :width: 700px
         :align: center 
 |
 4. Tạo điều kiện thứ nhất: **Nếu khoảng cách < 15cm, lùi lại với tốc độ 50**

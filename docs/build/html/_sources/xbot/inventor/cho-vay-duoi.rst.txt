@@ -1,10 +1,6 @@
 5. Chó vẫy đuôi 
 ===========================
 
-Hướng dẫn lắp ráp
------------------
-------------------
-
 .. image:: images/invento_13.png
     :width: 500px
     :align: center
@@ -51,7 +47,12 @@ Kết nối Servo vào chân S1 của bộ điều khiển
 .. image:: images/invento_15.2.png
     :width: 400px
     :align: center
-|   
+|  
+
+Hướng dẫn lắp ráp
+-----------------
+------------------
+
 .. image:: images/invento_16.png
     :width: 900px
     :align: center

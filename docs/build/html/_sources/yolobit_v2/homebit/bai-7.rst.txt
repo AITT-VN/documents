@@ -1,5 +1,4 @@
 10. Bài 7: Khóa cửa thông minh
-<<<<<<< HEAD
 ========================================
 
 Mục tiêu
@@ -118,12 +117,8 @@ Ví dụ: nếu bạn đã nhâkp AAB trước đó, sau khi nhấn A lần nữ
     :width: 900px
     :align: center
 |  
-Chương trình trong lặp lại mãi như sau: 
+Xem chương trình hoàn chỉnh bằng link bên dưới.
 
-.. image:: images/homebit_88.png
-    :width: 1000px
-    :align: center
-| 
 
 Chương trình mẫu
 ---------------------
@@ -135,6 +130,3 @@ Chương trình mẫu
     :width: 200px
     :align: center
 |
-=======
-========================================
->>>>>>> main

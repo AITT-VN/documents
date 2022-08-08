@@ -1,7 +1,5 @@
 **xBot Inventor Kit**
-<<<<<<< HEAD
 ====================
-
 
 .. toctree::
    :maxdepth: 1
@@ -17,6 +15,3 @@
    inventor/xe-nang.rst
    inventor/xe-tai.rst
    inventor/xe-cuu-ho.rst 
-=======
-====================
->>>>>>> main

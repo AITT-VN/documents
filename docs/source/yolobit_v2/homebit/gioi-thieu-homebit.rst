@@ -1,5 +1,4 @@
 1. Giới thiệu nhà thông minh Home:Bit
-<<<<<<< HEAD
 ==================================
 
 
@@ -23,8 +22,4 @@ Sản phẩm sử dụng phương pháp kéo thả khối lệnh đơn giản, c
         :width: 800px
         :align: center 
 
-
-=======
-============================================
->>>>>>> main
 

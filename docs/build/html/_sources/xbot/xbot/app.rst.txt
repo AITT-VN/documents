@@ -157,23 +157,23 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
 - **Xóa khối lệnh**
 
-    - Trên máy tính, laptop
+    + Trên máy tính, laptop
 
-    1. Di chuyển chuột đến khối lệnh
+        1. Di chuyển chuột đến khối lệnh
 
-    2. Nhấp chuột phải (hiển thị bảng tùy chọn)
+        2. Nhấp chuột phải (hiển thị bảng tùy chọn)
 
-    3. Chọn **Xóa mảnh này**
+        3. Chọn **Xóa mảnh này**
 
 .. image:: images/xbot_3.16.png
     :width: 400px
     :align: center
 |   
-    - Xóa trên thiết bị di động
+    + Xóa trên thiết bị di động
 
-    1. Nhấn giữ khối lệnh để chờ bảng tùy chọn hiện ra.
+        1. Nhấn giữ khối lệnh để chờ bảng tùy chọn hiện ra.
 
-    2. Chọn **Xóa mảnh này**
+        2. Chọn **Xóa mảnh này**
 
 .. image:: images/xbot_3.17.png
     :width: 400px

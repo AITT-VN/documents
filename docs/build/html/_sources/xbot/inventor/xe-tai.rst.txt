@@ -1,10 +1,6 @@
 10. Xe tải 
 ============================
 
-Hướng dẫn lắp ráp  
------------------
------------------
-
 .. image:: images/invento_45.png
     :width: 500px
     :align: center
@@ -51,6 +47,10 @@ Kết nối Servo vào chân S1 của bộ điều khiển
     :width: 400px
     :align: center
 | 
+
+Hướng dẫn lắp ráp  
+-----------------
+-----------------
 
 .. image:: images/invento_46.png
     :width: 900px

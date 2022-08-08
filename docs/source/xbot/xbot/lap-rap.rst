@@ -1,5 +1,4 @@
 2. Hướng dẫn lắp ráp 
-<<<<<<< HEAD
 ============================
 
 .. image:: images/xbot_2.1.png
@@ -66,7 +65,7 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
     :align: center  
 |
 
-2.5 Hướng dân sạc pin 
+2.5 Hướng dẫn sạc pin 
 ----------
 ---------------
 
@@ -88,6 +87,4 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
     :width: 500px
     :align: center  
 |
-=======
-============================
->>>>>>> main
+

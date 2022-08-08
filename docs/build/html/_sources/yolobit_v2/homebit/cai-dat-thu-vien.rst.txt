@@ -1,5 +1,4 @@
 3. Cài đặt thư viện Home:Bit V3
-<<<<<<< HEAD
 =========================================
 
 Cài đặt thư viện 
@@ -66,6 +65,3 @@ Chương trình này đã có đầy đủ tính năng:
     5. Khi trời tối và phát hiện có người, đèn cổng (4 đèn LED RGB) sẽ tự bật
     6. Khi phát hiện bị cháy, Yolo:Bit sẽ hiện thông tin cảnh báo lên màn hình OLED và phát ra âm thanh báo động.
     7. Khi phát hiện động đất (ngôi nhà bị rung, lắc), Yolo:Bit sẽ hiện thông tin cảnh báo lên OLED và phát ra âm thanh báo động
-=======
-=========================================
->>>>>>> main

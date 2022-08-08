@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-5. Bài 2: Bãi đậu xe thông minh
-===================================
-=======
 4. Bài 2: Bãi đậu xe thông minh
 ===================================
 
@@ -198,4 +194,3 @@ Chương trình mẫu
 .. image:: images/bai_2.27.png
     :width: 200px
     :align: center 
->>>>>>> main

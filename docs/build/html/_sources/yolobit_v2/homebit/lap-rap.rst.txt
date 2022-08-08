@@ -1,5 +1,4 @@
 2. Hướng dẫn lắp ráp Home:Bit 
-<<<<<<< HEAD
 ===============================
 
 Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 để thực hiện chính xác. Thực hiện như sau:
@@ -86,6 +85,4 @@ Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 để thực
 .. image:: images/homebit_14.png
     :width: 600px
     :align: center
-=======
-========================================
->>>>>>> main
+

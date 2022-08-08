@@ -1,10 +1,6 @@
 7. Xe gắp
 =======================
 
-Hướng dẫn lắp ráp
-------------------
-------------------
-
 .. image:: images/invento_27.png
     :width: 500px
     :align: center
@@ -53,6 +49,12 @@ Kết nối Servo vào chân S1 của bộ điều khiển
     :width: 400px
     :align: center
 | 
+
+
+Hướng dẫn lắp ráp
+------------------
+------------------
+
 .. image:: images/invento_28.png
     :width: 900px
     :align: center

@@ -1,5 +1,4 @@
 1. Giới thiệu mô hình trồng cây thông minh Plant:Bit
-<<<<<<< HEAD
 ============================================
 
 Plant:Bit là bộ trồng cây thông minh, có thể tự động tưới nước hoặc làm nhiều tính năng thú vị khác thông qua phương pháp lập trình khối lệnh.
@@ -14,14 +13,10 @@ Thành phần
 ---------------------
 ----------------------
 
+.. image:: images/plantbit_2.png
+    :width: 900px
+    :align: center  
 
-    .. image:: images/plantbit_2.png
-        :width: 900px
-        :align: center  
-
-    .. image:: images/plantbit_3.png
-        :width: 900px
-        :align: center 
-=======
-============================================
->>>>>>> main
+.. image:: images/plantbit_3.png
+    :width: 900px
+    :align: center 

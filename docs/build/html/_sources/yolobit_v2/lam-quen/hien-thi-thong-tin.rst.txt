@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+5. Hiển thị thông tin 
+=======
 3. Hiển thị thông tin 
+>>>>>>> main
 ==========================
 
 

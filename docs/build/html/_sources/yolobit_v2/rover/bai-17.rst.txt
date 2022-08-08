@@ -1,4 +1,7 @@
 21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ
+<<<<<<< HEAD
+============================================
+=======
 ============================================
 
 Mục tiêu
@@ -220,3 +223,4 @@ Chương trình mẫu
 .. image:: images/bai_17.16.png
     :width: 200px
     :align: center 
+>>>>>>> main

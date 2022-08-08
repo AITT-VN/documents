@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+4. Bài 1: Đèn công cộng thông minh
+=================================
+=======
 3. Bài 1: Đèn công cộng thông minh
 =================================
 
@@ -155,3 +159,4 @@ Chương trình mẫu
 .. image:: images/bai_1.15.png
     :width: 200px
     :align: center 
+>>>>>>> main

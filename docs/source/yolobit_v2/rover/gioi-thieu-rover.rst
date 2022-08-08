@@ -5,8 +5,14 @@
 
 --------------------------------
 
+<<<<<<< HEAD
+Robot Rover là xe lập trình điều khiển thông minh, được thiết kế để ứng dụng vào giảng dạy STEM cho học sinh và người
+mới bắt đầu học lập trình. Bộ Kit này sẽ là công cụ giúp trẻ phát triển tư duy sáng tạo và trí tuệ hiệu quả. Thông qua phương
+pháp lập trình kéo thả khối lệnh đơn giản, chúng ta có thể xây dựng nhiều tính năng thú vị và độc đáo cho Robot Rover.
+=======
 Robot Rover là xe lập trình điều khiển thông minh, được thiết kế để ứng dụng vào giảng dạy STEM cho học sinh và người mới bắt đầu học lập trình. Bộ Kit này sẽ là công cụ giúp trẻ phát triển tư duy sáng tạo và trí tuệ hiệu quả. Thông qua phương pháp lập trình kéo thả khối lệnh đơn giản, chúng ta có thể xây dựng nhiều tính năng thú vị và độc đáo cho Robot Rover.
 
+>>>>>>> main
 
 **1.2 Hình ảnh**
 
@@ -36,6 +42,15 @@ Robot Rover là xe lập trình điều khiển thông minh, được thiết k�
 
 
 **1.4 Giới thiệu các Mô - đun chính của Rover**
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+
+------------------------------------
+
+.. image:: images/rover_1.png
+    :scale: 50%
+    :align: center
+=======
 
 ------------------------------------
 
@@ -93,3 +108,4 @@ Hai bánh xe ở cả hai bên được dẫn bởi động cơ giảm tốc DC 
         :width: 400px
         :align: center 
 
+>>>>>>> main

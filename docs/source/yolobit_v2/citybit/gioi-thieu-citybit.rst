@@ -1,4 +1,7 @@
 1. Giới thiệu thành phố thông minh City:Bit
+<<<<<<< HEAD
+============================================
+=======
 ============================================
 
 City:Bit là bộ Kit giúp xây dựng một mô hình thành phố thông minh với nhiều tính năng và công nghệ hiện đại, thân thiện với môi trường.
@@ -21,3 +24,4 @@ Thành phần
         :align: center 
 
         
+>>>>>>> main

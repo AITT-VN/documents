@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+10. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí
+========================================
+=======
 9. Bài 7: Hệ thống theo dõi thời tiết và chất lượng không khí
 ========================================
 
@@ -136,3 +140,4 @@ Chương trình mẫu
 
 
 
+>>>>>>> main

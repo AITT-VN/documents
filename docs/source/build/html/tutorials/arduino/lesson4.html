@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài học 4: Điều khiển tốc độ chớp tắt đèn LED &mdash; OhStem Product Documents 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/huong-dan.html"><strong>Hướng dẫn lập trình GameKit</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu học STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-1.html"><strong>Tài liệu 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/tai-lieu-2.html"><strong>Tài liệu 2</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Product Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Bài học 4: Điều khiển tốc độ chớp tắt đèn LED</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson4.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bai-hoc-4-dieu-khien-toc-do-chop-tat-den-led">
+<h1>Bài học 4: Điều khiển tốc độ chớp tắt đèn LED<a class="headerlink" href="#bai-hoc-4-dieu-khien-toc-do-chop-tat-den-led" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<p>Trong bài học trước, chúng ta đã tìm hiểu về <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code> thông qua nút nhấn với 2 trạng thái là <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> và <code class="docutils literal notranslate"><span class="pre">LOW</span></code>. Tuy nhiên trong thực tế, đôi lúc chúng ta cần nhiều hơn 2 trạng thái như vậy. Một số ví dụ: nút điều chỉnh âm thanh (cho biết âm lượng đang ở mức nào) hay cảm biến ánh sáng (độ sáng là bao nhiêu),…</p>
+<p>Trong bài học này, chúng ta sẽ cùng tìm hiểu về tín hiệu Analog và lập trình điều khiển thời gian chớp tắt đèn LED bằng giá trị của cảm biến xoay.</p>
+</section>
+<section id="kien-thuc-moi">
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<p><em>Tín hiệu Analog</em></p>
+<p>Khác với tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code>, tín hiệu Analog Input giúp đo các giá trị đầu vào theo một dải giá trị thay vì chỉ là <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> và <code class="docutils literal notranslate"><span class="pre">LOW</span></code>.</p>
+<p>Tuy nhiên, xét về bản chất, máy tính chỉ có thể hiểu được tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> (các giá trị <code class="docutils literal notranslate"><span class="pre">0</span></code> và <code class="docutils literal notranslate"><span class="pre">1</span></code>). Do đó, các chip vi điều khiển đều có 1 bộ chuyển đổi từ tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> sang <code class="docutils literal notranslate"><span class="pre">Digital</span></code>, gọi là <code class="docutils literal notranslate"><span class="pre">ADC</span></code> (Analog to Digital Converter).</p>
+<a class="reference internal image-reference" href="../../_images/ls-4-1.png"><img alt="../../_images/ls-4-1.png" class="align-center" src="../../_images/ls-4-1.png" style="width: 500px;" /></a>
+<p>Lưu ý: Trong 6 cổng mở rộng của xController, chỉ có cổng 4, 5 và 6 là có bộ <code class="docutils literal notranslate"><span class="pre">ADC</span></code> và có thể giao tiếp được với các module sử dụng tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code>. Giá trị tín hiệu các chân <code class="docutils literal notranslate"><span class="pre">Analog</span></code> này có dải từ <code class="docutils literal notranslate"><span class="pre">0</span></code> (tương ứng với 0V) đến <code class="docutils literal notranslate"><span class="pre">4095</span></code> (tương ứng với 3.3V).</p>
+<p>Ví dụ: Nếu giá trị tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> xuất ra là <code class="docutils literal notranslate"><span class="pre">2047</span></code> thì điện áp sẽ nằm trong khoảng <code class="docutils literal notranslate"><span class="pre">1.65V</span></code>.</p>
+</section>
+<section id="thiet-bi-can-su-dung">
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/device-4.png"><img alt="../../_images/device-4.png" class="align-center" src="../../_images/device-4.png" style="width: 600px;" /></a>
+</section>
+<section id="ket-noi-phan-cung">
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/ls-4-2.png"><img alt="../../_images/ls-4-2.png" class="align-center" src="../../_images/ls-4-2.png" style="width: 500px;" /></a>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<p>Mở phần mềm Arduino IDE.</p>
+<p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">; // Module LED nối vào cổng số 1</span>
+<span class="nv">int</span> <span class="nv">rotaryPin</span> <span class="o">=</span> <span class="nv">A4_1</span><span class="c1">; // Module rotary nối vào cổng số 4</span>
+<span class="nv">int</span> <span class="nv">rotaryValue</span> <span class="o">=</span> <span class="mi">0</span><span class="c1">;</span>
+
+<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+  <span class="o">//</span> đọ<span class="nv">c</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span>
+  <span class="nv">rotaryValue</span> <span class="o">=</span> <span class="nv">analogRead</span><span class="ss">(</span><span class="nv">rotaryPin</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="o">//</span> <span class="nv">d</span>ừ<span class="nv">ng</span> <span class="nv">ch</span>ươ<span class="nv">ng</span> <span class="nv">tr</span>ì<span class="nv">nh</span> <span class="nv">trong</span> <span class="nv">kho</span>ả<span class="nv">ng</span> <span class="nv">th</span>ờ<span class="nv">i</span> <span class="nv">gian</span>
+  <span class="o">//</span> <span class="nv">b</span>ằ<span class="nv">ng</span> đú<span class="nv">ng</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> đọ<span class="nv">c</span> đượ<span class="nv">c</span> <span class="ss">(</span><span class="nv">milliseconds</span><span class="ss">)</span>
+  <span class="nv">delay</span><span class="ss">(</span><span class="nv">rotaryValue</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="o">//</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span>
+  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
+  <span class="o">//</span> <span class="nv">d</span>ừ<span class="nv">ng</span> <span class="nv">ch</span>ươ<span class="nv">ng</span> <span class="nv">tr</span>ì<span class="nv">nh</span> <span class="nv">trong</span> <span class="nv">kho</span>ả<span class="nv">ng</span> <span class="nv">th</span>ờ<span class="nv">i</span> <span class="nv">gian</span>
+  <span class="o">//</span> <span class="nv">b</span>ằ<span class="nv">ng</span> đú<span class="nv">ng</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> đọ<span class="nv">c</span> đượ<span class="nv">c</span> <span class="ss">(</span><span class="nv">milliseconds</span><span class="ss">)</span>
+  <span class="nv">delay</span><span class="ss">(</span><span class="nv">rotaryValue</span><span class="ss">)</span><span class="c1">;</span>
+}
+</pre></div>
+</div>
+</section>
+<section id="giai-thich-chuong-trinh">
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int rotaryPin = A4_1;
+</pre></div>
+</div>
+<p>Khai báo chân IO nối với cảm biến xoay. Do cảm biến xoay trả về tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> và được kết nối với cổng số 4 trên xController nên ta khai báo là <code class="docutils literal notranslate"><span class="pre">A4_1</span></code>.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>pinMode(LEDPin, OUTPUT);
+</pre></div>
+</div>
+<p>Cấu hình module LED là <code class="docutils literal notranslate"><span class="pre">OUTPUT</span></code> như đã học trong các bài trước.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>rotaryValue = analogRead(rotaryPin);
+</pre></div>
+</div>
+<p>Đọc giá trị tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên (int) nằm trong khoảng từ <code class="docutils literal notranslate"><span class="pre">0</span></code> đến <code class="docutils literal notranslate"><span class="pre">4095</span></code>.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>delay(rotaryValue);
+</pre></div>
+</div>
+<p>Tạm ngừng chương trình một khoảng thời gian bằng với giá trị đọc được từ cảm biến xoay. Do đó, bạn có thể điều chỉnh thời gian tạm ngừng bằng cách xoay cảm biến qua trái (giảm dần) hoặc qua phải (tăng dần).</p>
+<p><em>Sau khi nạp chương trình vào board, bạn xoay biến trở sẽ thấy sự thay đổi về thời gian bật tắt đèn LED.</em></p>
+<p><em>Nếu xoay về tận cùng bên trái (giá trị là 0) thì LED sẽ chớp liên tục và rất khó để nhận ra trạng thái bật tắt của đèn LED. Ngược lại, nếu xoay về tận cùng bên phải, giá trị đọc được sẽ là 4095 (tương đương với hơn 4 giây), bạn sẽ dễ dàng nhìn thấy LED bật và tắt hơn.</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

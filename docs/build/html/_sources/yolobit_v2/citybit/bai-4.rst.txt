@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+7. Bài 4: Hệ thống cảnh báo tiếng ồn
+=====================================
+=======
 6. Bài 4: Hệ thống cảnh báo tiếng ồn
 =====================================
 
@@ -176,3 +180,4 @@ Chương trình mẫu
     :width: 200px
     :align: center 
 
+>>>>>>> main

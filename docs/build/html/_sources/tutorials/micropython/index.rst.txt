@@ -1,4 +1,4 @@
-Hướng dẫn lập trình MicroPython
+**Hướng dẫn lập trình MicroPython**
 ====================
 
 .. toctree::

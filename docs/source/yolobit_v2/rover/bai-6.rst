@@ -57,7 +57,7 @@ Chương trình mẫu
 .. image:: images/bai_6.5.png
     :width: 200px
     :align: center 
-
+|
 
 
 

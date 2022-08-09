@@ -51,7 +51,6 @@ OhStem xin chào tất cả các bạn!
 
    gamekit/gamekit.rst 
 
-   
 
 .. toctree::
    :maxdepth: 2
@@ -61,8 +60,5 @@ OhStem xin chào tất cả các bạn!
    module/hien-thi.rst
    module/dieu-khien-dong-ngat.rst
    module/board-mo-rong.rst 
-
-
-
 
 

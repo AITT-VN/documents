@@ -63,10 +63,6 @@ OhStem xin chào tất cả các bạn!
    module/board-mo-rong.rst 
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Tài liệu STEM 
 
-   tai_lieu_stem/smart_farm.rst
 
 

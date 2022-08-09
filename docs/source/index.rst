@@ -51,7 +51,6 @@ OhStem xin chào tất cả các bạn!
 
    gamekit/gamekit.rst 
 
-   
 
 .. toctree::
    :maxdepth: 2

@@ -4,7 +4,6 @@
 Mục tiêu
 --------------------
 --------------------
-
 Trong bài này, chúng ta sẽ sử dụng cảm biến lửa để phát hiện có lửa cháy hay không, từ đó hiển thị lên màn hình LCD và phát ra âm thanh cảnh báo.
 
 Thiết bị cần dùng
@@ -68,3 +67,4 @@ Chương trình mẫu
     :width: 200px
     :align: center
 |
+

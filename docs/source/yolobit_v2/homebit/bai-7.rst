@@ -117,8 +117,12 @@ Ví dụ: nếu bạn đã nhâkp AAB trước đó, sau khi nhấn A lần nữ
     :width: 900px
     :align: center
 |  
-Xem chương trình hoàn chỉnh bằng link bên dưới.
+Chương trình trong lặp lại mãi như sau: 
 
+.. image:: images/homebit_88.png
+    :width: 1000px
+    :align: center
+| 
 
 Chương trình mẫu
 ---------------------

@@ -1,6 +1,7 @@
 4. Bài 2: Nút nhấn
 ===================================
 
+
 Giới thiệu
 ----------
 ----------------
@@ -108,14 +109,5 @@ Chương trình mẫu
 .. image:: images/2.5.png
     :width: 200px
     :align: center 
-
-
-
-
-
-
-
-
-
 
 

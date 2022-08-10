@@ -85,4 +85,3 @@ Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 để thực
 .. image:: images/homebit_14.png
     :width: 600px
     :align: center
-

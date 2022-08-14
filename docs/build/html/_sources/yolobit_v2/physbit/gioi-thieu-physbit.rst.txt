@@ -23,24 +23,3 @@ Giới thiệu về PHYS:BIT
 Kit học vật lý điện tử **Phys:Bit** và **Yolo:Bit** sẽ giúp các bạn điều khiển các mạch điện theo ý muốn, từ đó kích thích niềm đam mê với môn học quan trọng này
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> main

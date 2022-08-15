@@ -7,7 +7,7 @@
 |
 Trước khi lắp ráp, bạn cần chỉnh động cơ Servo về đúng góc. 
 
-Vào OhStem App > Chọn thiết bị xBot > Mở rộng > Xe xúc.
+Vào **OhStem App > Chọn thiết bị xBot > Mở rộng > Xe xúc**.
 
 Thứ tự thực hiện như sau: 
 

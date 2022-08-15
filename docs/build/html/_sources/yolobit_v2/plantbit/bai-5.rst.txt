@@ -13,25 +13,25 @@ Thiết bị cần dùng
 
 - Mạch mở rộng gắn sẵn Yolo:Bit
 
-.. image:: images/planbit_31.png
+.. image:: Images/planbit_31.png
     :width: 200px
     :align: center
 |
 - Màn hình OLED LCD
 
-.. image:: images/planbit_58.png
+.. image:: Images/planbit_58.png
     :width: 200px
     :align: center
 |
 - Cảm biến nhiệt độ, độ ẩm DHT20 
 
-.. image:: images/planbit_59.png
+.. image:: Images/planbit_59.png
     :width: 200px
     :align: center
 |
 - Cảm biến ánh sáng
 
-.. image:: images/planbit_60.png
+.. image:: Images/planbit_60.png
     :width: 200px
     :align: center
 |
@@ -45,7 +45,7 @@ Kết nối
 - Cảm biến nhiệt độ, độ ẩm DHT20 (I2C 2) 
 - Cảm biến ánh sáng (P1)
 
-.. image:: images/planbit_61.png
+.. image:: Images/planbit_61.png
     :width: 400px
     :align: center
 |
@@ -55,15 +55,15 @@ Giới thiệu khối lệnh
 --------------------------
 --------------------------
 
-.. image:: images/planbit_62.png
+.. image:: Images/planbit_62.png
     :width: 800px
     :align: center
 |
-.. image:: images/planbit_63.png
+.. image:: Images/planbit_63.png
     :width: 800px
     :align: center
 |
-.. image:: images/planbit_64.png
+.. image:: Images/planbit_64.png
     :width: 800px
     :align: center
 |
@@ -75,13 +75,13 @@ Viết chương trình
 
 1. Khởi tạo màn hình LCD và Reset bộ đếm thời gian
 
-.. image:: images/planbit_65.png
+.. image:: Images/planbit_65.png
     :width: 250px
     :align: center
 |
 2. Tạo điều kiện: Nếu bộ đếm thời gian ≥ 5000ms (5 giây). Điều kiện này giúp mỗi 5 giây chương trình sẽ thực hiện lệnh bên trong
 
-.. image:: images/planbit_66.png
+.. image:: Images/planbit_66.png
     :width: 500px
     :align: center
 |
@@ -89,13 +89,13 @@ Viết chương trình
 
 Kéo thả khối **cập nhật cảm biến DHT20** và **xóa màn hình LCD** vào phần thực hiện 
 
-.. image:: images/planbit_67.png
+.. image:: Images/planbit_67.png
     :width: 400px
     :align: center
 |
 4. Tạo văn bản in ra LCD nội dung “nhiet do” lấy thông tin từ **khối lệnh đọc nhiệt độ** cho dòng 1 (tọa độ y=0)
 
-.. image:: images/planbit_68.png
+.. image:: Images/planbit_68.png
     :width: 800px
     :align: center
 |
@@ -107,7 +107,7 @@ Kéo thả khối **cập nhật cảm biến DHT20** và **xóa màn hình LCD*
 
 - Reset bộ đếm để đếm lại sau mỗi 5 giây
 
-.. image:: images/planbit_69.png
+.. image:: Images/planbit_69.png
     :width: 800px
     :align: center
 |
@@ -119,7 +119,7 @@ Chương trình mẫu
 
 - Hiển thị thông tin: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2Cyq1mX3LGLTUl8N2IxLaYuKCyT>`_
 
-.. image:: images/planbit_70.png
+.. image:: Images/planbit_70.png
     :width: 200px
     :align: center
 |

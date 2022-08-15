@@ -9,38 +9,38 @@ Cài đặt thư viện
 
 1. Truy cập OhStem App tại `<app.ohstem.vn>`_ hoặc tải OhStem App trên Google Play / App Store
 
-.. image:: images/homebit_15.png
+.. image:: Images/homebit_15.png
     :width: 400px
     :align: center 
 |
 2. Chọn thiết bị Yolo:Bit
 
-.. image:: images/homebit_16.png
+.. image:: Images/homebit_16.png
     :width: 500px
     :align: center 
 |
 3. Chọn menu Lập trình
 
-.. image:: images/homebit_17.png
+.. image:: Images/homebit_17.png
     :width: 500px
     :align: center 
 |
 
 4. Chọn mục “Mở rộng” và chọn thư viện mở rộng HOME:BIT V3
 
-.. image:: images/homebit_18.png
+.. image:: Images/homebit_18.png
     :width: 500px
     :align: center 
 |
 5. Kết nối OhStem App với Yolo:Bit
 
-.. image:: images/homebit_19.png
+.. image:: Images/homebit_19.png
     :width: 500px
     :align: center 
 |
 6. Sau khi tải thư viện xong, trong danh mục khối lệnh bên trái sẽ xuất hiện HOME:BIT V3
 
-.. image:: images/homebit_20.png
+.. image:: Images/homebit_20.png
     :width: 600px
     :align: center 
 |
@@ -51,7 +51,7 @@ Chương trình mẫu
 
 Trước khi tìm hiểu cách tự lập trình, bạn có thể tải và chạy chương trình hoàn thiện của Home:Bit để trải nghiệm toàn bộ các tính năng của bộ kit qua đường dẫn sau:
 
-.. image:: images/homebit_90.png
+.. image:: Images/homebit_90.png
     :width: 200px
     :align: center 
 |

@@ -11,19 +11,19 @@ Giúp người mới làm quen với robot xBot, hiểu được các thành ph�
 
 xBot là một robot giáo dục, giúp các bạn nhỏ từ 8 tuổi có thể lắp ráp và lập trình dễ dàng. Ngaoì việc phục vụ cho nhu cầu học tập, xBot cũng là một món đồ chơi giải trí hấp dẫn và thông minh. 
 
-.. image:: images/xbot_1.png
+.. image:: Images/xbot_1.png
     :width: 400px
     :align: center
 |   
 xBot được điều khiển và lập trình bằng các thiết bị như smartphone, máy tính bảng, laptop hoặc remote đi kèm thông qua các khối lệnh đơn giản và trực quan.
 
-.. image:: images/xbot_2.png
+.. image:: Images/xbot_2.png
     :width: 1000px
     :align: center
 |   
 xBot là công cụ giúp bạn làm quen với thế giới thiết kế và lập trình  robot dễ dàng.
 
-.. image:: images/xbot_3.png
+.. image:: Images/xbot_3.png
     :width: 900px
     :align: center
 |   
@@ -31,29 +31,29 @@ xBot là công cụ giúp bạn làm quen với thế giới thiết kế và l�
 
 **So sánh xBot với các robot có chức năng tương đương của Lego**
 
-.. image:: images/xbot_4.png
+.. image:: Images/xbot_4.png
     :width: 900px
     :align: center  
 |
 
 **BẢNG CÁC LINH KIỆN MỞ RỘNG CỦA XBOT**
 
-.. image:: images/xbot_5.png
+.. image:: Images/xbot_5.png
     :width: 900px
     :align: center 
 
 
-.. image:: images/xbot_6.png
+.. image:: Images/xbot_6.png
     :width: 900px
     :align: center  
 
 
-.. image:: images/xbot_7.png
+.. image:: Images/xbot_7.png
     :width: 900px
     :align: center 
 
 
-.. image:: images/xbot_8.png
+.. image:: Images/xbot_8.png
     :width: 900px
     :align: center 
 |
@@ -67,14 +67,14 @@ Khi sở hữu một robot xBot trong tay, bạn có thể làm được nhiều
 
 xBot có thể điều khiển từ xa thông qua remote đi kèm theo phần mềm OhStem App.
 
-.. image:: images/xbot_9.png
+.. image:: Images/xbot_9.png
     :width: 600px
     :align: center
 | 
 
 - **Rèn luyện tư duy logic và kỹ năng giải quyết vấn đề**
 
-.. image:: images/xbot_10.png
+.. image:: Images/xbot_10.png
     :width: 600px
     :align: center
 |
@@ -84,7 +84,7 @@ xBot có thể điều khiển từ xa thông qua remote đi kèm theo phần m�
 Tự thiết kế là lắp ráp các mô hình theo ý thích, giúp kích thích và rèn luyện tư duy sáng tạo của các em.
 
 
-.. image:: images/xbot_11.png
+.. image:: Images/xbot_11.png
     :width: 600px
     :align: center
 |   
@@ -97,25 +97,25 @@ Tự thiết kế là lắp ráp các mô hình theo ý thích, giúp kích thí
 
 Mạch điều khiển xController đóng vai trò là bộ xử lý trung tâm của xBot, giúp kết nối các thành phần quan trọng như input, output, nguồn pin,...
 
-.. image:: images/xbot_18.png
+.. image:: Images/xbot_18.png
     :width: 600px
     :align: center
 |
 - **Mô tả**
 
-.. image:: images/xbot_18.1.png
+.. image:: Images/xbot_18.1.png
     :width: 600px
     :align: center
 |
 - **Các cảm biến đi kèm**
 
-.. image:: images/xbot_19.png
+.. image:: Images/xbot_19.png
     :width: 600px
     :align: center
 |   
 - **Các cổng mở rộng**
 
-.. image:: images/xbot_20.png
+.. image:: Images/xbot_20.png
     :width: 400px
     :align: center
 |   
@@ -123,7 +123,7 @@ Mạch điều khiển xController đóng vai trò là bộ xử lý trung tâm 
 
 Bạn có thể điều khiển và lập trình xBot bằng máy tính, điện thoại, máy tính bảng,... thông qua công nghệ Bluetooth, WiFi hoặc cáp USB
 
-.. image:: images/xbot_20.1.png
+.. image:: Images/xbot_20.1.png
     :width: 500px
     :align: center
 |  
@@ -132,7 +132,7 @@ Bạn có thể điều khiển và lập trình xBot bằng máy tính, điện
 ------------------------
 ------------------------
 
-.. image:: images/xbot_20.2.png
+.. image:: Images/xbot_20.2.png
     :width: 500px
     :align: center
 |  
@@ -156,7 +156,7 @@ Mạch điều khiển xBot hỗ trợ 2 đầu cắm pin với 2 chuẩn khác 
 
     2. Sau khi khởi động thành công, 2 đèn LED đa màu trên mạch sẽ phát sáng màu đỏ, thể hiện chế độ đang chờ kết nối
 
-.. image:: images/xbot_20.3.png
+.. image:: Images/xbot_20.3.png
     :width: 500px
     :align: center
 |  
@@ -178,19 +178,19 @@ Chế độ **điều khiển bằng OhStem App** sẽ được tìm hiểu ở 
 
 xBot đã tích hợp sẵn một nút nhấn trên mạch điều khiển, giúp người dùng có thể bật các chế độ thông minh một cách nhanh chóng. 
 
-.. image:: images/xbot_20.4.png
+.. image:: Images/xbot_20.4.png
     :width: 400px
     :align: center
 |  
 Bạn có thể nhấn nút trên mạch điều khiển nhiều lần để chuyển sang chế độ hoạt động mà mình thích, thứ tự chuyển đổi các chế độ sẽ như sau:
 
-.. image:: images/xbot_20.5.png
+.. image:: Images/xbot_20.5.png
     :width: 600px
     :align: center
 | 
 - **Điều khiển bằng remote**
 
-.. image:: images/xbot_20.6.png
+.. image:: Images/xbot_20.6.png
     :width: 500px
     :align: center
 | 

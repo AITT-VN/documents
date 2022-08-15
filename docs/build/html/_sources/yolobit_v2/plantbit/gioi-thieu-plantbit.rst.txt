@@ -9,9 +9,7 @@ Với bộ Kit này, bạn sẽ làm quen với các công nghệ mới trong n�
     :width: 350px
     :align: center
 |   
-Thành phần
----------------------
-----------------------
+**Thành phần**
 
 .. image:: images/plantbit_2.png
     :width: 900px
@@ -20,3 +18,4 @@ Thành phần
 .. image:: images/plantbit_3.png
     :width: 900px
     :align: center 
+|

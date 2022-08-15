@@ -18,7 +18,7 @@ Phần mềm này hỗ trợ **lập trình bằng giao diện kéo thả các k
 
 OhStem App chạy được trên nhiều thiết bị khác nhau như máy tính, laptop, máy tính bảng, điện thoại (IOS và Android).
 
-.. image:: images/xbot_3.1.png
+.. image:: Images/xbot_3.1.png
     :width: 400px
     :align: center
 |  
@@ -29,7 +29,7 @@ Arduino là môi trường **lập trình dạng chữ viết dựa trên ngôn 
 
 Arduino là phần mềm cực kỳ phổ biến và mạnh mẽ trong cộng đồng công nghê, phù hợp để lập trình các ứng dụng nâng cao và phức tạp hơn.
 
-.. image:: images/xbot_3.2.png
+.. image:: Images/xbot_3.2.png
     :width: 400px
     :align: center
 |   
@@ -40,7 +40,7 @@ Arduino là phần mềm cực kỳ phổ biến và mạnh mẽ trong cộng đ
 
 Có rất nhiều phần mềm hỗ trợ lập trình MicroPython cho xBot: uPyCraft, Visual Studio Code,...
 
-.. image:: images/xbot_3.3.png
+.. image:: Images/xbot_3.3.png
     :width: 400px
     :align: center
 |   
@@ -54,9 +54,9 @@ Có rất nhiều phần mềm hỗ trợ lập trình MicroPython cho xBot: uPy
 
 - **Trên máy tính và laptop**
 
-Trên máy tính hoặc laptop, bạn có thể truy cập vào trang web `<https://app.ohstem.vn >`_ để sử dụng phần mềm OhStem App mà không cần download và cài đặt gì khác. 
+Trên máy tính hoặc laptop, bạn có thể truy cập vào trang web `<https://app.ohstem.vn>`_ để sử dụng phần mềm OhStem App mà không cần download và cài đặt gì khác. 
 
-.. image:: images/xbot_3.4.png
+.. image:: Images/xbot_3.4.png
     :width: 600px
     :align: center
 |  
@@ -72,7 +72,7 @@ Trên máy tính hoặc laptop, bạn có thể truy cập vào trang web `<http
 
 Tìm và cài đặt ứng dụng **OhStem App** có trên Play Store của Android hoặc App Store của iOS.
 
-.. image:: images/xbot_3.5.png
+.. image:: Images/xbot_3.5.png
     :width: 400px
     :align: center
 | 
@@ -83,7 +83,7 @@ Tìm và cài đặt ứng dụng **OhStem App** có trên Play Store của Andr
 
 Chọn menu lập trình để vào giao diện lập trình cho xBot.
 
-.. image:: images/xbot_3.6.png
+.. image:: Images/xbot_3.6.png
     :width: 800px
     :align: center
 |  
@@ -94,26 +94,26 @@ Các thành phần của giao diện lập trình này sẽ được giải thí
 
 Đây là khu vực chứa các nhóm khối lệnh, với nhiều màu sắc khác nhau cho từng nhóm, giúp chúng ta dễ dàng tìm được khối lệnh cần sử dụng khi cần.
 
-.. image:: images/xbot_3.7.png
+.. image:: Images/xbot_3.7.png
     :width: 800px
     :align: center
    
-.. image:: images/xbot_3.8.png
+.. image:: Images/xbot_3.8.png
     :width: 800px
     :align: center
 
-.. image:: images/xbot_3.9.png
+.. image:: Images/xbot_3.9.png
     :width: 800px
     :align: center
 
-.. image:: images/xbot_3.10.png
+.. image:: Images/xbot_3.10.png
     :width: 800px
     :align: center
 |
 
 Ngoài ra còn có một số khối lệnh nâng cao khác sẽ được nhắc đến trong bài sau.
 
-.. image:: images/xbot_3.11.png
+.. image:: Images/xbot_3.11.png
     :width: 400px
     :align: center
 |   
@@ -128,14 +128,14 @@ Bạn có thể kéo và di chuyển, phóng to, thu nhỏ các khối lệnh.
 
 OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả khối lệnh** và **lập trình bằng code** với ngôn ngữ MicroPython.
 
-.. image:: images/xbot_3.12.png
+.. image:: Images/xbot_3.12.png
     :width: 800px
     :align: center
 |    
 
     **3.3.4 Các nút chức năng**
 
-.. image:: images/xbot_3.13.png
+.. image:: Images/xbot_3.13.png
     :width: 800px
     :align: center
 |   
@@ -146,11 +146,11 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
 - **Kết nối các khối lệnh**
 
-.. image:: images/xbot_3.14.png
+.. image:: Images/xbot_3.14.png
     :width: 800px
     :align: center
 | 
-.. image:: images/xbot_3.15.png
+.. image:: Images/xbot_3.15.png
     :width: 800px
     :align: center
 | 
@@ -165,17 +165,18 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
         3. Chọn **Xóa mảnh này**
 
-.. image:: images/xbot_3.16.png
+.. image:: Images/xbot_3.16.png
     :width: 400px
     :align: center
 |   
+
     + Xóa trên thiết bị di động
 
         1. Nhấn giữ khối lệnh để chờ bảng tùy chọn hiện ra.
 
         2. Chọn **Xóa mảnh này**
 
-.. image:: images/xbot_3.17.png
+.. image:: Images/xbot_3.17.png
     :width: 400px
     :align: center
 |   
@@ -186,7 +187,7 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
     2. Khi **xóa khối lệnh cha, các khối lệnh con sẽ bị xóa theo** (bảng tùy chọn sẽ hiển thị số mảnh sẽ bị xóa)
 
-.. image:: images/xbot_3.18.png
+.. image:: Images/xbot_3.18.png
     :width: 400px
     :align: center
 |   
@@ -194,14 +195,14 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
     1. Nhấp giữ nhóm khối lệnh và kéo vào danh mục khối lệnh
 
-.. image:: images/xbot_3.19.png
+.. image:: Images/xbot_3.19.png
     :width: 400px
     :align: center
 | 
 
     2. Thả ra để xóa nhóm khối lệnh
 
-.. image:: images/xbot_3.20.png
+.. image:: Images/xbot_3.20.png
     :width: 400px
     :align: center
 |   
@@ -212,13 +213,13 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
 
 Tương tự như xóa khối lệnh, bạn chọn khối lệnh và click chuột phải, chọn Tạo bản sao.
 
-.. image:: images/xbot_3.21.png
+.. image:: Images/xbot_3.21.png
     :width: 400px
     :align: center
 |    
 Bên cạnh đó, để tạo bản sao cho nhiều khối lệnh, các khối lệnh cần nằm trong khối lệnh cha, khi đó ta sao chếp khối lệnh cha sẽ sao chép luôn tất cả các khối lệnh con có trong đó:
 
-.. image:: images/xbot_3.22.png
+.. image:: Images/xbot_3.22.png
     :width: 400px
     :align: center
 | 

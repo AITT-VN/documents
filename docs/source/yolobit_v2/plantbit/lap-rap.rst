@@ -1,9 +1,10 @@
 2. Hướng dẫn lắp ráp Plant:Bit 
 ========================================
 
-2.1 Lắp ráp
+Lắp ráp
 -----------
--------------
+--------------
+
 
 Để lắp ráp mô hình hoàn chỉnh của Plant:Bit, ta làm theo những bước sau:
 
@@ -64,13 +65,13 @@
 10. Gắn trụ nhựa vào mặt trêng
 
 .. image:: images/planbit_13.png
-    :width: 200px
+    :width: 500px
     :align: center
 |   
 11. Gắn giá đỡ vào mặt trên
 
 .. image:: images/planbit_14.png
-    :width: 200px
+    :width: 500px
     :align: center
 |   
 12. Gắn các module lên mặt trên
@@ -122,9 +123,9 @@
     :align: center
 |   
 
-2.2 Sơ đồ kết nối
------------
+Sơ đồ kết nối
 -------------
+---------------
 
 .. image:: images/planbit_22.1.png
     :width: 800px

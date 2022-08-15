@@ -13,19 +13,19 @@ Thiết bị cần dùng
 
 - Cảm biến DHT20 
 
-.. image:: images/homebit_38.png
+.. image:: Images/homebit_38.png
     :width: 200px
     :align: center
 | 
 - Màn hình LCD
 
-.. image:: images/homebit_39.png
+.. image:: Images/homebit_39.png
     :width: 200px
     :align: center
 |   
 - Quạt mini 
 
-.. image:: images/homebit_48.png
+.. image:: Images/homebit_48.png
     :width: 200px
     :align: center
 |
@@ -38,7 +38,7 @@ Kết nối
   
 - Kết nối quạt mini vào cổng P10
 
-.. image:: images/homebit_49.png
+.. image:: Images/homebit_49.png
     :width: 500px
     :align: center
 |
@@ -47,7 +47,7 @@ Giới thiệu khối lệnh
 -------------------
 -------------------
 
-.. image:: images/homebit_50.png
+.. image:: Images/homebit_50.png
     :width: 400px
     :align: center
 |   
@@ -57,13 +57,13 @@ Viết chương trình
 
 1. Tạo điều kiện: Nếu đọc nhiệt độ ≥ 29, thực hiện bật quạt với tốc độ 50
 
-.. image:: images/homebit_51.png
+.. image:: Images/homebit_51.png
     :width: 600px
     :align: center
 |   
 2. Tương tự, nếu nhiệt độ dưới 29, quạt sẽ tự tắt (tốc độ 0%)
 
-.. image:: images/homebit_52.png
+.. image:: Images/homebit_52.png
     :width: 600px
     :align: center
 |
@@ -74,7 +74,7 @@ Chương trình mẫu
 
 - Quạt thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2Cvm3FKxUZsvMs1IgM5woUPhIfo>`_
 
-.. image:: images/homebit_53.png
+.. image:: Images/homebit_53.png
     :width: 200px
     :align: center
 |

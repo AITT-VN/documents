@@ -2,12 +2,12 @@
 ==========================
 
 .. image:: images/invento_26.png
-    :width: 500px
+    :width: 400px
     :align: center
 | 
 Trước khi lắp ráp, bạn cần chỉnh động cơ Servo về đúng góc. 
 
-Vào OhStem App > Chọn thiết bị xBot > Mở rộng > Chó lắc đầu.
+Vào **OhStem App > Chọn thiết bị xBot > Mở rộng > Chó lắc đầu**.
 
 Thứ tự thực hiện như sau: 
 

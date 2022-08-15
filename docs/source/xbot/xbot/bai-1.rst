@@ -13,13 +13,13 @@ Hiểu về động cơ và các khối lệnh giúp cho xBot có thể di chuy�
 
 Các động cơ này sẽ giúp cho xBot di chuyển tự do nhiều hướng (tiến tới, lùi lại, rẽ trái, rẽ phải) hoặc thực hiện một tác vụ phức tạp nào đó theo yêu cầu.
 
-.. image:: images/xbot_bai_1.1.png
+.. image:: Images/xbot_bai_1.1.png
     :width: 600px
     :align: center
 |   
 **Động cơ có trên xBot**
 
-.. image:: images/xbot_bai_1.2.png
+.. image:: Images/xbot_bai_1.2.png
     :width: 700px
     :align: center
 | 
@@ -33,7 +33,7 @@ Các động cơ này sẽ giúp cho xBot di chuyển tự do nhiều hướng (
 
 - **Cách 1: Điều khiển 2 động cơ cùng lúc**
 
-.. image:: images/xbot_bai_1.3.png
+.. image:: Images/xbot_bai_1.3.png
     :width: 700px
     :align: center
 |   
@@ -41,11 +41,11 @@ Bạn hãy thử đặt xBot xuống nền nhà và chạy thử lệnh trên xe
 
 Ngoài ra, bạn cũng có thể sử dụng khối lệnh di chuyển với thời gian vô hạn sau:
 
-.. image:: images/xbot_bai_1.4.png
+.. image:: Images/xbot_bai_1.4.png
     :width: 700px
     :align: center
 | 
-.. image:: images/xbot_bai_1.5.png
+.. image:: Images/xbot_bai_1.5.png
     :width: 700px
     :align: center
 | 
@@ -54,15 +54,15 @@ Ngoài ra, bạn cũng có thể sử dụng khối lệnh di chuyển với th�
 
 Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBot di chuyển theo ý muốn.
 
-.. image:: images/xbot_bai_1.6.png
+.. image:: Images/xbot_bai_1.6.png
     :width: 700px
     :align: center
 |   
-.. image:: images/xbot_bai_1.7.png
+.. image:: Images/xbot_bai_1.7.png
     :width: 700px
     :align: center
 | 
-.. image:: images/xbot_bai_1.8.png
+.. image:: Images/xbot_bai_1.8.png
     :width: 700px
     :align: center
 | 
@@ -84,19 +84,19 @@ Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBo
 
 - **Chương trình 1:** Ở trên xBot có một nút nhấn, khi nút được nhấn, xBot di chuyển về phía trước 1 giây và sau đó lùi lại 1 giây. 
 
-.. image:: images/xbot_bai_1.10.png
+.. image:: Images/xbot_bai_1.10.png
     :width: 500px
     :align: center
 | 
 **Khối lệnh chương trình**
 
-.. image:: images/xbot_bai_1.11.png
+.. image:: Images/xbot_bai_1.11.png
     :width: 600px
     :align: center
 | 
 **Sơ đồ hoạt động**
 
-.. image:: images/xbot_bai_1.12.png
+.. image:: Images/xbot_bai_1.12.png
     :width: 500px
     :align: center
 |  
@@ -106,13 +106,13 @@ Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBo
 
 **Sơ đồ hoạt động**
 
-.. image:: images/xbot_bai_1.13.png
+.. image:: Images/xbot_bai_1.13.png
     :width: 200px
     :align: center
 |  
 **Khối lệnh chương trình**
 
-.. image:: images/xbot_bai_1.14.png
+.. image:: Images/xbot_bai_1.14.png
     :width: 600px
     :align: center
 |  
@@ -127,13 +127,13 @@ Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBo
   
 **Sơ đồ hoạt động**
 
-.. image:: images/xbot_bai_1.15.png
+.. image:: Images/xbot_bai_1.15.png
     :width: 200px
     :align: center
 |    
 **Khối lệnh chương trình**
 
-.. image:: images/xbot_bai_1.16.png
+.. image:: Images/xbot_bai_1.16.png
     :width: 600px
     :align: center
 | 
@@ -149,13 +149,13 @@ Trong phần này, bạn hãy thử viết một chương trình phức tạp h�
 
 **Điều kiện**: *xBot sẽ tiến tới và rẽ sau mỗi 2 giây.*
 
-.. image:: images/xbot_bai_1.17.png
+.. image:: Images/xbot_bai_1.17.png
     :width: 200px
     :align: center
 |    
 **Bước 1**: Cho xBot tiến tới 2 giây vẽ rẽ phải 0.5 giây.
 
-.. image:: images/xbot_bai_1.18.png
+.. image:: Images/xbot_bai_1.18.png
     :width: 600px
     :align: center
 | 
@@ -163,7 +163,7 @@ Trong phần này, bạn hãy thử viết một chương trình phức tạp h�
 
 **Bước 2**: Tạo ra 4 bản sao của thao tác di chuyển, ứng với 4 cạnh hình vuông.
 
-.. image:: images/xbot_bai_1.19.png
+.. image:: Images/xbot_bai_1.19.png
     :width: 600px
     :align: center
 |   
@@ -181,13 +181,13 @@ Chương trình khi đó sẽ như sau:
 
 **Sơ đồ hoạt động**
 
-.. image:: images/xbot_bai_1.20.png
+.. image:: Images/xbot_bai_1.20.png
     :width: 200px
     :align: center
 | 
 **Khối lệnh chương trình**
 
-.. image:: images/xbot_bai_1.21.png
+.. image:: Images/xbot_bai_1.21.png
     :width: 600px
     :align: center
 |  

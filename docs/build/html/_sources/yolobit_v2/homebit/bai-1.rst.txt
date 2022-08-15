@@ -17,13 +17,13 @@ Thiết bị cần dùng
 
 - Mắt đọc IR
 
-.. image:: images/homebit_23.1.png
+.. image:: Images/homebit_23.1.png
     :width: 200px
     :align: center
 |   
 - Remote điều khiển 
 
-.. image:: images/homebit_23.png
+.. image:: Images/homebit_23.png
     :width: 200px
     :align: center
 | 
@@ -34,7 +34,7 @@ Kết nối
 
 Kết nối **mắt đọc IR** vào cổng P1
 
-.. image:: images/homebit_24.png
+.. image:: Images/homebit_24.png
     :width: 500px
     :align: center
 |   
@@ -44,19 +44,19 @@ Giới thiệu khối lệnh
 ----------------------
 ----------------------
 
-.. image:: images/homebit_22.1.png
+.. image:: Images/homebit_22.1.png
     :width: 500px
     :align: center
 |    
-.. image:: images/homebit_22.3.png
+.. image:: Images/homebit_22.3.png
     :width: 400px
     :align: center
 | 
-.. image:: images/homebit_22.2.png
+.. image:: Images/homebit_22.2.png
     :width: 400px
     :align: center
 |
-.. image:: images/homebit_22.png
+.. image:: Images/homebit_22.png
     :width: 600px
     :align: center
 |
@@ -67,7 +67,7 @@ Viết chương trình
 
 1. Kéo khối lệnh điều kiện vào phần lặp lại mãi mãi
 
-.. image:: images/homebit_25.png
+.. image:: Images/homebit_25.png
     :width: 200px
     :align: center
 |    
@@ -79,20 +79,20 @@ Viết chương trình
   
 - Kéo khối lệnh **đổi màu tất cả đèn LED** thành màu đỏ vào phần Thực hiện 
 
-.. image:: images/homebit_26.png
+.. image:: Images/homebit_26.png
     :width: 600px
     :align: center
 |    
 3. Xóa tín hiệu đã thu được từ remote (để không trùng lặp với tín hiệu sau đó)
 
-.. image:: images/homebit_27.png
+.. image:: Images/homebit_27.png
     :width: 600px
     :align: center
 |    
 4. Tương tự, lập trình để khi nút C được nhấn, đèn LED sẽ tắt (chuyển thành màu đen)
 
-.. image:: images/homebit_28.png
-    :width: 800px
+.. image:: Images/homebit_28.png
+    :width: 600px
     :align: center
 |  
 
@@ -102,7 +102,7 @@ Chương trình mẫu
 
 - Điều khiển đèn bằng Remote: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2CvfwiFXldLghTqTQf9B19e19N6>`_
 
-.. image:: images/homebit_28.1.png
+.. image:: Images/homebit_28.1.png
     :width: 200px
     :align: center
 | 

@@ -1,4 +1,4 @@
-1. Giới thiệu
+1. Giới thiệu xBot Inventor Kit
 =====================
 
 Bộ xBot Inventor Kit là bộ robot lắp ráp mở rộng cho robot xBot. có thể lắp ghép thành 10 mô hình khác nhau.
@@ -12,6 +12,7 @@ Bộ Kit có thể lắp ráp được thành 5 mô hình xe robot và 5 mô hì
 xBot Inventor Kit gồm hơn 300 thành phần lắp ráp được làm từ nhựa, mang lại độ bền và tính an toàn cao. Ngoài ra, bên trong có kèm các module điện tử như động cơ Servo – dùng để xoay và điều khiển các bộ phận trên robot.
 
 Sản phẩm có kèm theo hướng dẫn lắp ráp chi tiết.
+
 
 Bộ kit bao gồm
 -----------------

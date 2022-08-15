@@ -11,14 +11,12 @@ Sản phẩm sử dụng phương pháp kéo thả khối lệnh đơn giản, c
     :align: center 
 |
  **Thành phần**
----------------------------------
----------------------------------
 
-    .. image:: images/homebit_2.png
+    .. image:: Images/homebit_2.png
         :width: 800px
         :align: center  
 
-    .. image:: images/homebit_3.png
+    .. image:: Images/homebit_3.png
         :width: 800px
         :align: center 
 

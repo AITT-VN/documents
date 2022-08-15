@@ -14,13 +14,13 @@ Biết cách sử dụng remote hồng ngoại và phần mềm OhStem App để
 
 Trên mạch điều khiển xBot có tích hợp sẵn một mắt nhận tín hiệu hồng ngoại, giúp xBot có thể đọc được tín hiệu từ remote đi kèm xBot.
 
-.. image:: images/xbot_139.png
+.. image:: Images/xbot_139.png
     :width: 700px
     :align: center
 |   
 Remote hồng ngoại đi kèm xBot:
 
-.. image:: images/xbot_140.png
+.. image:: Images/xbot_140.png
     :width: 600px
     :align: center
 |   
@@ -33,7 +33,7 @@ Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho 
 
 - Các phím số: Điều chỉnh tốc độ
 
-.. image:: images/xbot_141.png
+.. image:: Images/xbot_141.png
     :width: 700px
     :align: center
 |   
@@ -41,7 +41,7 @@ Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho 
 
 Để xBot đọc được tín hiệu, bạn cần sử dụng các khối lệnh sau:
 
-.. image:: images/xbot_142.png
+.. image:: Images/xbot_142.png
     :width: 800px
     :align: center
 |   
@@ -53,13 +53,13 @@ Trên remote có nhiều nút nhấn, chúng ta sẽ viết chương trình cho 
 
 Sơ đồ xử lý như sau:
 
-.. image:: images/xbot_143.png
+.. image:: Images/xbot_143.png
     :width: 400px
     :align: center
 |   
 Chương trình khối lệnh như sau:
 
-.. image:: images/xbot_144.png
+.. image:: Images/xbot_144.png
     :width: 600px
     :align: center
 |   
@@ -71,13 +71,13 @@ Trong chương trình này, chúng ta sẽ liên tục kiểm tra và cho xBot d
 
 Sơ đồ xử lý của chương trình:
 
-.. image:: images/xbot_145.png
+.. image:: Images/xbot_145.png
     :width: 400px
     :align: center
 |   
 Chương trình khối lệnh như sau:
 
-.. image:: images/xbot_146.png
+.. image:: Images/xbot_146.png
     :width: 600px
     :align: center
 |   
@@ -87,7 +87,7 @@ Chúng ta sẽ viết chương trình thay đổi tốc độ cho xBot. Bằng c
 
 Để thay đổi được tốc độ, chúng ta sử dụng biến để lưu tốc độ hiện tại và thay đổi nó khi nhận được lệnh từ các nút số.
 
-.. image:: images/xbot_147.png
+.. image:: Images/xbot_147.png
     :width: 400px
     :align: center
 |   
@@ -97,19 +97,19 @@ Ban đầu ta cho biến này là giá trị 100, nghĩa là tốc độ tối �
 
 Sơ đồ xử lý của hàm đó như sau:
 
-.. image:: images/xbot_148.png
+.. image:: Images/xbot_148.png
     :width: 800px
     :align: center
 |   
 Chương trình của hàm:
 
-.. image:: images/xbot_149.png
+.. image:: Images/xbot_149.png
     :width: 500px
     :align: center
 |   
 Sau đó sử dụng hàm và biến tốc độ vào chương trình cũ, chúng ta có chương trình sau:
 
-.. image:: images/xbot_150.png
+.. image:: Images/xbot_150.png
     :width: 700px
     :align: center
 |   
@@ -123,13 +123,13 @@ Sau khi chạy chương trình, bạn thử nhấn các nút 1 đến 4 trên re
 
 Có một cách khác để điều khiển xBot từ xa, đó là sử dụng phần mềm OhStem App. Chúng ta có thể dùng các giao diện điều khiển trong mục **Chơi** của phần mềm.
 
-.. image:: images/xbot_151.png
+.. image:: Images/xbot_151.png
     :width: 700px
     :align: center
 |   
 Tuy nhiên, bạn cũng có thể tự tạo một giao diện điều khiển theo yêu cầu riêng của bạn cho các mục đích sau:
 
-.. image:: images/xbot_152.png
+.. image:: Images/xbot_152.png
     :width: 700px
     :align: center
 |   
@@ -137,13 +137,13 @@ Tuy nhiên, bạn cũng có thể tự tạo một giao diện điều khiển t
 
 1. Để tạo một bảng điều khiển mới, bạn hãy vào mục **Sáng tạo**:
 
-.. image:: images/xbot_153.png
+.. image:: Images/xbot_153.png
     :width: 700px
     :align: center
 |   
 2. Sau đó nhấn vào biểu tượng Tạo mới, phần mềm sẽ mửo ra giao diện thiết kế bảng điều khiển mới:
 
-.. image:: images/xbot_154.png
+.. image:: Images/xbot_154.png
     :width: 600px
     :align: center
 |   
@@ -153,11 +153,11 @@ Tuy nhiên, bạn cũng có thể tự tạo một giao diện điều khiển t
 
 Phần mềm hỗ trợ các loại widget như bảng sau:
 
-.. image:: images/xbot_155.png
+.. image:: Images/xbot_155.png
     :width: 700px
     :align: center
 |   
-.. image:: images/xbot_156.png
+.. image:: Images/xbot_156.png
     :width: 700px
     :align: center
 |   
@@ -179,7 +179,7 @@ Chúng ta hãy tạo thử một bảng điều khiển có những chức năng
 
 1. Kéo widget D-pad và thanh Servo S1 vào, thực hiện như sau:
 
-.. image:: images/xbot_157.png
+.. image:: Images/xbot_157.png
     :width: 700px
     :align: center
 |   
@@ -189,25 +189,25 @@ Bạn nhấn vào widget thanh kéo Servo, chọn Cài đặt và cấu hình nh
 
 Bạn có thể thay đổi tốc độ quay của Servo tùy ý. Bạn chọn cổng Servo đúng với cổng dùng để cắm Servo, từ 1 đến 8.
 
-.. image:: images/xbot_158.png
+.. image:: Images/xbot_158.png
     :width: 400px
     :align: center
 |   
 3. Đưa nút nhấn vào để bật còi cảnh báo:
 
-.. image:: images/xbot_159.png
+.. image:: Images/xbot_159.png
     :width: 500px
     :align: center
 |   
 4. Bạn nhấn vào Nút nhấn và chọn đổi tên thành "Còi xe"
 
-.. image:: images/xbot_160.png
+.. image:: Images/xbot_160.png
     :width: 700px
     :align: center
 |   
 5. Cấu hình cho nút: chọn *Code khi nhấn nút* để viết chương trình như hình minh họa:
 
-.. image:: images/xbot_161.png
+.. image:: Images/xbot_161.png
     :width: 700px
     :align: center
 |   
@@ -217,20 +217,20 @@ Lưu ý: Trong lúc viết chương trình, bạn có thể nhấn vào các nú
 
 6. Thêm vào một nút bật tắt và đặt tên là "Đèn xe"
 
-.. image:: images/xbot_162.png
+.. image:: Images/xbot_162.png
     :width: 600px
     :align: center
 |   
 7. Viết chương trình cho 2 trường hợp là khi nút được bật và tắt.
 
-.. image:: images/xbot_163.png
-    :width: 600px
+.. image:: Images/xbot_163.png
+    :width: 500px
     :align: center
 |   
 Sau khi hoàn thành bảng điều khiển mới, bạn nhấn vào biểu tượng Play ở góc phải để chuyển sang chế độ điều khiển như hình minh họa phía dưới:
 
-.. image:: images/xbot_164.png
-    :width: 700px
+.. image:: Images/xbot_164.png
+    :width: 500px
     :align: center
 |   
 Cuối cùng, hãy tiến hành kết nối xBot và sử dụng bảng điều khiển vừa tạo xem có hoạt động đúng như mình cài đặt không nhé.

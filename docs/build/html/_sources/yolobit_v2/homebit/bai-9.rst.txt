@@ -21,7 +21,7 @@ Giới thiệu khối lệnh
 -------------------
 -------------------
 
-.. image:: images/homebit_97.png
+.. image:: Images/homebit_97.png
     :width: 650px
     :align: center
 |   
@@ -31,14 +31,14 @@ Viết chương trình
 
 1. Tạo điều khiện: Nếu bị lắc với độ nhạy là 11
 
-.. image:: images/homebit_98.png
-    :width: 550px
+.. image:: Images/homebit_98.png
+    :width: 400px
     :align: center
 |   
 
 2. Khi phát hiện có động đất (ngôi nhà bị lắc), chương trình bắt đầu xóa màn hình LCD trước đó, hiện 2 dòng chữ "Alarm - Earthquake!!!" lên Lcd và phát ra âm thanh cảnh báo
 
-.. image:: images/homebit_99.png
+.. image:: Images/homebit_99.png
     :width: 650px
     :align: center
 |   
@@ -50,7 +50,7 @@ Chương trình mẫu
 
 - Cảnh báo động đất: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2CydOtiit11sAnmuQuHcyUlWJoJ>`_
 
-.. image:: images/homebit_100.png
+.. image:: Images/homebit_100.png
     :width: 200px
     :align: center
 |

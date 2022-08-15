@@ -13,19 +13,19 @@ Thiết bị cần dùng
 
 - Mạch mở rộng gắn sẵn Yolo:Bit
 
-.. image:: images/planbit_31.png
+.. image:: Images/planbit_31.png
     :width: 200px
     :align: center
 |
 -  Module đóng ngắt 2 kênh
 
-.. image:: images/planbit_45.png
+.. image:: Images/planbit_45.png
     :width: 200px
     :align: center
 |
 -  Động cơ bơm nước
 
-.. image:: images/planbit_46.png
+.. image:: Images/planbit_46.png
     :width: 200px
     :align: center
 |
@@ -38,7 +38,7 @@ Kết nối
 
 - Nối **động cơ bơm nước** vào cổng USB Output1
 
-.. image:: images/planbit_47.png
+.. image:: Images/planbit_47.png
     :width: 400px
     :align: center
 |
@@ -48,11 +48,11 @@ Giới thiệu khối lệnh
 -----------------------
 -----------------------
 
-.. image:: images/planbit_48.png
+.. image:: Images/planbit_48.png
     :width: 400px
     :align: center  
 |
-.. image:: images/planbit_49.png
+.. image:: Images/planbit_49.png
     :width: 1000px
     :align: center 
 |
@@ -64,7 +64,7 @@ Viết chương trình
 
 1. Chọn **khối lệnh khi nút được nhấn** từ mục **Ngõ vào**
 
-.. image:: images/planbit_50.png
+.. image:: Images/planbit_50.png
     :width: 300px
     :align: center
 |
@@ -72,7 +72,7 @@ Viết chương trình
 
 Tiếp tục, gắn thêm **khối lệnh đổi màu tất cả LED** và chọn màu xanh lá
 
-.. image:: images/planbit_51.png
+.. image:: Images/planbit_51.png
     :width: 600px
     :align: center
 |
@@ -82,7 +82,7 @@ Tiếp tục, gắn thêm **khối lệnh đổi màu tất cả LED** và chọ
 
 - Tắt đèn (đổi màu LED thành màu đen)
 
-.. image:: images/planbit_52.png
+.. image:: Images/planbit_52.png
     :width: 600px
     :align: center
 |
@@ -96,7 +96,7 @@ Chương trình mẫu
 
 - Bật tắt máy bơm: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2CymiptdeuphF0inMtfB5POwvPK>`_
 
-.. image:: images/planbit_53.png
+.. image:: Images/planbit_53.png
     :width: 200px
     :align: center
 |

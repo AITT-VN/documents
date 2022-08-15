@@ -8,7 +8,7 @@
 
 Trước khi lắp ráp, bạn cần chỉnh động cơ Servo về đúng góc. 
 
-Vào OhStem App > Chọn thiết bị xBot > Mở rộng > Chó vẫy đuôi.
+Vào **OhStem App > Chọn thiết bị xBot > Mở rộng > Chó vẫy đuôi**.
 
 Thứ tự thực hiện như sau: 
 

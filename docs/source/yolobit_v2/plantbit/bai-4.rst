@@ -1,6 +1,7 @@
 7. Bài 4: Tưới nước tự động
 =====================================
 
+
 Mục tiêu
 -----------------------
 -----------------------
@@ -13,25 +14,25 @@ Thiết bị cần dùng
 
 - Cảm biến độ ẩm đất
 
-.. image:: images/planbit_30.png
+.. image:: Images/planbit_30.png
     :width: 200px
     :align: center
 |
 - Mạch mở rộng gắn sẵn Yolo:Bit
 
-.. image:: images/planbit_31.png
+.. image:: Images/planbit_31.png
     :width: 200px
     :align: center
 |
 -  Module đóng ngắt 2 kênh
 
-.. image:: images/planbit_45.png
+.. image:: Images/planbit_45.png
     :width: 200px
     :align: center
 |
 -  Động cơ bơm nước
 
-.. image:: images/planbit_46.png
+.. image:: Images/planbit_46.png
     :width: 200px
     :align: center
 |
@@ -54,19 +55,19 @@ Viết chương trình
 
 1. Bắt đầu với chương trình cảu bài 2
 
-.. image:: images/planbit_54.png
+.. image:: Images/planbit_54.png
     :width: 550px
     :align: center
 |
 2. Khi đất thiếu nước, cần tưới nước cho cây: Kéo thả khối lệnh bật máy bơm với tốc độ 50% vào phần thực hiện.
 
-.. image:: images/planbit_55.png
+.. image:: Images/planbit_55.png
     :width: 600px
     :align: center
 |
 3. Bơm nước trong 3 giây, sau đó tắt máy bơm
 
-.. image:: images/planbit_56.png
+.. image:: Images/planbit_56.png
     :width: 600px
     :align: center
 |
@@ -78,7 +79,7 @@ Chương trình mẫu
 
 - Tưới nước tự động: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2CynwjSnyeJMarOU7VUV38SRte1>`_
 
-.. image:: images/planbit_57.png
+.. image:: Images/planbit_57.png
     :width: 200px
     :align: center
 |

@@ -7,7 +7,7 @@
 |   
 Trước khi lắp ráp, bạn cần chỉnh động cơ Servo về đúng góc. 
 
-Vào OhStem App > Chọn thiết bị xBot > Mở rộng > Xe tải.
+Vào **OhStem App > Chọn thiết bị xBot > Mở rộng > Xe tải**.
 
 Thứ tự thực hiện như sau: 
 
@@ -32,7 +32,7 @@ Kết nối Servo vào chân S1 của bộ điều khiển
 |  
 
 1. Kết nối App OhStem với xBot 
-2. Bật công tắc (Sang chế độ Đổ")
+2. Bật công tắc (Sang chế độ "Đổ")
 
 .. image:: images/invento_45.3.png
     :width: 400px

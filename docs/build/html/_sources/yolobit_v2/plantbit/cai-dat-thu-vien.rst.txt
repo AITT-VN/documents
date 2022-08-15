@@ -7,7 +7,7 @@ Cài đặt thư viện
 
 Để lập trình Plant:Bit, bạn cần cài đặt thư viện. Các bước thực hiện như sau:
 
-1. Truy cập OhStem App tại app.ohstem.vn hoặc tải OhStem App trên Google Play / App Store
+1. Truy cập OhStem App tại `<app.ohstem.vn>`_ hoặc tải OhStem App trên Google Play / App Store
 
 .. image:: images/planbit_23.png
     :width: 400px

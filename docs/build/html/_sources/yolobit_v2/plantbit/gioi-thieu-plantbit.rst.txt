@@ -5,17 +5,17 @@ Plant:Bit là bộ trồng cây thông minh, có thể tự động tưới nư�
 
 Với bộ Kit này, bạn sẽ làm quen với các công nghệ mới trong nông nghiệp, từ đó sáng tạo nhiều dự án nâng cao hơn.
 
-.. image:: images/planbit_1.png
+.. image:: Images/planbit_1.png
     :width: 350px
     :align: center
 |   
 **Thành phần**
 
-.. image:: images/plantbit_2.png
+.. image:: Images/plantbit_2.png
     :width: 900px
     :align: center  
 
-.. image:: images/plantbit_3.png
+.. image:: Images/plantbit_3.png
     :width: 900px
     :align: center 
 |

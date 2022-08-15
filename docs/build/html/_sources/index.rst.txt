@@ -15,10 +15,10 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Yolo:Bit
+   :caption: Máy tính lập trình mini Yolo:Bit
 
    yolobit_v2/lam-quen.rst
-   yolobit_v2/rover.rst
+
    yolobit_v2/aiot.rst
    yolobit_v2/homebit.rst
    yolobit_v2/plantbit.rst
@@ -28,7 +28,14 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: xBot
+   :caption: Robot STEM Rover
+
+   robot_rover/rover.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Robot lập trình xBot
 
    xbot/xbot.rst
    xbot/inventor.rst

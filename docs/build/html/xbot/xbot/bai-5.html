@@ -69,13 +69,13 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-3.html">7. Bài 3: Xử lý thông tin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Bài 4: Robot dò đường</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">9. Bài 5: Robot né vật cản</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#toc-do-cua-am-thanh">9.1 Tốc độ của âm thanh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cam-bien-khoang-cach">9.2 Cảm biến khoảng cách</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#doc-trang-thai-cam-bien">9.3 Đọc trạng thái cảm biến</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ap-dung-cam-bien-trong-di-chuyen">9.4 Áp dụng cảm biến trong di chuyển</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-biet-ne-vat-can">9.5 Robot biết né vật cản</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bai-tap-mo-rong">9.6 Bài tập mở rộng</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cau-hoi-on-tap">9.7 Câu hỏi ôn tập</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toc-do-cua-am-thanh">1. Tốc độ của âm thanh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cam-bien-khoang-cach">2. Cảm biến khoảng cách</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#doc-trang-thai-cam-bien">3. Đọc trạng thái cảm biến</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ap-dung-cam-bien-trong-di-chuyen">4. Áp dụng cảm biến trong di chuyển</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robot-biet-ne-vat-can">5. Robot biết né vật cản</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bai-tap-mo-rong">6. Bài tập mở rộng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cau-hoi-on-tap">7. Câu hỏi ôn tập</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-6.html">10. Bài 6: Thử thách nâng cao</a></li>
@@ -134,7 +134,7 @@
 <p><strong>Mục tiêu:</strong></p>
 <p>Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.</p>
 <section id="toc-do-cua-am-thanh">
-<h2>9.1 Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Permalink to this heading"></a></h2>
+<h2>1. Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Như đã biết, âm thanh được truyền đi dưới dạng sóng. Tốc độ truyền đi của âm thanh trong không khí là 340 m/s nhưng có thể thay đổi tùy vào nhiệt độ và độ ẩm.</p>
 <p>Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm thanh đó vọng lại, ta hoàn toàn có thể tính được khoảng cách đến vật cản.</p>
@@ -144,7 +144,7 @@
 </div>
 </section>
 <section id="cam-bien-khoang-cach">
-<h2>9.2 Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Permalink to this heading"></a></h2>
+<h2>2. Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/xbot_118.png"><img alt="../../_images/xbot_118.png" class="align-center" src="../../_images/xbot_118.png" style="width: 300px;" /></a>
 <div class="line-block">
@@ -162,7 +162,7 @@
 <p>Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.</p>
 </section>
 <section id="doc-trang-thai-cam-bien">
-<h2>9.3 Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Permalink to this heading"></a></h2>
+<h2>3. Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/xbot_120.png"><img alt="../../_images/xbot_120.png" class="align-center" src="../../_images/xbot_120.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -184,7 +184,7 @@
 </div>
 </section>
 <section id="ap-dung-cam-bien-trong-di-chuyen">
-<h2>9.4 Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Permalink to this heading"></a></h2>
+<h2>4. Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Robot dừng lại khi phát hiện vật cản</strong></p>
 <p>Trong chương trình này, chúng ta sẽ cho robot di chuyển về phía trước và dừn glại nếu phát hiện vật cản ở khảong cách nhỏ hơn 25cm.</p>
@@ -237,7 +237,7 @@
 </div>
 </section>
 <section id="robot-biet-ne-vat-can">
-<h2>9.5 Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Permalink to this heading"></a></h2>
+<h2>5. Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong phần này, chúng ta sẽ viết chương trình cho robot vừa di chuyển vừa né vật cản một cách thông minh.</p>
 <ul class="simple">
@@ -268,7 +268,7 @@
 </div>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>9.6 Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
+<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Robot thoát khỏi mê cung</p></li>
@@ -306,7 +306,7 @@
 </ol>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>9.7 Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
+<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Chỉ ra cảm biến khoảng cách trên xBot. Công dụng của nó là gì?</p></li>

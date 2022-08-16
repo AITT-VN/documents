@@ -6,7 +6,7 @@
 Hiểu về khái niệm biến và cách sử dụng biến trong chương trình. Hiểu về cảm biến gia tốc được tích hợp trên xBot, ứng dụng làm rrobot tự tránh khỏi các trường hợp nguy hiểm. 
 
 
-7.1 Giới thiệu về cảm biến gia tốc
+1. Giới thiệu về cảm biến gia tốc
 ----------------------
 ----------------------
 
@@ -43,7 +43,7 @@ Khối lệnh đọc giá trị các trục x, y, z của cảm biến gia tốc
 |
 
 
-7.2 Giới thiệu về cửa sổ thông tin
+2. Giới thiệu về cửa sổ thông tin
 -------------------------
 -------------------------
 
@@ -78,7 +78,7 @@ Bạn có thể thử in ra giá trị các trục còn lại là y và z.
 | 
 
 
-7.3 Giới thiệu về biến
+3. Giới thiệu về biến
 -------------------------
 -------------------------
 
@@ -125,13 +125,13 @@ Chương trình mẫu:
 |  
 
 
-7.4 Làm việc với biến
+4. Làm việc với biến
 ---------------------
 ---------------------
 
 Chúng ta có nhiều nhóm khối lệnh để làm việc với biến. Dưới đây là một số nhóm chính:
 
-**7.4.1 Các phép toán cơ bản**
+**4.1 Các phép toán cơ bản**
 
 Phép toán cơ bản gồm 4 loại: cộng (+), trừ (-), nhân (x), chia (÷).
 
@@ -183,7 +183,7 @@ Chúng ta thử viết chương trình đếm số lần nhấn nút. Chương t
     :align: center
 | 
 
-**7.4.2 Các phép so sánh**
+**4.2 Các phép so sánh**
 
 Chúng ta có thể dùng biến trong các phép so sánh. Các phép so sánh này sẽ trả về Đúng hoặc Sai. Bạn có thể sử dụng kết quả này trong các câu điều kiện khi lập trình.
 
@@ -279,7 +279,7 @@ Sau đó, bạn sử dụng các khối lệnh cho từng điều kiện theo nh
     :align: center
 |   
 
-7.5 Bài tập mở rộng
+5. Bài tập mở rộng
 ----------------------
 ----------------------
 
@@ -309,7 +309,7 @@ Ví dụ: Dùng khối lệnh “chọn 1 số bất kỳ” từ 1 đến 2. N�
 - Gợi ý: *dùng giá trị trục x của cảm biến gia tốc trong mục Đầu Vào.*
 
 
-7.6 Câu hỏi ôn tập 
+6. Câu hỏi ôn tập 
 ---------------------
 ---------------------
 

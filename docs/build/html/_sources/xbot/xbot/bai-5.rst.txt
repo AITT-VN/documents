@@ -6,7 +6,7 @@
 Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.
 
 
-9.1 Tốc độ của âm thanh
+1. Tốc độ của âm thanh
 ---------------------
 ---------------------
 
@@ -20,7 +20,7 @@ Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm 
 |   
 
 
-9.2 Cảm biến khoảng cách
+2. Cảm biến khoảng cách
 ---------------------
 ---------------------
 
@@ -41,7 +41,7 @@ xBot được trang bị một cảm biến khoảng cách có thể phát ra s�
 Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.
 
 
-9.3 Đọc trạng thái cảm biến
+3. Đọc trạng thái cảm biến
 -----------------------
 ---------------------
 Cảm biến khoảng cách được kết nối mặc định tới cổng 2 trên mạch điều khiển.
@@ -70,7 +70,7 @@ Bạn hãy đưa tay di chuyển lại gần hoặc ra xa dần cảm biến đ�
 |   
 
 
-9.4 Áp dụng cảm biến trong di chuyển
+4. Áp dụng cảm biến trong di chuyển
 ---------------------------
 ---------------------------
 
@@ -131,7 +131,7 @@ Bạn xây dựng các khối lệnh chương trình như sau:
 |   
 
 
-9.5 Robot biết né vật cản
+5. Robot biết né vật cản
 -----------------------
 -----------------------
 
@@ -169,7 +169,7 @@ Sau khi thay vào chương trình cũ thì sẽ thành:
     :width: 600px
     :align: center
 |   
-9.6 Bài tập mở rộng
+6. Bài tập mở rộng
 -----------------------
 ------------------------
 
@@ -213,7 +213,7 @@ Trong bài này, bạn hãy viết chương trình để robot có thể tìm v�
 
 4. Nếu không, xe rẽ trái trở lại và đi đến vạch kế tiếp
 
-9.7 Câu hỏi ôn tập
+7. Câu hỏi ôn tập
 ----------------
 ----------------
 

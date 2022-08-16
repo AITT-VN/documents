@@ -6,7 +6,7 @@
 Biết cách sử dụng giao diện lập trình khối kéo thả của phần mềm OhStem App và viết một chương trình đơn giản để làm việc với đèn LED RGB có sẵn trên robot.
 
 
-3.1 Các môi trường lập trình cho xBot
+1. Các môi trường lập trình cho xBot
 -----------------------------------
 -----------------------------------
 
@@ -48,7 +48,7 @@ Có rất nhiều phần mềm hỗ trợ lập trình MicroPython cho xBot: uPy
 
 **Lưu ý**: *Cuốn sách này sẽ sử dụng OhStem App để hướng dẫn lập trình. Các môi trường lập trình còn lại sẽ được hướng dẫn trong các tài liệu khác.*
 
-3.2 Download và cài đặt phần mềm OhStem App
+2. Download và cài đặt phần mềm OhStem App
 ---------------------------------------
 ---------------------------------------
 
@@ -77,7 +77,7 @@ Tìm và cài đặt ứng dụng **OhStem App** có trên Play Store của Andr
     :align: center
 | 
 
-3.3 Giao diện lập trình kéo thả của OhStem App
+3. Giao diện lập trình kéo thả của OhStem App
 ------------------------------------------
 ------------------------------------------
 
@@ -140,7 +140,7 @@ OhStem App hỗ trợ 2  chế độ lập trình là: **lập trình kéo thả
     :align: center
 |   
 
-3.4 Thao tác làm việc với khối lệnh
+4. Thao tác làm việc với khối lệnh
 -------------------------------
 ------------------------------
 

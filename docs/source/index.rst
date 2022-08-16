@@ -31,6 +31,7 @@ OhStem xin chào tất cả các bạn!
    :caption: Robot STEM Rover
 
    robot_rover/rover.rst
+   robot_rover/servo_pack.rst
 
 
 .. toctree::

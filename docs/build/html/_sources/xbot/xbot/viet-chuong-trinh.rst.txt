@@ -1,7 +1,7 @@
 4. Hướng dẫn viết chương trình
 =====================
 
-4.1 Hướng dẫn viết chương trình 
+1. Hướng dẫn viết chương trình 
 ------------
 -----------------
 
@@ -128,7 +128,7 @@ Sơ đồ hoạt động của chương trình như sau:
 |
 Sau khi hoàn thiện, bạn hãy chạy chương trình để xem đèn LED hoạt động nhưu thế nào. 
 
-4.2 Bài tập mở rộng
+2. Bài tập mở rộng
 ---------------
 ---------------
 
@@ -141,7 +141,7 @@ Chương trình tham khảo:
     :align: center
 |  
 
-4.3 Câu hỏi ôn tập
+3. Câu hỏi ôn tập
 ---------------
 -----------------
 

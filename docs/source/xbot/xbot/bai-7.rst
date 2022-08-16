@@ -6,7 +6,7 @@
 Biết cách sử dụng remote hồng ngoại và phần mềm OhStem App để điều khiển robot từ xa theo ý muốn.
 
 
-11.1 Điều khiển bằng remote hồng ngoại
+1. Điều khiển bằng remote hồng ngoại
 -----------------------------------
 -----------------------------------
 
@@ -117,7 +117,7 @@ Khi nhấn nút để rẽ trái hoặc phải, ta sẽ cho robot di chuyển v�
 
 Sau khi chạy chương trình, bạn thử nhấn các nút 1 đến 4 trên remote và di chuyển để xem tốc độ thay đổi giữa các lần nhấn nút có đúng không nhé.
 
-11.2 Điều khiển bằng điện thoại qua Bluetooth
+2. Điều khiển bằng điện thoại qua Bluetooth
 -------------------------------------------
 -------------------------------------------
 

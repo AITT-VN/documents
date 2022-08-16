@@ -6,7 +6,7 @@
 Biết cách kết hợp các loại cảm biến để có thể lập trình cho robot hoạt động thông minh hơn và giải quyết được các bài toán phức tạp. 
 
 
-10.1 Bản đồ sử dụng
+1. Bản đồ sử dụng
 ---------------------
 ---------------------
 
@@ -19,7 +19,7 @@ Bạn sẽ sử dụng bản đồ đi kèm với xBot trong bài học này.
 Bạn cũng có thể sử dụng băng keo đen và giấy trắng để tự làm bản đồ theo ý mình.
 
 
-10.2 Bài toán dò đường kết hợp với né vật cản
+2. Bài toán dò đường kết hợp với né vật cản
 ---------------------------
 ---------------------------
 
@@ -75,7 +75,7 @@ Sau khi ghép lại thì chương trình cuối cùng sẽ như sau:
 |   
 
 
-10.3 Bài toán tìm và đẩy ngã chai nước
+3. Bài toán tìm và đẩy ngã chai nước
 ----------------------------------
 ----------------------------------
 

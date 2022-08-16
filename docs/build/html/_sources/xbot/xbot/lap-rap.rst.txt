@@ -7,7 +7,7 @@
 |
 
 
-2.1 Thành phần 
+1. Thành phần 
 ------------
 ----------------
 
@@ -16,7 +16,7 @@
     :align: center  
 |
 
-2.2 Lắp ráp 
+2. Lắp ráp 
 -----------
 -------------
 
@@ -45,7 +45,7 @@
     :align: center  
 |
 
-2.3 Nối dây
+3. Nối dây
 -----------
 -------------
 
@@ -56,7 +56,7 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
     :align: center  
 |
 
-2.4 Bật công tắt 
+4. Bật công tắt 
 ------
 -----------
 
@@ -65,7 +65,7 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
     :align: center  
 |
 
-2.5 Hướng dẫn sạc pin 
+5. Hướng dẫn sạc pin 
 ----------
 ---------------
 

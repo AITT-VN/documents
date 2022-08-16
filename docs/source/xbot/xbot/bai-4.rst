@@ -5,7 +5,7 @@
 
 Hiểu về cảm biến dò đường và cách lập trình cho robot di chuyển chính xác theo đường kẻ.
 
-8.1 Giới thiệu về tia hồng ngoại
+1. Giới thiệu về tia hồng ngoại
 ------------------------
 ------------------------
 
@@ -45,7 +45,7 @@ Tia hồng ngoại có rất nhiều ứng dụng trong cuộc sống:
 | 
 
 
-8.2 Cảm biến dò đường
+2. Cảm biến dò đường
 -------------------------
 -------------------------
 
@@ -75,7 +75,7 @@ Cảm biến đi kèm sản phẩm đã được tinh chỉnh để pahan biệt
 |    
 
 
-8.3 Đọc trạng thái cảm biến dò đường
+3. Đọc trạng thái cảm biến dò đường
 -----------------------------
 -----------------------------
 Cảm biến dò đường mặc định được kết nối đến Cổng 1 trên mạch điều khiển.
@@ -123,7 +123,7 @@ Toàn bộ khối lệnh của chương trình như sau:
     :align: center
 | 
 
-8.4 Áp dụng cảm biến để di chuyển
+4. Áp dụng cảm biến để di chuyển
 ---------------------------
 ---------------------------
 
@@ -182,7 +182,7 @@ Tuy nhiên, sau đó vòng lặp sẽ quay lại và tiếp tục xử lý chư�
 |   
 Bạn hãy đặt xBot trên bản đồ có 5 vạch đen và chạy thử chương trình xem nào.
 
-8.5 Robot dò đường
+5. Robot dò đường
 --------------------
 --------------------
 
@@ -233,7 +233,7 @@ Chương trình sau khi chỉnh sửa sẽ như sau:
 |   
 Bạn có thể thử thay đổi tốc độ trong các trường hợp để robot di chuyển ổn định hơn và ít bị chệch khỏi đường line nhé.
 
-8.6 Bài tập mở rộng
+6. Bài tập mở rộng
 -----------------------
 -----------------------
 
@@ -256,7 +256,7 @@ Bãi xe bao gồm 3 chỗ. Chúng ta sẽ sử dụng mô hình bãi xe trên b�
 3. Robot cần xoay sang phải và lùi lại để vào đúng vị trí
 
 
-Câu hỏi ôn tập
+7. Câu hỏi ôn tập
 ------------------
 ------------------
 

@@ -6,7 +6,7 @@
 Làm quen với loa tích hợp có trên xBot, biết cách để kết hợp các khối lệnh phát nhạc và khối lệnh đổi màu đèn LED RGB để tạo các hiệu ứng vui nhộn.
 
 
-6.1 Giới thiệu về âm thanh và loa trên xBot
+1. Giới thiệu về âm thanh và loa trên xBot
 --------------------
 --------------------
 
@@ -62,7 +62,7 @@ Loa có 2 loại: chủ động và bị động. Trên mạch điều khiển c
 | 
 
 
-6.2 Các khối lệnh phát âm thanh
+2. Các khối lệnh phát âm thanh
 ---------------------
 --------------------
 
@@ -91,8 +91,7 @@ Trong đó
     :align: center
 |   
 
-
-6.3 Phát một điệu nhạc 
+3. Phát một điệu nhạc 
 ---------------------
 --------------------
 
@@ -127,7 +126,7 @@ Trong giai điệu trên, bạn thấy có 2 đoạn nhạc được lặp lại
 Sử dụng khối lệnh lặp lại sẽ giúp cho chương trình của chúng ta ngắn gọn và dễ đọc hơn nhiều đúng không nào?
 
 
-6.4 Sử dụng hàm để rút ngắn chương trình
+4. Sử dụng hàm để rút ngắn chương trình
 ---------------------
 ---------------------
 
@@ -192,7 +191,7 @@ Trong chương trình trên, có một điều khá khó chịu là thiếu th�
 |  
 
 
-6.5 Nhảy múa cùng xBot
+5. Nhảy múa cùng xBot
 ---------------------
 --------------------
 
@@ -262,7 +261,7 @@ Chương trình cuối cùng sẽ như sau:
 Bạn hãy chạy chương trình và quan sát xBot nhảy múa nhé.
 
 
-6.6 Bài tập mở rộng
+6. Bài tập mở rộng
 ---------------------
 ---------------------
 
@@ -303,7 +302,8 @@ Chương trình tham khảo.
 |  
 Bạn có thể nhấn vào nút Dừng chương trình để ngưng hiệu ứng hú còi nhé.
 
-6.7 Câu hỏi ôn tập
+
+7. Câu hỏi ôn tập
 --------------------
 --------------------
 

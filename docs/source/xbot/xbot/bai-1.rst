@@ -5,7 +5,8 @@
 
 Hiểu về động cơ và các khối lệnh giúp cho xBot có thể di chuyển theo ý muốn.
 
-5.1 Giới thiệu về động cơ
+
+1. Giới thiệu về động cơ
 -----------------
 -----------------
 
@@ -25,7 +26,7 @@ Các động cơ này sẽ giúp cho xBot di chuyển tự do nhiều hướng (
 | 
 
 
-5.2 Khối kệnh điều khiển động cơ
+2. Khối kệnh điều khiển động cơ
 ---------------------
 ---------------------
 
@@ -78,7 +79,7 @@ Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBo
 2. Giá trị tốc độ càng lớn thì động cơ quay càng nhanh.
 
 
-5.3 Viết chương trình di chuyển
+3. Viết chương trình di chuyển
 -----------------------
 -----------------------
 
@@ -139,7 +140,7 @@ Bạn cũng có thể điều khiển từng động cơ riêng biệt để xBo
 | 
 
 
-5.4 Chương trình mở rộng
+4. Chương trình mở rộng
 ----------------------
 ----------------------
 
@@ -171,7 +172,7 @@ Sau khi chạy chương trình, hãy đặt xBot lên mặt phẳng rộng và n
 
 Do nhiều yếu tố, xBot sẽ không thể chạy hình vuông chính xác. Bạn cần tinh chỉnh tốc độ (càng chậm càng chính xác) và thời gian rẽ để đường đi giống hình vuông nhất.
 
-5.5 Bài tập mở rộng
+5. Bài tập mở rộng
 -------------------
 --------------------
 
@@ -193,7 +194,7 @@ Chương trình khi đó sẽ như sau:
 |  
 
 
-5.6 Câu hỏi ôn tập
+6. Câu hỏi ôn tập
 -----------------
 ----------------
 

@@ -5,7 +5,7 @@
 
 Giúp người mới làm quen với robot xBot, hiểu được các thành phần bên trong, cách lắp ráp hoàn chỉnh và các cách điều khiển theo ý muốn
 
-1.1 xBot là gì?
+1. xBot là gì?
 --------------------
 -------------------
 
@@ -89,7 +89,7 @@ Tự thiết kế là lắp ráp các mô hình theo ý thích, giúp kích thí
     :align: center
 |   
 
-1.2 Thành phần của xBot
+2. Thành phần của xBot
 ------------------------
 ------------------------
 
@@ -128,7 +128,7 @@ Bạn có thể điều khiển và lập trình xBot bằng máy tính, điện
     :align: center
 |  
 
-1.3 Cấp nguồn và khởi động xBot
+3. Cấp nguồn và khởi động xBot
 ------------------------
 ------------------------
 
@@ -162,7 +162,7 @@ Mạch điều khiển xBot hỗ trợ 2 đầu cắm pin với 2 chuẩn khác 
 |  
 
 
-1.4 Các chế độ hoạt động của xBot
+4. Các chế độ hoạt động của xBot
 ------------------------
 ------------------------
 

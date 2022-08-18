@@ -87,6 +87,7 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-18.html">22. Bài 18: Điều khiển và giám sát robot qua IoT</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../servo_pack.html"><strong>Rover Servo Pack - Phụ kiện sáng chế robot</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
 <ul>
@@ -155,7 +156,7 @@
 <li><p>Cảm biến dò đường trên Rover gồm 4 mắt đọc nằm ở mặt dưới xe được đánh số từ S1 đến S4.</p></li>
 <li><p>Cảm biến này giúp Rover phát hiện vạch đen bên dưới để di chuyển, hoặc tránh né tùy theo mục đích lập trình</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.14.png"><img alt="../../_images/bai_8.14.png" class="align-center" src="../../_images/bai_8.14.png" style="width: 1000px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.11.png"><img alt="../../_images/bai_8.11.png" class="align-center" src="../../_images/bai_8.11.png" style="width: 1000px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -165,11 +166,11 @@
 <ul>
 <li><p>Cảm biến dò đường trên Rover hoạt động như thế nào?</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_81.png"><img alt="../../_images/bai_81.png" class="align-center" src="../../_images/bai_81.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.png"><img alt="../../_images/bai_8.png" class="align-center" src="../../_images/bai_8.png" style="width: 300px;" /></a>
 <ul>
 <li><p>Mắt đọc dò đường sẽ phát ra và thu về hồng ngoại. Tùy theo mức độ hồng ngoại nhận lại mà xác định được bên dưới là vạch đen hay nền trắng.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.24.png"><img alt="../../_images/bai_8.24.png" class="align-center" src="../../_images/bai_8.24.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.21.png"><img alt="../../_images/bai_8.21.png" class="align-center" src="../../_images/bai_8.21.png" style="width: 300px;" /></a>
 </div></blockquote>
 </li>
 <li><p>Phía trên Rover có các đèn báo hiệu tương ứng với từng mắt đọc:</p>
@@ -178,7 +179,7 @@
 <li><p>Đọc được nền trắng: Đèn sáng</p></li>
 <li><p>Đọc được nền đen: Đèn tắt</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_8.34.png"><img alt="../../_images/bai_8.34.png" class="align-center" src="../../_images/bai_8.34.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_8.31.png"><img alt="../../_images/bai_8.31.png" class="align-center" src="../../_images/bai_8.31.png" style="width: 300px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -192,7 +193,7 @@
 <ul>
 <li><p>Khối lệnh đọc line:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.44.png"><img alt="../../_images/bai_8.44.png" class="align-center" src="../../_images/bai_8.44.png" style="width: 1000px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.41.png"><img alt="../../_images/bai_8.41.png" class="align-center" src="../../_images/bai_8.41.png" style="width: 1000px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -206,7 +207,7 @@
 <ol class="arabic">
 <li><p>Viết chương trình</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.53.png"><img alt="../../_images/bai_8.53.png" class="align-center" src="../../_images/bai_8.53.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.5.png"><img alt="../../_images/bai_8.5.png" class="align-center" src="../../_images/bai_8.5.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -216,7 +217,7 @@
 <ol class="arabic" start="2">
 <li><p>Tạo điều kiện đầu tiên: <strong>Nếu mắt S1 đọc được vạch đen, bật đèn số 1, 2, 3. Nếu không, tắt đèn</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.63.png"><img alt="../../_images/bai_8.63.png" class="align-center" src="../../_images/bai_8.63.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.61.png"><img alt="../../_images/bai_8.61.png" class="align-center" src="../../_images/bai_8.61.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -226,7 +227,7 @@
 <ol class="arabic" start="3">
 <li><p>Tạo điều kiện thứ 2: <strong>Nếu mắt S4 đọc được vạch đen, bật đèn số 4, 5, 6. Nếu không, tắt đèn</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_8.73.png"><img alt="../../_images/bai_8.73.png" class="align-center" src="../../_images/bai_8.73.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_8.71.png"><img alt="../../_images/bai_8.71.png" class="align-center" src="../../_images/bai_8.71.png" style="width: 800px;" /></a>
 </div></blockquote>
 </li>
 </ol>
@@ -237,7 +238,7 @@
 <ul class="simple">
 <li><p>Vết tích để lại: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BeWXV0PSKrWqs4gdNub3l7LaW6">Tại đây</a></p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_8.83.png"><img alt="../../_images/bai_8.83.png" class="align-center" src="../../_images/bai_8.83.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_8.81.png"><img alt="../../_images/bai_8.81.png" class="align-center" src="../../_images/bai_8.81.png" style="width: 200px;" /></a>
 </section>
 </section>
 

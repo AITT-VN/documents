@@ -1,5 +1,10 @@
-4. Bài 4: Robot xe ủi
+5. Bài 4: Robot xe ủi
 =================================
+
+.. image:: images/xe_ui.jpg
+    :width: 400px
+    :align: center  
+|
 
 1.  Hướng dẫn lắp ráp
 ---------------

@@ -1,5 +1,10 @@
-1. Bài 1: Robot Mèo dò đường
+2. Bài 1: Robot Mèo dò đường
 =================================
+
+.. image:: images/meo_do_duong.jpg
+    :width: 400px
+    :align: center  
+|
 
 1.  Hướng dẫn lắp ráp
 ---------------

@@ -1,5 +1,10 @@
-5. Bài 5: Robot trực thăng
+6. Bài 5: Robot trực thăng
 =================================
+
+.. image:: images/truc_thang.jpg
+    :width: 400px
+    :align: center  
+|
 
 1.  Hướng dẫn lắp ráp
 ---------------

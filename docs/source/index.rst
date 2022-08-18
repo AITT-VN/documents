@@ -15,7 +15,7 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Máy tính lập trình mini Yolo:Bit
+   :caption: Máy tính lập trình Yolo:Bit
 
    yolobit_v2/lam-quen.rst
 

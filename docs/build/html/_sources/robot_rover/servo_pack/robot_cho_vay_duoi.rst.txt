@@ -1,5 +1,10 @@
-2. Bài 2: Robot Chó vẫy đuôi
+3. Bài 2: Robot Chó vẫy đuôi
 =================================
+
+.. image:: images/cho_vay_duoi.jpg
+    :width: 400px
+    :align: center  
+|
 
 1.  Hướng dẫn lắp ráp
 ---------------

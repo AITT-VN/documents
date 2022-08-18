@@ -3,7 +3,18 @@
 
 Bộ xBot Inventor Kit là bộ robot lắp ráp mở rộng cho robot xBot. có thể lắp ghép thành 10 mô hình khác nhau.
 
-Tổng quan về xBot Inventor Kit
+.. image:: images/xbot_inventor.jpg
+    :width: 400px
+    :align: center
+|   
+
+1.1 Link sản phẩm 
+--------------
+-----------------
+
+`xBot Inventor Kit <https://ohstem.vn/product/xbot-inventor-kit/>`_
+
+1.2 Tổng quan về xBot Inventor Kit
 --------------------------------
 --------------------------------
 
@@ -14,7 +25,7 @@ xBot Inventor Kit gồm hơn 300 thành phần lắp ráp được làm từ nh�
 Sản phẩm có kèm theo hướng dẫn lắp ráp chi tiết.
 
 
-Bộ kit bao gồm
+1.3 Bộ kit bao gồm
 -----------------
 ------------------
 
@@ -27,7 +38,7 @@ Bộ kit bao gồm
 - Các phụ kiện hỗ trợ lắp ráp (Bu lông, đai ốc và trụ đồng)
 
 
-Danh sách các thành phần 
+1.4 Danh sách các thành phần 
 --------
 -------------
 
@@ -50,6 +61,7 @@ Danh sách các thành phần
     :width: 1000px
     :align: center
 |  
+
 
 
 

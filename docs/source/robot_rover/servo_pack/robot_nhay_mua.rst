@@ -1,5 +1,10 @@
-3. Bài 3: Robot nhảy múa
+4. Bài 3: Robot nhảy múa
 =================================
+
+.. image:: images/nhay_mua.jpg
+    :width: 400px
+    :align: center  
+|
 
 1.  Hướng dẫn lắp ráp
 ---------------

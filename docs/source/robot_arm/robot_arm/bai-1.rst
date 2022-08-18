@@ -8,129 +8,180 @@ Mục tiêu
 ---------------------
 ---------------------
 
+- Giới thiệu các khối lệnh sử dụng với ArmBot.
 - Hiểu được cách điều khiển các khớp để di chuyển cơ bản.
 - Hướng dẫn sử dụng các câu lệnh để điều khiển riêng từng servo.
 
-
-Bộ phận điện tử
----------------
--------------------------
-
-- Động cơ là bộ phận giúp Robot Rover có thể di chuyển (tới, lùi, rẽ,...) cùng với tốc độ tùy chỉnh.
-
-.. image:: images/bai_1.4.png
-    :width: 300px
-    :align: center
-|    
-- Rover có 2 động cơ bên trái và bên  phải, để Rover di chuyển, chúng ta  cần điều khiển 2 động cơ này
-
-.. image:: images/bai_1.5.png
-    :width: 300px
-    :align: center
-|    
-
-Giới thiệu khối lệnh
+Giới thiệu khối lệnh di chuyển cơ bản
 ---------------------------
 ----------------------
 
-- Khối lệnh bắt đầu chương trình:
+- Khối lệnh khởi tạo các chân servo:
 
-.. image:: images/bai_1.6.png
-    :width: 400px
-    :align: center
-| 
-- Khối lệnh lặp lại số lần:
-
-.. image:: images/bai_1.7.png
-    :width: 400px
-    :align: center
-|   
-- Khối lệnh di chuyển:
-
- .. image:: images/bai_1.8.png
-    :width: 1200px
-    :align: center
-|    
-
-
-Viết chương trình
----------------------
---------------------------
-
-**Chương trình đơn giản:** Đây là chương trình điều khiển Rover đi tới và lùi, giúp bạn làm quen với lập trình điều khiển Rover di chuyển
-
-    1.  Gắn khối lệnh di chuyển vào lệnh lặp lại mãi
-
-    .. image:: images/bai_1.9.png
-        :width: 800px
-        :align: center  
-    |
-    2. Chọn hướng di chuyển và chỉnh tốc độ mong muốn
-
-        - Có 4 hướng di chuyển: tiến tới, lùi lại, rẽ trái, rẽ phải tương ứng với hình dạng mũi tên.
-
-        - Tốc độ của động cơ có giá trị từ 0 (đứng yên) đến 100 (tối đa).
-
-    .. image:: images/bai_1.10.png
-        :width: 400px
+    .. image:: images/arm-block-init.png
+        :width: 500px
         :align: center
     |
-    3. Thêm khối tạm dừng 1 giây (1000ms)
 
-    .. image:: images/bai_1.11.png
-        :width: 700px
-        :align: center
-    |
-    4. Làm tương tự để tạo thêm lệnh đi lùi trong 1 giây
+    Khối lệnh này được gọi ở đầu chương trình để khởi tạo lại các chân tín hiệu servo mà bạn đã kết nối với mạch mở rộng. Mặc định, các chân tín hiệu này được khai báo như sau:
 
-    .. image:: images/bai_1.12.png
-        :width: 400px
-        :align: center
-    |
-    5. Chạy chương trình
+        - P8  - Servo khớp giữa
+        - P9  - Servo khớp phải
+        - P10 - Servo khớp trái
+        - P11 - Servo đầu gắp
 
-    .. image:: images/bai_1.13.png
-        :width: 700px
-        :align: center 
-    |
-    6.  Bạn có thể nhấn nút tạm dừng để dừng chương trình lại
+    Bạn có thể thay đổi các chân tín hiệu này nếu các chân tín hiệu mặc định bạn muốn dùng cho mục đích khác. 
 
-    .. image:: images/bai_1.14.png
-        :width: 70px
-        :align: center 
-    
+- Khối lệnh về tọa độ gốc
 
-
-**Chương trình di chuyển với thời gian:**  Chương trình này sẽ giúp Rover đi theo hình vuông
-
-    1.  Gắn khối lệnh lặp số lần vào lệnh bắt đầu
-
-    .. image:: images/bai_1.15.png
-        :width: 700px
-        :align: center 
-    |  
-    2. Sử dụng các khối lệnh di chuyển để hoàn thiện chương trình như hình minh họa (để ý các thông số)
-
-    .. image:: images/bai_1.16.png
+    .. image:: images/arm-block-origin.png
         :width: 600px
-        :align: center 
+        :align: center
     |
 
+    Khối lệnh này có tác dụng điều khiển các servo sao cho đầu gắp của robot trở về vị trí tọa độ gốc. Khi đó:
 
-Chương trình mẫu
---------------
--------------------
+        - Góc mặc định của 4 servo là `90` độ.
+        - Tọa độ gốc của đầu gắp trong hệ tọa độ ORZ là `(90,80,80)`. Mình sẽ tìm hiểu kỹ hơn về hệ tọa này ở bài sau nhé.
 
-- Nhấp vào chữ **tại đây** để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
+**Servo khớp giữa:** có tác dụng xoay toàn bộ phần cánh tay quay phải sang trái tương ứng góc 0-180 độ
 
-- Robot di chuyển tới lui: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeTmtVhptwmDZJMtzCrBz2Hc5n>`_
+.. image:: images/armbot-theta.jpg
+    :width: 400px
+    :align: center
+|
 
-.. image:: images/bai_1.17.png
-    :width: 200px
-    :align: center 
-| 
-- Robot di chuyển hình vuông: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BeTxamvWwDappzIrPkZx9j7xl3>`_
+    - Khối lệnh điều khiển servo khớp giữa tới một góc nào đó tức thời. 
 
-.. image:: images/bai_1.18.png
-    :width: 200px
-    :align: center 
+    .. image:: images/arm-block-move-base.png
+        :width: 400px
+        :align: center
+    |
+
+    Trong đó:
+
+        `degree` là tham số góc quay của servo có giá trị `0 đến 180 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+    - Khối lệnh điều khiển servo khớp giữa tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
+
+    .. image:: images/arm-block-rotate-base.png
+        :width: 400px
+        :align: center
+    |    
+
+    Trong đó:
+
+        `change` là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ 0 đến (degree/change). change có giá trị càng nhỏ thì servo chuyển bước càng mượt.
+
+        `sleep` là thời gian nghỉ giữa mỗi bước change có đơn vị là mili giây.
+
+        `degree` là tham số góc quay tới hạn của servo có giá trị `0 ~ 180 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+**Servo khớp phải:** có tác dụng xoay phần vai của robot với góc xoay trong giới hạn 50-180 độ, giúp đầu gắp robot di chuyển tới/lui một cách tương đối.
+
+.. image:: images/armbot-radius.jpg
+    :width: 400px
+    :align: center
+|
+
+    - Khối lệnh điều khiển servo khớp phải tới một góc nào đó tức thời. 
+
+    .. image:: images/arm-block-move-right.png
+        :width: 400px
+        :align: center
+    |
+
+    Trong đó:
+
+        `degree` là tham số góc quay của servo có giá trị `50 đến 180 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+    - Khối lệnh điều khiển servo khớp phải tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
+
+    .. image:: images/arm-block-rotate-right.png
+        :width: 400px
+        :align: center
+    |    
+
+    Trong đó:
+
+        `change` là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ 0 đến (degree/change). change có giá trị càng nhỏ thì servo chuyển bước càng mượt.
+
+        `sleep` là thời gian nghỉ giữa mỗi bước change có đơn vị là mili giây.
+
+        `degree` là tham số góc quay tới hạn của servo có giá trị `50 ~ 180 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+**Servo khớp trái:** có tác dụng xoay phần khuỷu tay của robot với góc xoay trong giới hạn 0-140 độ, giúp đầu gắp robot di chuyển lên/xuống một cách tương đối.
+
+.. image:: images/armbot-height.jpg
+    :width: 400px
+    :align: center
+|
+
+    - Khối lệnh điều khiển servo khớp trái tới một góc nào đó tức thời. 
+
+    .. image:: images/arm-block-move-left.png
+        :width: 400px
+        :align: center
+    |
+
+    Trong đó:
+
+        `degree` là tham số góc quay của servo có giá trị `0 đến 140 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+    - Khối lệnh điều khiển servo khớp trái tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
+
+    .. image:: images/arm-block-rotate-left.png
+        :width: 400px
+        :align: center
+    |    
+
+    Trong đó:
+
+        `change` là tham số 1 bước di chuyển tới góc mới của servo. Là giá trị số có giá trị từ 0 đến (degree/change). change có giá trị càng nhỏ thì servo chuyển bước càng mượt.
+
+        `sleep` là thời gian nghỉ giữa mỗi bước change có đơn vị là mili giây.
+
+        `degree` là tham số góc quay tới hạn của servo có giá trị `0 ~ 140 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+
+**Servo đầu gắp:**
+
+- Khối lệnh điều khiển servo đầu gắp đóng/mở. 
+
+    Góc đóng của đầu gắp là 90 độ:
+
+        .. image:: images/dau-gap-dong.png
+            :width: 400px
+            :align: center
+        |
+
+    Góc mở của đầu gắp là 0 độ:
+
+        .. image:: images/dau-gap-mo.png
+            :width: 400px
+            :align: center
+        |
+
+    Trong đó:
+
+        `degree` là tham số góc quay của servo có giá trị `50 đến 180 độ`.
+
+        `speed` là tốc độ của động cơ trong khoảng `0~100`.
+

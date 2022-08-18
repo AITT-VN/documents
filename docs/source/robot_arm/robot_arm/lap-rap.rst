@@ -7,7 +7,7 @@
 
 1. Các bộ phận chính của ArmBot
 
-.. image:: images/lap-rap-2.png
+.. image:: images/lap-rap-6.png
     :width: 500px
     :align: center
 |

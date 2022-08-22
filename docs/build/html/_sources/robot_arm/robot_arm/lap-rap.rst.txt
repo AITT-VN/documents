@@ -7,78 +7,81 @@
 
 1. Các bộ phận chính của ArmBot
 
-.. image:: images/lap-rap-6.png
+.. image:: images/lap-rap-6.jpg
     :width: 500px
     :align: center
 |
 
 2. Bu lông M3-16 + đai ốc chống tháo M3 
 
-.. image:: images/lap-rap-5.png
+.. image:: images/lap-rap-5.jpg
     :width: 500px
     :align: center
 |
 3. Bu lông M3-16 + đệm mica M3 + đai ốc chống tháo M3
 
-.. image:: images/lap-rap-6.png
+.. image:: images/lap-rap-6.jpg
     :width: 500px
     :align: center
 |
 4. Servo khớp bên phải + tấm 22 + 2 đai ốc M3
 
-.. image:: images/lap-rap-7.png
+.. image:: images/lap-rap-7.jpg
     :width: 500px
     :align: center  
 |
 5. Servo khớp bên trái + tấm 22 + 2 đai ốc M3
 
-.. image:: images/lap-rap-8.png
+.. image:: images/lap-rap-8.jpg
     :width: 500px
     :align: center  
 |
 6. 3 bu lông M3-12 + đai ốc chống tháo M3
 
-.. image:: images/lap-rap-9.png
+.. image:: images/lap-rap-9.jpg
     :width: 500px
     :align: center 
 |
 7. Tấm 14 + khối vừa lắp
 
-.. image:: images/lap-rap-10.png
+.. image:: images/lap-rap-10.jpg
     :width: 500px
     :align: center 
 |
 8. Tấm 1 + bu lông M3-6 + khối vừa lắp. (Chú ý vị trí của cánh servo)
 
-.. image:: images/lap-rap-11.png
+.. image:: images/lap-rap-11.jpg
     :width: 500px
     :align: center 
 |
 9. 4 trụ đồng 10mm + 4 bu lông M3-6
 
-.. image:: images/lap-rap-12.png
+.. image:: images/lap-rap-12.jpg
     :width: 500px
     :align: center 
 |
 10. Mạch mở rộng Yolo:Bit + 4 bu lông M3-6
 
-.. image:: images/lap-rap-13.png
+.. image:: images/lap-rap-13.jpg
     :width: 500px
     :align: center 
 |
 11. Lắp Máy tính lập trình Yolo:Bit vào mạch mở rộng.
 
-.. image:: images/lap-rap-14.png
+.. image:: images/lap-rap-14.jpg
     :width: 500px
     :align: center 
 |
 
 12. Cắm dây Servo
 
-P8  - Servo khớp giữa
-P9  - Servo khớp phải
-P10 - Servo khớp trái
-P11 - Servo đầu gắp
+    P8  - Servo khớp giữa
+
+    P9  - Servo khớp phải
+
+    P10 - Servo khớp trái
+
+    P11 - Servo đầu gắp
 
 .. image:: images/lap-rap-15.png
     :width: 500px

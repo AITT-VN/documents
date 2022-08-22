@@ -58,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">OhStemX - Robot Arm</span></p>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Giới thiệu</a></li>
@@ -69,6 +69,9 @@
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Lập trình di chuyển theo tọa độ ORZ</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">7. Tự động hóa</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mang-la-gi">Mảng là gì?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-4.html">8. Dây chuyền lắp ráp</a></li>
@@ -132,8 +135,110 @@
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Biết cách dùng mảng để lưu sẵn các vị trí.</p></li>
-<li><p>Viết code để liên tục di chuyển cánh tay đến các vị trí trong mảng</p></li>
+<li><p>Thực hiện điều khiển robot tới các vị trí được lưu sẵn trong mảng.</p></li>
 </ul>
+</section>
+<section id="mang-la-gi">
+<h2>Mảng là gì?<a class="headerlink" href="#mang-la-gi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Mảng là một phần cơ bản của tất cả các ngôn ngữ lập trình, nó là tập hợp các phần tử của một kiểu dữ liệu duy nhất, ví dụ mảng số nguyên, mảng chuỗi.</p>
+<p>Không giống như mảng, mỗi list có thể lưu trữ phần tử với bất kỳ kiểu dữ liệu nào và làm được mọi thứ mà mảng có thể làm.</p>
+<p>Trong giao diện lập trình khối lệnh, 1 mảng được gọi là 1 <cite>Danh sách</cite>.</p>
+<p><strong>Các khối lệnh danh sách:</strong> Cách lấy các hàm dùng cho danh sách: Vào Nâng cao &gt; Danh sách</p>
+<a class="reference internal image-reference" href="../../_images/array-1.png"><img alt="../../_images/array-1.png" class="align-center" src="../../_images/array-1.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Thêm các thành phần trong danh sách:</strong> Chọn dấu bánh răng, sau đó kéo “vật” vào vị trí bạn muốn bổ sung 1 vật mới trong danh sách:</p>
+<a class="reference internal image-reference" href="../../_images/array-2.png"><img alt="../../_images/array-2.png" class="align-center" src="../../_images/array-2.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình mẫu:</strong> Tạo danh sách và in giá trị đầu tiên của danh sách:</p>
+<a class="reference internal image-reference" href="../../_images/array-3.png"><img alt="../../_images/array-3.png" class="align-center" src="../../_images/array-3.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Link chương trình mẫu: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Di5Eent9dLZj8QBNkEeRsOEMEt">Tại đây</a></p>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual.gif"><img alt="../../_images/sample-move-a-to-b-manual.gif" class="align-center" src="../../_images/sample-move-a-to-b-manual.gif" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình:</strong> Tiếp nối bài trước. Ta sẽ giải chương trình điều khiển ArmBot gắp vật từ vị trí A sang vị trí B bằng khối lệnh di chuyển thông minh. Tuy nhiên ở đây ta sẽ tạo danh sách gồm các vị trí được lưu sẵn. Giúp chương trình của chúng ta gọn và dễ quản lý hơn nhé!</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual-hd3.png"><img alt="../../_images/sample-move-a-to-b-manual-hd3.png" class="align-center" src="../../_images/sample-move-a-to-b-manual-hd3.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic">
+<li><p>Khai báo ban đầu. Thực hiện kéo các khối lệnh theo trình tự sau:</p>
+<ul class="simple">
+<li><p>Đầu tiên ta sẽ khai báo các chân servo đã được sử dụng trên ArmBot.</p></li>
+<li><p>Tạo biến <cite>tốc độ</cite> để lưu giá trị tốc độ hoạt động của robot. Bạn có thể thay đổi giá trị này từ <cite>0-100</cite> tùy vào sở thích và yêu cầu của bạn.</p></li>
+<li><p>Tạo danh sách ORZ chứa các vị trí cần di chuyển đến. Bộ 3 giá trị O,R,Z là 3 phần tử trong 1 mảng con của mảng ORZ. Phần tử thứ 4 trong các bản con này là True hoặc False tương ứng với Đóng hoặc mở đầu gắp.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-automation-2.png"><img alt="../../_images/sample-move-a-to-b-automation-2.png" class="align-center" src="../../_images/sample-move-a-to-b-automation-2.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Tọa độ ORZ của nhiệm vụ trên được xác định như sau (Tương tự nhưu bài trước):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở đầu gắp</p></li>
+<li><p>[45,30,-40] - Xoay về phía vật cần gắp.</p></li>
+<li><p>[45,130,-40] - Di chuyển đầu gắp lại gần vật cần gắp (trong video là vị trí màu đỏ).</p></li>
+<li><p>Đóng đầu gắp để gắp vật.</p></li>
+<li><p>[45,30,80] - Gắp vật cao lên giúp để dễ dàng di chuyển.</p></li>
+<li><p>[135,30,-40] - Xoay về phía cần thả vật.</p></li>
+<li><p>[135,130,-40] - Di chuyển vật tới nơi cần thả (trong video là vị trí màu xanh).</p></li>
+<li><p>Mở đầu gắp để thả vật.</p></li>
+<li><p>[135,30,80] - Về vị trí an toàn và kết thúc 1 chu trình gắp - thả vật.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-automation-1.png"><img alt="../../_images/sample-move-a-to-b-automation-1.png" class="align-center" src="../../_images/sample-move-a-to-b-automation-1.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>Lấy từng phần tử và xử lý:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Lấy 3 phần tử O,R,Z trong danh sách con của danh sách ORZ vào hàm điều khiển thông mình.</p></li>
+<li><p>Lấy phần tử thứ 4 so sánh và ra quyết định đóng hay mở đầu gắp.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-automation-3.png"><img alt="../../_images/sample-move-a-to-b-automation-3.png" class="align-center" src="../../_images/sample-move-a-to-b-automation-3.png" style="width: 650px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Chương trình hoàn thiện:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-automation-full.png"><img alt="../../_images/sample-move-a-to-b-automation-full.png" class="align-center" src="../../_images/sample-move-a-to-b-automation-full.png" style="width: 650px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+</ol>
+</div></blockquote>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Nhấp vào chữ <strong>tại đây</strong> để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.</p></li>
+<li><p>Robot di chuyển tới lui: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2Di7J3dzcxP4jLltBr6w1HB4CRZ">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-automation-qr.png"><img alt="../../_images/sample-move-a-to-b-automation-qr.png" class="align-center" src="../../_images/sample-move-a-to-b-automation-qr.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 </section>
 

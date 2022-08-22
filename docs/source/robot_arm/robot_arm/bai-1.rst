@@ -35,7 +35,7 @@ Giới thiệu khối lệnh di chuyển cơ bản
 - Khối lệnh về tọa độ gốc
 
     .. image:: images/arm-block-origin.png
-        :width: 600px
+        :width: 150px
         :align: center
     |
 
@@ -63,14 +63,21 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay của servo có giá trị `0 đến 180 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+    
+    Ví dụ: 
+
+    .. image:: images/sample-base.png
+        :width: 500px
+        :align: center 
+    |
 
 
     - Khối lệnh điều khiển servo khớp giữa tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
 
     .. image:: images/arm-block-rotate-base.png
-        :width: 400px
+        :width: 500px
         :align: center
-    |    
+    | 
 
     Trong đó:
 
@@ -81,6 +88,13 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay tới hạn của servo có giá trị `0 ~ 180 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+    
+    Ví dụ: 
+
+    .. image:: images/sample-base-slow.png
+        :width: 500px
+        :align: center 
+    |
 
 
 **Servo khớp phải:** có tác dụng xoay phần vai của robot với góc xoay trong giới hạn 50-180 độ, giúp đầu gắp robot di chuyển tới/lui một cách tương đối.
@@ -103,11 +117,17 @@ Giới thiệu khối lệnh di chuyển cơ bản
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
 
+    Ví dụ: 
+
+    .. image:: images/sample-right.png
+        :width: 500px
+        :align: center 
+    |
 
     - Khối lệnh điều khiển servo khớp phải tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
 
     .. image:: images/arm-block-rotate-right.png
-        :width: 400px
+        :width: 500px
         :align: center
     |    
 
@@ -120,6 +140,13 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay tới hạn của servo có giá trị `50 ~ 180 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+
+    Ví dụ: 
+
+    .. image:: images/sample-right-slow.png
+        :width: 500px
+        :align: center 
+    |
 
 
 **Servo khớp trái:** có tác dụng xoay phần khuỷu tay của robot với góc xoay trong giới hạn 0-140 độ, giúp đầu gắp robot di chuyển lên/xuống một cách tương đối.
@@ -141,12 +168,19 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay của servo có giá trị `0 đến 140 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+    
+    Ví dụ: 
+
+    .. image:: images/sample-left.png
+        :width: 500px
+        :align: center 
+    |
 
 
     - Khối lệnh điều khiển servo khớp trái tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.
 
     .. image:: images/arm-block-rotate-left.png
-        :width: 400px
+        :width: 500px
         :align: center
     |    
 
@@ -159,6 +193,13 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay tới hạn của servo có giá trị `0 ~ 140 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+    
+    Ví dụ: 
+
+    .. image:: images/sample-left-slow.png
+        :width: 500px
+        :align: center 
+    |
 
 
 **Servo đầu gắp:**
@@ -168,14 +209,14 @@ Giới thiệu khối lệnh di chuyển cơ bản
     Góc đóng của đầu gắp là 90 độ:
 
         .. image:: images/dau-gap-dong.png
-            :width: 400px
+            :width: 350px
             :align: center
         |
 
     Góc mở của đầu gắp là 0 độ:
 
         .. image:: images/dau-gap-mo.png
-            :width: 400px
+            :width: 350px
             :align: center
         |
 
@@ -184,4 +225,76 @@ Giới thiệu khối lệnh di chuyển cơ bản
         `degree` là tham số góc quay của servo có giá trị `50 đến 180 độ`.
 
         `speed` là tốc độ của động cơ trong khoảng `0~100`.
+    
+    Ví dụ: 
 
+    .. image:: images/sample-dong-mo-dau-gap.png
+        :width: 500px
+        :align: center 
+    |
+
+
+Viết chương trình
+---------------------
+--------------------------
+
+.. image:: images/sample-move-a-to-b-manual.gif
+    :width: 700px
+    :align: center  
+|
+
+**Chương trình:** Đây là chương trình điều khiển ArmBot gắp vật từ vị trí A sang vị trí B
+
+    .. image:: images/sample-move-a-to-b-manual-hd3.png
+        :width: 500px
+        :align: center
+    |
+
+    .. image:: images/sample-move-a-to-b-manual-hd1.png
+        :width: 500px
+        :align: center
+    |
+
+    1.  Khai báo ban đầu. Thực hiện kéo các khối lệnh theo trình tự sau:
+
+        - Đầu tiên ta sẽ khai báo các chân servo đã được sử dụng trên ArmBot.
+
+        - Tạo biến `tốc độ` để lưu giá trị tốc độ hoạt động của robot. Bạn có thể thay đổi giá trị này từ `0-100` tùy vào sở thích và yêu cầu của bạn.
+
+        - Đặt góc cố định cho khuỷu tay (servo khớp trái) là 40. Giá trị này bạn có thể thay đổi để tăng hoặc giảm chiều cao của đầu gắp để phù hợp với chiều cao của vật cần gắp.
+    
+    2. Di chuyển đầu gắp đến vị trí lấy vật. Thực hiện kéo các khối lệnh theo trình tự sau:
+
+        - Mở đầu gắp để sẵn sàng gắp vật.
+
+        - Xoay khớp giữa - đồng nghĩa với việc xoay toàn bộ thân cánh tay về phía vật cần gắp. Với góc quay từ 0-180 độ. Bạn có thể tự điều chỉnh thông số này tùy vào vị mà vật đang ở đâu. Như trong hình và video trên. Vị trí vật cần gắp là màu đỏ - tương ứng với góc cần xoay là 45 độ.
+
+        - Xoay khớp bên phải từ từ tới góc 150 độ giúp đầu gắp hạ xuống gần mặt đất. Lúc này đầu gắp sẽ nằm tại vị trí sẵn sàng để gắp vật (trong video thì vị trí gắp là ngay phần đế của vật cần gắp).
+
+        - Đóng đầu gắp để gắp vật. 
+
+    3.  Xoay khớp bên phải từ từ tới góc 90 độ để gắp vật cao lên giúp để dễ dàng di chuyển. Sau khối lệnh này ta dùng khối lệnh tạm dừng 1000ms để tránh tình trạng do chuyển quá nhanh các hoạt động gây ra gia tốc cao làm robot bị rung mạnh.
+
+    4.  Di chuyển đầu gắp đến vị trí đặt vật. Thực hiện kéo các khối lệnh theo trình tự sau:
+    
+        - Xoay khớp giữa - đồng nghĩa với việc xoay toàn bộ thân cánh tay về phía nơi cần đặt vật. Như trong video và vị trí màu xanh - tương ứng với góc cần xoay là 135 độ.
+
+        - Xoay khớp bên phải từ từ tới góc 150 độ giúp đầu gắp hạ xuống gần mặt đất. Lúc này đầu gắp sẽ nằm tại vị trí sẵn sàng để gắp vật (trong video thì vị trí gắp là ngay phần đế của vật cần gắp).
+
+        - Mở đầu gắp để thả vật.
+
+    5.  Xoay khớp bên phải từ từ tới góc 90 độ để đầu gắp về vị trí an toàn và kết thúc 1 chu trình gắp - thả vật.
+
+
+Chương trình mẫu
+--------------
+-------------------
+
+- Nhấp vào chữ **tại đây** để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
+
+- Robot di chuyển tới lui: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2DhFVaPf3jjVg6lRC7gj1d254DX>`_
+
+.. image:: images/sample-move-a-to-b-manual-qr.png
+    :width: 200px
+    :align: center 
+| 

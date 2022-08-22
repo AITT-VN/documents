@@ -58,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">OhStemX - Robot Arm</span></p>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="gioi-thieu.html">1. Giới thiệu</a></li>
@@ -68,6 +68,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5. Lập trình di chuyển các bộ phận</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#muc-tieu">Mục tiêu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-khoi-lenh-di-chuyen-co-ban">Giới thiệu khối lệnh di chuyển cơ bản</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viet-chuong-trinh">Viết chương trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">Chương trình mẫu</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bai-2.html">6. Lập trình di chuyển theo tọa độ ORZ</a></li>
@@ -162,7 +164,7 @@
 </li>
 <li><p>Khối lệnh về tọa độ gốc</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/arm-block-origin.png"><img alt="../../_images/arm-block-origin.png" class="align-center" src="../../_images/arm-block-origin.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/arm-block-origin.png"><img alt="../../_images/arm-block-origin.png" class="align-center" src="../../_images/arm-block-origin.png" style="width: 150px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -194,10 +196,15 @@
 <div><p><cite>degree</cite> là tham số góc quay của servo có giá trị <cite>0 đến 180 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-base.png"><img alt="../../_images/sample-base.png" class="align-center" src="../../_images/sample-base.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul class="simple">
 <li><p>Khối lệnh điều khiển servo khớp giữa tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/arm-block-rotate-base.png"><img alt="../../_images/arm-block-rotate-base.png" class="align-center" src="../../_images/arm-block-rotate-base.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arm-block-rotate-base.png"><img alt="../../_images/arm-block-rotate-base.png" class="align-center" src="../../_images/arm-block-rotate-base.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -208,6 +215,11 @@
 <p><cite>degree</cite> là tham số góc quay tới hạn của servo có giá trị <cite>0 ~ 180 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-base-slow.png"><img alt="../../_images/sample-base-slow.png" class="align-center" src="../../_images/sample-base-slow.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div></blockquote>
 <p><strong>Servo khớp phải:</strong> có tác dụng xoay phần vai của robot với góc xoay trong giới hạn 50-180 độ, giúp đầu gắp robot di chuyển tới/lui một cách tương đối.</p>
 <a class="reference internal image-reference" href="../../_images/armbot-radius.jpg"><img alt="../../_images/armbot-radius.jpg" class="align-center" src="../../_images/armbot-radius.jpg" style="width: 400px;" /></a>
@@ -227,10 +239,15 @@
 <div><p><cite>degree</cite> là tham số góc quay của servo có giá trị <cite>50 đến 180 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-right.png"><img alt="../../_images/sample-right.png" class="align-center" src="../../_images/sample-right.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul class="simple">
 <li><p>Khối lệnh điều khiển servo khớp phải tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/arm-block-rotate-right.png"><img alt="../../_images/arm-block-rotate-right.png" class="align-center" src="../../_images/arm-block-rotate-right.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arm-block-rotate-right.png"><img alt="../../_images/arm-block-rotate-right.png" class="align-center" src="../../_images/arm-block-rotate-right.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -241,6 +258,11 @@
 <p><cite>degree</cite> là tham số góc quay tới hạn của servo có giá trị <cite>50 ~ 180 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-right-slow.png"><img alt="../../_images/sample-right-slow.png" class="align-center" src="../../_images/sample-right-slow.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div></blockquote>
 <p><strong>Servo khớp trái:</strong> có tác dụng xoay phần khuỷu tay của robot với góc xoay trong giới hạn 0-140 độ, giúp đầu gắp robot di chuyển lên/xuống một cách tương đối.</p>
 <a class="reference internal image-reference" href="../../_images/armbot-height.jpg"><img alt="../../_images/armbot-height.jpg" class="align-center" src="../../_images/armbot-height.jpg" style="width: 400px;" /></a>
@@ -260,10 +282,15 @@
 <div><p><cite>degree</cite> là tham số góc quay của servo có giá trị <cite>0 đến 140 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-left.png"><img alt="../../_images/sample-left.png" class="align-center" src="../../_images/sample-left.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul class="simple">
 <li><p>Khối lệnh điều khiển servo khớp trái tới một góc tới hạn degree với thời gian nghỉ sleep sau mỗi bước di chuyển change.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/arm-block-rotate-left.png"><img alt="../../_images/arm-block-rotate-left.png" class="align-center" src="../../_images/arm-block-rotate-left.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arm-block-rotate-left.png"><img alt="../../_images/arm-block-rotate-left.png" class="align-center" src="../../_images/arm-block-rotate-left.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -274,6 +301,11 @@
 <p><cite>degree</cite> là tham số góc quay tới hạn của servo có giá trị <cite>0 ~ 140 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-left-slow.png"><img alt="../../_images/sample-left-slow.png" class="align-center" src="../../_images/sample-left-slow.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div></blockquote>
 <p><strong>Servo đầu gắp:</strong></p>
 <ul>
@@ -281,14 +313,14 @@
 <blockquote>
 <div><p>Góc đóng của đầu gắp là 90 độ:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/dau-gap-dong.png"><img alt="../../_images/dau-gap-dong.png" class="align-center" src="../../_images/dau-gap-dong.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/dau-gap-dong.png"><img alt="../../_images/dau-gap-dong.png" class="align-center" src="../../_images/dau-gap-dong.png" style="width: 350px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </div></blockquote>
 <p>Góc mở của đầu gắp là 0 độ:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/dau-gap-mo.png"><img alt="../../_images/dau-gap-mo.png" class="align-center" src="../../_images/dau-gap-mo.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/dau-gap-mo.png"><img alt="../../_images/dau-gap-mo.png" class="align-center" src="../../_images/dau-gap-mo.png" style="width: 350px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -298,9 +330,73 @@
 <div><p><cite>degree</cite> là tham số góc quay của servo có giá trị <cite>50 đến 180 độ</cite>.</p>
 <p><cite>speed</cite> là tốc độ của động cơ trong khoảng <cite>0~100</cite>.</p>
 </div></blockquote>
+<p>Ví dụ:</p>
+<a class="reference internal image-reference" href="../../_images/sample-dong-mo-dau-gap.png"><img alt="../../_images/sample-dong-mo-dau-gap.png" class="align-center" src="../../_images/sample-dong-mo-dau-gap.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div></blockquote>
 </li>
 </ul>
+</section>
+<section id="viet-chuong-trinh">
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual.gif"><img alt="../../_images/sample-move-a-to-b-manual.gif" class="align-center" src="../../_images/sample-move-a-to-b-manual.gif" style="width: 700px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình:</strong> Đây là chương trình điều khiển ArmBot gắp vật từ vị trí A sang vị trí B</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual-hd3.png"><img alt="../../_images/sample-move-a-to-b-manual-hd3.png" class="align-center" src="../../_images/sample-move-a-to-b-manual-hd3.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual-hd1.png"><img alt="../../_images/sample-move-a-to-b-manual-hd1.png" class="align-center" src="../../_images/sample-move-a-to-b-manual-hd1.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic">
+<li><p>Khai báo ban đầu. Thực hiện kéo các khối lệnh theo trình tự sau:</p>
+<ul class="simple">
+<li><p>Đầu tiên ta sẽ khai báo các chân servo đã được sử dụng trên ArmBot.</p></li>
+<li><p>Tạo biến <cite>tốc độ</cite> để lưu giá trị tốc độ hoạt động của robot. Bạn có thể thay đổi giá trị này từ <cite>0-100</cite> tùy vào sở thích và yêu cầu của bạn.</p></li>
+<li><p>Đặt góc cố định cho khuỷu tay (servo khớp trái) là 40. Giá trị này bạn có thể thay đổi để tăng hoặc giảm chiều cao của đầu gắp để phù hợp với chiều cao của vật cần gắp.</p></li>
+</ul>
+</li>
+<li><p>Di chuyển đầu gắp đến vị trí lấy vật. Thực hiện kéo các khối lệnh theo trình tự sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mở đầu gắp để sẵn sàng gắp vật.</p></li>
+<li><p>Xoay khớp giữa - đồng nghĩa với việc xoay toàn bộ thân cánh tay về phía vật cần gắp. Với góc quay từ 0-180 độ. Bạn có thể tự điều chỉnh thông số này tùy vào vị mà vật đang ở đâu. Như trong hình và video trên. Vị trí vật cần gắp là màu đỏ - tương ứng với góc cần xoay là 45 độ.</p></li>
+<li><p>Xoay khớp bên phải từ từ tới góc 150 độ giúp đầu gắp hạ xuống gần mặt đất. Lúc này đầu gắp sẽ nằm tại vị trí sẵn sàng để gắp vật (trong video thì vị trí gắp là ngay phần đế của vật cần gắp).</p></li>
+<li><p>Đóng đầu gắp để gắp vật.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Xoay khớp bên phải từ từ tới góc 90 độ để gắp vật cao lên giúp để dễ dàng di chuyển. Sau khối lệnh này ta dùng khối lệnh tạm dừng 1000ms để tránh tình trạng do chuyển quá nhanh các hoạt động gây ra gia tốc cao làm robot bị rung mạnh.</p></li>
+<li><p>Di chuyển đầu gắp đến vị trí đặt vật. Thực hiện kéo các khối lệnh theo trình tự sau:</p>
+<ul class="simple">
+<li><p>Xoay khớp giữa - đồng nghĩa với việc xoay toàn bộ thân cánh tay về phía nơi cần đặt vật. Như trong video và vị trí màu xanh - tương ứng với góc cần xoay là 135 độ.</p></li>
+<li><p>Xoay khớp bên phải từ từ tới góc 150 độ giúp đầu gắp hạ xuống gần mặt đất. Lúc này đầu gắp sẽ nằm tại vị trí sẵn sàng để gắp vật (trong video thì vị trí gắp là ngay phần đế của vật cần gắp).</p></li>
+<li><p>Mở đầu gắp để thả vật.</p></li>
+</ul>
+</li>
+<li><p>Xoay khớp bên phải từ từ tới góc 90 độ để đầu gắp về vị trí an toàn và kết thúc 1 chu trình gắp - thả vật.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="chuong-trinh-mau">
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Nhấp vào chữ <strong>tại đây</strong> để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.</p></li>
+<li><p>Robot di chuyển tới lui: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2DhFVaPf3jjVg6lRC7gj1d254DX">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual-qr.png"><img alt="../../_images/sample-move-a-to-b-manual-qr.png" class="align-center" src="../../_images/sample-move-a-to-b-manual-qr.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 </section>
 

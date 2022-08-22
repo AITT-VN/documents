@@ -14,7 +14,7 @@ Servo pack là bộ phụ kiện sáng tạo mở rộng cho **robot Rover**, ch
 
 `Rover Servo Pack <https://ohstem.vn/product/phu-kien-rover-servo-pack/>`_
 
-1.2 Tổng quan về Rover Servo Pack
+1.2 Tổng quan về Rover - Servo Pack
 --------------
 --------------------
 

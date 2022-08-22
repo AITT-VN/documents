@@ -67,7 +67,7 @@ ArmBot có thể điều khiển và lập trình được trên các thiết b�
 
 ArmBot là một cánh tay robot với 4 bậc tự do có cấu tạo như sau:
 
-.. image:: images/gt-3.png
+.. image:: images/gt-3.jpg
     :width: 500px
     :align: center
 |

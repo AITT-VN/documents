@@ -35,7 +35,7 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: OhStemX - Robot Arm
+   :caption: Robot Arm
 
    robot_arm/robot_arm.rst
 

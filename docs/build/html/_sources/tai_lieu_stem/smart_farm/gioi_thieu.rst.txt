@@ -1,0 +1,33 @@
+1. Trong giáo trình STEM này - Nông nghiệp thông minh, chúng tôi sẽ áp dụng những công nghệ mới nhất như trí tuệ nhân tạo AI, Internet vạn vật,… vào ứng dụng nông nghiệp và giới thiệu đến các thầy cô, để phục vụ cho mục đích dạy học STEM.
+-----------
+
+Một số chủ đề nổi bật:
+
+🍀 Tưới tiêu theo giờ
+
+🍀 Đếm ngày tăng trưởng của cây
+
+🍀 Phân loại hoa quả
+
+🍀 Phân tích dữ liệu bằng Excel
+
+🍀 Và nhiều dự án khác
+
+
+**Tải giáo trình STEM nông nghiệp thông minh tại đây:** `Tải về <https://drive.google.com/file/d/1i1nLZRQHNqLMhBgDO89NNzSlPvJTDnPu/view>`_
+----
+----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -75,3 +75,9 @@ OhStem xin chào tất cả các bạn!
    module/board-mo-rong.rst 
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Tài liệu STEM
+
+   tai_lieu_stem/smart_farm.rst
+   tai_lieu_stem/du_an_yolobit.rst

@@ -18,13 +18,16 @@ OhStem xin chào tất cả các bạn!
    :caption: Máy tính lập trình Yolo:Bit
 
    yolobit_v2/lam-quen.rst
-
-   yolobit_v2/aiot.rst
    yolobit_v2/homebit.rst
    yolobit_v2/plantbit.rst
    yolobit_v2/citybit.rst
    yolobit_v2/physbit.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: AIoT Kit-Lập trình AI & IoT
+
+   aiot/lam_quen.rst
 
 .. toctree::
    :maxdepth: 2

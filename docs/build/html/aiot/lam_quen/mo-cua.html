@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11. Mở cửa bằng mật khẩu &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12. Vườn thông minh" href="vuon-thong-minh.html" />
+    <link rel="prev" title="10. Hệ thống chống trộm" href="chong-trom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html">Đi tới cửa hàng</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-aiot.html">1. Giới thiệu về bộ KIT AIoT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mach-mo-rong.html">2. Tìm hiểu mạch mở rộng Yolo:Bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trai-tim.html">3. Trái tim nhấp nháy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bat-tat-den.html">4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="den-thong-minh.html">5. Đèn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="den-quat.html">6. Điều khiển đèn và quạt từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="man-hinh-lcd.html">7. Hiển thị thông tin lên màn hình LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhiet-do-phong.html">8. Máy đo nhiệt độ phòng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quat-thong-minh.html">9. Quạt thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chong-trom.html">10. Hệ thống chống trộm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Mở cửa bằng mật khẩu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">1. Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">2. Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">3. Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-trinh">4. Lập trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-bien">Giới thiệu về biến</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">5. Chương trình mẫu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vuon-thong-minh.html">12. Vườn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="may-rua-tay.html">13. Máy rửa tay không chạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="may-choi-nhac.html">14. Máy chơi nhạc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">15. Thùng rác thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relay.html">16. Bật tắt Relay</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">1. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">2. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a> &raquo;</li>
+      <li>11. Mở cửa bằng mật khẩu</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masteraiot/lam_quen/mo-cua.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mo-cua-bang-mat-khau">
+<h1>11. Mở cửa bằng mật khẩu<a class="headerlink" href="#mo-cua-bang-mat-khau" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>1. Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trong bài học này, chúng ta sẽ cùng làm một hệ thống cửa mở được bằng mật mã, tương tự các hệ thống khóa của trong thực tế nhé. Bạn sẽ dùng nút A và B trên Yolo:Bit để nhập mật khẩu, nếu đúng thì cửa sẽ mở thông qua động cơ Servo. Ngược lại, nếu mật khẩu sai thì hệ thống sẽ thông báo sai mật khẩu để nhập lại.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>2. Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mạch Yolo:Bit</p></li>
+<li><p>Mạch mở rộng Yolo:Bit.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/4.1.jpg"><img alt="../../_images/4.1.jpg" class="align-center" src="../../_images/4.1.jpg" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Màn hình LCD1602</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/7.1.jpg"><img alt="../../_images/7.1.jpg" class="align-center" src="../../_images/7.1.jpg" style="width: 204.8px; height: 204.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Động cơ Servo</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/11.1.jpg"><img alt="../../_images/11.1.jpg" class="align-center" src="../../_images/11.1.jpg" style="width: 204.8px; height: 204.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>3. Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Kết nối màn hình vào cổng I2C</p></li>
+<li><p>Kết nối Servo vào cổng chân cắm P6 (Lưu ý: Nối dây Servo với đúng với thứ tự màu trên dãy chân cắm như hình minh họa)</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/11.2.png"><img alt="../../_images/11.2.png" class="align-center" src="../../_images/11.2.png" style="width: 450px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Giới thiệu đôi nét về động cơ Servo:</strong></p></li>
+</ul>
+<p>Servo là một dạng động cơ điện đặc biệt, chỉ quay khi được điều khiển (bằng tín hiệu xung) với góc quay nằm trong khoảng bất kỳ. Có 3 loại Servo quen thuộc là:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Servo quay 180 độ</p></li>
+<li><p>Servo quay 270 độ</p></li>
+<li><p>Servo quay 360 độ</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Ở dự án này, chúng ta sẽ sử dụng Servo 180 độ.</strong></p>
+</section>
+<section id="lap-trinh">
+<h2>4. Lập trình<a class="headerlink" href="#lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Giới thiệu khối lệnh</strong></p></li>
+</ul>
+<p>Trong danh mục <strong>CHỮ VIẾT</strong> sử dụng các khối lệnh sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Tạo ra văn bản từ các khối lệnh thông tin được gắn ở phía sau:</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.3.png"><img alt="../../_images/11.3.png" class="align-center" src="../../_images/11.3.png" style="width: 285.6px; height: 97.60000000000001px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Khối lệnh trả về giá trị tổng số lượng các ký tự đằng sau nó</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.4.png"><img alt="../../_images/11.4.png" class="align-center" src="../../_images/11.4.png" style="width: 424.0px; height: 71.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Khối lệnh nội dung: tạo một nội dung tùy ý (chữ, số, ký tự…) để sử dụng trong chương trình.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.4.1.png"><img alt="../../_images/11.4.1.png" class="align-center" src="../../_images/11.4.1.png" style="width: 190.0px; height: 75.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Trong danh mục <strong>CHÂN CẮM</strong> sử dụng các khối lệnh sau để làm việc với Servo:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Điều khiển Servo quay một góc nhất định</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.4.2.png"><img alt="../../_images/11.4.2.png" class="align-center" src="../../_images/11.4.2.png" style="width: 604.0px; height: 65.60000000000001px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Tắt điều khiển chân Servo</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.4.3.png"><img alt="../../_images/11.4.3.png" class="align-center" src="../../_images/11.4.3.png" style="width: 399.20000000000005px; height: 56.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-ve-bien">
+<h2>Giới thiệu về biến<a class="headerlink" href="#gioi-thieu-ve-bien" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để chương trình không cần phải đọc khoảng cách và xử lý giá trị liên tục, chúng ta cần sử dụng biến. Có thể hiểu, biến như một chiếc hộp, nơi chứa giá trị mà ta cần sử dụng.</p>
+<p>Mỗi hộp chỉ có thể chứa duy nhất một giá trị (chữ, số, chuỗi, dữ liệu) tại một thời điểm. Trong bài này, biến sẽ chứa giá trị số, đại diện cho khoảng cách từ Rover đến vật thể trước mặt.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.25.png"><img alt="../../_images/bai_7.25.png" class="align-center" src="../../_images/bai_7.25.png" style="width: 400px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Cách tạo và sử dụng biến</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để tạo</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.35.png"><img alt="../../_images/bai_7.35.png" class="align-center" src="../../_images/bai_7.35.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Khi tạo biến thành công, trong mục Biến sẽ xuất hiện những khối lệnh liên quan để làm việc với biến.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/bai_7.45.png"><img alt="../../_images/bai_7.45.png" class="align-center" src="../../_images/bai_7.45.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Lập trình</strong></p></li>
+</ul>
+<p>Đầu tiên, chúng ta sẽ tạo 2 biến:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mật khẩu cài đặt (Mật khẩu đúng để mở cửa)</p></li>
+<li><p>Mật khẩu đã nhập (Mật khẩu khi nhập vào)</p></li>
+</ul>
+</div></blockquote>
+<p>Chúng ta sẽ quy định mật khẩu đúng để mở cửa là AABB. Để làm điều này, bạn hãy gán giá trị AABB cho biến <strong>mật khẩu cài đặt</strong>.</p>
+<p>Lúc ban đầu, chúng ta chưa nhập mật khẩu nên ta cần gán giá trị rỗng cho biến <strong>mật khẩu đã nhập</strong></p>
+<a class="reference internal image-reference" href="../../_images/11.5.png"><img alt="../../_images/11.5.png" class="align-center" src="../../_images/11.5.png" style="width: 530.0px; height: 224.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chúng ta sẽ lập trình khi nút A được nhấn, chương trình sẽ phát ra một nốt nhạc và thêm 1 kí tự A vào chuỗi mật khẩu đã nhập trước đó.</p>
+<p>Ví dụ: Nếu bạn đã nhập AAB trước đó, sau khi nhấn A lần nữa, mật khẩu đã nhập sẽ là AABA</p>
+<a class="reference internal image-reference" href="../../_images/11.6.png"><img alt="../../_images/11.6.png" class="align-center" src="../../_images/11.6.png" style="width: 732.8000000000001px; height: 172.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau đó, bạn hãy xóa màn hình LCD trước đó và hiển thị mật khẩu đã nhập lên màn hình LCD trong vòng 300 ms (0.3 giây) để quan sát:</p>
+<a class="reference internal image-reference" href="../../_images/11.7.png"><img alt="../../_images/11.7.png" class="align-center" src="../../_images/11.7.png" style="width: 732.0px; height: 292.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bạn tiến hành lập trình tương tự với nút B: Nếu nút B được nhấn thì Yolo:Bit sẽ phát nốt nhạc G3 để báo hiệu, đồng thời lưu thông tin vào mật khẩu đã nhập và hiển thị chúng ra màn hình LCD trong 300 ms:</p>
+<a class="reference internal image-reference" href="../../_images/11.8.png"><img alt="../../_images/11.8.png" class="align-center" src="../../_images/11.8.png" style="width: 742.4000000000001px; height: 307.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Kiểm tra độ dài của mật khẩu đã nhập đủ 4 ký tự chưa, nếu đủ thì xóa màn hình LCD:</p>
+<a class="reference internal image-reference" href="../../_images/11.9.png"><img alt="../../_images/11.9.png" class="align-center" src="../../_images/11.9.png" style="width: 712.0px; height: 137.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Cuối cùng, chúng ta sẽ kiểm tra mật khẩu. Có 2 trường hợp xảy ra:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Trường hợp 1: Mật khẩu đúng</strong></p></li>
+</ul>
+<p>Nếu mật khẩu đúng (mật khẩu đã nhập bằng mật khẩu cài đặt) thì màn hình LCD hiển thị dòng chữ “Xin moi vao” và phát bài nhạc POWER_UP, đồng thời quay Servo để mở cửa trong 3 giây, sau đó đóng cửa và tắt Servo (Bạn nhớ đổi cổng của Servo thành cổng P6 nhé):</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.10.png"><img alt="../../_images/11.10.png" class="align-center" src="../../_images/11.10.png" style="width: 696.8000000000001px; height: 387.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Trường hợp 2: Mật khẩu sai</strong></p></li>
+</ul>
+<p>Nếu mật khẩu sai, màn hình LCD hiển thị “Sai mat khau” và phát bài nhạc POWER_DOWN, đồng thời xóa mật khẩu đã nhập tại cuối chương trình (Cho biến mật khẩu đã nhập bằng giá trị rỗng)</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/11.11.png"><img alt="../../_images/11.11.png" class="align-center" src="../../_images/11.11.png" style="width: 684.0px; height: 411.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Xem chương trình đầy đủ bên dưới nhé!</p>
+</section>
+<section id="chuong-trinh-mau">
+<h2>5. Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở cửa bằng mật khẩu: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2EWTBwBtCbYAHEUk2BebalMe0kI">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/11.13.png"><img alt="../../_images/11.13.png" class="align-center" src="../../_images/11.13.png" style="width: 200px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="chong-trom.html" class="btn btn-neutral float-left" title="10. Hệ thống chống trộm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="vuon-thong-minh.html" class="btn btn-neutral float-right" title="12. Vườn thông minh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -25,7 +25,7 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
-   :caption: AIoT Kit-Lập trình AI & IoT
+   :caption: AIoT Kit - Lập trình AI & IoT
 
    aiot/lam_quen.rst
 

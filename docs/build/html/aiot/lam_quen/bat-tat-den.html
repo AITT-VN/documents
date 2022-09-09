@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2. Bật tắt đèn LED RGB &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+  <title>4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Điều khiển tốc độ quạt" href="dieu-khien-quat.html" />
-    <link rel="prev" title="1. Giới thiệu về bộ kit AIoT" href="gioi-thieu-aiot.html" /> 
+    <link rel="next" title="5. Đèn thông minh" href="den-thong-minh.html" />
+    <link rel="prev" title="3. Trái tim nhấp nháy" href="trai-tim.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,16 +52,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">AIoT Kit Lập trình AI &amp; IoT</span></p>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../lam_quen.html"><strong>Làm quen với AIoT Kit</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-aiot.html">1. Giới thiệu về bộ kit AIoT</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Bật tắt đèn LED RGB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dieu-khien-quat.html">3. Điều khiển tốc độ quạt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="man-hinh-lcd.html">4. Cập nhật thông tin lên LCD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nhiet-do-do-am-dht20.html">5. Hiển thị nhiệt độ độ ẩm từ DHT20</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cam-bien-do-am-dat.html">6. Cảm biến độ ẩm đất</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cong-tac-relay.html">7. Kết nối Relay và Máy bơm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gioi-thieu-aiot.html">1. Giới thiệu về bộ KIT AIoT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mach-mo-rong.html">2. Tìm hiểu mạch mở rộng Yolo:Bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trai-tim.html">3. Trái tim nhấp nháy</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#muc-tieu">1. Mục tiêu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thiet-bi-can-dung">2. Thiết bị cần dùng</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi">3. Kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-trinh">4. Lập trình</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chuong-trinh-mau">5. Chương trình mẫu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="den-thong-minh.html">5. Đèn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="den-quat.html">6. Điều khiển đèn và quạt từ xa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="man-hinh-lcd.html">7. Hiển thị thông tin lên LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhiet-do-phong.html">8. Máy đo nhiệt độ phòng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quat-thong-minh.html">9. Quạt thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chong-trom.html">10. Hệ thống chống trộm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mo-cua.html">11. Mở cửa bằng mật khẩu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vuon-thong-minh.html">12. Vườn thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="may-rua-tay.html">13. Máy rửa tay không chạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">14. Thùng rác thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relay.html">15. Bật tắt Relay</a></li>
 </ul>
 </li>
 </ul>
@@ -118,8 +133,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../lam_quen.html"><strong>Làm quen với AIoT Kit</strong></a> &raquo;</li>
-      <li>2. Bật tắt đèn LED RGB</li>
+          <li><a href="../lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a> &raquo;</li>
+      <li>4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masteraiot/lam_quen/bat-tat-den.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -129,16 +144,129 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="bat-tat-den-led-rgb">
-<h1>2. Bật tắt đèn LED RGB<a class="headerlink" href="#bat-tat-den-led-rgb" title="Permalink to this heading"></a></h1>
+  <section id="bat-tat-den-bang-nut-nhan-tren-yolo-bit">
+<h1>4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit<a class="headerlink" href="#bat-tat-den-bang-nut-nhan-tren-yolo-bit" title="Permalink to this heading"></a></h1>
+<section id="muc-tieu">
+<h2>1. Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Một trong những thiết bị đầu tiên mà chúng ta sẽ làm quen là đèn chiếu sáng RGB (còn gọi là module 4 LED RGB).</p>
+<p>RGB là cụm từ viết tắt của Red - Green - Blue (tương ứng với 3 màu là đỏ, xanh lá và xanh dương). Đây là 3 màu cơ bản dùng để phối ra rất nhiều màu trong thực tế. Do đó, với thiết bị này, bạn có thể sáng tạo ra nhiều ánh sáng đẹp mắt cho ứng dụng của mình.</p>
+</section>
+<section id="thiet-bi-can-dung">
+<h2>2. Thiết bị cần dùng<a class="headerlink" href="#thiet-bi-can-dung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mạch Yolo:Bit</p></li>
+<li><p>Mạch mở rộng Yolo:Bit</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/4.1.jpg"><img alt="../../_images/4.1.jpg" class="align-center" src="../../_images/4.1.jpg" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Module 4 LED RGB</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/4.2.jpg"><img alt="../../_images/4.2.jpg" class="align-center" src="../../_images/4.2.jpg" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ket-noi">
+<h2>3. Kết nối<a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Trên mạch mở rộng của Yolo:Bit, mỗi khe cắm đều sẽ có tên của chân kết nối. Đây là thông tin quan trọng cho việc lập trình sau này.</p>
+<p>Module 4 LED RGB được nối với chân P14/P15 của Yolo:Bit, như hình minh họa bên dưới:</p>
+<a class="reference internal image-reference" href="../../_images/4.32.png"><img alt="../../_images/4.32.png" class="align-center" src="../../_images/4.32.png" style="width: 450px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Nhờ các dây điện đã chuẩn hóa về nguồn đất và tín hiệu điều khiển, bạn không cần phải lo lắng về việc kết nối các thiết bị với nhau. Các dây kết nối cũng chỉ có 1 chiều cắm, nhằm hạn chế tối đa việc cắm ngược, gây chập nguồn và hư hỏng thiết bị. Đây là một lợi thế vô cùng lớn của hệ thống mạch điện khi đã được chuẩn hóa.</p>
+</section>
+<section id="lap-trinh">
+<h2>4. Lập trình<a class="headerlink" href="#lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Thêm thư viện lập trình AIoT</strong></p></li>
+</ul>
+<p>Đèn 4 LED RGB là một thiết bị tích hợp. Cụ thể, nó được điều khiển bằng tín hiệu hình xung, vốn là một khái niệm khá phức tạp trong việc lập trình dành cho các thiết bị điện tử.</p>
+<p>Do đó, để thuận lợi cho người dùng, OhStem có hỗ trợ thư viện lập trình dùng cho các thiết bị ngoại vi của Yolo:Bit, có tên là <strong>AIoT KIT</strong>. Hơn nữa, bộ thư viện này còn sẽ được sử dụng xuyên suốt trong các phần hướng dẫn tiếp theo.</p>
+<p>Dựa vào thư viện này, bạn có thể lập trình với rất nhiều thiết bị cao cấp khác, như quạt (motor), cảm biến nhiệt độ và độ ẩm không khí, cảm biến độ ẩm đất hay các công tắc điện tử, màn hình LCD.</p>
+<a class="reference internal image-reference" href="../../_images/4.43.png"><img alt="../../_images/4.43.png" class="align-center" src="../../_images/4.43.png" style="width: 250px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Để thêm thư viện AIoT KIT, bạn tiến hành kết nối Yolo:Bit với máy tính bằng dây USB. Sau đó, bạn chọn vào <strong>MỞ RỘNG &gt;&gt;tìm kiếm cụm từ AIoT KIT</strong>, giao diện sẽ hiển thị hình ảnh thư viện AIoT KIT như hình trên.</p>
+<p>Sau khi nhấn chọn vào thư viện này, một nhóm lệnh mới sẽ được thêm vào môi trường lập trình trực tuyến, như hình dưới:</p>
+<a class="reference internal image-reference" href="../../_images/4.51.png"><img alt="../../_images/4.51.png" class="align-center" src="../../_images/4.51.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Giới thiệu khối lệnh</strong></p></li>
+</ul>
+<p>Chúng ta sẽ sử dụng câu lệnh bên dưới để điều khiển đèn RGB:</p>
+<a class="reference internal image-reference" href="../../_images/4.61.png"><img alt="../../_images/4.61.png" class="align-center" src="../../_images/4.61.png" style="width: 560px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Câu lệnh này có 3 phần tùy chọn có thể thay đổi:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Chân kết nối: Bạn cần phải chọn đúng chân mà đèn 4 LED RGB đang kết nối với Yolo:Bit. Như trong bài này, chân kết nối là P14</p></li>
+<li><p>Vị trí đèn: Trên thiết bị có tất cả 4 đèn, bạn có thể chọn điều khiển riêng lẻ từng đèn, hoặc đơn giản là chọn tất cả 4 đèn</p></li>
+<li><p>Màu đèn: Có rất nhiều màu để bạn chọn (lưu ý: màu đen được dùng để tắt đèn)</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Lập trình</strong></p></li>
+</ul>
+<p>Để làm một ví dụ minh họa đơn giản, chúng ta sẽ sử dụng nút A và B trên mạch Yolo:Bit để điều khiển bật / tắt đèn:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nhấn nút A: Bật đèn màu trắng</p></li>
+<li><p>Nhấn nút B: Tắt đèn</p></li>
+</ul>
+</div></blockquote>
+<p>Sau khi đã thêm đầy đủ thư viện, chúng ta bắt đầu lập trình cho mạch Yolo:Bit. Chúng ta sẽ sử dụng khối lệnh sự kiện <strong>khi nút A được nhấn</strong> trong mục <strong>NGÕ VÀO</strong>, như hình minh họa dưới:</p>
+<a class="reference internal image-reference" href="../../_images/4.71.png"><img alt="../../_images/4.71.png" class="align-center" src="../../_images/4.71.png" style="width: 350px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Đây là khối lệnh có thể chọn lựa được, với 3 tùy chọn khác nhau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nút A</p></li>
+<li><p>Nút B</p></li>
+<li><p>Khi nhấn 2 nút A và B cùng lúc.</p></li>
+</ul>
+</div></blockquote>
+<p>Với yêu cầu của đề bài, chúng ta chỉ cần 2 khối cho 2 nút A và B mà thôi. Chương trình gợi ý sẽ như sau:</p>
+<a class="reference internal image-reference" href="../../_images/4.8.png"><img alt="../../_images/4.8.png" class="align-center" src="../../_images/4.8.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chương trình hoàn chỉnh:</p>
+<a class="reference internal image-reference" href="../../_images/4.9.png"><img alt="../../_images/4.9.png" class="align-center" src="../../_images/4.9.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuong-trinh-mau">
+<h2>5. Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Bật tắt đèn với nút nhấn trên Yolo:Bit: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2EW4pHV58xpGRUl5XoNYy1735Ip">Tại đây</a></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/4.10.png"><img alt="../../_images/4.10.png" class="align-center" src="../../_images/4.10.png" style="width: 200px;" /></a>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="gioi-thieu-aiot.html" class="btn btn-neutral float-left" title="1. Giới thiệu về bộ kit AIoT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="dieu-khien-quat.html" class="btn btn-neutral float-right" title="3. Điều khiển tốc độ quạt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="trai-tim.html" class="btn btn-neutral float-left" title="3. Trái tim nhấp nháy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="den-thong-minh.html" class="btn btn-neutral float-right" title="5. Đèn thông minh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

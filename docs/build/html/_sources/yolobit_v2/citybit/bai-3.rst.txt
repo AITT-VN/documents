@@ -14,13 +14,13 @@ Kết nối
 
 - Cảm biến vật cản (P0)
 
-    .. image:: images/bai_3.1.png
+    .. image:: images/bai_3.2.png
         :width: 200px
         :align: center 
     |    
 - Cảm biến chuyển động PIR (P1)
 
-    .. image:: images/bai_3.2.png
+    .. image:: images/bai_3.1.png
         :width: 200px
         :align: center 
     |

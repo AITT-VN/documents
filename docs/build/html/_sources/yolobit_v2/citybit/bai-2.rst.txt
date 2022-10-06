@@ -189,7 +189,7 @@ Chương trình mẫu
 ------------
 ---------------
 
-- Bãi đậu xe thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2Bq9xkbPikV3miDqgL6cCrCAtj8>`_
+- Bãi đậu xe thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2FkHOerrpZWRv96rsd468O4VNjO>`_
 
 .. image:: images/bai_2.27.png
     :width: 200px

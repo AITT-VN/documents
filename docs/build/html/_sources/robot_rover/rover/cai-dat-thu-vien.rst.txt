@@ -21,7 +21,13 @@
 -----------
 -------------
 
-- Sau khi tải và cài đặt thư viện Rover vào Yolo:Bit, **RESET lại robot**.
+- Sau khi tải và cài đặt thư viện Rover vào Yolo:Bit, bạn cần **RESET lại robot** bằng cách nhấn vào nút RESET trên mạch Yolo:Bit như hình bên dưới. 
+
+.. image:: images/reset.png
+    :scale: 100%
+    :align: center
+|
+*Lưu ý: Chờ tầm 3 giây, robot sẽ tự khởi động lại, phát ra âm thanh và có đèn sáng.*
 
 - Khi có âm thanh và đèn sáng, **Robot có sẵn 4 chế độ hoạt động**
 

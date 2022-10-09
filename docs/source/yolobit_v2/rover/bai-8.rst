@@ -1,4 +1,4 @@
-12. Bài 8: Vết tích để lại 
+11. Bài 8: Vết tích để lại 
 =====================================
 
 *Thủ phạm đã bị bắt, nhưng mọi chuyện chưa dừng ở đó. Rover cần khám nghiệm hiện trường để tìm lại những thứ đã mất. Phát hiện dấu vết là biệt tài của Rover.*

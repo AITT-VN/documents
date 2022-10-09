@@ -1,4 +1,4 @@
-13. Bài 9: Lần theo dấu vết
+12. Bài 9: Lần theo dấu vết
 =======================================
 
 *Vết tích mà Rover tìm được dường như đang dẫn đến nơi nào đó. Rover quyết định đi theo để tìm lại những vật bị mất*

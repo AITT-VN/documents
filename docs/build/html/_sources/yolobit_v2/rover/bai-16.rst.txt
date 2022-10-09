@@ -1,4 +1,4 @@
-20. Bài 16: Lập trình AI - Điều khiển bằng giọng nói
+19. Bài 16: Lập trình AI - Điều khiển bằng giọng nói
 ==============================================
 
 Mục tiêu

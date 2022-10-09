@@ -1,4 +1,4 @@
-7. Bài 3: Thắp sáng 
+6. Bài 3: Thắp sáng 
 ==================================
 
 *Trời đã xế chiều, Rover cần đi qua một đường hầm tối để đến thành phố bên kia. Hãy giúp Rover bật đèn chiếu sáng khi trời tối để đi qua đường hầm.*

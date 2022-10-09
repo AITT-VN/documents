@@ -1,4 +1,4 @@
-18. Bài 14: Chỉ huy từ xa
+17. Bài 14: Chỉ huy từ xa
 =======================================
 
 *Khi thực thi nhiệm vụ, Rover cần phải tuân theo hiệu lệnh của cấp trên, để hoàn thành các nhiệm vụ một cách tốt nhất. Bạn hãy chỉ huy và truyền đạt lại yêu cầu cho Rover nhé!*

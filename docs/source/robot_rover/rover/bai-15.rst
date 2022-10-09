@@ -1,4 +1,4 @@
-19. Bài 15: Giao tiếp cùng đồng đội 
+18. Bài 15: Giao tiếp cùng đồng đội 
 =========================================
 
 *Yolo:Bit là đồng đội tiếp theo sẽ hỗ trợ Rover. Cả hai sẽ cùng giao tiếp với nhau để hoàn thành nhiệm vụ*

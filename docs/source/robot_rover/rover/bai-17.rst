@@ -1,4 +1,4 @@
-21. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ
+20. Bài 17: Lập trình AI - Điều khiển bằng cử chỉ
 ============================================
 
 Mục tiêu

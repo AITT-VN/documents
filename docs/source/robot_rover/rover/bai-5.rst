@@ -1,4 +1,4 @@
-9. Bài 5: Đôi mắt tinh tường
+8. Bài 5: Đôi mắt tinh tường
 =================================
 
 *Rover có một đôi mắt cực kì nhạy bén với rất nhiều chức năng và công dụng. Trong đó, đo đạc là chức năng hữu ích nhất mà Rover thường dùng trong thành phố. Với đôi mắt đó, bạn có thể đo lường khoảng cách một cách dễ dàng mà không cần các thước đo thủ công.*

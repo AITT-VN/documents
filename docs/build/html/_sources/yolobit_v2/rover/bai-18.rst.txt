@@ -1,4 +1,4 @@
-22. Bài 18: Điều khiển và giám sát robot qua IoT
+21 Bài 18: Điều khiển và giám sát robot qua IoT
 ========================================
 
 Mục tiêu:

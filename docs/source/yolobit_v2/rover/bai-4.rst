@@ -1,4 +1,4 @@
-8. Bài 4: Trở thành cảnh sát 
+7. Bài 4: Trở thành cảnh sát 
 =====================================
 
 *Rover có một đôi mắt cực kì nhạy bén với rất nhiều chức năng và công dụng.Trong đó, đo đạc là chức năng hữu ích nhất mà Rover thường dùng trong thành phố. Với đôi mắt đó, bạn có thể đo lường khoảng cách một cách dễ dàng mà không cần các thước đo thủ công.* 

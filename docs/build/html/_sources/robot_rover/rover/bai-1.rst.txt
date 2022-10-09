@@ -1,4 +1,4 @@
-5. Bài 1: Cùng di chuyển nào
+4. Bài 1: Cùng di chuyển nào
 =================================
 
 *Xin chào các bạn! Đã đến lúc bắt đầu hành trình khám phá những điều mới rồi! Hãy bắt đầu cùng Rover nào.*

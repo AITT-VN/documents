@@ -1,4 +1,4 @@
-6. Bài 2: Chú ý từng bước đi
+5. Bài 2: Chú ý từng bước đi
 ===================================
 
 *Chuyến đi của Rover đã bắt đầu rồi. Hãy nhắc nhở Rover chú ý đến bánh xe mỗi bên của mình vì chúng không thực sự đồng đều đâu. Cùng Rover kiểm tra mỗi động cơ để đạt hành trình tuyệt vời nhé!*

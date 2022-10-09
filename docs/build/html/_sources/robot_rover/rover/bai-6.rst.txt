@@ -1,4 +1,4 @@
-10. Bài 6: Vượt chướng ngại vật 
+9. Bài 6: Vượt chướng ngại vật 
 ===================================
 
 *Có chuyện gì đó vừa xảy ra, Rover đang đuổi theo ai đó. Đường đi khá lạ lẫm và có nhiều cản trở, Rover cần tránh né để đuổi kịp mục tiêu...*

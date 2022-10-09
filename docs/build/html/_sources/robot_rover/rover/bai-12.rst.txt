@@ -1,4 +1,4 @@
-16. Bài 12: Hạ gục tội phạm 
+15. Bài 12: Hạ gục tội phạm 
 ====================================
 
 *Là một cảnh sát, Rover luôn thể hiện rõ bản lĩnh của mình Rover có thể triệt phá vòng vây và hạ gục tội phạm dễ dàng để bảo vệ an toàn cho người dân*

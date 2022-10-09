@@ -1,4 +1,4 @@
-11. Bài 7: Bám sát mục tiêu
+10. Bài 7: Bám sát mục tiêu
 ========================================
 
 *Vượt qua các chướng ngại, Rover đã tiếp cận được mục tiêu. “Không thể để kẻ này thoát được” - Rover thầm nghĩ. Ý chí kiên định đó đã giúp Rover khai phá một kỹ năng mới cho bản thân - Bám sát mục tiêu*

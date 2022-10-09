@@ -1,4 +1,4 @@
-14. Bài 10: Né tránh nguy hiểm 
+13. Bài 10: Né tránh nguy hiểm 
 ====================================
 
 *Rover đã tìm được đến nơi chứa đồ vật bị mất, nhưng ở đây vẫn còn nhiều mối nguy hiểm tiềm ẩn. Rover phải thật cẩn thận và phát hiện những nơi nguy hiểm để né tránh*

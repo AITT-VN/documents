@@ -8,7 +8,6 @@
    rover/gioi-thieu-rover.rst
    rover/lap-rap.rst
    rover/cai-dat-thu-vien.rst
-   rover/che-do-mac-dinh.rst
    rover/bai-1.rst
    rover/bai-2.rst
    rover/bai-3.rst

@@ -30,7 +30,7 @@ Kết nối
         :width: 200px
         :align: center 
     |
-**Lưu ý:** Chỉnh góc Servo về 20o trước khi lắp ráp 
+**Lưu ý:** Chỉnh góc Servo về góc 20 trước khi lắp ráp 
 
 - **Kết nối**
 

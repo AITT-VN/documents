@@ -11,7 +11,7 @@ Kết nối
 ----------
 --------------
 
-- Cảm biến khoảng cách (P10/P13)
+- Cảm biến khoảng cách (P3/P6)
 
     .. image:: images/bai_5.1.png
         :width: 200px

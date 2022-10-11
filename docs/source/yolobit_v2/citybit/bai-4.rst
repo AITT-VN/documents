@@ -170,7 +170,7 @@ Chương trình mẫu
 ---------------
 -----------------
 
-- Hệ thống cảnh báo tiếng ồn: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BsC7c89yhsN09u77mhXArcqx7Q>`_
+- Hệ thống cảnh báo tiếng ồn: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2FzsE3AQWdALyRoOkKQ0IdAesPE>`_
 
 .. image:: images/bai_4.24.png
     :width: 200px

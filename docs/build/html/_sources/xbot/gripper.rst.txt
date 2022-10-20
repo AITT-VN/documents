@@ -1,7 +1,7 @@
 **Đầu gắp Gripper**
 ===========================
 
-Giới thiệu
+1. Giới thiệu
 ----------
 ----------
 
@@ -10,10 +10,16 @@ Giới thiệu
 .. raw:: html
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/l9Vba8oYV9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-|
 
 
-Hướng dẫn lắp ráp
+2. Link sản phẩm 
+-------
+------------
+
+`Đầu gắp Gripper <https://ohstem.vn/product/dau-gap-robot/>`_
+
+
+3. Hướng dẫn lắp ráp
 -----------------
 -----------------
 
@@ -66,7 +72,7 @@ Hướng dẫn lắp ráp
         :align: center 
 
 
-Hướng dẫn lập trình
+4. Hướng dẫn lập trình
 ------------------
 ------------------
 

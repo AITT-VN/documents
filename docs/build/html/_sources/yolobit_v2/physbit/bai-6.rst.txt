@@ -53,7 +53,7 @@ Chương trình
 
 - Giá trị analog đọc từ cảm biến ánh sáng là một số nằm trong khoảng từ 0 đến 4095. Tuy nhiên giá trị dùng để điều chỉnh độ sáng của đèn là một số trong khoảng 0 đến 100. Vì vậy ta cần dùng block đổi số để quy đổi độ sáng thành một số cũng nằm trong khoảng từ 0 đến 100.
 
-- **Cách tạo biến: **
+- **Cách tạo biến:**
 
     1. Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để tạo
 

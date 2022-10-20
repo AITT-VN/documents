@@ -1,7 +1,7 @@
 **Bộ Dump Truck**
 =================
 
-Giới thiệu 
+1. Giới thiệu 
 ----------
 -----------
 
@@ -12,7 +12,14 @@ Dump Truck là bộ phụ kiện được dùng để gắn lên xBot để vui 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/DREgkUCVX-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 | 
 
-Hướng dẫn lắp ráp
+2. Link sản phẩm 
+-------
+------------
+
+`Bộ Dump Truck <https://ohstem.vn/product/dump-truck/>`_
+
+
+3. Hướng dẫn lắp ráp
 -------------------
 -------------------
 

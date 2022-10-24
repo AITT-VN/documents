@@ -66,6 +66,13 @@ html_theme_options = {
    #  'vcs_pageview_mode': '',
     #'style_nav_header_background': 'white',
     # Toc options
+
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+   #  'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False,
+
     # 'collapse_navigation': True,
     # 'sticky_navigation': True,
    #  'navigation_depth': 4,
@@ -83,3 +90,10 @@ html_context  = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]

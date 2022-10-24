@@ -7,6 +7,7 @@
   <title>10. Tạo hiệu ứng xe chạy &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
@@ -47,11 +48,14 @@
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/aiot.html"><strong>AIoT Kit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,6 +112,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">1. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">2. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+</ul>
 
         </div>
       </div>
@@ -148,7 +157,7 @@
 <p><strong>Bước 1</strong></p>
 <p>Tạo khối <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">game</span> <span class="pre">update</span> <span class="pre">interval</span> <span class="pre">500</span> <span class="pre">ms</span></code>, đặt 500ms thành 1000ms (1 giây). Nghĩa là sự kiện này sẽ xảy ra mỗi giây một lần.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/7.2.png"><img alt="../../_images/7.2.png" class="align-center" src="../../_images/7.2.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/7.21.png"><img alt="../../_images/7.21.png" class="align-center" src="../../_images/7.21.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -157,7 +166,7 @@
 <p>Tìm <code class="docutils literal notranslate"><span class="pre">projectile</span> <span class="pre">from</span> <span class="pre">side</span></code> trong <code class="docutils literal notranslate"><span class="pre">Sprites</span></code> và kéo thả nó vào khối <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">game</span> <span class="pre">update</span> <span class="pre">interval</span></code>. Mở trình chỉnh sửa hình ảnh <code class="docutils literal notranslate"><span class="pre">projectile</span></code> và chọn hoặc tạo hình ảnh của một chiếc xe.</p>
 <p>Trong <code class="docutils literal notranslate"><span class="pre">projectile</span></code>, đặt <strong>vy</strong> thành 0, để xe chỉ di chuyển sang phải.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/7.3.png"><img alt="../../_images/7.3.png" class="align-center" src="../../_images/7.3.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/7.31.png"><img alt="../../_images/7.31.png" class="align-center" src="../../_images/7.31.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -165,7 +174,7 @@
 <p><strong>Bước 3</strong></p>
 <p>Tìm <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">mySprite</span> <span class="pre">x</span> <span class="pre">to</span> <span class="pre">0</span></code> từ <strong>Sprites</strong> và kéo, thả vào sau khối <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">projectile</span> <span class="pre">to</span></code>. Thay đổi <code class="docutils literal notranslate"><span class="pre">mySprite</span></code> thành <code class="docutils literal notranslate"><span class="pre">projectile</span></code> và đổi <code class="docutils literal notranslate"><span class="pre">x</span></code> thành <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/7.4.png"><img alt="../../_images/7.4.png" class="align-center" src="../../_images/7.4.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/7.41.png"><img alt="../../_images/7.41.png" class="align-center" src="../../_images/7.41.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -175,7 +184,7 @@
 <p>Tìm <code class="docutils literal notranslate"><span class="pre">screen</span> <span class="pre">height</span></code> trong <code class="docutils literal notranslate"><span class="pre">Scene</span></code> và đặt vào vị trí có giá trị là 10 cùa khối <code class="docutils literal notranslate"><span class="pre">pick</span> <span class="pre">random</span> <span class="pre">0</span> <span class="pre">to</span> <span class="pre">10</span></code>.
 <code class="docutils literal notranslate"><span class="pre">screen</span> <span class="pre">height</span></code> là chiều cao của màn hình (120), do đó,  <code class="docutils literal notranslate"><span class="pre">projectile</span></code>  sẽ xuất hiện ở một vị trí ngẫu nhiên phía bên trái màn hình.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/7.5.png"><img alt="../../_images/7.5.png" class="align-center" src="../../_images/7.5.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/7.51.png"><img alt="../../_images/7.51.png" class="align-center" src="../../_images/7.51.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

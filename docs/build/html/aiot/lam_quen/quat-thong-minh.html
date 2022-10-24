@@ -7,6 +7,7 @@
   <title>9. Quạt thông minh &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
@@ -75,8 +76,9 @@
 <li class="toctree-l2"><a class="reference internal" href="mo-cua.html">11. Mở cửa bằng mật khẩu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vuon-thong-minh.html">12. Vườn thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="may-rua-tay.html">13. Máy rửa tay không chạm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">14. Thùng rác thông minh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relay.html">15. Bật tắt Relay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="may-choi-nhac.html">14. Máy chơi nhạc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">15. Thùng rác thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relay.html">16. Bật tắt Relay</a></li>
 </ul>
 </li>
 </ul>
@@ -197,7 +199,7 @@
 <li><p>Kết nối màn hình LCD1602 và cảm biến nhiệt độ độ ẩm DHT20 vào 2 cổng I2C</p></li>
 <li><p>Kết nối quạt mini vào cổng P10/P13</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/9.13.png"><img alt="../../_images/9.13.png" class="align-center" src="../../_images/9.13.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/9.1.png"><img alt="../../_images/9.1.png" class="align-center" src="../../_images/9.1.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -206,17 +208,17 @@
 <h2>4. Lập trình<a class="headerlink" href="#lap-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để điều khiển quạt mini, chúng ta sử dụng khối lệnh sau:</p>
-<a class="reference internal image-reference" href="../../_images/9.21.png"><img alt="../../_images/9.21.png" class="align-center" src="../../_images/9.21.png" style="width: 512.0px; height: 71.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/9.2.png"><img alt="../../_images/9.2.png" class="align-center" src="../../_images/9.2.png" style="width: 512.0px; height: 71.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Trước tiên, chúng ta hãy tạo điều kiện: Nếu nhiệt độ ≥ 27, quạt sẽ bật với tốc độ 50. Ngược lại, nếu nhiệt độ nhỏ hơn 27 độ thì quạt sẽ tắt (tương ứng với 0%):</p>
-<a class="reference internal image-reference" href="../../_images/9.31.png"><img alt="../../_images/9.31.png" class="align-center" src="../../_images/9.31.png" style="width: 512.0px; height: 156.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/9.3.png"><img alt="../../_images/9.3.png" class="align-center" src="../../_images/9.3.png" style="width: 512.0px; height: 156.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Đồng thời, bạn đừng quên dùng khối lệnh cập nhật cảm biến nhiệt độ &amp; độ ẩm để theo dõi nhiệt độ thay đổi như thế nào nhé. Chương trình hoàn chỉnh sẽ như sau:</p>
-<a class="reference internal image-reference" href="../../_images/9.42.png"><img alt="../../_images/9.42.png" class="align-center" src="../../_images/9.42.png" style="width: 512.0px; height: 283.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/9.4.png"><img alt="../../_images/9.4.png" class="align-center" src="../../_images/9.4.png" style="width: 512.0px; height: 283.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

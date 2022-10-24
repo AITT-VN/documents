@@ -7,6 +7,7 @@
   <title>4. Bật tắt đèn bằng nút nhấn trên Yolo:Bit &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
@@ -68,15 +69,16 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="den-thong-minh.html">5. Đèn thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="den-quat.html">6. Điều khiển đèn và quạt từ xa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="man-hinh-lcd.html">7. Hiển thị thông tin lên LCD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="man-hinh-lcd.html">7. Hiển thị thông tin lên màn hình LCD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nhiet-do-phong.html">8. Máy đo nhiệt độ phòng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quat-thong-minh.html">9. Quạt thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chong-trom.html">10. Hệ thống chống trộm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mo-cua.html">11. Mở cửa bằng mật khẩu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vuon-thong-minh.html">12. Vườn thông minh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="may-rua-tay.html">13. Máy rửa tay không chạm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">14. Thùng rác thông minh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relay.html">15. Bật tắt Relay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="may-choi-nhac.html">14. Máy chơi nhạc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thung-rac.html">15. Thùng rác thông minh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relay.html">16. Bật tắt Relay</a></li>
 </ul>
 </li>
 </ul>
@@ -176,7 +178,7 @@
 <hr class="docutils" />
 <p>Trên mạch mở rộng của Yolo:Bit, mỗi khe cắm đều sẽ có tên của chân kết nối. Đây là thông tin quan trọng cho việc lập trình sau này.</p>
 <p>Module 4 LED RGB được nối với chân P14/P15 của Yolo:Bit, như hình minh họa bên dưới:</p>
-<a class="reference internal image-reference" href="../../_images/4.32.png"><img alt="../../_images/4.32.png" class="align-center" src="../../_images/4.32.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.3.png"><img alt="../../_images/4.3.png" class="align-center" src="../../_images/4.3.png" style="width: 450px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -191,13 +193,13 @@
 <p>Đèn 4 LED RGB là một thiết bị tích hợp. Cụ thể, nó được điều khiển bằng tín hiệu hình xung, vốn là một khái niệm khá phức tạp trong việc lập trình dành cho các thiết bị điện tử.</p>
 <p>Do đó, để thuận lợi cho người dùng, OhStem có hỗ trợ thư viện lập trình dùng cho các thiết bị ngoại vi của Yolo:Bit, có tên là <strong>AIoT KIT</strong>. Hơn nữa, bộ thư viện này còn sẽ được sử dụng xuyên suốt trong các phần hướng dẫn tiếp theo.</p>
 <p>Dựa vào thư viện này, bạn có thể lập trình với rất nhiều thiết bị cao cấp khác, như quạt (motor), cảm biến nhiệt độ và độ ẩm không khí, cảm biến độ ẩm đất hay các công tắc điện tử, màn hình LCD.</p>
-<a class="reference internal image-reference" href="../../_images/4.43.png"><img alt="../../_images/4.43.png" class="align-center" src="../../_images/4.43.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.4.png"><img alt="../../_images/4.4.png" class="align-center" src="../../_images/4.4.png" style="width: 250px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Để thêm thư viện AIoT KIT, bạn tiến hành kết nối Yolo:Bit với máy tính bằng dây USB. Sau đó, bạn chọn vào <strong>MỞ RỘNG &gt;&gt;tìm kiếm cụm từ AIoT KIT</strong>, giao diện sẽ hiển thị hình ảnh thư viện AIoT KIT như hình trên.</p>
 <p>Sau khi nhấn chọn vào thư viện này, một nhóm lệnh mới sẽ được thêm vào môi trường lập trình trực tuyến, như hình dưới:</p>
-<a class="reference internal image-reference" href="../../_images/4.51.png"><img alt="../../_images/4.51.png" class="align-center" src="../../_images/4.51.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.5.png"><img alt="../../_images/4.5.png" class="align-center" src="../../_images/4.5.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -205,7 +207,7 @@
 <li><p><strong>Giới thiệu khối lệnh</strong></p></li>
 </ul>
 <p>Chúng ta sẽ sử dụng câu lệnh bên dưới để điều khiển đèn RGB:</p>
-<a class="reference internal image-reference" href="../../_images/4.61.png"><img alt="../../_images/4.61.png" class="align-center" src="../../_images/4.61.png" style="width: 560px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.6.png"><img alt="../../_images/4.6.png" class="align-center" src="../../_images/4.6.png" style="width: 560px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -228,7 +230,7 @@
 </ul>
 </div></blockquote>
 <p>Sau khi đã thêm đầy đủ thư viện, chúng ta bắt đầu lập trình cho mạch Yolo:Bit. Chúng ta sẽ sử dụng khối lệnh sự kiện <strong>khi nút A được nhấn</strong> trong mục <strong>NGÕ VÀO</strong>, như hình minh họa dưới:</p>
-<a class="reference internal image-reference" href="../../_images/4.71.png"><img alt="../../_images/4.71.png" class="align-center" src="../../_images/4.71.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.7.png"><img alt="../../_images/4.7.png" class="align-center" src="../../_images/4.7.png" style="width: 350px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

@@ -18,7 +18,7 @@
     :class: with-shadow
     :scale: 100%
     :align: center
-
+|
 
 **2. Thông số kỹ thuật**
 ------------

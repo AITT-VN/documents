@@ -1,2 +1,2 @@
-5. Cảm biến độ ẩm đất điện dung
+4. Cảm biến độ ẩm đất điện dung
 ==============

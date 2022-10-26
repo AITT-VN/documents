@@ -3,12 +3,12 @@
 
 .. toctree::
    :maxdepth: 1
-
-   cam-bien/vat-can.rst
+   
    cam-bien/dht20.rst
    cam-bien/dht11.rst
    cam-bien/do-am-dat.rst
    cam-bien/dat-dien-dung.rst
+   cam-bien/vat-can.rst
    cam-bien/mq2.rst
    cam-bien/mq3.rst
    cam-bien/mq135.rst

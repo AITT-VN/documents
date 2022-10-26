@@ -15,7 +15,7 @@ Mạch điều khiển robot xController
 
 - 2 cổng cắm động cơ (M1, M2)
 
-**Link mua sản phẩm** 
+**Mua sản phẩm** 
 -----------
 ----------
 

@@ -1,2 +1,115 @@
 5. Động cơ quạt mini
 ==========
+
+.. image:: images/5.1.png
+    :width: 400px
+    :align: center 
+| 
+
+- Động cơ là một thiết bị điện tử rất phổ biến trong cuộc sống của chúng ta (như quạt, động cơ xe, máy bơm nước…). Động cơ khi được cung cấp điện sẽ làm xoay trục động cơ, từ đó tạo nên nhiều ứng dụng khác nhau.
+
+- Ta có thể kết hợp module động cơ này với những module cảm biến khác như: điều khiển bật/tắt quạt theo thời gian, đọc giá trị nhiệt độ để bật/tắt quạt,…
+
+
+**1. Mua sản phẩm**
+-----------
+----------
+
+..  image:: images/gio.png
+    :alt: some image
+    :target: https://ohstem.vn/product/dong-co-quat-mini/
+    :class: with-shadow
+    :scale: 100%
+    :align: center
+|
+
+**2. Thông số kỹ thuật**
+
+- **Thông số kỹ thuật của động cơ quạt mini**
+
+    + Điện áp hoạt động: 5V
+    + Tín hiệu điều khiển: 2 pins
+    + Kích thước của mạch: 24mm x 48mm x 16mm
+
+
+- **Pinout của động cơ quạt mini**
+
+Module động cơ quạt mini có 4 chân, và mỗi chân có chức năng như sau:
+
+..  csv-table:: 
+    :header: "STT", "Chân", "Chức năng"
+    :widths: 10, 15, 30
+
+    1, "GND", "Nối đất"
+    2, "VCC", "Cấp nguồn"
+    3, "S2", "Tín hiệu điều khiển quay nghịch"
+    4, "S1", "Tín hiệu điều khiển quay thuận"
+    
+
+**3. Kết nối**
+------------
+------------
+
+- **Bước 1**: Chuẩn bị các thiết bị như sau: 
+
+.. list-table:: 
+   :widths: auto
+   :header-rows: 1
+     
+   * - .. image:: images/yolo.png
+          :width: 200px
+          :align: center
+     - .. image:: images/mmr.png
+          :width: 200px
+          :align: center
+     - .. image:: images/5.1.png
+          :width: 200px
+          :align: center
+   * - Máy tính lập trình Yolo:Bit
+     - Mạch mở rộng cho Yolo:Bit
+     - Động cơ quạt mini (kèm dây Grove)
+   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-quat-mini/>`_
+
+
+- **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
+- **Bước 3**: Sử dụng dây Grove cắm động cơ quạt mini 
+- **Bước 4**: Kết nối thiết bị vào **chân P0 trên mạch mở rộng**
+
+..  figure:: images/5.2.png
+    :scale: 100%
+    :align: center 
+
+    Bạn có thể kết nối động cơ quạt mini vào bất kỳ chân nào của mạch mở rộng
+
+**4. Hướng dẫn lập trình**
+--------
+------------
+
+- **Bước 1:** Tải thư viện **AIOT KIT**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+
+
+    .. image:: images/5.3.png
+        :width: 300px
+        :align: center 
+    |
+
+    Sau khi tải thư viện, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh tương ứng:
+
+    .. image:: images/5.4.png
+        :width: 800px
+        :align: center 
+    |   
+
+- **Bước 2:** Hãy gửi chương trình sau đến Yolo:Bit của bạn:      
+
+    .. image:: images/5.5.png
+        :scale: 100%
+        :align: center 
+    |  
+
+
+.. note::
+
+    Nếu nút trên mạch Yolo:Bit được nhấn, tốc độ của quạt sẽ thay đổi tương ứng. Với tốc độ 0, quạt sẽ dừng hoạt động. Tốc độ tối đa của quạt là 100. 

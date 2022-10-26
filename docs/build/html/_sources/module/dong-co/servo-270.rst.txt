@@ -8,7 +8,7 @@
 
 Động cơ Greek Servo 270 tương thích với Lego, có thể dùng để lắp ráp vào các mô hình sáng tạo theo ý thích.
 
-**1. Link mua sản phẩm**
+**1. Mua sản phẩm**
 -----------
 ----------
 

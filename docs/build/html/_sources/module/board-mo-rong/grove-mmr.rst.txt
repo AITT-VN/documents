@@ -36,7 +36,7 @@
           :scale: 40%
           :align: center
 
-**Link mua sản phẩm**
+**Mua sản phẩm**
 ------------
 -----------
 

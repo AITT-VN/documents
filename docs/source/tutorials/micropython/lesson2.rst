@@ -57,7 +57,8 @@ Viết chương trình
   - Copy đoạn code sau, click vào nút ``DownloadAndRun`` để chạy chương trình.
 
 .. code-block:: python
-
+  
+  import time
   while True:
     pin11.write_digital(1)
     time.sleep(1)

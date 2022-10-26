@@ -2,6 +2,7 @@
 ============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   board-mo-rong/xController.rst
+   board-mo-rong/xcontroller.rst
+   board-mo-rong/grove-mmr.rst

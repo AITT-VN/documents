@@ -72,11 +72,12 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 2
    :caption: Các module mở rộng
 
+   module/cai-dat-thu-vien.rst
    module/cam-bien.rst
    module/hien-thi.rst
    module/dieu-khien-dong-ngat.rst
    module/board-mo-rong.rst 
-
+   module/dong-co.rst
 
 .. toctree::
    :maxdepth: 1
@@ -84,3 +85,5 @@ OhStem xin chào tất cả các bạn!
 
    tai_lieu_stem/smart_farm.rst
    tai_lieu_stem/du_an_yolobit.rst
+
+

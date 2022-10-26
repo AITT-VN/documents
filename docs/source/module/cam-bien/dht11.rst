@@ -48,7 +48,7 @@
 
 - **Pinout của DHT11**
 
-Cảm biến nhiệt độ và độ ẩm DHT11 có 3 chân, và mỗi chân có chức năng như sau:
+Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có chức năng như sau:
 
 ..  csv-table:: 
     :header: "STT", "Chân", "Chức năng"

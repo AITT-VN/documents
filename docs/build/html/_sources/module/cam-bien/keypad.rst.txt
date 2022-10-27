@@ -57,7 +57,7 @@
      - Keypad (kèm dây Grove)
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     
+     - `Mua sản phẩm <https://ohstem.vn/product/keypad-ban-phim-cam-ung-dien-dung/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
@@ -101,5 +101,4 @@
 .. note::
 
     **Giải thích chương trình:** Khi nút trên bàn phím được nhấn, Yolo:Bit sẽ hiển thị thông tin ra màn hình LED tương ứng. 
-
 

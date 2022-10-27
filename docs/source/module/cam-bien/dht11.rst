@@ -40,7 +40,7 @@
 
 - **Thông số kỹ thuật của cảm biến nhiệt độ độ ẩm DHT11**
 
-    + Điện áp đầu vào: 3.3V & 5V
+    + Điện áp đầu vào: 3.3V
     + Khoảng giá trị dòng điện: 1.3 – 2.1 mA
     + Khoảng giá trị độ ẩm: 5% – 95% RH
     + Khoảng giá trị nhiệt độ: -20 – 60 ℃
@@ -55,7 +55,7 @@ Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "NC", "Không sử dụng"
     4, "SIG", "Tín hiệu ngõ ra của cảm biến"
 

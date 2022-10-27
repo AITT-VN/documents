@@ -30,7 +30,7 @@
 
 - **Thông số kỹ thuật**
 
-    + Hỗ trợ cả 3.3V và 5V
+    + Hỗ trợ cả 3.3V 
     + Số điểm hiển thị: 128×64 điểm.
     + Độ rộng màn hình: 0.96 inch
     + Màu hiển thị: Trắng / Xanh Dương.
@@ -81,7 +81,7 @@
 --------
 ------------
 
-- **Bước 1:** Tải thư viện **OLED I2C**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+- **Bước 1:** Tải thư viện **Màn hình OLED I2C**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
 
 
     .. image:: images/oled.png

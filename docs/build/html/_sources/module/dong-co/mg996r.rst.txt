@@ -50,19 +50,24 @@
    :widths: auto
    :header-rows: 1
      
-   * - .. image:: images/yolo_mmr.png
+   * - .. image:: images/yolo.png
+          :width: 200px
+          :align: center
+     - .. image:: images/mmr.png
           :width: 200px
           :align: center
      - .. image:: images/4.1.png
           :width: 200px
           :align: center
      - .. image:: images/4.2.png
-          :width: 200px
+          :width: 300px
           :align: center
-   * - Mạch mở rộng kèm Yolo:Bit
+   * - Máy tính lập trình Yolo:Bit
+     - Mạch mở rộng cho Yolo:Bit
      - Động cơ Servo MG996R
      - Pin 18650
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg996r/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/pin-sac-2s-8-4v-18650/>`_
 

@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật**
 
-    + Điện áp hoạt động: 3.3 – 5V DC 
+    + Điện áp hoạt động: 3.3V
     + Số lượng LED: 4 x RGB LED 
     + Dòng điện tối đa: 60mA / (1 LED) , 240mA / (4 LED) 
     + Loại LED: WS2812-4 
@@ -46,7 +46,7 @@ Module 4 LED RGB có 4 chân, và mỗi chân có chức năng như sau:
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "NC", "Không sử dụng"
     4, "SIG", "Tín hiệu điều khiển LED"
 

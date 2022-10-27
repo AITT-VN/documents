@@ -27,7 +27,7 @@
 
 - **Thông số kỹ thuật của động cơ quạt mini**
 
-    + Điện áp hoạt động: 5V
+    + Điện áp hoạt động: 3.3V
     + Tín hiệu điều khiển: 2 pins
     + Kích thước của mạch: 24mm x 48mm x 16mm
 
@@ -41,7 +41,7 @@ Module động cơ quạt mini có 4 chân, và mỗi chân có chức năng nh�
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "S2", "Tín hiệu điều khiển quay nghịch"
     4, "S1", "Tín hiệu điều khiển quay thuận"
     

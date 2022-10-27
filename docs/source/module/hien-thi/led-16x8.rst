@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật của màn hình  LED ma trận**
 
-    + Điện áp: 3.3V , 5V
+    + Điện áp: 3.3V
     + Giao tiếp: I2C
     + Kích thước module: 73 x 31 x 15 mm (DxRxC)
 
@@ -39,7 +39,7 @@ Màn hình ma trận LED 16×8 có 4 chân, và mỗi chân có chức năng nh�
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "SCLK", "Clock"
     4, "DIN", "Data"
 

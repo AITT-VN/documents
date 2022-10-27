@@ -25,5 +25,4 @@
    cam-bien/pir.rst
    cam-bien/cham.rst
    cam-bien/nuoc.rst
-   cam-bien/van-tay.rst
    cam-bien/keypad.rst

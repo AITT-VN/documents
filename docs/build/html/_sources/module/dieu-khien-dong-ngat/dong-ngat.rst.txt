@@ -32,19 +32,24 @@
    :widths: auto
    :header-rows: 1
      
-   * - .. image:: images/yolo_mmr.png
+   * - .. image:: images/yolo.png
+          :width: 200px
+          :align: center
+     - .. image:: images/mmr.png
           :width: 200px
           :align: center
      - .. image:: images/2.1.png
           :width: 200px
           :align: center
-     - .. image:: images/1.1.png
+     - .. image:: images/may_bom.png
           :width: 300px
           :align: center
-   * - Mạch mở rộng kèm Yolo:Bit
-     - Module đóng ngắt 2 kênh (kèm dây Grove) 
+   * - Máy tính lập trình Yolo:Bit
+     - Mạch mở rộng cho Yolo:Bit
+     - Module đóng ngắt (kèm dây Grove) 
      - Máy bơm mini 
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/module-dong-ngat-2-kenh/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/may-bom-mini/>`_
 

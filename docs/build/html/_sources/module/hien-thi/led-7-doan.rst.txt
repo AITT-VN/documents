@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật của màn hình LED 7 đoạn**
 
-    + Điện áp hoạt động: 3.3 – 5V DC
+    + Điện áp hoạt động: 3.3V
     + Số led 7 đoạn: 4
     + Điều khiển: Sử dụng 2 chân tín hiệu DIO, CLK
     + Driver chip: TM1637
@@ -43,7 +43,7 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "CLK", "Clock"
     4, "DIO", "Data"
 
@@ -88,7 +88,7 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
 --------
 ------------
 
-- **Bước 1**: Tải thư viện **LED 7 đoạn**, bằng cách dán đường link sau **https://github.com/AITT-VN/yolobit_extension_led7segment.git** vào phần tìm kiếm thư viện. 
+- **Bước 1**: Tải thư viện **LED 7 đoạn**, bằng cách dán đường link sau `https://github.com/AITT-VN/yolobit_extension_led7segment.git <https://github.com/AITT-VN/yolobit_extension_led7segment.git>`_ vào phần tìm kiếm thư viện. 
 
     Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
 

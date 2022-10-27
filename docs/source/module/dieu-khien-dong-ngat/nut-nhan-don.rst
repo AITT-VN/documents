@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật của nút nhấn**
 
-    + Điện áp: 3.3V , 5V
+    + Điện áp: 3.3V
     + Đầu ra: Digital (pull-up ở trạng thái chưa nhấn)
     + Giao tiếp: 3 chân (S V G)
     + Kích thước nút nhấn: 12mm x 12mm
@@ -42,7 +42,7 @@ Module nút nhấn đơn có 3 chân, và mỗi chân có chức năng như sau:
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "NC", "Không sử dụng"
     4, "SIG", "Tín hiệu nút nhấn"
 

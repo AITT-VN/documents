@@ -24,13 +24,13 @@
    :header-rows: 1
      
    * - .. image:: images/2.2.png
-          :scale: 50%
+          :scale: 40%
           :align: center
      - .. image:: images/2.3.png
-          :scale: 50%
+          :scale: 40%
           :align: center
    * - .. image:: images/2.4.png
-          :scale: 50%
+          :scale: 40%
           :align: center
      - .. image:: images/2.5.png
           :scale: 40%

@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật**
 
-    + Hỗ trợ cả 3.3V và 5V
+    + Hỗ trợ cả 3.3V
     + Đèn LED đơn thường có 3 màu: đỏ, xanh lá, vàng 
     + Kích thước của mạch: 24mm x 24mm x 8mm
 
@@ -40,8 +40,8 @@ Module LED có 3 chân, và mỗi chân có chức năng như sau:
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
-    3, "NC", "Truyền tín hiệu"
+    2, "VCC", "Cấp nguồn (3.3V)"
+    3, "NC", "Không sử dụng"
     4, "SIG", "Tín hiệu điều khiển LED"
 
 **3. Kết nối**

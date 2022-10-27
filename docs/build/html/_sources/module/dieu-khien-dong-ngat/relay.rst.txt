@@ -26,7 +26,7 @@
 
 - **Thông số kỹ thuật của Relay**
 
-    + Điện áp: 3.3VDC
+    + Điện áp: 3.3V
     + Dòng chịu đựng: 3A
     + Không có bảo vệ ngược cực, cần chú ý khi cấp nguồn
     + Tín hiệu điều khiển: Digital
@@ -42,7 +42,7 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
     :widths: 10, 15, 30
 
     1, "GND", "Nối đất"
-    2, "VCC", "Cấp nguồn"
+    2, "VCC", "Cấp nguồn (3.3V)"
     3, "NC", "Không sử dụng"
     4, "SIG", "Tín hiệu điều khiển"
 

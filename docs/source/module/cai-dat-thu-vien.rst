@@ -5,7 +5,7 @@ Với mỗi thiết bị mở rộng, OhStem sẽ có những thư viện đi k�
 
 Để tải các thư viện bạn sẽ thực hiện theo các bước sau: 
 
-- **Bước 1**: Truy cập vào `<https://app.ohstem.vn/`_ , chọn thiết bị lập trình Yolo:Bit.
+- **Bước 1**: Truy cập vào `<https://app.ohstem.vn/>`_ , chọn thiết bị lập trình Yolo:Bit.
 
 .. image:: images/1.1.png
     :scale: 70%

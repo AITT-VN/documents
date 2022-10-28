@@ -12,7 +12,13 @@ Bộ xBot Inventor Kit là bộ robot lắp ráp mở rộng cho robot xBot. có
 --------------
 -----------------
 
-`xBot Inventor Kit <https://ohstem.vn/product/xbot-inventor-kit/>`_
+..  image:: images/gio.png
+    :alt: some image
+    :target: https://ohstem.vn/product/xbot-inventor-kit/
+    :class: with-shadow
+    :scale: 100%
+    :align: center
+|
 
 1.2 Tổng quan về xBot Inventor Kit
 --------------------------------

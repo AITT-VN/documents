@@ -88,11 +88,11 @@ OhStem xin chào tất cả các bạn!
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: API thư viện
 
-   api/micropython-api/index.rst
-   api/arduino-api/index.rst   
+   api/api-xbot.rst
+  
    
 
 

@@ -1,4 +1,4 @@
-1. Greek Servo 270 tương thích với Lego
+1. Geek Servo 270 tương thích với Lego
 ==============
 
 .. image:: images/1.1.png
@@ -6,7 +6,7 @@
     :align: center 
 | 
 
-Động cơ Greek Servo 270 tương thích với Lego, có thể dùng để lắp ráp vào các mô hình sáng tạo theo ý thích.
+Động cơ Geek Servo 270 tương thích với Lego, có thể dùng để lắp ráp vào các mô hình sáng tạo theo ý thích.
 
 **1. Mua sản phẩm**
 -----------
@@ -14,7 +14,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/greek-servo-270/
+    :target: https://ohstem.vn/product/geek-servo-270/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -43,7 +43,7 @@
      - Động cơ Servo 270
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/greek-servo-270/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/geek-servo-270/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

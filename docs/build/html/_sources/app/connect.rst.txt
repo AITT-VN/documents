@@ -2,7 +2,7 @@ Kết nối
 ====================
 
 
-1. Chạy ứng dụng OhStem App hoặc truy cập vào https://app.ohstem.vn, chọn thiết bị mà bạn đang cần làm việc.
+1. Chạy ứng dụng OhStem App hoặc truy cập vào `https://app.ohstem.vn <https://app.ohstem.vn>`_, chọn thiết bị mà bạn đang cần làm việc.
 
 .. image:: images/connect-1.png
     :width: 420

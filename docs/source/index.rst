@@ -87,3 +87,26 @@ OhStem xin chào tất cả các bạn!
    tai_lieu_stem/du_an_yolobit.rst
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Giới thiệu OhStem App
+
+
+   app/introduction.rst
+   app/install.rst 
+   app/frontend.rst
+   app/connect.rst
+   app/createnew.rst 
+   app/runandsave.rst
+   app/blockapi.rst
+   
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Hướng dẫn lập trình với API
+
+   api/micropython-api/index.rst
+   api/arduino-api/index.rst   
+   
+
+

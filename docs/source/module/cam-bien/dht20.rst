@@ -23,8 +23,21 @@
     :align: center
 |
 
+**2. Thông số kỹ thuật**
+------------
+-------------
 
-**2. Kết nối**
+- **Thông số kỹ thuật của cảm biến:**
+
+    + Điện áp đầu vào: 3.3V
+    + Đo phạm vi độ ẩm: 0 ~ 100% RH
+    + Dải nhiệt độ đo: -40 ~ + 80 ℃
+    + Độ chính xác độ ẩm: ± 3% RH (25 ℃)
+    + Độ chính xác nhiệt độ: ± 0,5 ℃
+    + Tín hiệu đầu ra: Tín hiệu I2C
+
+
+**3. Kết nối**
 ------------
 ------------
 
@@ -61,7 +74,7 @@
 
     Bạn có thể kết nối cảm biến DHT20 vào 1 trong 2 chân I2C
 
-**3. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình**
 --------
 ------------
 

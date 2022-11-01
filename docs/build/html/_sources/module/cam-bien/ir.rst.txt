@@ -23,7 +23,18 @@
     :align: center
 |
 
-**2. Kết nối**
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật của cảm biến:**
+
+    + Điện áp sử dụng: 3.3V
+    + Tần số nhận: 38kHz
+    + Khoảng cách: 10m (MAX)
+
+
+**3. Kết nối**
 ------------
 ------------
 
@@ -64,7 +75,9 @@
     :align: center 
 
 
-**3. Hướng dẫn lập trình**
+
+
+**4. Hướng dẫn lập trình**
 --------
 ------------
 

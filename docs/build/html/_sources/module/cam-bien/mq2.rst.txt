@@ -27,7 +27,24 @@
     :align: center
 |
 
-**2. Kết nối**
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật của cảm biến:**
+
+..  csv-table:: 
+    :header: "Mục", "Thông số", "Min", "Trung bình", "Max", "Đơn vị"
+    :widths: 10, 30, 10, 15, 10, 10
+
+    "VCC", "Điện áp làm việc", "", 3.3, "", "V"
+    "PH", "Hệ thống sưởi tiêu thụ", 0.5, "", 800, "mW"
+    "RL", "Chịu tải", "", "Có thể điều chỉnh", "", ""
+    "RH", "Chống nóng", "", 33, "", "Ω"
+    "RS", "Cảm biến kháng", 3, "", 30, "kΩ"
+
+
+**3. Kết nối**
 ------------
 ------------
 
@@ -65,7 +82,7 @@
     Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
 
-**3. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình**
 --------
 ------------
 

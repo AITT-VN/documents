@@ -22,7 +22,20 @@
     :align: center
 |
 
-**2.  Lưu file MP3 vào Sound Player:**
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật của Sound Player:**
+
+    + USB giao tiếp: 2.0.
+    + Giao tiếp UART: TTL.
+    + Điện áp đầu vào: 3.3V
+    + Dòng làm việc : 10mA.
+    + Nhiệt độ Làm Việc: -40°C ~ 85°C
+
+
+**3.  Lưu file MP3 vào Sound Player:**
 --------
 --------------
 
@@ -47,7 +60,7 @@
 - **Bước 3:** Ngắt kết nối module Sound Player với máy tính và thực hiện các bước như chương tiếp theo.
 
 
-**3. Kết nối**
+**4. Kết nối**
 ------------
 ------------
 
@@ -83,7 +96,7 @@
     :align: center 
 |
 
-**4. Hướng dẫn lập trình:**
+**5. Hướng dẫn lập trình:**
 ------------
 -------------
 
@@ -124,7 +137,7 @@
     Sau khi gửi chương trình xuống Yolo:Bit, bài nhạc số 1 sẽ được phát ra, âm lượng bạn có thể tùy chỉnh từ 0-30. Khi bạn nhấn nút A, bài hát đang phát sẽ dừng lại để chuyển sang bài kế tiếp. Tương tự với nút B. 
 
 
-**5. Hướng dẫn tạo file MP3 bằng giọng nói tiếng Việt**
+**6. Hướng dẫn tạo file MP3 bằng giọng nói tiếng Việt**
 ------------
 ---------------
 

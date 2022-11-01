@@ -22,7 +22,21 @@
     :align: center
 |
 
-**2. Kết nối**
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật của cảm biến:**
+
+    + Điện áp hoạt động: 3.3V
+    + Tín hiệu đầu ra: Analog
+    + Chiều dài: 92,1mm
+    + Bề rộng: 23,5mm
+    + Chiều cao: 6,5mm
+    + kích thước: L: 40mm W: 20mm H: 13mm
+
+
+**3. Kết nối**
 ------------
 ------------
 
@@ -62,7 +76,7 @@
     Cảm biến độ độ ẩm đất điện dung có giá trị trả về là analog, trên mạch mở rộng có 3 chân có giá trị analog là P0, P1, P2. Bạn có thể kết nối vào 1 trong 3 chân này để làm việc với cảm biến. 
 
 
-**3. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình**
 --------
 ------------
 

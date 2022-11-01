@@ -34,7 +34,7 @@ Module cảm biến màu sắc là một cảm biến màu có khả năng nhậ
     + Kích thước module: 48mm x 24mm x 18mm (DxRxC)
 
 
-- **Pinout của cảm biến màu sắc*
+- **Pinout của cảm biến màu sắc**
 
 Cảm biến màu sắc có 4 chân, và mỗi chân có chức năng như sau:
 

@@ -25,7 +25,20 @@
     :align: center
 |
 
-**2. Kết nối**
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật của cảm biến:**
+
+    + Điện áp hoạt động: 3.3V
+    + Khoảng cách có thể phát hiện hiệu quả: 4 – 15 mm
+    + Thời gian đáp ứng: 10 μs
+    + Phototransistor - Bước sóng độ nhạy đỉnh: 800 nm
+    + IR LED - Bước sóng phát ra ánh sáng cực đại:  940 nm
+
+
+**3. Kết nối**
 ------------
 ------------
 
@@ -62,7 +75,7 @@
 
     Cảm biến vật cản bạn có thể kết nối vào bất kỳ chân nào trên mạch mở rộng
 
-**3. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình**
 --------
 ------------
 

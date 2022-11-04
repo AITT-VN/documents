@@ -1,7 +1,7 @@
 23. Cảm biến vân tay AS608
 ==============
 
-.. image:: images/22.1.png
+.. image:: images/2x.1.png
     :width: 400px
     :align: center 
 | 
@@ -57,7 +57,7 @@
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/22.1.png
+     - .. image:: images/2x.1.png
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit
@@ -72,7 +72,7 @@
 - **Bước 3**: Sử dụng dây Grove cắm vào cảm biến
 - **Bước 4**: Kết nối cảm biến với **P3/P6 trên mạch mở rộng**.
 
-..  figure:: images/22.3.png
+..  figure:: images/2x.3.png
     :scale: 100%
     :align: center 
 

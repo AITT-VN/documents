@@ -26,3 +26,4 @@
    cam-bien/cham.rst
    cam-bien/nuoc.rst
    cam-bien/keypad.rst
+   cam-bien/rotary.rst

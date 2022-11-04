@@ -1,7 +1,7 @@
 22. Keypad - Bàn phím cảm ứng điện dung
 ====================
 
-.. image:: images/23.1.png
+.. image:: images/22.1.png
     :width: 400px
     :align: center 
 |
@@ -49,7 +49,7 @@
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/23.1.png
+     - .. image:: images/22.1.png
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit
@@ -64,7 +64,7 @@
 - **Bước 3**: Sử dụng dây Grove cắm vào cảm biến
 - **Bước 4**: Kết nối cảm biến với **I2C trên mạch mở rộng**.
 
-..  figure:: images/23.2.png
+..  figure:: images/22.2.png
     :scale: 100%
     :align: center 
 
@@ -93,7 +93,7 @@
 
 - **Bước 2**: Gửi chương trình sau xuống Yolo:Bit
 
-    ..  image:: images/23.3.png
+    ..  image:: images/22.3.png
         :scale: 100%
         :align: center 
     |

@@ -27,3 +27,4 @@
    cam-bien/nuoc.rst
    cam-bien/keypad.rst
    cam-bien/rotary.rst
+   cam-bien/hx711.rst

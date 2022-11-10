@@ -1,4 +1,4 @@
-1. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit
+2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit
 =========================
 
 .. image:: images/nong_nghiep.png

@@ -83,8 +83,10 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 1
    :caption: Tài liệu STEM
 
+   tai_lieu_stem/smart_home.rst
    tai_lieu_stem/smart_farm.rst
    tai_lieu_stem/du_an_yolobit.rst
+
 
 
 .. toctree::

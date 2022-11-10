@@ -1,4 +1,4 @@
-2. Giáo trình 100+ dự án STEM cùng Yolo:Bit
+3. Giáo trình 100+ dự án STEM cùng Yolo:Bit
 =============
 
 .. image:: images/du_an_yolobit.png

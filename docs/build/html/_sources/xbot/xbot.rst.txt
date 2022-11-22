@@ -3,7 +3,7 @@
 
 .. toctree::
    :maxdepth: 1
-
+   
    xbot/gioi-thieu.rst
    xbot/lap-rap.rst
    xbot/app.rst
@@ -15,3 +15,4 @@
    xbot/bai-5.rst
    xbot/bai-6.rst
    xbot/bai-7.rst
+   xbot/thi-dau.rst

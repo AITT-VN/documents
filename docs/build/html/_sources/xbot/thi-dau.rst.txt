@@ -1,0 +1,9 @@
+12. Nâng cao - Lập trình thi đấu với xBot
+======================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   xbot/thi-dau/bai_1.rst
+   xbot/thi-dau/bai_2.rst

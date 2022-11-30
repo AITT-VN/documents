@@ -1,4 +1,4 @@
-14. Cảm biến siêu âm
+13. Cảm biến siêu âm
 =============
 
 .. image:: images/14.1.png

@@ -1,4 +1,4 @@
-**Cảm biến & module mở rộng**
+**Cảm biến**
 ============================
 
 .. toctree::
@@ -12,7 +12,6 @@
    cam-bien/mq2.rst
    cam-bien/mq3.rst
    cam-bien/mq135.rst
-   cam-bien/nhac.rst
    cam-bien/ir.rst
    cam-bien/line-4-mat.rst
    cam-bien/line-2-mat.rst

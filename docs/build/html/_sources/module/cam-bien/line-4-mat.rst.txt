@@ -1,4 +1,4 @@
-11. Cảm biến dò đường 4 mắt
+10. Cảm biến dò đường 4 mắt
 =============
 
 .. image:: images/11.1.png

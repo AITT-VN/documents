@@ -1,4 +1,4 @@
-17. Cảm biến ánh sáng
+16. Cảm biến ánh sáng
 ===============
 
 .. image:: images/17.1.png

@@ -1,4 +1,4 @@
-22. Keypad - Bàn phím cảm ứng điện dung
+20. Keypad - Bàn phím cảm ứng điện dung
 ====================
 
 .. image:: images/22.1.png

@@ -1,4 +1,4 @@
-25. Mạch định vị GPS NEO - 6M V2
+24. Mạch định vị GPS NEO - 6M V2
 ========
 
 .. image:: images/25.1.jpg

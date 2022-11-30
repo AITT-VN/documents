@@ -9,3 +9,4 @@
    dieu-khien-dong-ngat/led-cay-trong.rst
    dieu-khien-dong-ngat/nut-nhan-don.rst
    dieu-khien-dong-ngat/relay.rst
+   dieu-khien-dong-ngat/nhac.rst

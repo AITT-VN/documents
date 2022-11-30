@@ -1,4 +1,4 @@
-13. Cảm biến màu sắc
+12. Cảm biến màu sắc
 =============
 
 .. image:: images/13.1.png

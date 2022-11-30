@@ -1,4 +1,4 @@
-16. Cảm biến góc xoay
+15. Cảm biến góc xoay
 ==============
 
 .. image:: images/16.1.png

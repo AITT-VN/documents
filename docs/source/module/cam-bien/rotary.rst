@@ -1,4 +1,4 @@
-23. Cảm biến góc xoay - Rotary Encoder 
+22. Cảm biến góc xoay - Rotary Encoder 
 ==============
 
 .. image:: images/23.1.png

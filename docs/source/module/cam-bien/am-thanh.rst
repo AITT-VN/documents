@@ -1,4 +1,4 @@
-15. Cảm biến âm thanh
+14. Cảm biến âm thanh
 ============
 
 .. image:: images/15.1.png

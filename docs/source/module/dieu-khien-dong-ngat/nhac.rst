@@ -1,7 +1,7 @@
-9. Module phát nhạc - Sound Player
+6. Module phát nhạc - Sound Player
 ==============
 
-.. image:: images/9.1.png
+.. image:: images/nhac.1.png
     :width: 400px
     :align: center 
 |
@@ -41,14 +41,14 @@
 
 - **Bước 1:** Kết nối module Sound Player (cổng lưu file được khoanh đỏ như hình bên dưới) với máy tính bằng dây cáp USB type C.
 
-..  image:: images/9.2.png
+..  image:: images/nhac.2.png
     :scale: 100%
     :align: center 
 |
 
 - **Bước 2**: Bộ nhớ lưu trữ của module sẽ xuất hiện như hình, trong ví dụ là USB Drive (E:):
 
-..  image:: images/9.3.png
+..  image:: images/nhac.3.png
     :scale: 100%
     :align: center 
 |
@@ -76,7 +76,7 @@
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/9.1.png
+     - .. image:: images/nhac.1.png
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit
@@ -91,7 +91,7 @@
 - **Bước 3**: Sử dụng dây Grove cắm vào cảm biến
 - **Bước 4**: Kết nối Sound Player với **P14/P15 trên mạch mở rộng**.
 
-..  figure:: images/9.4.png
+..  figure:: images/nhac.4.png
     :scale: 100%
     :align: center 
 |
@@ -104,28 +104,28 @@
 
     Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
 
-    .. image:: images/9.5.png
+    .. image:: images/nhac.5.png
         :scale: 100%
         :align: center 
     |
 
     Sau khi thực hiện xong phần hướng dẫn Sound Player cơ bản này, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh tương ứng: 
 
-    .. image:: images/9.6.png
+    .. image:: images/nhac.6.png
         :scale: 100%
         :align: center 
     |
 
     Để làm việc với module Sound Player, bạn cần sử dụng câu lệnh sau để khai báo chân được sử dụng trong chương trình:
 
-    .. image:: images/9.7.png
+    .. image:: images/nhac.7.png
         :scale: 100%
         :align: center 
     |
 
 - **Bước 2**: Gửi chương trình sau vào Yolo:Bit:
 
-.. image:: images/9.8.png
+.. image:: images/nhac.8.png
     :scale: 100%
     :align: center 
 |
@@ -147,21 +147,21 @@ Trong một số dự án như tạo ra các thiết bị cảnh báo, chào kh�
 
 Trang web này cho phép chúng ta tạo ra các âm thanh giọng đọc của con người từ văn bản bất kỳ với đa dạng các ngôn ngữ trên thế giới, trong đó có tiếng Việt.
 
-    .. image:: images/9.9.png
+    .. image:: images/nhac.9.png
         :scale: 100%
         :align: center 
     |
 
     - **Bước 2:** Nhập câu nói mà bạn muốn tạo vào ô **“Text”.** Ở đây, mình sẽ tạo thử một câu **“Xin chào các bạn”**
 
-    .. image:: images/9.10.png
+    .. image:: images/nhac.10.png
         :scale: 100%
         :align: center 
     |
 
     - **Bước 3:** Chọn ngôn ngữ bạn muốn tại ô **“Voice”**. Ở đây mình cần tạo giọng đọc tiếng Việt nên mình sẽ chọn **“Vietnamese”**
 
-    .. image:: images/9.11.png
+    .. image:: images/nhac.11.png
         :scale: 100%
         :align: center 
     |

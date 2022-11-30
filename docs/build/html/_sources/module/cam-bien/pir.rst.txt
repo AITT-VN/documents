@@ -1,4 +1,4 @@
-19. Cảm biến PIR
+18. Cảm biến PIR
 ================
 
 .. image:: images/19.1.png

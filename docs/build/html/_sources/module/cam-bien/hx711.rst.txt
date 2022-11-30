@@ -1,4 +1,4 @@
-24. Mạch Chuyển Đổi ADC 24bit Loadcell HX711
+23. Mạch Chuyển Đổi ADC 24bit Loadcell HX711
 ====================
 
 .. image:: images/24.1.png

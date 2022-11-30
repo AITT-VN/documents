@@ -1,4 +1,4 @@
-18. Cảm biến lửa
+17. Cảm biến lửa
 =============
 
 .. image:: images/18.1.png

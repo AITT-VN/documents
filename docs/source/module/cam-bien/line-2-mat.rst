@@ -1,4 +1,4 @@
-12. Cảm biến dò đường 2 mắt
+11. Cảm biến dò đường 2 mắt
 ===============
 
 .. image:: images/12.1.png

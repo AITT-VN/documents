@@ -1,4 +1,4 @@
-10. Mắt đọc hồng ngoại IR
+9. Mắt đọc hồng ngoại IR
 ==============
 
 .. image:: images/10.1.png

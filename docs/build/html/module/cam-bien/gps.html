@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>25. Mạch định vị GPS NEO - 6M V2 &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Hiển thị" href="../hien-thi.html" />
+    <link rel="prev" title="24. Mạch Chuyển Đổi ADC 24bit Loadcell HX711" href="hx711.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến &amp; module mở rộng</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dht20.html">1. Cảm biến nhiệt độ độ ẩm DHT20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dht11.html">2. Cảm biến nhiệt độ độ ẩm DHT11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="do-am-dat.html">3. Cảm biến độ ẩm đất</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dat-dien-dung.html">4. Cảm biến độ ẩm đất điện dung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vat-can.html">5. Cảm biến vật cản hồng ngoại</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mq2.html">6. Cảm biến khí gas MQ2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mq3.html">7. Cảm biến nồng độ cồn MQ3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mq135.html">8. Cảm biến chất lượng không khí MQ135</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhac.html">9. Module phát nhạc - Sound Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ir.html">10. Mắt đọc hồng ngoại IR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="line-4-mat.html">11. Cảm biến dò đường 4 mắt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="line-2-mat.html">12. Cảm biến dò đường 2 mắt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="color.html">13. Cảm biến màu sắc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sieu-am.html">14. Cảm biến siêu âm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="am-thanh.html">15. Cảm biến âm thanh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="goc-xoay.html">16. Cảm biến góc xoay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anh-sang.html">17. Cảm biến ánh sáng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua.html">18. Cảm biến lửa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pir.html">19. Cảm biến PIR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cham.html">20. Cảm biến chạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nuoc.html">21. Cảm biến nước</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keypad.html">22. Keypad - Bàn phím cảm ứng điện dung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rotary.html">23. Cảm biến góc xoay - Rotary Encoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hx711.html">24. Mạch Chuyển Đổi ADC 24bit Loadcell HX711</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">25. Mạch định vị GPS NEO - 6M V2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-trinh-module-gps-voi-yolo-bit"><strong>4. Lập trình module GPS với Yolo:Bit</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#du-an-mau"><strong>5.Dự án mẫu</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">1. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_home.html">3. Giáo trình AI và IOT cho nhà thông minh</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../cam-bien.html"><strong>Cảm biến &amp; module mở rộng</strong></a> &raquo;</li>
+      <li>25. Mạch định vị GPS NEO - 6M V2</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastermodule/cam-bien/gps.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mach-dinh-vi-gps-neo-6m-v2">
+<h1>25. Mạch định vị GPS NEO - 6M V2<a class="headerlink" href="#mach-dinh-vi-gps-neo-6m-v2" title="Permalink to this heading"></a></h1>
+<a class="reference internal image-reference" href="../../_images/25.1.jpg"><img alt="../../_images/25.1.jpg" class="align-center" src="../../_images/25.1.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Mạch Định Vị GPS NEO-6M V2 là một module GPS hoàn chỉnh dựa trên GPS Ublox NEO 6M. Thiết bị này sử dụng công nghệ mới nhất của Ublox để cung cấp thông tin định vị tốt nhất có thể và bao gồm một ăng-ten GPS chủ động 12 x 12mm tích hợp lớn hơn với chân cắm UART TTL.</p>
+<p>Module GPS Ublox có đầu ra TTL nối tiếp, nó có bốn chân: TX, RX, VCC và GND, đồng thời có đèn LED hiển thị trạng thái để dễ dàng quan sát trong quá trình sử dụng.</p>
+<section id="mua-san-pham">
+<h2><strong>1. Mua sản phẩm</strong><a class="headerlink" href="#mua-san-pham" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://ohstem.vn/product/mach-dinh-vi-gps/"><img alt="some image" class="with-shadow align-center" src="../../_images/gio4.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="thong-so-ky-thuat">
+<h2><strong>2. Thông số kỹ thuật</strong><a class="headerlink" href="#thong-so-ky-thuat" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p><strong>Thông số kỹ thuật</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nguồn cung cấp: 3.3V</p></li>
+<li><p>Module có ăng-ten bằng sứ, thu phát tín hiệu mạnh</p></li>
+<li><p>Có EEPROM lưu tham số cấu hình khi mất nguồn</p></li>
+<li><p>Có pin dự phòng lưu dữ liệu</p></li>
+<li><p>Có đèn LED hiển thị tín hiệu</p></li>
+<li><p>Kích thước ăng-ten: 12x12 mm</p></li>
+<li><p>Kích thước module: 23x30 mm</p></li>
+<li><p>Tốc độ baud mặc định: 9600</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Pinout của module</strong></p></li>
+</ul>
+<p>Module GPS có 4 chân, và mỗi chân có chức năng như sau:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>STT</p></th>
+<th class="head"><p>Chân</p></th>
+<th class="head"><p>Chức năng</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>GND</p></td>
+<td><p>Nối đất</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>VCC</p></td>
+<td><p>Cấp nguồn (3.3V)</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>RX</p></td>
+<td><p>Đầu nhận tín hiệu</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>TX</p></td>
+<td><p>Đầu gửi tín hiệu</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ket-noi">
+<h2><strong>3. Kết nối</strong><a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Bước 1</strong>: Chuẩn bị các thiết bị như sau:</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/yolo4.png"><img alt="../../_images/yolo4.png" class="align-center" src="../../_images/yolo4.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/mmr3.png"><img alt="../../_images/mmr3.png" class="align-center" src="../../_images/mmr3.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/25.1.jpg"><img alt="../../_images/25.1.jpg" class="align-center" src="../../_images/25.1.jpg" style="width: 200px;" /></a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Máy tính lập trình Yolo:Bit</p></td>
+<td><p>Mạch mở rộng cho Yolo:Bit</p></td>
+<td><p>Module GPS</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/grove-shield/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/mach-dinh-vi-gps/">Mua sản phẩm</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Bước 2</strong>: Cắm Yolo:Bit vào mạch mở rộng</p></li>
+<li><p><strong>Bước 3</strong>: Kết nối dây tín hiệu với module và mạch mở rộng như hình:</p></li>
+</ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/25.2.png"><img alt="../../_images/25.2.png" src="../../_images/25.2.png" style="width: 512.0px; height: 230.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Module GPS sẽ kết nối với mạch Yolo:Bit ở hàng chân cắm theo mẫu. Dây màu đỏ tương ứng với dây nguồn dương (VCC), dây màu đen tương ứng nguồn âm (GND). Dây tín hiệu Tx và Rx sẽ quy định trong phần lập trình.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="lap-trinh-module-gps-voi-yolo-bit">
+<h2><strong>4. Lập trình module GPS với Yolo:Bit</strong><a class="headerlink" href="#lap-trinh-module-gps-voi-yolo-bit" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để lập trình module GPS, chúng ta phải cần thêm thư viện mở rộng GPS, bạn hãy copy đường dẫn sau: <a class="reference external" href="https://github.com/AITT-VN/yolobit_extension_gps.git">https://github.com/AITT-VN/yolobit_extension_gps.git</a> và dán vào mục mở rộng để tải thư viện mở rộng.</p>
+<blockquote>
+<div><p>Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/gps.png"><img alt="../../_images/gps.png" class="align-center" src="../../_images/gps.png" style="width: 316.0px; height: 307.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Chương trình cơ bản để lấy tín hiệu từ GPS:</strong></p>
+<p>Đầu tiên chúng ta sẽ khởi tạo module GPS từ chân P10 và P13</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.3.png"><img alt="../../_images/25.3.png" src="../../_images/25.3.png" style="width: 512.0px; height: 69.0px;" /></a>
+</figure>
+<p>Sau khi khởi tạo, chúng ta sẽ cập nhật thông tin GPS bằng khối lệnh :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.4.png"><img alt="../../_images/25.4.png" src="../../_images/25.4.png" style="width: 336.0px; height: 75.0px;" /></a>
+</figure>
+<p>Các thông tin chúng ta được GPS hỗ trợ sẽ bao gồm các thông tin như sau :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.5.png"><img alt="../../_images/25.5.png" src="../../_images/25.5.png" style="width: 383.0px; height: 316.0px;" /></a>
+</figure>
+<p>Chương trình đơn giản để kiểm tra thời gian lấy được từ GPS khi ấn nút A sẽ như sau:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.6.png"><img alt="../../_images/25.6.png" src="../../_images/25.6.png" style="width: 512.0px; height: 245.0px;" /></a>
+</figure>
+</section>
+<section id="du-an-mau">
+<h2><strong>5.Dự án mẫu</strong><a class="headerlink" href="#du-an-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Dự án gửi vị trí cần cứu hộ đến trạm thông tin cứu hộ:</strong></p>
+<p>Với mạch Yolo:bit , chúng ta có thể kết nối với wifi và gửi tín hiệu lên server, kết hợp cùng module GPS chúng ta sẽ lấy vị trí tương đối chính xác để báo hiệu vị trí cần trợ giúp đến trạm thông tin.</p>
+<p>Đầu tiên chúng ta cần kết nối wifi cho thiết bị và kết nối với server bằng lệnh:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.7.png"><img alt="../../_images/25.7.png" src="../../_images/25.7.png" style="width: 699.3000000000001px; height: 117.0px;" /></a>
+</figure>
+<p>Sau đó chúng ta sẽ khởi tạo module GPS ở chân P10 và P13 và sẽ cho cập nhật thông tin từ GPS sau mỗi 1 giây ở vòng lặp mãi :</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.8.png"><img alt="../../_images/25.8.png" src="../../_images/25.8.png" style="width: 714.6px; height: 288.0px;" /></a>
+</figure>
+<p>Khi cần ứng cứu , chúng ta sẽ dùng nút A để gửi vị trí của mình bao gồm kinh độ và vĩ độ lên trên kênh dữ liệu V1 và V2 trên server:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/25.9.png"><img alt="../../_images/25.9.png" src="../../_images/25.9.png" style="width: 718.2px; height: 416.7px;" /></a>
+</figure>
+<p>Ở trạm điều khiển cứu nạn, chúng ta sẽ nhận được dữ liệu vĩ độ ở kênh V1 và kinh độ ở kênh V2, từ đó có thể tìm ra được vị trí cần để hỗ trợ kịp thời.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hx711.html" class="btn btn-neutral float-left" title="24. Mạch Chuyển Đổi ADC 24bit Loadcell HX711" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../hien-thi.html" class="btn btn-neutral float-right" title="Hiển thị" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

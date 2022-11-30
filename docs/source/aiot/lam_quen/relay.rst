@@ -51,7 +51,7 @@ Tận dụng 2 nút nhấn A và B có sẵn trên mạch Yolo:Bit, chúng ta c�
 Bên cạnh đó, chúng ta sẽ sử dụng thêm khối lệnh sự kiện khi nút A được nhấn như hình:
 
 .. image:: images/16.4.png
-    :scale: 100 %
+    :scale: 80 %
     :align: center
 |
 
@@ -73,7 +73,7 @@ Bên cạnh đó, chúng ta sẽ sử dụng thêm khối lệnh sự kiện khi
 -------
 ------------
 
-- Bật tắt Relay : `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2EWdyLhbjLI2VEEu030U3hLND1W>`_
+- Bật tắt Relay : `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2IG5fWtU77w9oscCE2XUFwxmopo>`_
 
 .. image:: images/16.7.png
     :width: 200px

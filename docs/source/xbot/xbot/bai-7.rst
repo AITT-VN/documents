@@ -141,7 +141,7 @@ Tuy nhiên, bạn cũng có thể tự tạo một giao diện điều khiển t
     :width: 700px
     :align: center
 |   
-2. Sau đó nhấn vào biểu tượng Tạo mới, phần mềm sẽ mửo ra giao diện thiết kế bảng điều khiển mới:
+2. Sau đó nhấn vào biểu tượng Tạo mới, phần mềm sẽ mở ra giao diện thiết kế bảng điều khiển mới:
 
 .. image:: Images/xbot_154.png
     :width: 600px
@@ -161,7 +161,7 @@ Phần mềm hỗ trợ các loại widget như bảng sau:
     :width: 700px
     :align: center
 |   
-**Bảng điều khiển động cơ Servo, đèn và âm nhạc
+**Bảng điều khiển động cơ Servo, đèn và âm nhạc**
 
 Chúng ta hãy tạo thử một bảng điều khiển có những chức năng sau:
 

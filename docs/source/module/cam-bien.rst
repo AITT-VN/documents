@@ -1,4 +1,4 @@
-**Cảm biến**
+**Cảm biến & module mở rộng**
 ============================
 
 .. toctree::
@@ -28,3 +28,4 @@
    cam-bien/keypad.rst
    cam-bien/rotary.rst
    cam-bien/hx711.rst
+   cam-bien/gps.rst

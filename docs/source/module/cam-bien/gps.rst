@@ -1,7 +1,7 @@
 24. Mạch định vị GPS NEO - 6M V2
 ========
 
-.. image:: images/25.1.jpg
+.. image:: images/25.jpg
     :width: 400px
     :align: center 
 | 
@@ -69,7 +69,7 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/25.1.jpg
+     - .. image:: images/25.jpg
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit

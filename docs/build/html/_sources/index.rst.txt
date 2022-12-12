@@ -61,6 +61,7 @@ OhStem xin chào tất cả các bạn!
    tutorials/arduino/index.rst
 
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Game Kit - Kit học lập trình game 
@@ -86,6 +87,7 @@ OhStem xin chào tất cả các bạn!
    tai_lieu_stem/du_an_yolobit.rst
    tai_lieu_stem/smart_farm.rst
    tai_lieu_stem/smart_home.rst
+   tai_lieu_stem/robot_xcontroller.rst
    
 
 

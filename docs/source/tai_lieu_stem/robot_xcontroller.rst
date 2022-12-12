@@ -10,7 +10,7 @@ Tài liệu Sáng chế và lập trình Robot với Python sẽ hướng dẫn 
 
 Tài liệu được xây dựng dựa trên bộ kit Maker Robot Kit. Đây là bộ kit được thiết kế dành riêng cho nội dung Robotics trong giáo dục STEM, giúp bạn làm quen với thế giới lập trình và chế tạo robot một cách dễ dàng. Bộ kit có thể được lập trình được bằng ngôn ngữ khối lệnh (cho các em từ 8-12 tuổi) hoặc ngôn ngữ nâng cao dạng chữ như C/C++ và Python (cho các lứa tuổi cao hơn).
 
-**Bạn có thể mua sản phẩm bằng cách nhấn vào giỏ hàng bên dưới:** 
+**Bạn có thể mua bộ Maker Robot Kit bằng cách nhấn vào giỏ hàng bên dưới:** 
 
 ..  image:: images/gio.png
     :alt: some image

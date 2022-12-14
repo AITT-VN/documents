@@ -10,4 +10,4 @@
    hien-thi/oled-096.rst
    hien-thi/led-rgb.rst
    hien-thi/led-don.rst
-   
+   hien-thi/ws2812.rst

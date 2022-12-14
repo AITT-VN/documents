@@ -1,0 +1,123 @@
+7. LED dây NeoPixel RGB WS2812
+==============
+
+.. image:: images/led_day.jpg
+    :width: 400px
+    :align: center 
+| 
+
+Dây 60 LED/1m NeoPixel RGB LED WS2812 có 60 LED RGB WS2812 trên đơn vị độ dài 1 mét, giao tiếp nối tiếp qua chuẩn 1 wire (chỉ cần 1 chân data duy nhất). Mạch này rất dễ sử dụng với bộ thư viện hỗ trợ đi kèm.
+
+Mỗi LED có khả năng hiển thị lên đến 16777216 màu và 256 cấp độ sáng khác nhau, phù hợp cho các ứng dụng trang trí, hiển thị như đồng hồ LED, vòng đeo tay LED, LED trang trí,...
+
+
+**1. Mua sản phẩm**
+-----------
+----------
+
+..  image:: images/gio.png
+    :alt: some image
+    :target: https://ohstem.vn/product/60-neopixel-rgb-led/
+    :class: with-shadow
+    :scale: 100%
+    :align: center
+|
+
+
+**2. Thông số kỹ thuật**
+------------
+-------------
+
+- **Thông số kỹ thuật**
+
+    + IC chính: LED RGB WS2812
+    + Điện áp sử dụng: 4~7VDC (tốt nhất 5VDC)
+    + Cỡ LED: SMD 5050 LED
+    + Chuẩn giao tiếp: 1 wire.
+    + Số LED hiển thị: 60 LED/1m
+
+- **Sơ đồ chân**
+
+..  csv-table:: 
+    :header: "STT", "Chân", "Chức năng"
+    :widths: 10, 15, 30
+
+    1, "DI", "Data In, chân đầu vào dữ liệu kết nối với ,mạch mở rộng  (Phía đuôi mũi tên trên dây LED)"
+    2, "VCC", "Cấp nguồn (5V), có thể cấp 4 ~ 7VDC. (Màu đỏ)"
+    3, "GND", "Chân Mass, 0V. (Màu trắng)"
+    4, "DO", "Data Out, dùng để nối tiếp tín hiệu đến các khối LED khác."
+
+- **Lưu ý:**  Không nối chân Vi điều khiển vào chân DO
+
+
+**3. Kết nối**
+------------
+------------
+
+- **Bước 1**: Chuẩn bị các thiết bị như sau: 
+
+.. list-table:: 
+   :widths: auto
+   :header-rows: 1
+     
+   * - .. image:: images/yolo.png
+          :width: 200px
+          :align: center
+     - .. image:: images/mmr.png
+          :width: 200px
+          :align: center
+     - .. image:: images/led_day.jpg
+          :width: 200px
+          :align: center
+   * - Máy tính lập trình Yolo:Bit
+     - Mạch mở rộng cho Yolo:Bit
+     - LED dây NeoPixel RGB WS2812
+   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/60-neopixel-rgb-led/>`_
+
+- **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
+- **Bước 3**: Cắm thiết bị vào chân P0 trên mạch mở rộng
+
+..  figure:: images/noi_led_day.png
+    :scale: 100%
+    :align: center 
+
+    Bạn có thể kết nối với bất kỳ chân nào trên mạch mở rộng
+
+
+**4. Hướng dẫn lập trình**
+--------
+------------
+
+Để điều khiển được LED dây, chúng ta phải cần thêm thư viện mở rộng **NEOPIXEL**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_neopixel.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
+
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+
+..  image:: images/neopixel.png
+    :scale: 100%
+    :align: center 
+|
+
+Trong thư viện sẽ có các khối lệnh như sau:
+
+..  image:: images/lenh_neopixel.png
+    :scale: 100%
+    :align: center 
+|
+
+- **Chương trình cơ bản để điều khiển LED dây**
+
+    1. Đầu tiên, chúng ta sẽ khởi tạo dây LED với chân điều khiển là P0 và số LED được cho trước:
+
+    ..  image:: images/led_day_1.png
+        :scale: 100%
+        :align: center 
+|
+    2. Sau khi khởi tạo, bạn có thể tự sáng tạo màu hoặc dùng các chế độ có sẵn trong khối lệnh. Ở đây, chúng tôi sẽ lấy ví dụ minh họa cho 2 chế độ hoạt ảnh LED có sẵn là firework và rainbow:
+
+    ..  image:: images/led_day_2.png
+        :scale: 100%
+        :align: center 
+|
+    3. Bạn có thể nạp chương trình này vào và quan sát xem hiệu ứng trên dây đèn LED thay đổi như thế nào. Chúc bạn thực hiện thành công nhé!

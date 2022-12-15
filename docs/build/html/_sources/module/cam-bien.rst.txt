@@ -28,3 +28,4 @@
    cam-bien/rotary.rst
    cam-bien/hx711.rst
    cam-bien/gps.rst
+   cam-bien/lora.rst

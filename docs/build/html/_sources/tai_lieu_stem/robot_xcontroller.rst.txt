@@ -34,6 +34,6 @@ Toàn bộ tài liệu được chia thành 3 phần chính đi từ cơ bản �
     - Phần 3: Lập trình điều khiển Robot
 
 
-**Tải tài liệu Sáng chế và lập trình Robot với Python:** `Tải về <https://drive.google.com/file/d/14ZRxTN4Gk69xKY_hhKTdQpHsSoFcqiAW/view?usp=sharing>`_
+**Tải tài liệu Sáng chế và lập trình Robot với Python:** `Tải về <https://drive.google.com/file/d/1-cfUUuWpO4uzmfVWk5OWgSWstv8RVaQq/view?usp=share_link>`_
 --------------------
 -----------

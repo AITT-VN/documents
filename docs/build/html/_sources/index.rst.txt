@@ -51,6 +51,7 @@ OhStem xin chào tất cả các bạn!
    xbot/gripper.rst
    xbot/dumptruck.rst
    xbot/dau-nang.rst
+   xbot/nem-bong.rst
 
 
 .. toctree::

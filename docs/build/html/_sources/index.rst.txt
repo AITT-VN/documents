@@ -89,6 +89,7 @@ OhStem xin chào tất cả các bạn!
    tai_lieu_stem/smart_farm.rst
    tai_lieu_stem/smart_home.rst
    tai_lieu_stem/robot_xcontroller.rst
+   tai_lieu_stem/physbit.rst
    
 
 

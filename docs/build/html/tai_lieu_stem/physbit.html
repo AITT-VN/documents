@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yolo:Bit Block API &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+  <title>5. Tài liệu thực hành mạch điện với Phys:Bit V2 &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -20,7 +20,9 @@
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Robot xBot và xController" href="../api/api-xbot.html" />
+    <link rel="prev" title="4. Tài liệu Sáng chế và lập trình Robot với Python" href="robot_xcontroller.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -92,12 +94,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../module/dong-co.html"><strong>Động cơ</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/du_an_yolobit.html">1. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/smart_farm.html">2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/smart_home.html">3. Giáo trình AI và IOT cho nhà thông minh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/robot_xcontroller.html">4. Tài liệu Sáng chế và lập trình Robot với Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/physbit.html">5. Tài liệu thực hành mạch điện với Phys:Bit V2</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="du_an_yolobit.html">1. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smart_farm.html">2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smart_home.html">3. Giáo trình AI và IOT cho nhà thông minh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robot_xcontroller.html">4. Tài liệu Sáng chế và lập trình Robot với Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Tài liệu thực hành mạch điện với Phys:Bit V2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu"><strong>Giới thiệu</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cau-truc-cua-tai-lieu"><strong>Cấu trúc của tài liệu</strong></a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
@@ -118,9 +124,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Yolo:Bit Block API</li>
+      <li>5. Tài liệu thực hành mạch điện với Phys:Bit V2</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/username/reponame/blob/masteryolobit_v1/blockapi.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/username/reponame/blob/mastertai_lieu_stem/physbit.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -128,28 +134,76 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="yolo-bit-block-api">
-<h1>Yolo:Bit Block API<a class="headerlink" href="#yolo-bit-block-api" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-basic.html">Cơ bản</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-input.html">Ngõ vào</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-music.html">Âm nhạc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-led.html">LED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-wifi.html">WIFI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-loop.html">Vòng lặp</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-logic.html">Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-variable.html">Biến</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-math.html">Tính toán</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api-advance/index.html">Nâng cao</a></li>
-</ul>
+  <section id="tai-lieu-thuc-hanh-mach-dien-voi-phys-bit-v2">
+<h1>5. Tài liệu thực hành mạch điện với Phys:Bit V2<a class="headerlink" href="#tai-lieu-thuc-hanh-mach-dien-voi-phys-bit-v2" title="Permalink to this heading"></a></h1>
+<a class="reference internal image-reference" href="../_images/physbit.jpg"><img alt="../_images/physbit.jpg" class="align-center" src="../_images/physbit.jpg" style="width: 480.0px; height: 480.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
+<section id="gioi-thieu">
+<h2><strong>Giới thiệu</strong><a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Bộ thực hành lắp ráp mạch điện tử Phys:Bit sẽ dẫn chúng ta trải nghiệm thế giới điện tử lý thú, với những dự án sinh động và phổ biến mô phỏng trong thực tế. Bộ Kit này sẽ giới thiệu đến bạn các khái niệm cơ bản về dòng điện, làm sao để thiết kế một mạch điện và hiểu về cách thức hoạt động của chúng.</p>
+<p>Với bộ tài liệu đi kèm, giúp các em học sinh hiểu rõ hơn về nguyên ý hoạt động của mạch điện và các thành phần chính trong mạch điện, biết cách sử dụng vi điều khiển để điều khiển các tín hiệu điện, làm quen với các loại cảm biến hay cơ chế đóng ngắt cơ bản.</p>
+<p>Các em cũng sẽ hiểu về cách các thiết bị điện quanh ta vận hành như thế nào và có thể sáng tạo ra nhiều ứng dụng hay thông qua các dự án mẫu như:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/physbit_1.jpg"><img alt="../_images/physbit_1.jpg" src="../_images/physbit_1.jpg" style="width: 614.4px; height: 426.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Một số mạch điện mẫu</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Phys:Bit sử dụng dây cắm banana đơn giản và an toàn cho người sử dụng, còn có nhiều linh kiện điện tử phổ biến như động cơ quạt mini, đèn LED, điện trở, cảm biến ánh sáng,… để bạn thực hành lắp ráp mạch điện và sáng tạo các dự án theo ý thích.</p>
+<p><strong>Bạn có thể mua Bộ mạch điện tử Phys:Bit, bằng cách nhấn vào giỏ hàng bên dưới:</strong></p>
+<a class="reference external image-reference" href="https://ohstem.vn/product/lap-rap-mach-dien-physbit/"><img alt="some image" class="with-shadow align-center" src="../_images/gio9.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="cau-truc-cua-tai-lieu">
+<h2><strong>Cấu trúc của tài liệu</strong><a class="headerlink" href="#cau-truc-cua-tai-lieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Bộ tài liệu sẽ chia thành 2 quyển:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Quyển 1:</strong>  <a class="reference external" href="https://drive.google.com/file/d/1pqsgGD6hs32kAs3aYlRHwegQDhaFzhKt/view?usp=sharing">Xem tại đây</a></p>
+<blockquote>
+<div><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/physbit_2.png"><img alt="../_images/physbit_2.png" src="../_images/physbit_2.png" style="width: 472.2px; height: 336.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Quyển 1</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Hướng dẫn thực hành các thí nghiệm điện tử không sử dụng vi điều khiển, giúp các bạn học sinh hiểu rõ hơn về nguyên lý hoạt động của linh kiện thường được sử dụng trong mạch điện.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Quyển 2:</strong> <a class="reference external" href="https://drive.google.com/file/d/1wl3sbynp-QwneKAtIyoVA_XewSU2am6Q/view?usp=sharing">Xem tại đây</a></p>
+<blockquote>
+<div><figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/physbit_3.png"><img alt="../_images/physbit_3.png" src="../_images/physbit_3.png" style="width: 479.4px; height: 339.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Quyển 2</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Tài liệu được chia thành 3 phần với các dự án thực hiện với vi điều khiển là Yolo:Bit, đi từ cơ bản đến nâng cao:</p>
+<ul class="simple">
+<li><p>Phần 1: Đèn LED và ánh sáng</p></li>
+<li><p>Phần 2: Âm thanh và còi báo</p></li>
+<li><p>Phần 3: Động cơ</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="robot_xcontroller.html" class="btn btn-neutral float-left" title="4. Tài liệu Sáng chế và lập trình Robot với Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../api/api-xbot.html" class="btn btn-neutral float-right" title="Robot xBot và xController" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

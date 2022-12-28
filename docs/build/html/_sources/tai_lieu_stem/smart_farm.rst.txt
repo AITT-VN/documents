@@ -8,20 +8,18 @@
 
 **Giới thiệu giáo trình STEM Nông nghiệp thông minh**
 ----------
---------------
+----------
 
-Bên cạnh việc tích hợp các kiến thức cũ để hiện thực một dự án hoàn chỉnh, chúng tôi trình bày một phương pháp hiện đại để tiếp cận với kiến thức công nghệ, đó là học tập qua dự án (project based learning).
+Trong giáo trình này, chúng tôi giới thiệu đến bạn mô hình **Smart Farm - Nông nghiệp thông minh**, không chỉ sử dụng cảm biến đa dạng mà còn được tích hợp nhiều nền tảng công nghệ như Trí tuệ nhân tạo (AI), Kết nối vạn vật (IoT). Đây là một chủ đề đang được quan tâm trong giáo dục STEM. 
 
-Khả năng tổ chức và phát triển chương trình qua mỗi bày hướng dẫn là mục tiêu chính của phần này. Nhiều tính năng thông minh và gần gũi với thực tế được đưa vào dự án.
-
-Bên cạnh đó, chúng tôi cũng giới thiệu những khái niệm cơ bản nhất về khoa học dữ liệu. Cụ thể, các giá trị cảm biến thu thập được sẽ được trích xuất và phân tích bằng phần mềm Microsoft Excel, một công cụ vốn đã quen thuộc với đa số bạn đọc.
-
+Bên cạnh đó, chúng tôi sẽ giới thiệu những khái niệm cơ bản nhất về khoa học dữ liệu. Cụ thể là, các giá trị mà cảm biến thu thập được sẽ được trích xuất và phân tích bằng phần mềm Microsoft Excel, một công cụ vốn đã quen thuộc với đa số bạn đọc.
 
 .. image:: images/nong_nghiep_2.png
     :width: 800px
     :align: center
 |
 
+Dự án trong giáo trình, tuy không phải là một sản phẩm thực tế, nhưng chúng tôi hy vọng nó sẽ cung cấp cung cấp cho bạn đọc các kiến thức cơ bản về việc áp dụng công nghệ vào một ứng dụng cụ thể.
 
 **Cấu trúc giáo trình**
 -------------

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block API &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+  <title>Tay gắp Robot Gripper &mdash; OhStem Education Wiki 0.0.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -20,7 +20,9 @@
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Robot Arm - Kit lập trình cánh tay robot" href="../robot_arm/robot_arm.html" />
+    <link rel="prev" title="6. Bài 5: Robot trực thăng" href="servo_pack/robot_truc_thang.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,10 +58,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Tay gắp Robot Gripper</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu">1. Giới thiệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#link-san-pham">2. Link sản phẩm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-rap">3. Hướng dẫn lắp ráp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh">4. Hướng dẫn lập trình</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -119,9 +127,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Block API</li>
+      <li><strong>Tay gắp Robot Gripper</strong></li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/username/reponame/blob/masterapp/blockapi.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/username/reponame/blob/masterrobot_rover/tay_gap.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -129,26 +137,79 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="block-api">
-<h1>Block API<a class="headerlink" href="#block-api" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-move.html">Di chuyển</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-input.html">Đầu vào</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-effect.html">Hiệu ứng</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-loop.html">Vòng lặp</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-logic.html">Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-math.html">Tính toán</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api/api-variable.html">Biến</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block-api-advance/index.html">Nâng cao</a></li>
-</ul>
+  <section id="tay-gap-robot-gripper">
+<h1><strong>Tay gắp Robot Gripper</strong><a class="headerlink" href="#tay-gap-robot-gripper" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu">
+<h2>1. Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Tay gắp Robot Gripper là một bộ phận mở rộng của Robot Rover, giúp thực hiện các nhiệm vụ như gắp thả và di chuyển đồ vật.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J46WzkG8D4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="line-block">
+<div class="line"><br /></div>
 </div>
+</section>
+<section id="link-san-pham">
+<h2>2. Link sản phẩm<a class="headerlink" href="#link-san-pham" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://ohstem.vn/product/tay-gap-robot-rover/"><img alt="some image" class="with-shadow align-center" src="../_images/gio2.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="huong-dan-lap-rap">
+<h2>3. Hướng dẫn lắp ráp<a class="headerlink" href="#huong-dan-lap-rap" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BrOdZssE76c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="huong-dan-lap-trinh">
+<h2>4. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Để Gripper có thể thực hiện được nhiệm vụ, chúng ta cần sử dụng động cơ servo MG90S, một động cơ cho lực kéo khỏe và độ bền cao..</p>
+<p>Động cơ servo có thể thực hiện được lệnh xoay cánh tay động cơ đến vị trí được lập trình sẵn (từ 0 đến 180 độ) một cách tức thời hoặc theo một tốc độ cho trước.</p>
+<a class="reference internal image-reference" href="../_images/tay_gap_2.png"><img alt="../_images/tay_gap_2.png" class="align-center" src="../_images/tay_gap_2.png" style="width: 325.0px; height: 271.0px;" /></a>
+<p>Chiều xoay của động cơ servo là hướng khi chúng ta quan sát trực diện với mặt trục xoay. Theo quay ước, chiều xoay từ phải sang trái tức ngược chiều kim đồng hồ của động cơ servo sẽ tính từ góc 0 độ đến 180 độ.</p>
+<p>Servo MG90S có 3 dây tín hiệu như sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Dây nâu: cấp nguồn âm</p></li>
+<li><p>Dây đỏ: Cấp nguồn dương (3.3-6 vôn DC)</p></li>
+<li><p>Dây cam: dây tín hiệu điều khiển.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Giới thiệu khối lệnh</strong></p>
+<p>Trong thư viện <strong>Rover</strong>, sử dụng khối lệnh sau để điều khiển servo của tay gắp Gripper:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/tay_gap_3.png"><img alt="../_images/tay_gap_3.png" src="../_images/tay_gap_3.png" style="width: 512.0px; height: 80.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Điều khiển động cơ servo 180 độ quay tới 1 góc nào đó từ 0-180.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Trên Rover, có 2 cổng kết nối để điều khiển servo S1 và S2. Khi lập trình bạn cần chọn đúng cổng đã kết nối!</p>
+</div>
+<p><strong>Viết chương trình điều khiển tay gắp</strong></p>
+<p>Lập trình robot mở tay gắp trong 2 giây, sau đó đóng tay gắp trong 2 giây. Lặp lại liên tục.</p>
+<blockquote>
+<div><p><strong>Cách hoạt động:</strong></p>
+<a class="reference internal image-reference" href="../_images/tay_gap_4.png"><img alt="../_images/tay_gap_4.png" class="align-center" src="../_images/tay_gap_4.png" style="width: 894.4000000000001px; height: 320.8px;" /></a>
+<p><strong>Lập trình:</strong></p>
+<a class="reference internal image-reference" href="../_images/tay_gap_5.png"><img alt="../_images/tay_gap_5.png" class="align-center" src="../_images/tay_gap_5.png" style="width: 512.0px; height: 291.0px;" /></a>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="servo_pack/robot_truc_thang.html" class="btn btn-neutral float-left" title="6. Bài 5: Robot trực thăng" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../robot_arm/robot_arm.html" class="btn btn-neutral float-right" title="Robot Arm - Kit lập trình cánh tay robot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

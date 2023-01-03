@@ -35,6 +35,7 @@ OhStem xin chào tất cả các bạn!
 
    robot_rover/rover.rst
    robot_rover/servo_pack.rst
+   robot_rover/tay_gap.rst
 
 .. toctree::
    :maxdepth: 2

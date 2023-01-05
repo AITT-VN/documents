@@ -75,7 +75,7 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
-- **Bước 3**: Sử dụng dây Grove cắm vào relay
+- **Bước 3**: Sử dụng dây Grove cắm vào Relay
 - **Bước 4**: Kết nối thiết bị vào **chân P0 trên mạch mở rộng**
 
 ..  figure:: images/5.2.png
@@ -84,9 +84,23 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
 
     Relay có thể kết nối vào cổng điều khiển có 2 tín hiệu. 
 
+- **Bước 5**: Kết nối Relay với bóng đèn 220V và phích cắm điện. 
+
+    **Cách kết nối:** Một chân của đèn nối vào nguồn, chân còn lại sẽ ngắt ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây. 
+
+..  figure:: images/ket_noi_relay.png
+    :scale: 80%
+    :align: center 
+|
+
+- **Bước 6**: Cắm phích cắm vào nguồn điện 220V và tiến hành lập trình như bên dưới. 
+
+
 **4. Hướng dẫn lập trình**
 --------
 ------------
+
+**Lập trình bật tắt đèn trong 2 giây**
 
 - Sử dụng các câu lệnh trong danh mục **CHÂN CẮM**, để làm việc với Relay. 
 
@@ -97,36 +111,11 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
     :align: center 
 |
 
-.. note::
+**Giải thích chương trình:**
 
-    **Giải thích chương trình:**
+    Trong chương trình trên, trạng thái của Relay sẽ bật và tắt sau mỗi 2 giây. Khi trạng thái của Relay là bật - bóng đèn sáng, đó là lúc chân COM và NO kết nối với nhau, tạo thành một mạch điện hoàn chỉnh giúp đèn sáng. Ngược lại, chân COM và NO không kết nối được với nhau nên đèn tắt. 
 
-    Trong chương trình trên, câu lệnh hiện hình ảnh (YES/NO), tương ứng với 2 trạng thái bật và tắt của Relay. Khi hình ảnh trên 25 đèn của Yolo:Bit thay đổi, sẽ có một âm thanh nhẹ phát ra. Đó là lúc chân COM thay đổi kết nối với NO hoặc NC. Đây cũng là âm thanh đặc trưng để nhận biết rằng Relay đang hoạt động.
-
-
-
-**5. Kết nối mở rộng**
---------
-------------
-
-Ở đây, chúng tôi hướng dẫn bạn kết nối công tắc Relay với thiết bị điện bên ngoài là đèn 220V. 
-
-**Cách kết nối:** Một chân của đèn nối vô nguồn, chân còn lại sẽ thánh ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây. 
-
-..  figure:: images/ket_noi_relay.png
-    :scale: 80%
-    :align: center 
-|
-
-Để đèn hoạt động, bạn cần gửi chương trình ở trên xuống Yolo:Bit và kết nối phích cắm với nguồn điện 220V. 
-
-Nguyên lý hoạt động của mạch điện có Relay tương tự như mạch điện sử dụng công tắc (khóa K) dân dụng: 
-
-..  figure:: images/nguyen_ly_relay.png
-    :scale: 70%
-    :align: center 
-|
 
 .. note::
 
-    Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W mà thôi. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là **khởi động từ** hoặc **công tắc tơ**. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.
+    Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là **khởi động từ** hoặc **công tắc tơ**. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.

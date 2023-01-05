@@ -100,7 +100,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ket-noi-mo-rong"><strong>5. Kết nối mở rộng</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="nhac.html">6. Module phát nhạc - Sound Player</a></li>
@@ -243,7 +242,7 @@
 </table>
 <ul class="simple">
 <li><p><strong>Bước 2</strong>: Cắm Yolo:Bit vào mạch mở rộng</p></li>
-<li><p><strong>Bước 3</strong>: Sử dụng dây Grove cắm vào relay</p></li>
+<li><p><strong>Bước 3</strong>: Sử dụng dây Grove cắm vào Relay</p></li>
 <li><p><strong>Bước 4</strong>: Kết nối thiết bị vào <strong>chân P0 trên mạch mở rộng</strong></p></li>
 </ul>
 <figure class="align-center" id="id4">
@@ -252,48 +251,44 @@
 <p><span class="caption-text">Relay có thể kết nối vào cổng điều khiển có 2 tín hiệu.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="huong-dan-lap-trinh">
-<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
-<hr class="docutils" />
-<ul class="simple">
-<li><p>Sử dụng các câu lệnh trong danh mục <strong>CHÂN CẮM</strong>, để làm việc với Relay.</p></li>
-<li><p>Gửi chương trình sau xuống Yolo:Bit:</p></li>
+<ul>
+<li><p><strong>Bước 5</strong>: Kết nối Relay với bóng đèn 220V và phích cắm điện.</p>
+<blockquote>
+<div><p><strong>Cách kết nối:</strong> Một chân của đèn nối vào nguồn, chân còn lại sẽ ngắt ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây.</p>
+</div></blockquote>
+</li>
 </ul>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/5.34.png"><img alt="../../_images/5.34.png" src="../../_images/5.34.png" style="width: 427.0px; height: 313.0px;" /></a>
-</figure>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Giải thích chương trình:</strong></p>
-<p>Trong chương trình trên, câu lệnh hiện hình ảnh (YES/NO), tương ứng với 2 trạng thái bật và tắt của Relay. Khi hình ảnh trên 25 đèn của Yolo:Bit thay đổi, sẽ có một âm thanh nhẹ phát ra. Đó là lúc chân COM thay đổi kết nối với NO hoặc NC. Đây cũng là âm thanh đặc trưng để nhận biết rằng Relay đang hoạt động.</p>
-</div>
-</section>
-<section id="ket-noi-mo-rong">
-<h2><strong>5. Kết nối mở rộng</strong><a class="headerlink" href="#ket-noi-mo-rong" title="Permalink to this heading"></a></h2>
-<hr class="docutils" />
-<p>Ở đây, chúng tôi hướng dẫn bạn kết nối công tắc Relay với thiết bị điện bên ngoài là đèn 220V.</p>
-<p><strong>Cách kết nối:</strong> Một chân của đèn nối vô nguồn, chân còn lại sẽ thánh ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/ket_noi_relay.png"><img alt="../../_images/ket_noi_relay.png" src="../../_images/ket_noi_relay.png" style="width: 587.2px; height: 413.6px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Để đèn hoạt động, bạn cần gửi chương trình ở trên xuống Yolo:Bit và kết nối phích cắm với nguồn điện 220V.</p>
-<p>Nguyên lý hoạt động của mạch điện có Relay tương tự như mạch điện sử dụng công tắc (khóa K) dân dụng:</p>
+<ul class="simple">
+<li><p><strong>Bước 6</strong>: Cắm phích cắm vào nguồn điện 220V và tiến hành lập trình như bên dưới.</p></li>
+</ul>
+</section>
+<section id="huong-dan-lap-trinh">
+<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Lập trình bật tắt đèn trong 2 giây</strong></p>
+<ul class="simple">
+<li><p>Sử dụng các câu lệnh trong danh mục <strong>CHÂN CẮM</strong>, để làm việc với Relay.</p></li>
+<li><p>Gửi chương trình sau xuống Yolo:Bit:</p></li>
+</ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/nguyen_ly_relay.png"><img alt="../../_images/nguyen_ly_relay.png" src="../../_images/nguyen_ly_relay.png" style="width: 768.5999999999999px; height: 267.4px;" /></a>
+<a class="reference internal image-reference" href="../../_images/5.34.png"><img alt="../../_images/5.34.png" src="../../_images/5.34.png" style="width: 457.0px; height: 355.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p><strong>Giải thích chương trình:</strong></p>
+<blockquote>
+<div><p>Trong chương trình trên, trạng thái của Relay sẽ bật và tắt sau mỗi 2 giây. Khi trạng thái của Relay là bật - bóng đèn sáng, đó là lúc chân COM và NO kết nối với nhau, tạo thành một mạch điện hoàn chỉnh giúp đèn sáng. Ngược lại, chân COM và NO không kết nối được với nhau nên đèn tắt.</p>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W mà thôi. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là <strong>khởi động từ</strong> hoặc <strong>công tắc tơ</strong>. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.</p>
+<p>Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là <strong>khởi động từ</strong> hoặc <strong>công tắc tơ</strong>. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.</p>
 </div>
 </section>
 </section>

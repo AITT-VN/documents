@@ -6,7 +6,7 @@
     :align: center 
 | 
 
-- Relay là một công tắc điện từ được vận hành bởi một dòng điện tương đối nhỏ có thể bật hoặc tắt một dòng điện lớn hơn nhiều. Ta có thể sử dụng relay để điều khiển những động cơ tiêu thụ công suất lớn, đóng ngắt nguồn điện nhỏ khác,…
+- Công tắc điện tử Relay là một thiết bị đóng tắt nguồn cho một thiết bị. Nó hoạt động giống với công tắc cơ mà chúng ta thường sài trong dân dụng. Điều khác biệt là nó có thể điểu khiển đóng ngắt bằng cách lập trình. 
 
 **1. Mua sản phẩm**
 -----------
@@ -102,3 +102,31 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
     **Giải thích chương trình:**
 
     Trong chương trình trên, câu lệnh hiện hình ảnh (YES/NO), tương ứng với 2 trạng thái bật và tắt của Relay. Khi hình ảnh trên 25 đèn của Yolo:Bit thay đổi, sẽ có một âm thanh nhẹ phát ra. Đó là lúc chân COM thay đổi kết nối với NO hoặc NC. Đây cũng là âm thanh đặc trưng để nhận biết rằng Relay đang hoạt động.
+
+
+
+**5. Kết nối mở rộng**
+--------
+------------
+
+Ở đây, chúng tôi hướng dẫn bạn kết nối công tắc Relay với thiết bị điện bên ngoài là đèn 220V. 
+
+**Cách kết nối:** Một chân của đèn nối vô nguồn, chân còn lại sẽ thánh ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây. 
+
+..  figure:: images/ket_noi_relay.png
+    :scale: 80%
+    :align: center 
+|
+
+Để đèn hoạt động, bạn cần gửi chương trình ở trên xuống Yolo:Bit và kết nối phích cắm với nguồn điện 220V. 
+
+Nguyên lý hoạt động của mạch điện có Relay tương tự như mạch điện sử dụng công tắc (khóa K) dân dụng: 
+
+..  figure:: images/nguyen_ly_relay.png
+    :scale: 70%
+    :align: center 
+|
+
+.. note::
+
+    Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W mà thôi. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là **khởi động từ** hoặc **công tắc tơ**. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.

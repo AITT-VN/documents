@@ -100,6 +100,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi-mo-rong"><strong>5. Kết nối mở rộng</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="nhac.html">6. Module phát nhạc - Sound Player</a></li>
@@ -153,7 +154,7 @@
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li><p>Relay là một công tắc điện từ được vận hành bởi một dòng điện tương đối nhỏ có thể bật hoặc tắt một dòng điện lớn hơn nhiều. Ta có thể sử dụng relay để điều khiển những động cơ tiêu thụ công suất lớn, đóng ngắt nguồn điện nhỏ khác,…</p></li>
+<li><p>Công tắc điện tử Relay là một thiết bị đóng tắt nguồn cho một thiết bị. Nó hoạt động giống với công tắc cơ mà chúng ta thường sài trong dân dụng. Điều khác biệt là nó có thể điểu khiển đóng ngắt bằng cách lập trình.</p></li>
 </ul>
 <section id="mua-san-pham">
 <h2><strong>1. Mua sản phẩm</strong><a class="headerlink" href="#mua-san-pham" title="Permalink to this heading"></a></h2>
@@ -269,6 +270,30 @@
 <p class="admonition-title">Note</p>
 <p><strong>Giải thích chương trình:</strong></p>
 <p>Trong chương trình trên, câu lệnh hiện hình ảnh (YES/NO), tương ứng với 2 trạng thái bật và tắt của Relay. Khi hình ảnh trên 25 đèn của Yolo:Bit thay đổi, sẽ có một âm thanh nhẹ phát ra. Đó là lúc chân COM thay đổi kết nối với NO hoặc NC. Đây cũng là âm thanh đặc trưng để nhận biết rằng Relay đang hoạt động.</p>
+</div>
+</section>
+<section id="ket-noi-mo-rong">
+<h2><strong>5. Kết nối mở rộng</strong><a class="headerlink" href="#ket-noi-mo-rong" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Ở đây, chúng tôi hướng dẫn bạn kết nối công tắc Relay với thiết bị điện bên ngoài là đèn 220V.</p>
+<p><strong>Cách kết nối:</strong> Một chân của đèn nối vô nguồn, chân còn lại sẽ thánh ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/ket_noi_relay.png"><img alt="../../_images/ket_noi_relay.png" src="../../_images/ket_noi_relay.png" style="width: 587.2px; height: 413.6px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Để đèn hoạt động, bạn cần gửi chương trình ở trên xuống Yolo:Bit và kết nối phích cắm với nguồn điện 220V.</p>
+<p>Nguyên lý hoạt động của mạch điện có Relay tương tự như mạch điện sử dụng công tắc (khóa K) dân dụng:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/nguyen_ly_relay.png"><img alt="../../_images/nguyen_ly_relay.png" src="../../_images/nguyen_ly_relay.png" style="width: 768.5999999999999px; height: 267.4px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W mà thôi. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là <strong>khởi động từ</strong> hoặc <strong>công tắc tơ</strong>. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.</p>
 </div>
 </section>
 </section>

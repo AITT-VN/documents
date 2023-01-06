@@ -82,17 +82,6 @@ OhStem xin chào tất cả các bạn!
    module/board-mo-rong.rst 
    module/dong-co.rst
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Tài liệu STEM
-
-   tai_lieu_stem/du_an_yolobit.rst
-   tai_lieu_stem/smart_farm.rst
-   tai_lieu_stem/smart_home.rst
-   tai_lieu_stem/robot_xcontroller.rst
-   tai_lieu_stem/physbit.rst
-   
-
 
 
 .. toctree::

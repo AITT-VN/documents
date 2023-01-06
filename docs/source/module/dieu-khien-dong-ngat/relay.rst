@@ -82,7 +82,7 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
     :scale: 100%
     :align: center 
 
-    Relay có thể kết nối vào cổng điều khiển có 2 tín hiệu. 
+    Relay có thể kết nối vào cổng điều khiển có 2 chân tín hiệu. 
 
 - **Bước 5**: Kết nối Relay với bóng đèn 220V và phích cắm điện. 
 

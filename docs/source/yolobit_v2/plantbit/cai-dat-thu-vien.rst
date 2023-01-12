@@ -48,12 +48,13 @@ Chương trình mẫu
 -----------
 ---------------
 
-Trước khi tìm hiểu cách tự lập trình, bạn có thể tải và chạy chương trình hoàn thiện của Plant:Bit để trải nghiệm toàn bộ các tính năng của bộ kit `tại đây <https://app.ohstem.vn/#!/share/yolobit/2KCxx6GCD5v8sLaCV1t3AqNTRdd>`_ hoặc quét mã QR bên dưới. 
+Trước khi tìm hiểu cách tự lập trình, bạn có thể tải và chạy chương trình hoàn thiện của Plant:Bit để trải nghiệm toàn bộ các tính năng của bộ kit tại link bên dưới. 
 
-.. image:: Images/planbit_29.png
+..  figure:: Images/planbit_29.png
     :width: 200px
     :align: center
-|
+
+    `<https://app.ohstem.vn/#!/share/yolobit/2KCxx6GCD5v8sLaCV1t3AqNTRdd>`_
  
 Chương trình trên đã lập trình đầy đủ tính năng cho Plant:Bit:
 

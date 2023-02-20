@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8. Màn hình TFT LCD &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Điều khiển đóng ngắt" href="../dieu-khien-dong-ngat.html" />
+    <link rel="prev" title="7. LED dây NeoPixel RGB WS2812" href="ws2812.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="led-7-doan.html">1. Màn hình 4 số LED 7 đoạn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="led-16x8.html">2. LED ma trận 16x8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lcd1602.html">3. Màn hình LCD 1602</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oled-096.html">4. Màn hình Oled 0.96”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="led-rgb.html">5. Module 4 LED RGB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="led-don.html">6. Đèn LED đơn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ws2812.html">7. LED dây NeoPixel RGB WS2812</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Màn hình TFT LCD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gioi-thieu-ve-man-hinh-tft">1. Giới thiệu về màn hình TFT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat-va-ket-noi">2. Thông số kỹ thuật và kết nối</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#man-hinh-tft-st7735">2.1 Màn hình TFT ST7735</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#man-hinh-tft-ili9431">2.2 Màn hình TFT ILI9431</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lap-trinh-yolo-bit-voi-man-hinh-tft">3. Lập trình Yolo:Bit với màn hình TFT:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tai-thu-vien"><strong>3.1 Tải thư viện</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>3.2 Hướng dẫn lập trình</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../hien-thi.html"><strong>Hiển thị</strong></a> &raquo;</li>
+      <li>8. Màn hình TFT LCD</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastermodule/hien-thi/man-hinh-tft.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="man-hinh-tft-lcd">
+<h1>8. Màn hình TFT LCD<a class="headerlink" href="#man-hinh-tft-lcd" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu-ve-man-hinh-tft">
+<h2>1. Giới thiệu về màn hình TFT<a class="headerlink" href="#gioi-thieu-ve-man-hinh-tft" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Màn hình LCD TFT luôn là một trong những lựa chọn tối ưu trong các ứng dụng DIY cần nhu cầu hiển thị. Với khả năng truyền dữ liệu nối tiếp thông qua giao tiếp SPI, vi điều khiển này chỉ mất vài chân I/O để có thể giao tiếp với module và việc điều khiển cũng vô cùng đơn giản.</p>
+<p><strong>Tính năng:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Kích thước màn hình tương đối lớn, tích hợp khe thẻ nhớ micro SD.</p></li>
+<li><p>Driver ILI9341 hoặc ST7735 cho khả năng hiển thị các điểm ảnh (RGB) với 18 bit màu.</p></li>
+<li><p>Tương thích với hầu hết các vi điều khiển hiện nay.</p></li>
+<li><p>Giao thức hiển thị nối tiếp, chỉ sử dụng 5 chân (CS, RESET, DC/RS, SDI/MOSI, SCK) để điều khiển.</p></li>
+<li><p>Thẻ SD sử dụng giao tiếp SPI (CS / MOSI / MISO / SCK).</p></li>
+</ul>
+</div></blockquote>
+<p>Chúng tôi sẽ giới thiệu đến bạn 2 loại màn hình là <strong>TFT ST7735 và TFT ILI9431</strong>. Dưới đây là các thông số kỹ thuật của từng sản phẩm:</p>
+</section>
+<section id="thong-so-ky-thuat-va-ket-noi">
+<h2>2. Thông số kỹ thuật và kết nối<a class="headerlink" href="#thong-so-ky-thuat-va-ket-noi" title="Permalink to this heading"></a></h2>
+</section>
+<hr class="docutils" />
+<section id="man-hinh-tft-st7735">
+<h2>2.1 Màn hình TFT ST7735<a class="headerlink" href="#man-hinh-tft-st7735" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/TFT_ST7735.jpg"><img alt="../../_images/TFT_ST7735.jpg" src="../../_images/TFT_ST7735.jpg" style="width: 500.0px; height: 332.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">Màn hình TFT ST7735</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Các chân kết nối và chức năng:</strong></p></li>
+</ul>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>STT</p></th>
+<th class="head"><p>Chân</p></th>
+<th class="head"><p>Chức năng</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>LED</p></td>
+<td><p>Chân điều khiển LED nền, LED nền sẽ sáng khi cấp điện 3v vào chân này.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>SCK/SCLK/SCL/CLK</p></td>
+<td><p>Chân CLK của giao tiếp SPI.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>SDA</p></td>
+<td><p>Chân data của giao tiếp SPI</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>A0/RS/DC</p></td>
+<td><dl class="simple">
+<dt>Chân này thể hiện việc bạn đang truyền dữ liệu màu sắc hiển thị hay là truyền lệnh điều khiển hoạt động của màn hình:</dt><dd><ul class="simple">
+<li><p>Khi chân A0 bằng 0: LCD sẽ hiểu rằng dữ liệu bạn gửi đến là các lệnh để cấu hình, điều khiển LCD.</p></li>
+<li><p>Khi chân A0 bằng 1: Dữ liệu bạn gửi sẽ được hiểu là dữ liệu hiển thị lên các pixel trên màn hình.</p></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>RST/RESET</p></td>
+<td><p>Chân reset LCD: Ở mức bình thường nối lên mức 1, lúc cần reset thì kéo xuống 0.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>CS</p></td>
+<td><p>Chân giao tiếp SPI.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>GND</p></td>
+<td><p>Nối vào chân GND.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>VCC</p></td>
+<td><p>3.3V</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Kết nối:</strong> Chuẩn bị các thiết bị sau:</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/yolo3.png"><img alt="../../_images/yolo3.png" class="align-center" src="../../_images/yolo3.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/mmr2.png"><img alt="../../_images/mmr2.png" class="align-center" src="../../_images/mmr2.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/TFT_ST7735.jpg"><img alt="../../_images/TFT_ST7735.jpg" class="align-center" src="../../_images/TFT_ST7735.jpg" style="width: 300px;" /></a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Máy tính lập trình Yolo:Bit</p></td>
+<td><p>Mạch mở rộng cho Yolo:Bit</p></td>
+<td><p>Màn hình TFT ST7735</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/grove-shield/">Mua sản phẩm</a></p></td>
+<td><p>Mua ở các cửa hàng linh kiện điện tử</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Đối với màn hình TFT ST7735, chúng ta sẽ nối các cặp dây tương ứng như sau:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>GND=GND</p></li>
+<li><p>VCC=VCC</p></li>
+<li><p>SCL = SCK=P13</p></li>
+<li><p>SDA = MOSI=P16</p></li>
+<li><p>RES=RST =P12</p></li>
+<li><p>DC = DC =P10</p></li>
+<li><p>CS = CS = P14</p></li>
+<li><p>BL =VCC</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/noi_TFT_ST7735.jpg"><img alt="../../_images/noi_TFT_ST7735.jpg" src="../../_images/noi_TFT_ST7735.jpg" style="width: 616.5px; height: 331.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">Hướng dẫn nối dây màn hình TFT_ST7735</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="man-hinh-tft-ili9431">
+<h2>2.2 Màn hình TFT ILI9431<a class="headerlink" href="#man-hinh-tft-ili9431" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/TFT_ILI9431.jpg"><img alt="../../_images/TFT_ILI9431.jpg" src="../../_images/TFT_ILI9431.jpg" style="width: 480.0px; height: 480.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Màn hình TFT ILI9431</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Các chân kết nối và chức năng:</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>STT</p></th>
+<th class="head"><p>Chân</p></th>
+<th class="head"><p>Chức năng</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>MISO</p></td>
+<td><p>Chân được dùng để màn hình gửi dữ liệu đến vi điều khiển.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>BLK</p></td>
+<td><p>Chân điều khiển LED nền, LED nền sẽ sáng khi cấp điện 3v3 vào chân này.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>DC</p></td>
+<td><blockquote>
+<div><dl class="simple">
+<dt>Chân này thể hiện việc bạn đang truyền dữ liệu màu sắc hiển thị hay là truyền lệnh điều khiển hoạt động của màn hình.</dt><dd><ul class="simple">
+<li><p>Khi chân A0 bằng 0: LCD sẽ hiểu là dữ liệu bạn gửi đến là các lệnh để cấu hình, điều khiển LCD.</p></li>
+<li><p>Khi chân A0 bằng 1: Dữ liệu bạn gửi sẽ được hiểu là dữ liệu hiển thị lên các pixel trên màn hình.</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>RES</p></td>
+<td><p>Chân reset</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>MOSI</p></td>
+<td><p>Chân nối truyền dữ liệu từ vi điều khiển đến màn hình.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>CLK</p></td>
+<td><p>Chân cung cấp xung CLK.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>GND</p></td>
+<td><p>Nối vào chân GND.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>VCC</p></td>
+<td><p>3.3V</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Kết nối:</strong> Chuẩn bị các thiết bị sau:</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/yolo3.png"><img alt="../../_images/yolo3.png" class="align-center" src="../../_images/yolo3.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/mmr2.png"><img alt="../../_images/mmr2.png" class="align-center" src="../../_images/mmr2.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/TFT_ILI9431.jpg"><img alt="../../_images/TFT_ILI9431.jpg" class="align-center" src="../../_images/TFT_ILI9431.jpg" style="width: 200px;" /></a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Máy tính lập trình Yolo:Bit</p></td>
+<td><p>Mạch mở rộng cho Yolo:Bit</p></td>
+<td><p>Màn hình TFT ILI9431</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/grove-shield/">Mua sản phẩm</a></p></td>
+<td><p>Mua ở các cửa hàng linh kiện điện tử</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Đối với màn hình TFT ILI9431, chúng ta sẽ nối các cặp dây tương ứng như sau:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>GND=GND</p></li>
+<li><p>VCC=VCC</p></li>
+<li><p>MISO = P15</p></li>
+<li><p>MOSI = P16</p></li>
+<li><p>SCK = P13</p></li>
+<li><p>CS = P14</p></li>
+<li><p>DC = P10</p></li>
+<li><p>RST = P12</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nối dây tương tự với màn hình TFT ST7735</p>
+</div>
+</section>
+<section id="lap-trinh-yolo-bit-voi-man-hinh-tft">
+<h2>3. Lập trình Yolo:Bit với màn hình TFT:<a class="headerlink" href="#lap-trinh-yolo-bit-voi-man-hinh-tft" title="Permalink to this heading"></a></h2>
+</section>
+<hr class="docutils" />
+<section id="tai-thu-vien">
+<h2><strong>3.1 Tải thư viện</strong><a class="headerlink" href="#tai-thu-vien" title="Permalink to this heading"></a></h2>
+<p>Để điều khiển được màn hình TFT LCD, chúng ta phải cần thêm thư viện mở rộng <strong>TFT LCD</strong>, bạn hãy copy đường dẫn sau: <a class="reference external" href="https://github.com/AITT-VN/yolobit_extension_lcd_tft.git">https://github.com/AITT-VN/yolobit_extension_lcd_tft.git</a> và dán vào mục mở rộng để tải thư viện mở rộng.</p>
+<blockquote>
+<div><p>Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</p>
+<a class="reference internal image-reference" href="../../_images/tft.1.png"><img alt="../../_images/tft.1.png" class="align-center" src="../../_images/tft.1.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi tải thư viện, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh tương ứng:</p>
+<a class="reference internal image-reference" href="../../_images/tft.2.png"><img alt="../../_images/tft.2.png" class="align-center" src="../../_images/tft.2.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div></blockquote>
+</section>
+<section id="huong-dan-lap-trinh">
+<h2><strong>3.2 Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<p>Đầu tiên, bạn cần nối dây theo mẫu hướng dẫn hoặc theo cách bạn tùy chỉnh, nhưng bạn cần nhớ thông số chiều rộng và chiều cao của màn hình để khai báo giao tiếp màn hình đúng.</p>
+<p><strong>Ví dụ:</strong> Khi sử dụng 1 màn hình 2.4’ 240x320 RGB, kích thước chiều rộng tương ứng là 240 còn chiều cao là 320. Vì thế, bạn cần phải khai báo đúng thông số:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/tft.3.png"><img alt="../../_images/tft.3.png" src="../../_images/tft.3.png" style="width: 286.40000000000003px; height: 392.8px;" /></a>
+</figure>
+<p>Sau khi đã cấu hình cho màn hình hiển thị, bạn có thể dùng các lệnh để hiện chữ, cũng như vẽ các hình theo ý muốn (trong phạm vi giới hạn của màn hình):</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/tft.4.png"><img alt="../../_images/tft.4.png" src="../../_images/tft.4.png" style="width: 699.3px; height: 461.29999999999995px;" /></a>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ws2812.html" class="btn btn-neutral float-left" title="7. LED dây NeoPixel RGB WS2812" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../dieu-khien-dong-ngat.html" class="btn btn-neutral float-right" title="Điều khiển đóng ngắt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

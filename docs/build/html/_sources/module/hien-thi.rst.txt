@@ -11,3 +11,4 @@
    hien-thi/led-rgb.rst
    hien-thi/led-don.rst
    hien-thi/ws2812.rst
+   hien-thi/man-hinh-tft.rst

@@ -29,3 +29,4 @@
    cam-bien/hx711.rst
    cam-bien/gps.rst
    cam-bien/lora.rst
+   cam-bien/nhip-tim.rst

@@ -30,3 +30,4 @@
    cam-bien/gps.rst
    cam-bien/lora.rst
    cam-bien/nhip-tim.rst
+   cam-bien/nhiet-do-ds18b20.rst

@@ -9,7 +9,7 @@
 
 **DS18B20 là cảm biến đo nhiệt độ 1 dây**, có thể lập trình được. Cảm biến này được dùng rộng rãi để đo nhiệt độ trong các môi trường cứng như trong dung dịch hóa chất, hầm mỏ hoặc đất,... tùy nhu cầu người dùng.
 
-Phần thắt của cảm biến rất chắc chắn và dễ dàng lắp đặt. Bạn cũng có thể chọn mua loại chống thấm nước. DS18B20 có thể đo nhiệt độ từ -55°C đến + 125°C, với độ chính xác khá cao là ± 5°C.
+Phần thắt của cảm biến rất chắc chắn và dễ dàng lắp đặt. Bạn cũng có thể chọn mua loại chống thấm nước. DS18B20 có thể đo nhiệt độ từ -55°C đến + 125°C, với độ chính xác khá cao là ± 0.5°C.
 
 Mỗi cảm biến có một địa chỉ duy nhất và chỉ yêu cầu một chân của vi điều khiển để truyền dữ liệu, vì vậy, đây là lựa chọn rất tốt để đo nhiệt độ ở nhiều khu vực mà không ảnh hưởng nhiều đến các chân kỹ thuật số trên vi điều khiển.
 

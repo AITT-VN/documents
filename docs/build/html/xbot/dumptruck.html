@@ -61,6 +61,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -75,9 +76,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#gioi-thieu">1. Giới thiệu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#link-san-pham">2. Link sản phẩm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-rap">3. Hướng dẫn lắp ráp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh">4. Hướng dẫn lập trình</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -97,10 +100,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dong-co.html"><strong>Động cơ</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/smart_farm.html">1. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tai_lieu_stem/du_an_yolobit.html">2. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/api-xbot.html">Robot xBot và xController</a></li>
 </ul>
 
         </div>
@@ -208,6 +210,12 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p><strong>Ở bước này, chúng ta sẽ phải canh góc của servo để lập trình nâng hạ thùng xe cho xBot. Có 8 cổng servo từ S1 đến S8, chúng ta có thể dùng tùy ý. Ở đây ta sẽ dùng cổng S1 để điều khiển nâng hạ. Bạn sẽ phải lập trình cho servo quay về vị trí 0 độ với lệnh:</strong></p>
+<a class="reference internal image-reference" href="../_images/dump_15.png"><img alt="../_images/dump_15.png" class="align-center" src="../_images/dump_15.png" style="width: 777.0px; height: 342.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi chỉnh góc ở vị trí hạ xong, chúng ta sẽ ráp tiếp tục.</p>
 <a class="reference internal image-reference" href="../_images/dump_16.png"><img alt="../_images/dump_16.png" class="align-center" src="../_images/dump_16.png" style="width: 900px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -225,6 +233,21 @@
 <div class="line"><br /></div>
 </div>
 <a class="reference internal image-reference" href="../_images/dump_20.png"><img alt="../_images/dump_20.png" class="align-center" src="../_images/dump_20.png" style="width: 900px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="huong-dan-lap-trinh">
+<h2>4. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Chúng ta đã thiết lập góc hạ xuống ở 0 độ, OhStem gợi ý các bạn góc nâng ở 110 độ ( có thể tùy chỉnh thay đổi theo ý muốn).</p>
+<p>Bạn có thể lập trình cho xBot nâng lên 2 giây sau đó hạ xuống 2 giây lặp lại bằng lệnh :</p>
+<a class="reference internal image-reference" href="../_images/dump_22.png"><img alt="../_images/dump_22.png" class="align-center" src="../_images/dump_22.png" style="width: 512.0px; height: 298.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Hoặc bạn cũng có thể lập trình cho robot nâng hạ chậm hơn bằng lệnh:</p>
+<a class="reference internal image-reference" href="../_images/dump_23.png"><img alt="../_images/dump_23.png" class="align-center" src="../_images/dump_23.png" style="width: 611.0px; height: 247.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

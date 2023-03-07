@@ -89,6 +89,16 @@ Dump Truck là bộ phụ kiện được dùng để gắn lên xBot để vui 
     :width: 900px
     :align: center
 |   
+
+**Ở bước này, chúng ta sẽ phải canh góc của servo để lập trình nâng hạ thùng xe cho xBot. Có 8 cổng servo từ S1 đến S8, chúng ta có thể dùng tùy ý. Ở đây ta sẽ dùng cổng S1 để điều khiển nâng hạ. Bạn sẽ phải lập trình cho servo quay về vị trí 0 độ với lệnh:**
+
+.. image:: images/dump_15.png
+    :scale: 100%
+    :align: center
+|  
+
+Sau khi chỉnh góc ở vị trí hạ xong, chúng ta sẽ ráp tiếp tục.
+
 .. image:: images/dump_16.png
     :width: 900px
     :align: center
@@ -111,3 +121,22 @@ Dump Truck là bộ phụ kiện được dùng để gắn lên xBot để vui 
 |   
 
 
+4. Hướng dẫn lập trình
+-------------------
+-------------------
+
+Chúng ta đã thiết lập góc hạ xuống ở 0 độ, OhStem gợi ý các bạn góc nâng ở 110 độ ( có thể tùy chỉnh thay đổi theo ý muốn). 
+
+Bạn có thể lập trình cho xBot nâng lên 2 giây sau đó hạ xuống 2 giây lặp lại bằng lệnh : 
+
+.. image:: images/dump_22.png
+    :scale: 100%
+    :align: center
+|  
+
+Hoặc bạn cũng có thể lập trình cho robot nâng hạ chậm hơn bằng lệnh:
+
+.. image:: images/dump_23.png
+    :scale: 100%
+    :align: center
+|

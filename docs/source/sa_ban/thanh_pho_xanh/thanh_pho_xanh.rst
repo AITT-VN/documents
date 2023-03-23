@@ -1,4 +1,4 @@
-1. Sa bàn "Xây dựng thành phố thông minh"
+1. Sa bàn "Xây dựng thành phố xanh"
 ==============
 
 .. toctree::

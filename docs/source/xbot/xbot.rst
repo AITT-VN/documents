@@ -15,4 +15,3 @@
    xbot/bai-5.rst
    xbot/bai-6.rst
    xbot/bai-7.rst
-   xbot/thi-dau.rst

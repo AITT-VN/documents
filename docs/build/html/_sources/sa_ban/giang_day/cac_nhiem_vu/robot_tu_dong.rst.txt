@@ -1,0 +1,2 @@
+2. 6. Robot tự động tìm kiếm và đậu xe vào bất kỳ bãi xe nào còn chỗ trống:
+========

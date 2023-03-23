@@ -90,7 +90,11 @@ OhStem xin chào tất cả các bạn!
    :caption: API thư viện
 
    api/api-xbot.rst
-  
-   
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Sa bàn thi đấu
+
+   sa_ban/sa_ban_index.rst
 

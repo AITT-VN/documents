@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. 5. Robot tự đậu xe vào bãi xe số 3 &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. 6. Robot tìm chỗ trống để đậu xe" href="robot_tu_dong.html" />
+    <link rel="prev" title="2. 4. Robot dò đường kết hợp né vật cản" href="robot_do_duong_ket_hop.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../thanh_pho_xanh/thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố thông minh”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../robot_co_ban/robot_co_ban.html">2. Sa bàn robot cơ bản</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kham_pha_dong_phong_nha/kham_pha_dong_phong_nha.html">3. Sa bàn “Khám phá động Phong Nha”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../robot_ban_bong/robot_ban_bong.html">4. Sa bàn robot bắn bóng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doi_khang/doi_khang.html">5. Sa bàn điều khiển robot đối kháng</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="giang_day.html">6. Bản đồ dò line phiên bản giảng dạy khổ A0</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="gioi_thieu.html">1. Giới thiệu</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cac_nhiem_vu.html">2. Các nhiệm vụ gợi ý và hướng dẫn</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="dung_truoc_vach_den.html">2. 1. Robot di chuyển và tự dừng trước vạch đen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robot_qua_duong.html">2. 2. Robot qua đường và tự dừng lại</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robot_do_duong.html">2. 3. Robot dò đường</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robot_do_duong_ket_hop.html">2. 4. Robot dò đường kết hợp né vật cản</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2. 5. Robot tự đậu xe vào bãi xe số 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="robot_tu_dong.html">2. 6. Robot tìm chỗ trống để đậu xe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../me_cung/me_cung.html">7. Sa bàn mê cung</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a> &raquo;</li>
+          <li><a href="giang_day.html">6. Bản đồ dò line phiên bản giảng dạy khổ A0</a> &raquo;</li>
+          <li><a href="cac_nhiem_vu.html">2. Các nhiệm vụ gợi ý và hướng dẫn</a> &raquo;</li>
+      <li>2. 5. Robot tự đậu xe vào bãi xe số 3</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastersa_ban/giang_day/robot_dau_xe.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="robot-tu-dau-xe-vao-bai-xe-so-3">
+<h1>2. 5. Robot tự đậu xe vào bãi xe số 3<a class="headerlink" href="#robot-tu-dau-xe-vao-bai-xe-so-3" title="Permalink to this heading"></a></h1>
+<p>Trong dự án xBot này, bạn hãy viết chương trình để robot đậu xe vào đúng vị trí số 3 bằng cách nhận diện các vạch đen nằm ngang.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.17.png"><img alt="../../_images/5.17.png" src="../../_images/5.17.png" style="width: 500.0px; height: 216.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="video-minh-hoa">
+<h2><strong>1. Video minh họa</strong><a class="headerlink" href="#video-minh-hoa" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ZVskkC2hLfs" title="Robot tự động đậu xe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Cách thực hiện:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Cho xBot di chuyển theo đường line màu đen</p></li>
+<li><p>Dùng biến đếm để đếm số lần nhận vạch ngang</p></li>
+<li><p>Robot sẽ đến vị trí số 3 khi đếm = 3</p></li>
+<li><p>Robot cần xoay sang trái và tiến tới để vào đúng vị trí bãi đậu xe</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="chuong-trinh-hoan-chinh">
+<h2><strong>2. Chương trình hoàn chỉnh:</strong><a class="headerlink" href="#chuong-trinh-hoan-chinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.27.png"><img alt="../../_images/5.27.png" src="../../_images/5.27.png" style="width: 604.0px; height: 628.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="giai-thich-chuong-trinh">
+<h2><strong>3. Giải thích chương trình:</strong><a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Bạn cần tạo một biến tên là <strong>“đếm“</strong>. Ban đầu biến đếm sẽ được gán giá trị là 0:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.37.png"><img alt="../../_images/5.37.png" src="../../_images/5.37.png" style="width: 280.0px; height: 61.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bật đèn LED màu xanh và chờ đến khi nút được nhấn, chương trình chính sẽ bắt đầu với khối lệnh lặp lại mãi:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.45.png"><img alt="../../_images/5.45.png" src="../../_images/5.45.png" style="width: 517.0px; height: 246.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Tạo câu lệnh điều kiện như trong chương trình:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.55.png"><img alt="../../_images/5.55.png" src="../../_images/5.55.png" style="width: 614.0px; height: 524.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chúng ta sẽ lập trình để xBot di chuyển theo line:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Khi vạch đen ở giữa (mắt s2, s3 thấy vạch đen): xBot đi thẳng</p></li>
+<li><p>Nếu vạch đen ở bên trái (mắt s1, s2 hoặc chỉ mắt s1 phát hiện vạch đen): Cho xBot rẽ trái</p></li>
+<li><p>Tương tự cho bên phải</p></li>
+<li><p>Nếu không, cho xBot di chuyển thẳng tới trước</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.62.png"><img alt="../../_images/5.62.png" src="../../_images/5.62.png" style="width: 743.4px; height: 373.2px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Tạo thêm một điều kiện <strong>nếu không nếu</strong> ở giữa như hình:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.71.png"><img alt="../../_images/5.71.png" src="../../_images/5.71.png" style="width: 724.5px; height: 394.09999999999997px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Khi phát hiện vạch đen chắn ngang (4 mắt đọc đều thấy vạch đen), ta cho xBot tiến tới một chút và phát nốt nhạc G3 để báo hiệu, đồng thời cộng thêm 1 vào biến:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.81.png"><img alt="../../_images/5.81.png" src="../../_images/5.81.png" style="width: 716.8000000000001px; height: 469.6px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Nếu đếm = 3 (Xe đã tới vạch đen số 3), ta sẽ cho xBot dừng di chuyển trong 0,5 giây, sau đó đi tới và rẽ trái vào bãi đậu xe, đồng thời phát bài nhạc POWER_DOWN và tắt đèn LED và thoát khỏi chương trình:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/5.91.png"><img alt="../../_images/5.91.png" src="../../_images/5.91.png" style="width: 637.2px; height: 503.1px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="tai-chuong-trinh-mau">
+<h2><strong>4. Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Bạn có thể sử dụng trực tiếp chương trình mẫu chúng tôi đã lập trình sẵn cho bạn tại đây.</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://app.ohstem.vn/#!/share/xbot/23J7ACsYCllrTZo6dEMfbZO19qw"><code class="xref download docutils literal notranslate"><span class="pre">Robot</span> <span class="pre">tự</span> <span class="pre">đậu</span> <span class="pre">xe</span> <span class="pre">vào</span> <span class="pre">bãi</span> <span class="pre">xe</span> <span class="pre">số</span> <span class="pre">3</span></code></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="robot_do_duong_ket_hop.html" class="btn btn-neutral float-left" title="2. 4. Robot dò đường kết hợp né vật cản" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="robot_tu_dong.html" class="btn btn-neutral float-right" title="2. 6. Robot tìm chỗ trống để đậu xe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

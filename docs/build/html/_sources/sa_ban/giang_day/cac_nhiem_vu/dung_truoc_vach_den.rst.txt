@@ -1,0 +1,2 @@
+2. 1. Robot di chuyển và tự dừng trước vạch đen
+============

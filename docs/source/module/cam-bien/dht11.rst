@@ -99,7 +99,7 @@ Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có
     Cảm biến độ DHT11 có giá trị trả về là analog, trên mạch mở rộng có 3 chân có giá trị analog là P0, P1, P2. Bạn có thể kết nối vào 1 trong 3 chân này để làm việc với cảm biến. 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -135,3 +135,53 @@ Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có
 .. note::
 
     **Giải thích chương trình:** Sau khi khai báo chân làm việc của cảm biến, các thông tin về nhiệt độ độ ẩm sẽ được hiển thị lên màn hình LED Yolo:Bit và cập nhật liên tục sau mỗi 5 giây.  
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    
+    YoloBit yolobit;
+
+    #include "DHT.h"  
+
+    const int DHTPIN = P0;      
+    const int DHTTYPE = DHT11;  
+    DHT dht(DHTPIN, DHTTYPE);
+
+    void setup() {
+      Serial.begin(9600);
+      dht.begin();       
+    }
+
+    void loop() {
+      float h = dht.readHumidity();    
+      float t = dht.readTemperature(); 
+      Serial.print("Nhiet do: ");
+      Serial.println(t);               
+      Serial.print("Do am: ");
+      Serial.println(h);                
+      Serial.println();               
+      delay(3000);                     
+    }
+
+.. note::
+
+    **Giải thích chương trình:** Thông tin nhiệt độ và độ ẩm sẽ hiển thị ra cửa sổ Serial và được cập nhật liên tục sau mỗi 3 giây.
+
+
+
+
+
+
+
+
+

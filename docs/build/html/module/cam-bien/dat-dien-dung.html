@@ -61,6 +61,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -73,6 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -86,6 +89,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dht20.html">1. Cảm biến nhiệt độ độ ẩm DHT20</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dht11.html">2. Cảm biến nhiệt độ độ ẩm DHT11</a></li>
@@ -94,27 +98,33 @@
 <li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app"><strong>4. Hướng dẫn lập trình với OhStem App</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="vat-can.html">5. Cảm biến vật cản hồng ngoại</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mq2.html">6. Cảm biến khí gas MQ2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mq3.html">7. Cảm biến nồng độ cồn MQ3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mq135.html">8. Cảm biến chất lượng không khí MQ135</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nhac.html">9. Module phát nhạc - Sound Player</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ir.html">10. Mắt đọc hồng ngoại IR</a></li>
-<li class="toctree-l2"><a class="reference internal" href="line-4-mat.html">11. Cảm biến dò đường 4 mắt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="line-2-mat.html">12. Cảm biến dò đường 2 mắt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="color.html">13. Cảm biến màu sắc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sieu-am.html">14. Cảm biến siêu âm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="am-thanh.html">15. Cảm biến âm thanh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="goc-xoay.html">16. Cảm biến góc xoay</a></li>
-<li class="toctree-l2"><a class="reference internal" href="anh-sang.html">17. Cảm biến ánh sáng</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lua.html">18. Cảm biến lửa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pir.html">19. Cảm biến PIR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ir.html">9. Mắt đọc hồng ngoại IR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="line-4-mat.html">10. Cảm biến dò đường 4 mắt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="line-2-mat.html">11. Cảm biến dò đường 2 mắt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="color.html">12. Cảm biến màu sắc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sieu-am.html">13. Cảm biến siêu âm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="am-thanh.html">14. Cảm biến âm thanh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="goc-xoay.html">15. Cảm biến góc xoay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anh-sang.html">16. Cảm biến ánh sáng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua.html">17. Cảm biến lửa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pir.html">18. Cảm biến PIR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cham.html">20. Cảm biến chạm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nuoc.html">21. Cảm biến nước</a></li>
-<li class="toctree-l2"><a class="reference internal" href="keypad.html">22. Keypad - Bàn phím cảm ứng điện dung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nuoc.html">20. Cảm biến nước</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keypad.html">20. Keypad - Bàn phím cảm ứng điện dung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rotary.html">22. Cảm biến góc xoay - Rotary Encoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hx711.html">23. Mạch Chuyển Đổi ADC 24bit Loadcell HX711</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gps.html">24. Mạch định vị GPS NEO - 6M V2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lora.html">25. Mạch thu phát LoRa E32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhip-tim.html">26. Cảm biến nhịp tim và oxy trong máu MAX30102:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhiet-do-ds18b20.html">27. Cảm biến nhiệt độ DS18B20</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a></li>
@@ -122,10 +132,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">1. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">2. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
 
         </div>
@@ -229,8 +242,8 @@
 <p>Cảm biến độ độ ẩm đất điện dung có giá trị trả về là analog, trên mạch mở rộng có 3 chân có giá trị analog là P0, P1, P2. Bạn có thể kết nối vào 1 trong 3 chân này để làm việc với cảm biến.</p>
 </div>
 </section>
-<section id="huong-dan-lap-trinh">
-<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<section id="huong-dan-lap-trinh-voi-ohstem-app">
+<h2><strong>4. Hướng dẫn lập trình với OhStem App</strong><a class="headerlink" href="#huong-dan-lap-trinh-voi-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p><strong>Bước 1:</strong> Tải thư viện <strong>AIOT KIT</strong>, xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a></p>
@@ -255,6 +268,37 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Giải thích chương trình:</strong> Phần trăm độ ẩm đất sẽ được hiển thị lên màn hình LED của Yolo:Bit sau mỗi giây.</p>
+</div>
+</section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a href="#id4"><span class="problematic" id="id5">`tại đây &lt;&gt;`_</span></a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+
+<span class="n">YoloBit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P1_ADC</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// đọc giá trị cảm biến</span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Giải thích chương trình:</strong> Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. Bạn hãy thử đặt cảm biến vào ly nước hay chậu đất để thấy được sự thay đổi.</p>
 </div>
 </section>
 </section>

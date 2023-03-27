@@ -77,6 +77,7 @@ OhStem xin chào tất cả các bạn!
    :caption: Các module mở rộng
 
    module/cai-dat-thu-vien.rst
+   module/cai-dat-arduino.rst
    module/cam-bien.rst
    module/hien-thi.rst
    module/dieu-khien-dong-ngat.rst

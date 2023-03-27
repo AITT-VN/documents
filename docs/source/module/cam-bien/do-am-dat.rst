@@ -84,7 +84,7 @@ Module cảm biến độ ẩm đất có 4 chân, và mỗi chân có chức n�
     Cảm biến độ độ ẩm đất có giá trị trả về là analog, trên mạch mở rộng có 3 chân có giá trị analog là P0, P1, P2. Bạn có thể kết nối vào 1 trong 3 chân này để làm việc với cảm biến. 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -115,3 +115,35 @@ Module cảm biến độ ẩm đất có 4 chân, và mỗi chân có chức n�
 
     **Giải thích chương trình:** Phần trăm độ ẩm đất sẽ được hiển thị lên màn hình LED của Yolo:Bit sau mỗi giây. 
 
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    int sensorPin = P0_ADC;
+    int sensorValue = 0;
+
+    void setup() {
+      Serial.begin(115200);
+    }
+
+    void loop() {
+      // đọc giá trị cảm biến
+      sensorValue = analogRead(sensorPin);
+      Serial.println(sensorValue);
+      delay(200);
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. Bạn hãy thử đặt cảm biến vào ly nước hay chậu đất để thấy được sự thay đổi.

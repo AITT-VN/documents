@@ -74,7 +74,7 @@ Trước khi lập trình, bạn cần biết góc đóng và mở trên tay g�
 ..  figure:: images/dong_mo_tay_gap.png
     :scale: 100%
     :align: center 
-
+|
 
 Để đẩy vật vào ô có đường nét đứt màu đỏ, chúng ta sẽ chia nhỏ bài toán như sau:
     

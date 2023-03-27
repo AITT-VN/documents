@@ -59,7 +59,7 @@
     :align: center 
 | 
 
-**3. Hướng dẫn lập trình**
+**3. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -113,3 +113,42 @@
 
     Chương trình được ứng dụng vào các dự án như sáng tạo bánh xe robot, ròng rọc của cáp treo… 
 
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+    + **Điều khiển Servo 180 độ:**
+
+.. code-block:: guess
+
+    #include "YoloBit.h"    
+    #include <Servo.h>
+    
+    YoloBit yolobit;
+
+    // Điều khiển servo 180, quay liên tục từ góc 0 đến 180 độ và ngược lại. 
+
+    Servo myservo;
+    int pos = 0; // lưu vị trí của servo
+
+    void setup() {
+      myservo.attach(P4);  // kết nối servo vào chân P4
+    }
+
+    void loop() {
+      for (pos=0; pos<=180; pos++) { // từ 0 đến 180 độ
+          myservo.write(pos);
+          delay(15);
+      }
+
+      // Đảo ngược quá trình từ 180 đến 0 độ
+      for (pos=180; pos>=0; pos--) {
+          myservo.write(pos);
+          delay(15);
+      }
+    }
+    

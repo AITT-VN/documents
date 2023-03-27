@@ -89,7 +89,7 @@ Module 4 LED RGB có 4 chân, và mỗi chân có chức năng như sau:
 
     Bạn có thể kết nối module 4 LED RGB vào bất kỳ chân nào trên mạch mở rộng. 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -118,3 +118,61 @@ Module 4 LED RGB có 4 chân, và mỗi chân có chức năng như sau:
 .. note::
 
     **Giải thích chương trình:** Ở trong vòng lặp lại mãi, chúng ta sẽ cho module LED ở chân P0, đổi màu đỏ, xanh lá và xanh dương, sau mỗi giây. Chương trình sẽ lặp lại liên tục.
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    #include <Adafruit_NeoPixel.h>
+
+    Yolobit yolobit;
+
+    #define PIN_NEO_PIXEL  P0   // Chân của Yolobit được kết nối với NeoPixel
+    #define NUM_PIXELS     4  // Số LED trên NeoPixel
+
+    Adafruit_NeoPixel NeoPixel(NUM_PIXELS, PIN_NEO_PIXEL, NEO_GRB + NEO_KHZ800);
+
+    void setup() {
+      NeoPixel.begin();
+    }
+
+    void loop() {
+      NeoPixel.clear(); 
+
+      // Bật từng LED màu xanh lá cây, một cái một lần với thời gian delay giữa các LED là 500ms
+      for (int pixel = 0; pixel < NUM_PIXELS; pixel++) { 
+          NeoPixel.setPixelColor(pixel, NeoPixel.Color(0, 255, 0)); 
+          NeoPixel.show();   
+
+          delay(500);
+      }
+
+      // Tắt toàn bộ LED trong 1 giây
+      NeoPixel.clear();
+      NeoPixel.show(); 
+      delay(1000);     
+
+      // Bật toàn bộ LED màu đỏ cùng một lúc trong 2 giây
+      for (int pixel = 0; pixel < NUM_PIXELS; pixel++) { 
+          NeoPixel.setPixelColor(pixel, NeoPixel.Color(255, 0, 0)); 
+      }
+      NeoPixel.show(); 
+      delay(2000);     
+
+      // Tắt toàn bộ LED trong 1 giây
+      NeoPixel.clear();
+      NeoPixel.show(); 
+      delay(1000);     
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:** LED RGB ở chân P0, đổi màu đỏ, xanh lá và xanh dương, sau mỗi giây. Chương trình sẽ lặp lại liên tục

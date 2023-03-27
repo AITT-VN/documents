@@ -40,7 +40,7 @@
 
 - **Pinout của cảm biến**
 
-Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
+Cảm biến có 4 chân và mỗi chân có chức năng như sau:
 
 ..  csv-table:: 
     :header: "STT", "Chân", "Chức năng"
@@ -91,7 +91,7 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -119,3 +119,32 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
         :align: center 
     |
 
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    int pirPin = P0;
+
+    void setup() {
+      Serial.begin(115200);
+      pinMode(pirPin, INPUT);
+    }
+
+    void loop() {
+      Serial.println(digitalRead(pirPin));
+      delay(500);
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Chúng ta khai báo chân tín hiệu nối với cảm biến PIR là Input và liên tục đọc và in ra trạng thái của cảm biến sau mỗi 500ms. 0 tức là cảm biến không thấy có người và 1 là có người.

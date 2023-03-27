@@ -109,41 +109,43 @@
 --------
 ------------
 
-- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_.  
 
 - Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
 
 .. code-block:: guess
 
     #include "YoloBit.h"
-    
-    YoloBit yolobit;
-
     #include <DHTesp.h>
 
-    const int DHTPIN = D2_1;
+    YoloBit yolobit;
     DHTesp dht;
+    int DHTPIN = D2_1;
 
     void setup() {
-      Serial.begin(9600)
+      Serial.begin(9600);
       dht.setup(DHTPIN, DHTesp::DHT20);
     }
 
     void loop() {
       // chờ 5s giữa các lần đọc cảm biến
       delay(5000);
+
       float h = dht.getHumidity();
       float t = dht.getTemperature();
+    
       if (dht.getStatus() != 0) {
-      Serial.println("Read sensor faiLED!");
-      return;
-      }
+          Serial.println("Read sensor failed!");
+          return;
+    }
+    
       Serial.print("Temp: ");
       Serial.print(t);
-      Serial.print("C");
-      Serial.println("Humidity: ");
+      Serial.println("C");
+    
+      Serial.print("Humidity: ");
       Serial.print(h);
-      Serial.print("%");
+      Serial.println("%");
     }
 
 .. note::

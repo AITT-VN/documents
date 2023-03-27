@@ -77,7 +77,7 @@
     Bạn có thể kết nối vào 1 trong 2 chân I2C
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -113,3 +113,53 @@
     **Giải thích chương trình**
 
     Câu lệnh đầu tiên sẽ xóa toàn bộ màn hình, trong khi câu lệnh thứ 2 sẽ được dùng để hiển thị thông tin lên màn hình LCD tại tọa độ x và y, tọa độ này bạn có thể căn chỉnh để phù hợp với yêu cầu của bạn 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    #include <SPI.h>
+    #include <Wire.h>
+    #include <Adafruit_GFX.h>
+    #include <Adafruit_SSD1306.h>
+
+    Yolobit yolobit;
+
+    Adafruit_SSD1306 display(128, 32, &Wire);
+
+    void setup() {
+      Serial.begin(9600);
+
+      display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Địa chỉ 0x3C cho màn hình 128x32
+
+      display.display();
+      delay(1000);
+
+      // Xóa bộ đệm.
+      display.clearDisplay();
+      display.display();
+
+      // Thiết lập font chữ và màu sắc
+      display.setTextSize(1);
+      display.setTextColor(WHITE);
+    }
+
+    void loop() {
+      display.clearDisplay();
+      display.setCursor(0, 0);
+      display.println("Hello");
+      display.display();
+      delay(1000);
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:**  Bạn sẽ thấy dòng chữ **"Hello"** được hiển thị liên tục trên 2 dòng của màn hình OLED (hiển thị trong 1 giây rồi biến mất sau mỗi giây)

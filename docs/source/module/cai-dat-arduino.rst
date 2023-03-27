@@ -18,10 +18,38 @@ Sau khi tải, bạn tiến hành cài đặt và sử dụng các cấu hình m
 --------
 -------------
 
-.. raw:: html
+Để máy tính có thể giao tiếp và lập trình được cho Yolo:Bit, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau hoặc xem thêm hướng dẫn tại đường link `ohstem.vn/driver <ohstem.vn/driver>`_.
 
-    <iframe width="700" height="400" src="https://www.youtube.com/embed/W_hgIQiq5jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- **Bước 1**. Tải file cài đặt driver cho chip giao tiếp USB CH340G có trên Yolo:Bit `tại đây <https://drive.google.com/file/d/1zGvzwXecH5fZHGky6Fk18qws-CTowqoU/view?usp=sharing>`_.
+
+- **Bước 2**. Giải nén file đã được download và chạy file **CH341SER.EXE** để tiến hành cài đặt.
+
+- **Bước 3**. Click vào **INSTALL**:
+
+..  figure:: images/arduino.10.png
+    :scale: 100%
+    :align: center 
 |
+
+- **Bước 4**. Sau khi cài đặt xong, màn hình sẽ hiển thị: **“The drive is successfully Pre-install in advance”** như hình. Lúc này, bạn hãy nhấn vào **“OK”** và tắt app.
+
+..  figure:: images/arduino.11.png
+    :scale: 100%
+    :align: center 
+|
+
+- **Bước 5**. Tiếp theo, bạn hãy kết nối Yolo:Bit với máy tính bằng cáp micro USB.
+
+    + **Dành cho người dùng hệ điều hành Windows:** Bạn có thể vào phần **Device Manager**. Trong phần **Ports (COM & LPT)**, bạn sẽ thấy một cổng COM mới mỗi khi kết nối USB với Yolo:Bit. Cổng này sẽ biến mất khi rút cáp USB ra.
+
+..  figure:: images/arduino.12.png
+    :scale: 100%
+    :align: center 
+|
+
+    + **Dành cho người dùng hệ điều hành macOS**: Bạn có thể nhấn vào biểu tượng trái táo, chọn mục **About this Mac -> System Report... -> USB**. CH341SER USB Driver sẽ xuất hiện tại đây.
+
+- Nếu driver chưa được cài đặt, hoặc cài đặt chưa thành công, máy tính sẽ hiển thị **“unknown device”** tại mục Device Manager. Trong trường hợp này, bạn cần phải tải về và cài lại driver.
 
 3. Cài đặt board Yolo:Bit trong Arduino IDE
 --------

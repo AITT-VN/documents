@@ -141,7 +141,7 @@ Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có
 --------
 ------------
 
-- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <>`_. 
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
 
 - Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
 

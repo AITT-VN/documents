@@ -85,7 +85,7 @@ Cảm biến màu sắc có 4 chân, và mỗi chân có chức năng như sau:
 
     Bạn có thể kết nối vào 1 trong 2 chân I2C
 
-**4. Hướng dẫn lập trình:**
+**4. Hướng dẫn lập trình với OhStem App:**
 ---------
 -------------
 
@@ -116,7 +116,56 @@ Cảm biến màu sắc có 4 chân, và mỗi chân có chức năng như sau:
 
     Chương trình phát hiện và đổi màu sắc tương ứng. Nếu cảm biến phát hiện màu đỏ, mạch Yolo:Bit sẽ nhận tín hiệu và xử lý để đổi màu tất cả các đèn LED trên Yolo:Bit sang màu tương ứng. Tương tự mới màu xanh lá và xanh dương. 
 
-**5. Góc kiến thức:**
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_.  
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    #include <Wire.h>
+    #include "Adafruit_TCS34725.h"
+    Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_700MS, TCS34725_GAIN_1X);
+
+    void setup() {
+      Serial.begin(9600);
+      if (tcs.begin()) {
+         Serial.println("Found sensor");
+      } 
+      else {
+         Serial.println("No TCS34725 found ... check your connections");
+         while (1);
+      }
+      // Đọc giá trị cảm biến!
+    }
+
+    void loop(void) {
+      uint16_t r, g, b, c, colorTemp, lux;
+      tcs.getRawData(&r, &g, &b, &c);
+      colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
+      lux = tcs.calculateLux(r, g, b);
+      Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");
+      Serial.print("Lux: "); Serial.print(lux, DEC); Serial.print(" - ");
+      Serial.print("R: "); Serial.print(r, DEC); Serial.print(" ");
+      Serial.print("G: "); Serial.print(g, DEC); Serial.print(" ");
+      Serial.print("B: "); Serial.print(b, DEC); Serial.print(" ");
+      Serial.print("C: "); Serial.print(c, DEC); Serial.print(" ");
+      Serial.println(" ");
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra.
+
+
+**6. Góc kiến thức:**
 ---------
 -----------
 

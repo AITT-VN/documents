@@ -85,7 +85,7 @@ Cảm biến siêu âm có 4 chân, và mỗi chân có chức năng như sau:
 |
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -123,3 +123,45 @@ Cảm biến siêu âm có 4 chân, và mỗi chân có chức năng như sau:
     **Giải thích chương trình:** 
     
     Sau khi khai báo chân làm việc với cảm biến. Chương trình sẽ hiển thị thông tin cảm biến đo được lên cửa sổ Serial và phát âm cảnh báo nếu phát hiện vật cản trong phạm vi 20cm. 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_.  
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    #include <Ultrasonic.h>
+
+    int triggerPin = P10;
+    int echoPin = P13;
+
+    void setup() {
+      Serial.begin(115200);
+    }
+
+    void loop() {
+      // Chuyển CM làm tham số để có khoảng cách tính bằng CM
+      distance = ultrasonic.read();
+    
+      Serial.print("Distance in CM: ");
+      Serial.println(distance);
+      delay(200);
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi chạy chương trình, mở cửa sổ Serial và quan sát kết quả in ra khi bạn đưa ta tới gần hoặc ra xa cảm biến.
+
+..  image:: images/14.5.png
+    :scale: 100%
+    :align: center 
+|

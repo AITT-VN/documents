@@ -96,7 +96,7 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
 - **Bước 6**: Cắm phích cắm vào nguồn điện 220V và tiến hành lập trình như bên dưới. 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -119,3 +119,34 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
 .. note::
 
     Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là **khởi động từ** hoặc **công tắc tơ**. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    
+    // Bật tắt Relay sau mỗi 2 giây
+    
+    YoloBit yolobit;
+
+    int relayPin = P0;
+
+    void setup() {
+      pinMode(relayPin, OUTPUT);
+    }
+
+    void loop() {
+      digitalWrite(relayPin, HIGH);
+      delay(2000);
+      digitalWrite(relayPin, LOW);
+      delay(2000);
+    }
+    

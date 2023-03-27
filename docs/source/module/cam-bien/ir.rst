@@ -121,4 +121,3 @@
     - Nếu nút B được nhấn, đèn sẽ tắt. 
     
     - Sau khi Yolo:Bit đã nhận được tín hiệu từ cảm biến và xử lý, chúng ta sẽ phải xóa tín hiệu remote cũ để nhận lệnh mới chính xác hơn.
-

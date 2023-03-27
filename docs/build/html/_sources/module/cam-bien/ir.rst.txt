@@ -76,8 +76,7 @@
 
 
 
-
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 

@@ -6,7 +6,7 @@
     :align: center 
 | 
 
-Dựa trên micrô, cảm biến âm thanh có thể được sử dụng để phát hiện cường độ âm thanh xung quanh. Thành phần chính của module này là bộ khuếch đại công suất thấp LM358. Cảm biến này có thể được sử dụng để xây dựng một số dự án tương tác như: công tắc điều khiển bằng giọng nói, rô bốt nhảy theo,…
+Dựa trên micrô, cảm biến âm thanh có thể được sử dụng để phát hiện cường độ âm thanh xung quanh. Thành phần chính của module này là bộ khuếch đại công suất thấp LM358. Cảm biến này có thể được sử dụng để xây dựng một số dự án tương tác như: công tắc điều khiển bằng giọng nói, cảnh báo tiếng ồn,…
 
 
 **1. Mua sản phẩm**
@@ -89,7 +89,7 @@ Cảm biến âm thanh có 4 chân, và mỗi chân có chức năng như sau:
     Bạn có thể kết nối cảm biến âm thanh với chân P0, P1 hoặc P2 trên mạch mở rộng, vì giá trị trả về của cảm biến có giá trị là analog. 
     
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -121,3 +121,42 @@ Cảm biến âm thanh có 4 chân, và mỗi chân có chức năng như sau:
     Chương trình sẽ hiển thị tiếng ồn xung quanh bạn lên cửa sổ Serial, nếu mức độ âm thanh trên 20%, sẽ có âm thanh cảnh báo được phát ra. 
 
     Hãy thử thay đổi mức độ cảnh báo âm thanh và “vỗ tay” để chương trình của bạn thú vị hơn nhé! 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    
+    Yolobit yolobit;
+    
+    int sensorPin=P0;
+    bool booleanVal = false;
+
+    void setup() {
+      pinMode(SENSOR_PIN, INPUT);
+      Serial.begin(9600);
+    }
+
+    void loop() {
+      booleanVal = digitalRead(SENSOR_PIN);
+      Serial.println(booleanVal);
+
+      if (booleanVal == HIGH) {
+          Serial.println("Phat hien am thanh");
+      }
+      else {
+          Serial.println("Khong co am thanh");
+      }
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra nếu cảm biến phát hiện tín hiệu âm thanh. 

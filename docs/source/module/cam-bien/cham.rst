@@ -86,7 +86,7 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -102,3 +102,44 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
     **Giải thích chương trình:** Nếu cảm biến được chạm vào, tức là trạng thái của chân P16 đang bật. Đèn LED sẽ chuyển sang màu trắng. Nếu không được chạm vào, đèn sẽ tắt. 
 
     Sử dụng các khối lệnh trong danh mục **CHÂN CẮM**. 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <Yolobit.h>
+
+    Yolobit yolobit;
+
+    int TOUCH_PIN = P16;
+
+    void setup() {
+      Serial.begin(9600);
+      pinMode(TOUCH_PIN, INPUT);
+    }
+
+    void loop() {
+      int touch = digitalRead(TOUCH_PIN);
+
+      if (touch == LOW) {
+          Serial.println("Touching"); //chạm vào cảm biến
+      }
+      else {
+          Serial.println("None"); // không chạm
+      }
+
+      delay(300);
+    }
+
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. 
+

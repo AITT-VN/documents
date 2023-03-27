@@ -86,8 +86,7 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
     Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
 
-
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -116,3 +115,45 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 .. note::
 
     **Giải thích chương trình:** Khi cảm biến phát hiện lửa, mạch Yolo:Bit của bạn sẽ phát âm thanh cảnh báo. 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <Yolobit.h>
+
+    Yolobit yolobit;
+
+    int FLAME_PIN = P0;
+
+    void setup() {
+      Serial.begin(9600);
+      pinMode(FLAME_PIN, INPUT);
+    }
+
+    void loop() {
+      int flame = digitalRead(FLAME_PIN);
+    
+      if (flame == LOW) {
+          digitalWrite(BUZZER_PIN, HIGH);
+          Serial.println("Khong co lua");
+      }
+      else if (flame == HIGH) {
+          digitalWrite(BUZZER_PIN, LOW);
+          Serial.println("Co lua");
+      }
+    
+      delay(300);
+    }
+
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. 

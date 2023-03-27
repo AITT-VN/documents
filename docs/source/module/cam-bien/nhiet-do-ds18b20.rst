@@ -95,3 +95,45 @@ Chương trình minh họa việc đọc nhiệt độ của cảm biến DS18B2
     :align: center 
 
 Vậy là chúng ta đã có thể đo được nhiệt độ với cảm biến DS18B20, chúc các bạn thực hiện được các dự án thú vị với cảm biến này nhé!
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <Yolobit.h>
+    #include <OneWire.h>
+    #include <DallasTemperature.h>
+
+    Yolobit yolobit;
+
+    // Chân nối với Arduino
+    #define ONE_WIRE_BUS P0
+
+    // Thiết đặt thư viện OneWire
+    OneWire oneWire(ONE_WIRE_BUS);
+
+    // Sử dụng thư viện DallasTemperature để đọc cho nhanh
+    DallasTemperature sensors(&oneWire);
+
+    void setup() {
+      Serial.begin(9600);
+      sensors.begin();
+    }
+
+    void loop() {
+      sensors.requestTemperatures();  
+      Serial.print("Nhiet do: ");  
+      Serial.println(sensors.getTempCByIndex(0)); // Vì chỉ có 1 cảm biến nên sử dụng chỉ số 0 
+      // Chờ 1 giây rồi đọc lại để bạn có thể nhìn thấy sự thay đổi
+      delay(1000);
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. 

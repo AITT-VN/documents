@@ -83,7 +83,7 @@ Module động cơ quạt mini có 4 chân, và mỗi chân có chức năng nh�
 
     Bạn có thể kết nối động cơ quạt mini vào bất kỳ chân nào của mạch mở rộng
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -113,3 +113,36 @@ Module động cơ quạt mini có 4 chân, và mỗi chân có chức năng nh�
 .. note::
 
     Nếu nút trên mạch Yolo:Bit được nhấn, tốc độ của quạt sẽ thay đổi tương ứng. Với tốc độ 0, quạt sẽ dừng hoạt động. Tốc độ tối đa của quạt là 100. 
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    // Bật tắt module quạt mini sau mỗi 1 giây
+    
+    YoloBit yolobit;
+
+    int miniFanPin = P0; 
+
+    void setup() { 
+      pinMode(miniFanPin, OUTPUT);
+    }
+
+    void loop() {
+      digitalWrite(miniFanPin, HIGH);
+      delay(1000);
+      digitalWrite(miniFanPin, LOW);
+      delay(1000);
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi chạy chương trình, bạn sẽ thấy module quạt mini quay và dừng quay liên lục sau mỗi 1 giây.

@@ -83,7 +83,7 @@
     Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -119,3 +119,35 @@
     - Nếu nồng độ cồn vượt trên mức 0.25mg/l, sẽ có âm thanh cảnh báo cho bạn. Nếu màn hình hiện chữ OK, hơi thở của bạn không có cồn. 
     
     **Lưu ý:** *Bạn có thể sử dụng các đơn vị đo như analog và ppm trong chương trình.* 
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    int sensorPin = P1_ADC;
+    int sensorValue = 0;
+
+    void setup() {
+      Serial.begin(115200);
+    }
+
+    void loop() {
+      // đọc giá trị cảm biến
+      sensorValue = analogRead(sensorPin);
+      Serial.println(sensorValue);
+      delay(200);
+    }
+
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra.

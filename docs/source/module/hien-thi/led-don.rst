@@ -98,3 +98,36 @@ Module LED có 3 chân, và mỗi chân có chức năng như sau:
 .. note::
 
     **Giải thích chương trình:** Đèn LED sẽ bật tắt liên tục sau mỗi giây, tạo nên hiệu ứng nhấp nháy của đèn. 
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    YoloBit yolobit;
+
+    int ledPin = P14;
+
+    // Bật tắt Relay sau mỗi 2 giây
+   
+    void setup() {
+      pinMode(relayPin, OUTPUT);
+    }
+
+    void loop() {
+      digitalWrite(ledPin, HIGH);
+      delay(2000);
+      digitalWrite(ledPin, LOW);
+      delay(2000);
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra. Bạn hãy thử lấy tay che cảm biến để thấy được sự thay đổi.

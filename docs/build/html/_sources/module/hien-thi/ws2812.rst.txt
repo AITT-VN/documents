@@ -86,7 +86,7 @@ Mỗi LED có khả năng hiển thị lên đến 16777216 màu và 256 cấp �
     Bạn có thể kết nối với bất kỳ chân nào trên mạch mở rộng
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -121,3 +121,59 @@ Trong thư viện sẽ có các khối lệnh như sau:
         :align: center 
 |
     3. Bạn có thể nạp chương trình này vào và quan sát xem hiệu ứng trên dây đèn LED thay đổi như thế nào. Chúc bạn thực hiện thành công nhé!
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    #include <Adafruit_NeoPixel.h>
+
+    Yolobit yolobit;
+
+    //Chương trình thay đổi hiệu ứng LED
+
+    #define PIN_NEO_PIXEL  P0   // Chân của Yolobit được kết nối với NeoPixel
+    #define NUM_PIXELS     4  // Số LED trên NeoPixel
+
+    Adafruit_NeoPixel NeoPixel(NUM_PIXELS, PIN_NEO_PIXEL, NEO_GRB + NEO_KHZ800);
+
+    void setup() {
+      NeoPixel.begin();
+    }
+
+    void loop() {
+      NeoPixel.clear(); 
+
+      // Bật từng LED màu xanh lá cây, một cái một lần với thời gian delay giữa các LED là 500ms
+      for (int pixel = 0; pixel < NUM_PIXELS; pixel++) { 
+          NeoPixel.setPixelColor(pixel, NeoPixel.Color(0, 255, 0)); 
+          NeoPixel.show();   
+
+          delay(500);
+      }
+
+      // Tắt toàn bộ LED trong 2 giây
+      NeoPixel.clear();
+      NeoPixel.show(); 
+      delay(2000);     
+
+      // Bật toàn bộ LED màu đỏ cùng một lúc trong 2 giây
+      for (int pixel = 0; pixel < NUM_PIXELS; pixel++) { // for each pixel
+          NeoPixel.setPixelColor(pixel, NeoPixel.Color(255, 0, 0)); // it only takes effect if pixels.show() is called
+      }
+      NeoPixel.show(); // send the updated pixel colors to the NeoPixel hardware.
+      delay(2000);     // on time
+
+      // Tắt toàn bộ LED trong 1 giây
+      NeoPixel.clear();
+      NeoPixel.show(); 
+      delay(1000);     
+    }

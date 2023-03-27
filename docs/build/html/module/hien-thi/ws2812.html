@@ -21,7 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Điều khiển đóng ngắt" href="../dieu-khien-dong-ngat.html" />
+    <link rel="next" title="8. Màn hình TFT LCD" href="man-hinh-tft.html" />
     <link rel="prev" title="6. Đèn LED đơn" href="led-don.html" /> 
 </head>
 
@@ -61,6 +61,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -73,6 +75,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -86,6 +89,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="led-7-doan.html">1. Màn hình 4 số LED 7 đoạn</a></li>
@@ -98,25 +102,24 @@
 <li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app"><strong>4. Hướng dẫn lập trình với OhStem App</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="man-hinh-tft.html">8. Màn hình TFT LCD</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">1. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_home.html">3. Giáo trình AI và IOT cho nhà thông minh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/robot_xcontroller.html">4. Tài liệu Sáng chế và lập trình Robot với Python</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
 
         </div>
@@ -243,15 +246,15 @@
 <li><p><strong>Bước 2</strong>: Cắm Yolo:Bit vào mạch mở rộng</p></li>
 <li><p><strong>Bước 3</strong>: Cắm thiết bị vào chân P0 trên mạch mở rộng</p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/noi_led_day.png"><img alt="../../_images/noi_led_day.png" src="../../_images/noi_led_day.png" style="width: 600.0px; height: 291.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Bạn có thể kết nối với bất kỳ chân nào trên mạch mở rộng</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Bạn có thể kết nối với bất kỳ chân nào trên mạch mở rộng</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="huong-dan-lap-trinh">
-<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<section id="huong-dan-lap-trinh-voi-ohstem-app">
+<h2><strong>4. Hướng dẫn lập trình với OhStem App</strong><a class="headerlink" href="#huong-dan-lap-trinh-voi-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để điều khiển được LED dây, chúng ta phải cần thêm thư viện mở rộng <strong>NEOPIXEL</strong>, bạn hãy copy đường dẫn sau: <a class="reference external" href="https://github.com/AITT-VN/yolobit_neopixel.git">https://github.com/AITT-VN/yolobit_neopixel.git</a> và dán vào mục mở rộng để tải thư viện mở rộng.</p>
 <blockquote>
@@ -286,6 +289,60 @@
 <div class="line">3. Bạn có thể nạp chương trình này vào và quan sát xem hiệu ứng trên dây đèn LED thay đổi như thế nào. Chúc bạn thực hiện thành công nhé!</div>
 </div>
 </section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Adafruit_NeoPixel.h&gt;</span><span class="cp"></span>
+
+<span class="n">Yolobit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">//Chương trình thay đổi hiệu ứng LED</span>
+
+<span class="cp">#define PIN_NEO_PIXEL  P0   </span><span class="c1">// Chân của Yolobit được kết nối với NeoPixel</span>
+<span class="cp">#define NUM_PIXELS     4  </span><span class="c1">// Số LED trên NeoPixel</span>
+
+<span class="n">Adafruit_NeoPixel</span><span class="w"> </span><span class="nf">NeoPixel</span><span class="p">(</span><span class="n">NUM_PIXELS</span><span class="p">,</span><span class="w"> </span><span class="n">PIN_NEO_PIXEL</span><span class="p">,</span><span class="w"> </span><span class="n">NEO_GRB</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">NEO_KHZ800</span><span class="p">);</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Bật từng LED màu xanh lá cây, một cái một lần với thời gian delay giữa các LED là 500ms</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">NUM_PIXELS</span><span class="p">;</span><span class="w"> </span><span class="n">pixel</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span><span class="w"> </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
+<span class="w">      </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">      </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Tắt toàn bộ LED trong 2 giây</span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Bật toàn bộ LED màu đỏ cùng một lúc trong 2 giây</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">pixel</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">NUM_PIXELS</span><span class="p">;</span><span class="w"> </span><span class="n">pixel</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// for each pixel</span>
+<span class="w">      </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">setPixelColor</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span><span class="w"> </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// it only takes effect if pixels.show() is called</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"> </span><span class="c1">// send the updated pixel colors to the NeoPixel hardware.</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">     </span><span class="c1">// on time</span>
+
+<span class="w">  </span><span class="c1">// Tắt toàn bộ LED trong 1 giây</span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">NeoPixel</span><span class="p">.</span><span class="n">show</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -293,7 +350,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="led-don.html" class="btn btn-neutral float-left" title="6. Đèn LED đơn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../dieu-khien-dong-ngat.html" class="btn btn-neutral float-right" title="Điều khiển đóng ngắt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="man-hinh-tft.html" class="btn btn-neutral float-right" title="8. Màn hình TFT LCD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

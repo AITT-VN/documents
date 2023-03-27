@@ -62,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -88,6 +89,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dht20.html">1. Cảm biến nhiệt độ độ ẩm DHT20</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dht11.html">2. Cảm biến nhiệt độ độ ẩm DHT11</a></li>
@@ -119,6 +121,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>1. Thông số kỹ thuật:</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>2. Kết nối</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lap-trinh-yolo-bit-voi-cam-bien">3. Lập trình Yolo:Bit với cảm biến</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -131,6 +134,10 @@
 <p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
 
         </div>
@@ -219,10 +226,10 @@
 </div></blockquote>
 </li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/ds18b20_1.png"><img alt="../../_images/ds18b20_1.png" src="../../_images/ds18b20_1.png" style="width: 512.0px; height: 285.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Hướng dẫn nối dây cảm biến với mạch mở rộng vào chân P0.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Hướng dẫn nối dây cảm biến với mạch mở rộng vào chân P0.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -247,6 +254,47 @@
 <a class="reference internal image-reference" href="../../_images/ds18b20_3.png"><img alt="../../_images/ds18b20_3.png" src="../../_images/ds18b20_3.png" style="width: 512.0px; height: 251.0px;" /></a>
 </figure>
 <p>Vậy là chúng ta đã có thể đo được nhiệt độ với cảm biến DS18B20, chúc các bạn thực hiện được các dự án thú vị với cảm biến này nhé!</p>
+</section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Yolobit.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OneWire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DallasTemperature.h&gt;</span><span class="cp"></span>
+
+<span class="n">Yolobit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">// Chân nối với Arduino</span>
+<span class="cp">#define ONE_WIRE_BUS P0</span>
+
+<span class="c1">// Thiết đặt thư viện OneWire</span>
+<span class="n">OneWire</span><span class="w"> </span><span class="nf">oneWire</span><span class="p">(</span><span class="n">ONE_WIRE_BUS</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Sử dụng thư viện DallasTemperature để đọc cho nhanh</span>
+<span class="n">DallasTemperature</span><span class="w"> </span><span class="nf">sensors</span><span class="p">(</span><span class="o">&amp;</span><span class="n">oneWire</span><span class="p">);</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">sensors</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">sensors</span><span class="p">.</span><span class="n">requestTemperatures</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Nhiet do: &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensors</span><span class="p">.</span><span class="n">getTempCByIndex</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// Vì chỉ có 1 cảm biến nên sử dụng chỉ số 0</span>
+<span class="w">  </span><span class="c1">// Chờ 1 giây rồi đọc lại để bạn có thể nhìn thấy sự thay đổi</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Giải thích chương trình:</strong> Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra.</p>
+</div>
 </section>
 </section>
 

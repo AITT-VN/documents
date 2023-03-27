@@ -88,7 +88,7 @@ Module LCD1602 có 4 chân, và mỗi chân có chức năng như sau:
 
     Bạn có thể kết nối vào 1 trong 2 chân I2C
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -133,3 +133,42 @@ Module LCD1602 có 4 chân, và mỗi chân có chức năng như sau:
     :align: center 
 
     Chỉnh tương phản cho việc hiển thị trên LCD
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    #include <Wire.h> 
+    #include <LiquidCrystal_I2C.h>
+
+
+    YoloBit yolobit;
+
+    LiquidCrystal_I2C lcd(0x21, 16, 2); // I2C address: 0x21, 16 chars, 2 line
+
+    void setup() {
+      lcd.init(); // initialize the lcd
+      lcd.backlight();
+    }
+    
+    void loop() {
+      lcd.setCursor(0, 0);
+      lcd.print("OhStem"); 
+      lcd.setCursor(0, 1);
+      lcd.print("xin chao ban"); 
+      delay(2000);
+      lcd.clear();
+      delay(1000);
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:** Bạn sẽ thấy dòng chữ **"OhStem xin chao ban!"** được hiển thị liên tục trên 2 dòng của màn hình LCD (hiển thị trong 2 giây rồi biến mất trong 1 giây)

@@ -153,9 +153,50 @@
 <section id="cai-dat-driver-cho-yolo-bit">
 <h2>2. Cài đặt driver cho Yolo:Bit<a class="headerlink" href="#cai-dat-driver-cho-yolo-bit" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<iframe width="700" height="400" src="https://www.youtube.com/embed/W_hgIQiq5jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="line-block">
+<p>Để máy tính có thể giao tiếp và lập trình được cho Yolo:Bit, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau hoặc xem thêm hướng dẫn tại đường link <a class="reference external" href="ohstem.vn/driver">ohstem.vn/driver</a>.</p>
+<ul class="simple">
+<li><p><strong>Bước 1</strong>. Tải file cài đặt driver cho chip giao tiếp USB CH340G có trên Yolo:Bit <a class="reference external" href="https://drive.google.com/file/d/1zGvzwXecH5fZHGky6Fk18qws-CTowqoU/view?usp=sharing">tại đây</a>.</p></li>
+<li><p><strong>Bước 2</strong>. Giải nén file đã được download và chạy file <strong>CH341SER.EXE</strong> để tiến hành cài đặt.</p></li>
+<li><p><strong>Bước 3</strong>. Click vào <strong>INSTALL</strong>:</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/arduino.10.png"><img alt="../_images/arduino.10.png" src="../_images/arduino.10.png" style="width: 512.0px; height: 315.0px;" /></a>
+</figure>
+<div class="line-block">
 <div class="line"><br /></div>
 </div>
+<ul class="simple">
+<li><p><strong>Bước 4</strong>. Sau khi cài đặt xong, màn hình sẽ hiển thị: <strong>“The drive is successfully Pre-install in advance”</strong> như hình. Lúc này, bạn hãy nhấn vào <strong>“OK”</strong> và tắt app.</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/arduino.11.png"><img alt="../_images/arduino.11.png" src="../_images/arduino.11.png" style="width: 458.0px; height: 294.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Bước 5</strong>. Tiếp theo, bạn hãy kết nối Yolo:Bit với máy tính bằng cáp micro USB.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Dành cho người dùng hệ điều hành Windows:</strong> Bạn có thể vào phần <strong>Device Manager</strong>. Trong phần <strong>Ports (COM &amp; LPT)</strong>, bạn sẽ thấy một cổng COM mới mỗi khi kết nối USB với Yolo:Bit. Cổng này sẽ biến mất khi rút cáp USB ra.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/arduino.12.png"><img alt="../_images/arduino.12.png" src="../_images/arduino.12.png" style="width: 512.0px; height: 445.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Dành cho người dùng hệ điều hành macOS</strong>: Bạn có thể nhấn vào biểu tượng trái táo, chọn mục <strong>About this Mac -&gt; System Report… -&gt; USB</strong>. CH341SER USB Driver sẽ xuất hiện tại đây.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Nếu driver chưa được cài đặt, hoặc cài đặt chưa thành công, máy tính sẽ hiển thị <strong>“unknown device”</strong> tại mục Device Manager. Trong trường hợp này, bạn cần phải tải về và cài lại driver.</p></li>
+</ul>
 </section>
 <section id="cai-dat-board-yolo-bit-trong-arduino-ide">
 <h2>3. Cài đặt board Yolo:Bit trong Arduino IDE<a class="headerlink" href="#cai-dat-board-yolo-bit-trong-arduino-ide" title="Permalink to this heading"></a></h2>

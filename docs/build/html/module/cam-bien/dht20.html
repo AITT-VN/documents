@@ -234,10 +234,10 @@
 <li><p><strong>Bước 3</strong>: Sử dụng dây Grove cắm vào cảm biến</p></li>
 <li><p><strong>Bước 4</strong>: Kết nối cảm biến nhiệt độ độ ẩm DHT20 vào <strong>chân I2C trên mạch mở rộng</strong></p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../_images/1.26.png"><img alt="../../_images/1.26.png" src="../../_images/1.26.png" style="width: 395.5px; height: 383.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-text">Bạn có thể kết nối cảm biến DHT20 vào 1 trong 2 chân I2C</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Bạn có thể kết nối cảm biến DHT20 vào 1 trong 2 chân I2C</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -273,39 +273,41 @@
 <h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a href="#id5"><span class="problematic" id="id6">`tại đây &lt;&gt;`_</span></a>.</p></li>
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
 <li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
 </ul>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#include &quot;YoloBit.h&quot;
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHTesp.h&gt;</span><span class="cp"></span>
 
-YoloBit yolobit;
+<span class="n">YoloBit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+<span class="n">DHTesp</span><span class="w"> </span><span class="n">dht</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">DHTPIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">D2_1</span><span class="p">;</span><span class="w"></span>
 
-#include &lt;DHTesp.h&gt;
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">dht</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTesp</span><span class="o">::</span><span class="n">DHT20</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-const int DHTPIN = D2_1;
-DHTesp dht;
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// chờ 5s giữa các lần đọc cảm biến</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span><span class="w"></span>
 
-void setup() {
-  Serial.begin(9600)
-  dht.setup(DHTPIN, DHTesp::DHT20);
-}
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getHumidity</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getTemperature</span><span class="p">();</span><span class="w"></span>
 
-void loop() {
-  // chờ 5s giữa các lần đọc cảm biến
-  delay(5000);
-  float h = dht.getHumidity();
-  float t = dht.getTemperature();
-  if (dht.getStatus() != 0) {
-  Serial.println(&quot;Read sensor faiLED!&quot;);
-  return;
-  }
-  Serial.print(&quot;Temp: &quot;);
-  Serial.print(t);
-  Serial.print(&quot;C&quot;);
-  Serial.println(&quot;Humidity: &quot;);
-  Serial.print(h);
-  Serial.print(&quot;%&quot;);
-}
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dht</span><span class="p">.</span><span class="n">getStatus</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Read sensor failed!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temp: &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;C&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;%&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">

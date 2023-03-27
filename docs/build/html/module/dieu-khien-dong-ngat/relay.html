@@ -62,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -88,6 +89,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a><ul class="current">
@@ -99,7 +101,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app"><strong>4. Hướng dẫn lập trình với OhStem App</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="nhac.html">6. Module phát nhạc - Sound Player</a></li>
@@ -111,6 +114,10 @@
 <p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
 
         </div>
@@ -260,8 +267,8 @@
 <li><p><strong>Bước 6</strong>: Cắm phích cắm vào nguồn điện 220V và tiến hành lập trình như bên dưới.</p></li>
 </ul>
 </section>
-<section id="huong-dan-lap-trinh">
-<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<section id="huong-dan-lap-trinh-voi-ohstem-app">
+<h2><strong>4. Hướng dẫn lập trình với OhStem App</strong><a class="headerlink" href="#huong-dan-lap-trinh-voi-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Lập trình bật tắt đèn trong 2 giây</strong></p>
 <ul class="simple">
@@ -281,6 +288,34 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là <strong>khởi động từ</strong> hoặc <strong>công tắc tơ</strong>. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.</p>
+</div>
+</section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Bật tắt Relay sau mỗi 2 giây</span>
+
+<span class="n">YoloBit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">relayPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P0</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">relayPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">relayPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">relayPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
 </div>
 </section>
 </section>

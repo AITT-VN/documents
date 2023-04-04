@@ -62,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -88,6 +89,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a><ul class="current">
@@ -98,7 +100,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh"><strong>4. Hướng dẫn lập trình</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app"><strong>4. Hướng dẫn lập trình với OhStem App</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="relay.html">5. Công tắc điện tử Relay</a></li>
@@ -108,17 +111,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tài liệu STEM</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/du_an_yolobit.html">1. Giáo trình 100+ dự án STEM cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_farm.html">2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/smart_home.html">3. Giáo trình AI và IOT cho nhà thông minh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/robot_xcontroller.html">4. Tài liệu Sáng chế và lập trình Robot với Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tai_lieu_stem/physbit.html">5. Tài liệu thực hành mạch điện với Phys:Bit V2</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
 
         </div>
@@ -249,8 +248,8 @@
 </figcaption>
 </figure>
 </section>
-<section id="huong-dan-lap-trinh">
-<h2><strong>4. Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<section id="huong-dan-lap-trinh-voi-ohstem-app">
+<h2><strong>4. Hướng dẫn lập trình với OhStem App</strong><a class="headerlink" href="#huong-dan-lap-trinh-voi-ohstem-app" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p>Sử dụng các khối lệnh trong danh mục <strong>CHÂN CẮM</strong>, để làm việc với nút nhấn đơn.</p></li>
@@ -267,6 +266,52 @@
 <p class="admonition-title">Note</p>
 <p><strong>Giải thích chương trình:</strong>
 Khi nút nhấn được nhấn, trạng của chân P2 sẽ là tắt. và khi đó, sẽ hiện trái tim lên màn hình LED và phát âm báo hiệu. Nếu nút không được nhấn, sẽ hiện dấu “X” lên màn hình LED của Yolo:Bit</p>
+</div>
+</section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Biến lưu trạng thái của pushbutton</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P2</span><span class="p">;</span><span class="w">  </span><span class="c1">// Đầu vào của pushbutton</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P1</span><span class="p">;</span><span class="w">    </span><span class="c1">// Đầu ra của đèn LED</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="c1">// Biến lưu trạng thái của pushbutton</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Đặt chế độ đầu ra cho đèn LED</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Đặt chế độ đầu vào cho pushbutton</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Đọc trạng thái pushbutton</span>
+<span class="w">  </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Nếu pushbutton được bấm thì bật đèn LED</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Ngược lại, tắt đèn LED</span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Giải thích chương trình:</strong> Sau khi chạy chương trình, khi nút được nhấn, bật đèn led P1.</p>
 </div>
 </section>
 </section>

@@ -88,7 +88,7 @@ Cảm biến góc xoay có 4 chân, và mỗi chân có chức năng như sau:
 
     Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -120,3 +120,52 @@ Cảm biến góc xoay có 4 chân, và mỗi chân có chức năng như sau:
         :scale: 100%
         :align: center 
     |
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    // Định nghĩa cấu hình mắcro của cảm biến góc xoay và chân LED
+    
+    #include "YoloBit.h"
+
+    Yolobit yolobit;
+    
+    #define ROTARY_ANGLE_SENSOR P0 
+    #define LED P13  // Chân LED được kết nối đến chân PWM P13 của YoloBit
+    #define ADC_REF 3.3 // YoloBit sử dụng 3V3, ADC_REF nên là 3,3
+    #define GROVE_VCC 3.3 // Cấp nguồn VCC của giao diện Grove thường là 3,3V
+    #define FULL_ANGLE 300 // Giá trị đầy đủ của góc quay là 300 độ
+
+    void setup()
+    {
+      yolobit.serialBegin(9600); // Khởi tạo UART với tốc độ baud rate 9600
+      yolobit.pinMode(ROTARY_ANGLE_SENSOR, INPUT); // Thiết lập chân cảm biến góc xoay là chế độ đầu vào
+      yolobit.pinMode(LED, OUTPUT); // Thiết lập chân LED là chế độ đầu ra
+    }
+
+    void loop()
+    {   
+      float voltage;
+      int sensor_value = yolobit.analogRead(ROTARY_ANGLE_SENSOR); // Đọc giá trị của cảm biến
+      voltage = (float)sensor_value*ADC_REF/4095; // Chuyển đổi giá trị analog sang giá trị điện áp
+      float degrees = (voltage*FULL_ANGLE)/GROVE_VCC; // Tính góc quay dựa trên giá trị điện áp đọc được
+      yolobit.println("The angle between the mark and the starting position:"); // In thông báo lên serial monitor
+      yolobit.println(degrees); // In giá trị góc quay lên serial monitor
+
+      int brightness;
+      brightness = map(degrees, 0, FULL_ANGLE, 0, 1023); // Chuyển đổi giá trị góc quay sang giá trị độ sáng của LED
+      yolobit.analogWrite(LED, brightness); // Điều khiển độ sáng của LED thông qua kết nối PWM
+      yolobit.delay(500); // Chờ 500ms
+    }
+    
+.. note:: 
+    
+    **Giải thích chương trình:** Sau khi chạy chương trình, giá trị của độ sáng sẽ được chuyển từ giá trị analog 0- 4095 thành 0 - 100%. Khi núm xoay của cảm biến được vặn, độ sáng sẽ được thay đổi.

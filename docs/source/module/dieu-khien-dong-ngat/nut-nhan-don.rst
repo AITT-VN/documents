@@ -83,7 +83,7 @@ Module nút nhấn đơn có 3 chân, và mỗi chân có chức năng như sau:
 
     Bạn có thể kết nối nút đơn vào bất kỳ chân tín hiệu nào trên mạch mở rộng
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -102,3 +102,49 @@ Module nút nhấn đơn có 3 chân, và mỗi chân có chức năng như sau:
     Khi nút nhấn được nhấn, trạng của chân P2 sẽ là tắt. và khi đó, sẽ hiện trái tim lên màn hình LED và phát âm báo hiệu. Nếu nút không được nhấn, sẽ hiện dấu “X” lên màn hình LED của Yolo:Bit
 
 
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+
+    // Biến lưu trạng thái của pushbutton
+   
+    int buttonPin = P2;  // Đầu vào của pushbutton 
+    int ledPin = P1;    // Đầu ra của đèn LED
+
+    int buttonState = 0;  // Biến lưu trạng thái của pushbutton
+
+    void setup() 
+    {
+      // Đặt chế độ đầu ra cho đèn LED
+      pinMode(ledPin, OUTPUT);
+      // Đặt chế độ đầu vào cho pushbutton
+      pinMode(buttonPin, INPUT);
+    }
+
+    void loop() 
+    {
+      // Đọc trạng thái pushbutton
+      buttonState = digitalRead(buttonPin);
+
+      // Nếu pushbutton được bấm thì bật đèn LED
+      if (buttonState == HIGH) {
+          digitalWrite(ledPin, HIGH);
+      } 
+      
+      // Ngược lại, tắt đèn LED
+      else {
+          digitalWrite(ledPin, LOW);
+      }
+    }
+
+.. note::
+
+    **Giải thích chương trình:** Sau khi chạy chương trình, khi nút được nhấn, bật đèn led P1.

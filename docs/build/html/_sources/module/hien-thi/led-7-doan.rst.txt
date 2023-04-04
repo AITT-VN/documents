@@ -84,7 +84,7 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
 
     Trên mạch mở rộng các bạn có thể sử dụng các khe cắm có 2 chân tín hiệu để kết nối với LED 7 đoạn 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -122,3 +122,84 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
     **Giải thích chương trình:**
 
     Ở trong vòng lặp mãi, chúng ta sẽ cho module LED 7 đoạn hiển thị lần lượt dòng chữ ‘abcd’, 4 số ‘1234’ và chữ ‘HiHi’ trong 1 giây (chờ 1 giây). Chương trình này sẽ được lặp đi lặp lại liên tục cho tới khi ta rút nguồn điện hoặc reset.
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <TM1637Display.h>
+    #include “Yolobit.h”
+    Yolobit yolobit;
+
+    // Định nghĩa các đầu vào/ra
+    #define CLK0P P10
+    #define DIO P13
+
+    // Tạo đối tượng hiển thị TM1637
+    TM1637Display display = TM1637Display(CLK, DIO);
+
+    // Mảng lưu giá trị hiển thị trên từng segment
+    const uint8_t done[] = {
+      SEG_B | SEG_C | SEG_D | SEG_E | SEG_G,         // d
+      SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F, // O
+      SEG_C | SEG_E | SEG_G,                         // n
+      SEG_A | SEG_D | SEG_E | SEG_F | SEG_G          // E
+    };
+
+    // Biểu tượng độ C
+    const uint8_t celsius[] = {
+      SEG_A | SEG_B | SEG_F | SEG_G,  // Biểu tượng độ
+      SEG_A | SEG_D | SEG_E | SEG_F   // C
+    };
+
+    void setup() {
+      display.clear();
+      display.setBrightness(7); // set độ sáng màn hình (từ 0 tới 7, 0 tối nhất và 7 sáng nhất)
+    }
+
+    void loop() {
+      // Hiển thị số đếm từ 0 tới 9
+      int i;
+      for (i = 0; i < 10; i++) 
+      {
+          display.showNumberDec(i);
+          delay(500);
+          display.clear();
+      }
+
+      display.showNumberDec(21, false);       // Hiển thị __21
+      delay(2000);
+      display.clear();
+
+      display.showNumberDec(21, true);        // Hiển thị 0021
+      delay(2000);
+      display.clear();
+      // Hiển thị thời gian 15:30
+      display.showNumberDecEx(1530, 0b11100000, false, 4, 0); // 0b11100000 : dấu chấm giữa là 3, xếp theo thứ tự bên trái
+      delay(2000);
+      display.clear();
+
+      // Hiển thị nhiệt độ 23 độ C
+      int temperature = 23; // hoặc có thể đọc từ cảm biến nhiệt độ
+      display.showNumberDec(temperature, false, 2, 0);
+      display.setSegments(celsius, 2, 2);
+      delay(2000);
+      display.clear();
+
+      // Hiển thị chữ dOnE
+      display.setSegments(done);
+      delay(2000);
+      display.clear();
+    }
+
+
+.. note::
+
+    **Giải thích chương trình:** Sau khi chạy chương trình, các thông tin sẽ được hiển thị lên màn hình LED

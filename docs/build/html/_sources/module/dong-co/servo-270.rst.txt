@@ -55,7 +55,7 @@
     :align: center 
 | 
 
-**3. Hướng dẫn lập trình**
+**3. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -78,3 +78,45 @@
     **Giải thích chương trình**:
 
     Chương trình mô phỏng một cánh cửa tự động từ servo, nếu nút A được nhấn thì cửa mở (góc 20), nút B nhấn thì cửa đóng (góc 90)
+
+
+**4. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <Servo.h>  
+    #include “Yolobit.h”
+
+    Yolobit yolobit;
+
+    Servo myservo;  // Tạo đối tượng servo để điều khiển động cơ servo
+    int pos = 0;    // Biến lưu trữ vị trí servo  
+
+    void setup() 
+    { 
+      myservo.attach(P4);  // Connect to pin P4
+    }  
+    
+    void loop() 
+    { 
+      // Quay servo từ 0 độ tới 270 độ
+      for(pos = 0; pos <= 270; pos += 1) // in steps of 1 degree 
+      {                                  
+         myservo.write(pos);              // Điều khiển servo đến vị trí pos 
+         delay(15);                       // Chờ động cơ servo đạt đến vị trí 
+      } 
+    
+      // Quay servo từ 270 độ về lại 0 độ
+    
+      for(pos = 270; pos>=0; pos-=1)     
+      {                                
+         myservo.write(pos);              // Điều khiển servo đến vị trí pos
+         delay(15);                       // Chờ động cơ servo đạt đến vị trí 
+      } 
+    } 

@@ -104,6 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>3. Kết nối</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app"><strong>4. Hướng dẫn lập trình với OhStem App</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-arduino"><strong>5. Hướng dẫn lập trình Arduino</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="line-4-mat.html">10. Cảm biến dò đường 4 mắt</a></li>
@@ -277,6 +278,47 @@
 <li><p>Sau khi Yolo:Bit đã nhận được tín hiệu từ cảm biến và xử lý, chúng ta sẽ phải xóa tín hiệu remote cũ để nhận lệnh mới chính xác hơn.</p></li>
 </ul>
 </div>
+</section>
+<section id="huong-dan-lap-trinh-arduino">
+<h2><strong>5. Hướng dẫn lập trình Arduino</strong><a class="headerlink" href="#huong-dan-lap-trinh-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Chương trình này dùng để đọc tín hiệu từ remote. Các bạn vào link sau để tải thư viện hỗ trợ IR remote nhé:  <a class="reference external" href="https://github.com/shirriff/Arduino-IRremote/">https://github.com/shirriff/Arduino-IRremote/</a></p></li>
+<li><p>Sau khi tải thư viện về, bạn mở cửa sổ Arduino, chọn <strong>Sketch—&gt;Import Library…—&gt; Add Library….sau đó chọn file .zip</strong> mà bạn vừa tải về để có thể sử dụng thư viện.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;IRremote.h&gt;</span><span class="c1"> // Thêm thư viện hỗ trợ IR remote</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;YoloBit.h&quot;</span><span class="cp"></span>
+
+<span class="n">Yolobit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">receiverPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Định nghĩa chân digital để đọc tín hiệu</span>
+<span class="n">IRrecv</span><span class="w"> </span><span class="nf">irrecv</span><span class="p">(</span><span class="n">receiverPin</span><span class="p">);</span><span class="w"> </span><span class="c1">// Tạo đối tượng IRrecv mới để nhận tín hiệu</span>
+<span class="n">decode_results</span><span class="w"> </span><span class="n">results</span><span class="p">;</span><span class="w"> </span><span class="c1">// Biến để lưu trữ kết quả giải mã tín hiệu IR remote</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">yolobit</span><span class="p">.</span><span class="n">serialBegin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"> </span><span class="c1">// Khởi tạo kết nối Serial với baudrate 9600</span>
+<span class="w">  </span><span class="n">irrecv</span><span class="p">.</span><span class="n">enableIRIn</span><span class="p">();</span><span class="w"> </span><span class="c1">// Bắt đầu nhận tín hiệu IR</span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="o">&amp;</span><span class="n">results</span><span class="p">))</span><span class="w"> </span><span class="c1">// Nếu nhận được tín hiệu</span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">yolobit</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">HEX</span><span class="p">);</span><span class="w"> </span><span class="c1">// In giá trị tín hiệu lên Terminal Serial</span>
+<span class="w">      </span><span class="n">yolobit</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span><span class="w"> </span><span class="c1">// Tiếp tục nhận giá trị tín hiệu tiếp theo</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Giải thích chương trình:</strong> Sau khi upload đoạn code trên, các bạn mở cửa sổ Serial và bấm các nút của remote, tùy loại remote sẽ có giá trị trả về khác nhau, Đây là các giá trị HEX của tín hiệu được gửi từ remote, thử tất cả các nút của remote các bạn sẽ biết được IR codes của nó.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/10.8.png"><img alt="../../_images/10.8.png" class="align-center" src="../../_images/10.8.png" style="width: 401.0px; height: 355.0px;" /></a>
 </section>
 </section>
 

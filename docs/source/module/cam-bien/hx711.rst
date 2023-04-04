@@ -85,7 +85,7 @@
     Kết nối module HX711 với chân có 2 cổng tín hiệu. 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -141,3 +141,71 @@
 
     - **khi nút B được nhấn**: Giúp cân dừng hoạt động (tắt cảm biến), chuyển sang chế độ chờ. 
 
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include <HX711.h>
+    #include "YoloBit.h"
+
+    Yolobit yolobit;
+
+    // HX711.DOUT – chân #P10
+    // HX711.PD_SCK – chân #P13
+    HX711 scale(A1, A0); // Tham số "gain" được bỏ qua; giá trị mặc định là 128 được sử dụng bởi thư viện
+
+    void setup() 
+    {
+      yolobit.serialBegin(115200); // Khởi tạo kết nối Serial với tốc độ baudrate 115200
+      yolobit.println("Đo lường trọng lượng"); 
+
+      yolobit.println("Trước khi thiết lập cân:");
+      yolobit.print("Đọc: \t\t");
+      yolobit.println(scale.read()); // In ra giá trị đọc được từ cảm biến
+
+      yolobit.print("Đọc trung bình: \t\t");
+      yolobit.println(scale.read_average(20)); // In ra giá trị trung bình của 20 giá trị đọc được từ cảm biến
+
+      yolobit.print("Giá trị: \t\t");
+      yolobit.println(scale.get_value(5)); // In ra giá trị trung bình của 5 giá trị đọc được từ cảm biến trừ đi giá trị cân không
+
+      yolobit.print("Đơn vị: \t\t");
+      yolobit.println(scale.get_units(5), 1); // In ra giá trị trung bình của 5 giá trị đọc được từ cảm biến trừ đi giá trị cân không, chia cho tham số SCALE (chưa được thiết lập)
+
+      scale.set_scale(2280.f); // Giá trị này được calib cho cảm biến với trọng lượng đã biết. Xem chi tiết trong README.
+      scale.tare(); // Đặt lại trọng lượng của cân về 0
+
+      yolobit.println("Sau khi thiết lập cân:");
+      yolobit.print("Đọc:\t\t");
+      yolobit.println(scale.read()); // In ra giá trị đọc được từ cảm biến
+
+      yolobit.print("Đọc trung bình:\t\t");
+      yolobit.println(scale.read_average(20)); // In ra giá trị trung bình của 20 giá trị đọc được từ cảm biến
+
+      yolobit.print("Giá trị:\t\t");
+      yolobit.println(scale.get_value(5)); // In ra giá trị trung bình của 5 giá trị đọc được từ cảm biến trừ đi giá trị cân không
+
+      yolobit.print("Đơn vị:\t\t");
+      yolobit.println(scale.get_units(5), 1); // In ra giá trị trung bình của 5 giá trị đọc được từ cảm biến trừ đi giá trị cân không, chia cho tham số SCALE đã được thiết lập
+
+      yolobit.println("Đọc giá trị:");
+    }
+
+    void loop() 
+    {
+      yolobit.print("Đọc một lần:\t");
+      yolobit.print(scale.get_units(), 1); // In ra giá trị trọng lượng lần đọc này
+      yolobit.print("\t| Trung bình:\t");
+      yolobit.println(scale.get_units(10), 1); // In ra giá trị trung bình của 10 lần đọc
+
+      scale.power_down(); // Đưa ADC về trạng thái nghỉ ngơi
+      yolobit.delay(5000); // Chờ 5 giây
+      scale.power_up(); // Đưa ADC về trạng thái hoạt động
+    }

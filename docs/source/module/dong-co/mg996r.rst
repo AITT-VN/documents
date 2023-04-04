@@ -174,3 +174,42 @@
           delay(15);
       }
     }
+
+
++ **Điều khiển Servo 360 độ:**
+
+.. code-block:: guess
+
+    #include <Servo.h>
+    #include “Yolobit.h”
+    
+    Servo myservo;
+   
+    Yolobit yolobit;
+    
+    int pos = 0;
+    int Control_Pin = P4;
+
+    void setup() {
+      // Điều khiển servo qua chân P4 của Yolobit
+      myservo.attach(Control_Pin );
+      // Servo ở trạng thái đứng yên, ở góc 90 độ
+      myservo.write(90);
+    }
+
+    void loop() {
+      // Servo quay về vị trí tối đa ở góc 180 độ trong 1 giây
+      myservo.write(180);
+      delay(1000);
+      // Servo ở trạng thái đứng yên trong 1 giây
+      myservo.write(90);
+      delay(1000);
+      // Servo quay về vị trí tối đa ở góc 0 độ trong 1 giây
+      myservo.write(0);
+      delay(1000);
+      // Servo ở trạng thái đứng yên trong 1 giây
+      myservo.write(90);
+      delay(1000);
+    }
+
+

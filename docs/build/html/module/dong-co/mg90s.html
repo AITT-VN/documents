@@ -301,6 +301,42 @@
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p><strong>Điều khiển Servo 360 độ:</strong></p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servo.h&gt;</span><span class="cp"></span>
+<span class="cp">#include “Yolobit.h”</span>
+
+<span class="n">Servo</span><span class="w"> </span><span class="n">myservo</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">Yolobit</span><span class="w"> </span><span class="n">yolobit</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">Control_Pin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">P4</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Điều khiển servo qua chân P4 của Yolobit</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">Control_Pin</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Servo ở trạng thái đứng yên, ở góc 90 độ</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Servo quay về vị trí tối đa ở góc 180 độ trong 1 giây</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">180</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Servo ở trạng thái đứng yên trong 1 giây</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Servo quay về vị trí tối đa ở góc 0 độ trong 1 giây</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Servo ở trạng thái đứng yên trong 1 giây</span>
+<span class="w">  </span><span class="n">myservo</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
 </section>
 </section>
 

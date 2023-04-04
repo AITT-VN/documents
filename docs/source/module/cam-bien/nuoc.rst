@@ -77,7 +77,7 @@
 
 
 
-**4. Hướng dẫn lập trình**
+**4. Hướng dẫn lập trình với OhStem App**
 --------
 ------------
 
@@ -108,3 +108,49 @@
     **Giải thích chương trình:** 
 
     Đặt một điều kiện, nếu cảm biến phát hiện mực nước trên 40%, sẽ chuyển đèn LED thành màu đỏ, để phát âm thanh cảnh báo. Nếu không, sẽ tắt đèn. 
+
+
+**5. Hướng dẫn lập trình Arduino**
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
+
+.. code-block:: guess
+
+    #include "YoloBit.h"
+    
+    Yolobit yolobit;
+    
+    int LED_PIN = P2; // Chân đầu ra LED 
+    int SIGNAL_PIN = P1; // Chân đầu vào cảm biến 
+    
+    #define THRESHOLD 1000
+    int value = 0; // Biến lưu trữ giá trị đọc được từ cảm biến
+
+    void setup() 
+    {
+      yolobit.serialBegin(9600);
+      yolobit.pinMode(LED_PIN, OUTPUT); // Cấu hình chân LED là đầu ra
+      yolobit.digitalWrite(LED_PIN, LOW); // Tắt đèn LED
+    }
+
+    void loop() 
+    {
+      value = yolobit.analogRead(SIGNAL_PIN); // Đọc giá trị từ cảm biến
+      yolobit.digitalWrite(POWER_PIN, LOW); // Tắt nguồn của cảm biến
+
+      if (value > THRESHOLD) {
+          yolobit.println("Cảm biến đã phát hiện mực nước");
+          yolobit.digitalWrite(LED_PIN, HIGH); // Bật đèn LED
+      } 
+      else {
+          yolobit.digitalWrite(LED_PIN, LOW); // Tắt đèn LED
+      }
+    }
+
+.. note::
+
+    **Giải thích chương trình:** Sau khi chạy chương trình, đèn LED trên Yolo:Bit sẽ thay đổi nếu cảm biến phát hiện nước. 

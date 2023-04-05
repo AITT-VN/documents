@@ -136,11 +136,12 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
 
     #include <TM1637Display.h>
     #include “Yolobit.h”
+    
     Yolobit yolobit;
 
     // Định nghĩa các đầu vào/ra
-    #define CLK0P P10
-    #define DIO P13
+    int CLK0P = P10
+    int DIO = P13
 
     // Tạo đối tượng hiển thị TM1637
     TM1637Display display = TM1637Display(CLK, DIO);
@@ -167,7 +168,7 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
     void loop() {
       // Hiển thị số đếm từ 0 tới 9
       int i;
-      for (i = 0; i < 10; i++) 
+      for (i = 0; i < 10; i++)
       {
           display.showNumberDec(i);
           delay(500);

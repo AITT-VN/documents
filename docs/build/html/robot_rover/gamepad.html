@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tay cầm điều khiển robot &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Robot Arm - Kit lập trình cánh tay robot" href="../robot_arm/robot_arm.html" />
+    <link rel="prev" title="Đầu nâng Robot Rover" href="dau_nang.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Tay cầm điều khiển robot</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu">1. Giới thiệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#link-san-pham"><strong>2. Link sản phẩm</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thong-so-ky-thuat">3. Thông số kỹ thuật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cac-nut-nhan-co-tren-gamepad">4. Các nút nhấn có trên Gamepad:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chuc-nang-cua-module-gamepad-receiver">5. Chức năng của module Gamepad Receiver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh-cho-gamepad">6. Hướng dẫn lập trình cho Gamepad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thu-vien">6.1. <strong>Thư viện</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu-khoi-lenh">6.2. <strong>Giới thiệu khối lệnh</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nap-chuong-trinh">6.3 <strong>Nạp chương trình</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ket-noi-gamepad-voi-robot">7. Kết nối Gamepad với Robot</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Tay cầm điều khiển robot</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masterrobot_rover/gamepad.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tay-cam-dieu-khien-robot">
+<h1><strong>Tay cầm điều khiển robot</strong><a class="headerlink" href="#tay-cam-dieu-khien-robot" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu">
+<h2>1. Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Gamepad là một phụ kiện được sử dụng để mở rộng khả năng tương tác với các loại robot trong hệ sinh thái OhStem, bao gồm Robot xBot, Robot Rover và Maker Robot. Việc kết nối giữa Gamepad và robot được thực hiện thông qua module Gamepad Receiver ở cổng giao tiếp I2C có trên robot. Điều này cho phép người dùng dễ dàng kiểm soát và điều khiển robot một cách linh hoạt hơn, tăng tính năng tương tác và trải nghiệm với robot.</p>
+<a class="reference internal image-reference" href="../_images/gamepad2.png"><img alt="../_images/gamepad2.png" class="align-center" src="../_images/gamepad2.png" style="width: 512.0px; height: 288.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Đặc biệt, Gamepad có 2 joystick và 12 nút nhấn có thể lập trình để tạo ra các tính năng tùy biến để người dùng điều khiển robot theo ý muốn. Các tính năng bao gồm di chuyển, nâng hạ, dò line,… sẽ giúp bạn khám phá tất cả các chức năng của robot và tạo ra những trải nghiệm mới mẻ.</p>
+</section>
+<section id="link-san-pham">
+<h2><strong>2. Link sản phẩm</strong><a class="headerlink" href="#link-san-pham" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://ohstem.vn/product/tay-cam-dieu-khien-gamepad-v2"><img alt="some image" class="with-shadow align-center" src="../_images/gio2.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="thong-so-ky-thuat">
+<h2>3. Thông số kỹ thuật<a class="headerlink" href="#thong-so-ky-thuat" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Thông số kỹ thuật của module Gamepad Receiver:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.1.png"><img alt="../_images/gamepad.1.png" class="align-center" src="../_images/gamepad.1.png" style="width: 523.0px; height: 203.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Thông số kỹ thuật của Gamepad:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.2.png"><img alt="../_images/gamepad.2.png" class="align-center" src="../_images/gamepad.2.png" style="width: 597.0px; height: 226.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="cac-nut-nhan-co-tren-gamepad">
+<h2>4. Các nút nhấn có trên Gamepad:<a class="headerlink" href="#cac-nut-nhan-co-tren-gamepad" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Mặt trước của Gamepad:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.3.png"><img alt="../_images/gamepad.3.png" class="align-center" src="../_images/gamepad.3.png" style="width: 676.9px; height: 315.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Mặt trên của Gamepad:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.4.png"><img alt="../_images/gamepad.4.png" class="align-center" src="../_images/gamepad.4.png" style="width: 714.0px; height: 256.2px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="chuc-nang-cua-module-gamepad-receiver">
+<h2>5. Chức năng của module Gamepad Receiver<a class="headerlink" href="#chuc-nang-cua-module-gamepad-receiver" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Module Gamepad Receiver là thiết bị để kết nối robot với tay cầm điều khiển, trên module sẽ có các nút nhấn và đèn báo hiệu như sau:</p>
+<a class="reference internal image-reference" href="../_images/gamepad.5.png"><img alt="../_images/gamepad.5.png" class="align-center" src="../_images/gamepad.5.png" style="width: 420.0px; height: 364.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic">
+<li><p><strong>Đèn báo dung lượng pin trên Gamepad:</strong></p>
+<blockquote>
+<div><p>Khi gamepad đã được kết nối tới module, các đèn này sẽ hiển thị tình trạng pin của Gamepad như sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Pin &lt; 20% hoặc Gamepad chưa được kết nối: 0 đèn sáng</p></li>
+<li><p>Pin &lt; 40%: 1 đèn sáng</p></li>
+<li><p>Pin &lt;60%: 2 đèn sáng</p></li>
+<li><p>Pin &lt;80%: 3 đèn sáng</p></li>
+<li><p>Pin &gt;80%: 4 đèn sáng</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p><strong>Đèn báo trạng thái:</strong></p>
+<blockquote>
+<div><p>Đèn này sẽ báo cho bạn biết module đã kết nối thành công với Gamepad hay chưa.</p>
+<p><strong>2.1. Đèn chớp tắt nhanh (0,2s):</strong> Module đang tìm kiếm và cấp phép kết nối đến các gamepad mới.</p>
+<p>Sau đó, <strong>nhấn giữ nút Nguồn và nút Share trên Gamepad cùng 1 lúc để Gamepad vào chế độ kết nối mới</strong>. Khi đó đèn led trên Gamepad sẽ nháy trắng liên tục báo hiệu đã vào chế độ kết nối mới.</p>
+</div></blockquote>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/gamepad.6.png"><img alt="../_images/gamepad.6.png" class="align-center" src="../_images/gamepad.6.png" style="width: 324.8px; height: 216.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p><strong>2.2. Đèn chớp tắt chậm (1s):</strong> Module đang tìm kiếm và kết nối các Gamepad đã được cho phép kết nối ở bước 2.1.</p>
+<p>Đồng thời <strong>nhấn nút nguồn Gamepad, đèn led trên Gamepad sẽ nháy trắng chậm báo hiệu đã vào chế độ tìm thiết bị đã kết nối.</strong> Khi đèn trên GamePad và đèn báo trạng thái trên module Gamepad Receiver cùng hiện màu xanh thì đã kết nối thành công.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gamepad.7.png"><img alt="../_images/gamepad.7.png" class="align-center" src="../_images/gamepad.7.png" style="width: 400.8px; height: 224.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p><strong>2.3. Đèn chuyển từ trạng thái luôn bật sang chớp tắt 3 lần rồi tắt hẳn:</strong> Module đã xóa tất cả các kết nối đã cấp phép ở bước 2.1.</p>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p><strong>Nút Reset:</strong></p>
+<blockquote>
+<div><p>Khởi động lại module, đồng thời ngắt kết nối với Gamepad đã kết nối.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Nút Clear:</strong> Nút này có chức năng sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nhấn giữ nút Clear sau khi nhấn nút Reset: Lúc này đèn báo kết nối sẽ nhấp nháy nhanh như mô tả ở mục 2.2 để bắt đầu tìm kiếm thiết bị Gamepad mới.</p></li>
+<li><p>Nhấn giữ nút Clear trong vòng 3 giây trong quá trình Gamepad đã kết nối thành công với module Gamepad Receiver thì module Gamepad Receiver sẽ xóa kết nối của Gamepad đã được cho phép. Để sử dụng kết nối lại, bạn cần thực hiện lại bước 2.1</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="huong-dan-lap-trinh-cho-gamepad">
+<h2>6. Hướng dẫn lập trình cho Gamepad<a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad" title="Permalink to this heading"></a></h2>
+</section>
+<hr class="docutils" />
+<section id="thu-vien">
+<h2>6.1. <strong>Thư viện</strong><a class="headerlink" href="#thu-vien" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Vào giao diện lập trình cho Yolo:Bit (hoặc xBot) trong OhStem App tại địa chỉ <a class="reference external" href="https://app.ohstem.vn/">https://app.ohstem.vn/</a> hoặc ứng dụng OhStem App trên mobile ( Tải trên Google Play / App Store với tên tìm kiếm là “OhStem App”)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/thu_vien.1.png"><img alt="../_images/thu_vien.1.png" class="align-center" src="../_images/thu_vien.1.png" style="width: 405.0px; height: 272.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Nhấn vào mục Mở Rộng ở danh sách bên trái:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/thu_vien.2.png"><img alt="../_images/thu_vien.2.png" class="align-center" src="../_images/thu_vien.2.png" style="width: 208.0px; height: 268.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Chọn thư viện <strong>Robocon</strong> trong danh sách mục mở rộng có sẵn (hoặc nhập tên Robocon vào ô tìm kiếm nếu bạn không nhìn thấy):</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/robocon.png"><img alt="../_images/robocon.png" class="align-center" src="../_images/robocon.png" style="width: 512.0px; height: 259.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chọn tải thư viện:</p>
+<a class="reference internal image-reference" href="../_images/thu_vien.3.png"><img alt="../_images/thu_vien.3.png" class="align-center" src="../_images/thu_vien.3.png" style="width: 500.0px; height: 350.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Chọn thiết bị Yolo:Bit (hoặc xBot) để kết nối (nếu chưa kết nối) và phải đảm bảo đã cài đặt thư viện thành công (bên trái giao diện <strong>xuất hiện danh mục Gamepad</strong> như hình):</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/robocon.2.png"><img alt="../_images/robocon.2.png" class="align-center" src="../_images/robocon.2.png" style="width: 516.6px; height: 314.4px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gioi-thieu-khoi-lenh">
+<h2>6.2. <strong>Giới thiệu khối lệnh</strong><a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<p>Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức năng như sau:</p>
+<ul>
+<li><p><strong>Khối lệnh khởi tạo Gamepad:</strong></p>
+<blockquote>
+<div><p>Để lập trình cho Gamepad, trước tiên bạn cần khai báo chân kết nối của module Gamepad Receiver với robot bằng câu lệnh sau:</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.8.png"><img alt="../_images/gamepad.8.png" class="align-center" src="../_images/gamepad.8.png" style="width: 257.0px; height: 87.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Cài đặt chế độ điều khiển:</strong></p>
+<blockquote>
+<div><p>Bạn có thể đặt chế độ điều khiển mặc định của robot bằng câu lệnh:</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.9.png"><img alt="../_images/gamepad.9.png" class="align-center" src="../_images/gamepad.9.png" style="width: 595.0px; height: 206.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Từng chế độ điều khiển trên Gamepad sẽ có chức năng và màu đèn tương ứng như sau:</p>
+<ul class="simple">
+<li><p><strong>Phím điều hướng dpad - đèn màu cam</strong>: cho phép robot di chuyển theo 4 hướng tiến về trước, lùi lại, rẽ trái và rẽ phải. Bạn cũng có thể điều khiển <strong>robot di chuyển theo đường cong</strong> bằng cách nhấn <strong>kết hợp 2 phím ↑ hoặc ↓ với ↶ hoặc ↷ cùng lúc đến khi thả nút nhấn</strong>.</p></li>
+<li><p><strong>Joystick trái - đèn xanh lá</strong>: chỉ có thể điều khiển robot di chuyển đến các hướng bằng joystick ở bên trái Gamepad.</p></li>
+<li><p><strong>Joystick phải - đèn xanh dương</strong>: tượng tự với joystick trái, chỉ có thể điều khiển robot đi đến các hướng bằng joystick ở bên phải Gamepad.</p></li>
+<li><p><strong>Kết hợp joystick trái và joystick phải - đèn tím</strong>: bạn có thể điều khiển từng động cơ của robot, Joystick trái điều khiển động cơ bên trái, joystick phải điều khiển động cơ bên phải.</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p><strong>Cài đặt tăng giảm tốc độ cho robot:</strong></p>
+<blockquote>
+<div><p>Câu lệnh giúp bạn tăng và giảm tốc độ của robot cho đến khi đạt yêu cầu:</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.10.png"><img alt="../_images/gamepad.10.png" class="align-center" src="../_images/gamepad.10.png" style="width: 437.6px; height: 340.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Tốc độ mặc định của robot khi được điều khiển bằng Gamepad là 50. Bạn có thể chọn 2 nút nhấn bất kỳ trên Gamepad để tăng và giảm tốc độ bằng cách nhấn vào hình tam giác có trong câu lệnh.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ngoài việc điều khiển các hướng di chuyển của robot, joystick trái và joystick phải còn có chức năng như một nút nhấn khi được nhấn.</p>
+</div>
+<ul>
+<li><p><strong>Cài đặt điều khiển tay gắp của Robot:</strong></p>
+<blockquote>
+<div><p>Câu lệnh có chức năng điều khiển tay gắp đóng và mở:</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.11.png"><img alt="../_images/gamepad.11.png" class="align-center" src="../_images/gamepad.11.png" style="width: 503.20000000000005px; height: 120.80000000000001px;" /></a>
+<div class="line-block">
+<div class="line">Bạn cần <strong>chọn đúng chân cắm servo của tay gắp</strong> trong chương trình và nhấn vào hình tam giác có trong câu lệnh để chọn nút nhấn điều khiển tay gắp robot trên Gamepad.</div>
+</div>
+<ul>
+<li><p><strong>Cài đặt kit bắn bóng:</strong></p>
+<blockquote>
+<div><p>Câu lệnh có chức năng điều khiển kit bắn bóng, bật chế độ nạp đạn hoặc chế độ bắn:</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.12.png"><img alt="../_images/gamepad.12.png" class="align-center" src="../_images/gamepad.12.png" style="width: 732.8000000000001px; height: 74.4px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Ở câu lệnh này bạn cần chọn đúng chân cắm của từng servo trên robot. Nhấn vào hình tam giác có trong câu lệnh để chọn nút nhấn điều khiển kit bắn bóng trên Gamepad.</p>
+</div></blockquote>
+<ul>
+<li><p><strong>Đổi màu đèn trên Gamepad</strong></p>
+<blockquote>
+<div><p>Câu lệnh đổi màu đèn hiển thị trên Gamepad. Có thể chọn màu khác mà bạn muốn đổi.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.13.png"><img alt="../_images/gamepad.13.png" class="align-center" src="../_images/gamepad.13.png" style="width: 392.8px; height: 131.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Vị trí đèn LED trên Gamepad:</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gamepad.14.png"><img alt="../_images/gamepad.14.png" class="align-center" src="../_images/gamepad.14.png" style="width: 609.0px; height: 240.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Thay đổi mức độ rung của Gamepad:</strong></p>
+<blockquote>
+<div><p>Câu lệnh yêu cầu Gamepad rung để khi nó kết nối thành công với robot.</p>
+<p>Bạn có thể điều chỉnh độ rung trong khoảng từ 0 đến 100 và thời gian rung từ 0 đến 2000 mili giây (tương đương với 2 giây).</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.15.png"><img alt="../_images/gamepad.15.png" class="align-center" src="../_images/gamepad.15.png" style="width: 648.0px; height: 73.60000000000001px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Chuyển sang chế độ dò line:</strong></p>
+<blockquote>
+<div><p>Câu lệnh này được sử dụng để bật chế độ dò line trên robot.</p>
+<p>Nhấn giữ nút này để robot thực hiện việc dò line. Sau khi thả ra, chế độ dò line hết tác dụng trở về chế độ điều khiển trước đó.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.16.png"><img alt="../_images/gamepad.16.png" class="align-center" src="../_images/gamepad.16.png" style="width: 535.2px; height: 336.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Tốc độ dò line có thể thay đổi trong khoảng từ 0 đến 100 và nhấn vào hình tam giác có trong câu lệnh để chọn nút nhấn  robot dò line trên Gamepad.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Đối với xBot, bạn cần chọn đúng cổng kết nối của cảm biến dò line với robot khi thực hiện chương trình.</p>
+<a class="reference internal image-reference" href="../_images/gamepad.17.png"><img alt="../_images/gamepad.17.png" class="align-center" src="../_images/gamepad.17.png" style="width: 512.0px; height: 222.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<ul>
+<li><p><strong>Nút tăng tốc:</strong></p>
+<blockquote>
+<div><p>Câu lệnh này có chức năng giúp robot** tăng tốc lên tốc độ tối đa là 100 ngay lập tức**.</p>
+<p>Nhấn giữ nút này trong khi sử dụng các chế độ di chuyển, sẽ giúp robot tăng tốc lên độ tối đa là 100. Khi thả nút, robot sẽ chuyển về tốc độ hoạt động trước đó của nó.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.18.png"><img alt="../_images/gamepad.18.png" class="align-center" src="../_images/gamepad.18.png" style="width: 385.0px; height: 420.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Đổi chế độ điều khiển:</strong></p>
+<blockquote>
+<div><p>Câu lệnh có chức năng thay đổi chế độ điều khiển robot trên Gamepad.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.19.png"><img alt="../_images/gamepad.19.png" class="align-center" src="../_images/gamepad.19.png" style="width: 538.0px; height: 431.0px;" /></a>
+<div class="line-block">
+<div class="line">Khi nhấn nút này, 4 chế độ điều khiển sẽ chuyển lần lượt từ: Phím điều hướng dpad -&gt; Joystick trái -&gt; Joystick phải -&gt; Kết hợp Joystick trái và Joystick phải. Đồng thời đèn trên Gamepad sẽ đổi màu theo từng chế độ điều khiển. Giúp người dùng dễ dàng lựa chọn chế độ điều khiển phù hợp trong quá trình sử dụng.</div>
+</div>
+<blockquote>
+<div><p>Nhấn vào hình tam giác có trong câu lệnh để chọn nút nhấn đổi chế độ điều khiển robot.</p>
+</div></blockquote>
+<ul>
+<li><p><strong>Điều khiển servo:</strong></p>
+<blockquote>
+<div><p>Câu lệnh này được sử dụng để điều khiển servo trên các bộ kit khác như đầu nâng, thùng xe… theo ý muốn của bạn. Bạn có thể thay đổi góc hoạt động của servo và thay đổi nút nhấn trên Gamepad bằng cách nhấn vào hình tam giác có trong câu lệnh .</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.20.png"><img alt="../_images/gamepad.20.png" class="align-center" src="../_images/gamepad.20.png" style="width: 758.8px; height: 88.89999999999999px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Cập nhật thông tin từ Gamepad:</strong></p>
+<blockquote>
+<div><p>Câu lệnh này được sử dụng để cập nhật và xử lý thông tin từ Gamepad một cách liên tục. Do đó, trong chương trình lập trình, câu lệnh này thường được đặt trong vòng lặp lại mãi để luôn được cập nhật các tín hiệu mới nhất từ Gamepad.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.21.png"><img alt="../_images/gamepad.21.png" class="align-center" src="../_images/gamepad.21.png" style="width: 408.0px; height: 87.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Câu lệnh đang kết nối:</strong></p>
+<blockquote>
+<div><p>Câu lệnh này giúp bạn nhận biết trạng thái kết nối của robot và Gamepad.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/gamepad.22.png"><img alt="../_images/gamepad.22.png" class="align-center" src="../_images/gamepad.22.png" style="width: 362.0px; height: 83.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="nap-chuong-trinh">
+<h2>6.3 <strong>Nạp chương trình</strong><a class="headerlink" href="#nap-chuong-trinh" title="Permalink to this heading"></a></h2>
+<p>Để làm quen với Gamepad, chúng ta sẽ lập trình một chương trình đơn giản như sau:</p>
+<ul>
+<li><p><strong>Robot Rover:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Lưu ý:</strong> <strong>Trước khi lập trình cho Gamepad, bạn cần tải thêm thư viện Rover cho Yolo:Bit</strong>, xem hướng dẫn <a class="reference external" href="https://docs.ohstem.vn/en/latest/robot_rover/rover/cai-dat-thu-vien.html">tại đây</a>.</p></li>
+<li><p><strong>Chương trình mẫu</strong> xem <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2NfZVqnzpS0VKgXP1Fma4PXz2Mi">tại đây</a>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/gamepad.23.png"><img alt="../_images/gamepad.23.png" src="../_images/gamepad.23.png" style="width: 512.0px; height: 502.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Chương trình điều khiển Robot Rover bằng Gamepad</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Giải thích chương trình:</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Khi nạp chương trình vào Yolo:Bit thành công, các câu lệnh trong phần lặp lại mãi sẽ giúp bạn nhận biết được robot đã kết nối thành công với thiết bị chưa.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nếu kết nối thành công, Robot Rover sáng đèn màu xanh lá.</p></li>
+<li><p>Ngược lại, nếu chưa kết nối, Robot chớp tắt đèn đỏ liên tục.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gamepad.24.png"><img alt="../_images/gamepad.24.png" class="align-center" src="../_images/gamepad.24.png" style="width: 484.0px; height: 344.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Mỗi nút nhấn chỉ thực hiện một chức năng, do đó bạn hãy kiểm tra thật kỹ trong chương trình các nút nhấn được chọn có bị lặp lại hay không nhé!</p>
+</div></blockquote>
+<ul>
+<li><p><strong>Robot xBot / Maker Robot</strong> sử dụng chương trình sau:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Chương trình mẫu</strong> xem <a class="reference external" href="https://app.ohstem.vn/#!/share/xbot/2Ne5ULhptT86actotKnyX8ENugX">tại đây</a>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/gamepad.25.png"><img alt="../_images/gamepad.25.png" src="../_images/gamepad.25.png" style="width: 635.0px; height: 594.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Chương trình điều khiển Robot xBot / Maker Robot bằng Gamepad</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Giải thích chương trình</strong>:</p></li>
+</ul>
+<blockquote>
+<div><p>Khi nạp chương trình vào xBot thành công, các câu lệnh trong phần lặp lại mãi sẽ giúp bạn nhận biết được robot đã kết nối thành công với thiết bị chưa.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Nếu kết nối thành công, Robot sáng đèn màu xanh lá.</p></li>
+<li><p>Ngược lại, nếu chưa kết nối, Robot chớp tắt đèn đỏ liên tục.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/gamepad.26.png"><img alt="../_images/gamepad.26.png" class="align-center" src="../_images/gamepad.26.png" style="width: 563.0px; height: 357.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Mỗi nút nhấn chỉ thực hiện một chức năng, do đó bạn hãy kiểm tra thật kỹ trong chương trình các nút nhấn được chọn có bị lặp lại hay không nhé!</p>
+</div></blockquote>
+</section>
+<section id="ket-noi-gamepad-voi-robot">
+<h2>7. Kết nối Gamepad với Robot<a class="headerlink" href="#ket-noi-gamepad-voi-robot" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p><strong>Sau khi nạp chương trình vào robot</strong>, chúng ta sẽ thực hiện kết nối robot với Gamepad như sau:</p>
+<ul class="simple">
+<li><p><strong>Bước 1</strong>: Kết nối robot với module Gamepad Receiver. Bằng cách cắm dây tín hiệu của module vào <strong>cổng I2C</strong> có trên robot:</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../_images/i2c_rover.png"><img alt="../_images/i2c_rover.png" class="align-center" src="../_images/i2c_rover.png" style="width: 400px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../_images/i2c_xbot.png"><img alt="../_images/i2c_xbot.png" class="align-center" src="../_images/i2c_xbot.png" style="width: 300px;" /></a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Trên Robot Rover có 2 cổng I2C, bạn có thể kết nối vào 1 trong 2 cổng này.</p></td>
+<td><p>Robot xBot và Maker Robot cổng I2C đều nằm ở vị trí cổng số 4</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Bước 2:</strong> Bật nguồn Gamepad và để gần robot của mình.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Khi kết nối thành công với robot</strong>, đèn trên robot sẽ sáng màu xanh lá, đồng thời <strong>đèn trên Gamepad sẽ chuyển sang màu cam</strong>, đây là màu của chế độ điều khiển được chọn trong chương trình lập trình.</p></li>
+<li><p><strong>Nếu kết nối chưa thành công</strong>, đèn trên robot sẽ chớp tắt màu đỏ và đèn <strong>Gamepad sẽ chớp tắt màu trắng</strong>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dau_nang.html" class="btn btn-neutral float-left" title="Đầu nâng Robot Rover" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../robot_arm/robot_arm.html" class="btn btn-neutral float-right" title="Robot Arm - Kit lập trình cánh tay robot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

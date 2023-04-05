@@ -301,11 +301,12 @@
 </ul>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#include &lt;TM1637Display.h&gt;
 #include “Yolobit.h”
+
 Yolobit yolobit;
 
 // Định nghĩa các đầu vào/ra
-#define CLK0P P10
-#define DIO P13
+int CLK0P = P10
+int DIO = P13
 
 // Tạo đối tượng hiển thị TM1637
 TM1637Display display = TM1637Display(CLK, DIO);

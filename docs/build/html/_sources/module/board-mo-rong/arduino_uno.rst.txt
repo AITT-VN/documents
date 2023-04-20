@@ -86,8 +86,8 @@ Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chu
      - `Mua sản phẩm <https://ohstem.vn/product/den-led-don/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/nut-nhan-don/>`_
 
-- **Bước 2**: Kết nối Grover - Đèn LED đơn với cổng D5
-- **Bước 3**: Kết nối Grover - Nút nhấn đơn với cổng D3
+- **Bước 2**: Kết nối Grove - Đèn LED đơn với cổng D5
+- **Bước 3**: Kết nối Grove - Nút nhấn đơn với cổng D3
 - **Bước 4**: Kết nối Mạch Arduino UNO với máy tính thông qua dây cáp USB. 
 
 ..  figure:: images/arduino_uno3.png

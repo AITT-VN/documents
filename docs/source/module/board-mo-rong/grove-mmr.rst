@@ -1,4 +1,4 @@
-2. Grove - Mạch mở rộng cho Yolo:Bit
+2. Grove shield - Mạch mở rộng cho Yolo:Bit
 ===========
 
 .. image:: images/2.1.jpg

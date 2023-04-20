@@ -227,12 +227,12 @@
 </tbody>
 </table>
 <ul class="simple">
-<li><p><strong>Bước 2</strong>: Kết nối Grover - Đèn LED đơn với cổng A2</p></li>
-<li><p><strong>Bước 3</strong>: Kết nối Grover - Nút nhấn đơn với cổng A3</p></li>
+<li><p><strong>Bước 2</strong>: Kết nối Grover - Đèn LED đơn với cổng D5</p></li>
+<li><p><strong>Bước 3</strong>: Kết nối Grover - Nút nhấn đơn với cổng D3</p></li>
 <li><p><strong>Bước 4</strong>: Kết nối Mạch Arduino UNO với máy tính thông qua dây cáp USB.</p></li>
 </ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/arduino_uno3.png"><img alt="../../_images/arduino_uno3.png" src="../../_images/arduino_uno3.png" style="width: 475.2px; height: 246.6px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arduino_uno3.png"><img alt="../../_images/arduino_uno3.png" src="../../_images/arduino_uno3.png" style="width: 391.5px; height: 331.2px;" /></a>
 </figure>
 </section>
 <section id="huong-dan-lap-trinh-voi-arduino-ide">
@@ -252,8 +252,8 @@
 <ul class="simple">
 <li><p><strong>Bước 1:</strong> Sao chép chương trình vào Arduino IDE và tải lên Seeeduino.</p></li>
 </ul>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A3</span><span class="p">;</span><span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">button</span><span class="w"></span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">LED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A2</span><span class="p">;</span><span class="w">       </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">buzzer</span><span class="w"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">       </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">button</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">LED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">       </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">led</span><span class="w"></span>
 <span class="nb nb-Type">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">button</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w"> </span><span class="o">//</span><span class="n">set</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">INPUT</span><span class="w"> </span><span class="n">device</span><span class="w"></span>

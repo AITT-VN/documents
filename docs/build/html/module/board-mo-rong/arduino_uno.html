@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Mạch mở rộng cho Arduino UNO &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Động cơ" href="../dong-co.html" />
+    <link rel="prev" title="2. Grove - Mạch mở rộng cho Yolo:Bit" href="grove-mmr.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../board-mo-rong.html"><strong>Board mở rộng</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="xcontroller.html">1. Bộ điều khiển robot xController</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grove-mmr.html">2. Grove - Mạch mở rộng cho Yolo:Bit</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Mạch mở rộng cho Arduino UNO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mua-san-pham"><strong>1. Mua sản phẩm</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thong-so-ky-thuat"><strong>2. Thông số kỹ thuật</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#phan-cung"><strong>3. Phần cứng</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ket-noi"><strong>4. Kết nối</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#huong-dan-lap-trinh-voi-arduino-ide"><strong>5. Hướng dẫn lập trình với Arduino IDE</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../board-mo-rong.html"><strong>Board mở rộng</strong></a> &raquo;</li>
+      <li>3. Mạch mở rộng cho Arduino UNO</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/mastermodule/board-mo-rong/arduino_uno.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mach-mo-rong-cho-arduino-uno">
+<h1>3. Mạch mở rộng cho Arduino UNO<a class="headerlink" href="#mach-mo-rong-cho-arduino-uno" title="Permalink to this heading"></a></h1>
+<a class="reference internal image-reference" href="../../_images/arduino_uno1.png"><img alt="../../_images/arduino_uno1.png" class="align-center" src="../../_images/arduino_uno1.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Đây là board mạch mở rộng cho Arduino UNO, có tích hợp chân cắm Grove để bạn có thể dễ dàng kết nối mạch Arduino với các thiết bị OhStem hơn, không cần phải dùng đến các dây Jumper lộn xộn, phức tạp.</p>
+<p>Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chuyển đổi nguồn từ 3.3V sang 5V, giúp bạn dễ dàng chọn loại điện áp phù hợp với vi mạch mà bạn muốn sử dụng.</p>
+<section id="mua-san-pham">
+<h2><strong>1. Mua sản phẩm</strong><a class="headerlink" href="#mua-san-pham" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://ohstem.vn/product/mach-mo-rong-cho-arduino/"><img alt="some image" class="with-shadow align-center" src="../../_images/gio.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="thong-so-ky-thuat">
+<h2><strong>2. Thông số kỹ thuật</strong><a class="headerlink" href="#thong-so-ky-thuat" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul>
+<li><p><strong>Thông số kỹ thuật</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Điện áp hoạt động: 3.3V - 5V</p></li>
+<li><p>Nhiệt độ hoạt động: -25 đến 85 độ C</p></li>
+<li><p>Cổng analog: 4</p></li>
+<li><p>Cổng I2C: 4</p></li>
+<li><p>Cổng Digital: 4</p></li>
+<li><p>Chân cắm động cơ: 11</p></li>
+<li><p>Kích thước: 69mm x 53mmm</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="phan-cung">
+<h2><strong>3. Phần cứng</strong><a class="headerlink" href="#phan-cung" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../../_images/arduino_uno2.png"><img alt="../../_images/arduino_uno2.png" class="align-center" src="../../_images/arduino_uno2.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>1 - Cổng Analog: Bao gồm 4 cổng là A0, A1, A2, A3</p></li>
+<li><p>2 - Cổng I2C: 4 cổng I2C</p></li>
+<li><p>3 - Cổng Digital: Bao gồm 4 cổng là: D9 - D10, D7 - D8, D5 - D6, D3 - D4</p></li>
+<li><p>4 - Cổng Servo: Bao gồm 11 cổng từ D2 đến D13</p></li>
+<li><p>5 - Công tắc nguồn: Bạn có thể bật công tắc sang vị trí 5V hoặc 3.3V tùy vào mục đích sử dụng.</p></li>
+<li><p>6 - Nút Reset: Reset mạch mở rộng Arduino UNO</p></li>
+<li><p>7 - PWR LED: Đèn LED màu xanh khi bật nguồn</p></li>
+</ul>
+</section>
+<section id="ket-noi">
+<h2><strong>4. Kết nối</strong><a class="headerlink" href="#ket-noi" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Bước 1</strong>: Chuẩn bị các thiết bị như sau:</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/arduino_uno4.png"><img alt="../../_images/arduino_uno4.png" class="align-center" src="../../_images/arduino_uno4.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/arduino_uno1.png"><img alt="../../_images/arduino_uno1.png" class="align-center" src="../../_images/arduino_uno1.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/led_don.png"><img alt="../../_images/led_don.png" class="align-center" src="../../_images/led_don.png" style="width: 200px;" /></a>
+</th>
+<th class="head"><a class="reference internal image-reference" href="../../_images/nhan_don.png"><img alt="../../_images/nhan_don.png" class="align-center" src="../../_images/nhan_don.png" style="width: 200px;" /></a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mạch Arduino UNO</p></td>
+<td><p>Mạch mở rộng Arduino UNO</p></td>
+<td><p>Đèn LED đơn (kèm dây Grove)</p></td>
+<td><p>Nút nhấn đơn (kèm dây Grove)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mua tại các cửa hàng linh kiện điện tử</p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/mach-mo-rong-cho-arduino/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/den-led-don/">Mua sản phẩm</a></p></td>
+<td><p><a class="reference external" href="https://ohstem.vn/product/nut-nhan-don/">Mua sản phẩm</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Bước 2</strong>: Kết nối Grover - Đèn LED đơn với cổng A2</p></li>
+<li><p><strong>Bước 3</strong>: Kết nối Grover - Nút nhấn đơn với cổng A3</p></li>
+<li><p><strong>Bước 4</strong>: Kết nối Mạch Arduino UNO với máy tính thông qua dây cáp USB.</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/arduino_uno3.png"><img alt="../../_images/arduino_uno3.png" src="../../_images/arduino_uno3.png" style="width: 475.2px; height: 246.6px;" /></a>
+</figure>
+</section>
+<section id="huong-dan-lap-trinh-voi-arduino-ide">
+<h2><strong>5. Hướng dẫn lập trình với Arduino IDE</strong><a class="headerlink" href="#huong-dan-lap-trinh-voi-arduino-ide" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<dl>
+<dt><strong>Cài đặt phần mềm Arduino</strong></dt><dd><p>Bạn có thể tải phiên bản Arduino IDE mới nhất, phù hợp với hệ điều hành của máy tính của bạn tại <a class="reference external" href="https://www.arduino.cc/en/Main/Software">trang chủ của Arduino</a> (Đường dẫn: <a class="reference external" href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>)</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/arduino1.png"><img alt="../../_images/arduino1.png" src="../../_images/arduino1.png" style="width: 512.0px; height: 205.0px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau khi tải, bạn tiến hành cài đặt và sử dụng các cấu hình mặc định của phần mềm.</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><strong>Bước 1:</strong> Sao chép chương trình vào Arduino IDE và tải lên Seeeduino.</p></li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A3</span><span class="p">;</span><span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">button</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">LED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A2</span><span class="p">;</span><span class="w">       </span><span class="o">//</span><span class="w"> </span><span class="n">connect</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">buzzer</span><span class="w"></span>
+<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">button</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w"> </span><span class="o">//</span><span class="n">set</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">INPUT</span><span class="w"> </span><span class="n">device</span><span class="w"></span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">   </span><span class="o">//</span><span class="n">set</span><span class="w"> </span><span class="n">LED</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">OUTPUT</span><span class="w"> </span><span class="n">device</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">btn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">button</span><span class="p">);</span><span class="w"> </span><span class="o">//</span><span class="n">read</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">button</span><span class="w"></span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED</span><span class="p">,</span><span class="w"> </span><span class="n">btn</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Bước 2:</strong> Nhấn nút, đèn LED sẽ sáng đèn</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="grove-mmr.html" class="btn btn-neutral float-left" title="2. Grove - Mạch mở rộng cho Yolo:Bit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../dong-co.html" class="btn btn-neutral float-right" title="Động cơ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

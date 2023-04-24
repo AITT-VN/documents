@@ -35,7 +35,7 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
 - **Thông số kỹ thuật của module Gamepad Receiver:**
 
 .. image:: images/gamepad.1.png
-    :scale: 100%
+    :scale: 70%
     :align: center
 |
 
@@ -178,6 +178,15 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
     :align: center
 |
 
+.. note:: Đối với xBot, bạn sử dụng câu lệnh sau để khai báo cổng kết nối module Gamepad Receiver với robot: 
+
+    .. figure:: images/gamepad.27.png
+        :scale: 100%
+        :align: center
+
+        Chỉ kết nối module với xBot ở cổng 4, 5 hoặc 6
+|
+
 - **Cài đặt chế độ điều khiển:**
 
     Bạn có thể đặt chế độ điều khiển mặc định của robot bằng câu lệnh:
@@ -284,7 +293,7 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
 
 - **Nút tăng tốc:** 
 
-    Câu lệnh này có chức năng giúp robot** tăng tốc lên tốc độ tối đa là 100 ngay lập tức**. 
+    Câu lệnh này có chức năng giúp robot **tăng tốc lên tốc độ tối đa là 100 ngay lập tức**. 
     
     Nhấn giữ nút này trong khi sử dụng các chế độ di chuyển, sẽ giúp robot tăng tốc lên độ tối đa là 100. Khi thả nút, robot sẽ chuyển về tốc độ hoạt động trước đó của nó. 
 
@@ -371,7 +380,7 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
     + **Chương trình mẫu** xem `tại đây <https://app.ohstem.vn/#!/share/xbot/2Ne5ULhptT86actotKnyX8ENugX>`_.
 
 .. figure:: images/gamepad.25.png
-    :scale: 100%
+    :scale: 80%
     :align: center
 
     Chương trình điều khiển Robot xBot / Maker Robot bằng Gamepad

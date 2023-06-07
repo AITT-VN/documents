@@ -77,11 +77,11 @@ Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chu
      - .. image:: images/nhan_don.png
           :width: 200px
           :align: center
-   * - Mạch Arduino UNO
+   * - Mạch Arduino UNO R3
      - Mạch mở rộng Arduino UNO
      - Đèn LED đơn (kèm dây Grove)
      - Nút nhấn đơn (kèm dây Grove)
-   * - Mua tại các cửa hàng linh kiện điện tử
+   * - `Mua sản phẩm <https://ohstem.vn/product/arduino-uno-r3/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/mach-mo-rong-cho-arduino/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/den-led-don/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/nut-nhan-don/>`_
@@ -91,8 +91,9 @@ Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chu
 - **Bước 4**: Kết nối Mạch Arduino UNO với máy tính thông qua dây cáp USB. 
 
 ..  figure:: images/arduino_uno3.png
-    :scale: 90%
+    :scale: 100%
     :align: center 
+|
 
 
 **5. Hướng dẫn lập trình với Arduino IDE**

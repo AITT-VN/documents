@@ -38,6 +38,8 @@ OhStem xin chào tất cả các bạn!
    robot_rover/tay_gap.rst
    robot_rover/dau_nang.rst
    robot_rover/gamepad.rst
+   robot_rover/gap_hai_bac.rst
+
 
 .. toctree::
    :maxdepth: 2
@@ -55,6 +57,7 @@ OhStem xin chào tất cả các bạn!
    xbot/dumptruck.rst
    xbot/dau-nang.rst
    xbot/nem-bong.rst
+   xbot/gap-hai-bac.rst
 
 
 .. toctree::

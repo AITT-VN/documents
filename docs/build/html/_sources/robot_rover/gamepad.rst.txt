@@ -46,7 +46,27 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
     :align: center
 |
 
-4. Các nút nhấn có trên Gamepad: 
+4. Kết nối GamePad với Robot Rover
+---------
+--------- 
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jkSBx4nnpJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
+
+- **Đối với Robot xBot và Maker Robot:** Kết nối module vào cổng I2C ở vị trí số 4. 
+
+.. figure:: images/i2c_xbot.png
+    :scale: 70%
+    :align: center
+
+    Các bước còn lại thực hiện tượng tự như Rover
+
+|
+
+5. Các nút nhấn có trên Gamepad: 
 ---------
 ---------
 
@@ -64,7 +84,14 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
     :align: center
 |
 
-5. Chức năng của module Gamepad Receiver
+.. raw:: html
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/eqth_ATNAik" title="Hướng dẫn GamePad V2 với robot Rover - Ý nghĩa các nút nhấn - Phần 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
+
+
+6. Chức năng của module Gamepad Receiver
 -----
 ---------
 
@@ -121,11 +148,11 @@ Module Gamepad Receiver là thiết bị để kết nối robot với tay cầm
     + Nhấn giữ nút Clear trong vòng 3 giây trong quá trình Gamepad đã kết nối thành công với module Gamepad Receiver thì module Gamepad Receiver sẽ xóa kết nối của Gamepad đã được cho phép. Để sử dụng kết nối lại, bạn cần thực hiện lại bước 2.1
 
 
-6. Hướng dẫn lập trình cho Gamepad
+7. Hướng dẫn lập trình cho Gamepad
 -------
 -------
 
-6.1. **Thư viện**
+7.1. **Thư viện**
 -----------
 
 1. Vào giao diện lập trình cho Yolo:Bit (hoặc xBot) trong OhStem App tại địa chỉ `<https://app.ohstem.vn/>`_ hoặc ứng dụng OhStem App trên mobile ( Tải trên Google Play / App Store với tên tìm kiếm là “OhStem App”)
@@ -145,7 +172,7 @@ Module Gamepad Receiver là thiết bị để kết nối robot với tay cầm
 3. Chọn thư viện **Robocon** trong danh sách mục mở rộng có sẵn (hoặc nhập tên Robocon vào ô tìm kiếm nếu bạn không nhìn thấy): 
 
 .. image:: images/robocon.png
-    :scale: 100%
+    :scale: 80%
     :align: center
 |
 
@@ -164,7 +191,7 @@ Chọn tải thư viện:
 |
 
 
-6.2. **Giới thiệu khối lệnh**
+7.2. **Giới thiệu khối lệnh**
 ----------
 
 Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức năng như sau: 
@@ -342,7 +369,7 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
     :align: center
 |
 
-6.3 **Nạp chương trình**
+7.3 **Nạp chương trình**
 -------
 
 Để làm quen với Gamepad, chúng ta sẽ lập trình một chương trình đơn giản như sau: 
@@ -401,32 +428,5 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
      Mỗi nút nhấn chỉ thực hiện một chức năng, do đó bạn hãy kiểm tra thật kỹ trong chương trình các nút nhấn được chọn có bị lặp lại hay không nhé!
 
 
-7. Kết nối Gamepad với Robot
--------
----------
-
-**Sau khi nạp chương trình vào robot**, chúng ta sẽ thực hiện kết nối robot với Gamepad như sau: 
-
-- **Bước 1**: Kết nối robot với module Gamepad Receiver. Bằng cách cắm dây tín hiệu của module vào **cổng I2C** có trên robot: 
-
-.. list-table:: 
-   :widths: auto
-   :header-rows: 1
-     
-   * - .. image:: images/i2c_rover.png
-          :width: 400px
-          :align: center
-     - .. image:: images/i2c_xbot.png
-          :width: 300px
-          :align: center
-   * - Trên Robot Rover có 2 cổng I2C, bạn có thể kết nối vào 1 trong 2 cổng này. 
-     - Robot xBot và Maker Robot cổng I2C đều nằm ở vị trí cổng số 4
-
-
-- **Bước 2:** Bật nguồn Gamepad và để gần robot của mình. 
-    
-    + **Khi kết nối thành công với robot**, đèn trên robot sẽ sáng màu xanh lá, đồng thời **đèn trên Gamepad sẽ chuyển sang màu cam**, đây là màu của chế độ điều khiển được chọn trong chương trình lập trình.
-    
-    + **Nếu kết nối chưa thành công**, đèn trên robot sẽ chớp tắt màu đỏ và đèn **Gamepad sẽ chớp tắt màu trắng**.  
 
 

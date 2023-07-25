@@ -9,3 +9,4 @@
    dong-co/mg90s.rst
    dong-co/mg996r.rst
    dong-co/quat-mini.rst
+   dong-co/motor-drive.rst

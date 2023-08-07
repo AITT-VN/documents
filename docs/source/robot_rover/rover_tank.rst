@@ -58,7 +58,7 @@ Ngoài ra, bạn cũng có thể sáng tạo cuộc đua robot ngoài trời b�
     * **Số 3: Điều khiển Rover Tank di chuyển + Tay gắp 2 bậc.** 
     * **Số 4: Điều khiển Rover Tank di chuyển + Kit bắn bóng.**
 
-3. Sau khi màn hình LED sáng đèn vàng, trên giao diện lập trình thiết bị Yolo:Bit, bạn chọn vào **Gamepad**:
+3. Sau khi robot khởi động lại hoàn toàn (đèn trên robot sáng **màu đỏ**), trên giao diện lập trình thiết bị Yolo:Bit, bạn chọn vào **Gamepad**:
 
 .. image:: images/hai_bac_3.png
     :scale: 100%

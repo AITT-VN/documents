@@ -148,7 +148,7 @@ Module Gamepad Receiver là thiết bị để kết nối robot với tay cầm
     + Nhấn giữ nút Clear trong vòng 3 giây trong quá trình Gamepad đã kết nối thành công với module Gamepad Receiver thì module Gamepad Receiver sẽ xóa kết nối của Gamepad đã được cho phép. Để sử dụng kết nối lại, bạn cần thực hiện lại bước 2.1
 
 
-7. Hướng dẫn lập trình cho Gamepad
+7. Hướng dẫn lập trình với OhStem App 
 -------
 -------
 
@@ -428,5 +428,108 @@ Trong danh mục khối lệnh Gamepad sẽ có các khối lệnh với chức 
      Mỗi nút nhấn chỉ thực hiện một chức năng, do đó bạn hãy kiểm tra thật kỹ trong chương trình các nút nhấn được chọn có bị lặp lại hay không nhé!
 
 
+8. Hướng dẫn lập trình với Arduino
+--------
+------------
+
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html>`_. 
+
+- Copy đoạn code sau, click vào nút ``Verify`` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board. 
 
 
+**8.1 Chương trình điều khiển robot cơ bản**
+
+
+.. code-block:: guess
+
+    #include <Wire.h>
+    #include "gamepad.h"
+
+    Gamepad_Receiver gamepad;
+
+    void setup() {
+        Serial.begin(115200);
+        gamepad.begin();
+        Serial.println("Begin");
+    }
+
+    void loop() {
+        gamepad.update();   // hàm để cập nhật thông tin của gamepad
+        Serial.print((int)gamepad.isConnected); // hàm kiểm tra kết nối của gamepad
+
+        // các hàm để lấy thông số của tay cầm
+        Serial.print(" "); Serial.print(gamepad.dpad_left);
+        Serial.print(" "); Serial.print(gamepad.dpad_right);
+        Serial.print(" "); Serial.print(gamepad.dpad_up);
+        Serial.print(" "); Serial.print(gamepad.dpad_down);
+        Serial.print(" "); Serial.print(gamepad.aLx);
+        Serial.print(" "); Serial.print(gamepad.aLy);
+        Serial.print(" "); Serial.print(gamepad.aRx);
+        Serial.print(" "); Serial.print(gamepad.aRy);
+        Serial.print(" "); Serial.print(gamepad.al2);
+        Serial.print(" "); Serial.print(gamepad.ar2);
+        Serial.print(" "); Serial.print(gamepad.a);
+        Serial.print(" "); Serial.print(gamepad.b);
+        Serial.print(" "); Serial.print(gamepad.x);
+        Serial.print(" "); Serial.print(gamepad.y);
+        Serial.print(" "); Serial.print(gamepad.l1);
+        Serial.print(" "); Serial.print(gamepad.l2);
+        Serial.print(" "); Serial.print(gamepad.r1);
+        Serial.print(" "); Serial.print(gamepad.r2);
+        Serial.print(" "); Serial.print(gamepad.sys);
+        Serial.println();
+        Serial.println((int)gamepad.readJoystick(0));  // hàm để định giá trị nhận được từ joystick (0 là trái, 1     là phải)
+        Serial.println((int)gamepad.j_distance); // hàm trả về giá trị khoảng cách kéo của joystick
+        Serial.println((int)gamepad.axis_x);  // khoảng cách theo trục x
+        Serial.println((int)gamepad.axis_y);  // khoảng cách theo trục y
+        Serial.println();
+        delay(100);
+    }
+
+**8.2 Gamepad điều khiển mạch động cơ**
+
+
+Bạn có thể tham khảo mạch động cơ của OhStem `tại đây <https://docs.ohstem.vn/en/latest/module/dong-co/motor-drive.html>`_. 
+
+.. code-block:: guess
+
+    #include <Wire.h>
+    #include "gamepad.h"
+    #include "MotorDriver.h"
+
+    Gamepad_Receiver gamepad;
+    DCMotor motor;
+    
+    void setup() {
+        Serial.begin(115200);
+        gamepad.begin();
+        Serial.println("Begin");
+        motor.setSpeed(1, BACKWARD,  0);
+    }
+
+    void loop() {
+        //Serial.println("Set led color: ");
+        //Serial.println(gamepad.setLedColor(0, 255, 0));
+    
+        gamepad.update();
+        if (gamepad.isConnected == 1) {
+            if (gamepad.dpad_up == 1) {
+            motor.setSpeed(1, FORWARD,  50);
+            motor.setSpeed(0, FORWARD,  50);
+            }else if (gamepad.dpad_down == 1){
+            motor.setSpeed(1, BACKWARD,  50);
+            motor.setSpeed(0, BACKWARD,  50);
+            } else {
+            motor.setSpeed(1, BACKWARD,  0);
+            motor.setSpeed(0, BACKWARD,  0);
+            }
+        } else {
+            motor.setSpeed(1, BACKWARD,  0);
+            motor.setSpeed(0, BACKWARD,  0);
+        } 
+        
+        delay(100);
+    }
+
+.. note:: 
+    Link thư viện tham khảo `<https://github.com/AITT-VN/gamepad_receiver_arduino_lib.git>`_  

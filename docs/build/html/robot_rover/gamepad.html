@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tay cầm điều khiển robot &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+  <title>Tay cầm điều khiển robot &mdash; OhStem Education Wiki 1.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -70,13 +70,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#ket-noi-gamepad-voi-robot-rover">4. Kết nối GamePad với Robot Rover</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cac-nut-nhan-co-tren-gamepad">5. Các nút nhấn có trên Gamepad:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#chuc-nang-cua-module-gamepad-receiver">6. Chức năng của module Gamepad Receiver</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh-cho-gamepad">7. Hướng dẫn lập trình cho Gamepad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh-voi-ohstem-app">7. Hướng dẫn lập trình với OhStem App</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#thu-vien">7.1. <strong>Thư viện</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gioi-thieu-khoi-lenh">7.2. <strong>Giới thiệu khối lệnh</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nap-chuong-trinh">7.3 <strong>Nạp chương trình</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#huong-dan-lap-trinh-voi-arduino">8. Hướng dẫn lập trình với Arduino</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rover_tank.html"><strong>Kit xe tăng</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -191,10 +193,10 @@
 <ul class="simple">
 <li><p><strong>Đối với Robot xBot và Maker Robot:</strong> Kết nối module vào cổng I2C ở vị trí số 4.</p></li>
 </ul>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/i2c_xbot.png"><img alt="../_images/i2c_xbot.png" src="../_images/i2c_xbot.png" style="width: 445.9px; height: 308.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Các bước còn lại thực hiện tượng tự như Rover</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Các bước còn lại thực hiện tượng tự như Rover</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="line-block">
@@ -284,8 +286,8 @@
 </li>
 </ol>
 </section>
-<section id="huong-dan-lap-trinh-cho-gamepad">
-<h2>7. Hướng dẫn lập trình cho Gamepad<a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad" title="Permalink to this heading"></a></h2>
+<section id="huong-dan-lap-trinh-voi-ohstem-app">
+<h2>7. Hướng dẫn lập trình với OhStem App<a class="headerlink" href="#huong-dan-lap-trinh-voi-ohstem-app" title="Permalink to this heading"></a></h2>
 </section>
 <hr class="docutils" />
 <section id="thu-vien">
@@ -341,10 +343,10 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Đối với xBot, bạn sử dụng câu lệnh sau để khai báo cổng kết nối module Gamepad Receiver với robot:</p>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../_images/gamepad.27.png"><img alt="../_images/gamepad.27.png" src="../_images/gamepad.27.png" style="width: 407.0px; height: 187.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Chỉ kết nối module với xBot ở cổng 4, 5 hoặc 6</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Chỉ kết nối module với xBot ở cổng 4, 5 hoặc 6</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div>
@@ -540,10 +542,10 @@
 </div></blockquote>
 </li>
 </ul>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../_images/gamepad.23.png"><img alt="../_images/gamepad.23.png" src="../_images/gamepad.23.png" style="width: 512.0px; height: 502.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Chương trình điều khiển Robot Rover bằng Gamepad</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Chương trình điều khiển Robot Rover bằng Gamepad</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="line-block">
@@ -579,10 +581,10 @@
 </div></blockquote>
 </li>
 </ul>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/gamepad.25.png"><img alt="../_images/gamepad.25.png" src="../_images/gamepad.25.png" style="width: 611.2px; height: 572.8000000000001px;" /></a>
 <figcaption>
-<p><span class="caption-text">Chương trình điều khiển Robot xBot / Maker Robot bằng Gamepad</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Chương trình điều khiển Robot xBot / Maker Robot bằng Gamepad</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="line-block">
@@ -609,6 +611,105 @@
 <blockquote>
 <div><p>Mỗi nút nhấn chỉ thực hiện một chức năng, do đó bạn hãy kiểm tra thật kỹ trong chương trình các nút nhấn được chọn có bị lặp lại hay không nhé!</p>
 </div></blockquote>
+</section>
+<section id="huong-dan-lap-trinh-voi-arduino">
+<h2>8. Hướng dẫn lập trình với Arduino<a class="headerlink" href="#huong-dan-lap-trinh-voi-arduino" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html">tại đây</a>.</p></li>
+<li><p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p></li>
+</ul>
+<p><strong>8.1 Chương trình điều khiển robot cơ bản</strong></p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;gamepad.h&quot;</span><span class="cp"></span>
+
+<span class="n">Gamepad_Receiver</span><span class="w"> </span><span class="n">gamepad</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">gamepad</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Begin&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">gamepad</span><span class="p">.</span><span class="n">update</span><span class="p">();</span><span class="w">   </span><span class="c1">// hàm để cập nhật thông tin của gamepad</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">gamepad</span><span class="p">.</span><span class="n">isConnected</span><span class="p">);</span><span class="w"> </span><span class="c1">// hàm kiểm tra kết nối của gamepad</span>
+
+<span class="w">    </span><span class="c1">// các hàm để lấy thông số của tay cầm</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_left</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_right</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_up</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_down</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">aLx</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">aLy</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">aRx</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">aRy</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">al2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">ar2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">a</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">l1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">l2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">r1</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">r2</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">sys</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">gamepad</span><span class="p">.</span><span class="n">readJoystick</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w">  </span><span class="c1">// hàm để định giá trị nhận được từ joystick (0 là trái, 1     là phải)</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">gamepad</span><span class="p">.</span><span class="n">j_distance</span><span class="p">);</span><span class="w"> </span><span class="c1">// hàm trả về giá trị khoảng cách kéo của joystick</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">gamepad</span><span class="p">.</span><span class="n">axis_x</span><span class="p">);</span><span class="w">  </span><span class="c1">// khoảng cách theo trục x</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">gamepad</span><span class="p">.</span><span class="n">axis_y</span><span class="p">);</span><span class="w">  </span><span class="c1">// khoảng cách theo trục y</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p><strong>8.2 Gamepad điều khiển mạch động cơ</strong></p>
+<p>Bạn có thể tham khảo mạch động cơ của OhStem <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/dong-co/motor-drive.html">tại đây</a>.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;gamepad.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MotorDriver.h&quot;</span><span class="cp"></span>
+
+<span class="n">Gamepad_Receiver</span><span class="w"> </span><span class="n">gamepad</span><span class="p">;</span><span class="w"></span>
+<span class="n">DCMotor</span><span class="w"> </span><span class="n">motor</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">gamepad</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Begin&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//Serial.println(&quot;Set led color: &quot;);</span>
+<span class="w">    </span><span class="c1">//Serial.println(gamepad.setLedColor(0, 255, 0));</span>
+
+<span class="w">    </span><span class="n">gamepad</span><span class="p">.</span><span class="n">update</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">isConnected</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_up</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">FORWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">50</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">FORWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">50</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gamepad</span><span class="p">.</span><span class="n">dpad_down</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">){</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">50</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">50</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">motor</span><span class="p">.</span><span class="n">setSpeed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">BACKWARD</span><span class="p">,</span><span class="w">  </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Link thư viện tham khảo <a class="reference external" href="https://github.com/AITT-VN/gamepad_receiver_arduino_lib.git">https://github.com/AITT-VN/gamepad_receiver_arduino_lib.git</a></p>
+</div>
 </section>
 </section>
 

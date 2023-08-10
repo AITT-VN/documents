@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7. 1. Lập trình tay cầm điều khiển &mdash; OhStem Education Wiki 0.0.2 documentation</title>
+  <title>7. 1. Lập trình tay cầm điều khiển &mdash; OhStem Education Wiki 1.0.0 documentation</title>
       <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
@@ -63,6 +63,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -76,6 +79,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../xbot/gap-hai-bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -89,6 +93,7 @@
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -102,7 +107,7 @@
 <p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../../../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố thông minh”</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố xanh”</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../gioi_thieu.html">1. Giới thiệu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bai_thi_1.html">2. Bài 1 - Năng lượng tái tạo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../bai_thi_2.html">3. Bài 2 - Trồng cây gây rừng</a></li>
@@ -141,7 +146,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a> &raquo;</li>
-          <li><a href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố thông minh”</a> &raquo;</li>
+          <li><a href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố xanh”</a> &raquo;</li>
           <li><a href="../doi_khang.html">7. Bài thi đấu: Điều Khiển Đối Kháng</a> &raquo;</li>
       <li>7. 1. Lập trình tay cầm điều khiển</li>
       <li class="wy-breadcrumbs-aside">
@@ -156,7 +161,7 @@
   <section id="lap-trinh-tay-cam-dieu-khien">
 <h1>7. 1. Lập trình tay cầm điều khiển<a class="headerlink" href="#lap-trinh-tay-cam-dieu-khien" title="Permalink to this heading"></a></h1>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/72.png"><img alt="../../../../_images/72.png" src="../../../../_images/72.png" style="width: 450.0px; height: 450.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/71.png"><img alt="../../../../_images/71.png" src="../../../../_images/71.png" style="width: 450.0px; height: 450.0px;" /></a>
 </figure>
 <p>GamePad shield là bộ Kit mở rộng cho Yolo:Bit. Bộ kit này sẽ biến Yolo:Bit thành một tay cầm điều khiển Bluetooth. GamePad gồm Joystick và 7 nút nhấn có thể lập trình, được dùng để tạo ra các chức năng tùy biến theo ý của người dùng.</p>
 <p>Ngoài ra, cùng với pin sạc và chức năng sạc được tích hợp sẵn trên board, GamePad shield có thể được sử dụng để điều khiển các robot của OhStem như robot xBot (thông qua Bluetooth) hoặc biến Yolo:Bit thành một chiếc máy chơi game hoàn chỉnh.</p>
@@ -183,29 +188,29 @@
 <li><p>Chọn thiết bị lập trình là Yolo:Bit trong OhStem App, tại địa chỉ <a class="reference external" href="https://app.ohstem.vn/">https://app.ohstem.vn/</a> hoặc ứng dụng OhStem App trên mobile (Tải trên Google Play / App Store với tên tìm kiếm là  “OhStem App”)</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.15.png"><img alt="../../../../_images/7.15.png" src="../../../../_images/7.15.png" style="width: 509.4px; height: 274.2px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.14.png"><img alt="../../../../_images/7.14.png" src="../../../../_images/7.14.png" style="width: 509.4px; height: 274.2px;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Nhấn vào mục <strong>Mở Rộng</strong> ở danh sách bên trái:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.26.png"><img alt="../../../../_images/7.26.png" src="../../../../_images/7.26.png" style="width: 211.20000000000002px; height: 264.8px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.25.png"><img alt="../../../../_images/7.25.png" src="../../../../_images/7.25.png" style="width: 211.20000000000002px; height: 264.8px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Chọn GamePad trong danh sách các mục mở rộng có sẵn (hoặc nhập tên GamePad vào ô tìm kiếm nếu bạn không thấy):</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.310.jpg"><img alt="../../../../_images/7.310.jpg" src="../../../../_images/7.310.jpg" style="width: 360.0px; height: 240.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.3.jpg"><img alt="../../../../_images/7.3.jpg" src="../../../../_images/7.3.jpg" style="width: 360.0px; height: 240.0px;" /></a>
 </figure>
 <p>Chọn tải thư viện:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.44.png"><img alt="../../../../_images/7.44.png" src="../../../../_images/7.44.png" style="width: 337.6px; height: 229.60000000000002px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.43.png"><img alt="../../../../_images/7.43.png" src="../../../../_images/7.43.png" style="width: 337.6px; height: 229.60000000000002px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Chọn thiết bị Yolo:Bit để kết nối (nếu chưa kết nối) và phải đảm bảo đã cài đặt thư viện thành công (bên trái giao diện <strong>xuất hiện danh mục GamePad</strong> như hình):</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.54.png"><img alt="../../../../_images/7.54.png" src="../../../../_images/7.54.png" style="width: 153.60000000000002px; height: 238.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.53.png"><img alt="../../../../_images/7.53.png" src="../../../../_images/7.53.png" style="width: 153.60000000000002px; height: 238.4px;" /></a>
 </figure>
 </div></blockquote>
 </section>
@@ -215,7 +220,7 @@
 <blockquote>
 <div><p>Bên trong danh mục GamePad, bạn sẽ thấy có 3 khối lệnh:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.63.png"><img alt="../../../../_images/7.63.png" src="../../../../_images/7.63.png" style="width: 400.0px; height: 286.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.62.png"><img alt="../../../../_images/7.62.png" src="../../../../_images/7.62.png" style="width: 400.0px; height: 286.40000000000003px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Joystick ở hướng -&gt; : Trả về giá trị đúng khi hướng của cần gạt Joystick xoay sang phải (tương tự với các lựa chọn khác)</p></li>
@@ -227,7 +232,7 @@
 <blockquote>
 <div><p>Bạn có thể chọn vào icon hình tam giác ngược trong khối lệnh để hiển thị các lựa chọn khác:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.71.png"><img alt="../../../../_images/7.71.png" src="../../../../_images/7.71.png" style="width: 366.40000000000003px; height: 456.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.7.png"><img alt="../../../../_images/7.7.png" src="../../../../_images/7.7.png" style="width: 366.40000000000003px; height: 456.0px;" /></a>
 </figure>
 <p>Khối lệnh trên sẽ trả về giá trị đúng khi cần gạt Joystick xoay về đúng hướng như trong khối lệnh.</p>
 </div></blockquote>
@@ -235,38 +240,38 @@
 <blockquote>
 <div><p>Bạn có thể chọn vào icon hình tam giác ngược trong khối lệnh để hiển thị các lựa chọn khác:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.81.png"><img alt="../../../../_images/7.81.png" src="../../../../_images/7.81.png" style="width: 364.0px; height: 250.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.8.png"><img alt="../../../../_images/7.8.png" src="../../../../_images/7.8.png" style="width: 364.0px; height: 250.4px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>X: Trả về giá trị Analog cho <strong>trục X (trục ngang)</strong> của Joystick theo thang giá trị từ -100 đến 100</p></li>
 </ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.91.jpg"><img alt="../../../../_images/7.91.jpg" src="../../../../_images/7.91.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.9.jpg"><img alt="../../../../_images/7.9.jpg" src="../../../../_images/7.9.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Y: Trả về giá trị Analog cho trục Y (trục dọc) của Joystick theo thang giá trị từ -100 đến 100.</p></li>
 </ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.101.jpg"><img alt="../../../../_images/7.101.jpg" src="../../../../_images/7.101.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.10.jpg"><img alt="../../../../_images/7.10.jpg" src="../../../../_images/7.10.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Góc quay: Trả về giá trị góc xoay của cần gạt Joystick theo thang đo từ 0 đến 359 độ:</p></li>
 </ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.111.jpg"><img alt="../../../../_images/7.111.jpg" src="../../../../_images/7.111.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.11.jpg"><img alt="../../../../_images/7.11.jpg" src="../../../../_images/7.11.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Khoảng cách kéo: Mức độ kéo Joystick ra ngoài so với tâm của cần gạt (từ 0 – 100%)</p></li>
 </ul>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.121.jpg"><img alt="../../../../_images/7.121.jpg" src="../../../../_images/7.121.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.12.jpg"><img alt="../../../../_images/7.12.jpg" src="../../../../_images/7.12.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 </div></blockquote>
 <p><strong>Nút ____ được nhấn</strong></p>
 <blockquote>
 <div><p>Bạn có thể chọn vào icon hình tam giác ngược trong khối lệnh để hiển thị các lựa chọn khác:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.131.jpg"><img alt="../../../../_images/7.131.jpg" src="../../../../_images/7.131.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.13.jpg"><img alt="../../../../_images/7.13.jpg" src="../../../../_images/7.13.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <p>Khối lệnh trên sẽ trả về giá trị đúng khi nút Joystick được nhấn (bạn nhấn mạnh vào cần gạt Joystick để thực hiện). Tương tự với các nút nhấn khác.</p>
 <p><strong>Lưu ý:</strong> Nút nhấn A và B trên GamePad sẽ tương ứng với nút A, B trên Yolo:Bit.</p>
@@ -298,60 +303,60 @@
 <li><p>Đầu tiên, chúng ta xóa màn hình trước đó:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.141.jpg"><img alt="../../../../_images/7.141.jpg" src="../../../../_images/7.141.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.14.jpg"><img alt="../../../../_images/7.14.jpg" src="../../../../_images/7.14.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Nếu nút A được nhấn, màn hình Yolo:Bit sẽ hiển thị chữ A:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.151.jpg"><img alt="../../../../_images/7.151.jpg" src="../../../../_images/7.151.jpg" style="width: 480.0px; height: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.15.jpg"><img alt="../../../../_images/7.15.jpg" src="../../../../_images/7.15.jpg" style="width: 480.0px; height: 320.0px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Ta thực hiện tương tự với các nút còn lại:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.161.png"><img alt="../../../../_images/7.161.png" src="../../../../_images/7.161.png" style="width: 432.8px; height: 724.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.16.png"><img alt="../../../../_images/7.16.png" src="../../../../_images/7.16.png" style="width: 432.8px; height: 724.0px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Đặt điều kiện: Nếu Joystick xoay về hướng bên phải:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.171.jpg"><img alt="../../../../_images/7.171.jpg" src="../../../../_images/7.171.jpg" style="width: 480.0px; height: 236.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.17.jpg"><img alt="../../../../_images/7.17.jpg" src="../../../../_images/7.17.jpg" style="width: 480.0px; height: 236.0px;" /></a>
 </figure>
 <ol class="arabic simple" start="5">
 <li><p>Lúc này, Yolo:Bit sẽ hiển thị hình ảnh mũi tên chỉ sang phải:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.181.jpg"><img alt="../../../../_images/7.181.jpg" src="../../../../_images/7.181.jpg" style="width: 480.0px; height: 262.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.18.jpg"><img alt="../../../../_images/7.18.jpg" src="../../../../_images/7.18.jpg" style="width: 480.0px; height: 262.40000000000003px;" /></a>
 </figure>
 <ol class="arabic simple" start="6">
 <li><p>Nhấn vào icon hình bánh răng và tạo thêm 3 nhánh điều kiện <strong>Nếu không nếu</strong> như hình:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.191.jpg"><img alt="../../../../_images/7.191.jpg" src="../../../../_images/7.191.jpg" style="width: 720.0px; height: 336.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.19.jpg"><img alt="../../../../_images/7.19.jpg" src="../../../../_images/7.19.jpg" style="width: 720.0px; height: 336.0px;" /></a>
 </figure>
 <p><strong>Giải thích thêm:</strong></p>
 <p>Điều kiện “nếu không nếu” là một điều kiện gộp giữa “nếu không” và “nếu”:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.201.jpg"><img alt="../../../../_images/7.201.jpg" src="../../../../_images/7.201.jpg" style="width: 480.0px; height: 240.8px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.20.jpg"><img alt="../../../../_images/7.20.jpg" src="../../../../_images/7.20.jpg" style="width: 480.0px; height: 240.8px;" /></a>
 </figure>
 <ol class="arabic simple" start="7">
 <li><p>Tương tự, ta cho Yolo:Bit hiển thị mũi tên tương ứng với từng hướng xoay của Joystick trong thuật toán:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.212.png"><img alt="../../../../_images/7.212.png" src="../../../../_images/7.212.png" style="width: 343.20000000000005px; height: 558.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.211.png"><img alt="../../../../_images/7.211.png" src="../../../../_images/7.211.png" style="width: 343.20000000000005px; height: 558.4px;" /></a>
 </figure>
 <ol class="arabic simple" start="8">
 <li><p>Hiển thị thông tin góc xoay ra cửa sổ thông tin và cập nhật liên tục sau mỗi 200ms (1 giây = 1000ms):</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.221.jpg"><img alt="../../../../_images/7.221.jpg" src="../../../../_images/7.221.jpg" style="width: 480.0px; height: 166.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.22.jpg"><img alt="../../../../_images/7.22.jpg" src="../../../../_images/7.22.jpg" style="width: 480.0px; height: 166.4px;" /></a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Để hiển thị cửa sổ thông tin, bạn hãy nhấn vào nút chức năng nâng cao (biểu tưởng bánh răng), chọn Hiển thị cửa sổ thông tin để mở cửa sổ hiển thị thông tin như sau:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.232.png"><img alt="../../../../_images/7.232.png" src="../../../../_images/7.232.png" style="width: 285.6px; height: 364.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.231.png"><img alt="../../../../_images/7.231.png" src="../../../../_images/7.231.png" style="width: 285.6px; height: 364.0px;" /></a>
 </figure>
 </div>
 </section>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camera AI &mdash; OhStem Education Wiki 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Robot Arm - Kit lập trình cánh tay robot" href="../robot_arm/robot_arm.html" />
+    <link rel="prev" title="Kit xe tăng" href="rover_tank.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/homebit.html"><strong>Home:Bit - Bộ Kit nhà thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/plantbit.html"><strong>Plant:Bit - Bộ Kit trồng cây thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/citybit.html"><strong>City:Bit - Bộ Kit thành phố thông minh</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/physbit.html"><strong>Phys:Bit - Kit học điện tử</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AIoT Kit - Lập trình AI &amp; IoT</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../aiot/lam_quen.html"><strong>Làm quen với AIoT KIT</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rover.html"><strong>Rover - Kit robot lập trình</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="rover_tank.html"><strong>Kit xe tăng</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Camera AI</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gioi-thieu">1. Giới thiệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cai-dat-phan-mem-esptouch-cau-hinh-wifi-cho-camera">2. Cài đặt phần mềm Esptouch cấu hình wifi cho camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tao-cac-truong-du-lieu">3. Tạo các trường dữ liệu:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bat-dau-nhan-dang-qua-camera">4. Bắt đầu nhận dạng qua camera</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../robot_arm/robot_arm.html"><strong>Robot Arm - Kit lập trình cánh tay robot</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot lập trình xBot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/inventor.html"><strong>xBot Inventor Kit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/gripper.html"><strong>Đầu gắp Gripper</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/dumptruck.html"><strong>Bộ Dump Truck</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot/gap-hai-bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/micropython/index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/arduino/index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Game Kit - Kit học lập trình game</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gamekit/gamekit.html">Hướng dẫn lập trình GameKit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/board-mo-rong.html"><strong>Board mở rộng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/dong-co.html"><strong>Động cơ</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API thư viện</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/api-xbot.html">Robot xBot và xController</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OhStem Education Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Camera AI</strong></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/username/reponame/blob/masterrobot_rover/camera_ai.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="camera-ai">
+<h1><strong>Camera AI</strong><a class="headerlink" href="#camera-ai" title="Permalink to this heading"></a></h1>
+<section id="gioi-thieu">
+<h2>1. Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../_images/camera_ai_1.png"><img alt="../_images/camera_ai_1.png" class="align-center" src="../_images/camera_ai_1.png" style="width: 394.0px; height: 400.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bộ kit Camera AI là một công cụ thú vị dùng để truyền hình ảnh và video từ camera. Bạn có thể sử dụng nó để xử lý thông tin và chạy các mô hình trí tuệ nhân tạo từ Google Teachable Machine.</p>
+<p>Bộ kit này thường được dùng trong các dự án STEM và Robotics để giúp robot nhận biết hình ảnh, nhận diện khuôn mặt và thực hiện nhiều công việc khác nhau. Ngoài ra, bạn cũng có thể ứng dụng bộ kit vào các sản phẩm sáng tạo như hệ thống phân loại rác, hoặc mô hình nhà thông minh cảnh báo khi có người lạ xuất hiện… Dưới đây là hướng dẫn cách sử dụng Camera AI.</p>
+<a class="reference external image-reference" href="https://ohstem.vn/product/esp32-camera/"><img alt="some image" class="with-shadow align-center" src="../_images/gio2.png" style="width: 588.0px; height: 81.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Các bước làm việc với Camera AI:</strong></p>
+<ol class="arabic simple">
+<li><p>Cài đặt phần mềm Esptouch để cấu hình wifi cho camera</p></li>
+<li><p>Tạo các trường dữ liệu</p></li>
+<li><p>Nhận dạng qua camera</p></li>
+</ol>
+</section>
+<section id="cai-dat-phan-mem-esptouch-cau-hinh-wifi-cho-camera">
+<h2>2. Cài đặt phần mềm Esptouch cấu hình wifi cho camera<a class="headerlink" href="#cai-dat-phan-mem-esptouch-cau-hinh-wifi-cho-camera" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Cấp nguồn cho Camera</p></li>
+<li><p>Truy cập vào Google Play hoặc App Store và cài đặt app <strong>Esptouch</strong> như hình:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_2.png"><img alt="../_images/camera_ai_2.png" class="align-center" src="../_images/camera_ai_2.png" style="width: 403.0px; height: 262.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Sau khi hoàn tất cài đặt, truy cập vào app và chọn EspTouch như hình:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_3.png"><img alt="../_images/camera_ai_3.png" class="align-center" src="../_images/camera_ai_3.png" style="width: 409.6px; height: 205.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Điền <strong>mật khẩu wifi</strong> như hình bên dưới và chọn <strong>START</strong> để hoàn tất việc cấu hình wifi cho camera.</p></li>
+</ol>
+<dl class="simple">
+<dt><strong>Lưu ý</strong>:</dt><dd><ul class="simple">
+<li><p>Bạn cần bật vị trí và cho phép app truy cập vào vị trí của bạn.</p></li>
+<li><p>Sử dụng wifi có băng tần 2.4G</p></li>
+</ul>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="../_images/camera_ai_4.png"><img alt="../_images/camera_ai_4.png" class="align-center" src="../_images/camera_ai_4.png" style="width: 342.0px; height: 368.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><dl class="simple">
+<dt><strong>Lấy địa chỉ camera</strong>:</dt><dd><p>Sau khi đã gửi tín hiệu cấu hình đi, bạn vui lòng chờ trong giây lát, sẽ có 1 thông báo hiện ra như hình và ghi chú lại địa chỉ IP:
+(Nếu thay đổi mạng wifi, bạn cần thực hiện các thao tác trên)</p>
+</dd>
+</dl>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_5.png"><img alt="../_images/camera_ai_5.png" class="align-center" src="../_images/camera_ai_5.png" style="width: 337.0px; height: 318.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="6">
+<li><p>Truy cập vào trình duyệt Google Chrome/ Microsoft Edge…  nhập địa chỉ của Camera vào thanh tìm kiếm, giao diện sau sẽ xuất hiện.:</p>
+<p>Các trường dữ liệu mà bạn cần quan tâm là:</p>
+<ul class="simple">
+<li><p>Đường dẫn AI</p></li>
+<li><p>Username</p></li>
+<li><p>Kênh dữ liệu</p></li>
+</ul>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_6.png"><img alt="../_images/camera_ai_6.png" class="align-center" src="../_images/camera_ai_6.png" style="width: 512.0px; height: 258.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="tao-cac-truong-du-lieu">
+<h2>3. Tạo các trường dữ liệu:<a class="headerlink" href="#tao-cac-truong-du-lieu" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<blockquote>
+<div></div></blockquote>
+<p>Ở phần đường dẫn AI này, chúng tra sẽ cần dùng 1 công cụ tạo mô hình AI của Google:</p>
+<ol class="arabic simple">
+<li><p>Truy cập vào trang web: <a class="reference external" href="https://teachablemachine.withgoogle.com/">https://teachablemachine.withgoogle.com/</a> và chọn <strong>Get Started</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_7.png"><img alt="../_images/camera_ai_7.png" class="align-center" src="../_images/camera_ai_7.png" style="width: 512.0px; height: 366.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Giao diện sẽ hiện ra như hình chọn vào <strong>Image Project</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_8.png"><img alt="../_images/camera_ai_8.png" class="align-center" src="../_images/camera_ai_8.png" style="width: 512.0px; height: 284.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Chọn tiếp vào <strong>Standard image model</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_9.png"><img alt="../_images/camera_ai_9.png" class="align-center" src="../_images/camera_ai_9.png" style="width: 512.0px; height: 247.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><p>Giao diện được hiển thị tương tự với giao diện Mô hình AI trên OhStem App</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/camera_ai_9.png"><img alt="../_images/camera_ai_9.png" class="align-center" src="../_images/camera_ai_9.png" style="width: 512.0px; height: 247.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Huấn luyện mô hình AI</strong>:</p></li>
+</ol>
+<p>Chọn vào Webcam và nhấn “Hold to Record” để thu thập mẫu. Sau khi hoàn tất, chọn Train Model</p>
+<a class="reference internal image-reference" href="../_images/camera_ai_10.png"><img alt="../_images/camera_ai_10.png" class="align-center" src="../_images/camera_ai_10.png" style="width: 512.0px; height: 242.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Chọn <strong>Export Model</strong> để xuất ra mô hình:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_11.png"><img alt="../_images/camera_ai_11.png" class="align-center" src="../_images/camera_ai_11.png" style="width: 354.0px; height: 208.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Sau đó bạn ấn vào chọn <strong>Upload my model</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_12.png"><img alt="../_images/camera_ai_12.png" class="align-center" src="../_images/camera_ai_12.png" style="width: 512.0px; height: 189.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Một đường link sẽ xuất hiện, hãy <strong>sao chép và dán vào đường dẫn AI trên trang địa chỉ của camera</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_13.png"><img alt="../_images/camera_ai_13.png" class="align-center" src="../_images/camera_ai_13.png" style="width: 512.0px; height: 202.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Kết quả như hình:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_14.png"><img alt="../_images/camera_ai_14.png" class="align-center" src="../_images/camera_ai_14.png" style="width: 399.0px; height: 175.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div></div></blockquote>
+<ol class="arabic">
+<li><p><strong>Tạo kênh dữ liệu:</strong></p>
+<blockquote>
+<div><p>Truy cập vào app.ohstem.vn, chọn Bảng điều khiển IoT và tạo một bảng điều mới, đặt lại Username và chọn kênh thông tin.  Đây là 2 thông tin quan trọng của server MQTT.</p>
+</div></blockquote>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_15.png"><img alt="../_images/camera_ai_15.png" class="align-center" src="../_images/camera_ai_15.png" style="width: 512.0px; height: 223.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="2">
+<li><p><strong>Điền thông tin Username và kênh dữ liệu vào trang địa chỉ của camera</strong>, kết quả như hình:</p>
+<blockquote>
+<div><p>Username bạn cần đặt giống như username bạn cấu  hình trên bảng điều khiển thông  tin. Kênh dữ liệu sẽ gồm từ V1 đến V20 theo đúng như ta đã cấu hình trên bảng điều khiển IoT.</p>
+</div></blockquote>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/camera_ai_16.png"><img alt="../_images/camera_ai_16.png" class="align-center" src="../_images/camera_ai_16.png" style="width: 396.0px; height: 455.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="bat-dau-nhan-dang-qua-camera">
+<h2>4. Bắt đầu nhận dạng qua camera<a class="headerlink" href="#bat-dau-nhan-dang-qua-camera" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>Sau khi đã điền xong các thông tin, bạn ấn <strong>Bắt đầu nhận dạng</strong></p>
+<a class="reference internal image-reference" href="../_images/camera_ai_17.png"><img alt="../_images/camera_ai_17.png" class="align-center" src="../_images/camera_ai_17.png" style="width: 418.0px; height: 260.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Lúc này camera sẽ tiến hành khởi chạy, trong thời gian sử dụng camera, bạn không được ẩn Tab đi, luôn luôn phải được chạy trên trình duyệt (mẹo nhỏ: bạn có thể kéo trang camera làm 1  cửa sổ riêng và thu nhỏ  lại)</p>
+<p>Camera nhận diện sẽ có các thông số như sau :</p>
+<a class="reference internal image-reference" href="../_images/camera_ai_18.png"><img alt="../_images/camera_ai_18.png" class="align-center" src="../_images/camera_ai_18.png" style="width: 483.0px; height: 432.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Ở phần Result sẽ là kết quả mà  AI nhận dạng được và độ tin cậy của kết quả, kết quả sẽ được gửi lên trực tiếp server IoT của OhStem</p>
+<a class="reference internal image-reference" href="../_images/camera_ai_19.png"><img alt="../_images/camera_ai_19.png" class="align-center" src="../_images/camera_ai_19.png" style="width: 512.0px; height: 346.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Sau đó chúng ta chỉ cần xử lý chương trình nhận lệnh từ IoT là có thể hoàn thành.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rover_tank.html" class="btn btn-neutral float-left" title="Kit xe tăng" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../robot_arm/robot_arm.html" class="btn btn-neutral float-right" title="Robot Arm - Kit lập trình cánh tay robot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OHSTEM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

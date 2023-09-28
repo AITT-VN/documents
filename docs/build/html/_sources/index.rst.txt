@@ -40,6 +40,7 @@ OhStem xin chào tất cả các bạn!
    robot_rover/gamepad.rst
    robot_rover/gap_hai_bac.rst
    robot_rover/rover_tank.rst
+   robot_rover/camera_ai.rst
 
 
 .. toctree::

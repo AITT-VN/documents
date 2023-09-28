@@ -9,7 +9,6 @@
     :scale: 100%
     :align: center
 |  
-
 Bộ kit Camera AI là một công cụ thú vị dùng để truyền hình ảnh và video từ camera. Bạn có thể sử dụng nó để xử lý thông tin và chạy các mô hình trí tuệ nhân tạo từ Google Teachable Machine. 
 
 Bộ kit này thường được dùng trong các dự án STEM và Robotics để giúp robot nhận biết hình ảnh, nhận diện khuôn mặt và thực hiện nhiều công việc khác nhau. Ngoài ra, bạn cũng có thể ứng dụng bộ kit vào các sản phẩm sáng tạo như hệ thống phân loại rác, hoặc mô hình nhà thông minh cảnh báo khi có người lạ xuất hiện… Dưới đây là hướng dẫn cách sử dụng Camera AI.

@@ -84,8 +84,8 @@ Bộ kit này thường được dùng trong các dự án STEM và Robotics đ�
 ---------
 -----
 
-    **3.1. Tạo đường dẫn AI:**
-    ---------
+**3.1. Tạo đường dẫn AI:**
+---------
 
 Ở phần đường dẫn AI này, chúng tra sẽ cần dùng 1 công cụ tạo mô hình AI của Google:
 
@@ -112,16 +112,16 @@ Bộ kit này thường được dùng trong các dự án STEM và Robotics đ�
 
     Giao diện được hiển thị tương tự với giao diện Mô hình AI trên OhStem App
 
-.. image:: images/camera_ai_9.png
+.. image:: images/camera_ai_10.png
     :scale: 100%
     :align: center
 |   
 
 4. **Huấn luyện mô hình AI**:
 
-Chọn vào Webcam và nhấn “Hold to Record” để thu thập mẫu. Sau khi hoàn tất, chọn Train Model
+Chọn vào **Webcam** và nhấn **Hold to Record** để thu thập mẫu. Sau khi hoàn tất, chọn **Train Model**
 
-.. image:: images/camera_ai_10.png
+.. image:: images/camera_ai_20.jpg
     :scale: 100%
     :align: center
 | 
@@ -154,12 +154,12 @@ Chọn vào Webcam và nhấn “Hold to Record” để thu thập mẫu. Sau k
     :align: center
 | 
 
-    **3.2. Username và kênh dữ liệu:**
-    ---------
+**3.2. Username và kênh dữ liệu:**
+---------
 
 1. **Tạo kênh dữ liệu:**
 
-    Truy cập vào app.ohstem.vn, chọn Bảng điều khiển IoT và tạo một bảng điều mới, đặt lại Username và chọn kênh thông tin.  Đây là 2 thông tin quan trọng của server MQTT. 
+    Truy cập vào `<https://app.ohstem.vn/>`_, chọn Bảng điều khiển IoT và tạo một bảng điều mới, đặt lại Username và chọn kênh thông tin.  Đây là 2 thông tin quan trọng của server MQTT. 
 
 .. image:: images/camera_ai_15.png
     :scale: 100%

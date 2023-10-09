@@ -66,6 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -187,7 +188,7 @@
 <h2>1. <strong>Hàm đi theo vạch đen</strong><a class="headerlink" href="#ham-di-theo-vach-den" title="Permalink to this heading"></a></h2>
 <p>Để lập trình cho robot Rover thi đấu, bạn cần tải thư viện <strong>Robot Rover</strong> và thư viện <strong>Robocon</strong>.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../_images/thu_vien.png"><img alt="../../_images/thu_vien.png" src="../../_images/thu_vien.png" style="width: 608.0px; height: 300.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/thu_vien2.png"><img alt="../../_images/thu_vien2.png" src="../../_images/thu_vien2.png" style="width: 608.0px; height: 300.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
@@ -196,18 +197,18 @@
 <blockquote>
 <div><ul>
 <li><dl>
-<dt><strong>Đi thẳng</strong>: S1 và S4 không đọc được vạch đen</dt><dd><a class="reference internal image-reference" href="../../_images/bai_9.13.png"><img alt="../../_images/bai_9.13.png" class="align-center" src="../../_images/bai_9.13.png" style="width: 300px;" /></a>
+<dt><strong>Đi thẳng</strong>: S1 và S4 không đọc được vạch đen</dt><dd><a class="reference internal image-reference" href="../../_images/bai_9.11.png"><img alt="../../_images/bai_9.11.png" class="align-center" src="../../_images/bai_9.11.png" style="width: 300px;" /></a>
 </dd>
 </dl>
 </li>
 <li><p><strong>Rẽ trái:</strong>  S1 đọc được vạch đen, S4 thì không</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_9.23.png"><img alt="../../_images/bai_9.23.png" class="align-center" src="../../_images/bai_9.23.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_9.21.png"><img alt="../../_images/bai_9.21.png" class="align-center" src="../../_images/bai_9.21.png" style="width: 300px;" /></a>
 </div></blockquote>
 </li>
 <li><p><strong>Rẽ phải:</strong> S4 đọc được vạch đen, S1 thì không</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/bai_9.33.png"><img alt="../../_images/bai_9.33.png" class="align-center" src="../../_images/bai_9.33.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/bai_9.31.png"><img alt="../../_images/bai_9.31.png" class="align-center" src="../../_images/bai_9.31.png" style="width: 300px;" /></a>
 </div></blockquote>
 </li>
 </ul>
@@ -224,7 +225,7 @@
 <h2>2. Hàm đẩy vật 1 vào ô có đường nét đứt màu đỏ<a class="headerlink" href="#ham-day-vat-1-vao-o-co-duong-net-dut-mau-do" title="Permalink to this heading"></a></h2>
 <p>Trước khi lập trình, bạn cần biết góc đóng và mở trên tay gắp Rover là bao nhiêu độ, chi tiết như trong hình dưới:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/dong_mo_tay_gap.png"><img alt="../../_images/dong_mo_tay_gap.png" src="../../_images/dong_mo_tay_gap.png" style="width: 512.0px; height: 184.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/dong_mo_tay_gap1.png"><img alt="../../_images/dong_mo_tay_gap1.png" src="../../_images/dong_mo_tay_gap1.png" style="width: 512.0px; height: 184.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>

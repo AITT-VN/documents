@@ -66,6 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -172,7 +173,7 @@
              
   <section id="cam-bien-nhiet-do-do-am-dht20">
 <h1>1. Cảm biến nhiệt độ độ ẩm DHT20<a class="headerlink" href="#cam-bien-nhiet-do-do-am-dht20" title="Permalink to this heading"></a></h1>
-<a class="reference internal image-reference" href="../../_images/1.17.png"><img alt="../../_images/1.17.png" class="align-center" src="../../_images/1.17.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.13.png"><img alt="../../_images/1.13.png" class="align-center" src="../../_images/1.13.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -183,7 +184,7 @@
 <section id="mua-san-pham">
 <h2><strong>1. Mua sản phẩm</strong><a class="headerlink" href="#mua-san-pham" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference external image-reference" href="https://ohstem.vn/product/cam-bien-dht20/"><img alt="some image" class="with-shadow align-center" src="../../_images/gio4.png" style="width: 588.0px; height: 81.0px;" /></a>
+<a class="reference external image-reference" href="https://ohstem.vn/product/cam-bien-dht20/"><img alt="some image" class="with-shadow align-center" src="../../_images/gio1.png" style="width: 588.0px; height: 81.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -214,11 +215,11 @@
 </ul>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/yolo4.png"><img alt="../../_images/yolo4.png" class="align-center" src="../../_images/yolo4.png" style="width: 200px;" /></a>
+<tr class="row-odd"><th class="head"><a class="reference internal image-reference" href="../../_images/yolo.png"><img alt="../../_images/yolo.png" class="align-center" src="../../_images/yolo.png" style="width: 200px;" /></a>
 </th>
-<th class="head"><a class="reference internal image-reference" href="../../_images/mmr3.png"><img alt="../../_images/mmr3.png" class="align-center" src="../../_images/mmr3.png" style="width: 200px;" /></a>
+<th class="head"><a class="reference internal image-reference" href="../../_images/mmr.png"><img alt="../../_images/mmr.png" class="align-center" src="../../_images/mmr.png" style="width: 200px;" /></a>
 </th>
-<th class="head"><a class="reference internal image-reference" href="../../_images/1.17.png"><img alt="../../_images/1.17.png" class="align-center" src="../../_images/1.17.png" style="width: 200px;" /></a>
+<th class="head"><a class="reference internal image-reference" href="../../_images/1.13.png"><img alt="../../_images/1.13.png" class="align-center" src="../../_images/1.13.png" style="width: 200px;" /></a>
 </th>
 </tr>
 </thead>
@@ -239,7 +240,7 @@
 <li><p><strong>Bước 4</strong>: Kết nối cảm biến nhiệt độ độ ẩm DHT20 vào <strong>chân I2C trên mạch mở rộng</strong></p></li>
 </ul>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../../_images/1.26.png"><img alt="../../_images/1.26.png" src="../../_images/1.26.png" style="width: 395.5px; height: 383.59999999999997px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.23.png"><img alt="../../_images/1.23.png" src="../../_images/1.23.png" style="width: 395.5px; height: 383.59999999999997px;" /></a>
 <figcaption>
 <p><span class="caption-text">Bạn có thể kết nối cảm biến DHT20 vào 1 trong 2 chân I2C</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
@@ -251,12 +252,12 @@
 <ul>
 <li><p><strong>Bước 1:</strong> Tải thư viện <strong>AIOT KIT</strong>, xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/aiot2.png"><img alt="../../_images/aiot2.png" class="align-center" src="../../_images/aiot2.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/aiot.png"><img alt="../../_images/aiot.png" class="align-center" src="../../_images/aiot.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Sau khi tải thư viện, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh tương ứng:</p>
-<a class="reference internal image-reference" href="../../_images/lenh_aiot2.png"><img alt="../../_images/lenh_aiot2.png" class="align-center" src="../../_images/lenh_aiot2.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/lenh_aiot.png"><img alt="../../_images/lenh_aiot.png" class="align-center" src="../../_images/lenh_aiot.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -264,7 +265,7 @@
 </li>
 <li><p><strong>Bước 2</strong>: Gửi chương trình sau xuống Yolo:Bit</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/1.35.png"><img alt="../../_images/1.35.png" class="align-center" src="../../_images/1.35.png" style="width: 523.0px; height: 280.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.32.png"><img alt="../../_images/1.32.png" class="align-center" src="../../_images/1.32.png" style="width: 523.0px; height: 280.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

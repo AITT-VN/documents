@@ -64,6 +64,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -139,7 +140,7 @@
 <ul>
 <li><p><strong>Còi báo</strong> (Buzzer) hay còn gọi là <strong>còi chíp hoặc còi xung</strong>, là một loại thiết bị có thể phát ra âm báo hay dùng trong các mạch điện tử.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/7.12.png"><img alt="../../../_images/7.12.png" class="align-center" src="../../../_images/7.12.png" style="width: 400px;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/7.14.png"><img alt="../../../_images/7.14.png" class="align-center" src="../../../_images/7.14.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -159,7 +160,7 @@
 </li>
 <li><p>Nguồn không đủ mạnh để buzzer phát ra âm thanh to và rõ nên nguồn được cấp cho buzzer là nguồn trực tiếp từ cực dương (3V) và cực âm (GND) của nguồn điện. <strong>“Công tắc MOSFET”</strong> được sử dụng giúp ta có thể điều khiển buzzer bật tắt tùy ý bằng cách bật hoặc tắt dòng điện đi qua buzzer.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../../_images/7.23.png"><img alt="../../../_images/7.23.png" class="align-center" src="../../../_images/7.23.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/7.26.png"><img alt="../../../_images/7.26.png" class="align-center" src="../../../_images/7.26.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -183,7 +184,7 @@
 </li>
 <li><p><strong>Sơ đồ mạch điện</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/7.32.png"><img alt="../../../_images/7.32.png" class="align-center" src="../../../_images/7.32.png" style="width: 500px;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/7.33.png"><img alt="../../../_images/7.33.png" class="align-center" src="../../../_images/7.33.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -194,14 +195,14 @@
 <div><ul class="simple">
 <li><p>Khi nối chân TRIGGER với 3V, MOSFET đóng, dòng điện đi từ 3V qua buzzer xuống GND, tạo thành mạch điện kín giúp buzzer phát ra âm thanh.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../../_images/7.42.png"><img alt="../../../_images/7.42.png" class="align-center" src="../../../_images/7.42.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/7.43.png"><img alt="../../../_images/7.43.png" class="align-center" src="../../../_images/7.43.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
 <li><p>Ngược lại, khi nối TRIGGER với GND, MOSFET mở, không có dòng điện chạy qua nên buzzer không hoạt động.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../../_images/7.52.png"><img alt="../../../_images/7.52.png" class="align-center" src="../../../_images/7.52.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/7.53.png"><img alt="../../../_images/7.53.png" class="align-center" src="../../../_images/7.53.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -214,7 +215,7 @@
 <hr class="docutils" />
 <p>Hãy lắp mạch điện như hình minh họa bên dưới:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/7.61.png"><img alt="../../../_images/7.61.png" class="align-center" src="../../../_images/7.61.png" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/7.62.png"><img alt="../../../_images/7.62.png" class="align-center" src="../../../_images/7.62.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

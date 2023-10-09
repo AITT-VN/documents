@@ -66,6 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
 <ul>
@@ -161,7 +162,7 @@
 <h1>2. 1. Robot di chuyển và tự dừng trước vạch đen<a class="headerlink" href="#robot-di-chuyen-va-tu-dung-truoc-vach-den" title="Permalink to this heading"></a></h1>
 <p>Trong dự án xBot này, chúng ta sẽ viết chương trình đểu sau khi nhấn nút, robot di chuyển về phía trước và tự dừng trước vạch đen.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.18.png"><img alt="../../_images/1.18.png" src="../../_images/1.18.png" style="width: 300.0px; height: 251.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.17.png"><img alt="../../_images/1.17.png" src="../../_images/1.17.png" style="width: 300.0px; height: 251.0px;" /></a>
 </figure>
 <section id="video-huong-dan-lap-trinh">
 <h2><strong>1. Video hướng dẫn lập trình:</strong><a class="headerlink" href="#video-huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
@@ -174,7 +175,7 @@
 <h2><strong>2. Chương trình hoàn chỉnh:</strong><a class="headerlink" href="#chuong-trinh-hoan-chinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.27.png"><img alt="../../_images/1.27.png" src="../../_images/1.27.png" style="width: 512.0px; height: 167.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.26.png"><img alt="../../_images/1.26.png" src="../../_images/1.26.png" style="width: 512.0px; height: 167.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -185,21 +186,21 @@
 <hr class="docutils" />
 <p>Chúng ta sẽ thêm phần khối lệnh chờ nút nhấn được nhấn để bắt đầu chương trình:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.36.png"><img alt="../../_images/1.36.png" src="../../_images/1.36.png" style="width: 512.0px; height: 72.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.35.png"><img alt="../../_images/1.35.png" src="../../_images/1.35.png" style="width: 512.0px; height: 72.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Khối lệnh bên dưới sẽ giúp robot di chuyển. Bạn có thể thay đổi hướng di chuyển (tới, lùi, rẽ trái, rẽ phải) và tốc độ nhanh hoặc chậm bằng nhập giá trị từ 0 – 100.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.44.png"><img alt="../../_images/1.44.png" src="../../_images/1.44.png" style="width: 512.0px; height: 78.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.43.png"><img alt="../../_images/1.43.png" src="../../_images/1.43.png" style="width: 512.0px; height: 78.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Khối lệnh điều khiển cảm biến dò đường:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.53.png"><img alt="../../_images/1.53.png" src="../../_images/1.53.png" style="width: 512.0px; height: 107.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.52.png"><img alt="../../_images/1.52.png" src="../../_images/1.52.png" style="width: 512.0px; height: 107.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -207,7 +208,7 @@
 <p>Khối lệnh được thiết lập như trên sẽ trả về giá trị True nếu như 4 mắt đọc của cảm biến dò line đều nằm trên vạch đen. Chỉ cần 1 trong 4 mắt đọc không nằm trên vạch đen thì khối lệnh sẽ trả về giá trị False.</p>
 <p>Ta kết hợp khối lệnh này với khối lệnh <strong>“chờ cho đến khi”</strong> để khi xBot di chuyển, nó sẽ luôn kiểm tra các kết quả trả về từ cảm biến dò line. Nếu xBot chạm vạch đen, thì khối lệnh tiếp theo mới được thực hiện</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/1.62.png"><img alt="../../_images/1.62.png" src="../../_images/1.62.png" style="width: 300.0px; height: 91.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/1.61.png"><img alt="../../_images/1.61.png" src="../../_images/1.61.png" style="width: 300.0px; height: 91.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>

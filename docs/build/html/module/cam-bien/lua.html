@@ -18,6 +18,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -197,7 +198,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>Điện áp hoạt động: 3.3V</p></li>
-<li><p>Kết nối: I2C</p></li>
+<li><p>Kết nối: Digital</p></li>
 <li><p>Khoảng cách: 80cm</p></li>
 <li><p>Góc quét: 60 độ</p></li>
 <li><p>Kích thước module: 66mm x 63 mm x 18 mm (DxRxC)</p></li>
@@ -230,11 +231,11 @@
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>SDA</p></td>
-<td><p>Truyền dữ liệu</p></td>
+<td><p>Không sử dụng</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>SCL</p></td>
-<td><p>Xung tín hiệu</p></td>
+<td><p>Tín hiệu cảm biến</p></td>
 </tr>
 </tbody>
 </table>
@@ -271,11 +272,8 @@
 <li><p><strong>Bước 3</strong>: Sử dụng dây Grove cắm vào cảm biến</p></li>
 <li><p><strong>Bước 4</strong>: Kết nối cảm biến với <strong>P0 trên mạch mở rộng</strong>.</p></li>
 </ul>
-<figure class="align-center" id="id5">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/18.2.png"><img alt="../../_images/18.2.png" src="../../_images/18.2.png" style="width: 595.0px; height: 333.0px;" /></a>
-<figcaption>
-<p><span class="caption-text">Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
-</figcaption>
 </figure>
 </section>
 <section id="huong-dan-lap-trinh-voi-ohstem-app">

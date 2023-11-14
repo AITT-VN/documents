@@ -28,7 +28,7 @@ Module cảm biến lửa này có tới 5 kênh, giúp có thể phát hiện l
 - **Thông số kỹ thuật**
 
     + Điện áp hoạt động: 3.3V
-    + Kết nối: I2C
+    + Kết nối: Digital
     + Khoảng cách: 80cm
     + Góc quét: 60 độ
     + Kích thước module: 66mm x 63 mm x 18 mm (DxRxC)
@@ -44,8 +44,8 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 
     1, "GND", "Nối đất"
     2, "VCC", "Cấp nguồn (3.3V)"
-    3, "SDA", "Truyền dữ liệu"
-    4, "SCL", "Xung tín hiệu"
+    3, "SDA", "Không sử dụng"
+    4, "SCL", "Tín hiệu cảm biến"
 
 
 **3. Kết nối**
@@ -82,8 +82,6 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 ..  figure:: images/18.2.png
     :scale: 100%
     :align: center 
-
-    Đây cũng là một cảm biến có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
 
 **4. Hướng dẫn lập trình với OhStem App**

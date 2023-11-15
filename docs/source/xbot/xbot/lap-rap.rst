@@ -52,7 +52,7 @@
 Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động chính xác.
 
 .. image:: Images/xbot_2.9.png
-    :width: 1000px
+    :scale: 90%
     :align: center  
 |
 

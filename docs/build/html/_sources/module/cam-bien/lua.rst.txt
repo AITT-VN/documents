@@ -44,8 +44,8 @@ Cảm biến lửa có 4 chân, và mỗi chân có chức năng như sau:
 
     1, "GND", "Nối đất"
     2, "VCC", "Cấp nguồn (3.3V)"
-    3, "SDA", "Không sử dụng"
-    4, "SCL", "Tín hiệu cảm biến"
+    3, "NC", "Không sử dụng"
+    4, "SIG", "Tín hiệu cảm biến"
 
 
 **3. Kết nối**

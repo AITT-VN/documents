@@ -31,6 +31,12 @@ OhStem xin chào tất cả các bạn!
 
 .. toctree::
    :maxdepth: 2
+   :caption: Yolo UNO - Mạch lập trình Arduino
+
+   yolo_uno/yolo_uno.rst
+
+.. toctree::
+   :maxdepth: 2
    :caption: Robot STEM Rover
 
    robot_rover/rover.rst

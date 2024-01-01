@@ -1,0 +1,69 @@
+7. Hiển thị chữ "Hello" lên màn hình LCD 1602
+======
+
+1. Mục tiêu
+-----
+--------
+
+Làm quen mới module LCD 16x2 để hiện thị các thông tin dạng ký tự 
+
+2. Thiết bị cần sử dụng
+---------
+----------
+
+- Mạch Yolo UNO:
+
+..  image:: images/yolo_uno.png
+    :scale: 60%
+    :align: center 
+|
+
+- Module led RGB kèm dây tín hiệu: 
+
+..  image:: images/lcd_1602.png
+    :scale: 90%
+    :align: center 
+|
+
+3. Kết nối phần cứng
+-------
+--------
+
+- Kết nối màn hình LCD 1602 với cổng I2C1 trên Yolo UNO
+
+..  figure:: images/lcd_1602_2.png
+    :scale: 100%
+    :align: center 
+|
+
+
+4. Chương trình lập trình
+------
+------
+
+- **Câu lệnh hiển thị lên màn hình LCD:**
+
+..  image:: images/lcd_1602_1.png
+    :scale: 90%
+    :align: center 
+|
+
+- **Chương trình lập trình:**
+
+..  image:: images/lcd_1602_3.png
+    :scale: 90%
+    :align: center 
+|
+
+5. Chương trình mẫu
+----
+-----
+
+Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
+
+Hiển thị chữ "Hello" lên màn hình LCD 1602: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aLhIA7hTZTg3i7un0onIfXzpUE>`_
+
+..  image:: images/lcd_1602_4.png
+    :scale: 90%
+    :align: center 
+|

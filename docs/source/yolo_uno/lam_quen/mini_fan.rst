@@ -1,0 +1,92 @@
+9. Quạt thông minh 
+=======
+
+1. Mục tiêu
+-----
+--------
+
+Sau khi đã làm quen với cảm biến DHT20 và màn hình LCD, chúng ta sẽ cùng nâng cấp dự án lên 1 cấp độ phức tạp hơn, đó là quạt mini tự hoạt động dựa vào nhiệt độ của môi trường. Cụ thể, hệ thống sẽ hoạt động dựa vào nhiệt độ mà cảm biến DHT20 gửi về:
+
+- Nếu nhiệt độ lớn hơn 27 độ thì quạt sẽ bật
+
+- Nếu nhiệt độ nhỏ hơn 27 độ thì quạt sẽ tắt
+
+
+2. Thiết bị cần sử dụng
+---------
+----------
+
+- Mạch Yolo UNO:
+
+..  image:: images/yolo_uno.png
+    :scale: 60%
+    :align: center 
+|
+
+- Module led RGB kèm dây tín hiệu: 
+
+..  image:: images/lcd_1602.png
+    :scale: 90%
+    :align: center 
+|
+
+- Cảm biến nhiệt độ độ ẩm DHT20 kèm dây tín hiệu:
+
+..  image:: images/dht20.png
+    :scale: 90%
+    :align: center 
+|
+
+- Module quạt mini kèm dây tín hiệu: 
+
+..  image:: images/mini_fan.png
+    :scale: 90%
+    :align: center 
+|
+
+3. Kết nối phần cứng
+-------
+--------
+
+- Màn hình LCD và cảm biến DHT20 kết nối vào cổng I2C1 và I2C2
+
+- Module quạt kết nối vào cổng D3 - D4
+
+
+..  figure:: images/mini_fan_1.png
+    :scale: 100%
+    :align: center 
+|
+
+4. Chương trình lập trình
+------
+------
+
+- **Giới thiệu khối lệnh:**
+
+..  image:: images/dht20_2.png
+    :scale: 90%
+    :align: center 
+|
+    
+Câu lệnh bật tắt quạt với các mức độ khác nhau từ 0 đến 100 %.
+
+- **Chương trình lập trình:**
+
+..  image:: images/mini_fan_3.png
+    :scale: 90%
+    :align: center 
+|
+
+5. Chương trình mẫu
+----
+-----
+
+Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
+
+Quạt thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aLjZmqBltgESPN4xpP7RtbvjTP>`_
+
+..  image:: images/mini_fan_4.png
+    :scale: 100%
+    :align: center 
+|

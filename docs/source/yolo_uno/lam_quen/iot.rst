@@ -1,4 +1,4 @@
-14. Nhận và gửi thông tin lên server
+14. Nhận và gửi thông tin lên server IoT
 ========
 
 1. Mục tiêu

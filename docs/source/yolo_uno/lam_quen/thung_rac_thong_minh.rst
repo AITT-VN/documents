@@ -83,7 +83,7 @@ Trên cảm biến khoảng cách, chân Trigger là chân phát sóng siêu âm
 
 Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
 
-Vườn thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aTndblHTWVN4i72Oa48uCO6Acx>`_
+Thùng rác thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aTndblHTWVN4i72Oa48uCO6Acx>`_
 
 ..  image:: images/thung_rac_5.png
     :scale: 100%

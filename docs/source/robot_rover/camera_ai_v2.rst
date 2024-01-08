@@ -222,7 +222,7 @@ Sau khi đã điền xong các thông tin, bạn ấn **Bật camera** để b�
 Chờ khoảng 1 phút để hiện hình ảnh và kết quả nhận dạng sẽ được thể hiện trên màn hình, tương tự như hình sau: 
 
 .. image:: images/camera_v2_17.png
-    :scale: 100%
+    :scale: 80%
     :align: center
 |
 
@@ -257,10 +257,10 @@ Các khối lệnh trong danh mục Camera AI:
 3. Gửi chương trình cơ bản sau lên Robot Rover:
 
 ..  figure:: images/camera_v2_21.png
-    :scale: 100%
+    :scale: 80%
     :align: center
 
-    `<https://app.ohstem.vn/#!/share/yolobit/2ZTyEqNXP8O0hKOWEAB94wbrsCW>`_ 
+    `<https://app.ohstem.vn/#!/share/yolobit/2af4ex5ZvT1H6uh2rrWNMEFt4Ql>`_ 
 
 **Giải thích chương trình:** Đầu tiên chúng ta khởi tạo kết nối của camera AI V2 với robot Rover thông qua cổng P0/P1. Tiếp theo, trong vòng lặp lại mãi, sau mỗi giây, chúng ta sẽ liên tục cập nhật kết quả nhận dạng từ camera và so sánh với mô hình đã huấn luyện, với độ chính xác mà bạn mong muốn.
 
@@ -323,7 +323,7 @@ Trên trang địa chỉ IP của camera, ở phần **Cài đặt nâng cao (C�
 Bật cùng lúc 2 tab địa chỉ IP của camera và bảng điều khiển IoT, kết quả được hiển thị tương tự như hình: 
 
 .. image:: images/camera_v2_25.png
-    :scale: 100%
+    :scale: 90%
     :align: center
 |
 
@@ -342,10 +342,10 @@ Mở tab mới, truy cập vào `<https://app.ohstem.vn/>`_ chọn **lập trìn
 Cuối cùng, gửi chương trình sau vào Yolo:Bit:
 
 ..  figure:: images/camera_v2_27.png
-    :scale: 100%
+    :scale: 80%
     :align: center
 
-    `<https://app.ohstem.vn/#!/share/yolobit/2ZWEydvastGxtGfn0sDIVR6L4f8>`_ 
+    `<https://app.ohstem.vn/#!/share/yolobit/2af4I5bvMQKIS5uUTxvzoy3ptf4>`_ 
 
 
 **Giải thích chương trình:**
@@ -353,14 +353,14 @@ Cuối cùng, gửi chương trình sau vào Yolo:Bit:
 Để nhận được thông tin từ bảng điều khiển, Yolo:Bit cần được kết nối với wifi và kết nối với bảng điều khiển mà bạn đã tạo trước đó. Do đó, bạn cần nhập đúng thông tin wifi và username của bảng điều khiển vào 2 khối lệnh:   
 
 .. image:: images/camera_v2_28.png
-    :scale: 100%
+    :scale: 90%
     :align: center
 |
 
 Tiếp theo, đăng ký nhận thông tin từ kênh dữ liệu (từ V1.. V20) để so sánh kết quả và thực hiện nhiệm vụ: 
 
 .. image:: images/camera_v2_29.png
-    :scale: 70%
+    :scale: 90%
     :align: center
 |
 

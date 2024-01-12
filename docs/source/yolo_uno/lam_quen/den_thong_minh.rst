@@ -1,4 +1,4 @@
-6. Đèn thông minh
+7. Đèn thông minh
 ======
 
 1. Mục tiêu

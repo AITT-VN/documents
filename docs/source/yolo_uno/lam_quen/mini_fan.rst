@@ -1,4 +1,4 @@
-9. Quạt thông minh 
+10. Quạt thông minh 
 =======
 
 1. Mục tiêu

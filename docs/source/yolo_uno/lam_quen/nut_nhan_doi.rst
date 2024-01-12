@@ -1,4 +1,4 @@
-5. Bật/tắt đèn (tiny RGB) bằng nút nhấn đôi
+6. Bật/tắt đèn (tiny RGB) bằng nút nhấn đôi
 ===========
 
 1. Mục tiêu

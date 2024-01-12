@@ -1,4 +1,4 @@
-3. Bật tắt đèn LED trên board
+4. Bật tắt đèn LED trên board
 ==========
 
 1. Mục tiêu 

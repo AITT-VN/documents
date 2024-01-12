@@ -1,4 +1,4 @@
-4. Đổi màu đèn Tiny RGB 
+5. Đổi màu đèn Tiny RGB 
 ========
 
 1. Mục tiêu

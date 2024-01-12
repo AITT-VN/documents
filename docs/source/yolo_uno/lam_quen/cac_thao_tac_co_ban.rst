@@ -1,4 +1,4 @@
-2. Các thao tác với Yolo UNO trên OhStem App
+3. Các thao tác với Yolo UNO trên OhStem App
 ============
 
 **1. Truy cập vào OhStem App**

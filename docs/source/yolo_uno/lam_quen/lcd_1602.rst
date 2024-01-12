@@ -1,4 +1,4 @@
-7. Hiển thị chữ "Hello" lên màn hình LCD 1602
+8. Hiển thị chữ "Hello" lên màn hình LCD 1602
 ======
 
 1. Mục tiêu

@@ -1,4 +1,4 @@
-13. Nhận diện hình ảnh bằng Camera AI
+14. Nhận diện hình ảnh bằng Camera AI
 ==========
 
 1. Mục tiêu

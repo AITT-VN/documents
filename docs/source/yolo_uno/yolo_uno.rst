@@ -5,6 +5,7 @@
    :maxdepth: 1
 
    lam_quen/gioi_thieu_yolo_uno.rst
+   lam_quen/cai_dat_fw.rst
    lam_quen/cac_thao_tac_co_ban.rst
    lam_quen/bat_tat_den.rst
    lam_quen/tiny_rgb.rst

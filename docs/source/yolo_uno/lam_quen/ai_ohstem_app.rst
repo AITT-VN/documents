@@ -1,4 +1,4 @@
-12. Nhận diện hình ảnh bằng OhStem App
+13. Nhận diện hình ảnh bằng OhStem App
 =========
 
 1. Mục tiêu

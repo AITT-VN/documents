@@ -1,4 +1,4 @@
-11. Thùng rác thông minh 
+12. Thùng rác thông minh 
 ============
 
 1. Mục tiêu

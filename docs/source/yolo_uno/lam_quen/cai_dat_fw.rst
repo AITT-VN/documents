@@ -6,7 +6,7 @@ Phần mềm bên trong Yolo UNO (firmware) thường xuyên được cập nh�
 
 Các bước thực hiện: 
 
-- Bước 1: Truy cập vào link `<https://fw.ohstem.vn/>`_. Giao diện hiển thị như hình
+- Bước 1: Truy cập vào link `<https://fw.ohstem.vn/>`_. Giao diện hiển thị như hình:
 
 ..  image:: images/fw_1.png
     :scale: 60%
@@ -20,7 +20,7 @@ Các bước thực hiện:
     :align: center 
 |
 
-- Bước 3: **Nhấn giữ nút Boot** trên Yolo UNO và **nhấn nút Reset** trong 5 giây, để mạch Yolo UNO vào bootloader mode: 
+- Bước 3: **Nhấn và giữ nút Boot** trên Yolo UNO, **trong lúc đó nhấn nút Reset và thả ra sau 1 giây**, **sau đó mới thả nút Boot** để thiết bị vào trạng thái sẵn sàng cập nhật firmware: 
 
 ..  image:: images/fw_3.gif
     :scale: 100%

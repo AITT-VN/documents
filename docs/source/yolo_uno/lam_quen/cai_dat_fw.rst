@@ -1,7 +1,8 @@
-2. Hướng dẫn cài đặt firmware
+2. Hướng dẫn cập nhật firmware
 ===========
 
-Khi sử dụng mạch Yolo UNO lần đầu, bạn cần cập nhật firmware mới nhất cho Yolo UNO. 
+Phần mềm bên trong Yolo UNO (firmware) thường xuyên được cập nhật và nâng cấp, bạn nên tiến hành cập nhật khi mới sử dụng lần đầu để đảm bảo thiết bị đang chạy firmware mới nhất và sẽ giúp chạy ổn định hơn. 
+
 
 Các bước thực hiện: 
 
@@ -26,7 +27,7 @@ Các bước thực hiện:
     :align: center 
 |
 
-- Bước 4: Chọn firmware cần cập nhật là **Yolo UNO v1.1**, chọn cổng kết nối và nhấn **Cập nhật**
+- Bước 4: Chọn firmware cần cập nhật là **Yolo UNO v1.1**, chọn cổng kết nối có tên là **USB/JTAG serial...** và nhấn **Cập nhật**
 
 ..  image:: images/fw_4.png
     :scale: 80%

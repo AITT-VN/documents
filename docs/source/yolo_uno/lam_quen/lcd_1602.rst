@@ -82,7 +82,7 @@ Hiển thị chữ "Hello" lên màn hình LCD 1602: `Tại đây <https://app.o
 
 **Cách thay đổi địa chỉ I2C của màn hình LCD:**
 
-Để sử dụng thêm các màn hình khác bạn hãy **dùng mỏ hàn chì để hàn để nối 2 đầu của 1 điểm lại với nhau để thay đổi địa chỉ I2C của màn hình**, tương tự minh họa sau:
+Để sử dụng thêm các màn hình khác **bạn hãy dùng mỏ hàn chì để hàn để nối 2 đầu của 1 điểm lại với nhau để thay đổi địa chỉ I2C của màn hình**, tương tự minh họa sau:
 
 ..  image:: images/lcd_1602_6.png
     :scale: 80%

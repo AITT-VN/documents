@@ -49,7 +49,7 @@ Có thể thay đổi thời gian sáng tắt của đèn led để tạo các h
 
 Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
 
-Bật tắt đèn LED trên board: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aLcEMEIMJYYvq47M7660i2djBN>`_
+Bật tắt đèn LED trên board: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2ciAWS5HFG4ud8KbL3COyrJ280F>`_
 
 ..  image:: images/bat_tat_den_4.png
     :scale: 100%

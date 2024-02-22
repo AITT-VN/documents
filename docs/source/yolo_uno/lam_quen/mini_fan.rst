@@ -5,7 +5,11 @@
 -----
 --------
 
-Sau khi đã làm quen với cảm biến DHT20 và màn hình LCD, chúng ta sẽ cùng nâng cấp dự án lên 1 cấp độ phức tạp hơn, đó là quạt mini tự hoạt động dựa vào nhiệt độ của môi trường. Cụ thể, hệ thống sẽ hoạt động dựa vào nhiệt độ mà cảm biến DHT20 gửi về:
+Tiếp theo, chúng ta sẽ cùng nâng cấp dự án lên 1 cấp độ phức tạp hơn, kết hợp cảm biến DHT20 với màn hình LCD và quạt mini. Thực hiện dự án **Quạt thông minh**, tự hoạt động dựa vào nhiệt độ của môi trường. 
+
+Cụ thể, hệ thống sẽ hoạt động bằng cách kiểm tra dựa vào nhiệt độ mà cảm biến DHT20 gửi về **sau mỗi 5 giây**: 
+
+- Thông tin nhiệt độ và độ ẩm của không khí được hiển thị lên LCD
 
 - Nếu nhiệt độ lớn hơn 27 độ thì quạt sẽ bật
 
@@ -84,7 +88,7 @@ Câu lệnh bật tắt quạt với các mức độ khác nhau từ 0 đến 1
 
 Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
 
-Quạt thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aLjZmqBltgESPN4xpP7RtbvjTP>`_
+Quạt thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2ciDU8SAbQTMufVifBfZPopHxkW>`_
 
 ..  image:: images/mini_fan_4.png
     :scale: 100%

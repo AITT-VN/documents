@@ -70,9 +70,12 @@ Câu lệnh đọc kết quả của cảm biến ánh sáng:
 - **Chương trình lập trình:**
 
 ..  image:: images/den_thong_minh_4.png
-    :scale: 80%
+    :scale: 90%
     :align: center 
 |
+
+- **Giải thích chương trình:**  Sau khi thực hiện gửi chương trình lên Yolo UNO, đèn LED trên Yolo UNO sẽ chớp tắt đèn đỏ. Hãy thử dùng tay che cảm biến ánh sáng, module 4 LED RGB sẽ bật đèn màu trắng. 
+
 
 5. Chương trình mẫu
 ----
@@ -80,7 +83,7 @@ Câu lệnh đọc kết quả của cảm biến ánh sáng:
 
 Nhấp vào chữ tại đây để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.
 
-Đèn thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2aLkkP7V7pWAljBZJrYZPhB9lvo>`_
+Đèn thông minh: `Tại đây <https://app.ohstem.vn/#!/share/yolouno/2ciB2FeyKHyc15nCOanH0eAH2wH>`_
 
 ..  image:: images/den_thong_minh_5.png
     :scale: 100%

@@ -6,7 +6,7 @@
     :align: center 
 |
 
-Yolo UNO là mạch lập trình được thiết kế theo form của Arduino Uno với chip ESP32-S3 là dòng chip mới nhất của Espressif, với bộ nhớ flash có dung lượng 4MB và bộ nhớ PSRAM lên đến 8MB.
+Yolo UNO là mạch lập trình được thiết kế theo form của Arduino Uno với chip ESP32-S3 là dòng chip mới nhất của Espressif, với bộ nhớ flash có dung lượng 16MB và bộ nhớ PSRAM lên đến 8MB.
 
 Ngoài kích thước và sơ đồ chân tương thích hoàn toàn với mạch Arduino Uno truyền thống, Yolo UNO còn có tích hợp sẵn 12 cổng kết nối chuẩn Grove, giúp dễ dàng sử dụng với các module và cảm biến trong hệ sinh thái thiết bị AI/IoT của OhStem.
 

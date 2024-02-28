@@ -19,3 +19,4 @@
    lam_quen/ai_ohstem_app.rst
    lam_quen/ai_camera_ai.rst
    lam_quen/iot.rst
+   lam_quen/era.rst

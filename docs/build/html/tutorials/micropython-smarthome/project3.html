@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project 3: Đèn thông minh &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -29,15 +30,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,8 +135,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Project 3: Đèn thông minh</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Project 3: Đèn thông minh</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/micropython-smarthome/project3.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -142,9 +147,9 @@
            <div itemprop="articleBody">
              
   <section id="project-3-den-thong-minh">
-<h1>Project 3: Đèn thông minh<a class="headerlink" href="#project-3-den-thong-minh" title="Permalink to this heading"></a></h1>
+<h1>Project 3: Đèn thông minh<a class="headerlink" href="#project-3-den-thong-minh" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Trong một ngôi nhà, nếu đèn có thể tự bật một cách thông minh khi có người hoặc khi trời bắt đầu tối thì sẽ rất thuận tiện đấy. Một số ví dụ phổ biến là đèn ngoài cửa khi ta đi về nhà hoặc đèn cầu thang khi ta đi lên xuống buổi tối.</p>
 <p>Trong bài này, chúng ta cùng nhau làm một đèn ngoài cửa nhà thông minh với các tính năng sau:</p>
 <blockquote>
@@ -158,15 +163,15 @@
 <p>Khi phát hiện có chuyển động, chân tín hiệu của module sẽ được bật ở mức <code class="docutils literal notranslate"><span class="pre">HIGH</span></code>. Bình thường, chân tín hiệu này sẽ ở mức <code class="docutils literal notranslate"><span class="pre">LOW</span></code>.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/project-3-22.png"><img alt="../../_images/project-3-22.png" class="align-center" src="../../_images/project-3-22.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/project-3-32.png"><img alt="../../_images/project-3-32.png" class="align-center" src="../../_images/project-3-32.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mở phần mềm uPyCraft.</p></li>
@@ -195,7 +200,7 @@
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Trong chương trình trên, chúng ta sẽ sử dụng các hàm đơn giản đã học là <code class="docutils literal notranslate"><span class="pre">read_digital()</span></code> để đọc tín hiệu Digital từ cảm biến PIR và hàm <code class="docutils literal notranslate"><span class="pre">read_analog()</span></code> để đọc giá trị cảm biến ánh sáng. Sau đó, chương trình kiểm tra điều kiện có phát hiện sự chuyển động và trời có đang tối không để bật đèn.</p>
 <p>Sau khi bật đèn, chúng ta sử dụng cách thức đo thời gian như trong project 2 để biết đến lúc phải tắt đèn (sau 10 giây tính từ lúc bật đèn).</p>
 </section>

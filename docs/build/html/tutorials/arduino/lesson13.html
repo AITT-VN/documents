@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>14. Bài học 13: Giao tiếp Bluetooth Low Energy &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -162,9 +167,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>14. Bài học 13: Giao tiếp Bluetooth Low Energy</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">14. Bài học 13: Giao tiếp Bluetooth Low Energy</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson13.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -175,13 +180,13 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-13-giao-tiep-bluetooth-low-energy">
-<h1>14. Bài học 13: Giao tiếp Bluetooth Low Energy<a class="headerlink" href="#bai-hoc-13-giao-tiep-bluetooth-low-energy" title="Permalink to this heading"></a></h1>
+<h1>14. Bài học 13: Giao tiếp Bluetooth Low Energy<a class="headerlink" href="#bai-hoc-13-giao-tiep-bluetooth-low-energy" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Tìm hiểu về giao tiếp bằng tín hiệu Bluetooth Low Energy (BLE) và viết chương trình để điều khiển động cơ Servo bằng phần mềm trên điện thoại thông qua BLE.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p><em>Bluetooth Low Energy (BLE)</em></p>
 <p>xController sử dụng chip điều khiển ESP32, tích hợp nhiều kết nối không dây bao gồm Wi-Fi và Bluetooth Low Energy (BLE). BLE là một công nghệ Bluetooth tiết kiệm năng lượng, chủ yếu được dùng để truyền lượng dữ liệu nhỏ (băng thông thấp) với khoảng cách ngắn.</p>
 <p>Khác với chuẩn Bluetooth classic luôn được bật, BLE ngủ liên tục trừ khi bắt đầu kết nối. Đây là lý do BLE tiêu thụ năng lượng thấp: lượng tiêu thụ ít hơn 100 lần so với Bluetooth classic (tùy vào môi trường sử dụng). Hơn nữa, BLE không chỉ hỗ trợ giao tiếp Point-to-Point mà còn hỗ trợ Broadcast và Mesh Network.</p>
@@ -194,72 +199,72 @@
 <a class="reference internal image-reference" href="../../_images/ls-13-3.png"><img alt="../../_images/ls-13-3.png" class="align-center" src="../../_images/ls-13-3.png" style="width: 480px;" /></a>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-13.png"><img alt="../../_images/device-13.png" class="align-center" src="../../_images/device-13.png" style="width: 600px;" /></a>
 <p>Lưu ý: Để sử dụng động cơ Servo thì bộ điều khiển xController cần phải được cấp nguồn từ nguồn ngoài (như từ pin) vì nguồn từ USB không đủ điện năng để chạy động cơ.</p>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-13-4.png"><img alt="../../_images/ls-13-4.png" class="align-center" src="../../_images/ls-13-4.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;esp32BLEUtilities.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servos.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;esp32BLEUtilities.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servos.h&gt;</span>
 
 <span class="cp">#define LEFT_PRESSED &quot;!B714&quot; </span><span class="c1">// sự kiện nút left được nhấn</span>
 <span class="cp">#define RIGHT_PRESSED &quot;!B813&quot; </span><span class="c1">// sự kiện nút right được nhấn</span>
 
-<span class="n">Servos</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="n">Servos</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
 
-<span class="n">String</span><span class="w"> </span><span class="n">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">90</span><span class="p">;</span><span class="w"></span>
+<span class="n">String</span><span class="w"> </span><span class="n">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">90</span><span class="p">;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">s</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">BLE</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&quot;OhStem-xController&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Setup Done!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="w">  </span><span class="n">s</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
+<span class="w">  </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">90</span><span class="p">);</span>
+<span class="w">  </span><span class="n">BLE</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&quot;OhStem-xController&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Setup Done!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">isConnected</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="k">while</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLE</span><span class="p">.</span><span class="n">read</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="n">cmd</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">data</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">cmd</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">isConnected</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">      </span><span class="k">while</span><span class="p">(</span><span class="n">BLE</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLE</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cmd</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">cmd</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LEFT_PRESSED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">angle</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">RIGHT_PRESSED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">angle</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LEFT_PRESSED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">angle</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">RIGHT_PRESSED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">angle</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">position</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">angle</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Chương trình trên sẽ kiểm tra xem có nhận được dữ liệu gửi qua giao thức BLE hay không. Nếu tín hiệu tương ứng với nút sang trái trên phần mềm điều khiển (được giới thiệu bên dưới) thì cho động cơ Servo quay về 0 độ. Ngược lại, nếu tín hiệu nhận được tương ứng với nút sang phải thì cho động cơ xoay về 180 độ.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;esp32BLEUtilities.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servos.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;esp32BLEUtilities.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Servos.h&gt;</span>
 </pre></div>
 </div>
 <p>Khai báo sử dụng thư viện để làm việc với BLE và động cơ Servo.</p>
@@ -287,31 +292,31 @@ s.position(0, 90);
 </pre></div>
 </div>
 <p>Phát BLE với tên gọi là “OhStem-xController” để phần mềm có thể quét ra được và kết nối.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">isConnected</span><span class="ss">())</span> {
-    <span class="k">if</span> <span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span> {
-      <span class="nv">cmd</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="c1">;</span>
-      <span class="k">while</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span> {
-        <span class="nv">char</span> <span class="nv">data</span> <span class="o">=</span> <span class="nv">BLE</span>.<span class="nv">read</span><span class="ss">()</span><span class="c1">;</span>
-        <span class="nv">cmd</span> <span class="o">+=</span> <span class="nv">data</span><span class="c1">;</span>
-      }
-      <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="nv">cmd</span><span class="ss">)</span><span class="c1">;</span>
-    }
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">isConnected</span><span class="ss">())</span><span class="w"> </span>{
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span><span class="w"> </span>{
+<span class="w">      </span><span class="nv">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="c1">;</span>
+<span class="w">      </span><span class="k">while</span><span class="ss">(</span><span class="nv">BLE</span>.<span class="nv">available</span><span class="ss">())</span><span class="w"> </span>{
+<span class="w">        </span><span class="nv">char</span><span class="w"> </span><span class="nv">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">BLE</span>.<span class="nv">read</span><span class="ss">()</span><span class="c1">;</span>
+<span class="w">        </span><span class="nv">cmd</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">data</span><span class="c1">;</span>
+<span class="w">      </span>}
+<span class="w">      </span><span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="nv">cmd</span><span class="ss">)</span><span class="c1">;</span>
+<span class="w">    </span>}
 </pre></div>
 </div>
 <p>Sử dụng câu lệnh điều kiện: Nếu có phần mềm đang kết nối vào và có dữ liệu được gửi đến thì ta sẽ xóa lệnh cũ lúc trước đã lưu trong biến <code class="docutils literal notranslate"><span class="pre">cmd</span></code>, đọc dữ liệu mới và lưu lại vào biến <code class="docutils literal notranslate"><span class="pre">cmd</span></code>. Đồng thời, in ra cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span></code>.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">cmd</span> <span class="o">==</span> <span class="nv">LEFT_PRESSED</span><span class="ss">)</span> {
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">angle</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="ss">)</span> {
-    <span class="nv">angle</span> <span class="o">-=</span> <span class="mi">5</span><span class="c1">;</span>
-    <span class="nv">s</span>.<span class="nv">position</span><span class="ss">(</span><span class="mi">0</span>, <span class="nv">angle</span><span class="ss">)</span><span class="c1">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>if (cmd == LEFT_PRESSED) {
+  if (angle &gt; 0) {
+    angle -= 5;
+    s.position(0, angle);
   }
 }
 </pre></div>
 </div>
 <p>Kiểm tra xem lệnh nhận được lúc này có phải đang là nút sang trái không. Nếu điều kiện đúng thì giảm góc quay được lưu trong biến Angle và điều khiển Servo quay đến vị trí góc mới này.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>} <span class="k">else</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">cmd</span> <span class="o">==</span> <span class="nv">RIGHT_PRESSED</span><span class="ss">)</span> {
-  <span class="k">if</span> <span class="ss">(</span><span class="nv">angle</span> <span class="o">&lt;</span> <span class="mi">180</span><span class="ss">)</span> {
-    <span class="nv">angle</span> <span class="o">+=</span> <span class="mi">5</span><span class="c1">;</span>
-    <span class="nv">s</span>.<span class="nv">position</span><span class="ss">(</span><span class="mi">0</span>, <span class="nv">angle</span><span class="ss">)</span><span class="c1">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>} else if (cmd == RIGHT_PRESSED) {
+  if (angle &lt; 180) {
+    angle += 5;
+    s.position(0, angle);
   }
 }
 </pre></div>

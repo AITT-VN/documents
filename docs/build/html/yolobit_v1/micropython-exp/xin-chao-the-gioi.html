@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xin chào thế giới &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -29,15 +30,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,8 +135,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Xin chào thế giới</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Xin chào thế giới</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masteryolobit_v1/micropython-exp/xin-chao-the-gioi.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -142,13 +147,13 @@
            <div itemprop="articleBody">
              
   <section id="xin-chao-the-gioi">
-<h1>Xin chào thế giới<a class="headerlink" href="#xin-chao-the-gioi" title="Permalink to this heading"></a></h1>
+<h1>Xin chào thế giới<a class="headerlink" href="#xin-chao-the-gioi" title="Link to this heading"></a></h1>
 <p>Trong hầu hết các tài liệu hướng dẫn lập trình một ngôn ngữ, thì bài học đầu tiên phần lớn sẽ là viết một chương trình cho máy tính hiện ra dòng chữ Hello World (xin chào thế giới). Chúng ta cũng sẽ làm tương tự nhé.</p>
 <a class="reference internal image-reference" href="../../_images/ls-1-12.png"><img alt="../../_images/ls-1-12.png" class="align-center" src="../../_images/ls-1-12.png" style="width: 600px;" /></a>
 <p>Để làm được điều đó thì thật là dễ với MicroPython với các dòng lệnh sau:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
 
-display.scroll(‘Hello World’)
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">‘</span><span class="n">Hello</span> <span class="n">World</span><span class="err">’</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Chúng ta tìm hiểu từng dòng lệnh một nhé. Dòng đầu tiên là:</p>
@@ -158,7 +163,7 @@ display.scroll(‘Hello World’)
 <p>Dòng lệnh này bảo MicroPython rằng hãy sử dụng tất cả mọi thứ cần thiết để làm việc với Yolo:Bit. Tất cả các thứ cần thiết này được chứa trong một thành phần đã được tạo sẵn tên là yolobit (trong lập trình người ta gọi các thành phần như vậy là thư viện, giống như thư viện là nơi bạn hay đọc sách nhé).</p>
 <p>Khi bạn dùng lệnh import nghĩa là bạn muốn sử dụng, còn dấu * nghĩa là bạn muốn sử dụng toàn bộ những gì có trong thư viện đó.</p>
 <p>Còn dòng thứ 2 như sau:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>display.scroll(‘Hello World’)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">‘</span><span class="n">Hello</span> <span class="n">World</span><span class="err">’</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Dòng lệnh này yêu cầu MicroPython thực hiện hành động scroll của đối tượng display để hiện ra dòng chữ Hello World. Đối tượng display này là một đối tượng có trong thư viện yolobit được dùng để làm việc với màn hình LED của Yolo:Bit. Ngoài scroll ra thì đối tượng display này còn có nhiều hành động khác nữa mà chúng ta sẽ tìm hiểu sau. Các hành động này trong lập trình còn được gọi là các hàm.</p>

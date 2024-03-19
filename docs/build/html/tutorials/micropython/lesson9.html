@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>12. Bài học 9: Cảm biến gia tốc góc nghiêng &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -163,9 +168,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a> &raquo;</li>
-      <li>12. Bài học 9: Cảm biến gia tốc góc nghiêng</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+      <li class="breadcrumb-item active">12. Bài học 9: Cảm biến gia tốc góc nghiêng</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/micropython/lesson9.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -176,14 +181,14 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-9-cam-bien-gia-toc-goc-nghieng">
-<h1>12. Bài học 9: Cảm biến gia tốc góc nghiêng<a class="headerlink" href="#bai-hoc-9-cam-bien-gia-toc-goc-nghieng" title="Permalink to this heading"></a></h1>
+<h1>12. Bài học 9: Cảm biến gia tốc góc nghiêng<a class="headerlink" href="#bai-hoc-9-cam-bien-gia-toc-goc-nghieng" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Các bạn sử dụng điện thoại ắt hẳn đã từng chơi qua những game như đua xe, lắc banh… mà trong đó, các bạn phải nghiêng, xoay điện thoại phải không? Làm sao điện thoại có thể biết chính nó bị nghiêng hay xoay về hướng nào? Câu trả lời là dựa vào cảm biến gia tốc.</p>
 <p>Trong bài học này, chúng ta sẽ cùng tìm hiểu về cảm biến gia tốc, góc nghiêng và một phương thức giao tiếp mới là I2C.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p><em>IMU</em></p>
 <p>IMU (<code class="docutils literal notranslate"><span class="pre">Inertial</span> <span class="pre">Measurement</span> <span class="pre">Unit</span></code>) là một con chip để đo những chuyển động như đã giới thiệu ở trên. Một module IMU thường gồm 2 loại cảm biến: cảm biến gia tốc (Accelerometer) và cảm biến quay (Gyroscope).</p>
 <blockquote>
@@ -207,11 +212,11 @@
 <p>Nhiều thiết bị có thể được kết nối vào cùng một bus I2C, tuy nhiên điều này sẽ không gây xung đột bởi mỗi thiết bị đều được nhận diện bởi một địa chỉ I2C duy nhất.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-14.png"><img alt="../../_images/device-14.png" class="align-center" src="../../_images/device-14.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mở phần mềm uPyCraft.</p></li>
@@ -234,7 +239,7 @@
 <p>Sau khi nạp chương trình, Bạn có thể xem các giá trị đọc được từ cảm biến gia tốc góc nghiêng trong cửa sổ Terminal.</p>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Chương trình trên liên tục đọc và in ra giá trị tất cả các trục xyz của cảm biến gia tốc và cảm biến quay.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tmp1</span> <span class="o">=</span> <span class="n">translate</span><span class="p">((</span><span class="n">motion</span><span class="o">.</span><span class="n">get_accel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)),</span> <span class="p">(</span><span class="o">-</span><span class="mi">16384</span><span class="p">),</span> <span class="mi">16384</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">),</span> <span class="mi">90</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;AccelX: &#39;</span> <span class="o">+</span> <span class="n">tmp1</span><span class="p">)</span>

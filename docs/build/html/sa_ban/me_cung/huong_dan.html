@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2. Hướng dẫn lập trình &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -30,15 +31,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -149,10 +154,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a> &raquo;</li>
-          <li><a href="me_cung.html">7. Sa bàn mê cung</a> &raquo;</li>
-      <li>2. Hướng dẫn lập trình</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+          <li class="breadcrumb-item"><a href="me_cung.html">7. Sa bàn mê cung</a></li>
+      <li class="breadcrumb-item active">2. Hướng dẫn lập trình</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastersa_ban/me_cung/huong_dan.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -163,16 +168,16 @@
            <div itemprop="articleBody">
              
   <section id="huong-dan-lap-trinh">
-<h1>2. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h1>
+<h1>2. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Link to this heading"></a></h1>
 <section id="thuat-toan">
-<h2>2.1. Thuật toán<a class="headerlink" href="#thuat-toan" title="Permalink to this heading"></a></h2>
+<h2>2.1. Thuật toán<a class="headerlink" href="#thuat-toan" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong bài viết này, OhStem sẽ hướng dẫn bạn cách lập trình để robot xBot có thể tự động tìm lối ra của mê cung, dựa vào cảm biến khoảng cách và cảm biến dò đường nhé!</p>
 <p><em>Kiến thức thêm:</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Tên cảm biến</p></th>
@@ -191,13 +196,13 @@
 <p>Thuật toán của nhiệm vụ này khá đơn giản, ban đầu robot sẽ đi theo vạch đen. Nếu gặp vật cản trước mặt, robot sẽ xoay tại chỗ liên tục cho đến khi trước mặt hết vật cản thì đi tiếp.</p>
 </section>
 <section id="id1">
-<h2>2.2 Hướng dẫn lập trình<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>2.2 Hướng dẫn lập trình<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để lập trình cho robot Rover thi đấu, bạn cần tải thư viện <strong>Robot Rover</strong> và thư viện <strong>Robocon</strong>.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/thu_vien1.png"><img alt="../../_images/thu_vien1.png" src="../../_images/thu_vien1.png" style="width: 608.0px; height: 300.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Đầu tiên, chúng ta cần tạo 1 hàm để robot đi theo đường line đen. Trên cảm biến dò đường của Rover có 4 mắt đọc tín hiệu được đánh dấu từ 1 đến 4 từ trái qua phải, để nhận diện vạch đen và nền trắng.</p>
@@ -280,7 +285,7 @@
 </div>
 </section>
 <section id="tai-chuong-trinh-mau">
-<h2>2.3 <strong>Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Permalink to this heading"></a></h2>
+<h2>2.3 <strong>Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể sử dụng trực tiếp chương trình mẫu về robot giải mê cung mà chúng tôi đã lập trình sẵn cho bạn tại đây.</p>
 <ul class="simple">

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Các cảm biến &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -29,15 +30,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,8 +135,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Các cảm biến</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Các cảm biến</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masteryolobit_v1/micropython-exp/cac-cam-bien.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -142,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="cac-cam-bien">
-<h1>Các cảm biến<a class="headerlink" href="#cac-cam-bien" title="Permalink to this heading"></a></h1>
+<h1>Các cảm biến<a class="headerlink" href="#cac-cam-bien" title="Link to this heading"></a></h1>
 <p>Yolo:Bit của bạn được tích hợp sẵn nhiều cảm biến với các chức năng khác nhau như cảm biến cử chỉ, cảm biến ánh sáng, cảm biến nhiệt độ. Chúng ta thử tìm hiểu cách làm việc với chúng nào.</p>
 <a class="reference internal image-reference" href="../../_images/ls-5-12.png"><img alt="../../_images/ls-5-12.png" class="align-center" src="../../_images/ls-5-12.png" style="width: 600px;" /></a>
 <p><strong>Cảm biến cử chỉ</strong></p>
@@ -154,23 +159,23 @@
 </div></blockquote>
 <p>Thư viện MicroPython trên Yolo:Bit có các hàm để đọc giá trị các trục này và trả về giá trị có đơn vị là milli-g. Nếu giá trị trả về là 0 thì tức là Yolo:Bit đang cân bằng ở trục đó và không nghiêng về bên nào.</p>
 <p>Ví dụ sau sẽ sử dụng hàm get_x để đo độ nghiêng của Yolo:Bit theo trục X (nghiêng qua trái hay phải).</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
 
-while True:
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 
-    reading = accelerometer.get_x()
+    <span class="n">reading</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
 
-    if reading &gt; 10:
+    <span class="k">if</span> <span class="n">reading</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
 
-        display.scroll(“R”)
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">“</span><span class="n">R</span><span class="err">”</span><span class="p">)</span>
 
-    elif reading &lt; -10:
+    <span class="k">elif</span> <span class="n">reading</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">10</span><span class="p">:</span>
 
-        display.scroll(“L”)
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">“</span><span class="n">L</span><span class="err">”</span><span class="p">)</span>
 
-    else:
+    <span class="k">else</span><span class="p">:</span>
 
-        display.scroll(“-“)
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">“</span><span class="o">-</span><span class="err">“</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Nếu bạn cầm Yolo:Bit thăng bằng trên tay thì màn hình Led sẽ hiện ra dấu gạch ngang, nếu nghiêng bên trái thì sẽ hiện ra chữ L và nghiêng bên phải sẽ là chữ R.</p>
@@ -189,15 +194,15 @@ while True:
 </div>
 <p>Sau khi chạy chương trình, bạn thử nghiêng Yolo:Bit từ về phía trước và về phía sau để nghe xem âm thanh có thay đổi trong quá trình di chuyển không nhe. Hàm get_x, get_y, get_x trả về một số thập phân (<code class="docutils literal notranslate"><span class="pre">float</span></code>) từ -50 đến 50 nên ta dùng hàm <code class="docutils literal notranslate"><span class="pre">int()</span></code> để đổi về số nguyên theo yêu cầu của hàm <code class="docutils literal notranslate"><span class="pre">music.pitch()</span></code> và ta cho phát ra âm thanh với độ dài là 100 milli giây.</p>
 <p>Ngoài ra, trong thư viện còn tạo sẵn các hàm giúp phát hiện ra Yolo:Bit có đang được lắc hay không. Ví dụ ta sẽ cho Yolo:Bit phát ra âm thanh mỗi khi Yolo:Bit bị lắc.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
 
-import music
+<span class="kn">import</span> <span class="nn">music</span>
 
-while True:
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 
-    if accelerometer.is_gesture(“shake”):
+    <span class="k">if</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">is_gesture</span><span class="p">(</span><span class="err">“</span><span class="n">shake</span><span class="err">”</span><span class="p">):</span>
 
-        music.pitch(440, 500)
+        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="mi">440</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Hàm <code class="docutils literal notranslate"><span class="pre">is_gesture()</span></code> nhận thông tin là tên cử chỉ cần được kiểm tra và trả về True nếu cử chỉ đó đang xảy ra. Các cử chỉ được hỗ trợ là:</p>

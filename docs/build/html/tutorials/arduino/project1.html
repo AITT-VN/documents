@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>16. Project 1: Đèn điều khiển từ xa &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -160,9 +165,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>16. Project 1: Đèn điều khiển từ xa</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">16. Project 1: Đèn điều khiển từ xa</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/project1.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -173,9 +178,9 @@
            <div itemprop="articleBody">
              
   <section id="project-1-den-dieu-khien-tu-xa">
-<h1>16. Project 1: Đèn điều khiển từ xa<a class="headerlink" href="#project-1-den-dieu-khien-tu-xa" title="Permalink to this heading"></a></h1>
+<h1>16. Project 1: Đèn điều khiển từ xa<a class="headerlink" href="#project-1-den-dieu-khien-tu-xa" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Bạn vừa lên giường trùm chăn ấm và chợt nhận ra là quên chưa tắt đèn, hay bạn băn khoăn không biết vừa nãy đã tắt điện phòng tắm chưa. Nếu ở trong những tình huống này, bạn sẽ làm gì?</p>
 <p>Sẽ rất thuận tiện nếu bạn có thể bật tắt đèn từ xa bằng remote phải không nào? Ngoài ra, không chỉ là bật tắt, chúng ta sẽ dùng remote để điều chỉnh độ sáng đèn phù hợp cho nhiều hoàn cảnh sử dụng như đọc sách, xem phim hay khi chuẩn bị đi ngủ.</p>
 <p>Trong dự án này, chúng ta sẽ dùng đèn LED RGB có trên hộp điều khiển xController để mô phỏng đèn trong nhà và sử dụng remote hồng ngoại để có thể:</p>
@@ -188,58 +193,58 @@
 <a class="reference internal image-reference" href="../../_images/project-1-11.png"><img alt="../../_images/project-1-11.png" class="align-center" src="../../_images/project-1-11.png" style="width: 320px;" /></a>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/project-1-21.png"><img alt="../../_images/project-1-21.png" class="align-center" src="../../_images/project-1-21.png" style="width: 420px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;IRremote.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;IRremote.h&gt;</span>
 
-<span class="n">XController</span><span class="w"> </span><span class="n">xcon</span><span class="p">;</span><span class="w"></span>
-<span class="n">IRrecv</span><span class="w"> </span><span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RX</span><span class="p">);</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">irCommand</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="n">XController</span><span class="w"> </span><span class="n">xcon</span><span class="p">;</span>
+<span class="n">IRrecv</span><span class="w"> </span><span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RX</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">irCommand</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">irrecv</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">irrecv</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">irCommand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irrecv</span><span class="p">.</span><span class="n">decodedIRData</span><span class="p">.</span><span class="n">command</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">irCommand</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_UP</span><span class="p">){</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">irCommand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irrecv</span><span class="p">.</span><span class="n">decodedIRData</span><span class="p">.</span><span class="n">command</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">irCommand</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_UP</span><span class="p">){</span>
 <span class="w">      </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="c1">// tăng độ sáng 25%</span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lightLevel</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_DOWN</span><span class="p">){</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lightLevel</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_DOWN</span><span class="p">){</span>
 <span class="w">      </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="c1">// giảm độ sáng 25%</span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lightLevel</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_SETUP</span><span class="p">){</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lightLevel</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">irCommand</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IR_REMOTE_SETUP</span><span class="p">){</span>
 <span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lightLevel</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// đèn đang bật thì tắt</span>
-<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// đèn đang tắt thì bật</span>
-<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">lightLevel</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="n">lightLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">lightLevel</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Chương trình sử dụng các lệnh đã học ở những bài học trước về remote và đèn LED RGB. Chúng ta dùng biến tên <code class="docutils literal notranslate"><span class="pre">lightLevel</span></code> có kiểu là <code class="docutils literal notranslate"><span class="pre">int</span></code> để lưu độ sáng hiện tại của đèn LED và thay đổi độ sáng tùy vào phím được nhấn.</p>
 </section>
 </section>

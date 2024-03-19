@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hình ảnh &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -29,15 +30,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,8 +135,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Hình ảnh</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Hình ảnh</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masteryolobit_v1/micropython-exp/hinh-anh.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -142,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="hinh-anh">
-<h1>Hình ảnh<a class="headerlink" href="#hinh-anh" title="Permalink to this heading"></a></h1>
+<h1>Hình ảnh<a class="headerlink" href="#hinh-anh" title="Link to this heading"></a></h1>
 <p>Tuy Yolo:Bit chỉ có màn hình Led 5×5 nhưng chúng ta có thể làm rất nhiều thứ với nó bằng MicroPython nhé, đặc biệt là hiện ra các hình ảnh vui.</p>
 <a class="reference internal image-reference" href="../../_images/ls-2-12.png"><img alt="../../_images/ls-2-12.png" class="align-center" src="../../_images/ls-2-12.png" style="width: 600px;" /></a>
 <p>MicroPython trên Yolo:Bit đi kèm rất nhiều các hình ảnh có sẵn để sử dụng. Ví dụ để hiện ra khuôn mặt cười, bạn có thể dùng các lệnh sau:</p>
@@ -211,26 +216,26 @@
 <p>Mỗi đèn LED trên màn hình Led 5×5 có thể nhận 1 trong 9 giá trị, từ 0 đến 8 với các màu tương ứng như sau:</p>
 <p>0-Tắt, 1-Đỏ, 2-Cam, 3-Vàng, 4-Xanh lá cây (lục), 5-Xanh dương (lam), 6-Chàm, 7-Tím, 8-Trắng</p>
 <p>Dựa trên đó, bạn thử hiện ra một hình theo ý mình, ví dụ như sau:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
 
-boat = Image(“01010:”
+<span class="n">boat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-            “01010:”
+            <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-            “01010:”
+            <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-            “44444:”
+            <span class="err">“</span><span class="mi">44444</span><span class="p">:</span><span class="err">”</span>
 
-            “04440”)
+            <span class="err">“</span><span class="mi">04440</span><span class="err">”</span><span class="p">)</span>
 
-display.show(boat)
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">boat</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Bạn tưởng tượng được ra hình gì không nhỉ? Bạn thử chạy chương trình này và quan sát sẽ thấy màn hình Led hiện ra hình một con thuyền màu xanh lá cây với 2 cột buồm màu đỏ.</p>
 <a class="reference internal image-reference" href="../../_images/ls-2-4.png"><img alt="../../_images/ls-2-4.png" class="align-center" src="../../_images/ls-2-4.png" style="width: 600px;" /></a>
 <p>Hãy tìm hiểu thử các lệnh trong chương trình ở trên nào. Chúng ta bỏ qua dòng lệnh quen thuộc đầu tiên. Dòng lệnh tiếp theo khai báo một đối tượng hình ảnh và đặt tên là boat (con thuyền). Bên trong giữa 2 dấu ngoặc tròn () là khai báo hình ảnh con thuyền bao gồm 5 dòng cho 5 hàng Led. Các số bên trong mỗi hàng là màu của từng Led. Các hàng cách nhau bởi dấu hai chấm :.</p>
 <p>Thật là đơn giản phải không? Bạn cũng có thể khai báo màu cho các Led trên cùng một hàng như sau:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>boat = Image(“01010:01010:01010:44444:04440”)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">boat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="mi">01010</span><span class="p">:</span><span class="mi">01010</span><span class="p">:</span><span class="mi">44444</span><span class="p">:</span><span class="mi">04440</span><span class="err">”</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Hoạt hình</strong></p>
@@ -244,7 +249,7 @@ display.show(boat)
 </ul>
 </div></blockquote>
 <p>Để tạo danh sách trong Python, chúng ta dùng lệnh sau:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>shopping = [“Eggs”, “Shoes”, “Tomatoes”]
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">shopping</span> <span class="o">=</span> <span class="p">[</span><span class="err">“</span><span class="n">Eggs</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Shoes</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Tomatoes</span><span class="err">”</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Trong danh sách được đặt tên là shopping ở trên có 3 thứ, gọi là phần tử. Python hiểu được chúng ta đang muốn tạo ra một danh sách bởi vì chúng được đặt trong 2 dấu ngoặc vuông [ ]. Các thứ trong danh sách được phân cách nhau bởi dấu phẩy và các thứ này là 3 dòng chữ do chúng được đặt trong 2 dấu nháy kép “ ”.</p>
@@ -254,7 +259,7 @@ display.show(boat)
 </div>
 <p>Vì là các số nên chúng ta không dùng dấu nháy kép bọc giữa các phần tử.</p>
 <p>Bạn cũng có thể trộn lẫn các loại phần tử khác nhau như số, chữ và cả hình ảnh.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>mixed_list = [“hello!”, 10, Image.HAPPY]
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mixed_list</span> <span class="o">=</span> <span class="p">[</span><span class="err">“</span><span class="n">hello</span><span class="err">!”</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Bằng cách dùng danh sách, bạn có thể yêu cầu MicroPython hiện ra các hình ảnh khác nhau liên tục. Thư viện hình ảnh của Yolo:Bit đã cung cấp sẵn cho chúng ta một danh sách các hình ảnh, là Image.ALL_CLOCKS chứa các hình của 12 giờ và Image.ALL_ARROWS chứa hình các mũi tên của 8 hướng. Hãy thử viết chương trình hiện chúng ra xem sao nào:</p>
@@ -266,71 +271,71 @@ display.show(boat)
 <p>Sau khi chạy chương trình, bạn sẽ thấy hình kim đồng hồ xoay 1 vòng giống như 1 hình ảnh hoạt hình phải không nào.</p>
 <p>Câu lệnh display.show ngoài việc hiện ra 1 hình ảnh, bạn cũng có thể truyền vào 1 danh sách các hình để hiện ra lần lượt, và mỗi hình các nhau 1 khoảng thời gian được khai báo trong tham số delay là 200 milli giây (tức là 0.2 giây).</p>
 <p>Bạn hãy thử chiếu một danh sách các hình theo ý mình, ví dụ như dưới đây:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
 
-boat1 = Image(“01010:”
+<span class="n">boat1</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “44444:”
+              <span class="err">“</span><span class="mi">44444</span><span class="p">:</span><span class="err">”</span>
 
-              “04440”)
+              <span class="err">“</span><span class="mi">04440</span><span class="err">”</span><span class="p">)</span>
 
-boat2 = Image(“00000:”
+<span class="n">boat2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “44444”)
+              <span class="err">“</span><span class="mi">44444</span><span class="err">”</span><span class="p">)</span>
 
-boat3 = Image(“00000:”
+<span class="n">boat3</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010”)
+              <span class="err">“</span><span class="mi">01010</span><span class="err">”</span><span class="p">)</span>
 
-boat4 = Image(“00000:”
+<span class="n">boat4</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “01010:”
+              <span class="err">“</span><span class="mi">01010</span><span class="p">:</span><span class="err">”</span>
 
-              “01010”)
+              <span class="err">“</span><span class="mi">01010</span><span class="err">”</span><span class="p">)</span>
 
-boat5 = Image(“00000:”
+<span class="n">boat5</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “01010”)
+              <span class="err">“</span><span class="mi">01010</span><span class="err">”</span><span class="p">)</span>
 
-boat6 = Image(“00000:”
+<span class="n">boat6</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000:”
+              <span class="err">“</span><span class="mi">00000</span><span class="p">:</span><span class="err">”</span>
 
-              “00000”)
+              <span class="err">“</span><span class="mi">00000</span><span class="err">”</span><span class="p">)</span>
 
-all_boats = [boat1, boat2, boat3, boat4, boat5, boat6]
+<span class="n">all_boats</span> <span class="o">=</span> <span class="p">[</span><span class="n">boat1</span><span class="p">,</span> <span class="n">boat2</span><span class="p">,</span> <span class="n">boat3</span><span class="p">,</span> <span class="n">boat4</span><span class="p">,</span> <span class="n">boat5</span><span class="p">,</span> <span class="n">boat6</span><span class="p">]</span>
 
-display.show(all_boats, delay=500)
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">all_boats</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Một đoạn code rất dài phải không nào, tuy nhiên nó không phức tạp lắm đâu. Hãy cùng xem nó làm gì nào:</p>

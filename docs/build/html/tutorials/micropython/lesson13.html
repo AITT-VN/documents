@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>16. Bài học 13: Điều khiển góc quay Servo &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -164,9 +169,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a> &raquo;</li>
-      <li>16. Bài học 13: Điều khiển góc quay Servo</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình MicroPython</strong></a></li>
+      <li class="breadcrumb-item active">16. Bài học 13: Điều khiển góc quay Servo</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/micropython/lesson13.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -177,29 +182,29 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-13-dieu-khien-goc-quay-servo">
-<h1>16. Bài học 13: Điều khiển góc quay Servo<a class="headerlink" href="#bai-hoc-13-dieu-khien-goc-quay-servo" title="Permalink to this heading"></a></h1>
+<h1>16. Bài học 13: Điều khiển góc quay Servo<a class="headerlink" href="#bai-hoc-13-dieu-khien-goc-quay-servo" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Trong bài 3, chúng ta đã tìm hiểu về đọc tín hiệu Analog từ cảm biến xoay để điều chỉnh độ sáng đèn LED. Trong bài học này, chúng ta sẽ sử dụng tín hiệu từ cảm biến xoay để điều khiển góc quay của động cơ Servo 180 độ.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p><em>Động cơ Servo</em></p>
 <p>Servo là một dạng động cơ điện đặc biệt. Không giống như động cơ thông thường, cứ cắm điện vào là quay liên tục, Servo chỉ quay khi được điều khiển (bằng xung PPM) với góc quay nằm trong khoảng bất kì từ 0o - 180o. Mỗi loại Servo có kích thước, khối lượng và cấu tạo khác nhau, phù hợp với nhiều ứng dụng khác nhau.</p>
 <p>Bộ xBuild Creator Kit cung cấp sẵn một động cơ Servo loại nhỏ là SG92R.</p>
 <a class="reference internal image-reference" href="../../_images/ls-13-31.png"><img alt="../../_images/ls-13-31.png" class="align-center" src="../../_images/ls-13-31.png" style="width: 480px;" /></a>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-131.png"><img alt="../../_images/device-131.png" class="align-center" src="../../_images/device-131.png" style="width: 600px;" /></a>
 <p>Lưu ý: Để sử dụng động cơ Servo thì bộ điều khiển xController cần phải được cấp nguồn từ nguồn ngoài (như từ pin) vì nguồn từ USB không đủ điện năng để chạy động cơ.</p>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-13-41.png"><img alt="../../_images/ls-13-41.png" class="align-center" src="../../_images/ls-13-41.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>Mở phần mềm uPyCraft.</p></li>
@@ -216,7 +221,7 @@
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rotaryvalue</span> <span class="o">=</span> <span class="n">pin41</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
 </pre></div>
 </div>

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>11. Bài học 10: Hiển thị thông tin lên màn hình LCD &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -162,9 +167,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>11. Bài học 10: Hiển thị thông tin lên màn hình LCD</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">11. Bài học 10: Hiển thị thông tin lên màn hình LCD</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson10.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -175,54 +180,54 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-10-hien-thi-thong-tin-len-man-hinh-lcd">
-<h1>11. Bài học 10: Hiển thị thông tin lên màn hình LCD<a class="headerlink" href="#bai-hoc-10-hien-thi-thong-tin-len-man-hinh-lcd" title="Permalink to this heading"></a></h1>
+<h1>11. Bài học 10: Hiển thị thông tin lên màn hình LCD<a class="headerlink" href="#bai-hoc-10-hien-thi-thong-tin-len-man-hinh-lcd" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Trong bài học này, chúng ta cùng tìm hiểu về màn hình LCD và viết chương trình để hiện dòng chữ “Hello World” lên màn hình.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p>Màn hình là một thành phần khá phổ biến trong các thiết bị điện tử, được dùng để thể hiện thông tin cho người dùng. Có nhiều loại màn hình LCD phổ biến như LCD dạng line, OLED, eInk, TFT,…</p>
 <a class="reference internal image-reference" href="../../_images/ls-10-1.png"><img alt="../../_images/ls-10-1.png" class="align-center" src="../../_images/ls-10-1.png" style="width: 600px;" /></a>
 <p>Màn hình LCD dạng line là một loại khá thông dụng và có giá thành rẻ. Bộ kit xBuild cung cấp sẵn một module màn hình LCD 1602 đơn sắc, sử dụng giao tiếp I2C, có thể hiển thị được 2 dòng chữ với tối đa 16 ký tự mỗi dòng.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-10-2.png"><img alt="../../_images/ls-10-2.png" class="align-center" src="../../_images/ls-10-2.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-10-3.png"><img alt="../../_images/ls-10-3.png" class="align-center" src="../../_images/ls-10-3.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span>
 
-<span class="n">LCD_1602</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span><span class="w"></span>
+<span class="n">LCD_1602</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span><span class="w"> </span><span class="n">D1_2</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span><span class="w"> </span><span class="n">D1_2</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(){</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;OhStem&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;xin chao ban!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(){</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;OhStem&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;xin chao ban!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span>
 </pre></div>
 </div>
 <p>Khai báo thư viện để làm việc với màn hình LCD 1602.</p>

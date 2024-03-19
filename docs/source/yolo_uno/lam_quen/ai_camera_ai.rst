@@ -83,7 +83,7 @@ Chương trình hiển thị như sau:
 **5.3 Giải thích chương trình**
 ----------
 
-Sau khi Yolo UNO khởi động, khởi tạo chân camera AI. Và liên tục cập nhật kết quả nhận dạng từ camera sau 0.1 giây: 
+Sau khi Yolo UNO khởi động, sẽ khởi tạo chân camera AI và liên tục cập nhật kết quả nhận dạng từ camera sau 0.1 giây: 
 
 - Nếu camera nhận dạng được có đeo khẩu trang thì đổi đèn led thành xanh
 

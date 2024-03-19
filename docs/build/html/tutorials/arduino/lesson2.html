@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3. Bài học 2: Blink LED &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -162,9 +167,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>3. Bài học 2: Blink LED</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">3. Bài học 2: Blink LED</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson2.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -175,13 +180,13 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-2-blink-led">
-<h1>3. Bài học 2: Blink LED<a class="headerlink" href="#bai-hoc-2-blink-led" title="Permalink to this heading"></a></h1>
+<h1>3. Bài học 2: Blink LED<a class="headerlink" href="#bai-hoc-2-blink-led" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Sau khi hoàn thành chương trình đầu tiên để làm quen với Arduino trong bài trước, bây giờ, chúng ta hãy thử học cách điều khiển module đèn LED. Trong bài tập này, chúng ta sẽ lập trình cho module đèn LED bật và tắt liên tục (còn gọi là <code class="docutils literal notranslate"><span class="pre">blink</span></code>) sau mỗi giây.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p>Các yếu tố cấu thành một hệ thống điều khiển</p>
 <blockquote>
 <div><dl class="simple">
@@ -202,37 +207,37 @@
 </div></blockquote>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-2-3.png"><img alt="../../_images/ls-2-3.png" class="align-center" src="../../_images/ls-2-3.png" style="width: 600px;" /></a>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-2.png"><img alt="../../_images/device-2.png" class="align-center" src="../../_images/device-2.png" style="width: 480px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">Blink</span> <span class="nv">LED</span>
-<span class="o">//</span> <span class="nv">B</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">sau</span> <span class="nv">m</span>ỗ<span class="nv">i</span> <span class="mi">1</span> <span class="nv">gi</span>â<span class="nv">y</span>
-<span class="nv">int</span> <span class="nv">LEDPin</span> <span class="o">=</span> <span class="nv">D1_1</span><span class="c1">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">// Blink LED</span>
+<span class="c1">// Bật tắt đèn LED sau mỗi 1 giây</span>
+<span class="nb">int</span><span class="w"> </span><span class="n">LEDPin</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">D1_1</span><span class="p">;</span>
 
-<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
-  <span class="nv">pinMode</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">OUTPUT</span><span class="ss">)</span><span class="c1">;</span>
-}
+<span class="n">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LEDPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">LEDPin</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
-}
+<span class="n">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LEDPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LEDPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Sau khi chạy chương trình, bạn sẽ thấy đèn LED  phát sáng và tắt liên lục mỗi 1 giây.</p>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>setup(){
 }
 </pre></div>

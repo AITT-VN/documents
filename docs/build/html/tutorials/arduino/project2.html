@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>17. Project 2: Quạt thông minh &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -161,9 +166,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>17. Project 2: Quạt thông minh</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">17. Project 2: Quạt thông minh</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/project2.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -174,86 +179,86 @@
            <div itemprop="articleBody">
              
   <section id="project-2-quat-thong-minh">
-<h1>17. Project 2: Quạt thông minh<a class="headerlink" href="#project-2-quat-thong-minh" title="Permalink to this heading"></a></h1>
+<h1>17. Project 2: Quạt thông minh<a class="headerlink" href="#project-2-quat-thong-minh" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Chúng ta đã học cách đọc và hiển thị nhiệt độ và độ ẩm của môi trường ở bài học số 9. Dựa vào đó, chúng ta sẽ làm cho quạt trong nhà trở nên thông minh hơn và biết lúc nào cần bật, lúc nào cần tắt. Điều này thật sự hữu ích khi vào ban đêm, lúc đang ngủ, chúng ta có thể tránh bị bệnh do quá lạnh hoặc quá nóng làm mất giấc ngủ.</p>
 <p>Ngoài ra, bài học này sẽ giúp bạn làm quen với 1 module Output mới là động cơ mini. Động cơ là một thiết bị điện tử rất phổ biến trong cuộc sống của chúng ta (như quạt, động cơ xe, máy bơm nước…). Động cơ khi được cung cấp điện sẽ làm xoay trục động cơ, từ đó tạo nên nhiều ứng dụng khác nhau.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/project-2-11.png"><img alt="../../_images/project-2-11.png" class="align-center" src="../../_images/project-2-11.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/project-2-21.png"><img alt="../../_images/project-2-21.png" class="align-center" src="../../_images/project-2-21.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Mini_Fan.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;LCD_1602.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Mini_Fan.h&gt;</span>
 
-<span class="n">LCD_1602</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span><span class="w"></span>
-<span class="n">DHTesp</span><span class="w"> </span><span class="n">dht</span><span class="p">;</span><span class="w"></span>
-<span class="n">MiniFan</span><span class="w"> </span><span class="nf">fan</span><span class="p">(</span><span class="n">D3_1</span><span class="p">,</span><span class="w"> </span><span class="n">D3_2</span><span class="p">);</span><span class="w"></span>
+<span class="n">LCD_1602</span><span class="w"> </span><span class="nf">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span>
+<span class="n">DHTesp</span><span class="w"> </span><span class="n">dht</span><span class="p">;</span>
+<span class="n">MiniFan</span><span class="w"> </span><span class="nf">fan</span><span class="p">(</span><span class="n">D3_1</span><span class="p">,</span><span class="w"> </span><span class="n">D3_2</span><span class="p">);</span>
 
 <span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">lastCheckTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// lưu thời gian cập nhật nhiệt độ</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span><span class="w"> </span><span class="n">D1_2</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">dht</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span><span class="n">D2_1</span><span class="p">,</span><span class="w"> </span><span class="n">DHTesp</span><span class="o">::</span><span class="n">DHT11</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span><span class="w"> </span><span class="n">D1_2</span><span class="p">);</span>
+<span class="w">  </span><span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
+<span class="w">  </span><span class="n">dht</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span><span class="n">D2_1</span><span class="p">,</span><span class="w"> </span><span class="n">DHTesp</span><span class="o">::</span><span class="n">DHT11</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
 <span class="w">  </span><span class="c1">// lấy thời gian hiện tại</span>
-<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">currentMillis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">millis</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">currentMillis</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lastCheckTemp</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">5000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">currentMillis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">millis</span><span class="p">();</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">currentMillis</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lastCheckTemp</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">5000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// đã quá 5s kể từ lần cập nhật nhiệt độ cuối</span>
 <span class="w">    </span><span class="c1">// cần cập nhật lại</span>
-<span class="w">    </span><span class="n">lastCheckTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentMillis</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getHumidity</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getTemperature</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dht</span><span class="p">.</span><span class="n">getStatus</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Read sensor faiLED!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temp:     &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;C&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;%&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">32</span><span class="p">){</span><span class="w"></span>
-<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Tắt quạt&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="n">fan</span><span class="p">.</span><span class="n">off</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Bật quạt&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="n">fan</span><span class="p">.</span><span class="n">on</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">lastCheckTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentMillis</span><span class="p">;</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getHumidity</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="p">.</span><span class="n">getTemperature</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dht</span><span class="p">.</span><span class="n">getStatus</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Read sensor faiLED!&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Temp:     &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;C&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Humidity: &quot;</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span><span class="w"> </span><span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;%&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">32</span><span class="p">){</span>
+<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Tắt quạt&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="n">fan</span><span class="p">.</span><span class="n">off</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="p">{</span>
+<span class="w">      </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Bật quạt&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="n">fan</span><span class="p">.</span><span class="n">on</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Chương trình trên sẽ tương tự như bài học số 9: Đọc và hiển thị nhiệt độ, độ ẩm lên màn hình LCD. Tuy nhiên, có một sự thay đổi đó là chương trình này không dùng hàm <code class="docutils literal notranslate"><span class="pre">delay()</span></code> để chờ 2 giây sau mỗi lần cập nhật, mà chúng ta sẽ dùng một phương pháp hay hơn: lưu thời gian lần cuối cập nhật và liên tục kiểm tra xem đã quá 5 giây kể từ lần cuối cập nhật chưa. Nếu đã quá 5 giây thì sẽ tiến hành cập nhật.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">unsigned</span> <span class="nv">long</span> <span class="nv">currentMillis</span> <span class="o">=</span> <span class="nv">millis</span><span class="ss">()</span><span class="c1">;</span>
-<span class="k">if</span> <span class="ss">(</span><span class="nv">currentMillis</span> <span class="o">-</span> <span class="nv">lastCheckTemp</span> <span class="o">&gt;=</span> <span class="mi">5000</span><span class="ss">)</span> {
-    <span class="o">//</span> đã <span class="nv">qu</span>á <span class="mi">5</span><span class="nv">s</span> <span class="nv">k</span>ể <span class="nv">t</span>ừ <span class="nv">l</span>ầ<span class="nv">n</span> <span class="nv">c</span>ậ<span class="nv">p</span> <span class="nv">nh</span>ậ<span class="nv">t</span> <span class="nv">nhi</span>ệ<span class="nv">t</span> độ <span class="nv">cu</span>ố<span class="nv">i</span>
-    <span class="o">//</span> <span class="nv">c</span>ầ<span class="nv">n</span> <span class="nv">c</span>ậ<span class="nv">p</span> <span class="nv">nh</span>ậ<span class="nv">t</span> <span class="nv">l</span>ạ<span class="nv">i</span>
-    <span class="nv">lastCheckTemp</span> <span class="o">=</span> <span class="nv">currentMillis</span><span class="c1">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">unsigned</span><span class="w"> </span><span class="nv">long</span><span class="w"> </span><span class="nv">currentMillis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">millis</span><span class="ss">()</span><span class="c1">;</span>
+<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">currentMillis</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">lastCheckTemp</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">5000</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">    </span><span class="o">//</span><span class="w"> </span>đã<span class="w"> </span><span class="nv">qu</span>á<span class="w"> </span><span class="mi">5</span><span class="nv">s</span><span class="w"> </span><span class="nv">k</span>ể<span class="w"> </span><span class="nv">t</span>ừ<span class="w"> </span><span class="nv">l</span>ầ<span class="nv">n</span><span class="w"> </span><span class="nv">c</span>ậ<span class="nv">p</span><span class="w"> </span><span class="nv">nh</span>ậ<span class="nv">t</span><span class="w"> </span><span class="nv">nhi</span>ệ<span class="nv">t</span><span class="w"> </span>độ<span class="w"> </span><span class="nv">cu</span>ố<span class="nv">i</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">c</span>ầ<span class="nv">n</span><span class="w"> </span><span class="nv">c</span>ậ<span class="nv">p</span><span class="w"> </span><span class="nv">nh</span>ậ<span class="nv">t</span><span class="w"> </span><span class="nv">l</span>ạ<span class="nv">i</span>
+<span class="w">    </span><span class="nv">lastCheckTemp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">currentMillis</span><span class="c1">;</span>
 </pre></div>
 </div>
 <p>Hàm <code class="docutils literal notranslate"><span class="pre">millis()</span></code> trả về tổng số mili giây, tính từ lúc chương trình bắt đầu chạy cho đến hiện tại.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ss">(</span><span class="nv">t</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="ss">)</span> {
-  <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Tắt quạt</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">fan</span>.<span class="nv">off</span><span class="ss">()</span><span class="c1">;</span>
-} <span class="k">else</span> {
-  <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Bật quạt</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
-  <span class="nv">fan</span>.<span class="nv">on</span><span class="ss">()</span><span class="c1">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">t</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">32</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">  </span><span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;Tắt quạt&quot;</span><span class="ss">)</span><span class="c1">;</span>
+<span class="w">  </span><span class="nv">fan</span>.<span class="nv">off</span><span class="ss">()</span><span class="c1">;</span>
+}<span class="w"> </span><span class="k">else</span><span class="w"> </span>{
+<span class="w">  </span><span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="s2">&quot;Bật quạt&quot;</span><span class="ss">)</span><span class="c1">;</span>
+<span class="w">  </span><span class="nv">fan</span>.<span class="nv">on</span><span class="ss">()</span><span class="c1">;</span>
 }
 </pre></div>
 </div>

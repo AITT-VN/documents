@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>8. Bài học 7: Vỗ tay thay đổi màu đèn LED &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -162,9 +167,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a> &raquo;</li>
-      <li>8. Bài học 7: Vỗ tay thay đổi màu đèn LED</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html"><strong>Hướng dẫn lập trình Arduino</strong></a></li>
+      <li class="breadcrumb-item active">8. Bài học 7: Vỗ tay thay đổi màu đèn LED</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastertutorials/arduino/lesson7.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -175,13 +180,13 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-7-vo-tay-thay-doi-mau-den-led">
-<h1>8. Bài học 7: Vỗ tay thay đổi màu đèn LED<a class="headerlink" href="#bai-hoc-7-vo-tay-thay-doi-mau-den-led" title="Permalink to this heading"></a></h1>
+<h1>8. Bài học 7: Vỗ tay thay đổi màu đèn LED<a class="headerlink" href="#bai-hoc-7-vo-tay-thay-doi-mau-den-led" title="Link to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
 <p>Tìm hiểu về cảm biến âm thanh và ứng dụng vào bật tắt đèn LED RGB tích hợp trên xController.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
 <p><em>Cảm biến âm thanh</em></p>
 <p>Cảm biến âm thanh có thể dùng để phát hiện và đo cường độ âm thanh của môi trường xung quanh. Chúng ta có thể ứng dụng cảm biến này để điều khiển đèn LED RGB bằng tiếng vỗ tay.</p>
 <p><em>Vẽ biểu đồ dữ liệu bằng cửa sổ Serial Plotter</em></p>
@@ -191,65 +196,65 @@
 <a class="reference internal image-reference" href="../../_images/ls-7-2.png"><img alt="../../_images/ls-7-2.png" class="align-center" src="../../_images/ls-7-2.png" style="width: 600px;" /></a>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-7.png"><img alt="../../_images/device-7.png" class="align-center" src="../../_images/device-7.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-7-3.png"><img alt="../../_images/ls-7-3.png" class="align-center" src="../../_images/ls-7-3.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Nếu bạn chưa cài đặt thư viện cho xController thì tham khảo bài học số 4 để tải và cài đặt thư viện vào Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span><span class="cp"></span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;xcontroller.h&gt;</span>
 
-<span class="n">XController</span><span class="w"> </span><span class="n">xcon</span><span class="p">;</span><span class="w"></span>
+<span class="n">XController</span><span class="w"> </span><span class="n">xcon</span><span class="p">;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">soundSensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A4_1</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">LEDState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">soundSensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A4_1</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">LEDState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(){</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">(){</span>
 <span class="w">  </span><span class="c1">// đọc giá trị cảm biến</span>
-<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">soundSensorPin</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">soundSensorPin</span><span class="p">);</span>
 <span class="w">  </span><span class="c1">// in ra giá trị cửa sổ Serial đọc được</span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
 <span class="w">  </span><span class="c1">// nếu giá trị cảm biến lớn hơn 1000</span>
 <span class="w">  </span><span class="c1">// thì đảo trạng thái bật tắt của đèn LED</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="n">LEDState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LEDState</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">){</span>
+<span class="w">    </span><span class="n">LEDState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LEDState</span><span class="p">;</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="c1">// bật tắt đèn LED RGB dựa vào trạng thái đã được xử lý</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">LEDState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">LEDState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span>
+<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Sau khi chạy chương trình, bạn có thể xem giá trị của cảm biến âm thanh từ cửa sổ <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Monitor</span></code>, bằng cách vào mục <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Serial</span> <span class="pre">Plotter</span></code>. Bạn thử vỗ tay phát ra tiếng động hoặc chạm nhẹ vào microphone của cảm biến để thấy sự thay đổi của giá trị cường độ âm thanh bằng biểu đồ.</p>
 <a class="reference internal image-reference" href="../../_images/ls-7-4.png"><img alt="../../_images/ls-7-4.png" class="align-center" src="../../_images/ls-7-4.png" style="width: 600px;" /></a>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
 <p>Các câu lệnh include thư viện, khai báo đối tượng XController và các biến sẽ tương tự như các bài trước. Tuy nhiên, chúng ta cần để ý đoạn code đảo trạng thái của đèn LED RGB như sau:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">n</span>ế<span class="nv">u</span> <span class="nv">gi</span>á <span class="nv">tr</span>ị <span class="nv">c</span>ả<span class="nv">m</span> <span class="nv">bi</span>ế<span class="nv">n</span> <span class="nv">l</span>ớ<span class="nv">n</span> <span class="nv">h</span>ơ<span class="nv">n</span> <span class="mi">1000</span>
-<span class="o">//</span> <span class="nv">th</span>ì đả<span class="nv">o</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> <span class="nv">b</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> <span class="nv">c</span>ủ<span class="nv">a</span> đè<span class="nv">n</span> <span class="nv">LED</span>
-<span class="k">if</span> <span class="ss">(</span><span class="nv">sensorValue</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="ss">)</span>{
-  <span class="nv">LEDState</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">LEDState</span><span class="c1">;</span>
-  <span class="nv">delay</span><span class="ss">(</span><span class="mi">300</span><span class="ss">)</span><span class="c1">;</span>
-}
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">// nếu giá trị cảm biến lớn hơn 1000</span>
+<span class="c1">// thì đảo trạng thái bật tắt của đèn LED</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">){</span>
+<span class="w">  </span><span class="n">LEDState</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LEDState</span><span class="p">;</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Câu lệnh <code class="docutils literal notranslate"><span class="pre">if</span></code> sẽ kiểm tra kết quả đo được có lớn hơn 1000 hay không, nếu có thì mới đảo trạng thái đèn LED. Giá trị 1000 ở đây gọi là ngưỡng, do chúng ta tự đo và ấn định. Trong trường hợp này, nếu chúng ta để ngưỡng càng nhỏ thì chương trình sẽ chạy càng nhạy.</p>
@@ -261,12 +266,12 @@
 </pre></div>
 </div>
 <p>Sau khi xử lý xong, chúng ta cần phải tạm dừng chương trình trong một thời gian ngắn để tránh trường hợp do chương trình chạy quá nhanh, lúc đó tiếng động truyền vào kéo dài chưa kịp dứt thì sẽ bị xử lý nhiều lần, tạo ra kết quả bật tắt không mong muốn.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="nv">b</span>ậ<span class="nv">t</span> <span class="nv">t</span>ắ<span class="nv">t</span> đè<span class="nv">n</span> <span class="nv">LED</span> <span class="nv">RGB</span> <span class="nv">d</span>ự<span class="nv">a</span> <span class="nv">v</span>à<span class="nv">o</span> <span class="nv">tr</span>ạ<span class="nv">ng</span> <span class="nv">th</span>á<span class="nv">i</span> đã đượ<span class="nv">c</span> <span class="nv">x</span>ử <span class="nv">l</span>ý
-<span class="k">if</span> <span class="ss">(</span><span class="nv">LEDState</span> <span class="o">==</span> <span class="mi">0</span><span class="ss">)</span>{
-  <span class="nv">xcon</span>.<span class="nv">showLED</span><span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span><span class="c1">;</span>
-} <span class="k">else</span> {
-  <span class="nv">xcon</span>.<span class="nv">showLED</span><span class="ss">(</span><span class="mi">0</span>, <span class="mi">255</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span><span class="c1">;</span>
-}
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">// bật tắt đèn LED RGB dựa vào trạng thái đã được xử lý</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">LEDState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span>
+<span class="w">  </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">xcon</span><span class="p">.</span><span class="n">showLED</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Cuối vòng lặp, chúng ta sẽ dùng cấu trúc <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">...</span> <span class="pre">else</span> <span class="pre">...</span></code> để bật tắt đèn LED, tùy vào giá trị của biến LEDState. Hàm để bật tắt LED RGB (thực chất là thay đổi màu vì ta chỉ sử dụng màu đỏ) là hàm <code class="docutils literal notranslate"><span class="pre">showLED()</span></code> đã được giải thích ở bài học trước.</p>

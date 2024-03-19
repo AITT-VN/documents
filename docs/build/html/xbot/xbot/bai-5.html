@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>9. Bài 5: Robot né vật cản &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html">
-            <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -154,9 +159,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../xbot.html"><strong>Robot lập trình xBot</strong></a> &raquo;</li>
-      <li>9. Bài 5: Robot né vật cản</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../xbot.html"><strong>Robot lập trình xBot</strong></a></li>
+      <li class="breadcrumb-item active">9. Bài 5: Robot né vật cản</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/masterxbot/xbot/bai-5.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -167,11 +172,11 @@
            <div itemprop="articleBody">
              
   <section id="bai-5-robot-ne-vat-can">
-<h1>9. Bài 5: Robot né vật cản<a class="headerlink" href="#bai-5-robot-ne-vat-can" title="Permalink to this heading"></a></h1>
+<h1>9. Bài 5: Robot né vật cản<a class="headerlink" href="#bai-5-robot-ne-vat-can" title="Link to this heading"></a></h1>
 <p><strong>Mục tiêu:</strong></p>
 <p>Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.</p>
 <section id="toc-do-cua-am-thanh">
-<h2>1. Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Permalink to this heading"></a></h2>
+<h2>1. Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Như đã biết, âm thanh được truyền đi dưới dạng sóng. Tốc độ truyền đi của âm thanh trong không khí là 340 m/s nhưng có thể thay đổi tùy vào nhiệt độ và độ ẩm.</p>
 <p>Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm thanh đó vọng lại, ta hoàn toàn có thể tính được khoảng cách đến vật cản.</p>
@@ -181,7 +186,7 @@
 </div>
 </section>
 <section id="cam-bien-khoang-cach">
-<h2>2. Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Permalink to this heading"></a></h2>
+<h2>2. Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/xbot_118.png"><img alt="../../_images/xbot_118.png" class="align-center" src="../../_images/xbot_118.png" style="width: 300px;" /></a>
 <div class="line-block">
@@ -199,7 +204,7 @@
 <p>Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.</p>
 </section>
 <section id="doc-trang-thai-cam-bien">
-<h2>3. Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Permalink to this heading"></a></h2>
+<h2>3. Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Link to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/xbot_120.png"><img alt="../../_images/xbot_120.png" class="align-center" src="../../_images/xbot_120.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -221,7 +226,7 @@
 </div>
 </section>
 <section id="ap-dung-cam-bien-trong-di-chuyen">
-<h2>4. Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Permalink to this heading"></a></h2>
+<h2>4. Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Robot dừng lại khi phát hiện vật cản</strong></p>
 <p>Trong chương trình này, chúng ta sẽ cho robot di chuyển về phía trước và dừn glại nếu phát hiện vật cản ở khảong cách nhỏ hơn 25cm.</p>
@@ -274,7 +279,7 @@
 </div>
 </section>
 <section id="robot-biet-ne-vat-can">
-<h2>5. Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Permalink to this heading"></a></h2>
+<h2>5. Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong phần này, chúng ta sẽ viết chương trình cho robot vừa di chuyển vừa né vật cản một cách thông minh.</p>
 <ul class="simple">
@@ -305,7 +310,7 @@
 </div>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
+<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Robot thoát khỏi mê cung</p></li>
@@ -343,7 +348,7 @@
 </ol>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
+<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Chỉ ra cảm biến khoảng cách trên xBot. Công dụng của nó là gì?</p></li>

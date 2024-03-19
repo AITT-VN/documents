@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7. 1. Lập trình tay cầm điều khiển &mdash; OhStem Education Wiki 2.0 documentation</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css" />
+
+  
     <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -31,15 +32,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html">
-            <img src="../../../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../../index.html">
+            
+              <img src="../../../../_static/logo-ohstem-white.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -154,11 +159,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a> &raquo;</li>
-          <li><a href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố xanh”</a> &raquo;</li>
-          <li><a href="../doi_khang.html">7. Bài thi đấu: Điều Khiển Đối Kháng</a> &raquo;</li>
-      <li>7. 1. Lập trình tay cầm điều khiển</li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+          <li class="breadcrumb-item"><a href="../../thanh_pho_xanh.html">1. Sa bàn “Xây dựng thành phố xanh”</a></li>
+          <li class="breadcrumb-item"><a href="../doi_khang.html">7. Bài thi đấu: Điều Khiển Đối Kháng</a></li>
+      <li class="breadcrumb-item active">7. 1. Lập trình tay cầm điều khiển</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/username/reponame/blob/mastersa_ban/thanh_pho_xanh/thi-dau/doi_khang/tay_cam.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -169,14 +174,14 @@
            <div itemprop="articleBody">
              
   <section id="lap-trinh-tay-cam-dieu-khien">
-<h1>7. 1. Lập trình tay cầm điều khiển<a class="headerlink" href="#lap-trinh-tay-cam-dieu-khien" title="Permalink to this heading"></a></h1>
+<h1>7. 1. Lập trình tay cầm điều khiển<a class="headerlink" href="#lap-trinh-tay-cam-dieu-khien" title="Link to this heading"></a></h1>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../../_images/71.png"><img alt="../../../../_images/71.png" src="../../../../_images/71.png" style="width: 450.0px; height: 450.0px;" /></a>
 </figure>
 <p>GamePad shield là bộ Kit mở rộng cho Yolo:Bit. Bộ kit này sẽ biến Yolo:Bit thành một tay cầm điều khiển Bluetooth. GamePad gồm Joystick và 7 nút nhấn có thể lập trình, được dùng để tạo ra các chức năng tùy biến theo ý của người dùng.</p>
 <p>Ngoài ra, cùng với pin sạc và chức năng sạc được tích hợp sẵn trên board, GamePad shield có thể được sử dụng để điều khiển các robot của OhStem như robot xBot (thông qua Bluetooth) hoặc biến Yolo:Bit thành một chiếc máy chơi game hoàn chỉnh.</p>
 <section id="thong-so-ky-thuat-cua-gamepad">
-<h2><strong>Thông số kỹ thuật của GamePad</strong><a class="headerlink" href="#thong-so-ky-thuat-cua-gamepad" title="Permalink to this heading"></a></h2>
+<h2><strong>Thông số kỹ thuật của GamePad</strong><a class="headerlink" href="#thong-so-ky-thuat-cua-gamepad" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>Nguồn:</strong> Pin sạc Li-Ion 3.7V 14500</p></li>
@@ -186,12 +191,12 @@
 </ul>
 </section>
 <section id="huong-dan-lap-trinh-cho-gamepad-shield">
-<h2><strong>Hướng dẫn lập trình cho GamePad shield</strong><a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad-shield" title="Permalink to this heading"></a></h2>
+<h2><strong>Hướng dẫn lập trình cho GamePad shield</strong><a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad-shield" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>GamePad shield được dùng với Yolo:Bit. Bạn có thể tham khảo hướng dẫn lập trình cho Yolo:Bit <a class="reference external" href="https://docs.ohstem.vn/en/latest/yolobit_v2/lam-quen.html">ở đây</a> nếu chưa từng làm việc với Yolo:Bit trước đó.</p>
 </section>
 <section id="cai-dat-thu-vien-mo-rong-cho-gamepad">
-<h2><strong>1. Cài đặt thư viện mở rộng cho GamePad</strong><a class="headerlink" href="#cai-dat-thu-vien-mo-rong-cho-gamepad" title="Permalink to this heading"></a></h2>
+<h2><strong>1. Cài đặt thư viện mở rộng cho GamePad</strong><a class="headerlink" href="#cai-dat-thu-vien-mo-rong-cho-gamepad" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <blockquote>
 <div><ol class="arabic simple">
@@ -225,7 +230,7 @@
 </div></blockquote>
 </section>
 <section id="gioi-thieu-khoi-lenh">
-<h2><strong>2. Giới thiệu khối lệnh</strong><a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
+<h2><strong>2. Giới thiệu khối lệnh</strong><a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <blockquote>
 <div><p>Bên trong danh mục GamePad, bạn sẽ thấy có 3 khối lệnh:</p>
@@ -288,7 +293,7 @@
 </div></blockquote>
 </section>
 <section id="lap-trinh-co-ban-voi-yolo-bit">
-<h2><strong>3. Lập trình cơ bản với Yolo:Bit</strong><a class="headerlink" href="#lap-trinh-co-ban-voi-yolo-bit" title="Permalink to this heading"></a></h2>
+<h2><strong>3. Lập trình cơ bản với Yolo:Bit</strong><a class="headerlink" href="#lap-trinh-co-ban-voi-yolo-bit" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để làm quen với GamePad, chúng ta sẽ lập trình một chương trình đơn giản với Yolo:Bit:</p>
 <blockquote>
@@ -300,7 +305,7 @@
 <p>Để thực hiện điều này, chúng ta sẽ sử dụng khối lệnh Nút ____ được nhấn và khối lệnh Joystick ở hướng ___</p>
 </section>
 <section id="nap-chuong-trinh-hoan-chinh">
-<h2><strong>4. Nạp chương trình hoàn chỉnh</strong><a class="headerlink" href="#nap-chuong-trinh-hoan-chinh" title="Permalink to this heading"></a></h2>
+<h2><strong>4. Nạp chương trình hoàn chỉnh</strong><a class="headerlink" href="#nap-chuong-trinh-hoan-chinh" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể sử dụng trực tiếp chương trình mẫu chúng tôi đã lập trình sẵn cho bạn:</p>
 <ul class="simple">
@@ -308,7 +313,7 @@
 </ul>
 </section>
 <section id="huong-dan-lap-trinh">
-<h2><strong>Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
+<h2><strong>Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Đầu tiên, chúng ta xóa màn hình trước đó:</p></li>
 </ol>

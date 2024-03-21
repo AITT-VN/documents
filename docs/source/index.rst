@@ -23,17 +23,27 @@ OhStem xin chào tất cả các bạn!
    yolobit_v2/citybit.rst
    yolobit_v2/physbit.rst
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: STEM STARTER KIT
+
+   stem_kit/stem_kit.rst
+
+
 .. toctree::
    :maxdepth: 2
    :caption: AIoT Kit - Lập trình AI & IoT
 
    aiot/lam_quen.rst
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Yolo UNO - Mạch lập trình Arduino
 
    yolo_uno/yolo_uno.rst
+
 
 .. toctree::
    :maxdepth: 2

@@ -43,6 +43,7 @@ OhStem xin chào tất cả các bạn!
    :caption: Yolo UNO - Mạch lập trình Arduino
 
    yolo_uno/yolo_uno.rst
+   yolo_uno/uno_city.rst
 
 
 .. toctree::

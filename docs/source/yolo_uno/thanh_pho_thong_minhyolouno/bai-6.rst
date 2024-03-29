@@ -56,12 +56,12 @@
 ------------
 ---------------
 
-.. image:: images/bai_7.5.PNG
+.. image:: images/bai_7.5.png
     :scale: 100%
     :align: center 
 |
 
-.. image:: images/bai_7.6.PNG
+.. image:: images/bai_7.6.png
     :scale: 100%
     :align: center 
 |

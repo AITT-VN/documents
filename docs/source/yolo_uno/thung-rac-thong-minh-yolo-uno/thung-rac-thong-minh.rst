@@ -157,6 +157,10 @@ Viết chương trình
     :scale: 80%
     :align: center 
 |
+.. image:: images/trash20.png
+    :scale: 80%
+    :align: center 
+|
 
 - Link chương trình mẫu: `<https://app.ohstem.vn/#!/share/yolouno/2eKHUadDZMPoqT25fL3MQQUqevH>`_
 

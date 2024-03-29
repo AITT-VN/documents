@@ -1,4 +1,4 @@
-**Phân loại rác với Yolo UNO**
+**Dự án phân loại rác với Yolo UNO**
 ====================
 
 .. toctree::

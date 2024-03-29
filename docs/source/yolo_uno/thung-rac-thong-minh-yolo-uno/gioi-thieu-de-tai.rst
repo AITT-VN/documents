@@ -19,7 +19,7 @@ Video minh họa hoạt động của hệ thống phân loại rác thải vớ
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XgceHMxME0g?si=7OfCfkWJ849IzkKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rBbZM7FZJW8?si=SiETyfeYl4_l-E4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |   
 
@@ -28,11 +28,11 @@ Thành phần
 ---------------
 
     .. image:: images/trash01.png
-        :scale: 85%
+        :scale: 100%
         :align: center 
     
     .. image:: images/trash02.png
-        :scale: 100%
+        :scale: 85%
         :align: center 
 
         

@@ -5,7 +5,7 @@
 ----------
 --------------
 
-Trong thành phố, di chuyển vượt tốc độ là hành vi vi phạm. Vì vậy, thiết bị đo tốc độ rất cần thiết để kiểm tra tốc độ chạy của xe. Nếu tốc độ của xe vượt mức quy định, hệ thống sẽ hiển thị số lần vi phạm và giá trị vận tốc lớn nhất của xe lên màn hình LCD. 
+Trong thành phố, di chuyển vượt tốc độ là hành vi vi phạm. Vì vậy, thiết bị đo tốc độ rất cần thiết để kiểm tra tốc độ chạy của xe. Nếu tốc độ của xe vượt mức quy định, hệ thống sẽ hiển thị cảnh báo và yêu cầu xe phải giảm tốc độ. 
 
 2. Kết nối
 ----------

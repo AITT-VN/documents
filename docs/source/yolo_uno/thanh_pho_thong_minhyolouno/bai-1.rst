@@ -5,7 +5,7 @@
 ------------
 -----------------
 
-Trong bài này, chúng ta sẽ cùng lập trình một chiếc đèn thông minh có thể tự sáng khi có người vào buổi tối. Các đèn này có thể gắn vào các khu vui chơi hoặc công viên tùy thích.
+Trong bài này, chúng ta sẽ cùng lập trình một chiếc đèn thông minh có thể tự sáng vào buổi tối. Các đèn này có thể gắn vào các khu vui chơi hoặc công viên tùy thích.
 
 
 2. Kết nối 

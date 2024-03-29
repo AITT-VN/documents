@@ -5,7 +5,7 @@
 ----------
 --------------
 
-Trong bài này, chúng ta sẽ cùng lập trình một bãi đậu xe thông minh có thể tự động mở thanh chắn để xe vào (nếu chỗ đậu xe còn trống). Nếu bãi xe đầy, đèn LED trên Yolo UNO sẽ đổi thành màu đỏ để báo hiệu và hiển thị số lượng chỗ rống trên màn hình OLED.
+Trong bài này, chúng ta sẽ cùng lập trình một bãi đậu xe thông minh có thể tự động mở thanh chắn để xe vào (nếu chỗ đậu xe còn trống). Nếu bãi xe đầy, đèn LED trên Yolo UNO sẽ đổi thành màu đỏ để báo hiệu và hiển thị số lượng chỗ trống trên màn hình OLED.
 
 2. Kết nối 
 ----------

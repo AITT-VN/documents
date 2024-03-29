@@ -38,7 +38,7 @@ Trong bài này, chúng ta sẽ cùng lập trình một hệ thống phân lo�
 - **Kết nối:**
 
     .. image:: images/trash07.png
-        :scale: 80%
+        :scale: 100%
         :align: center 
 |
 

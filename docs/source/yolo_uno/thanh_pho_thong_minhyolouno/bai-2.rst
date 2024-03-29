@@ -32,6 +32,13 @@ Trong bài này, chúng ta sẽ cùng lập trình một bãi đậu xe thông m
     :align: center 
 |
 
+- Màn hình LCD OLED (I2C)
+
+.. image:: images/cityuno4_2.PNG
+    :width: 150px
+    :align: center 
+|
+
 
 - **Kết nối:**
 

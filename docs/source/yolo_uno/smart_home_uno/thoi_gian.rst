@@ -6,7 +6,7 @@
 --------
 
 Tiếp theo, chúng ta sẽ cùng nâng cấp dự án lên 1 cấp độ phức tạp hơn, kết hợp chức năng thời gian từ internet.
-|
+
 
 2. Chương trình lập trình
 ------

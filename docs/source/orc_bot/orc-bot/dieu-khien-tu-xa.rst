@@ -12,14 +12,7 @@ Tay cầm điều khiển là thiết bị không thể thiếu trong các cuộ
 ..  figure:: images/6.1.png
     :scale: 80%
     :align: center 
-
-    Các nút nhấn trên gamepad
-|
-
-..  figure:: images/6.2.png
-    :scale: 80%
-    :align: center 
-
+    
     Chức năng của các nút trên Gamepad
 |
 

@@ -27,20 +27,13 @@ Sau khi lắp ráp theo hướng dẫn lắp ráp của bộ kit, bạn sẽ có
     :align: center
 |
 
-2. Thành phần linh kiện lắp ráp
------------
---------
-
-Ngoài việc sử dụng bộ kit ORC có sẵn đầy đủ các thành phần cần thiết, bạn có thể sử dụng các thành phần riêng lẻ theo danh sách linh kiện (BOM - Bills Of Material) ở link này để xây dựng robot theo hướng dẫn, giúp giảm chi phí.
-
-
-3. Thành phần chính của robot
+2. Thành phần chính của robot
 -------
 -------
 
 Chúng ta sẽ cùng nhau tìm hiểu các thành phần của robot này để hiểu rõ hơn một hệ thống Robotics cần có những gì và chúng hoạt động như thế nào.
 
-3.1. **Mạch điều khiển**
+2.1. **Mạch điều khiển**
 ----------
 
 Mạch điều khiển đóng vai trò như bộ não của hệ thống, là bộ phận sẽ thực thi chương trình và xử lý giúp robot hoạt động theo thiết kế. Chúng ta sẽ sử dụng mạch điều khiển tên là Yolo UNO do OhStem thiết kế dành riêng cho mục đích giáo dục. 
@@ -82,7 +75,7 @@ Nhờ các dây điện đã chuẩn hóa về nguồn đất và tín hiệu đ
 Đây là một lợi thế vô cùng lớn của hệ thống mạch điện tử khi đã được chuẩn hóa. Lúc này, xác suất gặp lỗi sẽ ít hơn và bạn có thể tập trung vào việc lập trình của mình, thay vì phải tốn thời gian cho việc tìm lỗi từ việc kết nối mạch.
 
 
-3.2. **Mạch điều khiển động cơ (Motor Driver)**
+2.2. **Mạch điều khiển động cơ (Motor Driver)**
 -----------
 
 Để điều khiển các động cơ chúng ta cần có các mạch với IC motor driver chuyên để điều khiển tốc độ chứ không thể điều khiển trực tiếp từ các chân IO của vi điều khiển. Mạch motor driver giúp điều khiển tốc độ và chiều quay của động cơ. Mạch motor driver sẽ hoạt động theo lệnh của mạch điều khiển.
@@ -104,7 +97,7 @@ Trong tài liệu này, chúng ta sẽ sử dụng mạch motor driver phiên b�
     Mạch điều khiển động cơ V2
 |
 
-3.3. **Động cơ**
+2.3. **Động cơ**
 ------------
 
 Có nhiều loại động cơ được sử dụng trong các dự án robotics, mỗi loại có ưu và nhược điểm riêng. Có 2 loại động cơ phổ biến nhất mà chúng ta sẽ sử dụng chính trong dự án này là:
@@ -207,7 +200,7 @@ Dưới đây là một số lời khuyên để lựa chọn động cơ phù h
     - Nếu bạn cần độ chính xác cao, mô-men xoắn cao và giá thành rẻ, hãy sử dụng động cơ bước, dùng nhiều trong các máy cần độ chính xác cao như máy in 3D hay CNC
     - Nếu bạn cần hiệu suất cao, độ ồn thấp và tuổi thọ cao, hãy sử dụng động cơ brushless, ví dụ như các cơ cấu bắn bóng hoặc máy bay drone
 
-3.4. **Cảm biến:**
+2.4. **Cảm biến:**
 ---------
 
 Cảm biến là các bộ phận đầu vào, giúp thu thập dữ liệu từ môi trường bên ngoài. Nút nhấn BOOT có sẵn trên mạch Yolo UNO cũng có thể xem là bộ phận đầu vào. 
@@ -221,7 +214,7 @@ Trong các dự án robotics, các cảm biến thông dụng bao gồm cảm bi
     Cảm biến khoảng cách và cảm biến dò line 4 mắt
 |
 
-3.5. **Nguồn điện - Pin**
+2.5. **Nguồn điện - Pin**
 ------------
 
 Có nhiều loại pin sạc khác nhau được sử dụng cho robot, mỗi loại có ưu và nhược điểm riêng. Dưới đây là một số loại pin sạc phổ biến nhất:
@@ -296,7 +289,7 @@ Loại pin phổ biến nhất và kinh tế nhất trong các dự án robotics
     Hộp nguồn 2 pin (không mạch bảo vệ) và loại 3 pin (kèm mạch bảo vệ) Lithium-Ion 18650
 |
 
-4. **Thư viện Robotics Open Platform**
+3. **Thư viện Robotics Open Platform**
 ----------
 
 Thông thường, mỗi khi chúng ta cần làm các dự án robotics, đặc biệt là các dự án xe robot di chuyển, chúng ta sẽ phải xây dựng chương trình để xử lý các tác vụ cơ bản của robot là điều khiển động cơ, di chuyển, làm việc với các cảm biến thông dụng và hỗ trợ chế độ điều khiển từ xa (chế độ Teleop) bằng Gamepad hay từ mobile app. 

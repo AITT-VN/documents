@@ -31,3 +31,5 @@
    cam-bien/lora.rst
    cam-bien/nhip-tim.rst
    cam-bien/nhiet-do-ds18b20.rst
+   cam-bien/nhiet-do-hong-ngoai.rst
+   cam-bien/mpu6050.rst

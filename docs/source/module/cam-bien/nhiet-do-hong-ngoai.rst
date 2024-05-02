@@ -1,7 +1,7 @@
-2. Cảm biến nhiệt độ hồng ngoại không tiếp xúc
+28. Cảm biến nhiệt độ hồng ngoại không tiếp xúc
 ============
 
-.. image:: images/2.1.jpg
+.. image:: images/28.1.jpg
     :width: 400px
     :align: center 
 | 
@@ -56,7 +56,7 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
    * - .. image:: images/yolo_uno.png
           :width: 200px
           :align: center
-     - .. image:: images/2.1.jpg
+     - .. image:: images/28.1.jpg
           :align: center
      - .. image:: images/lcd_1602.png
           :width: 200px
@@ -72,7 +72,7 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
 - **Bước 2**: Sử dụng dây Grove cắm vào cảm biến
 - **Bước 3**: Kết nối cảm biến và màn hình LCD với **chân I2C trên Yolo UNO**.
 
-..  figure:: images/2.2.png
+..  figure:: images/28.2.png
     :scale: 70%
     :align: center 
 
@@ -85,21 +85,21 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
 
 1. Tải thư viện **MLX90614**  
 
-..  figure:: images/2.3.png
+..  figure:: images/28.3.png
     :scale: 80%
     :align: center 
 |
 
 Các khối lệnh sau để làm việc với cảm biến:
 
-..  figure:: images/2.4.png
+..  figure:: images/28.4.png
     :scale: 100%
     :align: center 
 |
 
 2. Chương trình minh họa thực hiện chức năng tạo một máy đo nhiệt độ môi trường: 
 
-..  figure:: images/2.5.png
+..  figure:: images/28.5.png
     :scale: 80%
     :align: center 
 |

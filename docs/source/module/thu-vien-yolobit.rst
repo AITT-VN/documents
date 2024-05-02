@@ -1,4 +1,4 @@
-**Hướng dẫn cài đặt thư viện**
+**Cài đặt thư viện cho Yolo:Bit**
 ===============
 
 Với mỗi thiết bị mở rộng, OhStem sẽ có những thư viện đi kèm trên OhStem App.

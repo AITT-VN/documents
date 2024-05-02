@@ -1,4 +1,4 @@
-**Hướng dẫn cài đặt Arduino và Yolo:Bit**
+**Cài đặt Arduino và Yolo:Bit**
 =============
 
 1. Cài đặt Arduino IDE

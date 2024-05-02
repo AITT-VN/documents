@@ -1,7 +1,7 @@
-3. Cảm biến góc MPU6050
+29. Cảm biến góc MPU6050
 ==========
 
-.. image:: images/3.1.jpg
+.. image:: images/29.1.jpg
     :width: 400px
     :align: center 
 |
@@ -10,7 +10,7 @@ Cảm biến gia tốc MPU6050 là một trong những module phổ biến đư�
 
 Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 thông số: 3 trục Góc quay (Gyro), 3 trục gia tốc hướng (Accelerometer), là loại cảm biến gia tốc phổ biến nhất trên thị trường hiện nay. Cảm biến thường được ứng dụng trên các mô hình con lắc động, xe tự cân bằng, máy bay,… 
 
-.. image:: images/3.2.jpg
+.. image:: images/29.2.jpg
     :width: 400px
     :align: center 
 |
@@ -52,7 +52,7 @@ Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 
    * - .. image:: images/yolo_uno.png
           :width: 200px
           :align: center
-     - .. image:: images/3.1.jpg
+     - .. image:: images/29.1.jpg
           :align: center
      - .. image:: images/lcd_1602.png
           :width: 200px
@@ -68,7 +68,7 @@ Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 
 - **Bước 2**: Sử dụng dây Grove cắm vào cảm biến
 - **Bước 3**: Kết nối cảm biến và màn hình LCD với **chân I2C trên Yolo UNO**.
 
-..  figure:: images/3.3.png
+..  figure:: images/29.3.png
     :scale: 70%
     :align: center 
 
@@ -81,14 +81,14 @@ Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 
 
 1. Tải thư viện **MPU6050**  
 
-..  figure:: images/3.4.png
+..  figure:: images/29.4.png
     :scale: 80%
     :align: center 
 |
 
 Các khối lệnh sau để làm việc với cảm biến:
 
-..  figure:: images/3.5.png
+..  figure:: images/29.5.png
     :scale: 100%
     :align: center 
 |
@@ -97,9 +97,11 @@ Các khối lệnh sau để làm việc với cảm biến:
 
 2. Chúng ta có thể hiển thị góc đo được so với ban đầu thông qua LCD bằng chương trình mẫu sau:
 
-..  figure:: images/3.6.png
+..  figure:: images/29.6.png
     :scale: 70%
     :align: center 
 |
+
+Gửi chương trình vào Yolo UNO và lắc nhẹ cảm biến. Quan sát kết quả trên LCD. 
 
 **Link chương trình mẫu:** `<https://app.ohstem.vn/#!/share/yolouno/2fu3TC2GYvJAUPmBWh48GhlChr8>`_

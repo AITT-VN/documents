@@ -46,7 +46,6 @@ OhStem xin chào tất cả các bạn!
    yolo_uno/uno_city.rst
    yolo_uno/trash_bin_yolo_uno.rst
    yolo_uno/smart_home_uno.rst
-   yolo_uno/module.rst
 
 
 .. toctree::
@@ -109,8 +108,9 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 2
    :caption: Các module mở rộng
 
-   module/cai-dat-thu-vien.rst
+   module/thu-vien-yolobit.rst
    module/cai-dat-arduino.rst
+   module/thu-vien-yolouno.rst
    module/cam-bien.rst
    module/hien-thi.rst
    module/dieu-khien-dong-ngat.rst

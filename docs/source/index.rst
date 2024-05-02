@@ -46,6 +46,7 @@ OhStem xin chào tất cả các bạn!
    yolo_uno/uno_city.rst
    yolo_uno/trash_bin_yolo_uno.rst
    yolo_uno/smart_home_uno.rst
+   yolo_uno/module.rst
 
 
 .. toctree::

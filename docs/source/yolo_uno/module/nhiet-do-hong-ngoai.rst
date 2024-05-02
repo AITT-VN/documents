@@ -11,15 +11,10 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
 **Các ứng dụng của MLX90614:**
 
 - Đo nhiệt độ của các đối tượng chuyển động
-
 - Súng nhiệt công nghiệp
-
 - Đo nhiệt độ cơ thể con người
-
 - Kiểm soát nhiệt độ tại nhà / văn phòng
-
 - Giám sát chăn nuôi
-
 - Phát hiện chuyển động
 
 1. Mua sản phẩm
@@ -39,13 +34,13 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
 ---------
 ----------
 
-Điện áp hoạt động: 3.3V đến 5V
-Dòng điện : 1.5mA
-Phạm vi nhiệt độ đối tượng: -70 ° C đến 382,2 ° C
-Phạm vi nhiệt độ môi trường: -40 ° C đến 125 ° C
-Độ chính xác: 0,02 ° C
-Góc quét: 80 °
-Khoảng cách giữa đối tượng và cảm biến: 2cm-5cm (ước chừng)
+- Điện áp hoạt động: 3.3V đến 5V
+- Dòng điện : 1.5mA
+- Phạm vi nhiệt độ đối tượng: -70°C đến 382,2°C
+- Phạm vi nhiệt độ môi trường: -40°C đến 125°C
+- Độ chính xác: 0,02°C
+- Góc quét: 80°
+- Khoảng cách giữa đối tượng và cảm biến: 2cm-5cm (ước chừng)
 
 
 3. Kết nối

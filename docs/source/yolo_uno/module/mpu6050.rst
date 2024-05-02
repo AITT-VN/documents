@@ -98,7 +98,7 @@ Các khối lệnh sau để làm việc với cảm biến:
 2. Chúng ta có thể hiển thị góc đo được so với ban đầu thông qua LCD bằng chương trình mẫu sau:
 
 ..  figure:: images/3.6.png
-    :scale: 80%
+    :scale: 70%
     :align: center 
 |
 

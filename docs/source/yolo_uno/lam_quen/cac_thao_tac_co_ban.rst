@@ -73,3 +73,24 @@ Khi kết nối thành công biểu tượng USB sẽ sáng đèn màu xanh:
     :scale: 100%
     :align: center 
 |
+
+**3. Lưu chương trình vào Yolo UNO**
+------
+--------
+
+Với việc chạy thử ở phần trên, chương trình chỉ mới được gửi tạm tới Yolo UNO. Nói một cách khác, chương trình này sẽ không tồn tại trên mạch Yolo UNO mỗi khi chúng ta tắt nguồn và bật lại, tương tự như bộ nhớ tạm (RAM) của máy tính thông thường.
+
+Để chương trình luôn được lưu lại trong Yolo UNO và vận hành như một ứng dụng thực tế, bạn cần lưu nó vào mạch. Quy trình thực hiện cũng khá tương đồng với bước chạy thử, nhưng lần này, chúng ta sẽ chọn Lưu dự án vào thiết bị, như minh họa ở hình bên dưới:
+
+..  figure:: images/co_ban_10.png
+    :scale: 100%
+    :align: center 
+
+    Lưu chương trình cho mạch Yolo UNO
+
+Sau khi lưu thành công, chúng ta **cần reset lại mạch ở bước này, để khởi động lại mạch Yolo UNO**. 
+
+Có 2 cách để chúng ta reset lại mạch:
+
+1. Nhấn vào nút Reset (nằm gần khe cắm nguồn USB) 
+2. Rút khe cắm USB và gắn lại vào mạch Yolo UNO.

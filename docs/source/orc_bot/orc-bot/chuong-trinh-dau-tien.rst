@@ -33,11 +33,13 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
     :align: center 
 |
 
-- **Bước 4:** Chọn firmware cần cập nhật là **Yolo UNO v1.1**, chọn cổng kết nối có tên là **USB/JTAG serial…** và nhấn **Cập nhật**.
+- **Bước 4:** Chọn firmware cần cập nhật là **Yolo UNO v1.x**, chọn cổng kết nối có tên là **USB/JTAG serial…** và nhấn **Cập nhật**.
 
 ..  figure:: images/3.4.png
     :scale: 80%
     :align: center 
+
+    Firmware sẽ được cập nhật liên tục, do đó bạn hãy chọn bản cập nhất mới nhất, ví dụ trong hình là v1.1
 |
 
 - **Bước 5:** Chọn **Install** để tiếp tục cập nhật firmware

@@ -57,6 +57,11 @@ Các bước thực hiện như sau:
 
 **Xem hướng dẫn lắp ráp** `tại đây <https://drive.google.com/file/d/1xv8T31mbkkWIwzzcmgcjEIyZy95ugNt_/view?usp=drive_link>`_
 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NAhcErfUF6E?si=rG5FQa8WbqGO3SPi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 3. Sơ đồ kết nối dây
 -------
 -----------

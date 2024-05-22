@@ -42,7 +42,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 - **Hướng dẫn lắp ráp**:
 
-    **Đang cập nhật**
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fY91f03LtVI?si=1LBFSq1pWnzEuLZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+|
 
 - **Kết nối dây**:
 

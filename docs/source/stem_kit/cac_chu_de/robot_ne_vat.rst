@@ -7,6 +7,11 @@
 
 Với chủ đề này, học sinh được tìm hiểu về công dụng và chức năng của các loại robot. Tìm hiểu về nguyên lý hoạt động của robot né vật cản và ứng dụng vào thực tế. 
 
+.. image:: images/robot_ne_vat_2.png
+    :scale: 60%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -44,6 +49,11 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Kết nối 2 động cơ DC vào cổng M1 và M2
     + Kết nối cảm biến siêu âm vào cổng A
 
+.. image:: images/robot_ne_vat_3.png
+    :scale: 90%
+    :align: center 
+|
+
 
 3. Hướng dẫn lập trình
 --------
@@ -51,8 +61,12 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 Viết chương trình như sau:
 
-**Chương trình đang được cập nhật**
+.. image:: images/robot_ne_vat_4.png
+    :scale: 80%
+    :align: center 
+|
 
+**Link chương trình:** `<https://app.ohstem.vn/#!/share/yolobit/2gokDijH100ezfzV0Pvfr9bTSNj>`_
 
 .. note:: Chương trình sẽ thực hiện như sau: 
 

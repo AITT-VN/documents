@@ -41,9 +41,13 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 - **Kết nối dây**:
 
-    + Cảm biến khoảng cách vào cổng A
+    + Cảm biến khí gas vào cổng A
     + Module phát nhạc cổng B
 
+.. image:: images/may_bao_khi_gas_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

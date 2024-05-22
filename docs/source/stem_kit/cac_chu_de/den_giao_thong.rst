@@ -44,6 +44,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
     Đèn LED RGB kết nối vào cổng A
 
+.. image:: images/den_giao_thong_3.png
+    :scale: 60%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

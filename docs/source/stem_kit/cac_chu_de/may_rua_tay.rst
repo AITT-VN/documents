@@ -7,6 +7,11 @@
 
 Trong dự án này, học sinh được làm quen với một hệ thống tự động cơ bản là máy rửa tay không chạm, hệ thống chỉ cần phát hiện tay người vòi nước sẽ tự bật.
 
+.. image:: images/may_rua_tay_4.png
+    :scale: 90%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -42,7 +47,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Cảm biến khoảng cách vào cổng A
     + Máy bơm mini vào cổng động cơ M1
 
-
+.. image:: images/may_rua_tay_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

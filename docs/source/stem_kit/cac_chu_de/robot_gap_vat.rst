@@ -39,7 +39,12 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 - **Kết nối dây**:
 
     + Kết nối 2 động cơ DC vào cổng M1 và M2
+    + Kết nối động cơ servo vào cổng S1
 
+.. image:: images/robot_gap_vat_2.png
+    :scale: 90%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

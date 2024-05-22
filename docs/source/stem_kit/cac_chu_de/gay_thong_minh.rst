@@ -7,6 +7,11 @@
 
 Với dự án này, học sinh sẽ được tìm hiểu về các sự khó khăn, bất tiện khi phải dò đường và tránh các vật cản trong cuộc sống hằng ngày của người khiếm thị. Vì vậy, chỉ với Yolo:Bit, cảm biến khoảng cách và một chiếc loa mini, học sinh sẽ thiết kế ra một chiếc gậy thông minh, khi có khả năng phát hiện và cảnh báo khi người dùng đi lại gần vật cản. Đồng thời, sẽ bật đèn cảnh báo khi đêm xuống giúp người xung quanh có thể quan sát và tránh va chạm. 
 
+.. image:: images/gay_thong_minh_4.png
+    :scale: 80%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -43,6 +48,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Cảm biến khoảng cách vào cổng A
     + Module phát nhạc cổng B
 
+.. image:: images/gay_thong_minh_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

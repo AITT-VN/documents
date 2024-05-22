@@ -7,6 +7,11 @@
 
 Với hướng dẫn này, học sinh được thực hành hoàn thiện mô hình cánh cửa thông minh với tính năng bảo mật cao chỉ mở được cửa khi nhập chính xác mật khẩu. 
 
+.. image:: images/cua_thong_minh_4.png
+    :scale: 80%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -37,9 +42,13 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 - **Kết nối dây**:
 
-    + Bàn phím cảm ứng kết nối vào cổng A
+    + Bàn phím cảm ứng kết nối vào cổng C
     + Động cơ servo vào cổng S1
 
+.. image:: images/cua_thong_minh_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

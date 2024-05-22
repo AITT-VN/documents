@@ -42,7 +42,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Đèn LED RGB kết nối vào cổng B
     + Máy bơm mini kết nối vào cổng M1
 
-
+.. image:: images/chau_cay_thong_minh_4.png
+    :scale: 70%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

@@ -39,6 +39,11 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
     + Kết nối động cơ DC vào cổng M1
 
+.. image:: images/vong_quay_3.png
+    :scale: 80%
+    :align: center 
+|
+
 
 3. Hướng dẫn lập trình
 --------

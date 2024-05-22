@@ -7,6 +7,11 @@
 
 Trong dự án này, học sinh sẽ tham gia vào việc tạo ra một mô hình máy bắn đá, tương tự như loại vũ khí được sử dụng trong các cuộc chiến trong thời cổ đại. Mục tiêu của dự án là giúp học sinh áp dụng kiến thức về góc và điều chỉnh góc bắn để có thể đánh đổ một bức tường được làm bằng giấy.
 
+.. image:: images/may_ban_da_4.png
+    :scale: 80%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -40,6 +45,11 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 - **Kết nối dây**:
 
     + Kết nối động cơ servo vào cổng S1
+
+.. image:: images/may_ban_da_3.png
+    :scale: 90%
+    :align: center 
+|
 
 
 3. Hướng dẫn lập trình

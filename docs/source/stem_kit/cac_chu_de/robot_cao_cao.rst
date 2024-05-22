@@ -7,6 +7,11 @@
 
 Học sinh được hoàn thiện mô hình robot cào cào, làm thế nào để tối ưu được khả năng di chuyển và tham gia cuộc đua robot để tìm ra chú robot di chuyển nhanh nhất. 
 
+.. image:: images/robot_cao_cao_4.png
+    :scale: 60%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -41,6 +46,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
     + Kết nối 2 động cơ DC vào cổng M1 và M2
 
+.. image:: images/robot_cao_cao_3.png
+    :scale: 90%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

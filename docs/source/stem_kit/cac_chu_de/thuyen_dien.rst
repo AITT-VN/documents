@@ -28,7 +28,7 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 - **Chuẩn bị**: 
 
-.. image:: images/robot_cao_cao.png
+.. image:: images/thuyen_dien_2.png
     :scale: 90%
     :align: center 
 |
@@ -42,6 +42,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Kết nối 2 động cơ DC vào cổng M1 và M2
     + Kết nối cảm biến siêu âm vào cổng A
 
+.. image:: images/thuyen_dien.png
+    :scale: 90%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

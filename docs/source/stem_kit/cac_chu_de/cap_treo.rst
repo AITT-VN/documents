@@ -40,6 +40,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
     + Kết nối động cơ DC vào cổng M1
 
+.. image:: images/cap_treo_2.png
+    :scale: 90%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

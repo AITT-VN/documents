@@ -7,6 +7,11 @@
 
 Với dự án này, học sinh sẽ thiết kế một bãi đậu xe thông minh. Giúp học sinh hiểu rõ nhu cầu trong cuộc sống ngày nay, khi phương tiện cá nhân tăng cao, nhu cầu bãi đỗ xe cũng tăng theo. Vì thế, các bãi đậu xe cần trang bị thêm các thiết bị hiện đại để giúp cho việc đỗ xe một các dễ dàng và nhanh chóng hơn mà không cần sự điều khiển của con người. Thanh chắn bãi đậu xe sẽ tự động mở khi phát hiện xe ra vào bãi đậu.
 
+.. image:: images/bai_dau_xe_4.png
+    :scale: 90%
+    :align: center 
+|
+
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
 ..  csv-table:: 
@@ -41,7 +46,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Cảm biến khoảng cách vào cổng A
     + Servo cổng S1
 
-
+.. image:: images/bai_dau_xe_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

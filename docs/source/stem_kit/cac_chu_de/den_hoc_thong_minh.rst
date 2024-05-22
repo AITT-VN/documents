@@ -9,6 +9,10 @@ Với dự án này, học sinh được tìm hiểu về các khó khăn và b�
 
 Vì thế, để thuận tiện trong việc học, học sinh sẽ sáng tạo bên một mô hình đèn học thông minh, sẽ tự động bật đèn khi có người ngồi vào bàn học và tích hợp thêm một chiếc quạt máy hoạt động tương tự đèn và có thể thay đổi tốc độ quạt. 
 
+.. image:: images/den_hoc_thong_minh_4.png
+    :scale: 80%
+    :align: center 
+|
 
 Các kiến thức và kỹ năng đạt được trong dự án này như sau: 
 
@@ -45,7 +49,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Đèn LED RGB vào cổng B
     + Động cơ DC vào cổng M1
 
-
+.. image:: images/den_hoc_thong_minh_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

@@ -44,7 +44,10 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Module phát nhạc vào cổng B
     + Servo cổng S1
 
-
+.. image:: images/thung_rac_thong_minh_3.png
+    :scale: 80%
+    :align: center 
+|
 
 3. Hướng dẫn lập trình
 --------

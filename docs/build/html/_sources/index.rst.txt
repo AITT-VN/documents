@@ -12,6 +12,11 @@ OhStem xin chào tất cả các bạn!
 
    store/store.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: ORC Robot Kit
+
+   orc_bot/orc-bot.rst
 
 .. toctree::
    :maxdepth: 2
@@ -82,11 +87,6 @@ OhStem xin chào tất cả các bạn!
    xbot/nem-bong.rst
    xbot/gap-hai-bac.rst
 
-.. toctree::
-   :maxdepth: 2
-   :caption: ORC Robot Kit
-
-   orc_bot/orc-bot.rst
 
 
 .. toctree::

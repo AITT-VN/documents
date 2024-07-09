@@ -18,3 +18,4 @@
    arduino_yolo_uno/quat_tu_dong.rst
    arduino_yolo_uno/vuon_thong_minh.rst
    arduino_yolo_uno/thung_rac.rst
+   arduino_yolo_uno/iot_yolouno.rst

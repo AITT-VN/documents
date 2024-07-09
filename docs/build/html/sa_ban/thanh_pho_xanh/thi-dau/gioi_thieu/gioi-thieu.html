@@ -15,9 +15,9 @@
   
         <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -178,11 +186,11 @@
            <div itemprop="articleBody">
              
   <section id="gioi-thieu-ve-thi-dau-robot">
-<h1>1. 1. Giới thiệu về thi đấu robot<a class="headerlink" href="#gioi-thieu-ve-thi-dau-robot" title="Link to this heading"></a></h1>
+<h1>1. 1. Giới thiệu về thi đấu robot<a class="headerlink" href="#gioi-thieu-ve-thi-dau-robot" title="Permalink to this heading"></a></h1>
 <p>Với sự phát triển mạnh mẽ của khoa học kỹ thuật ngày nay, robot là những trợ thủ đắc lực của con người không chỉ trong sản xuất, nghiên cứu mà còn trên lĩnh vực giáo dục. Bản thân robot đã và luôn thu hút các bạn nhỏ, từ đó tạo cơ hội phát triển cho những sân chơi robot, mà điển hình là những cuộc thi, mô hình thi đấu robot.</p>
 <p>Vậy thi đấu robot là gì? Có gì thú vị về nó? Hãy cùng OhStem tìm ra đáp án dưới đây nhé!</p>
 <section id="thi-dau-robot-va-cac-cuoc-thi-robot">
-<h2><strong>Thi đấu robot và các cuộc thi robot</strong><a class="headerlink" href="#thi-dau-robot-va-cac-cuoc-thi-robot" title="Link to this heading"></a></h2>
+<h2><strong>Thi đấu robot và các cuộc thi robot</strong><a class="headerlink" href="#thi-dau-robot-va-cac-cuoc-thi-robot" title="Permalink to this heading"></a></h2>
 <p>Những cuộc thi đấu robot có thể hiểu đơn giản là một cuộc thi mà có sự tham gia của hai hay nhiều đội đấu tham gia. Các đội thông thường sẽ phải tự chế tạo và lập trình robot của mình hoặc điều khiển robot để tham gia các hoạt động có thể là thi chạy, đấu đối kháng hay các hình thức giải đố, tùy theo nội dung của giải đấu.</p>
 <p>Cũng chính vì lý do đó, độ thu hút của những giải thi đấu robot là không thể bàn cãi, đặc biệt là đối với các bạn học sinh – là đối tượng cực kỳ tò mò, hứng thú với robot</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IwqCDVdf2dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="line-block">
@@ -190,7 +198,7 @@
 </div>
 </section>
 <section id="nhung-loi-ich-ma-cac-cuoc-thi-dau-robot-mang-lai">
-<h2><strong>Những lợi ích mà các cuộc thi đấu robot mang lại</strong><a class="headerlink" href="#nhung-loi-ich-ma-cac-cuoc-thi-dau-robot-mang-lai" title="Link to this heading"></a></h2>
+<h2><strong>Những lợi ích mà các cuộc thi đấu robot mang lại</strong><a class="headerlink" href="#nhung-loi-ich-ma-cac-cuoc-thi-dau-robot-mang-lai" title="Permalink to this heading"></a></h2>
 <p>Trong thời đại công nghiệp 4.0, nhu cầu chế tạo và sử dụng robot là vô cùng cần thiết và quan trọng. Một trong những đất nước đi đầu trong công nghệ chế tạo robot là Nhật Bản cũng đã và đang đánh giá rất cao những cuộc thi robot như Robocon. Do đó, những phong trào, cuộc thi robot ở Nhật luôn vô cùng sôi nổi nhằm tạo sân chơi khoa học công nghệ cao cho giới trẻ nơi đây.</p>
 <p>Các bạn trẻ tham gia vào cuộc thi đấu robot không chỉ phải sáng tạo, mà còn phải cạnh tranh với những đội thi khác. Bởi vậy, đây là cuộc thi nghiêm túc chứ không phải trò chơi. Việc tham gia vào các cuộc thi robot sẽ giúp các em tích lũy được rất nhiều lợi ích:</p>
 <blockquote>
@@ -201,7 +209,7 @@
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../../../_images/1.11.jpg"><img alt="../../../../_images/1.11.jpg" src="../../../../_images/1.11.jpg" style="width: 705.0px; height: 470.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Cuộc thi đấu robot rất thu hút học sinh</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Cuộc thi đấu robot rất thu hút học sinh</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">

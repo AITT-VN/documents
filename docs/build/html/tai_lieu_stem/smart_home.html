@@ -15,9 +15,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,20 +158,20 @@
            <div itemprop="articleBody">
              
   <section id="giao-trinh-ai-va-iot-cho-nha-thong-minh">
-<h1>3. Giáo trình AI và IOT cho nhà thông minh<a class="headerlink" href="#giao-trinh-ai-va-iot-cho-nha-thong-minh" title="Link to this heading"></a></h1>
+<h1>3. Giáo trình AI và IOT cho nhà thông minh<a class="headerlink" href="#giao-trinh-ai-va-iot-cho-nha-thong-minh" title="Permalink to this heading"></a></h1>
 <a class="reference internal image-reference" href="../_images/home.png"><img alt="../_images/home.png" class="align-center" src="../_images/home.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="gioi-thieu-ve-giao-trinh">
-<h2><strong>Giới thiệu về giáo trình</strong><a class="headerlink" href="#gioi-thieu-ve-giao-trinh" title="Link to this heading"></a></h2>
+<h2><strong>Giới thiệu về giáo trình</strong><a class="headerlink" href="#gioi-thieu-ve-giao-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Cùng với sự phát tiển công nghệ, <strong>Nhà thông minh</strong> (Smart Home) theo đó cũng sẽ xuất hiện nhiều hơn. Đây là một sản phẩm của công nghệ, được tích hợp các thiết bị điện tử được điều khiển, giám sát, truy cập từ xa nhờ sự chia sẻ đữ liệu mạnh mẽ trên nền tảng kết nối vạn vật (IoT), cộng với sự mềm dẻo của trí tuệ nhân tạo (AI).</p>
 <p>Trong giáo trình này, chúng tôi sẽ cung cấp cho bạn đọc các kiến thức cơ bản về việc áp dụng các công nghệ vào một ứng dụng cụ thể là <strong>Nhà thông minh Yolo:Home</strong>, vốn là một chủ đề khá phổ biến trong giáo dục STEM.</p>
 <p>Bên cạnh làm quen với các tính năng như điều khiển các thiết bị bằng giọng nói, chúng ta có thể theo dõi các thông tin về điều kiện trong nhà như nhiệt độ và độ ẩm không khí. Thêm nữa, việc nhận dạng khuôn mặt có thể bổ sung cho tính năng cửa thông minh cho chủ đề nhà thông minh. Bạn cũng có thể tự xây dựng <strong>trợ lý ảo nhân tạo</strong> - Một trong những tính năng đang được áp dụng rất nhiều trong các Smart Home thực tế.</p>
 </section>
 <section id="cau-truc-giao-trinh">
-<h2><strong>Cấu trúc giáo trình</strong><a class="headerlink" href="#cau-truc-giao-trinh" title="Link to this heading"></a></h2>
+<h2><strong>Cấu trúc giáo trình</strong><a class="headerlink" href="#cau-truc-giao-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Giáo trình sẽ chia thành các phần từ cơ bản đến nâng cao để giúp bạn hoàn thiện dự án như sau:</p>
 <ul class="simple">
@@ -175,7 +183,7 @@
 </ul>
 </section>
 <section id="tai-giao-trinh-ai-va-iot-cho-nha-thong-minh-tai-ve">
-<h2><strong>Tải giáo trình AI và IOT cho nhà thông minh :</strong> <a class="reference external" href="https://drive.google.com/file/d/1_i5X7eNRt0A48ETs669PU__vfq0MPb8_/view?usp=sharing">Tải về</a><a class="headerlink" href="#tai-giao-trinh-ai-va-iot-cho-nha-thong-minh-tai-ve" title="Link to this heading"></a></h2>
+<h2><strong>Tải giáo trình AI và IOT cho nhà thông minh :</strong> <a class="reference external" href="https://drive.google.com/file/d/1_i5X7eNRt0A48ETs669PU__vfq0MPb8_/view?usp=sharing">Tải về</a><a class="headerlink" href="#tai-giao-trinh-ai-va-iot-cho-nha-thong-minh-tai-ve" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 </section>
 </section>

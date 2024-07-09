@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -51,6 +51,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -71,6 +75,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -109,8 +116,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -171,9 +179,9 @@
            <div itemprop="articleBody">
              
   <section id="huong-dan-lap-trinh">
-<h1>2. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Link to this heading"></a></h1>
+<h1>2. Hướng dẫn lập trình<a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h1>
 <section id="thuat-toan">
-<h2>2.1. Thuật toán<a class="headerlink" href="#thuat-toan" title="Link to this heading"></a></h2>
+<h2>2.1. Thuật toán<a class="headerlink" href="#thuat-toan" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong bài viết này, OhStem sẽ hướng dẫn bạn cách lập trình để robot xBot có thể tự động tìm lối ra của mê cung, dựa vào cảm biến khoảng cách và cảm biến dò đường nhé!</p>
 <p><em>Kiến thức thêm:</em></p>
@@ -199,13 +207,13 @@
 <p>Thuật toán của nhiệm vụ này khá đơn giản, ban đầu robot sẽ đi theo vạch đen. Nếu gặp vật cản trước mặt, robot sẽ xoay tại chỗ liên tục cho đến khi trước mặt hết vật cản thì đi tiếp.</p>
 </section>
 <section id="id1">
-<h2>2.2 Hướng dẫn lập trình<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2>2.2 Hướng dẫn lập trình<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để lập trình cho robot Rover thi đấu, bạn cần tải thư viện <strong>Robot Rover</strong> và thư viện <strong>Robocon</strong>.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/thu_vien1.png"><img alt="../../_images/thu_vien1.png" src="../../_images/thu_vien1.png" style="width: 608.0px; height: 300.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Xem hướng dẫn tải thư viện <a class="reference external" href="https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html">tại đây</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Đầu tiên, chúng ta cần tạo 1 hàm để robot đi theo đường line đen. Trên cảm biến dò đường của Rover có 4 mắt đọc tín hiệu được đánh dấu từ 1 đến 4 từ trái qua phải, để nhận diện vạch đen và nền trắng.</p>
@@ -288,7 +296,7 @@
 </div>
 </section>
 <section id="tai-chuong-trinh-mau">
-<h2>2.3 <strong>Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2>2.3 <strong>Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể sử dụng trực tiếp chương trình mẫu về robot giải mê cung mà chúng tôi đã lập trình sẵn cho bạn tại đây.</p>
 <ul class="simple">

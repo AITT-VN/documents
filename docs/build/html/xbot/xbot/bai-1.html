@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -131,8 +138,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -174,11 +182,11 @@
            <div itemprop="articleBody">
              
   <section id="bai-1-cung-di-chuyen-nao">
-<h1>5. Bài 1: Cùng di chuyển nào<a class="headerlink" href="#bai-1-cung-di-chuyen-nao" title="Link to this heading"></a></h1>
+<h1>5. Bài 1: Cùng di chuyển nào<a class="headerlink" href="#bai-1-cung-di-chuyen-nao" title="Permalink to this heading"></a></h1>
 <p><strong>Mục tiêu:</strong></p>
 <p>Hiểu về động cơ và các khối lệnh giúp cho xBot có thể di chuyển theo ý muốn.</p>
 <section id="gioi-thieu-ve-dong-co">
-<h2>1. Giới thiệu về động cơ<a class="headerlink" href="#gioi-thieu-ve-dong-co" title="Link to this heading"></a></h2>
+<h2>1. Giới thiệu về động cơ<a class="headerlink" href="#gioi-thieu-ve-dong-co" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để điều khiển xBot di chuyển, bạn cần hiểu về động cơ và cách hoạt động của chúng.</p>
 <p>Các động cơ này sẽ giúp cho xBot di chuyển tự do nhiều hướng (tiến tới, lùi lại, rẽ trái, rẽ phải) hoặc thực hiện một tác vụ phức tạp nào đó theo yêu cầu.</p>
@@ -193,7 +201,7 @@
 </div>
 </section>
 <section id="khoi-kenh-dieu-khien-dong-co">
-<h2>2. Khối kệnh điều khiển động cơ<a class="headerlink" href="#khoi-kenh-dieu-khien-dong-co" title="Link to this heading"></a></h2>
+<h2>2. Khối kệnh điều khiển động cơ<a class="headerlink" href="#khoi-kenh-dieu-khien-dong-co" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để điều khiển động cơ, bạn sẽ dùng các khối lệnh theo những cách sau:</p>
 <ul class="simple">
@@ -243,7 +251,7 @@
 </ol>
 </section>
 <section id="viet-chuong-trinh-di-chuyen">
-<h2>3. Viết chương trình di chuyển<a class="headerlink" href="#viet-chuong-trinh-di-chuyen" title="Link to this heading"></a></h2>
+<h2>3. Viết chương trình di chuyển<a class="headerlink" href="#viet-chuong-trinh-di-chuyen" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>Chương trình 1:</strong> Ở trên xBot có một nút nhấn, khi nút được nhấn, xBot di chuyển về phía trước 1 giây và sau đó lùi lại 1 giây.</p></li>
@@ -295,7 +303,7 @@
 </div>
 </section>
 <section id="chuong-trinh-mo-rong">
-<h2>4. Chương trình mở rộng<a class="headerlink" href="#chuong-trinh-mo-rong" title="Link to this heading"></a></h2>
+<h2>4. Chương trình mở rộng<a class="headerlink" href="#chuong-trinh-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong phần trước, bạn đã biết cách điều khiển xBot di chuyển đơn giản.</p>
 <p>Trong phần này, bạn hãy thử viết một chương trình phức tạp hơn: <strong>Cho xBot di chuyển theo hình vuông sau khi được nhấn</strong> như hình bên cạnh.</p>
@@ -319,7 +327,7 @@
 <p>Do nhiều yếu tố, xBot sẽ không thể chạy hình vuông chính xác. Bạn cần tinh chỉnh tốc độ (càng chậm càng chính xác) và thời gian rẽ để đường đi giống hình vuông nhất.</p>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>5. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Link to this heading"></a></h2>
+<h2>5. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Chúng ta thấy chương trình ở phần 3-4 khá dài, có 2 khối lệnh tiến tới và rẽ phải được lặp lại 4 lần. Để rút gọn chương trình, bạn có thể sử dụng khối lệnh lặp lại 4 lần.</p>
 <p>Chương trình khi đó sẽ như sau:</p>
@@ -335,7 +343,7 @@
 </div>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>6. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Link to this heading"></a></h2>
+<h2>6. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Công dụng của động cơ trên xBot là gì?</p></li>

@@ -15,9 +15,9 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -181,10 +189,10 @@
            <div itemprop="articleBody">
              
   <section id="module-oled_i2c">
-<span id="oled-i2c-oled-i2c-module"></span><h1><a class="reference internal" href="#module-oled_i2c" title="oled_i2c: OLED I2C Module"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code></a> — OLED I2C Module<a class="headerlink" href="#module-oled_i2c" title="Link to this heading"></a></h1>
+<span id="oled-i2c-oled-i2c-module"></span><h1><a class="reference internal" href="#module-oled_i2c" title="oled_i2c: OLED I2C Module"><code class="xref py py-mod docutils literal notranslate"><span class="pre">oled_i2c</span></code></a> — OLED I2C Module<a class="headerlink" href="#module-oled_i2c" title="Permalink to this heading"></a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">oled_i2c</span></code></p>
 <section id="function">
-<h2>Function<a class="headerlink" href="#function" title="Link to this heading"></a></h2>
+<h2>Function<a class="headerlink" href="#function" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">oled</span> <span class="pre">=</span> <span class="pre">OledI2C(PORT)</span></span></dt>
@@ -204,19 +212,19 @@ Y: Tọa độ theo chiều dọc. (0 &lt;= Y &lt;= 64)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="oled_i2c.oled.show">
-<span class="sig-prename descclassname"><span class="pre">oled.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oled_i2c.oled.show" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">oled.</span></span><span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oled_i2c.oled.show" title="Permalink to this definition"></a></dt>
 <dd><p>Lệnh hiển thị nội dung.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="oled_i2c.oled.fill">
-<span class="sig-prename descclassname"><span class="pre">oled.</span></span><span class="sig-name descname"><span class="pre">fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oled_i2c.oled.fill" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">oled.</span></span><span class="sig-name descname"><span class="pre">fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oled_i2c.oled.fill" title="Permalink to this definition"></a></dt>
 <dd><p>Xóa nội dung trên màn hình.</p>
 </dd></dl>
 
 </section>
 <section id="sample-code">
-<h2>Sample Code<a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
+<h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this heading"></a></h2>
 <p>Hiển thị kí tự trên màn hình OLED</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">oled_i2c</span> <span class="kn">import</span> <span class="n">OledI2C</span>
 

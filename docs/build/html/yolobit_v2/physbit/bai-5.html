@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -51,6 +51,10 @@
               <p class="caption" role="heading"><span class="caption-text">Cửa hàng</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul class="current">
@@ -94,6 +98,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -132,8 +139,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -175,16 +183,16 @@
            <div itemprop="articleBody">
              
   <section id="bai-5-bien-tro-potentiometer">
-<h1>7. Bài 5: Biến trở  (Potentiometer)<a class="headerlink" href="#bai-5-bien-tro-potentiometer" title="Link to this heading"></a></h1>
+<h1>7. Bài 5: Biến trở  (Potentiometer)<a class="headerlink" href="#bai-5-bien-tro-potentiometer" title="Permalink to this heading"></a></h1>
 <section id="gioi-thieu">
-<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Link to this heading"></a></h2>
+<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p><strong>Biến trở</strong>, là một điện trở có thể thay đổi giá trị có đơn vị là Ohm (Ω). Biến trở được ứng dụng trong việc điều chỉnh cường độ dòng điện hoặc điện áp trong mạch.</p></li>
 <li><p>Chúng ta có thể thấy biến trở ở rất nhiều thiết bị điện quanh ta như các nút vặn điều chỉnh của quạt, loa hay lò vi sóng, v.v.</p></li>
 <li><p>Trên bộ kit <strong>Phys:Bit</strong> có sẵn một <strong>Biến trở xoay</strong> (Potentiometer) có giá trị 10kΩ.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/5.16.png"><img alt="../../_images/5.16.png" class="align-center" src="../../_images/5.16.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/5.17.png"><img alt="../../_images/5.17.png" class="align-center" src="../../_images/5.17.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -196,7 +204,7 @@
 </ul>
 </section>
 <section id="xay-dung-mach-dien">
-<h2>Xây dụng mạch điện<a class="headerlink" href="#xay-dung-mach-dien" title="Link to this heading"></a></h2>
+<h2>Xây dụng mạch điện<a class="headerlink" href="#xay-dung-mach-dien" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p><strong>Thành phần:</strong></p>
@@ -223,7 +231,7 @@
 </ul>
 </section>
 <section id="ket-noi-mach-dien">
-<h2>Kết nối mạch điện<a class="headerlink" href="#ket-noi-mach-dien" title="Link to this heading"></a></h2>
+<h2>Kết nối mạch điện<a class="headerlink" href="#ket-noi-mach-dien" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Núm xoay</strong> đấy dùng để điều chỉnh giá trị của biến trở</p>
 <blockquote>
@@ -234,7 +242,7 @@
 </div></blockquote>
 </section>
 <section id="chuong-trinh">
-<h2>Chương trình<a class="headerlink" href="#chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Chương trình<a class="headerlink" href="#chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p>Chúng ta sẽ thực hiện chương trình đọc giá trị analog của chân P0 và vẽ biểu đồ lên màn hình LED. Chân P0 đọc được giá trị càng cao thì càng nhiều LED sáng, và ngược lại.</p>
@@ -249,7 +257,7 @@
 </ul>
 </section>
 <section id="ket-qua">
-<h2>Kết quả<a class="headerlink" href="#ket-qua" title="Link to this heading"></a></h2>
+<h2>Kết quả<a class="headerlink" href="#ket-qua" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Kết quả của chương trình như sau:</p>
 <blockquote>
@@ -260,13 +268,13 @@
 </div></blockquote>
 </section>
 <section id="co-the-ban-chua-biet">
-<h2>Có thể bạn chưa biết?<a class="headerlink" href="#co-the-ban-chua-biet" title="Link to this heading"></a></h2>
+<h2>Có thể bạn chưa biết?<a class="headerlink" href="#co-the-ban-chua-biet" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Có nhiều loại biến trở khác nhau và ứng với mỗi cách kết nối sơ đồ mạch điện, ý nghĩa của biến trở trong mạch điện sẽ khác nhau nên tùy vào mục đích sử dụng, người thiết kế mạch điện sẽ lựa chọn loại biến trở thích hợp để sử dụng. Biến trở có trên bộ Phys:Bit là biến trở xoay, thường được sử dụng cho mục đích chiết áp (điều chỉnh điện áp). Dưới đây là một số biến trở thông dụng:</p>
 <ul>
 <li><p>Biến trở con chạy:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/5.44.png"><img alt="../../_images/5.44.png" class="align-center" src="../../_images/5.44.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/5.45.png"><img alt="../../_images/5.45.png" class="align-center" src="../../_images/5.45.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -274,7 +282,7 @@
 </li>
 <li><p>Biến trở dây quấn:</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/5.54.png"><img alt="../../_images/5.54.png" class="align-center" src="../../_images/5.54.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/5.55.png"><img alt="../../_images/5.55.png" class="align-center" src="../../_images/5.55.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -283,12 +291,12 @@
 </ul>
 </section>
 <section id="chuong-trinh-mau">
-<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Biến trở: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BvgwGfcj12malovc4ctXHdTFCP">Tại đây</a></p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_5.54.png"><img alt="../../_images/bai_5.54.png" class="align-center" src="../../_images/bai_5.54.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_5.53.png"><img alt="../../_images/bai_5.53.png" class="align-center" src="../../_images/bai_5.53.png" style="width: 200px;" /></a>
 </section>
 </section>
 

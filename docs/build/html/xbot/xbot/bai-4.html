@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -132,8 +139,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -175,11 +183,11 @@
            <div itemprop="articleBody">
              
   <section id="bai-4-robot-do-duong">
-<h1>8. Bài 4: Robot dò đường<a class="headerlink" href="#bai-4-robot-do-duong" title="Link to this heading"></a></h1>
+<h1>8. Bài 4: Robot dò đường<a class="headerlink" href="#bai-4-robot-do-duong" title="Permalink to this heading"></a></h1>
 <p><strong>Mục tiêu:</strong></p>
 <p>Hiểu về cảm biến dò đường và cách lập trình cho robot di chuyển chính xác theo đường kẻ.</p>
 <section id="gioi-thieu-ve-tia-hong-ngoai">
-<h2>1. Giới thiệu về tia hồng ngoại<a class="headerlink" href="#gioi-thieu-ve-tia-hong-ngoai" title="Link to this heading"></a></h2>
+<h2>1. Giới thiệu về tia hồng ngoại<a class="headerlink" href="#gioi-thieu-ve-tia-hong-ngoai" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để giúp robot có thể di chuyển chính xác, chúng ta có thể thiết lập sẵn một đường đi đặc biệt cho chúng.</p>
 <p><strong>Ví dụ:</strong> đoàn tàu di chuyển trên các đường ray. Sử dụng vạch đen và cảm biến hồng ngoại cũng là một công nghệ phổ biến thường áp dụng. Nhờ vào cảm biến hồng ngoại, robot sẽ nhận biết được các vạch đen và có thể di chuyển theo.</p>
@@ -213,7 +221,7 @@
 </div>
 </section>
 <section id="cam-bien-do-duong">
-<h2>2. Cảm biến dò đường<a class="headerlink" href="#cam-bien-do-duong" title="Link to this heading"></a></h2>
+<h2>2. Cảm biến dò đường<a class="headerlink" href="#cam-bien-do-duong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Cảm biến dò đường là một loại cảm biến hồng ngoại, hoạt động bằng cách <strong>phát ra tia hồng ngoại xuống bề mặt và cảm nhận lượng tia hồng ngoại phản xạ trở lại.</strong></p>
 <a class="reference internal image-reference" href="../../_images/xbot_bai_4.6.png"><img alt="../../_images/xbot_bai_4.6.png" class="align-center" src="../../_images/xbot_bai_4.6.png" style="width: 700px;" /></a>
@@ -239,7 +247,7 @@
 </div>
 </section>
 <section id="doc-trang-thai-cam-bien-do-duong">
-<h2>3. Đọc trạng thái cảm biến dò đường<a class="headerlink" href="#doc-trang-thai-cam-bien-do-duong" title="Link to this heading"></a></h2>
+<h2>3. Đọc trạng thái cảm biến dò đường<a class="headerlink" href="#doc-trang-thai-cam-bien-do-duong" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/xbot_bai_4.10.png"><img alt="../../_images/xbot_bai_4.10.png" class="align-center" src="../../_images/xbot_bai_4.10.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -277,7 +285,7 @@
 </div>
 </section>
 <section id="ap-dung-cam-bien-de-di-chuyen">
-<h2>4. Áp dụng cảm biến để di chuyển<a class="headerlink" href="#ap-dung-cam-bien-de-di-chuyen" title="Link to this heading"></a></h2>
+<h2>4. Áp dụng cảm biến để di chuyển<a class="headerlink" href="#ap-dung-cam-bien-de-di-chuyen" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>Chương trình 1</strong></p></li>
@@ -326,7 +334,7 @@
 <p>Bạn hãy đặt xBot trên bản đồ có 5 vạch đen và chạy thử chương trình xem nào.</p>
 </section>
 <section id="robot-do-duong">
-<h2>5. Robot dò đường<a class="headerlink" href="#robot-do-duong" title="Link to this heading"></a></h2>
+<h2>5. Robot dò đường<a class="headerlink" href="#robot-do-duong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Dựa vào những gì chúng ta đã hiểu về cảm biến ở phần trước, chúng ta sẽ viết chương trình điều khiển xBot vừa đi vừa dò đường bằng 2 mắt: S1 và S4, sử dụng bản đồ đi kèm sản phẩm. Mô tả như sau:</p>
 <a class="reference internal image-reference" href="../../_images/xbot_109.png"><img alt="../../_images/xbot_109.png" class="align-center" src="../../_images/xbot_109.png" style="width: 500px;" /></a>
@@ -370,7 +378,7 @@
 <p>Bạn có thể thử thay đổi tốc độ trong các trường hợp để robot di chuyển ổn định hơn và ít bị chệch khỏi đường line nhé.</p>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Link to this heading"></a></h2>
+<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Robot đậu xe thông minh</strong></p>
 <p>Trong bài này, bạn hãy viết chương trình để robot có thể đạu xe vào đúng vị trí số 3 bằng cách <strong>nhận diện các vạch đen nằm ngang</strong>.</p>
@@ -387,7 +395,7 @@
 </ol>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Link to this heading"></a></h2>
+<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Làm thế nào mà robot có thể tự động đi theo vạch kẻ sẵn?</p></li>

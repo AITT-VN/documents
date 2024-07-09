@@ -15,9 +15,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,46 +158,46 @@
            <div itemprop="articleBody">
              
   <section id="giao-dien">
-<h1>Giao diện<a class="headerlink" href="#giao-dien" title="Link to this heading"></a></h1>
+<h1>Giao diện<a class="headerlink" href="#giao-dien" title="Permalink to this heading"></a></h1>
 <p>Để mở giao diện lập trình trong phần mềm OhStem App, bạn vào menu Lập trình từ màn hình trang chủ.</p>
 <p>Giao diện lập trình của OhStem App:</p>
 <a class="reference internal image-reference" href="../_images/frontend-1.png"><img alt="../_images/frontend-1.png" class="align-center" src="../_images/frontend-1.png" style="width: 600px;" /></a>
 <p>Chúng ta cùng nhau tìm hiểu từng thành phần có trên giao diện này.</p>
 <section id="danh-muc-khoi-lenh">
-<h2>Danh mục khối lệnh<a class="headerlink" href="#danh-muc-khoi-lenh" title="Link to this heading"></a></h2>
+<h2>Danh mục khối lệnh<a class="headerlink" href="#danh-muc-khoi-lenh" title="Permalink to this heading"></a></h2>
 <p>Đây là khu vực chứa các nhóm khối lệnh, với nhiều màu sắc khác nhau cho từng nhóm, giúp chúng ta dễ dàng tìm được khối lệnh cần sử dụng khi cần.</p>
 <p>Mỗi nhóm khối lệnh gồm nhiều các khối lệnh giúp điều khiển robot.</p>
 </section>
 <section id="nhom-di-chuyen">
-<h2>Nhóm Di chuyển<a class="headerlink" href="#nhom-di-chuyen" title="Link to this heading"></a></h2>
+<h2>Nhóm Di chuyển<a class="headerlink" href="#nhom-di-chuyen" title="Permalink to this heading"></a></h2>
 <p>Gồm các khối lệnh để điều khiển 2 động cơ DC (nối với 2 bánh xe) và 8 động cơ servo (cần gắn thêm) có trên robot.</p>
 <a class="reference internal image-reference" href="../_images/frontend-2.png"><img alt="../_images/frontend-2.png" class="align-center" src="../_images/frontend-2.png" style="width: 600px;" /></a>
 </section>
 <section id="nhom-dau-vao">
-<h2>Nhóm Đầu vào<a class="headerlink" href="#nhom-dau-vao" title="Link to this heading"></a></h2>
+<h2>Nhóm Đầu vào<a class="headerlink" href="#nhom-dau-vao" title="Permalink to this heading"></a></h2>
 <p>Gồm các khối lệnh để đọc các cảm biến có trên robot như cảm biến khoảng cách, cảm biến dò đường…</p>
 </section>
 <section id="nhom-hieu-ung">
-<h2>Nhóm Hiệu ứng<a class="headerlink" href="#nhom-hieu-ung" title="Link to this heading"></a></h2>
+<h2>Nhóm Hiệu ứng<a class="headerlink" href="#nhom-hieu-ung" title="Permalink to this heading"></a></h2>
 <p>Gồm các khối lệnh để điều khiển đèn LED, loa và màn hình LED matrix.</p>
 <a class="reference internal image-reference" href="../_images/frontend-3.png"><img alt="../_images/frontend-3.png" class="align-center" src="../_images/frontend-3.png" style="width: 600px;" /></a>
 </section>
 <section id="cac-nhom-ho-tro-xay-dung-logic-cua-chuong-trinh">
-<h2>Các nhóm hỗ trợ xây dựng logic của chương trình<a class="headerlink" href="#cac-nhom-ho-tro-xay-dung-logic-cua-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Các nhóm hỗ trợ xây dựng logic của chương trình<a class="headerlink" href="#cac-nhom-ho-tro-xay-dung-logic-cua-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Gồm các khối lệnh để xây dựng logic xử lý của chương trình như vòng lặp, kiểm tra và điều kiện, tính toán… Các khối lệnh này sẽ được hướng dẫn cụ thể ở các bài sau.</p>
 <a class="reference internal image-reference" href="../_images/frontend-4.png"><img alt="../_images/frontend-4.png" class="align-center" src="../_images/frontend-4.png" style="width: 600px;" /></a>
 </section>
 <section id="vung-viet-chuong-trinh">
-<h2>Vùng viết chương trình<a class="headerlink" href="#vung-viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Vùng viết chương trình<a class="headerlink" href="#vung-viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Đây là nơi chúng ta lắp ghép các khối lệnh với nhau và tạo thành chương trình. Bạn có thể kéo và di chuyển, phóng to, thu nhỏ các khối lệnh. Phần lớn thời gian chúng ta sẽ làm việc ở vùng này để hoàn thiện chương trình cần xây dựng để điều khiển robot theo ý muốn.</p>
 </section>
 <section id="che-do-lap-trinh">
-<h2>Chế độ lập trình<a class="headerlink" href="#che-do-lap-trinh" title="Link to this heading"></a></h2>
+<h2>Chế độ lập trình<a class="headerlink" href="#che-do-lap-trinh" title="Permalink to this heading"></a></h2>
 <p>OhStem App hỗ trợ 2 chế độ lập trình là: lập trình kéo thả khối lệnh và lập trình bằng text với ngôn ngữ MicroPython. Phần mềm cho phép chuyển đổi 2 chế độ này dễ dàng chỉ bằng 1 cú click.</p>
 <a class="reference internal image-reference" href="../_images/frontend-5.png"><img alt="../_images/frontend-5.png" class="align-center" src="../_images/frontend-5.png" style="width: 600px;" /></a>
 </section>
 <section id="cac-nut-chuc-nang">
-<h2>Các nút chức năng<a class="headerlink" href="#cac-nut-chuc-nang" title="Link to this heading"></a></h2>
+<h2>Các nút chức năng<a class="headerlink" href="#cac-nut-chuc-nang" title="Permalink to this heading"></a></h2>
 <p>Giao diện gồm nhiều nút với các chức năng khác nhau như sau:</p>
 <a class="reference internal image-reference" href="../_images/frontend-6.png"><img alt="../_images/frontend-6.png" class="align-center" src="../_images/frontend-6.png" style="width: 600px;" /></a>
 <p><em>Lưu ý:</em> Kết nối USB chỉ hỗ trợ trên máy tính và laptop, không hỗ trợ trên mobile app.</p>

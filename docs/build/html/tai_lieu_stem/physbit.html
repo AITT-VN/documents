@@ -15,9 +15,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,13 +158,13 @@
            <div itemprop="articleBody">
              
   <section id="tai-lieu-thuc-hanh-mach-dien-voi-phys-bit-v2">
-<h1>5. Tài liệu thực hành mạch điện với Phys:Bit V2<a class="headerlink" href="#tai-lieu-thuc-hanh-mach-dien-voi-phys-bit-v2" title="Link to this heading"></a></h1>
+<h1>5. Tài liệu thực hành mạch điện với Phys:Bit V2<a class="headerlink" href="#tai-lieu-thuc-hanh-mach-dien-voi-phys-bit-v2" title="Permalink to this heading"></a></h1>
 <a class="reference internal image-reference" href="../_images/physbit.jpg"><img alt="../_images/physbit.jpg" class="align-center" src="../_images/physbit.jpg" style="width: 480.0px; height: 480.0px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="gioi-thieu">
-<h2><strong>Giới thiệu</strong><a class="headerlink" href="#gioi-thieu" title="Link to this heading"></a></h2>
+<h2><strong>Giới thiệu</strong><a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bộ thực hành lắp ráp mạch điện tử Phys:Bit sẽ dẫn chúng ta trải nghiệm thế giới điện tử lý thú, với những dự án sinh động và phổ biến mô phỏng trong thực tế. Bộ Kit này sẽ giới thiệu đến bạn các khái niệm cơ bản về dòng điện, làm sao để thiết kế một mạch điện và hiểu về cách thức hoạt động của chúng.</p>
 <p>Với bộ tài liệu đi kèm, giúp các em học sinh hiểu rõ hơn về nguyên ý hoạt động của mạch điện và các thành phần chính trong mạch điện, biết cách sử dụng vi điều khiển để điều khiển các tín hiệu điện, làm quen với các loại cảm biến hay cơ chế đóng ngắt cơ bản.</p>
@@ -164,7 +172,7 @@
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/physbit_1.jpg"><img alt="../_images/physbit_1.jpg" src="../_images/physbit_1.jpg" style="width: 614.4px; height: 426.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Một số mạch điện mẫu</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Một số mạch điện mẫu</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Phys:Bit sử dụng dây cắm banana đơn giản và an toàn cho người sử dụng, còn có nhiều linh kiện điện tử phổ biến như động cơ quạt mini, đèn LED, điện trở, cảm biến ánh sáng,… để bạn thực hành lắp ráp mạch điện và sáng tạo các dự án theo ý thích.</p>
@@ -175,7 +183,7 @@
 </div>
 </section>
 <section id="cau-truc-cua-tai-lieu">
-<h2><strong>Cấu trúc của tài liệu</strong><a class="headerlink" href="#cau-truc-cua-tai-lieu" title="Link to this heading"></a></h2>
+<h2><strong>Cấu trúc của tài liệu</strong><a class="headerlink" href="#cau-truc-cua-tai-lieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bộ tài liệu sẽ chia thành 2 quyển:</p>
 <blockquote>
@@ -185,7 +193,7 @@
 <div><figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/physbit_2.png"><img alt="../_images/physbit_2.png" src="../_images/physbit_2.png" style="width: 472.2px; height: 336.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-text">Quyển 1</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-text">Quyển 1</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Hướng dẫn thực hành các thí nghiệm điện tử không sử dụng vi điều khiển, giúp các bạn học sinh hiểu rõ hơn về nguyên lý hoạt động của linh kiện thường được sử dụng trong mạch điện.</p>
@@ -196,7 +204,7 @@
 <div><figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/physbit_3.png"><img alt="../_images/physbit_3.png" src="../_images/physbit_3.png" style="width: 479.4px; height: 339.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-text">Quyển 2</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Quyển 2</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Tài liệu được chia thành 3 phần với các dự án thực hiện với vi điều khiển là Yolo:Bit, đi từ cơ bản đến nâng cao:</p>

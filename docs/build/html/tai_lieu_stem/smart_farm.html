@@ -15,9 +15,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,13 +158,13 @@
            <div itemprop="articleBody">
              
   <section id="giao-trinh-stem-nong-nghiep-thong-minh-cung-yolo-bit">
-<h1>2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit<a class="headerlink" href="#giao-trinh-stem-nong-nghiep-thong-minh-cung-yolo-bit" title="Link to this heading"></a></h1>
+<h1>2. Giáo trình STEM nông nghiệp thông minh cùng Yolo:Bit<a class="headerlink" href="#giao-trinh-stem-nong-nghiep-thong-minh-cung-yolo-bit" title="Permalink to this heading"></a></h1>
 <a class="reference internal image-reference" href="../_images/nong_nghiep.png"><img alt="../_images/nong_nghiep.png" class="align-center" src="../_images/nong_nghiep.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="gioi-thieu-giao-trinh-stem-nong-nghiep-thong-minh">
-<h2><strong>Giới thiệu giáo trình STEM Nông nghiệp thông minh</strong><a class="headerlink" href="#gioi-thieu-giao-trinh-stem-nong-nghiep-thong-minh" title="Link to this heading"></a></h2>
+<h2><strong>Giới thiệu giáo trình STEM Nông nghiệp thông minh</strong><a class="headerlink" href="#gioi-thieu-giao-trinh-stem-nong-nghiep-thong-minh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong giáo trình này, chúng tôi giới thiệu đến bạn mô hình <strong>Smart Farm - Nông nghiệp thông minh</strong>, không chỉ sử dụng cảm biến đa dạng mà còn được tích hợp nhiều nền tảng công nghệ như Trí tuệ nhân tạo (AI), Kết nối vạn vật (IoT). Đây là một chủ đề đang được quan tâm trong giáo dục STEM.</p>
 <p>Bên cạnh đó, chúng tôi sẽ giới thiệu những khái niệm cơ bản nhất về khoa học dữ liệu. Cụ thể là, các giá trị mà cảm biến thu thập được sẽ được trích xuất và phân tích bằng phần mềm Microsoft Excel, một công cụ vốn đã quen thuộc với đa số bạn đọc.</p>
@@ -167,7 +175,7 @@
 <p>Dự án trong giáo trình, tuy không phải là một sản phẩm thực tế, nhưng chúng tôi hy vọng nó sẽ cung cấp cung cấp cho bạn đọc các kiến thức cơ bản về việc áp dụng công nghệ vào một ứng dụng cụ thể.</p>
 </section>
 <section id="cau-truc-giao-trinh">
-<h2><strong>Cấu trúc giáo trình</strong><a class="headerlink" href="#cau-truc-giao-trinh" title="Link to this heading"></a></h2>
+<h2><strong>Cấu trúc giáo trình</strong><a class="headerlink" href="#cau-truc-giao-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Giáo trình được thiết kế dành cho cả những ai chưa có kiến thức nhiều về lập trình, và được chia thành 5 phần riêng biệt từ dễ đến khó:</p>
 <ul class="simple">
@@ -179,7 +187,7 @@
 </ul>
 </section>
 <section id="tai-giao-trinh-stem-nong-nghiep-thong-minh-tai-ve">
-<h2><strong>Tải giáo trình STEM nông nghiệp thông minh:</strong> <a class="reference external" href="https://drive.google.com/file/d/1i1nLZRQHNqLMhBgDO89NNzSlPvJTDnPu/view">Tải về</a><a class="headerlink" href="#tai-giao-trinh-stem-nong-nghiep-thong-minh-tai-ve" title="Link to this heading"></a></h2>
+<h2><strong>Tải giáo trình STEM nông nghiệp thông minh:</strong> <a class="reference external" href="https://drive.google.com/file/d/1i1nLZRQHNqLMhBgDO89NNzSlPvJTDnPu/view">Tải về</a><a class="headerlink" href="#tai-giao-trinh-stem-nong-nghiep-thong-minh-tai-ve" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 </section>
 </section>

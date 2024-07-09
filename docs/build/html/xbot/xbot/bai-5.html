@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -132,8 +139,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -175,11 +183,11 @@
            <div itemprop="articleBody">
              
   <section id="bai-5-robot-ne-vat-can">
-<h1>9. Bài 5: Robot né vật cản<a class="headerlink" href="#bai-5-robot-ne-vat-can" title="Link to this heading"></a></h1>
+<h1>9. Bài 5: Robot né vật cản<a class="headerlink" href="#bai-5-robot-ne-vat-can" title="Permalink to this heading"></a></h1>
 <p><strong>Mục tiêu:</strong></p>
 <p>Hiểu về cảm biến khoảng cách và những cách lập trình cho robot vừa di chuyển vừa né tránh vật cản một cách thông minh.</p>
 <section id="toc-do-cua-am-thanh">
-<h2>1. Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Link to this heading"></a></h2>
+<h2>1. Tốc độ của âm thanh<a class="headerlink" href="#toc-do-cua-am-thanh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Như đã biết, âm thanh được truyền đi dưới dạng sóng. Tốc độ truyền đi của âm thanh trong không khí là 340 m/s nhưng có thể thay đổi tùy vào nhiệt độ và độ ẩm.</p>
 <p>Khi ta phát một tín hiệu âm thanh và đo khoảng cách thời gian âm thanh đó vọng lại, ta hoàn toàn có thể tính được khoảng cách đến vật cản.</p>
@@ -189,7 +197,7 @@
 </div>
 </section>
 <section id="cam-bien-khoang-cach">
-<h2>2. Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Link to this heading"></a></h2>
+<h2>2. Cảm biến khoảng cách<a class="headerlink" href="#cam-bien-khoang-cach" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/xbot_118.png"><img alt="../../_images/xbot_118.png" class="align-center" src="../../_images/xbot_118.png" style="width: 300px;" /></a>
 <div class="line-block">
@@ -207,7 +215,7 @@
 <p>Nếu không có phản hồi thì nghĩa là không có vật cản. Nếu có thì cảm biến sẽ dựa vào khoảng thời gian phản hồi để tính ra khoảng cách.</p>
 </section>
 <section id="doc-trang-thai-cam-bien">
-<h2>3. Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Link to this heading"></a></h2>
+<h2>3. Đọc trạng thái cảm biến<a class="headerlink" href="#doc-trang-thai-cam-bien" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/xbot_120.png"><img alt="../../_images/xbot_120.png" class="align-center" src="../../_images/xbot_120.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -229,7 +237,7 @@
 </div>
 </section>
 <section id="ap-dung-cam-bien-trong-di-chuyen">
-<h2>4. Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Link to this heading"></a></h2>
+<h2>4. Áp dụng cảm biến trong di chuyển<a class="headerlink" href="#ap-dung-cam-bien-trong-di-chuyen" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Robot dừng lại khi phát hiện vật cản</strong></p>
 <p>Trong chương trình này, chúng ta sẽ cho robot di chuyển về phía trước và dừn glại nếu phát hiện vật cản ở khảong cách nhỏ hơn 25cm.</p>
@@ -282,7 +290,7 @@
 </div>
 </section>
 <section id="robot-biet-ne-vat-can">
-<h2>5. Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Link to this heading"></a></h2>
+<h2>5. Robot biết né vật cản<a class="headerlink" href="#robot-biet-ne-vat-can" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong phần này, chúng ta sẽ viết chương trình cho robot vừa di chuyển vừa né vật cản một cách thông minh.</p>
 <ul class="simple">
@@ -313,7 +321,7 @@
 </div>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Link to this heading"></a></h2>
+<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Robot thoát khỏi mê cung</p></li>
@@ -351,7 +359,7 @@
 </ol>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Link to this heading"></a></h2>
+<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Chỉ ra cảm biến khoảng cách trên xBot. Công dụng của nó là gì?</p></li>

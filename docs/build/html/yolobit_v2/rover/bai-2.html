@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,17 +158,17 @@
            <div itemprop="articleBody">
              
   <section id="bai-2-chu-y-tung-buoc-di">
-<h1>5. Bài 2: Chú ý từng bước đi<a class="headerlink" href="#bai-2-chu-y-tung-buoc-di" title="Link to this heading"></a></h1>
+<h1>5. Bài 2: Chú ý từng bước đi<a class="headerlink" href="#bai-2-chu-y-tung-buoc-di" title="Permalink to this heading"></a></h1>
 <p><em>Chuyến đi của Rover đã bắt đầu rồi. Hãy nhắc nhở Rover chú ý đến bánh xe mỗi bên của mình vì chúng không thực sự đồng đều đâu. Cùng Rover kiểm tra mỗi động cơ để đạt hành trình tuyệt vời nhé!</em></p>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Hiểu được cách điều khiển từng động cơ.</p></li>
 </ul>
 </section>
 <section id="gioi-thieu-khoi-lenh">
-<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Link to this heading"></a></h2>
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p>Khối lệnh hiện hình ảnh:</p>
@@ -181,7 +189,7 @@
 </ul>
 </section>
 <section id="co-che-hoat-dong">
-<h2>Cơ chế hoạt động<a class="headerlink" href="#co-che-hoat-dong" title="Link to this heading"></a></h2>
+<h2>Cơ chế hoạt động<a class="headerlink" href="#co-che-hoat-dong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Rover di chuyển nhờ sự hoạt động của 2 động cơ bên trái và phải. Vậy nếu 2 động cơ này đồng thời có chế độ hoạt động khác  nhau thì sẽ ra sao? Dưới đây là một số trường hợp di chuyển của 2 động cơ:</p>
 <blockquote>
@@ -215,30 +223,30 @@
 </div></blockquote>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Hiển thị hình ảnh trái tim và cho Rover xoay hình tròn (tốc độ động cơ phải bằng một nửa của động cơ trái) trong 3 giây</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/bai_2.73.png"><img alt="../../_images/bai_2.73.png" class="align-center" src="../../_images/bai_2.73.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_2.72.png"><img alt="../../_images/bai_2.72.png" class="align-center" src="../../_images/bai_2.72.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Hiển thị hình ảnh mặt cười và dừng di chuyển trong 3 giây</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/bai_2.84.png"><img alt="../../_images/bai_2.84.png" class="align-center" src="../../_images/bai_2.84.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_2.83.png"><img alt="../../_images/bai_2.83.png" class="align-center" src="../../_images/bai_2.83.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="chuong-trinh-mau">
-<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Chú ý từng bước đi: <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BeTZWPCx5nFzkliJbCzJplgYdw">Tại đây</a></p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_2.93.png"><img alt="../../_images/bai_2.93.png" class="align-center" src="../../_images/bai_2.93.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_2.92.png"><img alt="../../_images/bai_2.92.png" class="align-center" src="../../_images/bai_2.92.png" style="width: 200px;" /></a>
 </section>
 </section>
 

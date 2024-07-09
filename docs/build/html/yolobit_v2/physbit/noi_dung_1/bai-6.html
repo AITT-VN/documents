@@ -15,9 +15,9 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,15 +158,15 @@
            <div itemprop="articleBody">
              
   <section id="bai-6-cam-bien-anh-sang">
-<h1>8. Bài 6: Cảm biến ánh sáng<a class="headerlink" href="#bai-6-cam-bien-anh-sang" title="Link to this heading"></a></h1>
+<h1>8. Bài 6: Cảm biến ánh sáng<a class="headerlink" href="#bai-6-cam-bien-anh-sang" title="Permalink to this heading"></a></h1>
 <section id="gioi-thieu">
-<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Link to this heading"></a></h2>
+<h2>Giới thiệu<a class="headerlink" href="#gioi-thieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p><strong>Cảm biến ánh sáng</strong> hay còn gọi là <strong>quang trở</strong>. Đây cũng là một loại biến trở, nhưng khác với biến trở Potentiometer. Giá trị điện trở của cảm biến ánh sáng thay đổi theo mức độ ánh sáng nhận được.</p></li>
 <li><p>Càng có nhiều ánh sáng chiếu vào thì điện trở của quang trở càng thấp và quang trở sẽ dẫn điện tốt hơn. Khi ánh sáng ít hoặc trời tối thì điện trở của quang trở tăng cao và hạn chế dòng điện đi qua</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/6.17.png"><img alt="../../../_images/6.17.png" class="align-center" src="../../../_images/6.17.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/6.18.png"><img alt="../../../_images/6.18.png" class="align-center" src="../../../_images/6.18.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -167,7 +175,7 @@
 </ul>
 </section>
 <section id="xay-dung-mach-dien">
-<h2>Xây dụng mạch điện<a class="headerlink" href="#xay-dung-mach-dien" title="Link to this heading"></a></h2>
+<h2>Xây dụng mạch điện<a class="headerlink" href="#xay-dung-mach-dien" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul>
 <li><p><strong>Thành phần:</strong></p>
@@ -191,18 +199,18 @@
 </ul>
 </section>
 <section id="ket-noi-mach-dien">
-<h2>Kết nối mạch điện<a class="headerlink" href="#ket-noi-mach-dien" title="Link to this heading"></a></h2>
+<h2>Kết nối mạch điện<a class="headerlink" href="#ket-noi-mach-dien" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Cảm biến ánh sáng có vai trò như một công tắc tự động, có thể bật và tắt đèn dựa vào độ sáng của môi trường.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/6.36.png"><img alt="../../../_images/6.36.png" class="align-center" src="../../../_images/6.36.png" style="width: 500px;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/6.37.png"><img alt="../../../_images/6.37.png" class="align-center" src="../../../_images/6.37.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </div></blockquote>
 </section>
 <section id="co-the-ban-chua-biet">
-<h2>Có thể bạn chưa biết?<a class="headerlink" href="#co-the-ban-chua-biet" title="Link to this heading"></a></h2>
+<h2>Có thể bạn chưa biết?<a class="headerlink" href="#co-the-ban-chua-biet" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Nhờ nguyên lý hoạt động đơn giản và dễ sử dụng, cảm biến ánh sáng ngày càng được ứng dụng rộng rãi trong đời sống.</p></li>

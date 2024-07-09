@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -176,7 +184,7 @@
            <div itemprop="articleBody">
              
   <section id="robot-tim-cho-trong-de-dau-xe">
-<h1>2. 6. Robot tìm chỗ trống để đậu xe<a class="headerlink" href="#robot-tim-cho-trong-de-dau-xe" title="Link to this heading"></a></h1>
+<h1>2. 6. Robot tìm chỗ trống để đậu xe<a class="headerlink" href="#robot-tim-cho-trong-de-dau-xe" title="Permalink to this heading"></a></h1>
 <p>Trong dự án xBot này, chúng ta sẽ cùng lập trình biến xBot thành robot đậu xe thông minh – Có thể tìm chỗ trống đậu xe dựa vào khả năng <strong>nhận diện vật cản</strong>.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../_images/61.png"><img alt="../../_images/61.png" src="../../_images/61.png" style="width: 512.0px; height: 256.0px;" /></a>
@@ -185,7 +193,7 @@
 <div class="line"><br /></div>
 </div>
 <section id="video-minh-hoa">
-<h2><strong>1. Video minh họa</strong><a class="headerlink" href="#video-minh-hoa" title="Link to this heading"></a></h2>
+<h2><strong>1. Video minh họa</strong><a class="headerlink" href="#video-minh-hoa" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <iframe width="640" height="360" src="https://www.youtube.com/embed/WhDVrFAdrRY" title="Lập trình robot đậu xe thông minh cùng xBot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="line-block">
 <div class="line"><br /></div>
@@ -201,17 +209,17 @@
 </div></blockquote>
 </section>
 <section id="chuong-trinh-hoan-chinh">
-<h2><strong>2. Chương trình hoàn chỉnh:</strong><a class="headerlink" href="#chuong-trinh-hoan-chinh" title="Link to this heading"></a></h2>
+<h2><strong>2. Chương trình hoàn chỉnh:</strong><a class="headerlink" href="#chuong-trinh-hoan-chinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.15.png"><img alt="../../_images/6.15.png" src="../../_images/6.15.png" style="width: 602.0px; height: 728.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.16.png"><img alt="../../_images/6.16.png" src="../../_images/6.16.png" style="width: 602.0px; height: 728.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2><strong>3. Giải thích chương trình:</strong><a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
+<h2><strong>3. Giải thích chương trình:</strong><a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Đổi đèn LED thành màu xanh và chờ đến khi nút được nhấn, chương trình sẽ bắt đầu với vòng lặp lại mãi:</p>
 <figure class="align-center">
@@ -222,7 +230,7 @@
 </div>
 <p>Tạo câu lệnh điều kiện như trong chương trình:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.34.png"><img alt="../../_images/6.34.png" src="../../_images/6.34.png" style="width: 614.0px; height: 524.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.35.png"><img alt="../../_images/6.35.png" src="../../_images/6.35.png" style="width: 614.0px; height: 524.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -237,42 +245,42 @@
 </ol>
 </div></blockquote>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.44.png"><img alt="../../_images/6.44.png" src="../../_images/6.44.png" style="width: 751.8px; height: 384.59999999999997px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.45.png"><img alt="../../_images/6.45.png" src="../../_images/6.45.png" style="width: 751.8px; height: 384.59999999999997px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Tạo thêm một điều kiện <strong>nếu không nếu</strong> ở giữa như hình:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.53.png"><img alt="../../_images/6.53.png" src="../../_images/6.53.png" style="width: 651.5px; height: 407.5px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.54.png"><img alt="../../_images/6.54.png" src="../../_images/6.54.png" style="width: 651.5px; height: 407.5px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Nếu xBot phát hiện vạch chắn ngang (cả 4 mắt đều phát hiện vạch đen), ta cho xBot phát âm thanh để báo hiệu:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.62.png"><img alt="../../_images/6.62.png" src="../../_images/6.62.png" style="width: 620.0px; height: 382.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.63.png"><img alt="../../_images/6.63.png" src="../../_images/6.63.png" style="width: 620.0px; height: 382.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Nếu vị trí của xBot chưa thực sự thẳng hàng với vạch đen (2 mắt đọc s2, s3 không thấy vạch đen), ta cho quay động cơ phải cho đến khi xBot thực sự thẳng hàng:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.72.png"><img alt="../../_images/6.72.png" src="../../_images/6.72.png" style="width: 688.8px; height: 199.5px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.73.png"><img alt="../../_images/6.73.png" src="../../_images/6.73.png" style="width: 688.8px; height: 199.5px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Sau đó, cho xBot lùi lại một chút để bánh sau xBot trùng với vạch đen chắn ngang (bạn có thể tinh chỉnh tốc độ và thời gian lùi sao cho phù hợp nhất với robot của mình nhé):</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.81.png"><img alt="../../_images/6.81.png" src="../../_images/6.81.png" style="width: 693.0px; height: 190.8px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.82.png"><img alt="../../_images/6.82.png" src="../../_images/6.82.png" style="width: 693.0px; height: 190.8px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Sau khi xBot đã vào đúng vị trí, ta cho xBot dừng di chuyển và bắt đầu đi tới trong 0,5 giây, sau đó rẽ trái một góc 90 độ để kiểm tra trong bãi xe đã có xe khác hay chưa:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.91.png"><img alt="../../_images/6.91.png" src="../../_images/6.91.png" style="width: 685.0px; height: 393.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.92.png"><img alt="../../_images/6.92.png" src="../../_images/6.92.png" style="width: 685.0px; height: 393.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -285,14 +293,14 @@
 </ol>
 </div></blockquote>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/6.101.png"><img alt="../../_images/6.101.png" src="../../_images/6.101.png" style="width: 703.0px; height: 197.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.102.png"><img alt="../../_images/6.102.png" src="../../_images/6.102.png" style="width: 703.0px; height: 197.0px;" /></a>
 </figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="tai-chuong-trinh-mau">
-<h2><strong>4. Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2><strong>4. Tải chương trình mẫu</strong><a class="headerlink" href="#tai-chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể sử dụng trực tiếp chương trình mẫu chúng tôi đã lập trình sẵn cho bạn tại đây.</p>
 <ul class="simple">

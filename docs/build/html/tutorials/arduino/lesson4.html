@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -140,8 +147,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -183,14 +191,14 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-4-dieu-khien-toc-do-chop-tat-den-led">
-<h1>5. Bài học 4: Điều khiển tốc độ chớp tắt đèn LED<a class="headerlink" href="#bai-hoc-4-dieu-khien-toc-do-chop-tat-den-led" title="Link to this heading"></a></h1>
+<h1>5. Bài học 4: Điều khiển tốc độ chớp tắt đèn LED<a class="headerlink" href="#bai-hoc-4-dieu-khien-toc-do-chop-tat-den-led" title="Permalink to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <p>Trong bài học trước, chúng ta đã tìm hiểu về <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code> thông qua nút nhấn với 2 trạng thái là <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> và <code class="docutils literal notranslate"><span class="pre">LOW</span></code>. Tuy nhiên trong thực tế, đôi lúc chúng ta cần nhiều hơn 2 trạng thái như vậy. Một số ví dụ: nút điều chỉnh âm thanh (cho biết âm lượng đang ở mức nào) hay cảm biến ánh sáng (độ sáng là bao nhiêu),…</p>
 <p>Trong bài học này, chúng ta sẽ cùng tìm hiểu về tín hiệu Analog và lập trình điều khiển thời gian chớp tắt đèn LED bằng giá trị của cảm biến xoay.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
 <p><em>Tín hiệu Analog</em></p>
 <p>Khác với tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span> <span class="pre">Input</span></code>, tín hiệu Analog Input giúp đo các giá trị đầu vào theo một dải giá trị thay vì chỉ là <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> và <code class="docutils literal notranslate"><span class="pre">LOW</span></code>.</p>
 <p>Tuy nhiên, xét về bản chất, máy tính chỉ có thể hiểu được tín hiệu <code class="docutils literal notranslate"><span class="pre">Digital</span></code> (các giá trị <code class="docutils literal notranslate"><span class="pre">0</span></code> và <code class="docutils literal notranslate"><span class="pre">1</span></code>). Do đó, các chip vi điều khiển đều có 1 bộ chuyển đổi từ tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> sang <code class="docutils literal notranslate"><span class="pre">Digital</span></code>, gọi là <code class="docutils literal notranslate"><span class="pre">ADC</span></code> (Analog to Digital Converter).</p>
@@ -199,15 +207,15 @@
 <p>Ví dụ: Nếu giá trị tín hiệu <code class="docutils literal notranslate"><span class="pre">Analog</span></code> xuất ra là <code class="docutils literal notranslate"><span class="pre">2047</span></code> thì điện áp sẽ nằm trong khoảng <code class="docutils literal notranslate"><span class="pre">1.65V</span></code>.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-4.png"><img alt="../../_images/device-4.png" class="align-center" src="../../_images/device-4.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-4-2.png"><img alt="../../_images/ls-4-2.png" class="align-center" src="../../_images/ls-4-2.png" style="width: 500px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1; // Module LED nối vào cổng số 1
@@ -236,7 +244,7 @@ void loop() {
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int rotaryPin = A4_1;
 </pre></div>
 </div>

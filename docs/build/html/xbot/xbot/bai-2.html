@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -132,8 +139,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -175,11 +183,11 @@
            <div itemprop="articleBody">
              
   <section id="bai-2-nhay-mua-cung-xbot">
-<h1>6. Bài 2: Nhảy múa cùng xBot<a class="headerlink" href="#bai-2-nhay-mua-cung-xbot" title="Link to this heading"></a></h1>
+<h1>6. Bài 2: Nhảy múa cùng xBot<a class="headerlink" href="#bai-2-nhay-mua-cung-xbot" title="Permalink to this heading"></a></h1>
 <p><strong>Mục tiêu</strong></p>
 <p>Làm quen với loa tích hợp có trên xBot, biết cách để kết hợp các khối lệnh phát nhạc và khối lệnh đổi màu đèn LED RGB để tạo các hiệu ứng vui nhộn.</p>
 <section id="gioi-thieu-ve-am-thanh-va-loa-tren-xbot">
-<h2>1. Giới thiệu về âm thanh và loa trên xBot<a class="headerlink" href="#gioi-thieu-ve-am-thanh-va-loa-tren-xbot" title="Link to this heading"></a></h2>
+<h2>1. Giới thiệu về âm thanh và loa trên xBot<a class="headerlink" href="#gioi-thieu-ve-am-thanh-va-loa-tren-xbot" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>Âm thanh là gì</strong></p></li>
@@ -224,7 +232,7 @@
 </div>
 </section>
 <section id="cac-khoi-lenh-phat-am-thanh">
-<h2>2. Các khối lệnh phát âm thanh<a class="headerlink" href="#cac-khoi-lenh-phat-am-thanh" title="Link to this heading"></a></h2>
+<h2>2. Các khối lệnh phát âm thanh<a class="headerlink" href="#cac-khoi-lenh-phat-am-thanh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/xbot_bai_2.7.png"><img alt="../../_images/xbot_bai_2.7.png" class="align-center" src="../../_images/xbot_bai_2.7.png" style="width: 600px;" /></a>
 <div class="line-block">
@@ -250,7 +258,7 @@
 </div>
 </section>
 <section id="phat-mot-dieu-nhac">
-<h2>3. Phát một điệu nhạc<a class="headerlink" href="#phat-mot-dieu-nhac" title="Link to this heading"></a></h2>
+<h2>3. Phát một điệu nhạc<a class="headerlink" href="#phat-mot-dieu-nhac" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Chúng ta sẽ viết một số chương trình để thử âm thanh của loa trên xBot.</p>
 <ul class="simple">
@@ -281,7 +289,7 @@
 <p>Sử dụng khối lệnh lặp lại sẽ giúp cho chương trình của chúng ta ngắn gọn và dễ đọc hơn nhiều đúng không nào?</p>
 </section>
 <section id="su-dung-ham-de-rut-ngan-chuong-trinh">
-<h2>4. Sử dụng hàm để rút ngắn chương trình<a class="headerlink" href="#su-dung-ham-de-rut-ngan-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>4. Sử dụng hàm để rút ngắn chương trình<a class="headerlink" href="#su-dung-ham-de-rut-ngan-chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Với những chương trình dài có nhiều khối lệnh, chúng ta sẽ sử dụng <strong>Hàm</strong> để rút gọn nhữung chương trình đó.</p>
 <p>Hàm giống như việc bạn <strong>tạo thêm một loại khối lệnh mới</strong> để sử dụng, và <strong>khối lệnh này bao gồm các khối lệnh con bên trong</strong>.</p>
@@ -339,7 +347,7 @@
 </div>
 </section>
 <section id="nhay-mua-cung-xbot">
-<h2>5. Nhảy múa cùng xBot<a class="headerlink" href="#nhay-mua-cung-xbot" title="Link to this heading"></a></h2>
+<h2>5. Nhảy múa cùng xBot<a class="headerlink" href="#nhay-mua-cung-xbot" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Và bây giờ, chúng ta hãy thử cùng lập trình cho xBot nhảy múa một cách vui nhộn xem nào. Bạn có thể tham khảo một kiểu nhảy múa mà xBot có sẵn, bằng cách nhấn vào nút <strong>Nhảy múa</strong> trong giao diện điều khiển của xBot.</p>
 <a class="reference internal image-reference" href="../../_images/xbot_bai_2.21.png"><img alt="../../_images/xbot_bai_2.21.png" class="align-center" src="../../_images/xbot_bai_2.21.png" style="width: 600px;" /></a>
@@ -405,7 +413,7 @@
 <p>Bạn hãy chạy chương trình và quan sát xBot nhảy múa nhé.</p>
 </section>
 <section id="bai-tap-mo-rong">
-<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Link to this heading"></a></h2>
+<h2>6. Bài tập mở rộng<a class="headerlink" href="#bai-tap-mo-rong" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p><strong>Bài 1</strong>:</p>
 <p>Bạn hãy thử viết chương trình phát ra bài hát “Little Star” liên tục mỗi khi nhấn nút trên xBot:</p>
@@ -435,7 +443,7 @@ Bạn hãy thử cho xBot hú còi và bật đèn giống như xe cảnh sát x
 <p>Bạn có thể nhấn vào nút Dừng chương trình để ngưng hiệu ứng hú còi nhé.</p>
 </section>
 <section id="cau-hoi-on-tap">
-<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Link to this heading"></a></h2>
+<h2>7. Câu hỏi ôn tập<a class="headerlink" href="#cau-hoi-on-tap" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Có bao nhiêu nốt nhạc cơ bản? Kể tên.</p></li>

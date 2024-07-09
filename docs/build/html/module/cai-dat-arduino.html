@@ -15,9 +15,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -74,6 +78,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -100,10 +105,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../xbot/gap-hai-bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -166,9 +167,9 @@
            <div itemprop="articleBody">
              
   <section id="cai-dat-arduino-va-yolo-bit">
-<h1><strong>Cài đặt Arduino và Yolo:Bit</strong><a class="headerlink" href="#cai-dat-arduino-va-yolo-bit" title="Link to this heading"></a></h1>
+<h1><strong>Cài đặt Arduino và Yolo:Bit</strong><a class="headerlink" href="#cai-dat-arduino-va-yolo-bit" title="Permalink to this heading"></a></h1>
 <section id="cai-dat-arduino-ide">
-<h2>1. Cài đặt Arduino IDE<a class="headerlink" href="#cai-dat-arduino-ide" title="Link to this heading"></a></h2>
+<h2>1. Cài đặt Arduino IDE<a class="headerlink" href="#cai-dat-arduino-ide" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể tải phiên bản Arduino IDE mới nhất, phù hợp với hệ điều hành của máy tính của bạn tại <a class="reference external" href="https://www.arduino.cc/en/Main/Software">trang chủ của Arduino</a> (Đường dẫn: <a class="reference external" href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a>)</p>
 <figure class="align-center">
@@ -180,7 +181,7 @@
 <p>Sau khi tải, bạn tiến hành cài đặt và sử dụng các cấu hình mặc định của phần mềm.</p>
 </section>
 <section id="cai-dat-driver-cho-yolo-bit">
-<h2>2. Cài đặt driver cho Yolo:Bit<a class="headerlink" href="#cai-dat-driver-cho-yolo-bit" title="Link to this heading"></a></h2>
+<h2>2. Cài đặt driver cho Yolo:Bit<a class="headerlink" href="#cai-dat-driver-cho-yolo-bit" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để máy tính có thể giao tiếp và lập trình được cho Yolo:Bit, bạn cần cài đặt driver trước. Để cài đặt, bạn làm theo các bước sau hoặc xem thêm hướng dẫn tại đường link <a class="reference external" href="ohstem.vn/driver">ohstem.vn/driver</a>.</p>
 <ul class="simple">
@@ -228,7 +229,7 @@
 </ul>
 </section>
 <section id="cai-dat-board-yolo-bit-trong-arduino-ide">
-<h2>3. Cài đặt board Yolo:Bit trong Arduino IDE<a class="headerlink" href="#cai-dat-board-yolo-bit-trong-arduino-ide" title="Link to this heading"></a></h2>
+<h2>3. Cài đặt board Yolo:Bit trong Arduino IDE<a class="headerlink" href="#cai-dat-board-yolo-bit-trong-arduino-ide" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Phần mềm Arduino có thể lập trình cho rất nhiều loại board mạch khác nhau. Tuy nhiên, bạn cần làm thêm một vài bước sau để có thể làm việc với Yolo:Bit:</p>
 <ol class="arabic simple">
@@ -273,7 +274,7 @@
 <p>Đối với người dùng hệ điều hành macOS, cổng kết nối sẽ được hiển thị là: <strong>/dev/cu.SLAB_USBtoUART</strong>.</p>
 </section>
 <section id="chuong-trinh-hello-world">
-<h2>4. Chương trình “Hello World”:<a class="headerlink" href="#chuong-trinh-hello-world" title="Link to this heading"></a></h2>
+<h2>4. Chương trình “Hello World”:<a class="headerlink" href="#chuong-trinh-hello-world" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Trong Arduino, bạn hãy tạo một file chương trình mới (<strong>File &gt; New</strong>) và lưu với tên <strong>hello.ino</strong> bằng cách chọn menu <strong>File &gt; Save As…</strong> (chọn thư mục để lưu). Sau đó, bạn copy đoạn code này vào:</p>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">void</span><span class="w"> </span><span class="nv">setup</span><span class="ss">()</span><span class="w"> </span>{
@@ -323,7 +324,7 @@
 <p>Chúc mừng bạn đã hoàn thành chương trình đầu tiên trong chuỗi các bài học. Hãy tiếp tục các bài tiếp theo nhé.</p>
 </section>
 <section id="khoi-phuc-firmware-python-cho-yolo-bit">
-<h2>5. Khôi phục firmware Python cho Yolo:Bit<a class="headerlink" href="#khoi-phuc-firmware-python-cho-yolo-bit" title="Link to this heading"></a></h2>
+<h2>5. Khôi phục firmware Python cho Yolo:Bit<a class="headerlink" href="#khoi-phuc-firmware-python-cho-yolo-bit" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -336,7 +337,7 @@
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/arduino.9.png"><img alt="../_images/arduino.9.png" src="../_images/arduino.9.png" style="width: 512.0px; height: 180.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Chọn <strong>phiên bản firmware mới nhất</strong> của Yolo:Bit</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Chọn <strong>phiên bản firmware mới nhất</strong> của Yolo:Bit</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="line-block">

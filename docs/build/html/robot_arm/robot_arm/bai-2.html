@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -128,8 +135,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -171,9 +179,9 @@
            <div itemprop="articleBody">
              
   <section id="lap-trinh-di-chuyen-theo-toa-do-orz">
-<h1>6. Lập trình di chuyển theo tọa độ ORZ<a class="headerlink" href="#lap-trinh-di-chuyen-theo-toa-do-orz" title="Link to this heading"></a></h1>
+<h1>6. Lập trình di chuyển theo tọa độ ORZ<a class="headerlink" href="#lap-trinh-di-chuyen-theo-toa-do-orz" title="Permalink to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Giới thiệu về tọa độ ORZ</p></li>
@@ -182,7 +190,7 @@
 </ul>
 </section>
 <section id="he-toa-tru-orz">
-<h2>Hệ tọa trụ ORZ<a class="headerlink" href="#he-toa-tru-orz" title="Link to this heading"></a></h2>
+<h2>Hệ tọa trụ ORZ<a class="headerlink" href="#he-toa-tru-orz" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Hệ tọa độ hình trụ là hệ tọa độ ba chiều, chỉ định vị trí điểm theo khoảng cách từ trục tham chiếu đã chọn, hướng từ trục so với hướng tham chiếu đã chọn và khoảng cách từ mặt phẳng tham chiếu đã chọn vuông góc với trục. Khoảng cách sau được cho là số dương hoặc âm tùy thuộc vào phía nào của mặt phẳng tham chiếu đối diện với điểm.</p>
 <p>Nguồn gốc của hệ thống là điểm mà cả ba tọa độ có thể được cho là 0. Đây là giao điểm giữa mặt phẳng tham chiếu và trục.</p>
@@ -205,7 +213,7 @@
 </div>
 </section>
 <section id="gioi-thieu-khoi-lenh">
-<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Link to this heading"></a></h2>
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/arm-block-kinematic.png"><img alt="../../_images/arm-block-kinematic.png" class="align-center" src="../../_images/arm-block-kinematic.png" style="width: 400px;" /></a>
 <div class="line-block">
@@ -220,7 +228,7 @@
 </div></blockquote>
 </section>
 <section id="cach-lay-cac-gia-tri-orz-cua-robot">
-<h2>Cách lấy các giá trị ORZ của Robot<a class="headerlink" href="#cach-lay-cac-gia-tri-orz-cua-robot" title="Link to this heading"></a></h2>
+<h2>Cách lấy các giá trị ORZ của Robot<a class="headerlink" href="#cach-lay-cac-gia-tri-orz-cua-robot" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <blockquote>
 <div><ol class="arabic simple">
@@ -258,7 +266,7 @@
 </div></blockquote>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/sample-move-a-to-b-manual.gif"><img alt="../../_images/sample-move-a-to-b-manual.gif" class="align-center" src="../../_images/sample-move-a-to-b-manual.gif" style="width: 700px;" /></a>
 <div class="line-block">
@@ -302,7 +310,7 @@
 </div></blockquote>
 </section>
 <section id="chuong-trinh-mau">
-<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Nhấp vào chữ <strong>tại đây</strong> để xem chương trình mẫu, hoặc quét mã QR bên dưới để xem chương trình.</p></li>

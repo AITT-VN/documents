@@ -15,9 +15,9 @@
   
         <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -177,14 +185,14 @@
            <div itemprop="articleBody">
              
   <section id="lap-trinh-tay-cam-dieu-khien">
-<h1>7. 1. Lập trình tay cầm điều khiển<a class="headerlink" href="#lap-trinh-tay-cam-dieu-khien" title="Link to this heading"></a></h1>
+<h1>7. 1. Lập trình tay cầm điều khiển<a class="headerlink" href="#lap-trinh-tay-cam-dieu-khien" title="Permalink to this heading"></a></h1>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../../_images/71.png"><img alt="../../../../_images/71.png" src="../../../../_images/71.png" style="width: 450.0px; height: 450.0px;" /></a>
 </figure>
 <p>GamePad shield là bộ Kit mở rộng cho Yolo:Bit. Bộ kit này sẽ biến Yolo:Bit thành một tay cầm điều khiển Bluetooth. GamePad gồm Joystick và 7 nút nhấn có thể lập trình, được dùng để tạo ra các chức năng tùy biến theo ý của người dùng.</p>
 <p>Ngoài ra, cùng với pin sạc và chức năng sạc được tích hợp sẵn trên board, GamePad shield có thể được sử dụng để điều khiển các robot của OhStem như robot xBot (thông qua Bluetooth) hoặc biến Yolo:Bit thành một chiếc máy chơi game hoàn chỉnh.</p>
 <section id="thong-so-ky-thuat-cua-gamepad">
-<h2><strong>Thông số kỹ thuật của GamePad</strong><a class="headerlink" href="#thong-so-ky-thuat-cua-gamepad" title="Link to this heading"></a></h2>
+<h2><strong>Thông số kỹ thuật của GamePad</strong><a class="headerlink" href="#thong-so-ky-thuat-cua-gamepad" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>Nguồn:</strong> Pin sạc Li-Ion 3.7V 14500</p></li>
@@ -194,25 +202,25 @@
 </ul>
 </section>
 <section id="huong-dan-lap-trinh-cho-gamepad-shield">
-<h2><strong>Hướng dẫn lập trình cho GamePad shield</strong><a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad-shield" title="Link to this heading"></a></h2>
+<h2><strong>Hướng dẫn lập trình cho GamePad shield</strong><a class="headerlink" href="#huong-dan-lap-trinh-cho-gamepad-shield" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>GamePad shield được dùng với Yolo:Bit. Bạn có thể tham khảo hướng dẫn lập trình cho Yolo:Bit <a class="reference external" href="https://docs.ohstem.vn/en/latest/yolobit_v2/lam-quen.html">ở đây</a> nếu chưa từng làm việc với Yolo:Bit trước đó.</p>
 </section>
 <section id="cai-dat-thu-vien-mo-rong-cho-gamepad">
-<h2><strong>1. Cài đặt thư viện mở rộng cho GamePad</strong><a class="headerlink" href="#cai-dat-thu-vien-mo-rong-cho-gamepad" title="Link to this heading"></a></h2>
+<h2><strong>1. Cài đặt thư viện mở rộng cho GamePad</strong><a class="headerlink" href="#cai-dat-thu-vien-mo-rong-cho-gamepad" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Chọn thiết bị lập trình là Yolo:Bit trong OhStem App, tại địa chỉ <a class="reference external" href="https://app.ohstem.vn/">https://app.ohstem.vn/</a> hoặc ứng dụng OhStem App trên mobile (Tải trên Google Play / App Store với tên tìm kiếm là  “OhStem App”)</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.12.png"><img alt="../../../../_images/7.12.png" src="../../../../_images/7.12.png" style="width: 509.4px; height: 274.2px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.13.png"><img alt="../../../../_images/7.13.png" src="../../../../_images/7.13.png" style="width: 509.4px; height: 274.2px;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>Nhấn vào mục <strong>Mở Rộng</strong> ở danh sách bên trái:</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.23.png"><img alt="../../../../_images/7.23.png" src="../../../../_images/7.23.png" style="width: 211.20000000000002px; height: 264.8px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.24.png"><img alt="../../../../_images/7.24.png" src="../../../../_images/7.24.png" style="width: 211.20000000000002px; height: 264.8px;" /></a>
 </figure>
 <ol class="arabic simple" start="3">
 <li><p>Chọn GamePad trong danh sách các mục mở rộng có sẵn (hoặc nhập tên GamePad vào ô tìm kiếm nếu bạn không thấy):</p></li>
@@ -222,23 +230,23 @@
 </figure>
 <p>Chọn tải thư viện:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.42.png"><img alt="../../../../_images/7.42.png" src="../../../../_images/7.42.png" style="width: 337.6px; height: 229.60000000000002px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.43.png"><img alt="../../../../_images/7.43.png" src="../../../../_images/7.43.png" style="width: 337.6px; height: 229.60000000000002px;" /></a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Chọn thiết bị Yolo:Bit để kết nối (nếu chưa kết nối) và phải đảm bảo đã cài đặt thư viện thành công (bên trái giao diện <strong>xuất hiện danh mục GamePad</strong> như hình):</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.52.png"><img alt="../../../../_images/7.52.png" src="../../../../_images/7.52.png" style="width: 153.60000000000002px; height: 238.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.53.png"><img alt="../../../../_images/7.53.png" src="../../../../_images/7.53.png" style="width: 153.60000000000002px; height: 238.4px;" /></a>
 </figure>
 </div></blockquote>
 </section>
 <section id="gioi-thieu-khoi-lenh">
-<h2><strong>2. Giới thiệu khối lệnh</strong><a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Link to this heading"></a></h2>
+<h2><strong>2. Giới thiệu khối lệnh</strong><a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <blockquote>
 <div><p>Bên trong danh mục GamePad, bạn sẽ thấy có 3 khối lệnh:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../../../_images/7.61.png"><img alt="../../../../_images/7.61.png" src="../../../../_images/7.61.png" style="width: 400.0px; height: 286.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/7.62.png"><img alt="../../../../_images/7.62.png" src="../../../../_images/7.62.png" style="width: 400.0px; height: 286.40000000000003px;" /></a>
 </figure>
 <ul class="simple">
 <li><p>Joystick ở hướng -&gt; : Trả về giá trị đúng khi hướng của cần gạt Joystick xoay sang phải (tương tự với các lựa chọn khác)</p></li>
@@ -296,7 +304,7 @@
 </div></blockquote>
 </section>
 <section id="lap-trinh-co-ban-voi-yolo-bit">
-<h2><strong>3. Lập trình cơ bản với Yolo:Bit</strong><a class="headerlink" href="#lap-trinh-co-ban-voi-yolo-bit" title="Link to this heading"></a></h2>
+<h2><strong>3. Lập trình cơ bản với Yolo:Bit</strong><a class="headerlink" href="#lap-trinh-co-ban-voi-yolo-bit" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Để làm quen với GamePad, chúng ta sẽ lập trình một chương trình đơn giản với Yolo:Bit:</p>
 <blockquote>
@@ -308,7 +316,7 @@
 <p>Để thực hiện điều này, chúng ta sẽ sử dụng khối lệnh Nút ____ được nhấn và khối lệnh Joystick ở hướng ___</p>
 </section>
 <section id="nap-chuong-trinh-hoan-chinh">
-<h2><strong>4. Nạp chương trình hoàn chỉnh</strong><a class="headerlink" href="#nap-chuong-trinh-hoan-chinh" title="Link to this heading"></a></h2>
+<h2><strong>4. Nạp chương trình hoàn chỉnh</strong><a class="headerlink" href="#nap-chuong-trinh-hoan-chinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bạn có thể sử dụng trực tiếp chương trình mẫu chúng tôi đã lập trình sẵn cho bạn:</p>
 <ul class="simple">
@@ -316,7 +324,7 @@
 </ul>
 </section>
 <section id="huong-dan-lap-trinh">
-<h2><strong>Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Link to this heading"></a></h2>
+<h2><strong>Hướng dẫn lập trình</strong><a class="headerlink" href="#huong-dan-lap-trinh" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Đầu tiên, chúng ta xóa màn hình trước đó:</p></li>
 </ol>

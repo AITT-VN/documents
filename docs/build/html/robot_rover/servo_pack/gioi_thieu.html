@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul class="current">
@@ -124,8 +131,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -167,14 +175,14 @@
            <div itemprop="articleBody">
              
   <section id="gioi-thieu-rover-servo-pack">
-<h1>1. Giới thiệu Rover - Servo Pack<a class="headerlink" href="#gioi-thieu-rover-servo-pack" title="Link to this heading"></a></h1>
+<h1>1. Giới thiệu Rover - Servo Pack<a class="headerlink" href="#gioi-thieu-rover-servo-pack" title="Permalink to this heading"></a></h1>
 <p>Servo pack là bộ phụ kiện sáng tạo mở rộng cho <strong>robot Rover</strong>, cho phép bạn sáng tạo nhiều tính năng và mô hình thú vị trên Rover.</p>
 <a class="reference internal image-reference" href="../../_images/servo-pack-rover.png"><img alt="../../_images/servo-pack-rover.png" class="align-center" src="../../_images/servo-pack-rover.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="mua-san-pham">
-<h2>1.1 Mua sản phẩm<a class="headerlink" href="#mua-san-pham" title="Link to this heading"></a></h2>
+<h2>1.1 Mua sản phẩm<a class="headerlink" href="#mua-san-pham" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference external image-reference" href="https://ohstem.vn/product/phu-kien-rover-servo-pack/"><img alt="some image" class="with-shadow align-center" src="../../_images/gio6.png" style="width: 588.0px; height: 81.0px;" /></a>
 <div class="line-block">
@@ -182,14 +190,14 @@
 </div>
 </section>
 <section id="tong-quan-ve-rover-servo-pack">
-<h2>1.2 Tổng quan về Rover - Servo Pack<a class="headerlink" href="#tong-quan-ve-rover-servo-pack" title="Link to this heading"></a></h2>
+<h2>1.2 Tổng quan về Rover - Servo Pack<a class="headerlink" href="#tong-quan-ve-rover-servo-pack" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <p>Bộ phụ kiện có thể lắp ráp được thành 5 mô hình cho Rover, ví dụ như Robot trực thăng, mèo dò đường, chó vẫy đuôi,… hoặc có thể nhiều hơn tùy vào trí tưởng tưởng và sáng tạo của người dùng.</p>
 <p>Servo Pack gồm nhiều thành phần lắp ráp được làm từ mica, mang lại sự chắc chắn, có độ bền cao và có tính an toàn. Ngoài ra, bộ phụ kiện còn kèm thêm các loại module điện tử như động cơ Servo - dùng để xoay và điều khiển các bộ phận trên robot.</p>
 <p>Sản phẩm có kèm hướng dẫn lắp ráo chi tiết bằng video.</p>
 </section>
 <section id="bo-phu-kien-bao-gom">
-<h2>1.3 Bộ phụ kiện bao gồm<a class="headerlink" href="#bo-phu-kien-bao-gom" title="Link to this heading"></a></h2>
+<h2>1.3 Bộ phụ kiện bao gồm<a class="headerlink" href="#bo-phu-kien-bao-gom" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Động cơ Servo DS - S006L 180 độ</p></li>
@@ -198,7 +206,7 @@
 </ul>
 </section>
 <section id="danh-sach-cac-thanh-phan">
-<h2>1.4 Danh sách các thành phần<a class="headerlink" href="#danh-sach-cac-thanh-phan" title="Link to this heading"></a></h2>
+<h2>1.4 Danh sách các thành phần<a class="headerlink" href="#danh-sach-cac-thanh-phan" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/chi_tiet_servo_pack.jpg"><img alt="../../_images/chi_tiet_servo_pack.jpg" class="align-center" src="../../_images/chi_tiet_servo_pack.jpg" style="width: 700px;" /></a>
 <div class="line-block">

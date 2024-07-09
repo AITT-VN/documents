@@ -15,9 +15,9 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -177,7 +185,7 @@
            <div itemprop="articleBody">
              
   <section id="pins-pins">
-<h1><a class="reference internal" href="../micropython-api/pins.html#module-pins" title="pins: Pins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code></a> — Pins<a class="headerlink" href="#pins-pins" title="Link to this heading"></a></h1>
+<h1><a class="reference internal" href="../micropython-api/pins.html#module-pins" title="pins: Pins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pins</span></code></a> — Pins<a class="headerlink" href="#pins-pins" title="Permalink to this heading"></a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">pins</span></code></p>
 <p>Có 2 loại tín hiệu cơ bản mà chúng ta sẽ làm việc với chúng trong lập trình điện tử, đó là tín hiệu Digital và tín hiệu Analog. Chúng ta sẽ tìm hiểu về Analog trong các bài học sau.</p>
 <p>Tín hiệu Digital là tín hiệu chỉ có 2 giá trị là Tắt (còn gọi là LOW, 0V) và Bật (HIGH, 3.3V hay 5V tùy vào điện áp hoạt động của hệ thống, xController sử dụng 3.3V).</p>
@@ -186,7 +194,7 @@
 <p>Lưu ý: Trong 6 cổng mở rộng của xController, chỉ có cổng 4, 5 và 6 là có bộ ADC và có thể giao tiếp được với các module sử dụng tín hiệu Analog. Giá trị tín hiệu các chân Analog này có dải từ 0 (tương ứng với 0V) đến 4095 (tương ứng với 3.3V).</p>
 <p>Ví dụ: Nếu giá trị tín hiệu Analog xuất ra là 2047 thì điện áp sẽ nằm trong khoảng 1.65V.</p>
 <section id="function">
-<h2>Function<a class="headerlink" href="#function" title="Link to this heading"></a></h2>
+<h2>Function<a class="headerlink" href="#function" title="Permalink to this heading"></a></h2>
 <p>Lưu ý: Trên board xController có 6 cổng mở rộng, được đánh số từ 1 đến 6. Mỗi cổng gồm 4 đường tín hiệu:</p>
 <blockquote>
 <div><ul>
@@ -203,7 +211,7 @@
 </div></blockquote>
 <dl class="py function">
 <dt class="sig sig-object py" id="pinMode">
-<span class="sig-name descname"><span class="pre">pinMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pinMode" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">pinMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pinMode" title="Permalink to this definition"></a></dt>
 <dd><p>Cấu hình 1 pin quy định hoạt động như là một đầu vào (INPUT) hoặc đầu ra (OUTPUT). Xem mô tả kỹ thuật số (datasheet) để biết chi tiết về các chức năng của các chân.</p>
 <p>Như trong phiên bản Arduino 1.0.1, nó có thể kích hoạt các điện trở pullup nội bộ với chế độ INPUT_PULLUP. Ngoài ra, chế độ INPUT vô hiệu hóa một cách rõ ràng điện trở pullups nội bộ.</p>
 <blockquote>
@@ -216,7 +224,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="digitalWrite">
-<span class="sig-name descname"><span class="pre">digitalWrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalWrite" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">digitalWrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalWrite" title="Permalink to this definition"></a></dt>
 <dd><ul>
 <li><p>Xuất tín hiệu ra các chân digital, có 2 giá trị là HIGH hoặc là LOW</p></li>
 <li><p>Nếu một pin được thiết đặt là OUTPUT bởi pinMode(). Và bạn dùng digitalWrite để xuất tín hiệu thì điện thế tại chân này sẽ là 5V (hoặc là 3,3 V trên mạch 3,3 V) nếu được xuất tín hiệu là HIGH, và 0V nếu được xuất tín hiệu là LOW.</p></li>
@@ -233,7 +241,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="digitalRead">
-<span class="sig-name descname"><span class="pre">digitalRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalRead" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">digitalRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#digitalRead" title="Permalink to this definition"></a></dt>
 <dd><ul class="simple">
 <li><p>Đọc tín hiệu điện từ một chân digital (được thiết đặt là INPUT). Trả về 2 giá trị HIGH hoặc LOW.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: giá trị của Digital muốn đọc.</p></li>
@@ -242,7 +250,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="analogRead">
-<span class="sig-name descname"><span class="pre">analogRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analogRead" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">analogRead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#analogRead" title="Permalink to this definition"></a></dt>
 <dd><ul class="simple">
 <li><p>Đọc giá trị tín hiệu Analog ở chân IO được chỉ định, đồng thời trả về giá trị kiểu số nguyên int (nằm trong khoảng từ 0 đến 4095)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pin</span></code>: giá trị của Analog muốn đọc.</p></li>
@@ -251,7 +259,7 @@
 
 </section>
 <section id="sample-code">
-<h2>Sample Code<a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
+<h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this heading"></a></h2>
 <p>Bật tắt PORT 1 - PIN 1 của xController</p>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">// Blink LED</span>
 <span class="c1">// Bật tắt đèn LED sau mỗi 1 giây</span>

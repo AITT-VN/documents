@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,10 +158,10 @@
            <div itemprop="articleBody">
              
   <section id="bai-3-thap-sang">
-<h1>6. Bài 3: Thắp sáng<a class="headerlink" href="#bai-3-thap-sang" title="Link to this heading"></a></h1>
+<h1>6. Bài 3: Thắp sáng<a class="headerlink" href="#bai-3-thap-sang" title="Permalink to this heading"></a></h1>
 <p><em>Trời đã xế chiều, Rover cần đi qua một đường hầm tối để đến thành phố bên kia. Hãy giúp Rover bật đèn chiếu sáng khi trời tối để đi qua đường hầm.</em></p>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Điều khiển đèn pha trên Rover</p></li>
@@ -163,7 +171,7 @@
 </ol>
 </section>
 <section id="bo-phan-dien-tu">
-<h2>Bộ phận điện tử<a class="headerlink" href="#bo-phan-dien-tu" title="Link to this heading"></a></h2>
+<h2>Bộ phận điện tử<a class="headerlink" href="#bo-phan-dien-tu" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Cảm biến ánh sáng có thể cảm nhận cường độ ánh sáng của môi trường, cụ thể là sáng hoặc tối</p></li>
@@ -181,7 +189,7 @@
 </div>
 </section>
 <section id="gioi-thieu-khoi-lenh">
-<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Link to this heading"></a></h2>
+<h2>Giới thiệu khối lệnh<a class="headerlink" href="#gioi-thieu-khoi-lenh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Khối lệnh điều kiện:</p></li>
@@ -211,38 +219,38 @@
 <ul class="simple">
 <li><p>Khối lệnh bật đèn pha:</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_3.64.png"><img alt="../../_images/bai_3.64.png" class="align-center" src="../../_images/bai_3.64.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_3.63.png"><img alt="../../_images/bai_3.63.png" class="align-center" src="../../_images/bai_3.63.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
 <li><p>Khối lệnh số:</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/bai_3.74.png"><img alt="../../_images/bai_3.74.png" class="align-center" src="../../_images/bai_3.74.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_3.73.png"><img alt="../../_images/bai_3.73.png" class="align-center" src="../../_images/bai_3.73.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Tạo điều kiện: kiểm tra độ sáng môi trường, nếu trời tối (giá trị &lt; 5)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/bai_3.83.png"><img alt="../../_images/bai_3.83.png" class="align-center" src="../../_images/bai_3.83.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_3.82.png"><img alt="../../_images/bai_3.82.png" class="align-center" src="../../_images/bai_3.82.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Bật đèn khi điều kiện đúng, tắt đèn khi điều kiện sai, cho thời gian tạm dừng là 0,1s (100 milli giây)</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/bai_3.93.png"><img alt="../../_images/bai_3.93.png" class="align-center" src="../../_images/bai_3.93.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/bai_3.92.png"><img alt="../../_images/bai_3.92.png" class="align-center" src="../../_images/bai_3.92.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="chuong-trinh-mau">
-<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Link to this heading"></a></h2>
+<h2>Chương trình mẫu<a class="headerlink" href="#chuong-trinh-mau" title="Permalink to this heading"></a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Thắp sáng <a class="reference external" href="https://app.ohstem.vn/#!/share/yolobit/2BeUMyVld6irjlm4IwBoNkwOAAy">Tại đây</a></p></li>

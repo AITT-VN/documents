@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -50,6 +50,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -70,6 +74,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -108,8 +115,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -150,18 +158,18 @@
            <div itemprop="articleBody">
              
   <section id="so-ngau-nhien">
-<h1>Số ngẫu nhiên<a class="headerlink" href="#so-ngau-nhien" title="Link to this heading"></a></h1>
+<h1>Số ngẫu nhiên<a class="headerlink" href="#so-ngau-nhien" title="Permalink to this heading"></a></h1>
 <p>Trong nhiều chương trình, bạn sẽ cần tạo ra một số ngẫu nhiên không đoán trước được, giống như khi bạn thảy xúc xắc mà không biết trước nó sẽ hiện ra số nào. Điều này giúp cho các trò chơi trở nên hấp dẫn hơn.</p>
 <a class="reference internal image-reference" href="../../_images/ls-7-11.png"><img alt="../../_images/ls-7-11.png" class="align-center" src="../../_images/ls-7-11.png" style="width: 600px;" /></a>
 <p>MicroPython đi kèm thư viện tên là random giúp bạn tạo ra được một số ngẫu nhiên trong một khoảng nào đó tùy ý muốn của bạn.</p>
 <p>Chương trình dưới đây sẽ hiện ra một tên ngẫu nhiên mỗi lần chạy.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from yolobit import *
 
-<span class="kn">import</span> <span class="nn">random</span>
+import random
 
-<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="err">“</span><span class="n">Mary</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Yolanda</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Damien</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Alia</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Kushal</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Mei</span> <span class="n">Xiu</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">Zoltan</span><span class="err">”</span> <span class="p">]</span>
+names = [“Mary”, “Yolanda”, “Damien”, “Alia”, “Kushal”, “Mei Xiu”, “Zoltan” ]
 
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)])</span>
+display.scroll(names[random.randint(0, 6)])
 </pre></div>
 </div>
 <p>Chúng ta sử dụng hàm <code class="docutils literal notranslate"><span class="pre">random.randint(start,</span> <span class="pre">end)</span></code> để tạo ra 1 số ngẫu nhiên trong khoảng từ start đến end. Trong chương trình trên, chúng ta có 1 danh sách gồm 7 cái tên nên chúng ta tạo ra số ngẫu nhiên từ 0 đến 6 (tổng cộng là 7 số) và lấy một tên ra trong danh sách theo số này. Trong máy tính, thứ tự luôn bắt đầu từ 0 thay vì 1 nên chúng ta cũng tạo ra số từ 0 đến 6.</p>
@@ -170,7 +178,7 @@
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">names[3]</span></code> sẽ trả ra phần tử có số thứ tự là 3 (đếm từ 0 nhé) trong danh sách, tức là cái tên <code class="docutils literal notranslate"><span class="pre">Alia</span></code>. Khi đó câu lệnh sẽ trở thành:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="err">“</span><span class="n">Alia</span><span class="err">”</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>display.scroll(“Alia”)
 </pre></div>
 </div>
 <p>Và tên này sẽ được hiện ra trên màn hình Led. Thật là dễ phải không nào.</p>

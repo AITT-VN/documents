@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -139,8 +146,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -182,61 +190,61 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-11-theo-doi-nhiet-do-do-am-tren-lcd">
-<h1>12. Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD<a class="headerlink" href="#bai-hoc-11-theo-doi-nhiet-do-do-am-tren-lcd" title="Link to this heading"></a></h1>
+<h1>12. Bài học 11: Theo dõi nhiệt độ, độ ẩm trên LCD<a class="headerlink" href="#bai-hoc-11-theo-doi-nhiet-do-do-am-tren-lcd" title="Permalink to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <p>Trong bài học này, chúng ta cùng tìm hiểu cảm biến DHT11 - một loại cảm biến đo được nhiệt độ và độ ẩm của môi trường xung quanh. Chúng ta sẽ lập trình hiển thị các thông tin đọc được từ cảm biến này lên màn hình LCD mà chúng ta đã làm quen ở bài học trước.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-11.png"><img alt="../../_images/device-11.png" class="align-center" src="../../_images/device-11.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-11-1.png"><img alt="../../_images/ls-11-1.png" class="align-center" src="../../_images/ls-11-1.png" style="width: 600px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;LCD_1602.h&gt;</span>
-<span class="c1">#include &lt;DHTesp.h&gt;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>#include &lt;LCD_1602.h&gt;
+#include &lt;DHTesp.h&gt;
 
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">DHTPIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">D2_1</span><span class="p">;</span>
+const int DHTPIN = D2_1;
 
-<span class="n">DHTesp</span><span class="w"> </span><span class="n">dht</span><span class="p">;</span>
-<span class="n">LCD_1602</span><span class="w"> </span><span class="n">lcd</span><span class="p">(</span><span class="mh">0x21</span><span class="p">);</span>
+DHTesp dht;
+LCD_1602 lcd(0x21);
 
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">lcd</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">D1_1</span><span class="p">,</span><span class="w"> </span><span class="n">D1_2</span><span class="p">);</span>
-<span class="w">  </span><span class="n">lcd</span><span class="o">.</span><span class="n">backlight</span><span class="p">();</span>
-<span class="w">  </span><span class="n">dht</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">DHTPIN</span><span class="p">,</span><span class="w"> </span><span class="n">DHTesp</span><span class="p">::</span><span class="n">DHT11</span><span class="p">);</span>
-<span class="p">}</span>
+void setup() {
+  lcd.begin(D1_1, D1_2);
+  lcd.backlight();
+  dht.setup(DHTPIN, DHTesp::DHT11);
+}
 
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">chờ</span><span class="w"> </span><span class="mi">2</span><span class="n">s</span><span class="w"> </span><span class="n">giữa</span><span class="w"> </span><span class="n">các</span><span class="w"> </span><span class="n">lần</span><span class="w"> </span><span class="err">đọ</span><span class="n">c</span><span class="w"> </span><span class="n">cảm</span><span class="w"> </span><span class="n">biến</span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">clear</span><span class="p">();</span>
-<span class="w">    </span><span class="nb nb-Type">float</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="o">.</span><span class="n">getHumidity</span><span class="p">();</span>
-<span class="w">    </span><span class="nb nb-Type">float</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dht</span><span class="o">.</span><span class="n">getTemperature</span><span class="p">();</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dht</span><span class="o">.</span><span class="n">getStatus</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Read sensor faiLED!&quot;</span><span class="p">);</span>
-<span class="w">      </span><span class="k">return</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Temp:     &quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Humidity: &quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">h</span><span class="p">);</span>
-<span class="w">    </span><span class="n">lcd</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;%&quot;</span><span class="p">);</span>
-<span class="p">}</span>
+void loop() {
+    // chờ 2s giữa các lần đọc cảm biến
+    delay(2000);
+    lcd.clear();
+    float h = dht.getHumidity();
+    float t = dht.getTemperature();
+    if (dht.getStatus() != 0) {
+      lcd.print(&quot;Read sensor faiLED!&quot;);
+      return;
+    }
+    lcd.setCursor(0, 0);
+    lcd.print(&quot;Temp:     &quot;);
+    lcd.print(t);
+    lcd.print(&quot;C&quot;);
+    lcd.setCursor(0, 1);
+    lcd.print(&quot;Humidity: &quot;);
+    lcd.print(h);
+    lcd.print(&quot;%&quot;);
+}
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;DHTesp.h&gt;</span>
 </pre></div>
 </div>

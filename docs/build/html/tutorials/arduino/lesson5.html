@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -140,8 +147,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -183,14 +191,14 @@
            <div itemprop="articleBody">
              
   <section id="bai-hoc-5-dieu-chinh-do-sang-led">
-<h1>6. Bài học 5: Điều chỉnh độ sáng LED<a class="headerlink" href="#bai-hoc-5-dieu-chinh-do-sang-led" title="Link to this heading"></a></h1>
+<h1>6. Bài học 5: Điều chỉnh độ sáng LED<a class="headerlink" href="#bai-hoc-5-dieu-chinh-do-sang-led" title="Permalink to this heading"></a></h1>
 <section id="muc-tieu">
-<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Link to this heading"></a></h2>
+<h2>Mục tiêu<a class="headerlink" href="#muc-tieu" title="Permalink to this heading"></a></h2>
 <p>Trong bài học trước, chúng ta đã tìm hiểu về đọc tín hiệu Analog từ cảm biến xoay. Ngoài ra, chúng ta cũng có thể xuất ra tín hiệu Analog thay vì chỉ xuất ra tín hiệu bật tắt bằng các trạng thái HIGH và LOW. Một số ví dụ: điều chỉnh độ sáng đèn LED, thay đổi tốc độ quay nhanh hay chậm của động cơ, cho âm thanh của loa to nhỏ theo ý muốn,…</p>
 <p>Trong bài học này, chúng ta sẽ sử dụng tín hiệu Analog Output để tăng giảm độ sáng của đèn LED bằng giá trị của cảm biến xoay.</p>
 </section>
 <section id="kien-thuc-moi">
-<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Link to this heading"></a></h2>
+<h2>Kiến thức mới<a class="headerlink" href="#kien-thuc-moi" title="Permalink to this heading"></a></h2>
 <p><em>PWM (Pulse Width Modulation)</em></p>
 <p>Trên thực tế, chip điều khiển không thể xuất ra được tín hiệu Analog thật mà chỉ có thể xuất ra tín hiệu <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> (bật) và <code class="docutils literal notranslate"><span class="pre">LOW</span></code> (tắt). <code class="docutils literal notranslate"><span class="pre">PWM</span></code> là một cách thức thông minh mà chip điều khiển dùng để xuất ra tín hiệu Analog. <code class="docutils literal notranslate"><span class="pre">PWM</span></code> hoạt động như sau:</p>
 <blockquote>
@@ -213,45 +221,45 @@
 <p><em>Lưu ý</em>: xController có 16 kênh <code class="docutils literal notranslate"><span class="pre">PWM</span></code> độc lập (đánh số từ <code class="docutils literal notranslate"><span class="pre">0-15</span></code>). Mỗi kênh này có thể cấu hình để sử dụng với tần số và Duty Cycle khác nhau.</p>
 </section>
 <section id="thiet-bi-can-su-dung">
-<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Link to this heading"></a></h2>
+<h2>Thiết bị cần sử dụng<a class="headerlink" href="#thiet-bi-can-su-dung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/device-4.png"><img alt="../../_images/device-4.png" class="align-center" src="../../_images/device-4.png" style="width: 600px;" /></a>
 </section>
 <section id="ket-noi-phan-cung">
-<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Link to this heading"></a></h2>
+<h2>Kết nối phần cứng<a class="headerlink" href="#ket-noi-phan-cung" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../../_images/ls-4-2.png"><img alt="../../_images/ls-4-2.png" class="align-center" src="../../_images/ls-4-2.png" style="width: 500px;" /></a>
 </section>
 <section id="viet-chuong-trinh">
-<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Viết chương trình<a class="headerlink" href="#viet-chuong-trinh" title="Permalink to this heading"></a></h2>
 <p>Mở phần mềm Arduino IDE.</p>
 <p>Copy đoạn code sau, click vào nút <code class="docutils literal notranslate"><span class="pre">Verify</span></code> để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">LEDPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">D1_1</span><span class="p">;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">Module</span><span class="w"> </span><span class="n">LED</span><span class="w"> </span><span class="n">nối</span><span class="w"> </span><span class="n">vào</span><span class="w"> </span><span class="n">cổng</span><span class="w"> </span><span class="n">số</span><span class="w"> </span><span class="mi">1</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">rotaryPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A4_1</span><span class="p">;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">Module</span><span class="w"> </span><span class="n">rotary</span><span class="w"> </span><span class="n">nối</span><span class="w"> </span><span class="n">vào</span><span class="w"> </span><span class="n">cổng</span><span class="w"> </span><span class="n">số</span><span class="w"> </span><span class="mi">4</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">rotaryValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1; // Module LED nối vào cổng số 1
+int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
+int rotaryValue = 0;
 
-<span class="o">//</span><span class="w"> </span><span class="n">khai</span><span class="w"> </span><span class="n">cấu</span><span class="w"> </span><span class="n">hình</span><span class="w"> </span><span class="n">PWM</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">frequency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5000</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">pwmChannel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="n">bất</span><span class="w"> </span><span class="n">kỳ</span><span class="w"> </span><span class="mi">0</span><span class="o">-</span><span class="mi">15</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+// khai cấu hình PWM
+const int frequency = 5000;
+const int pwmChannel = 0; // channel bất kỳ 0-15
+const int resolution = 12;
 
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">setup</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">cấu</span><span class="w"> </span><span class="n">hình</span><span class="w"> </span><span class="n">và</span><span class="w"> </span><span class="n">khởi</span><span class="w"> </span><span class="n">tạo</span><span class="w"> </span><span class="n">PWM</span>
-<span class="w">  </span><span class="n">ledcSetup</span><span class="p">(</span><span class="n">pwmChannel</span><span class="p">,</span><span class="w"> </span><span class="n">frequency</span><span class="p">,</span><span class="w"> </span><span class="n">resolution</span><span class="p">);</span>
+void setup(){
+  // cấu hình và khởi tạo PWM
+  ledcSetup(pwmChannel, frequency, resolution);
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">gắn</span><span class="w"> </span><span class="n">PWM</span><span class="w"> </span><span class="n">với</span><span class="w"> </span><span class="n">chân</span><span class="w"> </span><span class="n">IO</span><span class="w"> </span><span class="n">của</span><span class="w"> </span><span class="err">đè</span><span class="n">n</span><span class="w"> </span><span class="n">LED</span>
-<span class="w">  </span><span class="n">ledcAttachPin</span><span class="p">(</span><span class="n">LEDPin</span><span class="p">,</span><span class="w"> </span><span class="n">pwmChannel</span><span class="p">);</span>
-<span class="p">}</span>
+  // gắn PWM với chân IO của đèn LED
+  ledcAttachPin(LEDPin, pwmChannel);
+}
 
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">đọ</span><span class="n">c</span><span class="w"> </span><span class="n">giá</span><span class="w"> </span><span class="n">trị</span><span class="w"> </span><span class="n">cảm</span><span class="w"> </span><span class="n">biến</span>
-<span class="w">  </span><span class="n">rotaryValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">rotaryPin</span><span class="p">);</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">thay</span><span class="w"> </span><span class="err">đổ</span><span class="n">i</span><span class="w"> </span><span class="n">tín</span><span class="w"> </span><span class="n">hiệu</span><span class="w"> </span><span class="n">PWM</span>
-<span class="w">  </span><span class="n">ledcWrite</span><span class="p">(</span><span class="n">pwmChannel</span><span class="p">,</span><span class="w"> </span><span class="n">rotaryValue</span><span class="p">);</span>
-<span class="p">}</span>
+void loop() {
+  // đọc giá trị cảm biến
+  rotaryValue = analogRead(rotaryPin);
+  // thay đổi tín hiệu PWM
+  ledcWrite(pwmChannel, rotaryValue);
+}
 </pre></div>
 </div>
 </section>
 <section id="giai-thich-chuong-trinh">
-<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Link to this heading"></a></h2>
+<h2>Giải thích chương trình<a class="headerlink" href="#giai-thich-chuong-trinh" title="Permalink to this heading"></a></h2>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>int LEDPin = D1_1; // Module LED nối vào cổng số 1
 int rotaryPin = A4_1; // Module rotary nối vào cổng số 4
 int rotaryValue = 0;

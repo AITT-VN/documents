@@ -15,9 +15,9 @@
   
         <script src="../../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=a7e3f902"></script>
         <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -52,6 +52,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../store/store.html"><strong>Đi tới cửa hàng</strong></a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">ORC Robot Kit</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../orc_bot/orc-bot.html"><strong>Hướng dẫn lập trình robot ORC</strong></a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Máy tính lập trình Yolo:Bit</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolobit_v2/lam-quen.html"><strong>Làm quen với Yolo:Bit</strong></a></li>
@@ -72,6 +76,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -110,8 +117,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Các module mở rộng</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-thu-vien.html"><strong>Hướng dẫn cài đặt thư viện</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Hướng dẫn cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolobit.html"><strong>Cài đặt thư viện cho Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/cai-dat-arduino.html"><strong>Cài đặt Arduino và Yolo:Bit</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../module/thu-vien-yolouno.html"><strong>Cài đặt thư viện với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/cam-bien.html"><strong>Cảm biến</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/hien-thi.html"><strong>Hiển thị</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../module/dieu-khien-dong-ngat.html"><strong>Điều khiển đóng ngắt</strong></a></li>
@@ -177,23 +185,23 @@
            <div itemprop="articleBody">
              
   <section id="ble-bluetooth-low-energy">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy<a class="headerlink" href="#ble-bluetooth-low-energy" title="Link to this heading"></a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">ble</span></code> — Bluetooth Low Energy<a class="headerlink" href="#ble-bluetooth-low-energy" title="Permalink to this heading"></a></h1>
 <p>Chức năng chính và chức năng của <code class="docutils literal notranslate"><span class="pre">Bluetooth</span> <span class="pre">Low</span> <span class="pre">Energy</span></code></p>
 <p>xController sử dụng chip điều khiển ESP32, tích hợp nhiều kết nối không dây bao gồm Wi-Fi và Bluetooth Low Energy (BLE). BLE là một công nghệ Bluetooth tiết kiệm năng lượng, chủ yếu được dùng để truyền lượng dữ liệu nhỏ (băng thông thấp) với khoảng cách ngắn.</p>
 <p>Khác với chuẩn Bluetooth classic luôn được bật, BLE ngủ liên tục trừ khi bắt đầu kết nối. Đây là lý do BLE tiêu thụ năng lượng thấp: lượng tiêu thụ ít hơn 100 lần so với Bluetooth classic (tùy vào môi trường sử dụng). Hơn nữa, BLE không chỉ hỗ trợ giao tiếp Point-to-Point mà còn hỗ trợ Broadcast và Mesh Network.</p>
 <p>Do tính chất của nó, BLE phù hợp với các ứng dụng cần trao đổi một lượng nhỏ dữ liệu định kỳ, chỉ chạy trên một viên Pin.</p>
 <p>Ví dụ, BLE được sử dụng rất nhiều trong chăm sóc sức khỏe, thể dục, theo dõi, Beacons, an ninh và nhà thông minh.</p>
 <section id="function">
-<h2>Function<a class="headerlink" href="#function" title="Link to this heading"></a></h2>
+<h2>Function<a class="headerlink" href="#function" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="BLE.begin">
-<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">begin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BLE.begin" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">begin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BLE.begin" title="Permalink to this definition"></a></dt>
 <dd><p>Phát BLE với tên gọi là <code class="docutils literal notranslate"><span class="pre">name</span></code> để phần mềm có thể quét ra được và kết nối.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="BLE.available">
-<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">available</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.available" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">available</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.available" title="Permalink to this definition"></a></dt>
 <dd><p>Trả về kết quả thông báo BLE có đang nhận được dữ liệu nào hay không.</p>
 </dd></dl>
 
@@ -205,26 +213,26 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="BLE.read">
-<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.read" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.read" title="Permalink to this definition"></a></dt>
 <dd><p>Trả về các kết quả từ thiết bị khác gửi đến qua <code class="docutils literal notranslate"><span class="pre">BLE</span></code>.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="BLE.write">
-<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.write" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.write" title="Permalink to this definition"></a></dt>
 <dd><p>Gửi thông tin từ xController đến thiết bị hỗ trợ BLE và đã kết nối với xController.</p>
 <p>Các thông tin gửi đi có thể ở các dạng float, string, int, uint8_t.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="BLE.stop">
-<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.stop" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">BLE.</span></span><span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BLE.stop" title="Permalink to this definition"></a></dt>
 <dd><p>Ngắt kết nối BLE.</p>
 </dd></dl>
 
 </section>
 <section id="sample-code">
-<h2>Sample Code<a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
+<h2>Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this heading"></a></h2>
 <p>Xem hướng dẫn cụ thể sử dụng BLE tại Bài 13 - Arduino Smarthome.</p>
 </section>
 </section>

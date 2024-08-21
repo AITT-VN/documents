@@ -47,7 +47,7 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 2
    :caption: Yolo UNO - Mạch lập trình Arduino
 
-   yolo_uno/yolo_uno.rst
+   yolo_uno/yolo_uno_khoi_lenh.rst
    yolo_uno/uno_city.rst
    yolo_uno/trash_bin_yolo_uno.rst
    yolo_uno/smart_home_uno.rst

@@ -1,0 +1,98 @@
+12. Cảm biến góc MPU6050
+==========
+
+
+**1. Giới thiệu:** 
+---------
+-------------
+
+.. image:: images/mpu.1.jpg
+    :width: 400px
+    :align: center 
+|
+
+Cảm biến gia tốc MPU6050 là một trong những module phổ biến được sử dụng để đo gia tốc trong các ứng dụng. Với khả năng đo chính xác và tích hợp các cảm biến gia tốc và con quay hồi chuyển trong cùng một chip, MPU6050 đã trở thành một lựa chọn hàng đầu cho các dự án liên quan đến điều khiển chuyển động, robot học tập, hệ thống định vị và nhiều ứng dụng khác. 
+
+Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 thông số: 3 trục Góc quay (Gyro), 3 trục gia tốc hướng (Accelerometer), là loại cảm biến gia tốc phổ biến nhất trên thị trường hiện nay. Cảm biến thường được ứng dụng trên các mô hình con lắc động, xe tự cân bằng, máy bay,… 
+
+.. image:: images/mpu.2.jpg
+    :width: 400px
+    :align: center 
+|
+
+**Thông số kỹ thuật**
+
+- Điện áp sử dụng: 3~5VDC
+- Điện áp giao tiếp: 3~5VDC
+- Chuẩn giao tiếp: I2C
+- Giá trị Gyroscopes trong khoảng: +/- 250 500 1000 2000 degree/sec
+- Giá trị Acceleration trong khoảng: +/- 2g, +/- 4g, +/- 8g, +/- 16g
+
+**2. Chuẩn bị thiết bị**
+------------
+------------
+
+.. list-table:: 
+   :widths: auto
+   :header-rows: 1
+
+   * - .. image:: images/yolo_uno.png
+          :width: 200px
+          :align: center
+     - .. image:: images/mpu.1.jpg
+          :width: 200px
+          :align: center
+     - .. image:: images/lcd_1602.png
+          :width: 200px
+          :align: center
+   * - Mạch lập trình Yolo UNO
+     - Cảm biến MPU6050
+     - Màn hình LCD 1602
+   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-gia-toc-mpu6050/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/man-hinh-lcd-1602/>`_
+
+
+**3. Kết nối phần cứng**
+------------
+------------
+
+Kết nối cảm biến và màn hình LCD với **chân I2C trên Yolo UNO**.
+
+..  figure:: images/mpu.3.webp
+    :scale: 70%
+    :align: center 
+
+    Cảm biến góc MPU6050 kết nối với Yolo UNO thông qua giao thức I2C
+|
+
+4. Hướng dẫn lập trình
+------------
+------------
+
+1. Tải thư viện **MPU6050**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolouno.html>`_  
+
+..  figure:: images/mpu.4.jpg
+    :scale: 80%
+    :align: center 
+|
+
+Các khối lệnh sau để làm việc với cảm biến:
+
+..  figure:: images/mpu.5.jpg
+    :scale: 100%
+    :align: center 
+|
+
+**Lưu ý:** Cần khởi tạo trước và tiến hành tính toán (calib) 1 số mẫu trước để việc đo góc chính xác hơn.
+
+2. Chúng ta có thể hiển thị góc đo được so với ban đầu thông qua LCD bằng chương trình mẫu sau:
+
+..  figure:: images/mpu.6.jpg
+    :scale: 70%
+    :align: center 
+
+    `<https://app.ohstem.vn/#!/share/yolouno/2fu3TC2GYvJAUPmBWh48GhlChr8>`_
+
+
+Gửi chương trình vào Yolo UNO và lắc nhẹ cảm biến. Quan sát kết quả trên LCD. 

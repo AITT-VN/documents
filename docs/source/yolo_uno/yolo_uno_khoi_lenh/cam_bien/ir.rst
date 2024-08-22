@@ -6,7 +6,7 @@
 -------------
 
 .. image:: images/ir.1.jpg
-    :width: 500px
+    :width: 400px
     :align: center 
 | 
 

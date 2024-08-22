@@ -64,7 +64,6 @@ Kết nối cảm biến âm thanh vào **cổng Analog: A0 - A1** (có thể k�
     .. image:: images/keypad.3.png
         :scale: 70%
         :align: center 
-|
 
     Các khối lệnh mới xuất hiện như hình: 
 

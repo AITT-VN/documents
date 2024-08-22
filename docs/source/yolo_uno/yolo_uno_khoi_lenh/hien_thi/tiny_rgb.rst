@@ -52,7 +52,7 @@ Bạn có thể lựa chọn chân điều khiển, màu và các led trên modu
 - **Chương trình lập trình:**
 
 ..  image:: images/tiny_rgb_3.png
-    :scale: 90%
+    :scale: 80%
     :align: center 
 |
 

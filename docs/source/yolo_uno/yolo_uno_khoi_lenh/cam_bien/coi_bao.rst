@@ -15,7 +15,7 @@ Module còi báo được sử dụng để tạo ra âm thanh khi kích tín hi
 Với hướng dẫn này, sẽ thực hiện chương trình làm hệ thống cảnh báo nước mưa. 
 
 
-**Thông số kỹ thuật**
+**Thông số kỹ thuật:**
 
     + Đầu vào: Digital
     + Điện áp 3.3 ~ 5V, tần số âm thanh khoảng: 2,5 KHz

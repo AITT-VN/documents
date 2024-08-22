@@ -53,7 +53,7 @@ Với hướng dẫn này, chúng ta sẽ làm dự án cảnh báo tiếng ồn
 Kết nối cảm biến âm thanh vào **cổng Analog: A0 - A1** (có thể kết nối các cổng Analog khác từ A0 - A6)
 
 ..  figure:: images/am_thanh.2.jpg
-    :scale: 70%
+    :scale: 60%
     :align: center 
 |
 
@@ -91,9 +91,8 @@ Kết nối cảm biến âm thanh vào **cổng Analog: A0 - A1** (có thể k�
     ..  figure:: images/am_thanh.6.jpg
         :scale: 50%
         :align: center
-|
 
-    Kết nối và gửi chương trình xuống Yolo UNO, kết quả chương trình sẽ được in ra cửa sổ serial sau mỗi giây. Đồng thời, nếu kết quả đo được trên mức 20 thì đèn LED trên board bật đèn đỏ. Ngược lại, tắt đèn. 
+Kết nối và gửi chương trình xuống Yolo UNO, kết quả chương trình sẽ được in ra cửa sổ serial sau mỗi giây. Đồng thời, nếu kết quả đo được trên mức 20 thì đèn LED trên board bật đèn đỏ. Ngược lại, tắt đèn. 
 
 
 

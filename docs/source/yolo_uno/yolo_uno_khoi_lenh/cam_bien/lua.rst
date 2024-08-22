@@ -8,7 +8,7 @@
 .. image:: images/lua.1.jpg
     :width: 400px
     :align: center 
-| 
+
 
 Module cảm biến lửa có 5 kênh tín hiệu, giúp có thể phát hiện lửa ở 5 hướng khác nhau. Cảm biến phát hiện lửa thường được sử dụng cho các ứng dụng sáng tạo như: xe robot chữa cháy, nhà thông minh tự báo động khi phát hiện bị cháy,…
 
@@ -68,7 +68,7 @@ Với hướng dẫn này, sẽ hướng dẫn thực hiện chương trình c�
 - **Viết chương trình:**
 
     ..  figure:: images/lua.4.jpg
-        :scale: 70%
+        :scale: 60%
         :align: center
 
         `<https://app.ohstem.vn/#!/share/yolouno/2kufoS9swahrQXBXAThSmLEHCvl>`_ 

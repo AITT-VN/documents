@@ -60,7 +60,7 @@ Với hướng dẫn này, sẽ thực hiện chương trình điều chỉnh g�
 - Kết nối servo vào chân D11
 
 ..  figure:: images/goc_xoay.2.jpg
-    :scale: 50%
+    :scale: 60%
     :align: center 
 |
 
@@ -88,7 +88,7 @@ Trong chương trình có sử dụng biến vị trí góc, cách tạo biến 
 1. Bạn cần vào mục Biến và chọn Tạo biến. Sau đó, điền tên cho biến mới để Tạo.
 
     ..  figure:: images/goc_xoay.4.png
-        :scale: 70%
+        :scale: 65%
         :align: center
 
 2. Khi tạo biến thành công, trong mục Biến sẽ xuất hiện những khối lệnh liên quan để làm việc với biến.

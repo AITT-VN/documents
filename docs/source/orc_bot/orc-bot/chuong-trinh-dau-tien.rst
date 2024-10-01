@@ -1,16 +1,16 @@
 3. Chương trình đầu tiên
 ==========
 
-Trong phần này, bạn sẽ tìm hiểu về cách làm việc với mạch Yolo UNO bằng phần mềm lập trình OhStem App, sau đó ứng dụng vào viết các chương trình cơ bản đầu tiên:
+Trong phần này, bạn sẽ tìm hiểu về cách làm việc với mạch ORC Control Hub bằng phần mềm lập trình OhStem App, sau đó ứng dụng vào viết các chương trình cơ bản đầu tiên:
 
-- Bật tắt đèn LED trên mạch Yolo UNO.
+- Bật tắt đèn LED trên mạch ORC Control Hub.
 - Bật tắt đèn LED bằng nút nhấn trên mạch.
 
 1. Cập nhật firmware
 --------
 --------
 
-Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cập nhật thường xuyên. Do đó, khi mới dùng lần đầu, bạn nên cập nhật để đảm bảo thiết bị đang chạy firmware mới nhất, giúp chạy ổn định hơn.
+Phần mềm bên trong ORC Control Hub (firmware) được OhStem nâng cấp và cập nhật thường xuyên. Do đó, khi mới dùng lần đầu, bạn nên cập nhật để đảm bảo thiết bị đang chạy firmware mới nhất, giúp chạy ổn định hơn.
 
 - **Bước 1:** Truy cập vào link `<https://fw.ohstem.vn/>`_: 
 
@@ -19,17 +19,17 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
     :align: center 
 |
 
-- **Bước 2:** Kết nối mạch Yolo UNO với laptop bằng dây USB Type C:
+- **Bước 2:** Kết nối mạch ORC Control Hub với laptop bằng dây USB Type C:
 
-..  figure:: images/3.2.png
+..  figure:: images/fw-orc-hub.jpg
     :scale: 90%
     :align: center 
 |
 
-- **Bước 3:** **Nhấn và giữ nút Boot** trên Yolo UNO, **trong lúc đó nhấn nút Reset và thả ra sau 1 giây**, **sau đó mới thả nút Boot** để thiết bị vào trạng thái sẵn sàng cập nhật firmware:
+- **Bước 3:** **Nhấn và giữ nút Boot** trên ORC Control Hub, **trong lúc đó nhấn nút Reset và thả ra sau 1 giây**, **sau đó mới thả nút Boot** để thiết bị vào trạng thái sẵn sàng cập nhật firmware:
 
-..  figure:: images/3.3.gif
-    :scale: 100%
+..  figure:: images/orc-hub-boot.gif
+    :scale: 50%
     :align: center 
 |
 
@@ -40,7 +40,6 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
     :align: center 
 
     Firmware sẽ được cập nhật liên tục, do đó bạn hãy chọn bản cập nhất mới nhất, ví dụ trong hình là v1.1
-|
 
 - **Bước 5:** Chọn **Install** để tiếp tục cập nhật firmware
 
@@ -58,7 +57,7 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
 
 - **Bước 7:** Nhấn nút Reset và thoát khỏi trang web cập nhật firmware và tiến hành lập trình.
 
-2. Kết nối Yolo UNO với phần mềm lập trình OhStem App
+2. Kết nối ORC Control Hub với OhStem App
 -------
 ---------
 
@@ -85,11 +84,11 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
 
 - **Bước 4:**
 
-    + Kết nối Yolo UNO vào máy tính và phần mềm lập trình
-    + Kết nối dây USB type C với Máy tính và Yolo UNO.
+    + Kết nối ORC Control Hub vào máy tính và phần mềm lập trình
+    + Kết nối dây USB type C với Máy tính và ORC Control Hub.
 
-..  figure:: images/3.10.png
-    :scale: 100%
+..  figure:: images/app-orc-hub.jpg
+    :scale: 60%
     :align: center 
 |
 
@@ -111,7 +110,7 @@ Phần mềm bên trong Yolo UNO (firmware) được OhStem nâng cấp và cậ
 --------
 --------
 
-Trong bài này, chúng ta sẽ viết chương trình đầu tiên, lập trình cho Yolo UNO bật tắt đèn LED màu trên board sau mỗi giây.
+Trong bài này, chúng ta sẽ viết chương trình đầu tiên, lập trình cho ORC Control Hub bật tắt đèn LED màu trên board sau mỗi giây.
 
 - **Giới thiệu khối lệnh lập trình:**
 

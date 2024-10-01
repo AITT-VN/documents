@@ -160,7 +160,7 @@ Cài đặt tốc độ tối thiểu và tốc độ tối đa khi chuyển c�
 Chương trình sau khai báo một cấu hình robot có 2 động cơ, động cơ bên trái gắn vào cổng M4, và động cơ bên phải gắn vào cổng M1. Chương trình cho robot đi tới/lùi/quay trái/quay phải sau mỗi 2 giây khi nhấn nút BOOT trên mạch Yolo UNO.
 
 ..  figure:: images/5.12.png
-    :scale: 70%
+    :scale: 90%
     :align: center 
 
 **Chương trình Python**

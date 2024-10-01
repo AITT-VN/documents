@@ -36,13 +36,13 @@ Trong phần này, chúng ta sẽ bổ sung chương trình ở bài trước đ
 ----------
 ---------
 
-Trong trường hợp bạn có bộ tay cầm PS4 và module nhận tín hiệu, bạn cần kết nối module nhận tín hiệu vào cổng I2C màu đỏ bất kỳ trên mạch Yolo UNO do module này giao tiếp thông qua chuẩn I2C.
+Trong trường hợp bạn có bộ tay cầm PS4 và module nhận tín hiệu, bạn cần kết nối module nhận tín hiệu vào cổng I2C màu đỏ bất kỳ trên mạch ORC Control Hub do module này giao tiếp thông qua chuẩn I2C.
 
-..  figure:: images/6.3.png
+..  figure:: images/orc-hub-receiver.jpg
     :scale: 70%
     :align: center 
 
-    Kết nối module gamepad receiver với Yolo UNO
+    Kết nối module gamepad receiver với ORC Control Hub
 
 Nếu bạn không có sẵn tay cầm PS4, bạn hoàn toàn có thể sử dụng giao diện tay cầm điều khiển trên OhStem mobile app.
 
@@ -137,7 +137,7 @@ Tắt chế độ điều khiển bằng gamepad, được dùng khi chuyển sa
 --------
 --------
 
-..  figure:: images/6.11.jpg
-    :scale: 80%
+..  figure:: images/6.11.png
+    :scale: 70%
     :align: center 
 

@@ -30,19 +30,19 @@ Nhờ vào đó, chúng ta có thể xây dựng nhiều tính năng khác nhau 
     :align: center 
 
     Cảm biến dò line 4 mắt
-|
+
 
 1. Kết nối phần cứng
 ------
 --------
 
-Cảm biến dò line sử dụng giao tiếp I2C nên cần cắm vào cổng màu đỏ bất kỳ trên Yolo UNO.
+Cảm biến dò line sử dụng giao tiếp I2C nên cần cắm vào cổng màu đỏ bất kỳ trên ORC Control Hub.
 
-..  figure:: images/9.3.png
+..  figure:: images/orc-hub-do-line.jpg
     :scale: 80%
     :align: center 
 
-    Kết nối module cảm biến dò line 4 mắt với Yolo UNO
+    Kết nối module cảm biến dò line 4 mắt với ORC Control Hub
 |
 
 2. Chuẩn bị sa bàn
@@ -56,7 +56,6 @@ Bạn có thể in ra một sa bàn dò đường đã được thiết kế s�
     :align: center 
 
     Một thiết kế sa bàn dò đường
-|
 
 **Cách thức hoạt động**
 
@@ -74,7 +73,7 @@ Các trường hợp này đều đã được thư viện xử lý giúp chúng
 ----------
 ---------
 
-Chương trình dưới đây sẽ điều khiển robot di chuyển theo đường line đen cho đến vạch đen kế tiếp mỗi khi nhấn nút BOOT có trên Yolo UNO.
+Chương trình dưới đây sẽ điều khiển robot di chuyển theo đường line đen cho đến vạch đen kế tiếp mỗi khi nhấn nút BOOT có trên ORC Control Hub.
 
 ..  figure:: images/9.6.png
     :scale: 80%
@@ -88,4 +87,4 @@ Ngoài ra, còn có các khối lệnh điều khiển robot di chuyển đến 
     :align: center 
 |
 
-Lưu ý: Bạn cần kết nối cảm biến dò line vào đúng cổng I2C màu đỏ trên mạch Yolo UNO và cảm biến phải được tinh chỉnh để phân biệt được nền trắng vào nền đen trên sa bàn thì chức năng di chuyển này mới hoạt động chính xác được.
+Lưu ý: Bạn cần kết nối cảm biến dò line vào đúng cổng I2C màu đỏ trên mạch ORC Control Hub và cảm biến phải được tinh chỉnh để phân biệt được nền trắng vào nền đen trên sa bàn thì chức năng di chuyển này mới hoạt động chính xác được.

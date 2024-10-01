@@ -8,31 +8,30 @@ Trong bài hướng dẫn này, bạn sẽ tìm hiểu cách làm việc với �
 ------
 ----
 
-Để làm được điều đó, bạn cần cài đặt thư viện Robotics Open Platform trong giao diện lập trình của Yolo UNO trên OhStem App theo các bước sau:
+Để làm được điều đó, bạn cần cài đặt thư viện Robotics Open Platform trong giao diện lập trình của ORC Control Hub trên OhStem App theo các bước sau:
 
 
 - **Bước 1:** Mở OhStem App qua link `<https://app.ohstem.vn/>`_:
 
-- **Bước 2:** Kết nối Yolo UNO với OhStem App qua USB hoặc Bluetooth, cho đến khi biểu tượng kết nối hiển thị màu xanh, báo hiệu đã kết nối thành công:
+- **Bước 2:** Kết nối ORC Control Hub với OhStem App qua USB hoặc Bluetooth, cho đến khi biểu tượng kết nối hiển thị màu xanh, báo hiệu đã kết nối thành công:
 
-..  figure:: images/3.2.png
-    :scale: 90%
+..  figure:: images/app-orc-hub.jpg
+    :scale: 60%
     :align: center 
 
-    Kết nối Yolo UNO với máy tính:
+    Kết nối ORC Control Hub với máy tính:
 
-..  figure:: images/3.8.png
+..  figure:: images/3.11.png
     :scale: 100%
     :align: center 
 
-    Click vào icon USB, chọn cổng COM kết nối với Yolo UNO để kết nối
+    Click vào icon USB, chọn cổng COM kết nối với ORC Control Hub để kết nối
 
 ..  figure:: images/3.12.png
     :scale: 100%
     :align: center 
 
     Kết nối thành công
-|
 
 - **Bước 3**: Chọn mục **“Mở rộng”**, tìm kiếm thư viện mở rộng **ROBOTICS**:
 
@@ -41,14 +40,13 @@ Trong bài hướng dẫn này, bạn sẽ tìm hiểu cách làm việc với �
     :align: center 
 
     Kết nối thành công
-|
 
 - **Bước 4:** Sau khi cài đặt, trên danh mục khối lệnh bên trái sẽ xuất hiện ROBOTICS. **Bạn cần click vào danh mục này** để mở ra các khối lệnh con bên trong:
 
 ..  figure:: images/4.2.png
     :scale: 90%
     :align: center 
-|
+
 
 Trong tài liệu này, chúng ta sẽ dùng các khối lệnh trong các danh mục trên để lập trình các tính năng của Robot.
 
@@ -58,7 +56,7 @@ Trong tài liệu này, chúng ta sẽ dùng các khối lệnh trong các danh 
 
 Robot của chúng ta có thể di chuyển là nhờ 2 động cơ DC trái và phải. Trong bài này, chúng ta sẽ thử làm việc với từng động cơ riêng biệt, cấu hình và lập trình điều khiển động cơ DC quay tới và lùi.
 
-Để làm việc với đúng động cơ, chúng ta cần biết rõ động cơ nào được nối vào cổng nào của mạch Motor Driver. Theo hướng dẫn lắp ráp của bộ kit, động cơ bên phải được nối vào cổng M1 và động cơ bên trái nối vào cổng M4.
+Để làm việc với đúng động cơ, chúng ta cần biết rõ động cơ nào được nối vào cổng nào của ORC Control Hub. Theo hướng dẫn lắp ráp của bộ kit, động cơ bên trái được nối vào cổng M1 và động cơ bên phải nối vào cổng M2.
 
 
 - **Giới thiệu khối lệnh:**
@@ -84,7 +82,7 @@ Các khối lệnh làm việc với động cơ nằm trong danh mục Động 
 
 Khai báo động cơ nối với một cổng trên mạch điều khiển. Có thể chọn 1 trong các cổng M1, M2, M3, M4, E1, E2. 
 
-Nếu dùng mạch điều khiển V1 thì chọn motor driver V1, nếu là mạch V2 thì chọn V2.
+Nếu dùng mạch điều khiển V1 thì chọn motor driver V1, nếu là mạch V2 thì chọn V2. 
 
 Mặc định khi động cơ quay với tốc độ >0 thì sẽ quay theo chiều kim đồng hồ (nhìn thẳng từ trước mặt vào bánh xe). Nếu dùng động cơ nối dây bị ngược, có chiều quay mặc định ngược lại thì bật lựa chọn “đảo chiều quay” để đổi ngược lại.
 
@@ -92,7 +90,7 @@ Mặc định khi động cơ quay với tốc độ >0 thì sẽ quay theo chi�
 **Tham số:**
 
 - **driver**: Đối tượng MotorDriver để điều khiển động cơ.
-- **port**: Cổng trên mạch Motor driver mà động cơ gắn vào. Nhận các giá trị: M1, M2, M3, M4 (động cơ thường), E1, E2 (động cơ encoder)
+- **port**: Cổng trên mạch ORC Control Hubmà động cơ gắn vào. Nhận các giá trị: M1, M2, M3, M4 (động cơ thường), E1, E2 (động cơ encoder)
 - **reversed**: Đảo chiều quay mặc định của động cơ nếu là True
 
 ..  figure:: images/4.5.png
@@ -234,10 +232,10 @@ Reset số encoder ticks đã quay về lại 0.
 
 **Chương trình mẫu**
 
-Chương trình sau sẽ quay 2 động cơ tới 2 giây và quay ngược 2 giây rồi dừng lại mỗi khi nhấn nút Boot trên mạch Yolo UNO.
+Chương trình sau sẽ quay 2 động cơ tới 2 giây và quay ngược 2 giây rồi dừng lại mỗi khi nhấn nút Boot trên mạch ORC Control Hub.
 
 ..  figure:: images/4.15.png
-    :scale: 80%
+    :scale: 100%
     :align: center 
 |
 

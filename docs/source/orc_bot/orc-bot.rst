@@ -4,8 +4,8 @@
 .. toctree::
    :maxdepth: 1
 
-   orc-bot/gioi-thieu.rst
-   orc-bot/lap-rap.rst
+   orc-bot/gioi-thieu-update.rst
+   orc-bot/lap-rap-update.rst
    orc-bot/chuong-trinh-dau-tien.rst
    orc-bot/dong-co.rst
    orc-bot/robot-di-chuyen.rst

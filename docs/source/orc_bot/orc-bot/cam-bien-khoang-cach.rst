@@ -10,7 +10,6 @@ Cảm biến siêu âm được sử dụng để đo khoảng cách tới vật
     :align: center 
 
     Cảm biến siêu âm
-|
 
 Cảm biến có 2 mắt: Một mắt phát và một mắt thu. Mắt phát có thể tạo ra âm thanh ở tần số cao mà tai người không thể nghe được. Mắt thu giúp phát hiện tiếng vang phản hồi về của âm thanh tần số cao khi nó gặp vật cản. Bằng cách đo khoảng thời gian của tiếng vang, bạn có thể tính toán khoảng cách giữa cảm biến và vật cản. 
 
@@ -19,9 +18,8 @@ Cảm biến có 2 mắt: Một mắt phát và một mắt thu. Mắt phát có
     :align: center 
 
     Cách hoạt động của cảm biến siêu âm
-|
 
-Phạm vi đo tối đa của cảm biến là 200cm (2m) và chúng chỉ phát hiện được vật cản trước mặt, không phát hiện được vật cản bên trái hoặc bên phải. Chúng ta dùng dây cắm chuẩn Grove gồm 4 dây tín hiệu khác nhau để kết nối cảm biến với Yolo UNO:
+Phạm vi đo tối đa của cảm biến là 200cm (2m) và chúng chỉ phát hiện được vật cản trước mặt, không phát hiện được vật cản bên trái hoặc bên phải. Chúng ta dùng dây cắm chuẩn Grove gồm 4 dây tín hiệu khác nhau để kết nối cảm biến với ORC Control Hub:
    
     + Đỏ: nguồn dương (+)
     + Đen: Nguồn âm (đất, ground)
@@ -32,13 +30,13 @@ Phạm vi đo tối đa của cảm biến là 200cm (2m) và chúng chỉ phát
 ---------
 ------
 
-Kết nối cảm biến khoảng cách cổng màu trắng D3-D4 trên mạch Yolo UNO.
+Kết nối cảm biến khoảng cách cổng màu trắng D3-D4 trên mạch ORC Control Hub.
 
-..  figure:: images/8.3.png
+..  figure:: images/orc-hub-ultrasonic.jpg
     :scale: 80%
     :align: center 
 
-    Kết nối module cảm biến siêu âm với Yolo UNO
+    Kết nối module cảm biến siêu âm với ORC Control Hub
 |
 
 2. Chương trình mẫu

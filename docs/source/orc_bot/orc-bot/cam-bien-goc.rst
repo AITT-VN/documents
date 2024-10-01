@@ -1,21 +1,10 @@
 7. Cảm biến góc
 =========
 
-Ngoài cảm biến tốc độ encoder, chúng ta có thể giúp robot quay góc chính xác bằng cảm biến góc MPU6050. Cảm biến này đo được 6 trục, 3 trục XYZ của gia tốc và 3 trục XYZ của gyroscope.
+Ngoài cảm biến tốc độ encoder, chúng ta có thể giúp robot quay góc chính xác bằng cảm biến góc MPU6050 đã được tích hợp sẵn trên mạch ORC Control Hub. Cảm biến này đo được 6 trục, 3 trục XYZ của gia tốc và 3 trục XYZ của gyroscope.
 
-1. Kết nối phần cứng
--------
-----------
 
-Cảm biến góc MPU6050 dùng giao tiếp I2C nên cần kết nối với cổng màu đỏ trên mạch Yolo UNO.
-
-..  figure:: images/7.1.png
-    :scale: 80%
-    :align: center 
-
-    Kết nối module cảm biến góc MPU6050 với Yolo UNO qua cổng I2C
-
-2. Giới thiệu khối lệnh
+1. Giới thiệu khối lệnh
 ---------
 -----
 
@@ -63,10 +52,10 @@ Thông thường, thông số heading (yaw) là thường dùng vì nó cho ta b
 ---------
 -----------
 
-Chương trình sau khởi tạo robot 2 bánh có sử dụng cảm biến góc và di chuyển một hình vuông khi nút BOOT trên Yolo UNO được nhấn.
+Chương trình sau khởi tạo robot 2 bánh có sử dụng cảm biến góc và di chuyển một hình vuông khi nút BOOT trên ORC Control Hub được nhấn.
 
 ..  figure:: images/7.6.png
-    :scale: 100%
+    :scale: 80%
     :align: center 
 |
 

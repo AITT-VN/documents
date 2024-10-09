@@ -44,19 +44,24 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách kết n�
    :widths: auto
    :header-rows: 1
      
-   * - .. image:: images/robot-rover.png
-          :width: 200px
+   * - .. image:: images/motion-kit.1.png
+          :width: 150px
+          :align: center
+     - .. image:: images/robot-rover.png
+          :width: 400px
           :align: center
      - .. image:: images/servo.png
-          :width: 200px
+          :width: 400px
           :align: center
      - .. image:: images/dong-co-dc.png
           :width: 200px
           :align: center
-   * - Robot Rover
+   * - Motion Kit (kèm dây tín hiệu)
+     - Robot Rover
      - Động cơ servo
      - Động cơ DC giảm tốc 6V
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover-v2/>`_
+   * - Mua sản phẩm
+     - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover-v2/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg90s/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-dc-giam-toc-6v/>`_
 

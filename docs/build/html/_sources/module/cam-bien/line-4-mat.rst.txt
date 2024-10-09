@@ -90,7 +90,7 @@ Cảm biến dò đường thường được sử dụng trên Robot Rover ho�
         :align: center 
     |
 
-    + **Bước 2:** Tải thư viện Rover cho Yolo:Bit, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+    + **Bước 2:** Tải thư viện Rover cho Yolo:Bit, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
     .. image:: images/11.3.png
         :scale: 80%

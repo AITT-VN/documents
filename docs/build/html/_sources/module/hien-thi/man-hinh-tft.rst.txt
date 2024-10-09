@@ -166,7 +166,7 @@ Chúng tôi sẽ giới thiệu đến bạn 2 loại màn hình là **TFT ST773
 
 Để điều khiển được màn hình TFT LCD, chúng ta phải cần thêm thư viện mở rộng **TFT LCD**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_lcd_tft.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_.
 
     .. image:: images/tft.1.png
         :width: 300px

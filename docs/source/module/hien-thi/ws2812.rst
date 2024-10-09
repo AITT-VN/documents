@@ -92,7 +92,7 @@ Mỗi LED có khả năng hiển thị lên đến 16777216 màu và 256 cấp �
 
 Để điều khiển được LED dây, chúng ta phải cần thêm thư viện mở rộng **NEOPIXEL**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_neopixel.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_.
 
 ..  image:: images/neopixel.png
     :scale: 100%

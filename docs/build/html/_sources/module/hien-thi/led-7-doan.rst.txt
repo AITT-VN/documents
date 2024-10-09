@@ -90,7 +90,7 @@ Màn hình 4 số LED 7 đoạn có 4 chân, và mỗi chân có chức năng nh
 
 - **Bước 1**: Tải thư viện **LED 7 đoạn**, bằng cách dán đường link sau `https://github.com/AITT-VN/yolobit_extension_led7segment.git <https://github.com/AITT-VN/yolobit_extension_led7segment.git>`_ vào phần tìm kiếm thư viện. 
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
 ..  image:: images/1.3.png
     :scale: 100%

@@ -102,7 +102,7 @@
 
 - **Bước 1**: Tải thư viện Sound Player, bằng cách dán đường link sau `https://github.com/AITT-VN/yolobit_extension_sound_player.git <https://github.com/AITT-VN/yolobit_extension_sound_player.git>`_ vào phần tìm kiếm thư viện. 
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
     .. image:: images/nhac.5.png
         :scale: 100%

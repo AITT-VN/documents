@@ -49,7 +49,7 @@ Kết nối module điều khiển động cơ với Yolo:Bit thông qua **cổn
 
 Để điều khiển được module, chúng ta phải cần thêm thư viện mở rộng **MOTORS DRIVER**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_motor_driver.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_.
 
     .. image:: images/6.2.png
         :width: 300px

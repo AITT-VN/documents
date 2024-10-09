@@ -114,7 +114,7 @@ Cảm biến có 4 chân, mỗi chân có chức năng như sau:
 
 - **Bước 1:** Tải thư viện **Rotary Encoder**, bằng cách dán đường link sau vào phần tìm kiếm thư viện: `https://github.com/AITT-VN/yolobit_rotary_encoder.git <https://github.com/AITT-VN/yolobit_rotary_encoder.git>`_
     
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
 
     .. image:: images/rotary.png

@@ -76,7 +76,7 @@ Mỗi cảm biến có một địa chỉ duy nhất và chỉ yêu cầu một 
 
 - Để làm việc với cảm biến nhiệt độ DS18B20, chúng ta phải cần thêm thư viện mở rộng **DS18B20**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_max30102>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
     .. image:: images/ds18b20_2.png
         :width: 300px

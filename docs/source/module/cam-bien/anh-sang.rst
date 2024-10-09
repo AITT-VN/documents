@@ -92,7 +92,7 @@ Cảm biến ánh sáng có 4 chân, và mỗi chân có chức năng như sau:
 --------
 ------------
 
-- **Bước 1:** Tải thư viện **AIOT KIT**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_
+- **Bước 1:** Tải thư viện **AIOT KIT**, xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
 
     .. image:: images/aiot.png

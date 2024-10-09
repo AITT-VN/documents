@@ -97,7 +97,7 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
 
 Để lập trình module GPS, chúng ta phải cần thêm thư viện mở rộng GPS, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_gps.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_.
 
 ..  image:: images/gps.png
     :scale: 100%

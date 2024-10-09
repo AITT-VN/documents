@@ -89,7 +89,7 @@ Chúng ta sẽ tiến hành lập trình cho 2 Yolo:Bit giao tiếp và truyền
 
 1. Chúng ta phải cần thêm thư viện mở rộng **LORA E32**, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_LoRa_e32.git>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
-    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/cai-dat-thu-vien.html>`_.
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_.
 
     ..  image:: images/lora_2.png
         :scale: 100%

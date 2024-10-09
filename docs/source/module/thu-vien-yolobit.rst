@@ -7,15 +7,15 @@ Với mỗi thiết bị mở rộng, OhStem sẽ có những thư viện đi k�
 
 - **Bước 1**: Truy cập vào `<https://app.ohstem.vn/>`_ , chọn thiết bị lập trình Yolo:Bit.
 
-.. image:: images/1.1.png
-    :scale: 70%
+.. image:: images/thu_vien_yolobit_1.png
+    :scale: 60%
     :align: center
 |
 
 - **Bước 2**: Chọn vào mục lập trình. 
 
-.. image:: images/1.2.png
-    :scale: 80%
+.. image:: images/thu_vien_yolobit_2.png
+    :scale: 60%
     :align: center
 |
 
@@ -23,21 +23,21 @@ Với mỗi thiết bị mở rộng, OhStem sẽ có những thư viện đi k�
 
     Ví dụ: Tìm thư viện AIOT KIT cho Yolo:Bit, bạn gõ như hình sau:
 
-.. image:: images/1.3.png
-    :scale: 70%
+.. image:: images/thu_vien_yolobit_3.png
+    :scale: 50%
     :align: center
 |
 
 - **Bước 4**: Nhấn vào hình đại diện AIOT KIT để tải thư viện >> nhấn OK
 
-.. image:: images/1.4.png
-    :scale: 100%
+.. image:: images/thu_vien_yolobit_4.png
+    :scale: 80%
     :align: center
 |
 
     Sau khi tải thành công thư viện, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh như sau: 
 
-.. image:: images/1.5.png
-    :scale: 100%
+.. image:: images/thu_vien_yolobit_5.png
+    :scale: 90%
     :align: center
 |

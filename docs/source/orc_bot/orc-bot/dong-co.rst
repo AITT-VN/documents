@@ -380,7 +380,7 @@ Quay tròn động cơ (như động cơ DC) với tốc độ chỉ định. N�
 Chương trình sau khai báo 2 động cơ servo, và quay góc để tay gắp nâng lên hạ xuống, đóng và mở sau 2 giây.
 
 ..  figure:: images/4.22.png
-    :scale: 60%
+    :scale: 70%
     :align: center 
 |
 

@@ -62,6 +62,7 @@ OhStem xin chào tất cả các bạn!
    robot_rover/servo_pack.rst
    robot_rover/tay_gap.rst
    robot_rover/dau_nang.rst
+   robot_rover/nem-bong.rst
    robot_rover/gamepad.rst
    robot_rover/gap_hai_bac.rst
    robot_rover/rover_tank.rst

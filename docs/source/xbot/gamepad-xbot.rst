@@ -46,14 +46,15 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
     :align: center
 |
 
-4. Kết nối GamePad với Robot Rover
+4. Kết nối GamePad với Robot xBot
 ---------
 --------- 
 
-.. raw:: html
+Kết nối module nhận tín hiệu tay cầm vào cổng 4-5-6 của robot (chọn 1 trong 3 cổng) như hình minh họa
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jkSBx4nnpJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+.. image:: images/gamepad.2-2.png
+    :scale: 100%
+    :align: center
 |
 
 
@@ -73,12 +74,6 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
 .. image:: images/gamepad.4.png
     :scale: 70%
     :align: center
-|
-
-.. raw:: html
-
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/eqth_ATNAik" title="Hướng dẫn GamePad V2 với robot Rover - Ý nghĩa các nút nhấn - Phần 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 |
 
 
@@ -146,7 +141,7 @@ Module Gamepad Receiver là thiết bị để kết nối robot với tay cầm
 7.1. **Thư viện**
 -----------
 
-1. Vào giao diện lập trình cho Yolo:Bit (hoặc xBot) trong OhStem App tại địa chỉ `<https://app.ohstem.vn/>`_ hoặc ứng dụng OhStem App trên mobile ( Tải trên Google Play / App Store với tên tìm kiếm là “OhStem App”)
+1. Vào giao diện lập trình cho xBot trong OhStem App tại địa chỉ `<https://app.ohstem.vn/>`_ hoặc ứng dụng OhStem App trên mobile ( Tải trên Google Play / App Store với tên tìm kiếm là “OhStem App”)
 
 .. image:: images/thu_vien.1.png
     :scale: 100%
@@ -174,7 +169,7 @@ Chọn tải thư viện:
     :align: center
 |
 
-4. Chọn thiết bị Yolo:Bit để kết nối (nếu chưa kết nối) và phải đảm bảo đã cài đặt thư viện thành công (bên trái giao diện **xuất hiện danh mục ROBOCON** như hình):
+4. Chọn thiết bị xBot để kết nối (nếu chưa kết nối) và phải đảm bảo đã cài đặt thư viện thành công (bên trái giao diện **xuất hiện danh mục ROBOCON** như hình):
 
 .. image:: images/robocon.2.png
     :scale: 60%
@@ -218,22 +213,18 @@ Trong danh mục khối lệnh ROBOCON sẽ có 1 mục Gamepad sẽ có các kh
 
 Để làm quen với Gamepad, chúng ta sẽ lập trình một chương trình đơn giản như sau: 
 
-- **Robot Rover:** 
-
-    + **Lưu ý:** **Trước khi lập trình cho Gamepad, bạn cần tải thêm thư viện Rover cho Yolo:Bit**, xem hướng dẫn `tại đây <https://docs.ohstem.vn/en/latest/robot_rover/rover/cai-dat-thu-vien.html>`_. 
-    
-    + **Chương trình mẫu** xem `tại đây <https://app.ohstem.vn/#!/share/yolobit/2q3Oqi5PXIcrC679DAP6pXPgkPp>`_. 
++ **Chương trình mẫu** xem `tại đây <https://app.ohstem.vn/#!/share/xbot/2q3Vtg82vjzCz5qL79njmmRiPpF>`_. 
 
 .. figure:: images/gamepad.23.png
     :scale: 100%
     :align: center
 
-    Chương trình điều khiển Robot Rover bằng Gamepad
+    Chương trình điều khiển Robot xBot bằng Gamepad
 |    
 
     + **Giải thích chương trình:** 
     
-     Khi nạp chương trình vào Yolo:Bit thành công, các câu lệnh đổi màu đèn Rover trong phần bắt đầu sẽ giúp bạn nhận biết được robot đã được khởi động thành công. 
+     Khi nạp chương trình vào robot thành công, các câu lệnh đổi màu đèn xBot trong phần bắt đầu sẽ giúp bạn nhận biết được robot đã được khởi động thành công. 
     
 
 .. image:: images/gamepad.24.png
@@ -310,50 +301,3 @@ Mỗi nút nhấn sẽ có một chức năng khác nhau, chẳng hạn 4 phím 
         delay(100);
     }
 
-**8.2 Gamepad điều khiển mạch động cơ**
-
-
-Bạn có thể tham khảo mạch động cơ của OhStem `tại đây <https://docs.ohstem.vn/en/latest/module/dong-co/motor-drive.html>`_. 
-
-.. code-block:: guess
-
-    #include <Wire.h>
-    #include "gamepad.h"
-    #include "MotorDriver.h"
-
-    Gamepad_Receiver gamepad;
-    DCMotor motor;
-    
-    void setup() {
-        Serial.begin(115200);
-        gamepad.begin();
-        Serial.println("Begin");
-        motor.setSpeed(1, BACKWARD,  0);
-    }
-
-    void loop() {
-        //Serial.println("Set led color: ");
-        //Serial.println(gamepad.setLedColor(0, 255, 0));
-    
-        gamepad.update();
-        if (gamepad.isConnected == 1) {
-            if (gamepad.dpad_up == 1) {
-            motor.setSpeed(1, FORWARD,  50);
-            motor.setSpeed(0, FORWARD,  50);
-            }else if (gamepad.dpad_down == 1){
-            motor.setSpeed(1, BACKWARD,  50);
-            motor.setSpeed(0, BACKWARD,  50);
-            } else {
-            motor.setSpeed(1, BACKWARD,  0);
-            motor.setSpeed(0, BACKWARD,  0);
-            }
-        } else {
-            motor.setSpeed(1, BACKWARD,  0);
-            motor.setSpeed(0, BACKWARD,  0);
-        } 
-        
-        delay(100);
-    }
-
-.. note:: 
-    Link thư viện tham khảo `<https://github.com/AITT-VN/gamepad_receiver_arduino_lib.git>`_  

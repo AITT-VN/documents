@@ -58,7 +58,7 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách kết n�
      - Yolo UNO
      - Động cơ servo
      - Động cơ DC giảm tốc 6V
-   * - Mua sản phẩm
+   * - `Mua sản phẩm <https://ohstem.vn/product/mach-mo-rong-motion-kit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg90s/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-dc-giam-toc-6v/>`_

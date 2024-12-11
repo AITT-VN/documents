@@ -88,7 +88,7 @@ OhStem xin chào tất cả các bạn!
    xbot/dau-nang.rst
    xbot/nem-bong.rst
    xbot/gap-hai-bac.rst
-   xbot/gamepad.rst
+   xbot/gamepad-xbot.rst
    xbot/xbot-motion-kit.rst
 
 

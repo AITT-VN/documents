@@ -55,7 +55,14 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
           :align: center
      - .. image:: images/robot-sau-do-2.jpg
           :width: 200px
-          :align: center          
+          :align: center   
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SMgQB3VlSSY?si=IAHbm645EtRxynxF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+|
+       
 
 - **Kết nối dây**:
 

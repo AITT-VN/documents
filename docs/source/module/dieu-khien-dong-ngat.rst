@@ -10,3 +10,4 @@
    dieu-khien-dong-ngat/nut-nhan-don.rst
    dieu-khien-dong-ngat/relay.rst
    dieu-khien-dong-ngat/nhac.rst
+   dieu-khien-dong-ngat/relay-4-kenh.rst

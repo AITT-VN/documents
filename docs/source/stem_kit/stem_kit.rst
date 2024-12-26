@@ -27,4 +27,5 @@
    cac_chu_de/thuyen_dien.rst
    cac_chu_de/robot_sau_do.rst
    cac_chu_de/ban_tay_mo_phong.rst
+   cac_chu_de/robot-do-duong.rst
    

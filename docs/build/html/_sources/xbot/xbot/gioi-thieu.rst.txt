@@ -97,7 +97,7 @@ Tự thiết kế là lắp ráp các mô hình theo ý thích, giúp kích thí
 
 Mạch điều khiển xController đóng vai trò là bộ xử lý trung tâm của xBot, giúp kết nối các thành phần quan trọng như input, output, nguồn pin,...
 
-.. image:: images/xbot_18.png
+.. image:: Images/xbot_18.png
     :scale: 50%
     :align: center 
 |

@@ -145,7 +145,7 @@ Cổng USB giúp kết nối máy tính với mạch điều khiển, đồng th
 
 - **Cổng kết nối pin**
 
-Mạch điều khiển xBot hỗ trợ 2 đầu cắm pin với 2 chuẩn khác nhau. Đầu cắm pin đi kèm bộ kit là jack DC 5.5x2.1mm. 
+Mạch điều khiển xBot sử dụng đầu cắm pin đi kèm bộ kit là jack DC 5.5x2.1mm. 
 
 **Để điều khiển động cơ, bạn cần sử dụng nguồn điện cấp từ pin** thay vì USB (động cơ cần nguồn điện mạnh hơn điện từ cổng USB).
 

@@ -52,6 +52,7 @@ OhStem xin chào tất cả các bạn!
    yolo_uno/trash_bin_yolo_uno.rst
    yolo_uno/smart_home_uno.rst
    yolo_uno/arduino_yolo_uno.rst
+   yolo_uno/green_house.rst
 
 
 .. toctree::

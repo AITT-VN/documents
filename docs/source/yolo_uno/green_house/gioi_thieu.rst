@@ -23,5 +23,11 @@ Dự án sẽ hướng dẫn bạn xây dựng và triển khai một số chứ
 5. **Đo và hiển thị độ ẩm của đất:** Cung cấp thông tin về tình trạng đất trồng.
 6. **Bật tắt máy bơm nước tự động dựa vào độ ẩm của đất:** Tối ưu hóa việc tưới tiêu, tiết kiệm nước và công sức.
 
+..  figure:: images/sample.png
+    :scale: 50%
+    :align: center 
+
+    *Hình ảnh sản phẩm của dự án Green House*
+
 Với Green House, học sinh không chỉ học cách vận dụng công nghệ mà còn hiểu rõ hơn về vai trò của sự đổi mới trong nông nghiệp, mở ra những giải pháp bền vững cho tương lai.
 

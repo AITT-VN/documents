@@ -7,11 +7,21 @@ Phần lắp ráp của robot ORC được chia thành 3 phần:
 - Lắp ráp cánh tay và đầu gắp
 - Lắp ráp cơ cấu cuộn bóng
 
-Nhấp vào hình bên dưới để mở hướng dẫn lắp ráp. 
++ **Xem Tài liệu hướng dẫn lắp ráp ORC K3:**
 
 ..  image:: images/tai-lieu.png
     :alt: some image
     :target: https://drive.google.com/file/d/1JP2QRVcVqgrdY4m8aBOMDCE9pJIXBusV/view?usp=drive_link
+    :class: with-shadow
+    :scale: 100%
+    :align: center
+|
+
++ **Xem Tài liệu hướng dẫn lắp ráp ORC K2:**
+
+..  image:: images/tai-lieu.png
+    :alt: some image
+    :target: https://drive.google.com/file/d/1u3PbHulzyGa2ZeAN_YpC5-5xsIhoFq9q/view?usp=sharing
     :class: with-shadow
     :scale: 100%
     :align: center

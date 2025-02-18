@@ -35,7 +35,11 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 - **Hướng dẫn lắp ráp**:
 
-    **Đang cập nhật**
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t2lJPp2J3Yg?si=ce-uay9wipipy9jZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+|
+
 
 - **Kết nối dây**:
 
@@ -53,7 +57,12 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 
 1. Viết chương trình như sau:
 
-**Chương trình đang được cập nhật**
+.. image:: images/thuyen_dien_3.png
+    :scale: 60%
+    :align: center 
+
+**Link chương trình:** `<https://app.ohstem.vn/#!/share/yolobit/2tCRQdHNiMFbKx0WHdImxPzKdxv>`_
+
 
 2. Sau khi gửi chương trình xuống Yolo:Bit, bạn thoát khỏi chế độ lập trình, ở về màn hình chính của Yolo:Bit và chọn **Điều khiển**. 
 

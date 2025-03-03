@@ -45,7 +45,7 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     + Kết nối động cơ servo vào cổng S1
 
 .. image:: images/robot_gap_vat_2.png
-    :scale: 90%
+    :scale: 80%
     :align: center 
 |
 
@@ -59,7 +59,7 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
     :scale: 50%
     :align: center 
 
-**Link chương trình:** `<https://app.ohstem.vn/#!/share/yolobit/2tF4l977pu3YQRr3k8upjzBpc5t>`_
+**Link chương trình:** `<https://app.ohstem.vn/#!/share/yolobit/2tnYSW9qrPximnIHBSzUTmaCXZb>`_
 
 
 

@@ -21,7 +21,7 @@
    cac_chu_de/may_ban_da.rst
    cac_chu_de/cap_treo.rst
    cac_chu_de/robot_cao_cao.rst
-   cac_chu_de/robot_van_chuyen.rst
+   cac_chu_de/robot_tu_xa.rst
    cac_chu_de/robot_ne_vat.rst
    cac_chu_de/robot_gap_vat.rst
    cac_chu_de/thuyen_dien.rst

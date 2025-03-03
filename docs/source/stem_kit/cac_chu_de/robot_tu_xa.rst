@@ -57,8 +57,9 @@ Các kiến thức và kỹ năng đạt được trong dự án này như sau:
 ..  figure:: images/robot-van-chuyen.png
     :scale: 50%
     :align: center 
+|
 
-    Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2tnZsJ714qyllEuGZk3D23EI1IB>`_
+Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2tnZsJ714qyllEuGZk3D23EI1IB>`_
 
 2. Sau khi gửi chương trình xuống Yolo:Bit, bạn thoát khỏi chế độ lập trình, ở về màn hình chính của Yolo:Bit và chọn **Điều khiển**. 
 

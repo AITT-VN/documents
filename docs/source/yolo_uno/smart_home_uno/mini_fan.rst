@@ -1,4 +1,4 @@
-2. Quạt thông minh 
+5. Quạt thông minh 
 =======
 
 1. Mục tiêu
@@ -27,17 +27,17 @@ Cụ thể, hệ thống sẽ hoạt động bằng cách kiểm tra dựa vào 
     :align: center 
 |
 
-- Module led RGB kèm dây tín hiệu: 
+- Module LCD kèm dây tín hiệu: 
 
 ..  image:: images/lcd_1602.png
-    :scale: 90%
+    :scale: 50%
     :align: center 
 |
 
 - Cảm biến nhiệt độ độ ẩm DHT20 kèm dây tín hiệu:
 
 ..  image:: images/dht20.png
-    :scale: 90%
+    :scale: 60%
     :align: center 
 |
 
@@ -52,13 +52,12 @@ Cụ thể, hệ thống sẽ hoạt động bằng cách kiểm tra dựa vào 
 -------
 --------
 
-- Màn hình LCD và cảm biến DHT20 kết nối vào cổng I2C1 và I2C2
+- cảm biến DHT20 và màn hình LCD kết nối vào cổng I2C1 và I2C2
 
 - Module quạt kết nối vào cổng D7 - D8
 
-
 ..  figure:: images/mini_fan_1.png
-    :scale: 100%
+    :scale: 80%
     :align: center 
 |
 
@@ -77,8 +76,10 @@ Câu lệnh bật tắt quạt với các mức độ khác nhau từ 0 đến 1
 
 - **Chương trình lập trình:**
 
-..  image:: images/mini_fan_3.png
-    :scale: 90%
+..  figure:: images/mini_fan_3.png
+    :scale: 70%
     :align: center 
-|
 
+    `<https://app.ohstem.vn/#!/share/yolouno/2vFZQvYcoZE7M3kAeqt47cfxXhO>`_
+
+- **Giải thích chương trình:**  Sau mỗi 5 giây, thông tin nhiệt độ độ ẩm sẽ được cập nhật lên màn hình LCD1602 và nếu nhiệt độ lớn hơn 27 độ thì quạt sẽ bật. 

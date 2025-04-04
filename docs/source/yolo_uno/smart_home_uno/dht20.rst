@@ -1,4 +1,4 @@
-1. Đo và hiển thị nhiệt độ & độ ẩm của ngôi nhà.
+4. Đo và hiển thị nhiệt độ & độ ẩm
 ============
 
 1. Mục tiêu
@@ -22,14 +22,14 @@
 - Module LCD kèm dây tín hiệu: 
 
 ..  image:: images/lcd_1602.png
-    :scale: 90%
+    :scale: 50%
     :align: center 
 |
 
 - Cảm biến nhiệt độ độ ẩm DHT20 kèm dây tín hiệu:
 
 ..  image:: images/dht20.png
-    :scale: 90%
+    :scale: 60%
     :align: center 
 |
 
@@ -37,12 +37,12 @@
 -------
 --------
 
-- Kết nối LCD vào cổng I2C1
+- Kết nối cảm biến DHT20 vào cổng I2C1 của Yolo UNO
 
-- Kết nối cảm biến DHT20 vào cổng I2C2 của Yolo UNO
-
+- Kết nối LCD vào cổng I2C2
+ 
 ..  figure:: images/dht20_1.png
-    :scale: 100%
+    :scale: 80%
     :align: center 
 |
 
@@ -50,18 +50,19 @@
 ------
 ------
 
-- **Giới thiệu khối lệnh:**
+- Các khối lệnh để đọc thông số nhiệt độ hoặc độ ẩm của cảm biến DHT20, nằm trong mục **CẢM BIẾN**
 
 ..  image:: images/dht20_2.png
     :scale: 90%
     :align: center 
 |
-    
-Các khối lệnh để đọc thông số nhiệt độ hoặc độ ẩm của cảm biến DHT20
 
 - **Chương trình lập trình:**
 
-..  image:: images/dht20_3.png
-    :scale: 90%
+..  figure:: images/dht20_3.png
+    :scale: 70%
     :align: center 
-|
+
+    `<https://app.ohstem.vn/#!/share/yolouno/2vFY26QwrHuFoL2nqydhVI7auVH>`_
+
+- **Giải thích chương trình:**  Sau mỗi 5 giây, thông tin nhiệt độ độ ẩm sẽ được cập nhật lên màn hình LCD1602.

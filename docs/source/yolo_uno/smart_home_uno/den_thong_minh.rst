@@ -18,17 +18,17 @@ Chúng ta hãy cùng lập trình một chiếc đèn thông minh, có thể b�
     :align: center 
 |
 
-- Module led RGB kèm dây tín hiệu: 
+- Đèn LED đơn kèm dây tín hiệu: 
 
-..  image:: images/tiny_rgb.png
-    :scale: 90%
+..  image:: images/led_don.png
+    :scale: 40%
     :align: center 
 |
 
-- Module cảm biến ánh sáng kèm dây tín hiệu:
+- Màn hình LCD kèm dây tín hiệu:
 
 ..  image:: images/cb_anh_sang.png
-    :scale: 90%
+    :scale: 50%
     :align: center 
 |
 
@@ -36,42 +36,46 @@ Chúng ta hãy cùng lập trình một chiếc đèn thông minh, có thể b�
 -------
 --------
 
-- Module Led RGB kết nối vào cổng D5 - D6
+- Module LED đơn kết nối vào cổng D3 - D4
 
-- Module cảm biến ánh sáng kết nối vào cổng A0 - A1
+- Module cảm biến ánh sáng kết nối vào cổng A1 - A2
 
-..  figure:: images/den_thong_minh_1.png
-    :scale: 100%
+..  figure:: images/3.2.png
+    :scale: 80%
     :align: center 
-
-    Cảm biến ánh sáng có giá trị trả về là analog, do đó bạn có thể kết nối với các chân P0, P1, P2 trên mạch mở rộng
 
 
 4. Chương trình lập trình
 ------
 ------
 
-- **Câu lệnh điều kiện:**
-
-Trong phần này, chúng ta sẽ dùng đến khối lệnh điều kiện trong mục LOGIC:
+- Câu lệnh điều kiện, khối lệnh nằm trong mục **LOGIC**:
 
 ..  image:: images/den_thong_minh_2.png
     :scale: 90%
     :align: center 
 |
     
-Câu lệnh đọc kết quả của cảm biến ánh sáng: 
+- Câu lệnh đọc kết quả của cảm biến ánh sáng, nằm trong mục **CẢM BIẾN**:: 
 
 ..  image:: images/den_thong_minh_3.png
     :scale: 80%
     :align: center    
 |
 
-- **Chương trình lập trình:**
+- Câu lệnh đọc bắt đèn đèn LED đơn, nằm trong mục **HIỂN THỊ**:: 
 
-..  image:: images/den_thong_minh_4.png
-    :scale: 90%
-    :align: center 
+..  image:: images/3.4.png
+    :scale: 70%
+    :align: center    
 |
 
-- **Giải thích chương trình:**  Sau khi thực hiện gửi chương trình lên Yolo UNO, đèn LED trên Yolo UNO sẽ chuyển sang đèn xanh. Hãy thử dùng tay che cảm biến ánh sáng, module 4 LED RGB sẽ bật đèn màu trắng, đồng thời cường độ sáng cũng được hiện lên trên màn hình LCD
+- **Chương trình lập trình:**
+
+..  figure:: images/3.3.png
+    :scale: 70%
+    :align: center 
+
+    `<https://app.ohstem.vn/#!/share/yolouno/2vFWXwvS5PbkhKooSzyJ0qrIkU8>`_
+
+- **Giải thích chương trình:**  Sau khi thực hiện gửi chương trình lên Yolo UNO, đèn LED trên Yolo UNO sẽ chuyển sang đèn xanh. Hãy thử dùng tay che cảm biến ánh sáng, đèn LED sẽ sáng. 

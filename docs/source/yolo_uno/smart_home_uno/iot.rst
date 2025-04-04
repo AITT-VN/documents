@@ -1,4 +1,4 @@
-5. Nhận và gửi thông tin lên server IoT
+7. Nhận và gửi thông tin lên server IoT
 ========
 
 1. Mục tiêu
@@ -21,14 +21,14 @@ Với hướng dẫn này, chúng ta sẽ thực hiện dự án gửi thông ti
 - Cảm biến nhiệt độ độ ẩm DHT20 kèm dây tín hiệu:
 
 ..  image:: images/dht20.png
-    :scale: 90%
+    :scale: 50%
     :align: center 
 |
 
 - Module 4 LED RGB:
 
 ..  image:: images/tiny_rgb.png
-    :scale: 90%
+    :scale: 50%
     :align: center 
 |
 
@@ -36,7 +36,7 @@ Với hướng dẫn này, chúng ta sẽ thực hiện dự án gửi thông ti
 - Module quạt mini:
 
 ..  image:: images/mini_fan.png
-    :scale: 90%
+    :scale: 70%
     :align: center 
 |
 
@@ -45,10 +45,12 @@ Với hướng dẫn này, chúng ta sẽ thực hiện dự án gửi thông ti
 -----
 --------
 
-- Kết nối cảm biến DHT20 vào chân I2C trên Yolo UNO, 4 LED RGB ở chân D5-D6, quạt mini ở chân D7-D8: 
+- Kết nối cảm biến DHT20 vào chân I2C trên Yolo UNO
+- Quạt mini ở chân D7-D8: 
+- Đèn 4 LED RGB ở chân D9-D10
  
 ..  figure:: images/iot_1.png
-    :scale: 100%
+    :scale: 70%
     :align: center 
 |
 
@@ -147,10 +149,11 @@ Chúng ta sẽ sử dụng các khối lệnh sau:
 
 Thực hiện các thao tác sau để mở chương trình **Nhận và gửi thông tin lên server**:
 
-..  image:: images/iot_11.png
-    :scale: 100%
-    :align: center 
-|
+..  figure:: images/iot_11.png
+    :scale: 50%
+    :align: center
+
+    `<https://app.ohstem.vn/#!/share/yolouno/2vFe6PGbnqNlVl1g0bLUgPK1QiC>`_
 
 
 **5.3 Giải thích chương trình**
@@ -159,8 +162,8 @@ Thực hiện các thao tác sau để mở chương trình **Nhận và gửi t
 - **Bước 1:** Lập trình để Yolo UNO kết nối wifi. Cần nhập đúng tên, mật khẩu wifi mà máy tính/ điện thoại đang kết nối và username của bảng điều khiển. 
 
 ..  image:: images/iot_13.png
-    :scale: 100%
-    :align: center 
+    :scale: 80%
+    :align: center
 |
 
 Giải thích: Khi Yolo UNO khởi động, đèn LED trên board sẽ đổi màu đỏ. Sau khi kết nối thành công với wifi và bảng điều khiển IoT, đèn LED trên board sẽ sáng xanh. 
@@ -177,7 +180,7 @@ Giải thích: Sau mỗi 5 giây, thông tin từ cảm biến nhiệt độ và
 - **Bước 3**:  Điều khiển đèn LED trên board từ bảng điều khiển IoT:
 
 ..  image:: images/iot_15.png
-    :scale: 100%
+    :scale: 70%
     :align: center 
 |
 

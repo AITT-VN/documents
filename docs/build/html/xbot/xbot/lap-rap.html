@@ -15,9 +15,9 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=a7e3f902"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -74,11 +74,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Yolo UNO - Mạch lập trình Arduino</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno_khoi_lenh.html"><strong>Lập trình Yolo UNO bằng khối lệnh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/green_house.html"><strong>Dự án nhà kính thông minh Green House</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -86,7 +87,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/nem-bong.html"><strong>Kit bắn bóng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover-motion-kit.html"><strong>Mạch mở rộng Motion Kit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
@@ -125,6 +128,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gap-hai-bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gamepad-xbot.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../xbot-motion-kit.html"><strong>Mạch mở rộng Motion Kit</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -181,23 +186,23 @@
            <div itemprop="articleBody">
              
   <section id="huong-dan-lap-rap">
-<h1>2. Hướng dẫn lắp ráp<a class="headerlink" href="#huong-dan-lap-rap" title="Permalink to this heading"></a></h1>
+<h1>2. Hướng dẫn lắp ráp<a class="headerlink" href="#huong-dan-lap-rap" title="Link to this heading"></a></h1>
 <a class="reference internal image-reference" href="../../_images/xbot_2.1.png"><img alt="../../_images/xbot_2.1.png" class="align-center" src="../../_images/xbot_2.1.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="thanh-phan">
-<h2>1. Thành phần<a class="headerlink" href="#thanh-phan" title="Permalink to this heading"></a></h2>
+<h2>1. Thành phần<a class="headerlink" href="#thanh-phan" title="Link to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/xbot_2.2.png"><img alt="../../_images/xbot_2.2.png" class="align-center" src="../../_images/xbot_2.2.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.2_updates.png"><img alt="../../_images/xbot_2.2_updates.png" class="align-center" src="../../_images/xbot_2.2_updates.png" style="width: 900px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="lap-rap">
-<h2>2. Lắp ráp<a class="headerlink" href="#lap-rap" title="Permalink to this heading"></a></h2>
+<h2>2. Lắp ráp<a class="headerlink" href="#lap-rap" title="Link to this heading"></a></h2>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../../_images/xbot_2.3.png"><img alt="../../_images/xbot_2.3.png" class="align-center" src="../../_images/xbot_2.3.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.3_updates.png"><img alt="../../_images/xbot_2.3_updates.png" class="align-center" src="../../_images/xbot_2.3_updates.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -205,34 +210,38 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/xbot_2.5.png"><img alt="../../_images/xbot_2.5.png" class="align-center" src="../../_images/xbot_2.5.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.5_updates.png"><img alt="../../_images/xbot_2.5_updates.png" class="align-center" src="../../_images/xbot_2.5_updates.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/xbot_2.6.png"><img alt="../../_images/xbot_2.6.png" class="align-center" src="../../_images/xbot_2.6.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.6_updates.png"><img alt="../../_images/xbot_2.6_updates.png" class="align-center" src="../../_images/xbot_2.6_updates.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/xbot_2.7.png"><img alt="../../_images/xbot_2.7.png" class="align-center" src="../../_images/xbot_2.7.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.7_updates.png"><img alt="../../_images/xbot_2.7_updates.png" class="align-center" src="../../_images/xbot_2.7_updates.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/xbot_2.8.png"><img alt="../../_images/xbot_2.8.png" class="align-center" src="../../_images/xbot_2.8.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.8_updates.png"><img alt="../../_images/xbot_2.8_updates.png" class="align-center" src="../../_images/xbot_2.8_updates.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/xbot_bai_4.18.png"><img alt="../../_images/xbot_bai_4.18.png" class="align-center" src="../../_images/xbot_bai_4.18.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="noi-day">
-<h2>3. Nối dây<a class="headerlink" href="#noi-day" title="Permalink to this heading"></a></h2>
+<h2>3. Nối dây<a class="headerlink" href="#noi-day" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <p>Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động chính xác.</p>
-<a class="reference internal image-reference" href="../../_images/xbot_2.9.png"><img alt="../../_images/xbot_2.9.png" class="align-center" src="../../_images/xbot_2.9.png" style="width: 720.0px; height: 360.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.9_updates.png"><img alt="../../_images/xbot_2.9_updates.png" class="align-center" src="../../_images/xbot_2.9_updates.png" style="width: 811.8px; height: 401.4px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
 <section id="bat-cong-tat">
-<h2>4. Bật công tắt<a class="headerlink" href="#bat-cong-tat" title="Permalink to this heading"></a></h2>
+<h2>4. Bật công tắt<a class="headerlink" href="#bat-cong-tat" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <a class="reference internal image-reference" href="../../_images/xbot_2.10.png"><img alt="../../_images/xbot_2.10.png" class="align-center" src="../../_images/xbot_2.10.png" style="width: 600px;" /></a>
 <div class="line-block">
@@ -240,7 +249,7 @@
 </div>
 </section>
 <section id="huong-dan-sac-pin">
-<h2>5. Hướng dẫn sạc pin<a class="headerlink" href="#huong-dan-sac-pin" title="Permalink to this heading"></a></h2>
+<h2>5. Hướng dẫn sạc pin<a class="headerlink" href="#huong-dan-sac-pin" title="Link to this heading"></a></h2>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Rút jack pin ra khỏi mạch điều khiển.</p></li>
@@ -252,14 +261,14 @@
 <ol class="arabic simple" start="2">
 <li><p>Cắm jack pin vào bộ sạc.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/xbot_2.12.png"><img alt="../../_images/xbot_2.12.png" class="align-center" src="../../_images/xbot_2.12.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.12_updates.png"><img alt="../../_images/xbot_2.12_updates.png" class="align-center" src="../../_images/xbot_2.12_updates.png" style="width: 300px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Sạc trong vòng 3 tiếng, không nên sạc qua đêm.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/xbot_2.13.png"><img alt="../../_images/xbot_2.13.png" class="align-center" src="../../_images/xbot_2.13.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/xbot_2.13_updates.png"><img alt="../../_images/xbot_2.13_updates.png" class="align-center" src="../../_images/xbot_2.13_updates.png" style="width: 500px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

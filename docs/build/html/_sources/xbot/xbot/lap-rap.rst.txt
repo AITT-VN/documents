@@ -11,7 +11,7 @@
 ------------
 ----------------
 
-.. image:: Images/xbot_2.2.png
+.. image:: Images/xbot_2.2_updates.png
     :width: 900px
     :align: center  
 |
@@ -20,7 +20,7 @@
 -----------
 -------------
 
-.. image:: Images/xbot_2.3.png
+.. image:: Images/xbot_2.3_updates.png
     :width: 600px
     :align: center  
 |
@@ -28,19 +28,23 @@
     :width: 600px
     :align: center  
 |
-.. image:: Images/xbot_2.5.png
+.. image:: Images/xbot_2.5_updates.png
     :width: 600px
     :align: center  
 |
-.. image:: Images/xbot_2.6.png
+.. image:: Images/xbot_2.6_updates.png
     :width: 600px
     :align: center  
 |
-.. image:: Images/xbot_2.7.png
+.. image:: Images/xbot_2.7_updates.png
     :width: 600px
     :align: center  
 |
-.. image:: Images/xbot_2.8.png
+.. image:: Images/xbot_2.8_updates.png
+    :width: 600px
+    :align: center  
+|
+.. image:: Images/xbot_bai_4.18.png
     :width: 600px
     :align: center  
 |
@@ -51,8 +55,8 @@
 
 Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động chính xác.
 
-.. image:: Images/xbot_2.9.png
-    :scale: 90%
+.. image:: Images/xbot_2.9_updates.png
+    :scale: 60%
     :align: center  
 |
 
@@ -77,13 +81,13 @@ Kiểm tra lại dây nối để chắc chắn xBot có thể hoạt động ch
 |
 2. Cắm jack pin vào bộ sạc.
 
-.. image:: Images/xbot_2.12.png
+.. image:: Images/xbot_2.12_updates.png
     :width: 300px
     :align: center  
 |
 3. Sạc trong vòng 3 tiếng, không nên sạc qua đêm.
 
-.. image:: Images/xbot_2.13.png
+.. image:: Images/xbot_2.13_updates.png
     :width: 500px
     :align: center  
 |

@@ -67,12 +67,19 @@ Dựa vào đặc tính phản xạ ánh sáng trên bề mặt, cảm biến s�
 | 
 - **Hướng dẫn chỉnh mắt đọc hồng ngoại**
 
-Cảm biến đi kèm sản phẩm đã được tinh chỉnh để pahan biệt được vạch đen và nên trắng. Nếu cảm biến hoạt động không chính xác, bạn có thể chỉnh lại theo cách sau:
+Cảm biến đi kèm sản phẩm đã được tinh chỉnh để phân biệt được vạch đen và nên trắng. Nếu cảm biến hoạt động không chính xác, bạn có thể chỉnh lại theo cách sau:
 
 .. image:: Images/xbot_bai_4.9.png
     :width: 500px
     :align: center
 |    
+
+Ngoài ra, OhStem đã nâng cấp cảm biến dò line lên phiên bản mới, việc hiệu chỉnh cảm biến sẽ được thực hiện tự động, thao tác thực hiện như sau: 
+
+.. image:: Images/xbot_bai_4.9_updates.png
+    :width: 700px
+    :align: center
+|
 
 
 3. Đọc trạng thái cảm biến dò đường

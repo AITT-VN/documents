@@ -43,4 +43,28 @@ Ngoài ra bạn đọc có thể tìm hiểu chi tiết hơn về mô hình dự
 ---------
 ----------
 
-Đang cập nhật 
+Trước khi đi vào phần lắp ráp hoàn thiện mô hình Smart Home, bạn đọc cần hiệu chỉnh servo về góc 0 độ trước khi lắp lên mô hình với các thao tác sau: 
+
+- Bước 1: Kết nối Servo 180 độ vào Yolo UNO ở chân D2: 
+
+..  figure:: images/chinh_servo_1.png
+    :scale: 70%
+    :align: center 
+
+- Bước 2: Gửi chương trình sau vào Yolo UNO để servo quay đến góc 0 độ: 
+
+..  figure:: images/chinh_servo_2.png
+    :scale: 70%
+    :align: center
+
+    `<https://app.ohstem.vn/#!/share/yolouno/2vQaLMuc5OcJseF3AOc2yUV76FQ>`_ 
+
+Sau khi chương trình được tải lên, mạch **Yolo UNO** sẽ nhanh chóng thực hiện các thao tác khởi động: **đèn đỏ bật sáng, servo quay về góc 0 độ**, rồi tiếp theo **đèn xanh được kích hoạt** để báo hiệu hoàn tất. Toàn bộ quá trình diễn ra trong thời gian rất ngắn, vì vậy bạn cần quan sát kỹ để nhận biết rõ từng bước.
+
+**Lắp ráp mô hình theo hướng dẫn sau:**
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xEiI1xdeYVc?si=eZJwl5RDQQpC9PgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+|

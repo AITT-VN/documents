@@ -34,3 +34,4 @@
    cam-bien/nhiet-do-hong-ngoai.rst
    cam-bien/mpu6050.rst
    cam-bien/dong-dien-ina219.rst
+   cam-bien/rfid.rst

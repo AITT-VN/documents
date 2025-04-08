@@ -1,6 +1,10 @@
 1. Giới thiệu
 =================================
 
+1. Giới thiệu 
+--------
+--------
+
 Green House là mô hình nhà kính thông minh được thiết kế nhằm giúp học sinh khám phá và phát triển các tính năng công nghệ hiện đại phục vụ trong lĩnh vực nông nghiệp trồng trọt.
 
 ..  figure:: images/green_house.1.png
@@ -31,3 +35,14 @@ Dự án sẽ hướng dẫn bạn xây dựng và triển khai một số chứ
 
 Với Green House, học sinh không chỉ học cách vận dụng công nghệ mà còn hiểu rõ hơn về vai trò của sự đổi mới trong nông nghiệp, mở ra những giải pháp bền vững cho tương lai.
 
+2. Hướng dẫn lắp ráp 
+--------
+--------
+
+**Lắp ráp mô hình theo hướng dẫn sau:**
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/15V8A_yqCLo?si=RFc9XASJvenKP-Qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+|  

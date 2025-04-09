@@ -12,13 +12,13 @@
 
 **Module servo 8 kênh I2C** là một module cho phép điều khiển **đồng thời tối đa 8 động cơ servo** thông qua kết nối với các bộ vi điều khiển như Yolo:Bit hoặc Yolo UNO. Mạch sử dụng giao tiếp I2C, giúp tiết kiệm chân kết nối và dễ dàng mở rộng khi xây dựng các dự án có nhiều động cơ servo.
 
-Một vài ứng dụng có thể sử dụng module này như: Hệ thống mở cửa tự động với nhiều cửa, mô hình robot nhiều khớp, cánh tay robot...
+Một vài ứng dụng có thể sử dụng module này như: Hệ thống mở cửa tự động với nhiều cửa, mô hình robot nhiều khớp, cánh tay robot... Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn kết nối module này với mạch lập trình cơ bản Yolo:Bit và Yolo UNO.
 
 **2. Thông số kỹ thuật**
 ---------
 ------------
 
-- Hỗ trợ nguồn pin ~9V
+- Hỗ trợ nguồn pin ~6 - 12V
 - Hỗ trợ điều khiển 8 servo độc lập
 - Giao tiếp I2C
 
@@ -33,7 +33,7 @@ Một vài ứng dụng có thể sử dụng module này như: Hệ thống m�
    :widths: auto
    :header-rows: 1
      
-   * - .. image:: images/yolo_bit.png
+   * - .. image:: images/yolo_mmr.png
           :width: 150px
           :align: center
      - .. image:: images/yolo_uno.png
@@ -45,18 +45,23 @@ Một vài ứng dụng có thể sử dụng module này như: Hệ thống m�
      - .. image:: images/servo_8_kenh_2.png
           :width: 200px
           :align: center
+     - .. image:: images/nut_nhan_doi.png
+          :width: 150px
+          :align: center
    * - Máy tính lập trình Yolo:Bit kèm mạch mở rộng
      - Mạch lập trình Yolo UNO
      - Module Module servo 8 kênh I2C
-     - Servo
+     - Servo 180 độ
+     - Nút nhấn đôi (Dành cho kết nối với Yolo UNO )
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
      - Mua sản phẩm
      - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg90s/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/nut-nhan-doi/>`_
 
 - **Kết nối với Yolo:Bit:** 
 
-..  figure:: images/rfid_2.png
+..  figure:: images/servo_8_kenh_3.png
     :scale: 70%
     :align: center 
 
@@ -64,55 +69,207 @@ Một vài ứng dụng có thể sử dụng module này như: Hệ thống m�
 
 - **Kết nối với Yolo UNO:**
 
-..  figure:: images/rfid_3.png
+..  figure:: images/servo_8_kenh_4.png
     :scale: 70%
     :align: center 
 
     *Kết nối vào cổng I2C trên mạch Yolo UNO*
 |
-**5. Hướng dẫn lập trình**
+
+4. Lập trình với Yolo:Bit
 --------
 ------------
 
-1. Tải thư viện **Motion Kit**, bằng cách dán đường link sau vào phần tìm kiếm thư viện: `<https://github.com/AITT-VN/yolobit_extension_motion_kit.git>`_
+1. Tải thư viện **SERVO8CHS Kit**, bằng cách dán đường link sau vào phần tìm kiếm thư viện: `<https://github.com/AITT-VN/yolobit_extension_servo8chs>`_
 
     Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
-    ..  figure:: images/motion-kit.4.png
-        :scale: 80%
+    ..  figure:: images/servo_8_kenh_5.png
+        :scale: 70%
         :align: center 
     |
 
-    Thư viện sẽ gồm các câu lệnh điều khiển 2 động cơ và 4 servo:
+    Thư viện sẽ gồm các câu lệnh điều khiển servo như sau:
 
-    ..  figure:: images/motion-kit.5.png
-        :scale: 80%
+    ..  figure:: images/servo_8_kenh_6.png
+        :scale: 90%
         :align: center 
     |   
 
 2. **Viết chương trình:**
 
-**2.1. Chương trình kiểm tra hoạt động của Motion Kit và các động cơ mở rộng:**
+**2.1. Điều khiển servo quay đến góc cố định**
 
-    Với chương trình mẫu sau, bạn có thể dùng nút A và B trên Yolobit module mở rộng Motion Kit:
+    Khối lệnh điều khiển servo quay tới góc chỉ định với tốc độ tùy chỉnh:
 
-..  figure:: images/motion-kit.6.png
-    :scale: 50%
-    :align: center 
+    ..  figure:: images/servo_8_kenh_7.png
+        :scale: 80%
+        :align: center 
+    |
+    Mỗi servo ứng với tên từ MS1-MS8, chúng ta sẽ thay đổi thông số góc trong khoảng từ 0-180 độ và tốc độ tùy chỉnh từ 1-100
 
-    Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2nAKUw7EB6fGpnf5r7rfvBX4LaR>`_      
+    Chương trình điều khiển 3 servo kết nối với 3 chân trên mạch Yolo:Bit được thực hiện như sau:
 
-.. note:: 
-    Khi nhấn nút A, động cơ M1 và M2 sẽ quay với tốc độ 50, đồng thời 4 cổng servo sẽ quay đến vị trí 90. Khi ấn nút B thì động cơ M1, M2 sẽ quay ngược chiều với tốc độ 50 và 4 servo sẽ quay về vị trí 0. Khi ấn nút A+B thì 2 động cơ M1 và M2 sẽ dừng quay.
+    ..  figure:: images/servo_8_kenh_8.png
+        :scale: 60%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2vTU0PDwGd2dhp3N11E8c4aYxMX>`_      
+   
+    .. note::  
+        Khi nhấn nút A, cả 3 động cơ **servo 180 độ** sẽ quay đồng thời đến **góc 90 độ** với **tốc độ 100**. Ngược lại, khi nhấn nút B, các servo sẽ quay trở lại **góc 0 độ** cũng với tốc độ tương tự.  
+
+        Dựa trên chương trình mẫu này, bạn hoàn toàn có thể **điều khiển từng động cơ servo một cách độc lập**, thiết lập **góc quay và tốc độ phù hợp** với từng nhiệm vụ cụ thể – chẳng hạn như đóng/mở cửa, điều khiển cánh tay robot, hay các chuyển động phức tạp khác trong mô hình của bạn.
 
 
-**2.2. Chương trình kết hợp robot Rover với Motion Kit cùng các động cơ để tạo nên phần cuộn bóng cho robot và được điều khiển từ Gamepad**
+**2.2. Quay servo thêm một góc nhỏ**
 
-..  figure:: images/motion-kit.7.png
-    :scale: 60%
-    :align: center 
+    Khối lệnh điều khiển servo quay thêm một góc nhỏ tùy chỉnh để tăng độ chính xác trong quá trình thực hiện dự án: 
 
-    Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2n8sxBbVkdPzc1mnY9iua5mtOkw>`_
+    ..  figure:: images/servo_8_kenh_9.png
+        :scale: 70%
+        :align: center 
+    |
+    Chương trình được thực hiện như sau: 
 
-.. note:: 
-    Trong phần lặp mãi mãi, chúng ta sẽ kiểm tra điều kiện joystick phải được kéo theo trục x (phương ngang). Nếu kéo về phía bên phải thì giá trị joystick sẽ là giá trị dương và ngược lại. Khi so sánh với 50 để đảm bảo rằng joystick được kéo theo đúng chiều và không bị ảnh hưởng bởi giá trị nhiễu khi joystick đứng. Lúc này động cơ cổng M1 của Motion kit sẽ hoạt động và tiến hành cuộn - thả theo thiết kế cơ khí. Khi ấn nút joystick phải, động cơ sẽ quay tốc độ 0 (tức là dừng quay).
+    ..  figure:: images/servo_8_kenh_10.png
+        :scale: 50%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2vTVJrQI7acWr88uOehuAMd9PYr>`_
+
+    .. note:: 
+
+        Với chương trình này, người dùng chỉ cần nhất nút A + B, các servo sẽ quay thêm 1 góc nhỏ là 5 độ. 
+
+        Ngoài ra, người dùng có thể cho servo quay thêm 1 góc nhỏ hoặc quay lùi bằng cách thêm dấu trừ "**-**" trước góc cần quay. 
+
+            ..  figure:: images/servo_8_kenh_11.png
+                :scale: 70%
+                :align: center 
+
+                Quay lùi một góc 5 độ
+
+**2.3. Điều khiển servo 360 độ**
+
+    Chương trình này chỉ phù hợp với servo 360 độ, người dùng cần lưu ý khi chọn servo để thực hiện. Việc kết nối vào các cổng của mạch lập trình được thực hiện tương tự như phần kết nối. 
+
+    Câu lệnh điều khiển servo 360 độ: 
+
+    ..  figure:: images/servo_8_kenh_12.png
+        :scale: 80%
+        :align: center 
+    |
+    Chương trình điều khiển tốc độ quay của servo 360 độ: 
+
+    ..  figure:: images/servo_8_kenh_13.png
+        :scale: 60%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolobit/2vTW6i4QbLBFhZ5mYxpogqh2ql7>`_
+   
+    .. note:: 
+
+        Khi nhấn nút A, servo 360 độ quay với tốc độ 100. 
+        Khi nhấn nút B, servo quay lùi tốc độ 100. 
+        Khi nút A + B, servo dừng hoạt động. 
+
+
+5. Lập trình với Yolo UNO
+--------
+------------
+
+1. Tải thư viện **SERVO8CHS Kit**, bằng cách dán đường link sau vào phần tìm kiếm thư viện: `<https://github.com/AITT-VN/yolouno_extension_servo8chs>`_
+
+    Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolouno.html>`_
+
+    ..  figure:: images/servo_8_kenh_5.png
+        :scale: 60%
+        :align: center 
+    |
+
+    Thư viện sẽ gồm các câu lệnh điều khiển servo như sau:
+
+    ..  figure:: images/servo_8_kenh_6.png
+        :scale: 100%
+        :align: center 
+    |   
+
+2. **Viết chương trình:**
+
+**2.1. Điều khiển servo quay đến góc cố định**
+
+    Khối lệnh điều khiển servo quay tới góc chỉ định với tốc độ tùy chỉnh:
+
+    ..  figure:: images/servo_8_kenh_14.png
+        :scale: 70%
+        :align: center 
+
+    Mỗi servo ứng với tên từ MS1-MS8, chúng ta sẽ thay đổi thông số góc trong khoảng từ 0-180 độ và tốc độ tùy chỉnh từ 1-100
+
+    Chương trình điều khiển 3 servo kết nối với 3 chân trên mạch Yolo:Bit được thực hiện như sau:
+
+    ..  figure:: images/servo_8_kenh_8.png
+        :scale: 70%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolouno/2vTYp3OUG9U3UakHnH8ZpozoYuj>`_      
+
+    .. note::  
+        Khi nhấn nút A tại chân D9, cả 3 động cơ **servo 180 độ** sẽ quay đồng thời đến **góc 90 độ** với **tốc độ 100**. Ngược lại, khi nhấn nút B ở chân D10, các servo sẽ quay trở lại **góc 0 độ** cũng với tốc độ tương tự.  
+
+        Dựa trên chương trình mẫu này, bạn hoàn toàn có thể **điều khiển từng động cơ servo một cách độc lập**, thiết lập **góc quay và tốc độ phù hợp** với từng nhiệm vụ cụ thể – chẳng hạn như đóng/mở cửa, điều khiển cánh tay robot, hay các chuyển động phức tạp khác trong mô hình của bạn.
+
+
+**2.2. Quay servo thêm một góc nhỏ**
+
+    Khối lệnh điều khiển servo quay thêm một góc nhỏ tùy chỉnh để tăng độ chính xác trong quá trình thực hiện dự án: 
+
+    ..  figure:: images/servo_8_kenh_9.png
+        :scale: 70%
+        :align: center 
+    |
+    Chương trình được thực hiện như sau: 
+
+    ..  figure:: images/servo_8_kenh_16.png
+        :scale: 50%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolouno/2vTYyjogcyl3m8RIkyLVqDhsSml>`_
+
+    .. note:: 
+
+        Với chương trình này, người dùng chỉ cần nhất nút Boot trên Yolo UNO, các servo sẽ quay thêm 1 góc nhỏ là 5 độ. 
+
+        Ngoài ra, người dùng có thể cho servo quay thêm 1 góc nhỏ hoặc quay lùi bằng cách thêm dấu trừ "**-**" trước góc cần quay. 
+
+            ..  figure:: images/servo_8_kenh_11.png
+                :scale: 70%
+                :align: center 
+
+                Quay lùi một góc 5 độ
+
+**2.3. Điều khiển servo 360 độ**
+
+    Chương trình này chỉ phù hợp với servo 360 độ, người dùng cần lưu ý khi chọn servo để thực hiện. Việc kết nối vào các cổng của mạch lập trình được thực hiện tương tự như phần kết nối. 
+
+    Câu lệnh điều khiển servo 360 độ: 
+
+    ..  figure:: images/servo_8_kenh_12.png
+        :scale: 70%
+        :align: center 
+    |
+    Chương trình điều khiển tốc độ quay của servo 360 độ: 
+
+    ..  figure:: images/servo_8_kenh_17.png
+        :scale: 60%
+        :align: center 
+
+        Link chương trình: `<https://app.ohstem.vn/#!/share/yolouno/2vTZCgMLoZYTgMxDam3XvhdKE6I>`_
+
+    .. note:: 
+
+        Khi nhấn nút A tại chân D9, servo 360 độ quay với tốc độ 100. 
+        Khi nhấn nút B tại chân D10, servo quay lùi tốc độ 100. 
+        Khi nút Boot trên Yolo UNO, servo dừng hoạt động. 
+

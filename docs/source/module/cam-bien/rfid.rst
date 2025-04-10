@@ -51,7 +51,7 @@ Với khả năng nhận dạng không tiếp xúc, module thích hợp cho vi�
      - Màn hình LCD1602 (kèm dây Grove)
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - Mua sản phẩm
+     - `Mua sản phẩm <https://ohstem.vn/product/module-rfid/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/man-hinh-lcd-1602/>`_
 
 - **Kết nối với Yolo:Bit:** 

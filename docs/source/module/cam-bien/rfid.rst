@@ -75,7 +75,7 @@ Với khả năng nhận dạng không tiếp xúc, module thích hợp cho vi�
 --------
 ----------
 
-    1. Trước khi bắt đầu lập trình, chúng ta phải cần thêm thư viện mở rộng **RFID I2C** cho mạch lập trình Yolo:Bit, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolouno_extension_rfid_i2c>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
+    1. Trước khi bắt đầu lập trình, chúng ta phải cần thêm thư viện mở rộng **RFID I2C** cho mạch lập trình Yolo:Bit, bạn hãy copy đường dẫn sau: `<https://github.com/AITT-VN/yolobit_extension_rfid_i2c>`_ và dán vào mục mở rộng để tải thư viện mở rộng.
 
         Xem hướng dẫn tải thư viện `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 

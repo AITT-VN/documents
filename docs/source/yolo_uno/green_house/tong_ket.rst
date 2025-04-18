@@ -40,7 +40,7 @@ Tổng hợp lại các tính năng cơ bản của mô hình ta có:
 -------
 
 ..  figure:: images/tong_ket.png
-    :scale: 60%
+    :scale: 40%
     :align: center 
 
-    Link chương trình `<https://app.ohstem.vn/#!/share/yolouno/2rkKxwgyY4KohLOZgAo0sBxEweO>`_
+    Link chương trình `<https://app.ohstem.vn/#!/share/yolouno/2vsqZvNfyWykyVhJrs0XWdOaFVU>`_

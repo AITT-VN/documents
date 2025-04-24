@@ -21,7 +21,7 @@ Phần lắp ráp của robot ORC được chia thành 3 phần:
 
 ..  image:: images/tai-lieu.png
     :alt: some image
-    :target: https://drive.google.com/file/d/1u3PbHulzyGa2ZeAN_YpC5-5xsIhoFq9q/view?usp=sharing
+    :target: https://drive.google.com/file/d/1Oag-k6FslBWwSsPdCq67CRdxtacYhiob/view?usp=sharing
     :class: with-shadow
     :scale: 100%
     :align: center

@@ -1,4 +1,4 @@
-5. Làm việc với loa phát nhạc 
+6. Làm việc với loa phát nhạc 
 =============================
 
 

@@ -1,4 +1,4 @@
-3. Hiển thị thông tin 
+4. Hiển thị thông tin 
 ==========================
 
 

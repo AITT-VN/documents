@@ -5,6 +5,7 @@
    :maxdepth: 1
 
    lam-quen/gioi-thieu-yolobit.rst
+   lam-quen/cap_nhat_fw_yolobit_v5.rst
    lam-quen/thiet-lap-cai-dat-driver.rst
    lam-quen/hien-thi-thong-tin.rst
    lam-quen/nut-nhan.rst

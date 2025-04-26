@@ -16,14 +16,14 @@ Các bước thực hiện:
 - Bước 2: Kết nối mạch Yolo:Bit với laptop bằng dây USB Type C. 
 
 ..  image:: image/fw_2.png
-    :scale: 80%
+    :scale: 100%
     :align: center 
 |
 
 - Bước 3: **Nhấn và giữ nút B** trên Yolo:Bit, **trong lúc đó nhấn nút Reset (phía sau Yolo:Bit) và thả ra sau 1 giây**, **sau đó mới thả nút B** để thiết bị vào trạng thái sẵn sàng cập nhật firmware: 
 
 ..  image:: image/fw_3.png
-    :scale: 80%
+    :scale: 100%
     :align: center 
 |
 - Bước 4: Chọn firmware cần cập nhật là **Yolo:Bit S3 v1.x**, chọn cổng kết nối có tên là **USB/JTAG serial...** và nhấn **Cập nhật**
@@ -33,7 +33,6 @@ Các bước thực hiện:
     :align: center 
 
     Firmware sẽ được cập nhật liên tục, do đó bạn hãy chọn bản cập nhất mới nhất, ví dụ trong hình là v1.14
-|
 
 - Bước 5: Chọn **Install** để tiếp tục cập nhật firmware 
 

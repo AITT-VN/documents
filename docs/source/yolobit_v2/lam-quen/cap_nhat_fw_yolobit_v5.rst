@@ -23,7 +23,7 @@ Các bước thực hiện:
 - Bước 3: **Nhấn và giữ nút B** trên Yolo:Bit, **trong lúc đó nhấn nút Reset (phía sau Yolo:Bit) và thả ra sau 1 giây**, **sau đó mới thả nút B** để thiết bị vào trạng thái sẵn sàng cập nhật firmware: 
 
 ..  image:: image/fw_3.gif
-    :scale: 100%
+    :scale: 70%
     :align: center 
 |
 - Bước 4: Chọn firmware cần cập nhật là **Yolo:Bit S3 v1.x**, chọn cổng kết nối có tên là **USB/JTAG serial...** và nhấn **Cập nhật**

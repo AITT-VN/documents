@@ -22,7 +22,7 @@ Các bước thực hiện:
 
 - Bước 3: **Nhấn và giữ nút B** trên Yolo:Bit, **trong lúc đó nhấn nút Reset (phía sau Yolo:Bit) và thả ra sau 1 giây**, **sau đó mới thả nút B** để thiết bị vào trạng thái sẵn sàng cập nhật firmware: 
 
-..  image:: image/fw_3.png
+..  image:: image/fw_3.gif
     :scale: 100%
     :align: center 
 |

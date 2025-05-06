@@ -59,7 +59,7 @@ Viết chương trình
         :width: 600px
         :align: center 
     |
-2. Đặt điều kiện: nếu đọc cảm biến ngập nước > 40%
+2. Đặt điều kiện: nếu đọc cảm biến ngập nước gặp nước
 
     .. image:: images/bai_8.6.png
         :width: 600px
@@ -86,7 +86,7 @@ Chương trình mẫu
 -----------------
 -------------------
 
-- Hệ thống phát hiện ngập nước: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2BsdmIJRmcZklka5PEUlx9A2dqG>`_
+- Hệ thống phát hiện ngập nước: `Tại đây <https://app.ohstem.vn/#!/share/yolobit/2wiWUcmkOp11M9eXFGDKLF5kP19>`_
 
 .. image:: images/bai_8.9.png
     :width: 200px

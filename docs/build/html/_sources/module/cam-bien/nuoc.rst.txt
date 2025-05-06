@@ -9,7 +9,7 @@
 
 - Cảm biến nước là cảm biến giúp nhận dạng nước, bạn có thể dễ dàng đo được có nước hay không trên bề mặt bằng các đường mạch song song có trên cảm biến.
 
-- Sản phẩm sẽ chuyển đổi nước nhận được thành các tín hiệu Analog sau đó truyền đến các bảng mạch lập trình chính.
+- Sản phẩm sẽ chuyển đổi nước nhận được thành các tín hiệu Analog/Digital sau đó truyền đến các bảng mạch lập trình chính.
 
 - Cảm biến nước là module phù hợp cho người mới bắt đầu tiếp xúc các dự án, nhờ vào tính dễ sử dụng và chi phí rẻ của nó. Ngoài ra, cảm biến này có kích thước khá nhỏ, mang lại sự thuận tiện cho việc học tập và thực hành.
 
@@ -107,7 +107,7 @@
 
     **Giải thích chương trình:** 
 
-    Đặt một điều kiện, nếu cảm biến phát hiện mực nước trên 40%, sẽ chuyển đèn LED thành màu đỏ, để phát âm thanh cảnh báo. Nếu không, sẽ tắt đèn. 
+    Đặt một điều kiện, nếu cảm biến phát hiện mực nước, sẽ chuyển đèn LED thành màu đỏ, để phát âm thanh cảnh báo. Nếu không, sẽ tắt đèn. 
 
 
 **5. Hướng dẫn lập trình Arduino**

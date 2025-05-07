@@ -68,7 +68,6 @@ OhStem xin chào tất cả các bạn!
    robot_rover/rover-motion-kit.rst
    robot_rover/gap_hai_bac.rst
    robot_rover/rover_tank.rst
-   robot_rover/camera_ai.rst
    robot_rover/camera_ai_v2.rst
 
 
@@ -138,3 +137,8 @@ OhStem xin chào tất cả các bạn!
 
    sa_ban/sa_ban_index.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: FAQs
+
+   sa_ban/sa_ban_index.rst

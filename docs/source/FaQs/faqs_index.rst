@@ -4,7 +4,6 @@
 .. toctree::
    :maxdepth: 1
 
-
-   FaQs/loi_cua_rover
-   FaQs/loi_cua_ORC
-   FaQs/loi_cua_module
+   loi_cua_rover/loi_cua_rover.rst
+   loi_cua_ORC/loi_cua_ORC.rst
+   loi_cua_module/loilaptrinh.rst

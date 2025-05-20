@@ -72,11 +72,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Yolo UNO - Mạch lập trình Arduino</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno.html"><strong>Làm quen với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/yolo_uno_khoi_lenh.html"><strong>Lập trình Yolo UNO bằng khối lệnh</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/uno_city.html"><strong>Thành phố thông minh với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/trash_bin_yolo_uno.html"><strong>Dự án phân loại rác với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/smart_home_uno.html"><strong>Dự án nhà thông minh với Yolo UNO</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/arduino_yolo_uno.html"><strong>Lập Trình Arduino với Yolo UNO</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../yolo_uno/green_house.html"><strong>Dự án nhà kính thông minh Green House</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot STEM Rover</span></p>
 <ul>
@@ -84,10 +85,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/servo_pack.html"><strong>Phụ kiện Rover - Servo Pack</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/tay_gap.html"><strong>Tay gắp Robot Gripper</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/dau_nang.html"><strong>Đầu nâng Robot Rover</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/nem-bong.html"><strong>Kit bắn bóng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gamepad.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover-motion-kit.html"><strong>Mạch mở rộng Motion Kit</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/gap_hai_bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/rover_tank.html"><strong>Kit xe tăng</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai.html"><strong>Camera AI</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../robot_rover/camera_ai_v2.html"><strong>Camera AI V2</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Robot Arm</span></p>
@@ -103,6 +105,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/dau-nang.html"><strong>Đầu nâng ForkLift</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/nem-bong.html"><strong>Bộ bắn bóng</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xbot/gap-hai-bac.html"><strong>Tay gắp 2 bậc</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/gamepad-xbot.html"><strong>Tay cầm điều khiển robot</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../xbot/xbot-motion-kit.html"><strong>Mạch mở rộng Motion Kit</strong></a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">xBuild Creator Kit</span></p>
 <ul>
@@ -129,6 +133,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../api/api-xbot.html">Robot xBot và xController</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Sa bàn thi đấu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../sa_ban/sa_ban_index.html"><strong>Hướng dẫn sử dụng các sa bàn thi đấu</strong></a></li>
 </ul>
@@ -166,7 +174,7 @@
 <p><strong>Bật tắt chân I/O</strong></p>
 <p>Trước tiên chúng ta thử bật các chân I/O này xem sao. Bạn có thể dùng một bóng đèn Led để nối với chân nào đó trên hàng chân I/O và 1 đầu còn lại nối với GND. Khi đó nếu bật chân IO đó lên thì Led sẽ sáng. Trên Yolo:Bit cũng có tích hợp sẵn một đèn Led màu xanh lá cây nối với chân 13, chúng ta có thể thử bật tắt chân này sau mỗi 1 giây xem sao.</p>
 <a class="reference internal image-reference" href="../../_images/ls-6-22.png"><img alt="../../_images/ls-6-22.png" class="align-center" src="../../_images/ls-6-22.png" style="width: 600px;" /></a>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">yolobit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 
@@ -182,7 +190,7 @@
 <p>Sau khi chạy chương trình, bạn quan sát sẽ thấy đèn Led tích hợp bật tắt sau mỗi 1 giây. Để điều khiển bật hoặc tắt một chân IO, bạn dùng hàm <code class="docutils literal notranslate"><span class="pre">write_digital()</span></code> và truyền vào giá trị 1 (để bật) hoặc 0 (để tắt). Như trong chương trình ở trên, nếu bạn muốn bật chân 13 lên thì dùng câu lệnh <code class="docutils literal notranslate"><span class="pre">pin13.write_digital(1)</span></code>.</p>
 <p><strong>PWM ( Pulse-width modulation)</strong></p>
 <p>Trong nhiều trường hợp chúng ta không chỉ muốn bật hoặc tắt chân I/O mà chúng ta còn muốn điều chỉnh mức độ bật nhiều hay ít. PWM là một kỹ thuật giúp chúng ta làm được việc này. Ví dụ, trong chương trình dưới đây chúng ta muốn bật chân 13 từ với mức độ từ 0 đến tối đa là 1023, khi đó đèn Led sẽ từ trạng thái tắt đến sáng dần và đến mức tối đa.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">yolobit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 
@@ -196,9 +204,9 @@
 <p>Thay vì dùng hàm <code class="docutils literal notranslate"><span class="pre">write_digital()</span></code> thì ta dùng hàm <code class="docutils literal notranslate"><span class="pre">write_analog()</span></code> và truyền vào giá trị từ 0 đến 1023. Trong chương trình trên, ta dùng hàm <code class="docutils literal notranslate"><span class="pre">range()</span></code> đã tìm hiểu trong các bài trước để tạo ra một danh sách các số từ 0 đến 1023.</p>
 <p>Ngoài ra, chúng ta có thể đọc được trạng thái bật hoặc tắt của các chân IO thông qua hàm <code class="docutils literal notranslate"><span class="pre">read_digital()</span></code>. Các chân cắm đặc biệt là 0, 1, 2 còn có thể đọc được trạng thái bật ở mức độ bao nhiêu, còn gọi là chế độ analog input thông qua hàm <code class="docutils literal notranslate"><span class="pre">read_analog()</span></code>.</p>
 <p>Cuối cùng, chúng ta hãy thử một tính năng đặc biệt có trên các chân 0, 1 và 2. Đó là khả năng cảm biến chạm. Chương trình sau sẽ phát ra âm thanh khác nhau mỗi chúng ta chạm vào các chân này.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yolobit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">yolobit</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
-<span class="kn">import</span> <span class="nn">music</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">music</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 

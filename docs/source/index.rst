@@ -141,4 +141,4 @@ OhStem xin chào tất cả các bạn!
    :maxdepth: 2
    :caption: FAQs
 
-   sa_ban/sa_ban_index.rst
+   FaQs/faqs_index.rst

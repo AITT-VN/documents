@@ -75,11 +75,6 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
     :align: center
 |
 
-.. raw:: html
-
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/eqth_ATNAik" title="Hướng dẫn GamePad V2 với robot Rover - Ý nghĩa các nút nhấn - Phần 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-|
 
 
 6. Chức năng của module Gamepad Receiver

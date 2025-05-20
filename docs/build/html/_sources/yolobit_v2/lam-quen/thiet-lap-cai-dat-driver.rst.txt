@@ -1,4 +1,4 @@
-2. Thiết lập và cài đặt Driver
+3. Thiết lập và cài đặt Driver
 =====================================
 
 **Video bài học:** `<https://youtu.be/W_hgIQiq5jw>`_

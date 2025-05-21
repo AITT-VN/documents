@@ -3,7 +3,7 @@
 Khi nhấn nút kết nối thì không xuất hiện ra cổng COM của Yolo:Bit để kết nối:
 
 ..  figure:: images/loi_module1.JPG
-    :scale: 70%
+    :scale: 100%
     :align: center 
 
 Nguyên nhân: 

@@ -4,10 +4,10 @@
 .. toctree::
    :maxdepth: 1
 
-   loi_cua_ORC/loi_yolobit.rst
-   loi_cua_ORC/bai_thi_1.rst 
-   loi_cua_ORC/bai_thi_2.rst
-   loi_cua_ORC/bai_thi_3.rst
-   loi_cua_ORC/bai_thi_4.rst 
-   loi_cua_ORC/bai_thi_5.rst
-   loi_cua_ORC/doi_khang.rst
+   loiORC/khongshowcode.rst
+   loiORC/dongco.rst 
+   loiORC/loiencoder.rst
+   loiORC/loicambiengoc.rst
+   loiORC/loidichuyen.rst 
+   loiORC/loithietbi.rst
+   loiORC/ghepnoitaycam.rst

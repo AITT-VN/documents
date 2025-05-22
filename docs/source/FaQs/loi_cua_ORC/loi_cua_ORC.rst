@@ -10,4 +10,4 @@
    loiORC/loicambiengoc.rst
    loiORC/loidichuyen.rst 
    loiORC/loithietbi.rst
-   loiORC/ghepnoitaycam.rst
+   loiORC/ghepnoiorchub.rst

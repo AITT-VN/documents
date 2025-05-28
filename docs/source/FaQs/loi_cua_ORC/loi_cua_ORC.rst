@@ -11,3 +11,5 @@
    loiORC/loidichuyen.rst 
    loiORC/loithietbi.rst
    loiORC/ghepnoiorchub.rst
+   loiORC/chinhdaugap.rst
+   loiORC/chinhdaunang.rst

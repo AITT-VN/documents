@@ -12,6 +12,11 @@ Nguyên nhân:
 
 Cách xử lý:
     - Kiểm tra các lệnh tạo động cơ, các vị trí cắm động cơ có tương ứng với cấu hình robot không? 
+
+..  figure:: images/orc13.jpg
+    :scale: 100%
+    :align: center 
+
     Nếu đúng thì kiểm tra chiều quay động cơ, khi bị ngược thì có thể tick/ bỏ tick vào ô đảo chiểu quay.
     - Khi động cơ bị ngược chiều, cần xác định đúng động cơ, tìm đúng câu lệnh tạo động cơ để tick/ bỏ tick phần đảo chiều quay.
     **Lưu ý chỉ thao tác đúng với động cơ bị ngược**

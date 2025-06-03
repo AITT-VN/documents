@@ -8,3 +8,7 @@
    loirover/tuchay.rst 
    loirover/roverkhongdoline.rst
    loirover/ghepnoitaycam.rst
+   loirover/chinhkhopnang.rst
+   loirover/chinhkhopgap.rst
+   
+   

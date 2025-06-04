@@ -10,5 +10,5 @@
    loirover/ghepnoitaycam.rst
    loirover/chinhkhopnang.rst
    loirover/chinhkhopgap.rst
-   
+   loirover/loidungmotionkit.rst
    

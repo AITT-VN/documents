@@ -13,3 +13,4 @@
    loiORC/ghepnoiorchub.rst
    loiORC/chinhdaugap.rst
    loiORC/chinhdaunang.rst
+   loiORC/loi8kenhservo.rst

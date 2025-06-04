@@ -10,7 +10,7 @@ Module 8 kênh servo là 1 module giúp mở rộng cơ cấu dùng nhiều serv
 ..  figure:: images/loi8kenhservo01.png
     :scale: 100%
     :align: center 
-Kiểm tra lại phần cắm dây giao tiếp trên mạch rover xem chúng ta đã cắm đúng cổng kết nối chưa nhé.
+Kiểm tra lại phần cắm dây giao tiếp trên mạch ORC Hub xem chúng ta đã cắm đúng cổng kết nối chưa nhé.
 
 **Báo lỗi khi nạp chương trình**:
 ------

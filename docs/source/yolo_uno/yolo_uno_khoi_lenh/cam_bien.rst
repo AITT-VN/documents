@@ -18,3 +18,4 @@
    cam_bien/mpu6050.rst
    cam_bien/goc_xoay.rst
    cam_bien/coi_bao.rst
+   cam_bien/gps_ATGM336H.rst

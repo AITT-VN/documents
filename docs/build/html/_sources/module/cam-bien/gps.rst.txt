@@ -1,7 +1,7 @@
 24. Mạch định vị GPS BDS ATGM336H
 ========
 
-.. image:: images/gps01.jpg
+.. image:: images/gps01.JPG
     :width: 400px
     :align: center 
 | 
@@ -90,7 +90,7 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
 
 - **Bước 3**: Kết nối dây tín hiệu với module và mạch mở rộng như hình: 
 
-..  figure:: images/gps03.jpg
+..  figure:: images/gps03.JPG
     :scale: 100%
     :align: center 
 

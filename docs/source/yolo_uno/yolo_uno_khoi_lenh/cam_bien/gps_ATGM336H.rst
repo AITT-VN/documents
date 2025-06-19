@@ -58,8 +58,8 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
    * - .. image:: images/yolo_uno01.png
           :width: 200px
           :align: center
-     - .. image:: images/gps01.png
-          :width: 200pxz
+     - .. image:: images/gps01.JPG
+          :width: 200px
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Module GPS

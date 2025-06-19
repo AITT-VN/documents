@@ -75,7 +75,7 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/gps01.jpg
+     - .. image:: images/gps01.JPG
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit

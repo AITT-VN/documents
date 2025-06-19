@@ -26,9 +26,9 @@ Trong nội dung này, bạn sẽ biết cách kết nối và lập trình đ�
     :align: center 
 |
 
-- Module cảm biến ánh sáng kèm dây tín hiệu:
+- Module nút nhấn đôi kèm dây tín hiệu:
 
-..  image:: images/cb_anh_sang.png
+..  image:: images/nut_nhan_doi.png
     :scale: 50%
     :align: center 
 |

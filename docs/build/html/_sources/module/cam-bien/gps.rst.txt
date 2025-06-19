@@ -1,14 +1,14 @@
-24. Mạch định vị GPS NEO - 6M V2
+24. Mạch định vị GPS BDS ATGM336H
 ========
 
-.. image:: images/25.jpg
+.. image:: images/gps01.jpg
     :width: 400px
     :align: center 
 | 
 
-Mạch Định Vị GPS NEO-6M V2 là một module GPS hoàn chỉnh dựa trên GPS Ublox NEO 6M. Thiết bị này sử dụng công nghệ mới nhất của Ublox để cung cấp thông tin định vị tốt nhất có thể và bao gồm một ăng-ten GPS chủ động 12 x 12mm tích hợp lớn hơn với chân cắm UART TTL. 
+Mạch định vị GPS BDS ATGM336H có thiết kế nhỏ gọn sử dụng IC chính SoC GNSS AT6558 thế hệ thứ 4 với khả năng tiết kiệm năng lượng vượt trội, mạch bắt tín hiệu định vị và thời gian nên các hệ thống GPS/US, Beidou/CN, GLONASS/RU, Galileo/EU, QZSS/JP, SBAS/enhanced system qua 32 kênh tracking chanel.
+Mạch định vị GPS BDS ATGM336H có chuẩn đầu ra tín hiệu của mạch tương thích với các module của Ublox (NEO-6M / NEO-7/ NEO-M8N) nên có thể thay thế dễ dàng, sử dụng chung code mẫu Arduino và phần mềm U-Center trên máy tính, phù hợp với các ứng dụng định vị vị trí và lấy thời gian qua GPS.
 
-Module GPS Ublox có đầu ra TTL nối tiếp, nó có bốn chân: TX, RX, VCC và GND, đồng thời có đèn LED hiển thị trạng thái để dễ dàng quan sát trong quá trình sử dụng.
 
 **1. Mua sản phẩm**
 -----------
@@ -16,7 +16,7 @@ Module GPS Ublox có đầu ra TTL nối tiếp, nó có bốn chân: TX, RX, VC
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/mach-dinh-vi-gps/ 
+    :target: https://ohstem.vn/product/module-gps/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -29,14 +29,20 @@ Module GPS Ublox có đầu ra TTL nối tiếp, nó có bốn chân: TX, RX, VC
 
 - **Thông số kỹ thuật**
 
-    + Nguồn cung cấp: 3.3V
-    + Module có ăng-ten bằng sứ, thu phát tín hiệu mạnh
-    + Có EEPROM lưu tham số cấu hình khi mất nguồn
-    + Có pin dự phòng lưu dữ liệu
-    + Có đèn LED hiển thị tín hiệu
-    + Kích thước ăng-ten: 12x12 mm
-    + Kích thước module: 23x30 mm
-    + Tốc độ baud mặc định: 9600
+    + Điện áp cấp: 3.3~ 5VDC
+    + IC chính: SoC GNSS AT6558
+    + Giao tiếp UART/TTL.
+    + Baudrate: 9600 (Default), 1200, 2400, 4800, 19200, 38400, 57600, 115200, 230400, 460800, 921600.
+    + Tracking channels: 32
+    + GNSS engine for GPS/US, Beidou/CN, GLONASS/RU, Galileo/EU, QZSS/JP, SBAS/enhanced system.
+    + Support A-GNSS
+    + Cold start capture sensitivity: -148dBm
+    + Tracking sensitivity: -162dBm
+    + Positioning accuracy: 2.5 meters (CEP50, open area)
+    + First positioning time: 32 seconds
+    + Low power consumption: continuous operation <25mA (@ 3.3V)
+    + Kích thước: 15.7 x 13.1 mm
+
 
 
 - **Pinout của module**
@@ -69,7 +75,7 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
      - .. image:: images/mmr.png
           :width: 200px
           :align: center
-     - .. image:: images/25.jpg
+     - .. image:: images/gps01.jpg
           :width: 200px
           :align: center
    * - Máy tính lập trình Yolo:Bit
@@ -77,14 +83,14 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
      - Module GPS
    * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
      - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/mach-dinh-vi-gps/>`_
+     - `Mua sản phẩm <https://ohstem.vn/product/module-gps/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
 
 - **Bước 3**: Kết nối dây tín hiệu với module và mạch mở rộng như hình: 
 
-..  figure:: images/25.2.png
+..  figure:: images/gps03.jpg
     :scale: 100%
     :align: center 
 

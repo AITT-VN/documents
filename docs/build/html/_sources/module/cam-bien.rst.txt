@@ -36,3 +36,5 @@
    cam-bien/dong-dien-ina219.rst
    cam-bien/rfid.rst
    cam-bien/pcf_rtc_8563.rst
+   cam-bien/bmp280_yolobit.rst
+   cam-bien/yolobit_ir_blaster.rst

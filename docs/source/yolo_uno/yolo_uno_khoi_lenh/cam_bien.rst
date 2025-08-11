@@ -20,3 +20,5 @@
    cam_bien/coi_bao.rst
    cam_bien/gps_ATGM336H.rst
    cam_bien/rtc_8563.rst
+   cam_bien/bmp280.rst
+   cam_bien/ir_blaster.rst

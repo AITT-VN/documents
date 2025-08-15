@@ -38,3 +38,4 @@
    cam-bien/pcf_rtc_8563.rst
    cam-bien/bmp280_yolobit.rst
    cam-bien/yolobit_ir_blaster.rst
+   cam-bien/veml6040.rst

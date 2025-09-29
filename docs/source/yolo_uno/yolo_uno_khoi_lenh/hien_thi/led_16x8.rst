@@ -35,8 +35,8 @@ LED ma trận (16 x 8) có tổng cộng 128 LED đơn được căn chỉnh. M�
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Led ma trận 16x8
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/led-ma-tran-16-8/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/led-ma-tran-16-8/>`_
 
 
 **3. Kết nối phần cứng**

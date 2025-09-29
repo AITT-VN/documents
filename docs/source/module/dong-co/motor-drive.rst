@@ -14,7 +14,7 @@ Sản phẩm được sử dụng để điều khiển chuyển động của c
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/module-dieu-khien-dong-co/
+    :target: https://shop.ohstem.vn/san-pham/module-dieu-khien-dong-co/
     :class: with-shadow
     :scale: 100%
     :align: center

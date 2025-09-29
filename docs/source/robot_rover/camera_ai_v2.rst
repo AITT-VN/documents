@@ -26,7 +26,7 @@ Camera AI V2 được nâng cấp lên phiên bản chip xử lý mới hơn cam
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/esp32-camera-ai-v2-cho-robot-va-iot/
+    :target: https://shop.ohstem.vn/san-pham/esp32-camera-ai-v2-cho-robot-va-iot/
     :class: with-shadow
     :scale: 100%
     :align: center

@@ -39,8 +39,8 @@ Với hướng dẫn này, sẽ thực hiện chương trình nhập mật khẩ
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Keypad
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/keypad-ban-phim-cam-ung-dien-dung/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/keypad-ban-phim-cam-ung-dien-dung/>`_
 
 
 **3. Kết nối phần cứng**

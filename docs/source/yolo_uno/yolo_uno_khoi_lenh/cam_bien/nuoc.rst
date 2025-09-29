@@ -37,8 +37,8 @@ Với hướng dẫn này, sẽ lập trình cảm biến kiểm tra có mưa (n
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Cảm biến nước
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-nuoc/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-nuoc/>`_
 
 
 **3. Kết nối phần cứng**

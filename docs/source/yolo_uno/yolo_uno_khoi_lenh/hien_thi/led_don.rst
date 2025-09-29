@@ -37,8 +37,8 @@ Với hướng dẫn này, sẽ thực hiện chương trình chớp tắt đèn
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Led đơn
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/den-led-don/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/den-led-don/>`_
 
 
 **3. Kết nối phần cứng**

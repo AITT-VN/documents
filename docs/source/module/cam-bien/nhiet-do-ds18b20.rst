@@ -55,8 +55,8 @@ Mỗi cảm biến có một địa chỉ duy nhất và chỉ yêu cầu một 
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến nhiệt độ DS18B20
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
      - Mua tại các cửa hàng linh kiện điện tử
 
 - **Kết nối:** 

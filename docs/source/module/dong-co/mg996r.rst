@@ -17,7 +17,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dong-co-servo-mg996r/
+    :target: https://shop.ohstem.vn/san-pham/dong-co-servo-mg996r/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -66,10 +66,10 @@
      - Mạch mở rộng cho Yolo:Bit
      - Động cơ Servo MG996R
      - Pin 18650
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg996r/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/pin-sac-2s-8-4v-18650/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-mg996r/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/pin-sac-2s-8-4v-18650/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

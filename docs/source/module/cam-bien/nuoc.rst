@@ -21,7 +21,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-nuoc/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-nuoc/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -60,9 +60,9 @@
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến nước (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-nuoc/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-nuoc/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

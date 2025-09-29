@@ -57,12 +57,12 @@ Một vài ứng dụng có thể sử dụng module này như: Hệ thống m�
      - Servo 180 độ
      - Nút nhấn đôi (Dành cho kết nối với Yolo UNO )
      - Pin 2S
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-servo-8-kenh-i2c/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg90s/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/nut-nhan-doi/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/pin-sac-2s-dung-cho-robot-orc-k2/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-servo-8-kenh-i2c/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-mg90s/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/nut-nhan-doi/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/pin-sac-2s-dung-cho-robot-orc-k2/>`_
 
 - **Kết nối với Yolo:Bit:** 
 

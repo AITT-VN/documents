@@ -15,7 +15,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/keypad-ban-phim-cam-ung-dien-dung/
+    :target: https://shop.ohstem.vn/san-pham/keypad-ban-phim-cam-ung-dien-dung/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -55,9 +55,9 @@
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Keypad (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/keypad-ban-phim-cam-ung-dien-dung/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/keypad-ban-phim-cam-ung-dien-dung/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

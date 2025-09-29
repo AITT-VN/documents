@@ -19,7 +19,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-do-duong-2-mat/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-do-duong-2-mat/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -66,7 +66,7 @@ Cảm biến dò đường 4 mắt có 4 chân, và mỗi chân có chức năng
           :width: 200px
           :align: center
    * - Xe robot 4in1
-   * - `Mua sản phẩm <https://ohstem.vn/product/xe-robot-4-in-1-do-choi-lap-trinh-robot/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/xe-robot-4-in-1-do-choi-lap-trinh-robot/>`_
      
 
 **4. Hướng dẫn lập trình:**

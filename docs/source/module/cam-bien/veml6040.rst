@@ -64,9 +64,9 @@ Cảm biến này giao tiếp qua chuẩn **I2C**, rất dễ dàng kết nối 
    * - Máy tính lập trình Yolo UNO
      - Mạch mở rộng Grove
      - Module VEML6040
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-veml6040/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-veml6040/>`_
 
 - **Bước 2**: Kết nối phần cứng
 

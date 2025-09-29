@@ -14,7 +14,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/led-ma-tran-16-8/
+    :target: https://shop.ohstem.vn/san-pham/led-ma-tran-16-8/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -62,8 +62,8 @@ Màn hình ma trận LED 16×8 có 4 chân, và mỗi chân có chức năng nh�
           :align: center
    * - Robot xBot
      - Màn hình LED 7 đoạn (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-lap-trinh-xbot-stem-robot-kit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/led-ma-tran-16-8/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-lap-trinh-xbot-stem-robot-kit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/led-ma-tran-16-8/>`_
 
 
 - **Bước 2**: Kết nối thiết bị vào cổng 3 trên robot xBot, như hình sau: 

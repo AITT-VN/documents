@@ -22,7 +22,7 @@ Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-gia-toc-mpu6050/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-gia-toc-mpu6050/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -60,9 +60,9 @@ Cảm biến gia tốc GY-521 6DOF IMU MPU6050 được sử dụng để đo 6 
    * - Mạch lập trình Yolo UNO
      - Cảm biến (kèm dây Grove)
      - Màn hình LCD 1602 (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-gia-toc-mpu6050/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/man-hinh-lcd-1602/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-gia-toc-mpu6050/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/man-hinh-lcd-1602/>`_
 
 
 - **Bước 2**: Sử dụng dây Grove cắm vào cảm biến

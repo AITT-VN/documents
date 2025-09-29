@@ -31,8 +31,8 @@ Với hướng dẫn này, sẽ thực hiện thay đổi góc của động cơ
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Động cơ servo
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-sg90s/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-sg90s/>`_
 
 
 **3. Kết nối phần cứng**

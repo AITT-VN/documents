@@ -41,9 +41,9 @@ Với hướng dẫn này, sẽ thực hiện chương trình làm hệ thống 
    * - Máy tính lập trình Yolo UNO
      - Còi báo
      - Cảm biến nước
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-coi-bao/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-nuoc/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-coi-bao/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-nuoc/>`_
 
 
 **3. Kết nối phần cứng**

@@ -60,10 +60,10 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách kết n�
      - Robot Rover
      - Động cơ servo
      - Động cơ DC giảm tốc 6V
-   * - `Mua sản phẩm <https://ohstem.vn/product/mach-mo-rong-motion-kit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover-v2/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-mg90s/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-dc-giam-toc-6v/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/mach-mo-rong-motion-kit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover-v2/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-mg90s/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-dc-giam-toc-6v/>`_
 
 - **Bước 2**: Kết nối các thiết bị như hình
     

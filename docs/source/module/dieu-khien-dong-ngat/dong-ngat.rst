@@ -17,7 +17,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/module-dong-ngat-2-kenh/
+    :target: https://shop.ohstem.vn/san-pham/module-dong-ngat-2-kenh/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -48,10 +48,10 @@
      - Mạch mở rộng cho Yolo:Bit
      - Module đóng ngắt (kèm dây Grove) 
      - Máy bơm mini 
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-dong-ngat-2-kenh/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/may-bom-mini/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-dong-ngat-2-kenh/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-bom-mini/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

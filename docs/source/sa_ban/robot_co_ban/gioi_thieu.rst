@@ -23,7 +23,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/sa-ban-robot-co-ban/
+    :target: https://shop.ohstem.vn/san-pham/sa-ban-robot-co-ban/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -48,8 +48,8 @@ Trong tài liệu này, OhStem sẽ hướng dẫn bạn cách lập trình trê
           :align: center
    * - Robot Rover
      - Đầu gắp Gripper
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/tay-gap-robot-rover/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/tay-gap-robot-rover/>`_
 
 
 1.4 Giới thiệu về các bài thi đấu 

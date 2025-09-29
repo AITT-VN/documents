@@ -37,8 +37,8 @@ Với hướng dẫn này, sẽ viết chương trình điều khiển tín hi�
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Mắt đọc IR và remote
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/mat-doc-hong-ngoai-ir/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/mat-doc-hong-ngoai-ir/>`_
 
 
 **3. Kết nối phần cứng**

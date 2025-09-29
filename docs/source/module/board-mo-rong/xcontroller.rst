@@ -21,7 +21,7 @@ Mạch điều khiển robot xController
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/xcontroller/
+    :target: https://shop.ohstem.vn/san-pham/xcontroller/
     :class: with-shadow
     :scale: 100%
     :align: center

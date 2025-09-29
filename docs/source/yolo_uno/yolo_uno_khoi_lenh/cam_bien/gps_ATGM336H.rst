@@ -63,8 +63,8 @@ Module GPS có 4 chân, và mỗi chân có chức năng như sau:
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Module GPS
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-gps//>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-gps//>`_
 
 
 - **Bước 2**: Kết nối dây tín hiệu với module vào Yolo UNO như hình: 

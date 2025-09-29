@@ -18,7 +18,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dau-nang-robot-rover/
+    :target: https://shop.ohstem.vn/san-pham/dau-nang-robot-rover/
     :class: with-shadow
     :scale: 100%
     :align: center

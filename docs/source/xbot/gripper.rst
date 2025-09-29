@@ -18,7 +18,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dau-gap-robot/
+    :target: https://shop.ohstem.vn/san-pham/dau-gap-robot/
     :class: with-shadow
     :scale: 100%
     :align: center

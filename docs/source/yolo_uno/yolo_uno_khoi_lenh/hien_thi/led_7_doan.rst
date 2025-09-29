@@ -39,8 +39,8 @@ Với hướng dẫn này, sẽ sử dụng màn hình LED 7 đoạn này để 
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Led 7 đoạn
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/led-7-doan/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/led-7-doan/>`_
 
 
 **3. Kết nối phần cứng**

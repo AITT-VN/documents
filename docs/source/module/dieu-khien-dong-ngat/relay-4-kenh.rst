@@ -16,7 +16,7 @@ Với hướng dẫn này, sẽ thực hiện chương trình đổi trạng th�
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/relay-4-kenh/
+    :target: https://shop.ohstem.vn/san-pham/relay-4-kenh/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -73,9 +73,9 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
      - Relay 4 kênh
      - Pin
      - Quạt
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/relay-4-kenh/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/pin-3s-12v-kem-sac/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/relay-4-kenh/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/pin-3s-12v-kem-sac/>`_
      - Mua sản phẩm
 
 

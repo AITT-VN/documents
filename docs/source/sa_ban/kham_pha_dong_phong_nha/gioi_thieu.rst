@@ -22,7 +22,7 @@ Trong sa bàn này, robot sẽ là một nhà hướng dẫn viên tài ba, dẫ
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/sa-ban-kham-pha-dong-phong-nha/
+    :target: https://shop.ohstem.vn/san-pham/sa-ban-kham-pha-dong-phong-nha/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -46,8 +46,8 @@ Trong tài liệu này, OhStem sẽ hướng dẫn bạn cách lập trình trê
           :align: center
    * - Robot Rover
      - Đầu gắp Gripper
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/tay-gap-robot-rover/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/tay-gap-robot-rover/>`_
 
 
 1.4. Giới thiệu về các bài thi đấu

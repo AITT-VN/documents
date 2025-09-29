@@ -16,7 +16,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dong-co-servo-sg90s/
+    :target: https://shop.ohstem.vn/san-pham/dong-co-servo-sg90s/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -45,9 +45,9 @@
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Động cơ Servo SG90S
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-sg90s/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-sg90s/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

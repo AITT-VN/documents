@@ -23,7 +23,7 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-nhiet-do-hong-ngoai-khong-tiep-xuc/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-nhiet-do-hong-ngoai-khong-tiep-xuc/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -64,9 +64,9 @@ MLX90614 là Cảm biến nhiệt độ kỹ thuật số hồng ngoại không 
    * - Mạch lập trình Yolo UNO
      - Cảm biến (kèm dây Grove)
      - Màn hình LCD 1602 (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-nhiet-do-hong-ngoai-khong-tiep-xuc/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/man-hinh-lcd-1602/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-nhiet-do-hong-ngoai-khong-tiep-xuc/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/man-hinh-lcd-1602/>`_
 
 
 - **Bước 2**: Sử dụng dây Grove cắm vào cảm biến

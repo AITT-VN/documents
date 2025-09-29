@@ -44,8 +44,8 @@ Với hướng dẫn này, sẽ thực hiện chương trình đổi trạng th�
    * - Máy tính lập trình Yolo UNO
      - Relay
      - Bóng đèn 220V, phích cắm và dây điện
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-am-thanh/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-am-thanh/>`_
 
 
 **3. Kết nối phần cứng**

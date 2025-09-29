@@ -21,7 +21,7 @@ Bộ bắn bóng này có lối thiết kế lắp ráp đơn giản, cách lậ
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/phu-kien-ban-bong-dung-cho-robot/
+    :target: https://shop.ohstem.vn/san-pham/phu-kien-ban-bong-dung-cho-robot/
     :class: with-shadow
     :scale: 100%
     :align: center

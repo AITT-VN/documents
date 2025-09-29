@@ -17,7 +17,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dong-co-quat-mini/
+    :target: https://shop.ohstem.vn/san-pham/dong-co-quat-mini/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -68,9 +68,9 @@ Module động cơ quạt mini có 4 chân, và mỗi chân có chức năng nh�
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Động cơ quạt mini (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-quat-mini/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-quat-mini/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

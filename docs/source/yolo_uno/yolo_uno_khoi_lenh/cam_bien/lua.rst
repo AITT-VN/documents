@@ -38,8 +38,8 @@ Với hướng dẫn này, sẽ hướng dẫn thực hiện chương trình c�
           :align: center
    * - Máy tính lập trình Yolo UNO
      - Cảm biến lửa
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-lua/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-lua/>`_
 
 
 **3. Kết nối phần cứng**

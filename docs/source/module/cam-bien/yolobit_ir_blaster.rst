@@ -64,9 +64,9 @@ Module IR có 3 chân, chức năng như sau:
    * - Máy tính lập trình Yolo UNO
      - Mạch mở rộng Grove
      - Module IR Blaster
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-hong-ngoai-phat-ir/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-hong-ngoai-phat-ir/>`_
 
 - **Bước 2**: Kết nối module IR Blaster vào **cổng digital bất kỳ** trên mạch mở rộng Grove:
 

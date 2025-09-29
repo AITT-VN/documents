@@ -21,7 +21,7 @@ Trong hướng dẫn này, chúng ta sẽ cùng tìm hiểu cách truyền tải
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/lora-e32/
+    :target: https://shop.ohstem.vn/san-pham/lora-e32/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -70,9 +70,9 @@ Trong hướng dẫn này, chúng ta sẽ cùng tìm hiểu cách truyền tải
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Mạch thu phát LoRa E32
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/lora-e32/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/lora-e32/>`_
    * - Số lượng 2
      - Số lượng 2
      - Số lượng 2

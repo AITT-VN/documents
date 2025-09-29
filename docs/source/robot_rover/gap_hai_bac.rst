@@ -21,7 +21,7 @@ Sản phẩm sử dụng 2 động cơ Servo 180 độ. Bạn có thể gắn ta
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/tay-gap-2-bac/
+    :target: https://shop.ohstem.vn/san-pham/tay-gap-2-bac/
     :class: with-shadow
     :scale: 100%
     :align: center

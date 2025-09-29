@@ -42,6 +42,6 @@ Bạn có thể sử dụng robot Rover hoặc robot xBot để thi đấu trên
           :align: center
    * - Robot Rover
      - Robot xBot
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/robot-lap-trinh-xbot-stem-robot-kit/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-lap-trinh-xbot-stem-robot-kit/>`_
 

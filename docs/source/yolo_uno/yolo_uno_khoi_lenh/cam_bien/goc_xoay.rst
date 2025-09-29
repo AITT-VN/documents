@@ -47,9 +47,9 @@ Với hướng dẫn này, sẽ thực hiện chương trình điều chỉnh g�
    * - Máy tính lập trình Yolo UNO
      - Cảm biến góc xoay
      - Servo 180 độ
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-goc-xoay/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-servo-sg90s/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-goc-xoay/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-servo-sg90s/>`_
 
 
 **3. Kết nối phần cứng**

@@ -67,9 +67,9 @@ Module BMP280 có 4 chân, với chức năng như sau:
    * - Máy tính lập trình Yolo UNO
      - Mạch mở rộng Grove
      - Module BMP280
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-bmp280/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-bmp280/>`_
 
 - **Bước 2**: Kết nối module BMP280 vào 1 trong 2 cổng I2C của mạch mở rộng:
 

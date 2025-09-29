@@ -51,9 +51,9 @@ Với hướng dẫn này, chúng ta sẽ thực hiện chương trình điều 
    * - Máy tính lập trình Yolo UNO
      - Động cơ bước 
      - Mạch điều khiển động cơ
-   * - `Mua sản phẩm <https://ohstem.vn/product/yolo-uno/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-buoc-step-nema-17-size-42-kem-day-40cm/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-dieu-khien-dong-co/>`_    
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/yolo-uno/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-buoc-step-nema-17-size-42-kem-day-40cm/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-dieu-khien-dong-co/>`_    
 
 
 

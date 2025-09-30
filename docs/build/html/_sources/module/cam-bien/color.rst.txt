@@ -15,7 +15,7 @@ Module cảm biến màu sắc là một cảm biến màu có khả năng nhậ
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-mau-sac/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-mau-sac/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -70,9 +70,9 @@ Cảm biến màu sắc có 4 chân, và mỗi chân có chức năng như sau:
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến màu sắc (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-mau-sac/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-mau-sac/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

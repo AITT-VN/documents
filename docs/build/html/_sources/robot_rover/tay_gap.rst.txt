@@ -19,7 +19,7 @@ Tay gắp Robot Gripper là một bộ phận mở rộng của Robot Rover, gi�
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/tay-gap-robot-rover/
+    :target: https://shop.ohstem.vn/san-pham/tay-gap-robot-rover/
     :class: with-shadow
     :scale: 100%
     :align: center

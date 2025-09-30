@@ -17,7 +17,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/hx711/
+    :target: https://shop.ohstem.vn/san-pham/hx711/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -62,9 +62,9 @@
      - Mạch mở rộng cho Yolo:Bit
      - Module HX711(kèm dây Grove)
      - Cảm biến cân nặng Loadcell (5kg) 
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/hx711/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/hx711/>`_
      - 
 
 

@@ -19,7 +19,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/may-bom-mini/
+    :target: https://shop.ohstem.vn/san-pham/may-bom-mini/
     :class: with-shadow
     :scale: 100%
     :align: center

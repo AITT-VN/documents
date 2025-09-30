@@ -42,7 +42,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/grove-shield/
+    :target: https://shop.ohstem.vn/san-pham/grove-shield/
     :class: with-shadow
     :scale: 100%
     :align: center

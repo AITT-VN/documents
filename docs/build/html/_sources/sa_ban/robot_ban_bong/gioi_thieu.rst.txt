@@ -30,7 +30,7 @@ Vòng ném bóng có kích thước cao khoảng 30 - 45cm, đường kính vòn
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/sa-ban-robot-ban-bong/
+    :target: https://shop.ohstem.vn/san-pham/sa-ban-robot-ban-bong/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -62,9 +62,9 @@ Trong tài liệu này, OhStem sẽ hướng dẫn bạn cách lập trình trê
    * - Robot Rover
      - Đầu gắp Gripper
      - Phụ kiện bắn bóng
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/tay-gap-robot-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/phu-kien-ban-bong-dung-cho-robot/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/tay-gap-robot-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/phu-kien-ban-bong-dung-cho-robot/>`_
 
 1.4 Giới thiệu về các bài thi đấu
 -----

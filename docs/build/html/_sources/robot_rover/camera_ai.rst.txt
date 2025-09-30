@@ -15,7 +15,7 @@ Bộ kit này thường được dùng trong các dự án STEM và Robotics đ�
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/esp32-camera/
+    :target: https://shop.ohstem.vn/san-pham/esp32-camera/
     :class: with-shadow
     :scale: 100%
     :align: center

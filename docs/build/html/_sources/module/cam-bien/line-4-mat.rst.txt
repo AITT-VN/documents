@@ -19,7 +19,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-do-duong-4-mat/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-do-duong-4-mat/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -73,8 +73,8 @@ Cảm biến dò đường thường được sử dụng trên Robot Rover ho�
           :align: center
    * - Robot Rover (kèm Yolo:Bit)
      - Robot xBot
-   * - `Mua sản phẩm <https://ohstem.vn/product/robot-stem-rover/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/robot-lap-trinh-xbot-stem-robot-kit/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-stem-rover/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/robot-lap-trinh-xbot-stem-robot-kit/>`_
 
     
 **4. Hướng dẫn lập trình**

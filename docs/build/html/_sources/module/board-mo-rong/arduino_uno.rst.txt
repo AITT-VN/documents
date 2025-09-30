@@ -16,7 +16,7 @@ Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chu
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/mach-mo-rong-cho-arduino/  
+    :target: https://shop.ohstem.vn/san-pham/mach-mo-rong-cho-arduino/  
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -81,10 +81,10 @@ Mạch mở rộng cho Arduino này có thiết kế thêm một công tắc chu
      - Mạch mở rộng Arduino UNO
      - Đèn LED đơn (kèm dây Grove)
      - Nút nhấn đơn (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/arduino-uno-r3/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/mach-mo-rong-cho-arduino/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/den-led-don/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/nut-nhan-don/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/arduino-uno-r3/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/mach-mo-rong-cho-arduino/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/den-led-don/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/nut-nhan-don/>`_
 
 - **Bước 2**: Kết nối Grove - Đèn LED đơn với cổng D5
 - **Bước 3**: Kết nối Grove - Nút nhấn đơn với cổng D3

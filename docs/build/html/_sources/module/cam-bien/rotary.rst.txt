@@ -32,7 +32,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/rotary-encoder/
+    :target: https://shop.ohstem.vn/san-pham/rotary-encoder/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -90,10 +90,10 @@ Cảm biến có 4 chân, mỗi chân có chức năng như sau:
      - Mạch mở rộng cho Yolo:Bit
      - Module Rotary Encoder (kèm dây Grove)
      - Quạt mini (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/rotary-encoder/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/dong-co-quat-mini/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/rotary-encoder/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/dong-co-quat-mini/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

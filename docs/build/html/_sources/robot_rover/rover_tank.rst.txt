@@ -20,7 +20,7 @@ Ngoài ra, bạn cũng có thể sáng tạo cuộc đua robot ngoài trời b�
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/kit-xe-tang/
+    :target: https://shop.ohstem.vn/san-pham/kit-xe-tang/
     :class: with-shadow
     :scale: 100%
     :align: center

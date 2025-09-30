@@ -17,7 +17,7 @@ Mỗi LED có khả năng hiển thị lên đến 16777216 màu và 256 cấp �
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/60-neopixel-rgb-led/
+    :target: https://shop.ohstem.vn/san-pham/60-neopixel-rgb-led/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -72,9 +72,9 @@ Mỗi LED có khả năng hiển thị lên đến 16777216 màu và 256 cấp �
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - LED dây NeoPixel RGB WS2812
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/60-neopixel-rgb-led/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/60-neopixel-rgb-led/>`_
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
 - **Bước 3**: Cắm thiết bị vào chân P0 trên mạch mở rộng

@@ -18,7 +18,7 @@ Dump Truck là bộ phụ kiện được dùng để gắn lên xBot để vui 
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dump-truck/
+    :target: https://shop.ohstem.vn/san-pham/dump-truck/
     :class: with-shadow
     :scale: 100%
     :align: center

@@ -20,7 +20,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/dau-nang/
+    :target: https://shop.ohstem.vn/san-pham/dau-nang/
     :class: with-shadow
     :scale: 100%
     :align: center

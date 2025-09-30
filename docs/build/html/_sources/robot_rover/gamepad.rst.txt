@@ -21,7 +21,7 @@ Gamepad là một phụ kiện được sử dụng để mở rộng khả năn
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/tay-cam-dieu-khien-gamepad-v2
+    :target: https://shop.ohstem.vn/san-pham/tay-cam-dieu-khien-gamepad-v2
     :class: with-shadow
     :scale: 100%
     :align: center

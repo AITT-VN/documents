@@ -17,7 +17,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/mat-doc-hong-ngoai-ir/
+    :target: https://shop.ohstem.vn/san-pham/mat-doc-hong-ngoai-ir/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -60,10 +60,10 @@
      - Mạch mở rộng cho Yolo:Bit
      - Mắt đọc IR (kèm dây Grove)
      - Remote điều khiển từ xa
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/mat-doc-hong-ngoai-ir/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/remote-dieu-khien/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/mat-doc-hong-ngoai-ir/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/remote-dieu-khien/>`_
     
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

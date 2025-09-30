@@ -48,8 +48,8 @@ Cảm biến sử dụng phương pháp đo quang phổ biến hiện nay với 
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến nhịp tim
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
      - Mua tại các cửa hàng linh kiện điện tử
 
 - **Kết nối:** 

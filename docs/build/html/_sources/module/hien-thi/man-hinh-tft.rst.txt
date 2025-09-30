@@ -70,8 +70,8 @@ Chúng tôi sẽ giới thiệu đến bạn 2 loại màn hình là **TFT ST773
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Màn hình TFT ST7735
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
      - Mua ở các cửa hàng linh kiện điện tử
     
 
@@ -138,8 +138,8 @@ Chúng tôi sẽ giới thiệu đến bạn 2 loại màn hình là **TFT ST773
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Màn hình TFT ILI9431
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
      - Mua ở các cửa hàng linh kiện điện tử
     
 

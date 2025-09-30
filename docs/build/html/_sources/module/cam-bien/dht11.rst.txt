@@ -28,7 +28,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-nhiet-do-do-am/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-nhiet-do-do-am/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -81,9 +81,9 @@ Cảm biến nhiệt độ và độ ẩm DHT11 có 4 chân, và mỗi chân có
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến DHT11 (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-nhiet-do-do-am/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-nhiet-do-do-am/>`_
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
 - **Bước 3**: Sử dụng dây Grove cắm vào cảm biến

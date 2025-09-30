@@ -16,7 +16,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/cam-bien-pir/
+    :target: https://shop.ohstem.vn/san-pham/cam-bien-pir/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -74,9 +74,9 @@ Cảm biến có 4 chân và mỗi chân có chức năng như sau:
    * - Máy tính lập trình Yolo:Bit
      - Mạch mở rộng cho Yolo:Bit
      - Cảm biến PIR (kèm dây Grove)
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/cam-bien-pir/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/cam-bien-pir/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

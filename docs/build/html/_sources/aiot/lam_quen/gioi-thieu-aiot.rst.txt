@@ -9,7 +9,7 @@
 ------
 ----------
 
-`AIoT KIt <https://ohstem.vn/product/aiot-kit-hoc-lap-trinh-iot-va-ai/>`_
+`AIoT KIt <https://shop.ohstem.vn/san-pham/aiot-kit-hoc-lap-trinh-iot-va-ai/>`_
 
 2. Tổng quan về AIoT KIT
 -----

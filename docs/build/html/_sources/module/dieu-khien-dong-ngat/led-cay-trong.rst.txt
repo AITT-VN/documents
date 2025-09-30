@@ -10,7 +10,7 @@
 
 ..  attention::
     
-    Đèn LED này sử dụng cổng USB, không tương thích với cổng cắm Grove của Yolo:Bit. Do đó, bạn cần sử dụng thêm `module đóng ngắt 2 kênh <https://ohstem.vn/product/module-dong-ngat-2-kenh/>`_ khi thực hành kết nối đèn LED màu với Yolo:Bit để làm các dự án STEM thông minh nhé!
+    Đèn LED này sử dụng cổng USB, không tương thích với cổng cắm Grove của Yolo:Bit. Do đó, bạn cần sử dụng thêm `module đóng ngắt 2 kênh <https://shop.ohstem.vn/san-pham/module-dong-ngat-2-kenh/>`_ khi thực hành kết nối đèn LED màu với Yolo:Bit để làm các dự án STEM thông minh nhé!
 
 **1. Mua sản phẩm**
 -----------
@@ -18,7 +18,7 @@
 
 ..  image:: images/gio.png
     :alt: some image
-    :target: https://ohstem.vn/product/den-led-mau-kich-thich-cay-trong/
+    :target: https://shop.ohstem.vn/san-pham/den-led-mau-kich-thich-cay-trong/
     :class: with-shadow
     :scale: 100%
     :align: center
@@ -49,10 +49,10 @@
      - Mạch mở rộng cho Yolo:Bit
      - Module đóng ngắt 2 kênh (kèm dây Grove) 
      - Đèn LED màu kích thích cây trồng
-   * - `Mua sản phẩm <https://ohstem.vn/product/may-tinh-lap-trinh-yolobit/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/grove-shield/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/module-dong-ngat-2-kenh/>`_
-     - `Mua sản phẩm <https://ohstem.vn/product/may-bom-mini/>`_
+   * - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/grove-shield/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/module-dong-ngat-2-kenh/>`_
+     - `Mua sản phẩm <https://shop.ohstem.vn/san-pham/may-bom-mini/>`_
 
 
 - **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng

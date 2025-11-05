@@ -116,5 +116,5 @@ Module relay có 3 chân, và mỗi chân có chức năng như sau:
 
 **Giải thích chương trình:**
 
-    Trong chương trình trên, quạt được kết nối với Relay 1, sẽ bật tắt sau mỗi 2 giây. 
+    Trong chương trình trên, quạt được kết nối với Relay 3, sẽ bật tắt sau mỗi 2 giây. 
 

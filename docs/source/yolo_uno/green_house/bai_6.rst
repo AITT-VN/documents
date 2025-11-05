@@ -47,6 +47,14 @@
     :align: center 
 |
 
+Máy bơm nước sẽ có 2 đầu **IN** và **OUT**, đầu **IN** dùng để nối ống với nguồn cung cấp nước (hút nước), đầu **OUT** là đầu bơm nước ra từ máy bơm.
+Bạn cần nối đúng **IN** và **OUT** của máy bơm để máy bơm hoạt động đúng.
+
+..  image:: images/may_bom02.png
+    :scale: 40%
+    :align: center 
+|
+
 
 3. Kết nối phần cứng
 -------

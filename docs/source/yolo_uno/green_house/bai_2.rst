@@ -42,7 +42,7 @@ Bật tắt quạt sử dụng Relay 4 kênh để duy trì nhiệt độ lý t�
 
 
 ..  figure:: images/bai_2.1.png
-    :scale: 100%
+    :scale: 60%
     :align: center 
 |
 

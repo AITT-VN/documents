@@ -22,3 +22,4 @@
    cam_bien/rtc_8563.rst
    cam_bien/bmp280.rst
    cam_bien/ir_blaster.rst
+   cam_bien/lorae32.rst

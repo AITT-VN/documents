@@ -187,7 +187,7 @@ Chờ khoảng 1 phút để hiện hình ảnh và kết quả nhận dạng s�
 |
 
 
-5. Chương trình nhận dạng qua sever IoT
+2. Chương trình nhận dạng qua sever IoT
 ----
 ---------
 

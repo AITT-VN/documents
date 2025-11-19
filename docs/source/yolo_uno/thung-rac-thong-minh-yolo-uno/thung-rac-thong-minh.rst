@@ -1,4 +1,4 @@
-2. Thực hiện dự án: "Phân loại rác thải với Yolo UNO"
+4. Thực hiện dự án
 =================================
 
 1. Mục tiêu:
@@ -30,7 +30,7 @@ Trong bài này, chúng ta sẽ cùng lập trình một hệ thống phân lo�
         :width: 150px
         :align: center 
     |
-- 4 Servo 180 độ (D2-D11-D12-D13)
+- 3 Servo 180 độ (D2-D11-D12)
     .. image:: images/trash06.png
         :width: 150px
         :align: center 
@@ -46,7 +46,7 @@ Trong bài này, chúng ta sẽ cùng lập trình một hệ thống phân lo�
 3. Thực hiện 
 -----------
 ----------------
-- Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 90 để hoạt động chính xác. Thực hiện như sau:
+- Trước khi lắp ráp, bạn cần căn chỉnh Servo về góc 0 (vị trí đóng nắp thùng rác) để hoạt động chính xác. Thực hiện như sau:
 
     1. Kết nối Servo vào chân D11 trên mạch Yolo UNO(thực hiện tương tự ở 3 chân servo còn lại)
 
@@ -68,13 +68,6 @@ Trong bài này, chúng ta sẽ cùng lập trình một hệ thống phân lo�
 ----------
 ----------------
 
-- Khối lệnh của camera AI: 
-
-.. image:: images/trash09.png
-    :scale: 90%
-    :align: center 
-|
-
 - Khối lệnh điều khiển loa phát nhạc:
 
 .. image:: images/trash10.png
@@ -90,13 +83,13 @@ Trong bài này, chúng ta sẽ cùng lập trình một hệ thống phân lo�
 -----------
 ----------------
 
-- Bạn xem cách cấu hình/sử dụng tính năng camera AI tại link sau: `<https://docs.ohstem.vn/en/latest/robot_rover/camera_ai_v2.html>`_  
+- Bạn xem cách cấu hình/sử dụng tính năng camera AI ở hướng dẫn trước
 
 Viết chương trình
 ------------
 --------------------
 
-1. Đầu tiên sẽ cài đặt góc cho 4 servo về 90 độ (vị trí đóng nắp thùng)
+1. Đầu tiên sẽ cài đặt góc cho 4 servo về 0 độ (vị trí đóng nắp thùng)
 
 .. image:: images/trash11.png
     :scale: 80%
@@ -104,7 +97,7 @@ Viết chương trình
 
 |
 
-2. Tạo 4 biến cho 4 loại rác thải, 4 biến này sẽ hiển thị trên màn hình lúc phân loại rác.
+2. Tạo 3 biến cho 3 loại rác thải, 3 biến này sẽ hiển thị trên màn hình lúc phân loại rác.
 
 .. image:: images/trash12.png
     :scale: 100%
@@ -138,7 +131,7 @@ Viết chương trình
     :scale: 100%
     :align: center 
 |
-7. Khi kết quả đúng, chúng ta sẽ cho servo quay đến góc mở (có thể là 180 hoặc 0 tùy theo bạn lắp servo)
+7. Khi kết quả đúng, chúng ta sẽ cho servo quay đến góc mở (có thể là 90 hoặc 1 vị trí khác tùy theo vị trí bạn lắp servo đóng nắp) và phát bài nhạc theo thứ tự âm thanh đã lưu vào loa, âm thanh sẽ được phát ra khi nhận diện đúng loại rác
 
 .. image:: images/trash17.png
     :scale: 100%
@@ -162,7 +155,7 @@ Viết chương trình
     :align: center 
 |
 
-- Link chương trình mẫu: `<https://app.ohstem.vn/#!/share/yolouno/2eKHUadDZMPoqT25fL3MQQUqevH>`_
+- Link chương trình mẫu: `<https://app.ohstem.vn/#!/share/yolouno/35gNXQ1lHXaS4WeScnFTM1NRrWk>`_
 
 
 

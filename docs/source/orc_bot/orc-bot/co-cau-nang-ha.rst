@@ -3,7 +3,7 @@
 
 Ngoài cách lắp ráp cơ bản, bạn có thể nâng cấp cơ cấu nâng hạ cho robot thông qua hướng dẫn lắp ráp sau:
 
-`Xem HDLR <https://drive.google.com/file/d/1uTyL1kgtJiUX4ls7tzDRj9vUaeFJ14AD/view>`_
+`Xem HDLR <https://drive.google.com/file/d/1uEYoTGbN4r-Ei71yddyrExm0kvdju6gv/view?usp=sharing>`_
 
 `Mua sản phẩm <https://shop.ohstem.vn/bo-nang-ha-robot-ORC>`_
 

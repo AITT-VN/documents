@@ -23,3 +23,6 @@
    cam_bien/bmp280.rst
    cam_bien/ir_blaster.rst
    cam_bien/lorae32.rst
+   cam_bien/sht30.rst
+   cam_bien/uv_s12sd.rst
+   cam_bien/acd1100.rst

@@ -8,6 +8,10 @@ ACD1100 là cảm biến đo nồng độ CO₂ thế hệ mới sử dụng cô
 giúp đo CO₂ chính xác và ổn định ngay cả trong môi trường nhiều bụi, ẩm hoặc thay đổi nhiệt độ.  
 Module hỗ trợ giao tiếp **UART**, dễ dàng kết nối với Yolo UNO, Arduino và ESP32.
 
+.. image:: images/acd1100_01.png
+    :scale: 100%
+    :align: center
+|
 Cảm biến phù hợp cho các ứng dụng:
 
 - Quan trắc chất lượng không khí trong lớp học
@@ -46,41 +50,23 @@ Kết nối
 
 Kết nối cảm biến ACD1100 vào Yolo UNO / ESP32:
 
-==========================
-VCC → VCC
-GND → GND  
-TX → RX (ESP32 / Yolo UNO)  
-RX → TX  
-==========================
-
+..  image:: images/acd1100_02.png
+    :scale: 100%
+    :align: center
+|
 
 Lập trình trên OhStem App
 -------------------------
 
-Trên OhStem App, bạn chỉ cần:
+Trên OhStem App, bạn chỉ cần sử dụng khối lệnh đọc CO₂ từ thư viện **Smart City** để nhận dữ liệu CO₂ từ cảm biến ACD1100.
 
-- Sử dụng **khối Serial**
-- Đọc chuỗi UART
-- Tách gói dữ liệu để lấy giá trị CO₂
-
-Khung dữ liệu UART của ACD1100:
-
-::
-
-    0xFF 0x86 HIGH LOW SUM
-
-Cách tính:
-
-::
-
-    CO2_ppm = HIGH * 256 + LOW
+..  image:: images/acd1100_03.png
+    :scale: 100%
+    :align: center
 
 Ví dụ chương trình:
-
-- Nhận dữ liệu UART mỗi 2 giây
-- Hiển thị CO₂ ppm lên màn hình OLED
-- Gửi dữ liệu lên IoT Dashboard
-
+- Nhận dữ liệu UART mỗi 1 giây
+- Hiển thị CO₂ ppm lên màn hình LCD
 
 Lưu ý sử dụng
 -------------

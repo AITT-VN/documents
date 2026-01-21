@@ -55,7 +55,7 @@ Module BMP280 có 4 chân, với chức năng như sau:
    :widths: auto
    :header-rows: 1
      
-   * - .. image:: images/yolouno.png
+   * - .. image:: images/yolo_uno.png
           :width: 200px
           :align: center
      - .. image:: images/bmp280_01.png
@@ -68,7 +68,7 @@ Module BMP280 có 4 chân, với chức năng như sau:
 
 - **Bước 2**: Kết nối module BMP280 vào cổng I2C bất kỳ của mạch mở rộng:
 
-.. figure:: images/bmp280_02.png
+.. figure:: images/bmp280_02.jpg
     :scale: 100%
     :align: center
 
@@ -78,7 +78,7 @@ Module BMP280 có 4 chân, với chức năng như sau:
 **3. Lập trình BMP280 với Yolo UNO trên OhStem App**
 -----------------------------------------------------
 
-Để lập trình module BMP280, bạn cần tải thư viện mở rộng từ liên kết sau:
+Để lập trình module BMP280, bạn cần tải thư viện mở rộng **BMP280** từ liên kết sau:
 
 `https://github.com/AITT-VN/yolouno_extension_bmp280.git`
 
@@ -95,7 +95,7 @@ Module BMP280 có 4 chân, với chức năng như sau:
     :scale: 100%
     :align: center
 
-    Chương trình đơn giản đọc nhiệt độ và áp suất mỗi 1 giây.
+    Chương trình đơn giản đọc nhiệt độ và áp suất mỗi 1 giây và hiển thị lên trên màn hình.
 
 **Giá trị đọc được:**
 
@@ -106,6 +106,4 @@ Module BMP280 có 4 chân, với chức năng như sau:
 **Lưu ý**
 
 + Địa chỉ I2C có thể là `0x76` hoặc `0x77` – nếu module không hoạt động, hãy kiểm tra lại địa chỉ trong thư viện.
-+ Có thể kết hợp với màn hình OLED hoặc hiển thị lên Serial để theo dõi dữ liệu thực tế.
-
-**Chương trình mẫu** `tại đây <https://app.ohstem.vn/#!/share/yolouno/1eabcXYZsensorDemo>`_
++ Có thể kết hợp với màn hình LCD hoặc hiển thị lên Serial để theo dõi dữ liệu thực tế.

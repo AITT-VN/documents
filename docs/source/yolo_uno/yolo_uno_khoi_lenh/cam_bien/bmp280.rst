@@ -69,7 +69,7 @@ Module BMP280 có 4 chân, với chức năng như sau:
 - **Bước 2**: Kết nối module BMP280 vào cổng I2C bất kỳ của mạch mở rộng:
 
 .. figure:: images/bmp280_02.jpg
-    :scale: 100%
+    :scale: 60%
     :align: center
 
     Module BMP280 kết nối qua I2C nên có thể cắm vào bất kỳ cổng I2C nào.
@@ -85,14 +85,14 @@ Module BMP280 có 4 chân, với chức năng như sau:
     Xem hướng dẫn thêm thư viện mở rộng `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
 .. image:: images/bmp280_03.png
-    :scale: 100%
+    :scale: 60%
     :align: center 
 |
 
 **Chương trình cơ bản để đọc nhiệt độ và áp suất:**
 
 .. figure:: images/bmp280_04.png
-    :scale: 100%
+    :scale: 60%
     :align: center
 
     Chương trình đơn giản đọc nhiệt độ và áp suất mỗi 1 giây và hiển thị lên trên màn hình.

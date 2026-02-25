@@ -1,4 +1,4 @@
-23. DC01 - Cảm biến bụi PM2.5 hồng ngoại (UART)
+23. DC01 - Module cảm biến bụi PM2.5 hồng ngoại (UART)
 ===========================================
 
 Giới thiệu
@@ -9,7 +9,7 @@ Cảm biến cho phép đo chính xác mật độ bụi trong không khí và x
 cho các hệ thống quan trắc chất lượng không khí trong lớp học, nhà ở và dự án STEM – IoT.
 
 .. image:: images/dc01_01.png
-    :scale: 100%
+    :scale: 60%
     :align: center
 
 DC01 thường được dùng để:
@@ -50,7 +50,7 @@ Kết nối với Yolo UNO / ESP32
 Kết nối DC01 với Yolo UNO hoặc ESP32 như sau:
 
 ..  image:: images/dc01_02.jpg
-    :scale: 100%
+    :scale: 60%
     :align: center
 |
 
@@ -71,7 +71,7 @@ Sử dung OhStem App, bạn có thể lập trình để đọc dữ liệu PM2.
 Dùng khối lệnh trong thư viện **Smart City**:
 
 ..  image:: images/dc01_03.png
-    :scale: 100%
+    :scale: 60%
     :align: center
 |
 Chương trình mẫu:

@@ -26,3 +26,4 @@
    cam_bien/sht30.rst
    cam_bien/uv_s12sd.rst
    cam_bien/acd1100.rst
+   cam_bien/dc01_pm2-5.rst

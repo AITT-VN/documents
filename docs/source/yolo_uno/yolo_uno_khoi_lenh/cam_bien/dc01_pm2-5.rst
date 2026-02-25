@@ -50,7 +50,7 @@ Kết nối với Yolo UNO / ESP32
 Kết nối DC01 với Yolo UNO hoặc ESP32 như sau:
 
 ..  image:: images/dc01_02.jpg
-    :scale: 60%
+    :scale: 70%
     :align: center
 |
 

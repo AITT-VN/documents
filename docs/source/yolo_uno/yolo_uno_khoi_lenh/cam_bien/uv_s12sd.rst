@@ -1,4 +1,4 @@
-21. GUVA-S12SD - Cảm biến ánh sáng UV
+21. GUVA-S12SD - Module cảm biến ánh sáng UV
 =================================
 
 Giới thiệu

@@ -1,4 +1,4 @@
-22. ACD1100 - Cảm biến CO₂ Nồng Độ Cao
+22. ACD1100 - Module cảm biến CO₂ Nồng Độ Cao
 ==================================
 
 Giới thiệu

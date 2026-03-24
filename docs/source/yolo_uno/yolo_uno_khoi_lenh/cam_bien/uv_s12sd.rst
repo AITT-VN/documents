@@ -54,7 +54,21 @@ Kết nối đơn giản:
 
 Lập trình với Yolo UNO trên OhStem App
 ------------------------------------
-Để lập trình cảm biến GUVA-S12SD với Yolo UNO, bạn có thể sử dụng khối lệnh đọc giá trị UV từ thư viện **Smart City**.
+
+Trên OhStem App, bạn chỉ cần sử dụng khối lệnh đọc chỉ số UV từ thư viện **Smart City** để nhận dữ liệu cảm biến.
+
+Để lập trình, bạn cần tải thư viện mở rộng **Smart City** từ liên kết sau:
+
+`https://github.com/AITT-VN/yolouno_extension_smartcity.git`
+
+..  image:: images/acd1100_04.png
+    :scale: 60%
+    :align: center
+|
+
+    Xem hướng dẫn thêm thư viện mở rộng `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
+
+Khi sử dụng cảm biến GUVA-S12SD với Yolo UNO, bạn có thể sử dụng khối lệnh đọc giá trị UV từ thư viện **Smart City**.
 
 ..  image:: images/uv_3.png
     :scale: 60%

@@ -67,6 +67,19 @@ Cảm biến sử dụng tia hồng ngoại chiếu vào luồng không khí:
 Lập trình trên OhStem App
 -------------------------
 
+Trên OhStem App, bạn chỉ cần sử dụng khối lệnh đọc dữ liệu bụi mịn từ thư viện **Smart City** để nhận dữ liệu từ cảm biến
+
+Để lập trình, bạn cần tải thư viện mở rộng **Smart City** từ liên kết sau:
+
+`https://github.com/AITT-VN/yolouno_extension_smartcity.git`
+
+..  image:: images/acd1100_04.png
+    :scale: 60%
+    :align: center
+|
+
+    Xem hướng dẫn thêm thư viện mở rộng `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
+
 Sử dung OhStem App, bạn có thể lập trình để đọc dữ liệu PM2.5 từ cảm biến DC01 như sau:
 Dùng khối lệnh trong thư viện **Smart City**:
 

@@ -91,7 +91,7 @@ Module RTC có 4 chân, và mỗi chân có chức năng như sau:
 
 **Chương trình cơ bản để lấy tín hiệu từ RTC:**
 
-Đầu tiên chúng ta sẽ khởi tạo module RTC bằng cách cài đặt thời gian vào cho module trước
+Đầu tiên chúng ta sẽ khởi tạo module RTC bằng cách cài đặt thời gian vào cho module trước (chỉ cần khởi tạo thời gian 1 lần - khi chạy lại chương trình nên xóa bỏ lệnh khởi tạo để thời gian chạy đúng theo cài đặt lần đầu tiên)
 
 ..  figure:: images/rtc04.png
     :scale: 100%

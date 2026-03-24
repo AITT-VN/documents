@@ -60,7 +60,9 @@ Vào **Mở rộng (Extensions)** → dán link:
 
 ::
 
-    https://github.com/ohstem/extensions_sht30.git
+    https://github.com/AITT-VN/yolouno_extension_sht30.git
+
+Xem hướng dẫn thêm thư viện mở rộng `tại đây <https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html>`_
 
 Sau khi tải thư viện, bạn sẽ thấy các khối lệnh mới:
 

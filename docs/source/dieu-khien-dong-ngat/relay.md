@@ -1,0 +1,104 @@
+# 5. Công tắc điện tử Relay
+![5.1](/wiki-assets/images/module/dieu-khien-dong-ngat/images/5.1.png)
+
+
+- Công tắc điện tử Relay là một thiết bị đóng tắt nguồn cho một thiết bị. Nó hoạt động giống với công tắc cơ mà chúng ta thường sài trong dân dụng. Điều khác biệt là nó có thể điểu khiển đóng ngắt bằng cách lập trình.
+
+## **1. Mua sản phẩm**
+![gio](/wiki-assets/images/module/dieu-khien-dong-ngat/images/gio.png)
+
+
+## **2. Thông số kỹ thuật**
+- **Thông số kỹ thuật của Relay**
+
+    + Điện áp: 3.3V
+    + Dòng chịu đựng: 3A
+    + Không có bảo vệ ngược cực, cần chú ý khi cấp nguồn
+    + Tín hiệu điều khiển: Digital
+    + Kích thước của mạch: 24mm x 48mm x 16mm
+    
+    
+- **Pinout của Relay**
+
+Module relay có 3 chân, và mỗi chân có chức năng như sau:
+
+
+    :widths: 10, 15, 30
+    
+    1, "GND", "Nối đất"
+    2, "VCC", "Cấp nguồn (3.3V)"
+    3, "NC", "Không sử dụng"
+    4, "SIG", "Tín hiệu điều khiển"
+    
+    
+## **3. Kết nối**
+- **Bước 1**: Chuẩn bị các thiết bị như sau:
+
+
+| Hình ảnh | Sản phẩm | Mua hàng |
+|:--------:|:---------|:--------:|
+| ![yolo](/wiki-assets/images/module/dieu-khien-dong-ngat/images/yolo.png) | Máy tính lập trình Yolo:Bit | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/) |
+| ![mmr](/wiki-assets/images/module/dieu-khien-dong-ngat/images/mmr.png) | Mạch mở rộng cho Yolo:Bit | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/grove-shield/) |
+| ![5.1](/wiki-assets/images/module/dieu-khien-dong-ngat/images/5.1.png) | Relay (kèm dây Grove) | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/relay/) |
+    
+    
+- **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
+- **Bước 3**: Sử dụng dây Grove cắm vào Relay
+- **Bước 4**: Kết nối thiết bị vào **chân P0 trên mạch mở rộng**
+![5.2](/wiki-assets/images/module/dieu-khien-dong-ngat/images/5.2.png)
+
+
+    Relay có thể kết nối vào cổng điều khiển có 2 chân tín hiệu.
+    
+- **Bước 5**: Kết nối Relay với bóng đèn 220V và phích cắm điện.
+
+    **Cách kết nối:** Một chân của đèn nối vào nguồn, chân còn lại sẽ ngắt ra làm 2, để nối vào chân COM và NO của Relay, như hình minh hoạt sau đây.
+![ket noi relay](/wiki-assets/images/module/dieu-khien-dong-ngat/images/ket_noi_relay.png)
+
+
+- **Bước 6**: Cắm phích cắm vào nguồn điện 220V và tiến hành lập trình như bên dưới.
+
+
+## **4. Hướng dẫn lập trình với OhStem App**
+**Lập trình bật tắt đèn trong 2 giây**
+
+- Sử dụng các câu lệnh trong danh mục **CHÂN CẮM**, để làm việc với Relay.
+
+- Gửi chương trình sau xuống Yolo:Bit:
+![5.3](/wiki-assets/images/module/dieu-khien-dong-ngat/images/5.3.png)
+
+
+**Giải thích chương trình:**
+
+    Trong chương trình trên, trạng thái của Relay sẽ bật và tắt sau mỗi 2 giây. Khi trạng thái của Relay là bật - bóng đèn sáng, đó là lúc chân COM và NO kết nối với nhau, tạo thành một mạch điện hoàn chỉnh giúp đèn sáng. Ngược lại, chân COM và NO không kết nối được với nhau nên đèn tắt.
+    
+    
+> **Ghi chú:** Relay chỉ có thể hoạt động được với các thiết bị có công suất nhỏ, trong tầm 100W đến 150W. Do đó, khi kết nối với các thiết bị sử dụng động cơ 220V như máy bơm hoặc máy quạt công nghiệp, chúng ta phải nối Relay thông qua một công tắc chuyên dụng hơn cho điện 220V, gọi là **khởi động từ** hoặc **công tắc tơ**. Thiết bị này có khả năng khử nhiễu từ trường đối với các thiết bị sử dụng động cơ 220V.
+
+
+## **5. Hướng dẫn lập trình Arduino**
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino [tại đây ](https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html).
+
+- Copy đoạn code sau, click vào nút `Verify` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+
+
+```cpp
+#include "YoloBit.h"
+
+// Bật tắt Relay sau mỗi 2 giây
+
+YoloBit yolobit;
+
+int relayPin = P0;
+
+void setup() {
+  pinMode(relayPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(relayPin, HIGH);
+  delay(2000);
+  digitalWrite(relayPin, LOW);
+  delay(2000);
+}
+```

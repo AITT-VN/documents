@@ -1,64 +1,22 @@
-OhStem Education
-======================================
+OhStem Education Wiki
+=====================
 
-OhStem xin chào tất cả các bạn!
-
-Đây là trang tài liệu của OhStem Education.
-
+Tài liệu hướng dẫn lắp ráp, lập trình và giảng dạy STEM với các sản phẩm OhStem.
+Chọn nhóm sản phẩm bên dưới hoặc dùng ô tìm kiếm để tìm bài học và hướng dẫn.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Cửa hàng
-
-   store/store.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: ORC Robot Kit
-
-   orc_bot/orc-bot.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Máy tính lập trình Yolo:Bit
+   :caption: Board lập trình
 
    yolobit_v2/lam-quen.rst
-   yolobit_v2/homebit.rst
-   yolobit_v2/plantbit.rst
-   yolobit_v2/citybit.rst
-   yolobit_v2/physbit.rst
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: STEM STARTER KIT
-
-   stem_kit/stem_kit.rst
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: AIoT Kit - Lập trình AI & IoT
-
-   aiot/lam_quen.rst
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Yolo UNO - Mạch lập trình Arduino
-
    yolo_uno/yolo_uno_khoi_lenh.rst
-   yolo_uno/uno_city.rst
-   yolo_uno/trash_bin_yolo_uno.rst
-   yolo_uno/smart_home_uno.rst
    yolo_uno/arduino_yolo_uno.rst
-   yolo_uno/green_house.rst
-
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Robot STEM Rover
+   :maxdepth: 1
+   :caption: Robot và bộ kit robot
 
+   orc_bot/index
    robot_rover/rover.rst
    robot_rover/servo_pack.rst
    robot_rover/tay_gap.rst
@@ -69,18 +27,6 @@ OhStem xin chào tất cả các bạn!
    robot_rover/gap_hai_bac.rst
    robot_rover/rover_tank.rst
    robot_rover/camera_ai_v2.rst
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Robot Arm
-
-   robot_arm/robot_arm.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Robot lập trình xBot
-
    xbot/xbot.rst
    xbot/inventor.rst
    xbot/gripper.rst
@@ -90,55 +36,52 @@ OhStem xin chào tất cả các bạn!
    xbot/gap-hai-bac.rst
    xbot/gamepad-xbot.rst
    xbot/xbot-motion-kit.rst
-
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: xBuild Creator Kit
-
-   tutorials/micropython/index.rst
-   tutorials/arduino/index.rst
-
-
+   xbot_evo/index
+   robot_rio/index
+   gamekit/gamekit.rst
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Game Kit - Kit học lập trình game 
+   :maxdepth: 1
+   :caption: Bộ kit lập trình và AIoT
 
-   gamekit/gamekit.rst 
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Các module mở rộng
-
-   module/thu-vien-yolobit.rst
-   module/cai-dat-arduino.rst
-   module/thu-vien-yolouno.rst
-   module/cam-bien.rst
-   module/hien-thi.rst
-   module/dieu-khien-dong-ngat.rst
-   module/board-mo-rong.rst 
-   module/dong-co.rst
-
-
+   stem_kit/index
+   aiot/lam_quen.rst
+   yolobit_v2/homebit.rst
+   yolobit_v2/plantbit.rst
+   yolobit_v2/citybit.rst
+   citybit_v2/index
+   green_house/index
+   smart_home_uno/index
+   thanh_pho_thong_minh/index
+   thung-rac-thong-minh/index
+   tram_giam_sat/index
+   yolo_uno/uno_city.rst
+   yolo_uno/trash_bin_yolo_uno.rst
+   yolo_uno/smart_home_uno.rst
+   yolo_uno/green_house.rst
 
 .. toctree::
-   :maxdepth: 2
-   :caption: API thư viện
+   :maxdepth: 1
+   :caption: Thiết bị mở rộng
 
-   api/api-xbot.rst
-
+   cam-bien/index
+   hien-thi/index
+   dong-co/index
+   dieu-khien-dong-ngat/index
+   board-mo-rong/index
+   ai-camera/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Sa bàn thi đấu
+   :maxdepth: 1
+   :caption: Thi đấu và sự kiện
 
    sa_ban/sa_ban_index.rst
+   giaidau_orc/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: FAQs
+   :maxdepth: 1
+   :caption: Tài liệu và hỗ trợ
 
-   FaQs/faqs_index.rst
+   store/store.rst
+   tai_lieu_stem/index
+   FaQs/index

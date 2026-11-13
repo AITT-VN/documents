@@ -1,0 +1,45 @@
+# 7. Bật tắt máy bơm tự động
+
+## 1. Mục tiêu
+Đọc thông số độ sáng ngôi nhà từ cảm biến Cảm biến độ ẩm đất điện dung và hiển thị lên màn hình LCD 1602, dựa vào thông số cảm biến trả về sẽ bật tắt máy bơm nước qua relay 4 của mạch Relay 4 kênh
+
+
+## 2. Thiết bị cần sử dụng
+- Mạch Yolo UNO:
+![yolouno](/wiki-assets/images/yolo_uno/green_house/images/yolouno.png)
+
+
+- Module LCD1602 kèm dây tín hiệu:
+![lcd1602](/wiki-assets/images/yolo_uno/green_house/images/lcd1602.png)
+
+
+- Cảm biến độ ẩm đất điện dung kèm dây tín hiệu:
+![do am dat](/wiki-assets/images/yolo_uno/green_house/images/do_am_dat.png)
+
+
+- Module Relay 4 kênh kèm dây tín hiệu:
+![relay 4 kenh](/wiki-assets/images/yolo_uno/green_house/images/relay_4_kenh.png)
+
+
+- Máy bơm nước:
+![may bom](/wiki-assets/images/yolo_uno/green_house/images/may_bom.png)
+
+
+Máy bơm nước sẽ có 2 đầu **IN** và **OUT**, đầu **IN** dùng để nối ống với nguồn cung cấp nước (hút nước), đầu **OUT** là đầu bơm nước ra từ máy bơm.
+Bạn cần nối đúng **IN** và **OUT** của máy bơm để máy bơm hoạt động đúng.
+![may bom02](/wiki-assets/images/yolo_uno/green_house/images/may_bom02.png)
+
+
+## 3. Kết nối phần cứng
+- Nối máy bơm vào relay số 4 trên mạch Relay 4 kênh
+- Cảm biến độ ẩm đất vào cổng A0
+- Màn hình LCD1602 và Relay 4 kênh vẫn cắm ở vị trí khe mở rộng I2C.
+![bai 6.1](/wiki-assets/images/yolo_uno/green_house/images/bai_6.1.png)
+
+
+## 4. Chương trình lập trình
+Tương tự các tính năng khác, chúng ta sẽ cho máy bơm hoạt động dựa trên thông tin từ cảm biến độ ẩm đất. Cảm biến độ ẩm đất sẽ hoạt động ngược với cảm biến độ ẩm đất bằng điện trở nên ngưỡng so sánh sẽ ngược với cảm biến độ ẩm đất điện dung (giá trị % cao là đất khô, giá trị % thấp là đất ướt).
+![bai 6.2](/wiki-assets/images/yolo_uno/green_house/images/bai_6.2.png)
+
+
+    Link chương trình [https://app.ohstem.vn/#!/share/yolouno/2s1UJDhma9iu6m2tYLcHg0dWkaH](https://app.ohstem.vn/#!/share/yolouno/2s1UJDhma9iu6m2tYLcHg0dWkaH)

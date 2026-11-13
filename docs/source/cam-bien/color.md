@@ -1,0 +1,128 @@
+# 12. Cảm biến màu sắc
+![13.1](/wiki-assets/images/module/cam-bien/images/13.1.png)
+
+
+Module cảm biến màu sắc là một cảm biến màu có khả năng nhận dạng các loại màu sắc. Module này sử dụng giao thức I2C để giao tiếp.
+
+
+## **1. Mua sản phẩm**
+![gio](/wiki-assets/images/module/cam-bien/images/gio.png)
+
+
+## **2. Thông số kỹ thuật**
+- **Thông số kỹ thuật**
+
+    + Điện áp hoạt động: 3.3V
+    + Dòng hoạt động: \<5mA
+    + Nhiệt độ hoạt động: -20 ~ 60˚C
+    + Loại tín hiệu: I2C
+    + Kích thước module: 48mm x 24mm x 18mm (DxRxC)
+    
+    
+- **Pinout của cảm biến màu sắc**
+
+Cảm biến màu sắc có 4 chân, và mỗi chân có chức năng như sau:
+
+
+    :widths: 10, 15, 30
+    
+    1, "GND", "Nối đất"
+    2, "VCC", "Cấp nguồn (3.3V)"
+    3, "SDA", "Truyền tín hiệu"
+    4, "SCL", "Xung tín hiệu"
+    
+    
+## **3. Kết nối**
+- **Bước 1**: Chuẩn bị các thiết bị như sau:
+
+
+| Hình ảnh | Sản phẩm | Mua hàng |
+|:--------:|:---------|:--------:|
+| ![yolo](/wiki-assets/images/module/cam-bien/images/yolo.png) | Máy tính lập trình Yolo:Bit | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/may-tinh-lap-trinh-yolobit/) |
+| ![mmr](/wiki-assets/images/module/cam-bien/images/mmr.png) | Mạch mở rộng cho Yolo:Bit | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/grove-shield/) |
+| ![13.1](/wiki-assets/images/module/cam-bien/images/13.1.png) | Cảm biến màu sắc (kèm dây Grove) | [Mua sản phẩm ](https://shop.ohstem.vn/san-pham/cam-bien-mau-sac/) |
+    
+    
+- **Bước 2**: Cắm Yolo:Bit vào mạch mở rộng
+- **Bước 3**: Sử dụng dây Grove cắm vào cảm biến
+- **Bước 4**: Kết nối cảm biến với **cổng I2C trên mạch mở rộng**.
+![13.2](/wiki-assets/images/module/cam-bien/images/13.2.png)
+
+
+    Bạn có thể kết nối vào 1 trong 2 chân I2C
+    
+## **4. Hướng dẫn lập trình với OhStem App:**
+- **Bước 1**: Để làm việc với cảm biến, bạn cần tải thư viện **Cảm biến màu sắc**, xem hướng dẫn tải thư viện [tại đây ](https://docs.ohstem.vn/en/latest/module/thu-vien-yolobit.html).
+![13.3](/wiki-assets/images/module/cam-bien/images/13.3.png)
+
+    |
+    
+    Sau khi tải thư viện, trong danh mục khối lệnh sẽ xuất hiện các khối lệnh tương ứng:
+![13.4](/wiki-assets/images/module/cam-bien/images/13.4.png)
+
+    |
+    
+- **Bước 2**: Gửi chương trình sau lên Yolo:Bit:
+![13.5](/wiki-assets/images/module/cam-bien/images/13.5.png)
+
+    |
+    
+> **Ghi chú:** **Giải thích chương trình:**
+
+Chương trình phát hiện và đổi màu sắc tương ứng. Nếu cảm biến phát hiện màu đỏ, mạch Yolo:Bit sẽ nhận tín hiệu và xử lý để đổi màu tất cả các đèn LED trên Yolo:Bit sang màu tương ứng. Tương tự mới màu xanh lá và xanh dương.
+
+
+## **5. Hướng dẫn lập trình Arduino**
+- Mở phần mềm Arduino IDE. Xem hướng dẫn lập trình với Arduino [tại đây ](https://docs.ohstem.vn/en/latest/module/cai-dat-arduino.html).
+
+- Copy đoạn code sau, click vào nút `Verify` để kiểm tra lỗi chương trình. Sau khi biên dịch không báo lỗi, bạn có thể nạp đoạn code vào board.
+
+```guess
+#include "YoloBit.h"
+
+ YoloBit yolobit;
+
+ #include <Wire.h>
+ #include "Adafruit_TCS34725.h"
+ Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_700MS, TCS34725_GAIN_1X);
+
+ void setup() {
+   Serial.begin(9600);
+   if (tcs.begin()) {
+      Serial.println("Found sensor");
+   }
+   else {
+      Serial.println("No TCS34725 found ... check your connections");
+      while (1);
+   }
+   // Đọc giá trị cảm biến!
+ }
+
+ void loop(void) {
+   uint16_t r, g, b, c, colorTemp, lux;
+   tcs.getRawData(&r, &g, &b, &c);
+   colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
+   lux = tcs.calculateLux(r, g, b);
+   Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");
+   Serial.print("Lux: "); Serial.print(lux, DEC); Serial.print(" - ");
+   Serial.print("R: "); Serial.print(r, DEC); Serial.print(" ");
+   Serial.print("G: "); Serial.print(g, DEC); Serial.print(" ");
+   Serial.print("B: "); Serial.print(b, DEC); Serial.print(" ");
+   Serial.print("C: "); Serial.print(c, DEC); Serial.print(" ");
+   Serial.println(" ");
+ }
+```
+
+> **Ghi chú:** **Giải thích chương trình:** Sau khi nạp chương trình và mở cửa sổ Serial, bạn sẽ thấy giá trị đọc được từ cảm biến được in ra.
+
+
+## **6. Góc kiến thức:**
+Mỗi màu sắc đều được cấu tạo từ 3 giá trị cơ bản đó chính là đỏ (red) – xanh dương (blue) – xanh lá (green).
+![13.6](/wiki-assets/images/module/cam-bien/images/13.6.png)
+
+
+Ví dụ như màu trắng sẽ được cấu tạo từ giá trị RGB sau Red = 255, Green = 255, Blue = 255; màu vàng sẽ có mã màu RGB là (255,255,0). Các bạn có thể tra thêm một số giá trị màu RGB ở bảng sau:
+![13.7](/wiki-assets/images/module/cam-bien/images/13.7.png)
+
+
+Cảm biến màu sắc có khả năng nhận diện màu sắc bằng cách trả về 3 giá trị RGB tương ứng với màu sắc đó. Chính nhờ thế nên cảm biến này thường được ứng dụng trong chương trình như: phân loại dựa theo màu sắc, nhận biến màu để di chuyển.
